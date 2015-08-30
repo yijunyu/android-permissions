@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="air.com.differencegames.squzzlefree">
+    <application android:hardwareAccelerated="false" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name=".AppEntry" android:screenOrientation="user" android:theme="@style/Theme.NoShadow" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="namespaceVersion" android:value="3.6"><nothingHere/></meta-data>
+            <meta-data android:name="aspectRatio" android:value="landscape"><nothingHere/></meta-data>
+            <meta-data android:name="autoOrients" android:value="false"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="1521a993-78d4-43b9-be9d-ea301b9931d5"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="DGGameWrapper_landscape.swf"><nothingHere/></meta-data>
+            <meta-data android:name="containsVideo" android:value="false"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.chartboost.sdk.CBDialogActivity" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.differencegames.dgnotifyservice.DGNotificationHandler"><nothingHere/></activity>
+        <activity android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:name="com.heyzap.sdk.ads.HeyzapInterstitialActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:name="com.heyzap.sdk.ads.HeyzapVideoActivity"><nothingHere/></activity>
+        <activity android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+    <meta-data android:name="applovin.sdk.key" android:value="p0Dfy2ovsaJxTuDEv7F50fcaTKFCqoMdoZHlc4dTexOBqbQkkfqlJQJslZ3ZMPC9zUuaTW3BSSNH3o0nRqVmFq"><nothingHere/></meta-data>
+        <meta-data android:name="ADBUDDIZ_PUBLISHER_KEY" android:value="air.com.differencegames.squzzlefree"><nothingHere/></meta-data>
+        <receiver android:name="com.differencegames.dgnotifyservice.DGPollBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.fgl.extensions.referral.handlers.ReferralReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="forward.Kochava" android:value="com.kochava.android.tracker.ReferralCapture"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.heyzap.sdk.ads.PackageAddedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+            <android-data android:scheme="package"><nothingHere/></android-data>
+                </intent-filter>
+        </receiver>
+        <service android:name="com.differencegames.dgnotifyservice.DGPollService"><nothingHere/></service>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+</manifest>

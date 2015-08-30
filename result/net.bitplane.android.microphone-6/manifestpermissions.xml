@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.RECORD_AUDIO</name>
+  </permission>
+</permissions>

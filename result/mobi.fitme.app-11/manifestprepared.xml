@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="mobi.fitme.app">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="mobi.fitme.app.FITMeApplication" android:theme="@style/AppTheme">
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity"><nothingHere/></activity>
+        <activity android:name="io.card.payment.DataEntryActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:name="mobi.fitme.service.crop.CustomCropImage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="mobi.fitme.app.ActivitySplash" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_activity_authentication" android:name="mobi.fitme.app.ActivityAuthentication" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_login" android:name="mobi.fitme.app.ActivityLogin" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_register" android:name="mobi.fitme.app.ActivityRegister" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_body_general" android:name="mobi.fitme.app.ActivityBodyGeneral" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_body_upper" android:name="mobi.fitme.app.ActivityBodyUpper" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_body_lower" android:name="mobi.fitme.app.ActivityBodyLower" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_body_edit" android:name="mobi.fitme.app.ActivityBodyEdit" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_fitme" android:name="mobi.fitme.app.ActivityFITME" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_fitmedetail" android:name="mobi.fitme.app.ActivityFITMEDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_order" android:name="mobi.fitme.app.ActivityOrder" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_search_brand" android:name="mobi.fitme.app.ActivitySearchBrand" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_search_type" android:name="mobi.fitme.app.ActivitySearchType" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_search_style" android:name="mobi.fitme.app.ActivitySearchStyle" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_search_product_result" android:name="mobi.fitme.app.ActivitySearchProductResult" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_brand" android:name="mobi.fitme.app.ActivityBrand" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_web_view" android:name="mobi.fitme.app.ActivityWebView"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_logout" android:name="mobi.fitme.app.ActivityLogout" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_fill_my_size" android:name="mobi.fitme.app.ActivityMeasureMySize" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_fill_my_size" android:name="mobi.fitme.app.ActivityFillMySize" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_address_edit" android:name="mobi.fitme.app.ActivityAddressEdit" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_message_list" android:name="mobi.fitme.app.ActivityMessageList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_visa_webview" android:name="mobi.fitme.app.Activity2C2P" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_success_order" android:name="mobi.fitme.app.ActivitySuccessOrder" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_message_chat" android:name="mobi.fitme.app.ActivityMessageChat" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_map_near_by" android:name="mobi.fitme.app.ActivityMapNearBy" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_forgot_password" android:name="mobi.fitme.app.ActivityForgotPassword" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.Dialog"><nothingHere/></activity>
+        <activity android:name="mobi.fitme.app.ActivitySelectCountry" android:screenOrientation="portrait"><nothingHere/></activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/map_id"><nothingHere/></meta-data>
+        <receiver android:name="mobi.fitme.app.GCMReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="mobi.fitme.app"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="mobi.fitme.app.GCMIntentService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.paypal.android.sdk.payments.PayPalService"><nothingHere/></service>
+        </application>
+<permission android:name="mobi.fitme.app.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="mobi.fitme.app.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="mobi.fitme.app.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="mobi.fitme.app.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,158 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.ver_new_angle.du">
+    <application android:icon="@drawable/logo_vertical_angle_64" android:label="@string/app_name">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ljq.gv.GvActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.TestActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.TestActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.TestActivity3" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.ok_hekef" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_Draw" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_zavit_hada_Touch" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_hoze_yashar_zavit_right_2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_hoze_yashar_zavit" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_ma_ha_zavit_hashniya" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_zavit_hada" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_zavit_kodkod" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_SH_circle_hekef" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvasVolume_Balls" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_nefah_segment_ball" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_nefah_bal_radius_v" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_sector_circle_Touch" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_shetah_2radius" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_shetah_blue_square_circle" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_cos_sin_tan_cot_degrees" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Sector_Circle_Radians" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Circle_Segment_Radians_Touch" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Circle_Segment_degrees_Touch" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_SHetah_HEkef_Meshulash_Circle" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_sqrt_pirs_touch" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Cube_Volume_pirs_touch" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Cube_Surface_pirs_touch" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_circle_r_diameter_peri" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_SH_HEKEF_MESHULASH_Shave_Chlaot_peri" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_circle_r_circumference_peri" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_circle_r_Area_peri" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_m_MAKBILIT_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_m_Hekefim_A_B_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_Area_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_PY_yeter_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_PY_Side_A_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_PY_yeter_square_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_PY_Side_square_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_CS_COS_Yeter_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_CS_COS_SIDE_a_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_CS_COS_Angle_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_CS_SIN_Angle_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_CS_SIN_Yeter_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_CS_SIN_SIDE_a_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_CS_TAN_Angle_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_CS_TAN_SIDE_a_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_CS_TAN_SIDE_b_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Volume_Chela_Hasera_BasisRiba_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Volume_Square_Pyramid" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Volume_cone_Pyramid_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_volume_Surface_Area_All_cone_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_volume_Lateral_Surface_Area_cone_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_volume_cylinder_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_volume_cylinder_Surface_Area_All_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_volume_cylinder__Lateral_Area_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_m_Hekefim_Ri_Meuyan_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_Perimeter_Area" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_m_Area_Trapez" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_PY_too_hyp_square" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_PY_too_SIDE_square" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_V_Volume_Rectangular" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_V_Rectangular_Surface_Area" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_V_Rectangular_Lateral_Area" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_Angle_Missing_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_V_Volume_Square_Box_h" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_m_perimeter_for_All" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_SH_peri_Ribua" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_Coordinates_X_Y" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_coordin_formula_x_y_m_b" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_coordin_formula_x1_y1_x2_y2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_pic_big_Draw" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_BIG_PIC" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Hexagon" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_m_rectangle_A_P" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_m_rectangle_A_P_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_m_MAKBILIT_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_m_Rhombuses_Kites_A_P_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_m_Hekefim_Ri_Meuyan_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_m_Hekefim_A_B_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_SH_HEKEF_MESHULASH_Shave_Chlaot_peri" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_CS_COS_Angle_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_CS_COS_SIDE_a_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_CS_COS_Yeter_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_CS_SIN_Angle_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_CS_SIN_SIDE_a_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_CS_SIN_Yeter_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_CS_TAN_Angle_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_CS_TAN_SIDE_a_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_CS_TAN_SIDE_b_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_Angle_Missing_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_PY_Side_A_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_PY_Side_square_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_PY_too_SIDE_square" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_PY_yeter_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_PY_yeter_square_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_SH_circle_hekef" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Volume_Chela_Hasera_BasisRiba_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Volume_cone_Pyramid_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Lateral_Surface_Area_cone_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_volume_Surface_Area_All_cone_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_volume_cylinder__Lateral_Area_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_volume_cylinder_Surface_Area_All_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_coordin_formula_x_y_m_b" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Hexagon_inscribed_c_radius" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Hexagon_inscribed_in_radius" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_Area_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Volume_Square_Pyramid" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_volume_cylinder_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_V_Volume_Square_Box_h" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Hexagon_diagonals" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_radius" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_BIG_PIC_Triangle_30_60_90_right" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_V_volume_circular_cone" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_V_lateral_surface_area_cone_l" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_V_lateral_surface_area_cone_h" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Hexagon" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Hexagon_inscribed_c_radius" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Hexagon_inscribed_in_radius" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Hexagon_diagonals" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_radius" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_circum_Radius" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_a_b_c_find_angles" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_bisector_a_Length" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_find_base" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_find_height" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_30_60_90_right" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_45_45_90_right" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_30_60_90_hyp_right" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_30_60_90_find_side_s_right" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_45_45_90_right_find_side" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_Triangle_sides_aera_cos_tan" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_coordin_formula_Parabola_Touch" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_m_Rhombuses_Kites_A_P_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_m_rectangle_A_P_peri_pirs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_V_Volume_Triangular" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_SA_LA_Triangular_prism" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canvas_Hexagon_volume" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_SA_LA_Square_Pyramid" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_canv_m_rectangle_makbilit_in" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_coordin_formula_Parabola_a_b_c" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_can_quadratic_x1_x2_Formula_parabola_a_b_c" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_Read_Me" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.ljq.gv.App_Exit" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

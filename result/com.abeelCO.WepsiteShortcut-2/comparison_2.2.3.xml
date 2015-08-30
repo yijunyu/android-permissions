@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>com.android.browser.permission.READ_HISTORY_BOOKMARKS</permission>
+  </under-specification>
+</comparison>

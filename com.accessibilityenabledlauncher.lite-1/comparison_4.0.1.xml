@@ -1,8 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.STATUS_BAR</permission>
-    <permission>android.permission.DEVICE_POWER</permission>
-    <permission>android.permission.CAMERA</permission>
-  </over-specification>
-  <under-specification/>
-</comparison>

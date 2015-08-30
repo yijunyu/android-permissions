@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.suseonjae.ebook.seonlifeentrial">
+    <application android:description="@string/app_desc" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:clearTaskOnLaunch="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="EbookActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="SplashActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="BookOtherActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="BookInfo" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="EbookHomeActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="NewBookListActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="ReadingActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="*" android:mimeType="application/epub+zip" android:pathPattern=".*\\.epub" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*" android:mimeType="application/epub+zip" android:pathPattern=".*\\.epub" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="*" android:mimeType="application/epub+zip" android:pathPattern=".*\\.epub" android:scheme="content"><nothingHere/></android-data>
+                <android-data android:host="*" android:mimeType="application/epub+zip" android:pathPattern=".*\\.epub" android:scheme="file"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/setting_prefs" android:name="PrefsActivity"><nothingHere/></activity>
+        <activity android:label="suseonjae Library" android:name="LibraryActivity"><nothingHere/></activity>
+        <activity android:name="com.suseonjae.ebook.seonlifeentrial.BookDetailsActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

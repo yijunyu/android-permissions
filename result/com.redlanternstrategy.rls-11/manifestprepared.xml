@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.redlanternstrategy.rls">
+    <application android:allowBackup="true" android:configChanges="keyboardHidden|orientation" android:icon="@drawable/icon_launcher" android:label="@string/app_name" android:name="com.revelationglobal.revenext.app.RevelationGlobalApp" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="com.revelationglobal.revenext.activities.RGLoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.revelationglobal.revenext.activities.RGMenuFragmentActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_rgbase" android:name="com.revelationglobal.revenext.activities.RGBaseActivity"><nothingHere/></activity>
+        <activity android:name="com.revelationglobal.revenext.activities.RGRegistrationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.revelationglobal.revenext.activities.RGTermsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.revelationglobal.revenext.activities.RGVideoPlayer" android:screenOrientation="landscape"><nothingHere/></activity>
+        <meta-data android:name="com.urbanairship.autopilot" android:value="com.revelationglobal.revenext.utilities.StartUrabanairship"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="5bb8c7a647b215a7630e3bafef793a30673cf520"><nothingHere/></meta-data>
+    <provider android:authorities="com.redlanternstrategy.rls.urbanairship.provider" android:exported="false" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider"><nothingHere/></provider>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:process=":com.urbanairship.process">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.revelationglobal.revenext"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.redlanternstrategy.rls.pushnotification.RGIntentReceiver"><nothingHere/></receiver>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService" android:process=":com.urbanairship.process"><nothingHere/></service>
+        <service android:label="Push Notification Worker Service" android:name="com.urbanairship.push.PushWorkerService" android:process=":com.urbanairship.process"><nothingHere/></service>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService" android:process=":com.urbanairship.process"><nothingHere/></service>
+        </application>
+<permission android:name="com.revelationglobal.revenext.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.revelationglobal.revenext.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

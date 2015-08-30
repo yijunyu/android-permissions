@@ -1,0 +1,85 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.spreedinc.providers.digitalfirstmedia.sanbernardinosun">
+    <application android:debuggable="false" android:icon="@drawable/app_icon" android:label="San Bernardino Sun" android:name="rumble.droid.RumbleApp">
+        <activity android:name="net.hockeyapp.android.UpdateActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MoPubActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidBrowser"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.Cover" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.SignIn" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.ProductList" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.ProductDetails" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.CreateAccount" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.ConfirmAddress" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.Payment" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.PaymentConfirmation" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.ChooseAddress" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:name="rumble.droid.pressplusactivityes.ChoosePayment" android:screenOrientation="portrait" android:theme="@style/PressPlus"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidVideoPlayerActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.inmobi.androidsdk.IMBrowserActivity"><nothingHere/></activity>
+        <activity android:label="Facebook Share" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="PPActivity" android:name="rumble.droid.pressplusactivityes.PPActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="rumble.droid.SplashScreen" android:noHistory="true" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="AnalyticsView" android:name="rumble.droid.views.AnalyticsView" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="Browser" android:launchMode="singleTask" android:name="rumble.droid.views.BrowserView" android:theme="@style/RumbleActionBarTheme"><nothingHere/></activity>
+        <activity android:label="Comments" android:name="rumble.droid.views.CommentsView" android:theme="@style/RumbleActionBarTheme"><nothingHere/></activity>
+        <activity android:label="Gallery" android:name="rumble.droid.views.GalleryView" android:theme="@style/RumbleGalleryActionBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="" android:launchMode="singleTask" android:name="rumble.droid.views.MainCanvasView" android:theme="@style/RumbleActionBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="" android:launchMode="singleTop" android:name="rumble.droid.views.ReadingPaneView" android:theme="@style/RumbleActionBarTheme"><nothingHere/></activity>
+        <activity android:label="DDD SouthWest" android:name="rumble.droid.views.SplashScreenView" android:noHistory="true" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="Widget" android:launchMode="singleTask" android:name="rumble.droid.views.WidgetView" android:theme="@style/RumbleActionBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="Survey" android:name="rumble.droid.InAppMessageView" android:theme="@style/Theme.FullScreen.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="VideoGallery" android:name="rumble.droid.views.VideoGalleryView" android:theme="@style/RumbleActionBarTheme"><nothingHere/></activity>
+        <activity android:label="Share" android:name="xamarin.social.ShareActivity"><nothingHere/></activity>
+        <activity android:label="Web Authenticator" android:name="xamarin.auth.FormAuthenticatorActivity"><nothingHere/></activity>
+        <activity android:label="Web Authenticator" android:name="xamarin.auth.WebAuthenticatorActivity"><nothingHere/></activity>
+        <activity android:label="Web Authenticator" android:name="rumble.plugin.social.droid.ui.RumbleFormAuthenticatorActivity"><nothingHere/></activity>
+        <activity android:label="WebAuthenticator" android:name="rumble.plugin.social.droid.ui.RumbleWebAuthenticatorActivity" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/settings_facebook_key"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <provider android:authorities="com.spreedinc.providers.digitalfirstmedia.sanbernardinosun.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    <receiver android:name="com.akqtqflwcpypntwucwcm.ReEngagement"><nothingHere/></receiver>
+        <receiver android:exported="true" android:name="com.appfireworks.android.track.AppTrackerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="pushsharp.clientsample.monoforandroid.PushHandlerBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.spreedinc.providers.digitalfirstmedia.sanbernardinosun"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.spreedinc.providers.digitalfirstmedia.sanbernardinosun"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gcm.intent.RETRY"><nothingHere/></action>
+                <category android:name="com.spreedinc.providers.digitalfirstmedia.sanbernardinosun"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.akqtqflwcpypntwucwcm.ReEngagementService"><nothingHere/></service>
+        <service android:name="pushsharp.clientsample.monoforandroid.PushHandlerService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.spreedinc.providers.digitalfirstmedia.sanbernardinosun.permission.C2D_MESSAGE"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission> --&gt;
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.spreedinc.providers.digitalfirstmedia.sanbernardinosun.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,6 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.KILL_BACKGROUND_PROCESSES</permission>
+  </under-specification>
+</comparison>

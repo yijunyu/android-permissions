@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="br.com.noiadigital.robotoclockwidget">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".Configuracoes">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:label="@string/app_widget_4_2" android:name=".Widget_4_2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="ACTION_WIDGET_UPDATE_FROM_ACTIVITY"><nothingHere/></action>
+                <action android:name="ACTION_WIDGET_UPDATE_FROM_ALARM"><nothingHere/></action>
+                <action android:name="ACTION_WIDGET_UPDATE_FROM_WIDGET"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_4_2"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="@string/app_widget_2_3" android:name=".Widget_2_3">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="ACTION_WIDGET_UPDATE_FROM_ACTIVITY"><nothingHere/></action>
+                <action android:name="ACTION_WIDGET_UPDATE_FROM_ALARM"><nothingHere/></action>
+                <action android:name="ACTION_WIDGET_UPDATE_FROM_WIDGET"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info_2_3"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name=".AlarmManagerBroadcastReceiver"><nothingHere/></receiver>
+    </application>
+<uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

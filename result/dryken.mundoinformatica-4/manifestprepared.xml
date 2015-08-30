@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dryken.mundoinformatica">
+    <application android:allowBackup="true" android:icon="@drawable/icono_app" android:label="@string/app_my_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_login" android:name="com.example.activities.ambos.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.example.activities.cliente.MenuPrincipalCliente"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.example.activities.admin.MenuPrincipalAdmin"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_splash_screen" android:name="com.example.activities.ambos.SplashScreen"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_pedido" android:name="com.example.activities.cliente.Carrito"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_linea_de_pedido" android:name="com.example.activities.cliente.Pedido"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_preferencias" android:name="com.example.activities.ambos.Preferencias" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_acerca_de" android:name="com.example.activities.ambos.AcercaDe" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_producto_detalles" android:name="com.example.activities.cliente.CarritoDetalles"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_producto_detalles2" android:name="com.example.activities.cliente.CarritoDetalles2"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_pedido_detalle" android:name="com.example.activities.cliente.PedidoDetalle"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_articulo" android:name="com.example.activities.admin.Articulo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_articulo_agregar" android:name="com.example.activities.admin.ArticuloAgregar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_articulo_editar" android:name="com.example.activities.admin.ArticuloEditar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_articulo_detalle" android:name="com.example.activities.admin.ArticuloDetalles"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_cliente" android:name="com.example.activities.admin.Cliente"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_cliente_agregar" android:name="com.example.activities.admin.ClienteAgregar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_cliente_editar" android:name="com.example.activities.admin.ClienteEditar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_cliente_detalle" android:name="com.example.activities.admin.ClienteDetalles"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_ajustes" android:name="com.example.activities.cliente.Ajustes"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_ajustes_editar" android:name="com.example.activities.cliente.AjustesEditar"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

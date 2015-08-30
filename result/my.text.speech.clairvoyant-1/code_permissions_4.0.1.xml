@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/my/text/speech/clairvoyant/TextToSpeechActivity.java</file>
+    <line>215</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/my/text/speech/clairvoyant/TextToSpeechActivity.java</file>
+    <line>200</line>
+    <permissions/>
+  </call>
+</calls>

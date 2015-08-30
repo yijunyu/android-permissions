@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.p2pcamera.app03">
+    <application android:allowBackup="false" android:icon="@drawable/logo" android:label="@string/app_name">
+        <activity android:clearTaskOnLaunch="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.p2pcamera.app07.ActivitySplash" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.p2pcamera.app07.ActivityMain" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.p2pcamera.app07.ActivityLiveView" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/setting_title" android:name="com.p2pcamera.app07.ActivitySetting" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/setting_adv_title" android:name="com.p2pcamera.app07.ActivitySettingAdvanced" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/setup_pinlock" android:name="com.p2pcamera.app07.ActivityPasscodeLock" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.p2pcamera.app07.ActAbout" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.p2pcamera.app07.ActivityEventList" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.p2pcamera.app07.DlgWait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    </manifest>

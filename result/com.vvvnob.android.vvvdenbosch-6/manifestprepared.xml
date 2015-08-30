@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vvvnob.android.vvvdenbosch">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.vvvnob.vvv.android.base.SpringBoardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vvvnob.vvv.android.base.WebviewActivity" android:screenOrientation="portrait"> android:label="@string/app_name" &gt;
+<nothingHere/></activity>
+        <activity android:name="com.vvvnob.vvv.android.base.MapviewActivity" android:screenOrientation="portrait"> android:label="@string/app_name" &gt;
+<nothingHere/></activity>
+        <activity android:name="com.vvvnob.vvv.android.base.JunctionActivity" android:screenOrientation="portrait"> android:label="@string/app_name" &gt;
+<nothingHere/></activity>
+        <activity android:name="com.vvvnob.vvv.android.base.FavoActivity" android:screenOrientation="portrait"> android:label="@string/app_name" &gt;
+<nothingHere/></activity>
+        <activity android:name="com.vvvnob.vvv.android.base.RouteActivity" android:screenOrientation="portrait"> android:label="@string/app_name" &gt;
+<nothingHere/></activity>
+        <activity android:name="com.vvvnob.vvv.android.base.InfoActivity" android:screenOrientation="portrait"> android:label="@string/app_name" &gt;
+<nothingHere/></activity>
+        <activity android:name="com.vvvnob.vvv.android.base.AroundMeActivity" android:screenOrientation="portrait"> android:label="@string/app_name" &gt;
+<nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCYQ7cm1kF5P4m8vLsMutTWJn_9948ZoxI"><nothingHere/></meta-data>
+    <receiver android:exported="true" android:name="com.littlefluffytoys.littlefluffylocationlibrary.StartupBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.littlefluffytoys.littlefluffylocationlibrary.PassiveLocationChangedReceiver"><nothingHere/></receiver>
+        <service android:name="com.littlefluffytoys.littlefluffylocationlibrary.LocationBroadcastService"><nothingHere/></service>
+        </application>
+<permission android:name="com.vvvnob.android.vvvdenbosch.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.vvvnob.android.vvvdenbosch.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

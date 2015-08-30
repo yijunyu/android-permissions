@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.aiftah.qurankarim">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.Light">
+        <activity android:label="@string/app_name" android:name="com.aiftah.qurankarim.ImageDetailActivity" android:theme="@style/Theme.Holo.ActionBarOverlay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <fragment android:configChanges="orientation" android:label="@string/title_activity_image_detail_fragment" android:name="com.aiftah.mushaf.ImageDetailFragment"><nothingHere/></fragment>
+        <fragment android:label="@string/title_activity_menu" android:name="com.aiftah.mushaf.MenuFragment"><nothingHere/></fragment>
+    </application>
+</manifest>

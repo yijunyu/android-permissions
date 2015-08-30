@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.READ_SYNC_SETTINGS</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_SYNC_SETTINGS</name>
+  </permission>
+  <permission>
+    <name>android.permission.AUTHENTICATE_ACCOUNTS</name>
+  </permission>
+</permissions>

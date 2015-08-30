@@ -1,0 +1,67 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.wMedicinaEstetica">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="Medicina Estetica">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="Medicina Estetica" android:launchMode="singleTask" android:name=".MainNavigationActivity" android:screenOrientation="sensor" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="AppsgeyserBrowser" android:launchMode="singleTask" android:name="com.wMedicinaEstetica.VideoPlayerActivity" android:screenOrientation="sensor" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+                <android-data android:scheme="content"><nothingHere/></android-data>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="video/mpeg4"><nothingHere/></android-data>
+                <android-data android:mimeType="video/mp4"><nothingHere/></android-data>
+                <android-data android:mimeType="video/3gp"><nothingHere/></android-data>
+                <android-data android:mimeType="video/3gpp"><nothingHere/></android-data>
+                <android-data android:mimeType="video/3gpp2"><nothingHere/></android-data>
+                <android-data android:mimeType="video/webm"><nothingHere/></android-data>
+                <android-data android:mimeType="video/avi"><nothingHere/></android-data>
+                <android-data android:mimeType="application/sdp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+                <android-data android:mimeType="audio/x-mpegurl"><nothingHere/></android-data>
+                <android-data android:mimeType="audio/mpegurl"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.apple.mpegurl"><nothingHere/></android-data>
+                <android-data android:mimeType="application/x-mpegurl"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="App message" android:name=".MessageViewer"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.wMedicinaEstetica"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.wMedicinaEstetica"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".pull.PullServerController" android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.wMedicinaEstetica.push.PushGCMIntentService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.wMedicinaEstetica.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.wMedicinaEstetica.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+</manifest>

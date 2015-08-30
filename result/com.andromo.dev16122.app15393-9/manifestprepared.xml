@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.andromo.dev16122.app15393">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher_icon" android:label="@string/app_name" android:name="AndromoAcraApplication">
+        <activity android:label="@string/app_name" android:name=".Website9150" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website9153" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website9156" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website9158" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".Map1121" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name=".AudioFullScreenActivity" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Audio774" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".AndromoDashboardActivity" android:theme="@style/AndromoTheme.ActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    <receiver android:name=".AudioIntentReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".SoundboardIntentReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name=".SoundboardService">
+            <intent-filter>
+                <action android:name="com.andromo.dev16122.app15393.soundboard.action.PLAY"><nothingHere/></action>
+                <action android:name="com.andromo.dev16122.app15393.soundboard.action.PAUSE"><nothingHere/></action>
+                <action android:name="com.andromo.dev16122.app15393.soundboard.action.SKIP"><nothingHere/></action>
+                <action android:name="com.andromo.dev16122.app15393.soundboard.action.REWIND"><nothingHere/></action>
+                <action android:name="com.andromo.dev16122.app15393.soundboard.action.STOP"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.andromo.dev16122.app15393.soundboard.action.URL"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+            </intent-filter>
+        </service>
+        </application>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

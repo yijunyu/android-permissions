@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<permissions>
-  <permission>
-    <name>android.permission.WRITE_EXTERNAL_STORAGE</name>
-  </permission>
-  <permission>
-    <name>android.permission.RECORD_AUDIO</name>
-  </permission>
-</permissions>

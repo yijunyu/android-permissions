@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.southwire.partialReelCalculator">
+    <application android:allowBackup="true" android:icon="@drawable/ic_icon" android:label="@string/app_name" android:name=".Analytics" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.southwire.partialReelCalculator.Splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Cable_Types_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Enter_Single_Cable_Details" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Enter_Duplex_Cable_Details" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Enter_Triplex_Cable_Details" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Enter_Quadrulplex_Cable_Details" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Enter_FlangeDiameter_Reel_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Enter_TraverseDistance_Reel_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Enter_DrumDiameter_Reel_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favourite_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Add_DuplexCable_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Add_TripleCable_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Add_QuadruplexCable_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".SetReel_Dimensions_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".SetReel_Distances_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Add_SingleCable_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Choosetypes_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_CableTypes_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Edit_Cable_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_ReelTypes_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Add_FlangeDiameterReel_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Add_TraverseDistanceReel_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Add_DrumDiameterReel_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Favorite_Edit_Reel_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Help_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Faq_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

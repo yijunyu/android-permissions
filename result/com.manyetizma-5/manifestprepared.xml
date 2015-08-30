@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.manyetizma">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/Theme.AppCompat.Light">
+        <activity android:label="@string/app_name" android:name="com.manyetizma.LoginActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_action_detail" android:name="com.manyetizma.ActionDetailActivity" android:parentActivityName="com.actionbardemo.ActionListActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_action_list" android:name="com.manyetizma.ActionListActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_contact_list" android:name="com.manyetizma.ContactListActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_create_manyit" android:name="com.manyetizma.CreateManyitActivity" android:parentActivityName="com.actionbardemo.HomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_help" android:name="com.manyetizma.HelpActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_home" android:name="com.manyetizma.HomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manyit_detail" android:name="com.manyetizma.ManyitDetailActivity" android:parentActivityName="com.actionbardemo.HomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manyits_view" android:name="com.manyetizma.ManyitsViewActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_message_list" android:name="com.manyetizma.MessageListActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_messages" android:name="com.manyetizma.MessagesActivity" android:parentActivityName="com.actionbardemo.HomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_profile_photo_choose" android:name="com.manyetizma.ProfilePhotoChooseActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_send_message" android:name="com.manyetizma.SendMessageActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_settings" android:name="com.manyetizma.SettingsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_signup" android:name="com.manyetizma.SignupActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_user_detail_card" android:name="com.manyetizma.UserDetailCardActivity" android:parentActivityName="com.actionbardemo.HomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_about" android:name="com.manyetizma.AboutActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_photos" android:name="com.manyetizma.PhotosActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_splash" android:name="com.manyetizma.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_animation_player" android:name="com.manyetizma.AnimationPlayerActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_delete_account" android:name="com.manyetizma.DeleteAccountActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_profile" android:name="com.manyetizma.ProfileActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_contact_us" android:name="com.manyetizma.ContactUsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_image_viewer" android:name="com.manyetizma.ImageViewerActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_blocked_users" android:name="com.manyetizma.BlockedUsersActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_broadcast_reciever" android:name="com.manyetizma.BroadcastRecieverActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_notifications" android:name="com.manyetizma.NotificationsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_welcome" android:name="com.manyetizma.WelcomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manyit_image_chooser" android:name="com.manyetizma.ManyitImageChooserActivity"><nothingHere/></activity>
+    <receiver android:name="com.manyetizma.AppBroadcastReciever">
+            <intent-filter>
+                <action android:name="com.manyetizma.A_CUSTOM_INTENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.manyetizma.MyScheduledReceiver" android:process=":remote"><nothingHere/></receiver>
+        <receiver android:name="com.manyetizma.Autostart" android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.manyetizma.StarterService" android:process=":remote"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    </manifest>

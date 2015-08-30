@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.girlgames.KawaiiDressUp_JP">
+    <application android:icon="@drawable/icon" android:label="Kawaii Dress Up">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="Kawaii Dress Up" android:name="MainActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="tv.ouya.intent.category.GAME"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.am.pumper.activities.AdActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.am.pumper.activities.AMIActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <meta-data android:name="com.am.adlib.appId" android:value="android.32271.googleplay"><nothingHere/></meta-data>
+        <meta-data android:name="com.am.ammob.netId" android:value="3"><nothingHere/></meta-data>
+        <service android:name="com.am.pumper.services.EDService"><nothingHere/></service>
+        <service android:name="com.am.pumper.services.FocusService"><nothingHere/></service>
+    </application>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+</manifest>

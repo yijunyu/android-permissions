@@ -1,0 +1,73 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:largeHeap="true" package="com.austereo.mix945">
+    <application android:icon="@drawable/launcher" android:label="@string/app_name" android:name="com.sca.base.MetroMainApplication" android:theme="@style/Theme.NoTitle">
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name=".Mix945IntroActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.InitialChangeStationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.FacebookSignInActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.OnAirActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.ScheduleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.PodcastsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.PodcastsShowActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.UploadPhotoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.NewsletterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.WebPageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.NewsWebPageActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.ChangeStationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.MetroMessageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.RecentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.SocialActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.FacebookActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.TwitterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.AlarmActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.AlarmClockActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.AlarmRepeatActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.ReminderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.ContactActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.DataUsageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.NewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.MoreAppsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.sca.base.SonglActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:name="com.austereo.mix945.SCAStreamingIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.austereo.mix945.ReminderReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.austereo.mix945.AlarmReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.austereo.mix945.SCAGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.austereo.mix945"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.commonsware.cwac.locpoll.LocationPoller"><nothingHere/></receiver>
+        <receiver android:name="com.sca.base.receiver.LocationReceiver"><nothingHere/></receiver>
+        <service android:exported="false" android:name="com.austereo.mix945.SCAStreamingService">
+            <intent-filter>
+                <action android:name="com.austereo.mix945.action.PLAY"><nothingHere/></action>
+                <action android:name="com.austereo.mix945.action.STOP"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.commonsware.cwac.locpoll.LocationPollerService"><nothingHere/></service>
+        </application>
+<permission android:name="com.austereo.mix945.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.austereo.mix945.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    </manifest>

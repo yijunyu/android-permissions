@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>com.jfvsoft.android.urmemulator.permission.Access</name>
+  </permission>
+</permissions>

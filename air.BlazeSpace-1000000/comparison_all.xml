@@ -1,6 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.SET_ORIENTATION</permission>
-  </over-specification>
-  <under-specification/>
-</comparison>

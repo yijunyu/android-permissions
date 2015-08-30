@@ -1,0 +1,15 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.WRITE_CONTACTS</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.READ_USER_DICTIONARY</permission>
+    <permission>android.permission.READ_SOCIAL_STREAM</permission>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+  </under-specification>
+</comparison>

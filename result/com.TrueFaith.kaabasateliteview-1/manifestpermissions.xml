@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>com.TrueLight.maptest.permission.MAPS_RECEIVE</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+</permissions>

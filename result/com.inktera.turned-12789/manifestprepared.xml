@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.inktera.turned">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.versentbooks.core.Application" android:theme="@style/InkteraThemeDark">
+        <activity android:launchMode="singleTask" android:name="com.pf.inktera.activities.store.BookstoreActivity" android:theme="@style/InkteraThemeLight" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pf.inktera.activities.store.BookDetailActivity" android:theme="@style/InkteraThemeLight">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+            <android-data android:host="@string/api_domain" android:scheme="market"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.pf.inktera.activities.store.VoiceChooserActivity" android:theme="@style/InkteraThemeDark"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.store.MoreByActivity" android:theme="@style/InkteraThemeLight"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.store.MoreRecommendedActivity" android:theme="@style/InkteraThemeLight"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.store.SearchActivity" android:theme="@style/InkteraThemeLight">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/store_searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.pf.inktera.activities.account.LoginActivity"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.LostPasswordActivity"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.CreateNewAccountActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.LicenseAgreementActivity"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.EditAccountInfoActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.EditBillingInfoActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.EditBillingInfoSplashActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.UpdateBillingInfoActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.RegisterAndBillingActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.AccountActivity"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.PrivacyPolicyActivity"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.AboutActivity"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.BalanceHistoryActivity"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.HelpActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.account.LoginAdobeActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.store.StoreUpdateBillingActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.rmsdk.ContentsAndMarksActivity"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.rmsdk.EditNoteActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.pf.inktera.activities.rmsdk.RmsdkReaderActivity" android:theme="@style/InkteraThemeLight.WithOverlay"><nothingHere/></activity>
+        <activity android:name="com.pf.inktera.activities.rmsdk.RmsdkSearchActivity"><nothingHere/></activity>
+    <meta-data android:name="AA_DB_NAME" android:value="local_data.db"><nothingHere/></meta-data>
+        <meta-data android:name="AA_DB_VERSION" android:value="1"><nothingHere/></meta-data>
+        <meta-data android:name="android.app.default_searchable" android:value="com.pf.inktera.activities.store.SearchActivity"><nothingHere/></meta-data>
+        <service android:name="com.versentbooks.core.DownloadService" android:process=":Download"><nothingHere/></service>
+        <service android:name="com.versentbooks.core.BackgroundNetworkService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

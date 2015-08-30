@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.co.a_tm.android.plus_tiger_lily">
+    <application android:icon="@drawable/theme_icon" android:label="@string/theme_title">
+        <activity android:label="@string/theme_title" android:name="jp.co.a_tm.android.plus_tiger_lily.PacksActivity">
+            <intent-filter>
+                <action android:name="jp.co.a_tm.launcher.THEMES"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="jp.co.a_tm.android.launcher.icons.ACTION_PICK_ICON"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/theme_icon" android:label="@string/theme_title" android:name="jp.co.a_tm.android.plus_tiger_lily.HomeInstallCheckActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/theme_title" android:name="jp.co.a_tm.android.launcher.auth.AuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <receiver android:icon="@drawable/widget_icon" android:label="@string/widget_title" android:name="jp.co.a_tm.android.plus_tiger_lily.HomeWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget"><nothingHere/></meta-data>
+        </receiver>
+        <service android:name="jp.co.a_tm.android.plus_tiger_lily.HomeWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"><nothingHere/></meta-data>
+        </service>
+    </application>
+<uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

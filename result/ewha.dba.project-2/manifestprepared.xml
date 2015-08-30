@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ewha.dba.project">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".second_page"><nothingHere/></activity>
+        <activity android:name=".registration"><nothingHere/></activity>
+        <activity android:name=".TabFirst"><nothingHere/></activity>
+        <activity android:name=".TabSecond"><nothingHere/></activity>
+        <activity android:name=".TabThird"><nothingHere/></activity>
+        <activity android:name=".TabMain"><nothingHere/></activity>
+        <activity android:name=".TabFourth"><nothingHere/></activity>
+        <activity android:name=".Add_date"><nothingHere/></activity>
+    </application>
+</manifest>

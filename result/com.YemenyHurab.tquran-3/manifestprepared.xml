@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.YemenyHurab.tquran">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/quran" android:theme="@style/AppTheme">
+        <activity android:label="@string/quran" android:name="com.YemenyHurab.tquran.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_setting_class" android:name="com.YemenyHurab.tquran.Setting_class"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_setting_class" android:name="com.YemenyHurab.tquran.Setting_class2"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_sower_list" android:name="com.YemenyHurab.tquran.SowerList"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Fragment_1"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Fragment_2"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Fragment_3"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Fragment_4Start"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Quran_Page"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Quran_Page2"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Quran_Page3"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Quran_Page4"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Fragment_5End"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Search"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_view_pager_of_quran" android:name="com.YemenyHurab.tquran.ViewPagerOfQuran"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.zMasder_quran"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Instructions"><nothingHere/></activity>
+        <activity android:name="com.YemenyHurab.tquran.Newapp"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

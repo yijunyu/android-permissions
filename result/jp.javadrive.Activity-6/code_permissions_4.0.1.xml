@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/jp/javadrive/Activity/MainActivity.java</file>
+    <line>305</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

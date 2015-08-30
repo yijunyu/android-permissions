@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rkadvaith.clockapp">
+    <application android:icon="@drawable/icon" android:label="@string/app_label">
+        <activity android:name=".DigitalClockTime" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".alarmclock.AlarmClock" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".AnalogClockTime" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/settings" android:name=".alarmclock.SettingsActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/set_alarm" android:name=".alarmclock.SetAlarm" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".alarmclock.AlarmAlert" android:taskAffinity="" android:theme="@style/alarm_alert"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".alarmclock.AlarmAlertFullScreen" android:taskAffinity=""><nothingHere/></activity>
+        <provider android:authorities="com.rkadvaith.clockapp.alarmclock" android:name=".alarmclock.AlarmProvider"><nothingHere/></provider>
+        <receiver android:name="com.rkadvaith.clockapp.alarmclock.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.rkadvaith.clockapp.alarmclock.ALARM_ALERT"><nothingHere/></action>
+                <action android:name="alarm_killed"><nothingHere/></action>
+                <action android:name="cancel_snooze"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.rkadvaith.clockapp.alarmclock.AlarmInitReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.TIME_SET"><nothingHere/></action>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.LOCALE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name=".alarmclock.AlarmKlaxon">
+            <intent-filter>
+                <action android:name="com.rkadvaith.clockapp.alarmclock.ALARM_ALERT"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.com.rkadvaith.clockapp.alarmclock.AlarmPreferencession.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

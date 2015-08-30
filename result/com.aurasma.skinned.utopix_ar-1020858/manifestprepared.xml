@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.aurasma.skinned.utopix_ar">
+    <application android:allowTaskReparenting="true" android:icon="@drawable/icon" android:label="UtopiX AR">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aurasma.template.SplashActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.SetupActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/aurasma_loginActivityName" android:name="com.aurasma.aurasma.LoginActivity"><nothingHere/></activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboardHidden|orientation" android:label="@string/aurasma_app_name" android:launchMode="singleTask" android:name="com.aurasma.aurasma.trackingar.TrackingActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.trackingar.WebActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.trackingar.ScreenshotActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/aurasma_SelectAugmentationActivity" android:launchMode="singleTop" android:name="com.aurasma.aurasma.addaura.SelectAugmentationActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/aurasma_SelectAugmentationActivity" android:launchMode="singleTop" android:name="com.aurasma.aurasma.addaura.AddNameAndChannelActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/aurasma_AddChannelActivityName" android:launchMode="singleTop" android:name="com.aurasma.aurasma.addaura.AddChannelActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/aurasma_ExistingChannelActivity" android:launchMode="singleTop" android:name="com.aurasma.aurasma.addaura.ExistingChannelActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.addaura.PositionAuraActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/aurasma_ChannelsTabBarName" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.ChannelsTabBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.MeTab"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.SubscribedListView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.ChannelsListView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.PopularListView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.RecommendedListView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.RecentListView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.NearbyListView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.SearchActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.MyChannelsListView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.RegisterActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.aurasma.aurasma.channellist.ChannelInfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.anywhereslist.MyAnywheresList"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.anywhereslist.SuperListView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aurasma.aurasma.happeningmap.HappeningMap" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/aurasma_scrollHelpActivity" android:launchMode="singleTop" android:name="com.aurasma.aurasma.help.ScrollHelpActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/aurasma_helpMainActivity" android:launchMode="singleTop" android:name="com.aurasma.aurasma.help.HelpMainActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <provider android:authorities="com.aurasma.skinned.utopix_ar.local" android:name="com.aurasma.aurasma.help.LocalFileContentProvider"><nothingHere/></provider>
+        <receiver android:name="com.aurasma.aurasma.application.ConnectionStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+    </application>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

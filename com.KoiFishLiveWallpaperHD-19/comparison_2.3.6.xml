@@ -1,9 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.SET_WALLPAPER</permission>
-    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
-  </over-specification>
-  <under-specification>
-    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
-  </under-specification>
-</comparison>

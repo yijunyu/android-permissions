@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/netveneta/grandeitalia/MainActivity.java</file>
+    <line>74</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/netveneta/grandeitalia/MainActivity.java</file>
+    <line>66</line>
+    <permissions/>
+  </call>
+</calls>

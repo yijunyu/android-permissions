@@ -1,0 +1,94 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="co.uk.roseforward.MedNote">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:label="@string/app_name" android:name=".SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="co.uk.roseforward.MedNote.MAINACTIVITY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_add_new" android:name=".AddNew" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="co.uk.roseforward.MedNote.ADDNEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_list_meds" android:name=".ListMeds" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="co.uk.roseforward.MedNote.LISTDRUGS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_new_medicine" android:name=".NewMedicine" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="co.uk.roseforward.MedNote.DATABASE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_recent_times" android:name=".RecentTimes" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="co.uk.roseforward.MedNote.RECENT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_edit_drug" android:name=".EditDrug" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="co.uk.roseforward.MedNote.EDITDRUGS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_med_profile" android:name=".MedProfile" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manual" android:name=".Manual" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manual_two" android:name=".ManualTwo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manual_three" android:name=".ManualThree" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_about_me_set" android:name=".AboutMeSet" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_about_med_note" android:name=".AboutMedNote" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_profile_taken" android:name=".ProfileTaken" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_edit_taken" android:name=".EditTaken" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_widget_add_new" android:name=".WidgetAddNew" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="co.uk.roseforward.MedNote.WADD"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_widget_recent_times" android:name=".WidgetRecentTimes" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="co.uk.roseforward.MedNote.WIDRECENT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_about_me_profile" android:name=".AboutMeProfile" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_impactivity" android:name=".Impactivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_expoctivity" android:name=".Expoctivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manual_four" android:name=".ManualFour" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manual_five" android:name=".ManualFive" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_disclaimer" android:name=".Disclaimer" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manual_six" android:name=".ManualSix" android:screenOrientation="portrait"><nothingHere/></activity>
+    <receiver android:label="@string/title_activity_widget" android:name=".Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetpro"><nothingHere/></meta-data>
+        </receiver>
+        </application>
+<compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="normal"><nothingHere/></screen>
+    </compatible-screens>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

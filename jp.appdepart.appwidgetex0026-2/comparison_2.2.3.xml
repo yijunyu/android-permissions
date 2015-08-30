@@ -1,6 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.SET_WALLPAPER</permission>
-  </over-specification>
-  <under-specification/>
-</comparison>

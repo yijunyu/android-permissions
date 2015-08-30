@@ -1,0 +1,142 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.girlsdateforfree">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.girlsdateforfree.DatingApplication" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:alwaysRetainTaskState="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.girlsdateforfree.activities.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.girlsdateforfree.activities.RegisterUserActivity" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.girlsdateforfree.activities.MailboxSendMessageActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:name="com.girlsdateforfree.activities.ActivityActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:name="com.girlsdateforfree.activities.SettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:name="com.girlsdateforfree.activities.Homepage"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:name="com.girlsdateforfree.activities.ChatMainActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.MailboxMessageActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.MailboxActivity"><nothingHere/></activity>
+        <activity android:label="@string/payment_title" android:name="com.dating.payment.ui.activity.InAppPaymentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/payment_title" android:name="com.dating.payment.ui.activity.PaymentWrapperActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.ReceivedPhotosActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.FacebookAlbumPhotosActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.FacebookAlbumsActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.UserListActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.GeoSearchMapActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.GeoSearchResultsActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.BlacklistListActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.ViewPhotoActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.TermsActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.UserPhotosActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.MoreActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.RoomListActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:name="com.girlsdateforfree.activities.ChatRoomActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.FriendListActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.UserInfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.AdminInfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.ActiveChatsActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.ChatRoomUserListActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.DevConsole"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.HotornotActivity"><nothingHere/></activity>
+        <activity android:alwaysRetainTaskState="true" android:clearTaskOnLaunch="true" android:configChanges="locale|orientation" android:launchMode="singleTask" android:name="com.girlsdateforfree.activities.MainTabActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="*girlsdateforfree-app.com" android:pathPrefix="/amarket.php" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*girlsdateforfree-app.com" android:pathPrefix="/amarket.php" android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="*girlsdateforfree.com" android:pathPrefix="/amarket.php" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*girlsdateforfree.com" android:pathPrefix="/amarket.php" android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.SearchUserActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.SearchResultsGridActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.SearchResultsActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.ZongPaymentActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.EditProfileMainActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.EditProfileLifestyleActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.EditProfilePersonalityActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.EditProfileProfileActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.EditProfileAboutMeActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.MigrationActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.FacebookFriendsListActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.PreferencesActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.ActivityContactUs"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.PushSettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.ActivityCusualFlrtDialog" android:theme="@style/casualFlirtBackgroundDialog"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.FacebookActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.ActivityFreeTrialDialog"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:name="com.girlsdateforfree.activities.PaymentSettingsActivity"><nothingHere/></activity>
+        <activity android:name="com.urbanairship.actions.ActionActivity"><nothingHere/></activity>
+        <activity android:exported="false" android:name="com.urbanairship.actions.LandingPageActivity" android:parentActivityName="com.girlsdateforfree.activities.LoginActivity">
+            <intent-filter>
+                <action android:name="com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.girlsdateforfree.activities.LoginActivity"><nothingHere/></meta-data>
+            </activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_map_key"><nothingHere/></meta-data>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d6b6e2245500"><nothingHere/></meta-data>
+        <meta-data android:name="APP_NAME" android:value="com.girlsdateforfree"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <provider android:authorities="com.girlsdateforfree.urbanairship.provider" android:exported="true" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider" android:permission="com.girlsdateforfree.permission.UA_DATA"><nothingHere/></provider>
+        <receiver android:exported="true" android:name="com.girlsdateforfree.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.AdX.tag.AdXAppTracker">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.girlsdateforfree"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.girlsdateforfree.receiver.UrbanAirshipIntentReceiver"><nothingHere/></receiver>
+    <service android:name="com.girlsdateforfree.services.LocationTrackingService"><nothingHere/></service>
+        <service android:name="com.girlsdateforfree.services.IMBService"><nothingHere/></service>
+        <service android:name="com.girlsdateforfree.services.DownloadTimeTrackingService"><nothingHere/></service>
+        <service android:name="com.girlsdateforfree.services.PaymentService"><nothingHere/></service>
+        <service android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        <service android:name="com.urbanairship.actions.ActionService"><nothingHere/></service>
+        </application>
+<permission android:name="com.girlsdateforfree.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.girlsdateforfree.permission.UA_DATA" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="com.girlsdateforfree.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.girlsdateforfree.permission.UA_DATA"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,7 +1,0 @@
-<comparison>
-  <over-specification/>
-  <under-specification>
-    <permission>android.permission.VIBRATE</permission>
-    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
-  </under-specification>
-</comparison>

@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="prox.clock.analog_box_l_1">
+    <application android:icon="@drawable/icon_l_1" android:label="@string/app_name">
+        <activity android:label="@string/app_config" android:name=".ConfigClass">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:label="@string/app_name" android:name=".SimpleClockClass">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="Time Events Receiver" android:name=".TimeEventsReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:name=".OnBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.WALLPAPER_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+                <action android:name="android.intent.action.SCREEN_ON"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/app_name" android:name=".SimpleClockService"><nothingHere/></service>
+    </application>
+</manifest>

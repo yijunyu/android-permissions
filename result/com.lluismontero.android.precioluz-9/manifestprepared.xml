@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.lluismontero.android.precioluz">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.lluismontero.android.precioluz.application.CustomApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.lluismontero.android.precioluz.activities.StartActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.lluismontero.android.precioluz.activities.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.lluismontero.android.precioluz.activities.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.lluismontero.android.precioluz.activities.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.lluismontero.android.precioluz.activities.HelpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="953d076de448da20e9a7634e1a85fc5f28f4bf4e"><nothingHere/></meta-data>
+        <provider android:authorities="com.lluismontero.android.precioluz.provider" android:exported="false" android:name="com.lluismontero.android.precioluz.providers.InformationProvider" android:syncable="true"><nothingHere/></provider>
+        <receiver android:enabled="true" android:exported="false" android:name="com.lluismontero.android.precioluz.receivers.AlarmReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.lluismontero.android.precioluz.receivers.ResidentNotificationReceiver"><nothingHere/></receiver>
+        <receiver android:label="@string/widget_title_simple" android:name="com.lluismontero.android.precioluz.widget.SimpleAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/simple_appwidget_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="@string/widget_title_current" android:name="com.lluismontero.android.precioluz.widget.CurrentPriceAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/current_price_app_widget_info"><nothingHere/></meta-data>
+        </receiver>
+    <service android:name="com.lluismontero.android.precioluz.services.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"><nothingHere/></meta-data>
+        </service>
+        <service android:exported="true" android:name="com.lluismontero.android.precioluz.services.SyncService" android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter"><nothingHere/></meta-data>
+        </service>
+        </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    </manifest>

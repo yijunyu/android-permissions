@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.starride.android">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="StarrideClientApp" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.starride.android.SplashActivity" android:screenOrientation="portrait" android:theme="@style/LaunchTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.HomeScreen" android:screenOrientation="portrait" android:theme="@style/StarrideNormalTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.NewRideActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.ContactActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.HistoryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.MyRidesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.NotificationListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.NotificationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.ProfileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.SettingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.RegActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.SummaryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.RatingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.RegTandCWebViewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenSize|smallestScreenSize|uiMode" android:name="com.starride.android.AnimateMainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA2ahhX8CnpoxSzAK9dZo2Hc8cCgetLRtQ"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.starride.android.gcm.GCMReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.starride.android"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.starride.android.gcm.GCMIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.starride.android.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:largestWidthLimitDp="540"><nothingHere/></supports-screens>
+    <uses-permission android:name="com.starride.android.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

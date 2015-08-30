@@ -1,0 +1,17 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECORD_AUDIO</permission>
+    <permission>android.permission.RECORD_VIDEO</permission>
+    <permission>android.permission.WRITE_SECURE_SETTINGS</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.BLUETOOTH_ADMIN</permission>
+    <permission>android.permission.FLASHLIGHT</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.WRITE_SETTINGS</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.SEND_SMS</permission>
+  </under-specification>
+</comparison>

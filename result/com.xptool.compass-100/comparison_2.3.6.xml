@@ -1,0 +1,12 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.WRITE_SETTINGS</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.READ_LOGS</permission>
+    <permission>android.permission.MOUNT_UNMOUNT_FILESYSTEMS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+  </under-specification>
+</comparison>

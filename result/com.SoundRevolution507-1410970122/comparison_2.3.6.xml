@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.SET_WALLPAPER</permission>
+  </under-specification>
+</comparison>

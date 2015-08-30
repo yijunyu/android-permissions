@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="lv.dot44.latvenergo">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:logo="@drawable/ic_menu_home_default" android:name="lv.dot44.latvenergo.LEApp" android:theme="@style/Theme.Styled">
+        <activity android:label="@string/app_name" android:name="lv.dot44.latvenergo.MainActivity" android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_add_new" android:name="lv.dot44.latvenergo.AddNewActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lv.dot44.latvenergo.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_view_meter" android:name="lv.dot44.latvenergo.ViewMeterActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lv.dot44.latvenergo.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_statistics" android:name="lv.dot44.latvenergo.StatisticsActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lv.dot44.latvenergo.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_contact" android:name="lv.dot44.latvenergo.ContactActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lv.dot44.latvenergo.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_edit_meter" android:name="lv.dot44.latvenergo.EditMeterActivity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_statistics_meter" android:name="lv.dot44.latvenergo.StatisticsMeterActivity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_flash2" android:name="lv.dot44.latvenergo.Flash2Activity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_chart" android:name="lv.dot44.latvenergo.ChartActivity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select" android:name="lv.dot44.latvenergo.SelectActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lv.dot44.latvenergo.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_reminders" android:name="lv.dot44.latvenergo.Reminders2Activity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_reminders" android:name="lv.dot44.latvenergo.RemindersActivity" android:screenOrientation="sensorPortrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lv.dot44.latvenergo.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_sms" android:name="lv.dot44.latvenergo.SMSActivity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_molnija" android:name="lv.dot44.latvenergo.MolnijaActivity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="lv.dot44.latvenergo.AlarmStarter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:description="@string/a5_notify_service_description" android:icon="@drawable/ic_launcher" android:label="@string/a5_notify_service_label" android:logo="@drawable/ic_launcher" android:name="lv.dot44.latvenergo.ReminderService"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

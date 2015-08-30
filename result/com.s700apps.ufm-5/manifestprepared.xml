@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.s700apps.ufm">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="SplashActivity" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="AboutUfmActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="UfmBroadcastersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="UfmScheduleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="UfmFrequenciesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="NewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="NewsDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="FavoriteActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="FavoriteDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="ContactUfmActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="ShakeListenerTutorialActivity" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <receiver android:enabled="true" android:name="com.s700apps.ufm.utilities.CallBroadReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+<uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

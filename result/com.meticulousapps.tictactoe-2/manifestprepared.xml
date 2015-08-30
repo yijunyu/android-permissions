@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.meticulousapps.tictactoe">
+    <application android:icon="@drawable/tictactoeicon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="TicTacToeSplashActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="TicTacToeMenuActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="TicTacToeActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="TicTacToeGameActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="TicTacToeOptionsActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="TicTacToeAboutActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="TicTacToeResultActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+    </application>
+</manifest>

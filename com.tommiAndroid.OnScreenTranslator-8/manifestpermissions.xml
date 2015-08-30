@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<permissions>
-  <permission>
-    <name>android.permission.SYSTEM_ALERT_WINDOW</name>
-  </permission>
-  <permission>
-    <name>android.permission.INTERNET</name>
-  </permission>
-</permissions>

@@ -1,0 +1,97 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="pk.chalo">
+    <application android:allowBackup="true" android:allowTaskReparenting="false" android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation|screenSize" android:debuggable="false" android:icon="@drawable/launcher" android:label="@string/app_name" android:largeHeap="true" android:name="Navigator" android:theme="@style/Theme.Sherlock">
+        <activity android:name=".SplashActivity" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"><nothingHere/></activity>
+        <activity android:name=".SearchHouses"><nothingHere/></activity>
+        <activity android:name=".LoginActivityMain" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".LoginActivityChalo" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity> /&gt;
+<activity android:name=".RegisterActivity" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden|stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:name=".SearchRestaurants"><nothingHere/></activity>
+        <activity android:name=".SearchBanks"><nothingHere/></activity>
+        <activity android:name=".AddPlaceMain"><nothingHere/></activity>
+        <activity android:name=".MyPlaces"><nothingHere/></activity>
+        <activity android:name=".AddHouse"><nothingHere/></activity>
+        <activity android:name=".AddFlat"><nothingHere/></activity>
+        <activity android:name=".AddRestaurant"><nothingHere/></activity>
+        <activity android:name=".AddOffice"><nothingHere/></activity>
+        <activity android:name=".AddBank"><nothingHere/></activity>
+        <activity android:name=".AddEducational"><nothingHere/></activity>
+        <activity android:name=".AddHospital"><nothingHere/></activity>
+        <activity android:name=".AddHotel"><nothingHere/></activity>
+        <activity android:name=".AddShops"><nothingHere/></activity>
+        <activity android:name=".AddServices"><nothingHere/></activity>
+        <activity android:name=".AddPublic"><nothingHere/></activity>
+        <activity android:name=".SearchPetrolPumps"><nothingHere/></activity>
+        <activity android:name=".SearchPoliceStations"><nothingHere/></activity>
+        <activity android:name=".SearchHospitals"><nothingHere/></activity>
+        <activity android:name=".SearchMasjid"><nothingHere/></activity>
+        <activity android:name=".TripStatusList"><nothingHere/></activity>
+        <activity android:name=".RestaurantPage"><nothingHere/></activity>
+        <activity android:name=".RestaurantDetails"><nothingHere/></activity>
+        <activity android:name=".about_screen"><nothingHere/></activity>
+        <activity android:name=".Movies"><nothingHere/></activity>
+        <activity android:name=".MessageActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:name=".feedback_screen" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden|stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:name=".ShowListOfPOIs"><nothingHere/></activity>
+        <activity android:name=".MainCategoryAbstract"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name=".Maps" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name=".Maps_NavigationScreen"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".AddPlaceNew" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden|stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".EditPlace" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden|stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:name=".searchHousesNew"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".CheckIn" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden|stateAlwaysVisible"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAAZgRLm7e0erEtI95_bQZ-tGQaC2HDsRs"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/global_tracker"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="pk.chalo"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"><nothingHere/></receiver>
+        <receiver android:name=".Broadcastreceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name=".LocationService"><nothingHere/></service>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+        <service android:name=".WidgetService"><nothingHere/></service>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="pk.chalo.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="pk.chalo.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="pk.chalo.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PROFILE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="pk.chalo.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

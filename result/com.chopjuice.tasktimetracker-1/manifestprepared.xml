@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.chopjuice.tasktimetracker">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_setup" android:name="com.chopjuice.tasktimetracker.SetupActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_timer" android:launchMode="singleTask" android:name="com.chopjuice.tasktimetracker.TimerActivity" android:parentActivityName="com.chopjuice.tasktimetracker.SetupActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.chopjuice.tasktimetracker.SetupActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_stats" android:name="com.chopjuice.tasktimetracker.StatsActivity" android:parentActivityName="com.chopjuice.tasktimetracker.SetupActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.chopjuice.tasktimetracker.SetupActivity"><nothingHere/></meta-data>
+        </activity>
+        <service android:label="@string/timer_service_label" android:name="com.chopjuice.tasktimetracker.TimerService"><nothingHere/></service>
+        <service android:label="@string/ringtone_service_label" android:name="com.chopjuice.tasktimetracker.RingtoneService"><nothingHere/></service>
+        <service android:label="@string/hold_timer_service_label" android:name="com.chopjuice.tasktimetracker.HoldTimerService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

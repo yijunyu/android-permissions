@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.zillians.vedr">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.zillians.vedr.VideoEventDataRecorder" android:theme="@style/VEDRTheme.NoTitle">
+        <activity android:label="@string/app_name" android:name="com.zillians.vedr.ui.EulaActivity" android:theme="@style/VEDRTheme.NoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.zillians.vedr.ui.MainMenuActivity"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.account.FacebookAuthFlow" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.account.GoogleAuthFlow" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.VideoEventDataRecorderActivity" android:screenOrientation="landscape" android:theme="@style/VEDRPageIndicatorDefaults"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.SettingActivity" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.GoogleAuthWithWebActivity" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.zillians.vedr.ui.FileBrowserActivity" android:theme="@style/VEDRActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.MapViewActivity" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.account.AuthMenuActivity" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.account.AuthByPhoneActivity1" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.account.AuthByPhoneActivity2" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.account.AuthGoogleActivity" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.DisplayEula" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.SelectFeatures"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.qrcode.QRCodeScanActivity" android:theme="@style/VEDRTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name="com.zillians.vedr.ui.ExplainActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDG_sbTThTnbtm9-dpaNYx1aos0lgIk_V0 "><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="6d1f6c55d599d4e00595aad6d8c54dee03b59857"><nothingHere/></meta-data>
+&gt;
+<meta-data android:name="HYXEN_KEY" android:value="c8bbc24c1ad8289869903f8ebf5e82303d9e3639"><nothingHere/></meta-data>
+        <meta-data android:name="com.kii.DISTRIBUTION_ID" android:value="1a404d502c33328f"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+        <receiver android:name="com.commonsware.cwac.wakeful.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="com.commonsware.cwac.wakeful" android:resource="@xml/wakeful"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.hyxen.mobilelocus.MobileLocusReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+&gt;
+<receiver android:enabled="true" android:exported="true" android:name="com.kii.cloud.collector.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+                <action android:name="android.intent.action.SCREEN_OFF"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.zillians.vedr.system.service.BackgroundService"><nothingHere/></service>
+        </application>
+<permission android:name="com.zillians.vedr.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.zillians.vedr.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

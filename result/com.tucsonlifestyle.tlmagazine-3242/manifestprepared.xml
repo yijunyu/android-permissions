@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tucsonlifestyle.tlmagazine">
+    <application android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.modernluxury.ModernLuxuryApplication" android:theme="@android:style/Theme.Black">
+        <activity android:name="com.modernluxury.StorageSelectionActivity" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.modernluxury.MagazineActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.PageActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/add_favorite" android:name="com.modernluxury.AddFavoriteActivity" android:screenOrientation="@integer/orientation"><nothingHere/></activity>
+        <activity android:label="@string/advertisers" android:name="com.modernluxury.AdvertisersActivity" android:screenOrientation="@integer/orientation"><nothingHere/></activity>
+        <activity android:label="@string/contents" android:name="com.modernluxury.ContentsActivity" android:screenOrientation="@integer/orientation"><nothingHere/></activity>
+        <activity android:label="@string/my_favorites" android:name="com.modernluxury.MyFavoritesActivity" android:screenOrientation="@integer/orientation"><nothingHere/></activity>
+        <activity android:label="@string/search" android:name="com.modernluxury.SearchActivity" android:screenOrientation="@integer/orientation"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.DownloadDlgActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.ArticleActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.ThumbPageActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.NoSDCardActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.RemoveIssuesActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.LoginActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.LargePDFActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.HelpActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.MediaListActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.InterstitialActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.modernluxury.SubscriptionActivity" android:screenOrientation="@integer/orientation" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

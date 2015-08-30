@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.galaxy.cliffjumping_slideshow">
+    <application android:icon="@drawable/icon" android:label="@string/app_label" android:theme="@android:style/Theme.Black">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".OSLWTabs">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".OSLWMyStore"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".OSLWPubStore">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".OSLWDetail"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".OSLWPreview"><nothingHere/></activity>
+        <activity android:label="@string/signup" android:name=".OSLWRegister"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".OSLWPrompt" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Launcher" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".OSLWWatch"><nothingHere/></activity>
+        <activity android:exported="true" android:name=".OSLWSettings" android:title="@string/setting"><nothingHere/></activity>
+        <activity android:exported="true" android:name=".OSLWSettingsBackground" android:title="@string/setting"><nothingHere/></activity>
+        <activity android:exported="true" android:name=".OSLWSettingsPhoto" android:title="@string/setting"><nothingHere/></activity>
+        <activity android:exported="true" android:name=".OSLWSettingsPhotoSource" android:title="@string/setting"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".OSLWSelectFolder" android:title="@string/app_name"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".OSLWSelectPhotoFolder" android:title="@string/photo_folder_select"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/selectactivity" android:name=".OSLWSelectActivity" android:title="@string/selectactivity"><nothingHere/></activity>
+        <activity android:name=".CoverFlowExample" android:title="@string/app_name"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.airpush.android.PushAds"><nothingHere/></activity>
+        <receiver android:enabled="true" android:name=".OSLWReceiver">
+            <intent-filter>
+                <action android:name="com.galaxy.cliffjumping_slideshow.OSLWReceiver"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name=".OSLWShutdown">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.airpush.android.UserDetailsReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.airpush.android.MessageReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.airpush.android.DeliveryReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.galaxy.cliffjumping_slideshow.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/title" android:name=".OSLWService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/ownskin"><nothingHere/></meta-data>
+        </service>
+        <service android:name="com.airpush.android.PushService">
+            <intent-filter>
+                <action android:name="com.airpush.android.PushServiceStart50906"><nothingHere/></action>
+            </intent-filter>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

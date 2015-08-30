@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ua.nslteam.cossackglorylite">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="ua.nslteam.cossackglorylite.CG3Dots" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="ua.nslteam.cossackglorylite.game.CGGameActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="CGMain" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="CGTutorialActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="ua.nslteam.cossackglorylite.game.CGActivityOver" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="ua.nslteam.cossackglorylite.CGVKLoginActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+    <service android:name="CGMusic"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

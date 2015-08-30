@@ -1,0 +1,17 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.READ_SYNC_SETTINGS</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.RECORD_AUDIO</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+    <permission>android.permission.WRITE_CONTACTS</permission>
+  </under-specification>
+</comparison>

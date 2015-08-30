@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="umalfadelschool.com">
+  <application android:icon="@drawable/ic_launcher" android:label="&#x645;&#x62F;&#x631;&#x633;&#x647; &#x623;&#x645; &#x627;&#x644;&#x641;&#x636;&#x644;">
+    <activity android:configChanges="keyboardHidden|orientation" android:label="&#x645;&#x62F;&#x631;&#x633;&#x647; &#x623;&#x645; &#x627;&#x644;&#x641;&#x636;&#x644;" android:name="com.genuitec.mobione.build.template.android.Main" android:screenOrientation="unspecified">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN">
+          <nothingHere/>
+        </action>
+        <category android:name="android.intent.category.LAUNCHER">
+          <nothingHere/>
+        </category>
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="keyboardHidden|orientation" android:label="&#x645;&#x62F;&#x631;&#x633;&#x647; &#x623;&#x645; &#x627;&#x644;&#x641;&#x636;&#x644;" android:name="com.genuitec.mobione.android.PlayVideoActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+      <intent-filter>
+        <nothingHere/>
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="keyboardHidden|orientation" android:label="&#x645;&#x62F;&#x631;&#x633;&#x647; &#x623;&#x645; &#x627;&#x644;&#x641;&#x636;&#x644;" android:name="com.phonegap.plugins.pdf.ProxyActivity" android:screenOrientation="unspecified">
+      <intent-filter>
+        <nothingHere/>
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="keyboardHidden|orientation" android:label="&#x645;&#x62F;&#x631;&#x633;&#x647; &#x623;&#x645; &#x627;&#x644;&#x641;&#x636;&#x644;" android:name="org.apache.cordova.DroidGap" android:screenOrientation="unspecified">
+      <intent-filter>
+        <nothingHere/>
+      </intent-filter>
+    </activity>
+  </application>
+  <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true">
+    <nothingHere/>
+  </supports-screens>
+  <uses-permission android:name="android.permission.INTERNET">
+    <nothingHere/>
+  </uses-permission>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+    <nothingHere/>
+  </uses-permission>
+</manifest>

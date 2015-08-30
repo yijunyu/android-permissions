@@ -1,6 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.CHANGE_CONFIGURATION</permission>
-  </over-specification>
-  <under-specification/>
-</comparison>

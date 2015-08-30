@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<permissions>
-  <permission>
-    <name>com.android.vending.CHECK_LICENSE</name>
-  </permission>
-</permissions>

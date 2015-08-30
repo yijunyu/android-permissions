@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/uraroji/garage/android/mp3recvoice/MainActivity_Service.java</file>
+    <line>81</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/uraroji/garage/android/mp3recvoice/RecMicToMp3.java</file>
+    <line>167</line>
+    <permissions>
+      <permission>
+        <name>android.permission.RECORD_AUDIO</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

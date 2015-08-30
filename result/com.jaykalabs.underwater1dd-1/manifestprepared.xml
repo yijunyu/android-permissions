@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jaykalabs.underwater1dd">
+    <application android:allowBackup="true" android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/underwater1ico" android:label="@string/app_name">
+        <activity android:exported="true" android:launchMode="singleInstance" android:name=".wallsettings"><nothingHere/></activity>
+    <service android:exported="true" android:icon="@drawable/underwater1ico" android:label="@string/app_name" android:name=".DayDream">
+            <intent-filter>
+                <action android:name="android.service.dreams.DreamService"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.service.dream" android:resource="@xml/daydream"><nothingHere/></meta-data>
+        </service>
+        </application>
+</manifest>

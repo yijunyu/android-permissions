@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.arodrigues.squazzle">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.arodrigues.squazzle.utils.ApplicationUtils" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.arodrigues.squazzle.activity.MainActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.arodrigues.squazzle.activity.LevelActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.arodrigues.squazzle.activity.GameActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+    </application>
+<supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

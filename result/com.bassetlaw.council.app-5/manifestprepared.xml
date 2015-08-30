@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bassetlaw.council.app">
+    <application android:debuggable="false" android:icon="@drawable/app_icon" android:label="@string/app_name" android:name=".MainApplication">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".MyCouncilTabActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter> -
+</activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ApplicationMenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ApplicationMenuActivityGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".HomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".DetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".InsertDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".VideoRecord" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".MoreActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".NewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".MoreGroupActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UserDetailsActivityGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".CouncilActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".CouncilSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".MessagesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".DisplayEditText" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".AboutusActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".gps.GPSLocationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".StartupScreenActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".GetPasswordWebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".GuestUserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".utils.PrepareRequestTokenActivity">&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="callback" android:scheme="x-oauthflow-twitter"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name=".RegistrationActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+    <receiver android:name="com.google.android.c2dm.C2DMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.bassetlaw.council.app"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.bassetlaw.council.app"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".TrackUserLocationReciever"><nothingHere/></receiver>
+        <receiver android:name=".SendLocationBatchXMLReciever"><nothingHere/></receiver>
+        <receiver android:name=".ChangesInPackageStatusReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <android-data android:path="com.bassetlaw.council.app" android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <service android:name=".C2DMReceiver"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <permission android:name="com.bassetlaw.council.app.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.bassetlaw.council.app.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CONTROL_LOCATION_UPDATES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

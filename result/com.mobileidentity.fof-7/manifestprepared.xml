@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mobileidentity.fof">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="FOFApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.mobileidentity.fof.modules.start.StartActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobileidentity.fof.modules.start.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobileidentity.fof.modules.lecturecategories.LectureCategoriesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobileidentity.fof.modules.lectures.CoursesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobileidentity.fof.modules.lecturedetails.LectureDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobileidentity.fof.modules.lecturedetails.ShowMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobileidentity.fof.modules.teacherdetails.TeacherDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDoh9DlwKNkTxSpDKnXtxXMztXAnS1trDk"><nothingHere/></meta-data>
+    </application>
+<permission android:name="com.mobileidentity.fof.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.mobileidentity.fof.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

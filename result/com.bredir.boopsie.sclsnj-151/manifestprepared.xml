@@ -1,0 +1,69 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.bredir.boopsie.sclsnj">
+    <application android:description="@string/app_description" android:icon="@drawable/icon" android:label="@string/app_name" android:name="BoopsieApplication">
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".Boopsie">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/signup_title" android:name=".view.SignUp"><nothingHere/></activity>
+        <activity android:name=".view.DlgMapMode" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".view.ShowDetail" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".view.ShowMenu" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".view.DlgWarnCenter" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".view.HostedWebView"><nothingHere/></activity>
+        <activity android:name=".view.DlgAddEvent" android:theme="@android:style/Theme.Light"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.bredir.boopsie.sclsnj.CameraAPI.PhotoPicker" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.bredir.boopsie.sclsnj.CameraAPI.TakePhoto"><nothingHere/></activity>
+        <activity android:name=".view.MediaPlayer_Video"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".view.MofiHandler"> --&gt;
+<intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"><nothingHere/></action>
+                <android-data android:mimeType="application/sclsnj.boopsie"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:scheme="sclsnj.boopsie"><nothingHere/></android-data>
+                <android-data android:mimeType="application/sclsnj.boopsie"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="sclsnj.boopsie"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name_map" android:name=".view.BrowseMap"><nothingHere/></activity>
+        <activity android:name=".view.CalendarPicker" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.bredir.boopsie.sclsnj.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.bredir.boopsie.sclsnj.zxing.client.android.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.bredir.boopsie.sclsnj.zxing.client.android.SCANINTERNAL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/preferences_name" android:name="com.bredir.boopsie.sclsnj.zxing.client.android.PreferencesActivity"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission> --&gt;
+    --&gt;
+<uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

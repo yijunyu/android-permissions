@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.nomadesk.android">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.nomadesk.app.NomadeskApplication" android:theme="@style/Theme.D1">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.nomadesk.app.activities.LoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.nomadesk.app.activities.LoginBasicAuthActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.DashboardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.OfflineDashboard"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.OfflineBrowserActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.FavoritesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.SettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.TheftguardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.TheftguardActiveActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.TheftguardHistoryActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.TheftguardMapActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.MyAccountActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.MyAccountInfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.MyAccountEditActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.MyAccountPasswordActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.AccountWizardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.NewAccountWizardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.ExistingAccountWizardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.nomadesk.app.activities.ForgotPasswordActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.FileserversActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.FileserverPropertiesActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.GuestActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.ReinviteActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.nomadesk.app.activities.NewFileserverActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.BrowserActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.BrowserActivityGroup"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.SendLinkActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.InviteFileserverActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.nomadesk.app.activities.SearchActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/googleapikey"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <uses-library android:name="com.google.android.maps" android:required="true"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.nomadesk.android.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.nomadesk.app.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.nomadesk.android.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.nomadesk.app.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

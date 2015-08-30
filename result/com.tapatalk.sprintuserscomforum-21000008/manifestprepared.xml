@@ -1,0 +1,240 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tapatalk.sprintuserscomforum">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/appicon" android:label="SprintUsers" android:name="com.quoord.tapatalkpro.TapatalkApp">
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.directory.ics.IcsRebrandingEntryActivity" android:screenOrientation="unspecified" android:theme="@style/activityTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tapa"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tapatalk"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="www.sprintusers.com" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="www.sprintusers.com" android:scheme="tapatalk-byo"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.ThreadActivity" android:screenOrientation="unspecified">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity" android:theme="@android:style/Theme.Light"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Light"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:name="com.quoord.tapatalkpro.activity.forum.PMContentActivity" android:screenOrientation="unspecified">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.CreateTopicActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.CategoryActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.CreatePmActivity" android:screenOrientation="unspecified">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.conversation.ConverSationActivity" android:screenOrientation="unspecified" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.conversation.CreateOrReplyConversationActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.moderation.MoveTopicActivity" android:screenOrientation="unspecified" android:uiOptions="splitActionBarWhenNarrow"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.UserTopicActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:name="com.quoord.tapatalkpro.activity.forum.ShortcutSelectActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.tapatalk.tapatalk4.forum.SearchActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.ProfilesActivity" android:screenOrientation="unspecified" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.ics.ics.blog.BlogActivity" android:screenOrientation="unspecified" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:name="com.quoord.tapatalkpro.ads.AdDetailActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:name="com.quoord.tapatalkpro.ads.AdWebShowActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:name="com.quoord.tapatalkpro.ads.AdWebviewActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.ics.tapatalkid.TapatalkIdActivity" android:screenOrientation="unspecified" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.quoord.tapatalkpro.ics.tapatalkid.TapatalkEmailActivity" android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:name="com.quoord.tapatalkpro.activity.UploadActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.directory.ics.IcsSearchDirectoryActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.alarm.notification.NotificationSettingActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.adapter.color.ColorStyleActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.ics.slidingMenu.SlidingMenuActivity" android:screenOrientation="unspecified" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchdirectory"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.ics.advancesearch.AdvanceSearchActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="Tapatalk Widget Config" android:name="com.quoord.tapatalkpro.tabwidget.FavForumsAppWidgetConfigure">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="Tapatalk Widget Config" android:name="com.quoord.tapatalkpro.tabwidget.FavTopicsAppWidgetConfigure">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="Tapatalk Widget Config" android:name="com.quoord.tapatalkpro.tabwidget.PMAppWidgetConfigure">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.GalleryActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.ics.slidingMenu.ForumJoinActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.tapatalk.sprintuserscomforum.MainActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:label="tapatalkHD" android:name="com.facebook.LoginActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.tapatalk.sprintuserscomforum.TwiterOauthActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.youtube.YoutubeFullscreenActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tools.QuoordGalleryActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.alarm.NotificationSetting">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.postdata.ui.LikeAndThankActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.forum.SearchActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.ics.slidingMenu.UnreadTopicSetting" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.ics.slidingMenu.SettingsActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenSize" android:name="com.quoord.tapatalkpro.activity.directory.ics.TapatalkIdWebviewActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"><nothingHere/></activity>
+        <activity android:name="com.quantcast.measurement.service.AboutQuantcastScreen"><nothingHere/></activity>
+    <activity-alias android:label="@string/short_cut_label" android:name=".forum.shortCutCreate" android:targetActivity="com.quoord.tapatalkpro.activity.forum.ShortcutSelectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity-alias>
+        <meta-data android:name="UMS_APPKEY" android:value="1026c34d2b1d7c3b32ef27337f1875dd"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebookapplicationId"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.tapatalk.sprintuserscomforum"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.quoord.purchase.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tapatalk.tapatalk4.forum.CreateTopicActivity$PurchaseReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PURCHASE_BROADCAST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tapatalk.tapatalk4.directory.GalleryActivity$PurchaseReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PURCHASE_BROADCAST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/widget_subscribed" android:name="com.quoord.tapatalkpro.tabwidget.FavForumsWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="android.appwidget.action.REFERESH"><nothingHere/></action>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/fav_forums_widget"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.quoord.tapatalkpro.tabwidget.FavForumWidget$FavTopicsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.FAVORITES_TOPIC_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.LOGOUT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/widget_topics" android:name="com.quoord.tapatalkpro.tabwidget.FavTopicsWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="android.appwidget.action.REFERESH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/fav_topics_widget"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="@string/widget_messages" android:name="com.quoord.tapatalkpro.tabwidget.PMWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="android.appwidget.action.REFERESH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/pm_widget"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.quoord.tapatalkpro.alarm.NotificationAlarmReceiver">
+            <intent-filter android:priority="1">
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.quoord.tapatalkpro.alarm.PingsOnAlarmReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.quoord.tapatalkpro.tabwidget.manager.WidgetReciver">
+            <intent-filter android:priority="1">
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tapatalk.reboot"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.tapatalk.sprintuserscomforum.GCMIntentService"><nothingHere/></service>
+        <service android:name="com.quoord.purchase.BillingService"><nothingHere/></service>
+        <service android:name="com.quoord.tapatalkpro.tabwidget.FavForumsWidgetProvider$FavForumListViewService" android:permission="android.permission.BIND_REMOTEVIEWS"><nothingHere/></service>
+        <service android:name="com.quoord.tapatalkpro.tabwidget.WidgetClickHandlerService"><nothingHere/></service>
+        <service android:name="com.quoord.tapatalkpro.tabwidget.FavTopicsWidgetProvider$FavTopicsListViewService" android:permission="android.permission.BIND_REMOTEVIEWS"><nothingHere/></service>
+        <service android:name="com.quoord.tapatalkpro.tabwidget.PMWidgetProvider$PMConverListViewService" android:permission="android.permission.BIND_REMOTEVIEWS"><nothingHere/></service>
+        <service android:name="com.quoord.tapatalkpro.alarm.NotificationAlarmService"><nothingHere/></service>
+        </application>
+<permission android:name="com.tapatalk.sprintuserscomforum.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="com.tapatalk.sprintuserscomforum.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    </manifest>

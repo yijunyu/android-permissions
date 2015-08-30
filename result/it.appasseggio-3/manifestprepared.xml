@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="it.appasseggio">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/nome_app" android:name=".AppasseggioApplication" android:theme="@style/Theme.Styled">
+        <activity android:alwaysRetainTaskState="true" android:label="@string/app_name" android:launchMode="singleTask" android:name=".AppasseggioActivity" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".RoadbookActivity" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".RoadbookSchedaActivity" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".RoadbookMappaActivity" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".MappaPoiViciniActivity" android:noHistory="true" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".PoiDettaglioActivity" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".PoiMappaActivity" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".PoiGridActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".InfoActivity" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="it.appasseggio.PlayerActivity" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="it.appasseggio.RisorsaImgActivity" android:theme="@style/Theme.Styled"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".SplashscreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <service android:name="it.appasseggio.service.DownloaderService"><nothingHere/></service>
+        <service android:name="it.appasseggio.service.DownloaderMediaService"><nothingHere/></service>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,7 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.GET_TASKS</permission>
-    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
-  </over-specification>
-  <under-specification/>
-</comparison>

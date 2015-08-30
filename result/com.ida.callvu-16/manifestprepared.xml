@@ -1,0 +1,583 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ida.callvu">
+    <application android:debuggable="false" android:icon="@drawable/callvu_sdk_callvu_icon" android:label="@string/callvu_sdk_app_name" android:name="CallVUApplication">
+        <activity android:configChanges="locale" android:excludeFromRecents="true" android:label="@string/callvu_sdk_app_name" android:name="com.sdk.ida.callvu.UI.activities.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="callvu_sdk_splash_screen" android:resource="@layout/callvu_sdk_splash_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_chrono" android:resource="@id/callvu_sdk_chrono"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar1" android:resource="@id/callvu_sdk_progress_bar1"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar2" android:resource="@id/callvu_sdk_progress_bar2"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar3" android:resource="@id/callvu_sdk_progress_bar3"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar4" android:resource="@id/callvu_sdk_progress_bar4"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar5" android:resource="@id/callvu_sdk_progress_bar5"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar6" android:resource="@id/callvu_sdk_progress_bar6"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar7" android:resource="@id/callvu_sdk_progress_bar7"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar8" android:resource="@id/callvu_sdk_progress_bar8"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar_blank" android:resource="@drawable/callvu_sdk_progress_bar_blank"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progress_bar_full" android:resource="@drawable/callvu_sdk_progress_bar_full"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_visualIVRLabelSplash" android:resource="@id/callvu_sdk_visualIVRLabelSplash"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_frontLayout" android:resource="@id/callvu_sdk_frontLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_callVuImage" android:resource="@id/callvu_sdk_callVuImage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_descriptionLabelSplash" android:resource="@id/callvu_sdk_descriptionLabelSplash"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_iconSplashImage" android:resource="@id/callvu_sdk_iconSplashImage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonCloseSplash" android:resource="@id/callvu_sdk_imageButtonCloseSplash"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonSpeakerSplash" android:resource="@id/callvu_sdk_imageButtonSpeakerSplash"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_ImageButtonInfoCall" android:resource="@id/callvu_sdk_ImageButtonInfoCall"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonSpeaker" android:resource="@id/callvu_sdk_imageButtonSpeaker"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonMute" android:resource="@id/callvu_sdk_imageButtonMute"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonEndCall" android:resource="@id/callvu_sdk_imageButtonEndCall"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_jsonError" android:resource="@string/callvu_sdk_jsonError"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_networkProblem" android:resource="@string/callvu_sdk_networkProblem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_back_disabled" android:resource="@string/callvu_sdk_back_disabled"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_errorRespond" android:resource="@string/callvu_sdk_errorRespond"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_duplicateTokenRespond" android:resource="@string/callvu_sdk_duplicateTokenRespond"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_endIdaRespond" android:resource="@string/callvu_sdk_endIdaRespond"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_get_display" android:resource="@layout/callvu_sdk_get_display"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_frameLayoutScreenContainer" android:resource="@id/callvu_sdk_frameLayoutScreenContainer"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_progressDialog" android:resource="@id/callvu_sdk_progressDialog"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayoutBack" android:resource="@id/callvu_sdk_mainLinearLayoutBack"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_back_item" android:resource="@layout/callvu_sdk_right_back_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_back_item" android:resource="@layout/callvu_sdk_left_back_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewBackItem" android:resource="@id/callvu_sdk_textViewBackItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_backButtonItem" android:resource="@id/callvu_sdk_backButtonItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonBanner" android:resource="@id/callvu_sdk_imageButtonBanner"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_banner_pressed" android:resource="@string/callvu_sdk_banner_pressed"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_notification_content" android:resource="@string/callvu_sdk_notification_content"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_defaultPressedColor" android:resource="@color/callvu_sdk_defaultPressedColor"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtDigit" android:resource="@id/callvu_sdk_txtDigit"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_digit1" android:resource="@id/callvu_sdk_digit1"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_digit2" android:resource="@id/callvu_sdk_digit2"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_digit3" android:resource="@id/callvu_sdk_digit3"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_digit4" android:resource="@id/callvu_sdk_digit4"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_digit5" android:resource="@id/callvu_sdk_digit5"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_digit6" android:resource="@id/callvu_sdk_digit6"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_infoPopup" android:resource="@id/callvu_sdk_infoPopup"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_chrono" android:resource="@id/callvu_sdk_chrono"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_infoBackground" android:resource="@id/callvu_sdk_infoBackground"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_info_bg_eng" android:resource="@drawable/callvu_sdk_info_bg_eng"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_info_bg_heb" android:resource="@drawable/callvu_sdk_info_bg_heb"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_message_tone" android:resource="@raw/callvu_sdk_message_tone"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submit_phone_item" android:resource="@layout/callvu_sdk_submit_phone_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_bgListItem" android:resource="@id/callvu_sdk_bgListItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_firstLabelSubmitPhone" android:resource="@id/callvu_sdk_firstLabelSubmitPhone"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_secondLabelSubmitPhone" android:resource="@id/callvu_sdk_secondLabelSubmitPhone"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_button_item_grid" android:resource="@layout/callvu_sdk_right_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_button_item_grid" android:resource="@layout/callvu_sdk_left_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_button_item_grid" android:resource="@layout/callvu_sdk_center_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_image_button_item_grid" android:resource="@layout/callvu_sdk_right_image_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_image_button_item_grid" android:resource="@layout/callvu_sdk_left_image_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_image_button_item_grid" android:resource="@layout/callvu_sdk_center_image_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_label_item" android:resource="@layout/callvu_sdk_right_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_label_item" android:resource="@layout/callvu_sdk_left_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_label_item" android:resource="@layout/callvu_sdk_center_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_image_item" android:resource="@layout/callvu_sdk_image_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_image_item" android:resource="@layout/callvu_sdk_left_image_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_post_delay_mili" android:resource="@integer/callvu_sdk_post_delay_mili"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_defaultPressedColor" android:resource="@color/callvu_sdk_defaultPressedColor"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonGridMinHeight" android:resource="@dimen/callvu_sdk_buttonGridMinHeight"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayou" android:resource="@id/callvu_sdk_linearLayou"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtn" android:resource="@id/callvu_sdk_itemBackgroundBtn"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackground" android:resource="@id/callvu_sdk_itemBackground"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonRelative" android:resource="@id/callvu_sdk_buttonRelative"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItem" android:resource="@id/callvu_sdk_textViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonItem" android:resource="@id/callvu_sdk_buttonItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainMenuLayout" android:resource="@id/callvu_sdk_mainMenuLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_pressedColor" android:resource="@id/callvu_sdk_pressedColor"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_ImageViewItem" android:resource="@id/callvu_sdk_ImageViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_drawable_loading" android:resource="@drawable/callvu_sdk_loading"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayouItem" android:resource="@id/callvu_sdk_linearLayouItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_gridMinHeight1" android:resource="@dimen/callvu_sdk_gridMinHeight1"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_gridMinHeight2" android:resource="@dimen/callvu_sdk_gridMinHeight2"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtn" android:resource="@id/callvu_sdk_itemBackgroundBtn"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageViewItem" android:resource="@id/callvu_sdk_imageViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_button_item" android:resource="@layout/callvu_sdk_right_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_button_item" android:resource="@layout/callvu_sdk_left_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_button_item" android:resource="@layout/callvu_sdk_center_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_image_button_item" android:resource="@layout/callvu_sdk_right_image_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_image_button_item" android:resource="@layout/callvu_sdk_left_image_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_image_button_item" android:resource="@layout/callvu_sdk_center_image_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_label_item" android:resource="@layout/callvu_sdk_right_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_label_item" android:resource="@layout/callvu_sdk_left_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_label_item" android:resource="@layout/callvu_sdk_center_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_image_item" android:resource="@layout/callvu_sdk_image_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_image_item" android:resource="@layout/callvu_sdk_left_image_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayoutTitle" android:resource="@id/callvu_sdk_linearLayoutTitle"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_title_right" android:resource="@layout/callvu_sdk_offline_title_right"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_title_left" android:resource="@layout/callvu_sdk_offline_title_left"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_title" android:resource="@layout/callvu_sdk_right_title"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_title" android:resource="@layout/callvu_sdk_left_title"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayoutMessage" android:resource="@id/callvu_sdk_linearLayoutMessage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_label_item" android:resource="@layout/callvu_sdk_right_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_label_item" android:resource="@layout/callvu_sdk_left_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_label_item" android:resource="@layout/callvu_sdk_center_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItem" android:resource="@id/callvu_sdk_textViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayoutMessage" android:resource="@id/callvu_sdk_linearLayoutMessage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_labelCompany" android:resource="@id/callvu_sdk_labelCompany"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageCompany" android:resource="@id/callvu_sdk_imageCompany"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonBanner" android:resource="@id/callvu_sdk_imageButtonBanner"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_bannerParent" android:resource="@id/callvu_sdk_bannerParent"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonMute" android:resource="@id/callvu_sdk_imageButtonMute"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonSpeaker" android:resource="@id/callvu_sdk_imageButtonSpeaker"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_ImageButtonInfoCall" android:resource="@id/callvu_sdk_ImageButtonInfoCall"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_seperateInfo" android:resource="@id/callvu_sdk_seperateInfo"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_post_delay_mili" android:resource="@integer/callvu_sdk_post_delay_mili"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_drawable_loading" android:resource="@drawable/callvu_sdk_loading"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_service_icon_size" android:resource="@integer/callvu_sdk_service_icon_size"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_defaultPressedColor" android:resource="@color/callvu_sdk_defaultPressedColor"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submit_phone" android:resource="@layout/callvu_sdk_submit_phone"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_listSubmit" android:resource="@id/callvu_sdk_listSubmit"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submitEditText" android:resource="@id/callvu_sdk_submitEditText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_errorMessage" android:resource="@id/callvu_sdk_errorMessage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_leftError" android:resource="@id/callvu_sdk_leftError"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtErroLeft" android:resource="@id/callvu_sdk_txtErroLeft"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtErroRight" android:resource="@id/callvu_sdk_txtErroRight"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submitEditText" android:resource="@id/callvu_sdk_submitEditText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_drawable_loading" android:resource="@drawable/callvu_sdk_loading"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_defaultPressedColor" android:resource="@color/callvu_sdk_defaultPressedColor"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonListMinHeight" android:resource="@dimen/callvu_sdk_buttonListMinHeight"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_message_screen" android:resource="@layout/callvu_sdk_message_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_message_screen_center" android:resource="@layout/callvu_sdk_message_screen_center"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_message_screen_right" android:resource="@layout/callvu_sdk_message_screen_right"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_message_screen_right" android:resource="@layout/callvu_sdk_message_screen_right"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_inputMessage" android:resource="@id/callvu_sdk_inputMessage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnSubmit" android:resource="@id/callvu_sdk_itemBackgroundBtnSubmit"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submit_message_button" android:resource="@id/callvu_sdk_submit_message_button"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundSubmit" android:resource="@id/callvu_sdk_itemBackgroundSubmit"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemSubmit" android:resource="@id/callvu_sdk_textViewItemSubmit"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnContinue" android:resource="@id/callvu_sdk_itemBackgroundBtnContinue"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_continue_waiting_button" android:resource="@id/callvu_sdk_continue_waiting_button"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundContinue" android:resource="@id/callvu_sdk_itemBackgroundContinue"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemAbort" android:resource="@id/callvu_sdk_textViewItemAbort"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonListMinHeight" android:resource="@dimen/callvu_sdk_buttonListMinHeight"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_picture_screen" android:resource="@layout/callvu_sdk_picture_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cameraPicture" android:resource="@id/callvu_sdk_cameraPicture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cameraPicture" android:resource="@id/callvu_sdk_cameraPicture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnCapture" android:resource="@id/callvu_sdk_itemBackgroundBtnCapture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_captureButton" android:resource="@id/callvu_sdk_captureButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_pressedColorCapture" android:resource="@id/callvu_sdk_pressedColorCapture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemCapture" android:resource="@id/callvu_sdk_textViewItemCapture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemCapture" android:resource="@id/callvu_sdk_textViewItemCapture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnMail" android:resource="@id/callvu_sdk_itemBackgroundBtnMail"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mailButton" android:resource="@id/callvu_sdk_mailButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_pressedColorMail" android:resource="@id/callvu_sdk_pressedColorMail"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemMail" android:resource="@id/callvu_sdk_textViewItemMail"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnGallery" android:resource="@id/callvu_sdk_itemBackgroundBtnGallery"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_galleryButton" android:resource="@id/callvu_sdk_galleryButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_pressedColorGallery" android:resource="@id/callvu_sdk_pressedColorGallery"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemGallery" android:resource="@id/callvu_sdk_textViewItemGallery"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_gallery" android:resource="@string/callvu_sdk_gallery"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_static_screen" android:resource="@layout/callvu_sdk_static_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageLayout" android:resource="@id/callvu_sdk_imageLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageViewStaticScreen" android:resource="@id/callvu_sdk_imageViewStaticScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_webViewStaticScreen" android:resource="@id/callvu_sdk_webViewStaticScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItem" android:resource="@id/callvu_sdk_textViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_post_delay_mili" android:resource="@integer/callvu_sdk_post_delay_mili"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_string_loading" android:resource="@string/callvu_sdk_loading"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewInCall" android:resource="@id/callvu_sdk_textViewInCall"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_notification_title" android:resource="@string/callvu_sdk_notification_title"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_notification_icon" android:resource="@drawable/callvu_sdk_notification_icon"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="locale" android:name="com.sdk.ida.callvu.UI.activities.PostCallActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data android:name="callvu_sdk_post_call" android:resource="@layout/callvu_sdk_post_call"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_listEndCall" android:resource="@id/callvu_sdk_listEndCall"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_post_call_list_item" android:resource="@layout/callvu_sdk_post_call_list_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_number" android:resource="@id/callvu_sdk_number"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_description" android:resource="@id/callvu_sdk_description"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_deleteButton" android:resource="@id/callvu_sdk_deleteButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editButton" android:resource="@id/callvu_sdk_editButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_messageDialog" android:resource="@string/callvu_sdk_messageDialog"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_ok" android:resource="@string/callvu_sdk_ok"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cancelLabel" android:resource="@string/callvu_sdk_cancelLabel"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="locale" android:label="@string/callvu_sdk_app_name" android:name="com.sdk.ida.callvu.UI.CallVUSavedDataActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data android:name="callvu_sdk_saved_data" android:resource="@layout/callvu_sdk_saved_data"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data_dialog_box" android:resource="@layout/callvu_sdk_saved_data_dialog_box"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_tabs_bg" android:resource="@layout/callvu_sdk_tabs_bg"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_backBtn" android:resource="@id/callvu_sdk_backBtn"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_tabsText" android:resource="@id/callvu_sdk_tabsText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_content" android:resource="@id/callvu_sdk_content"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_listSavedData" android:resource="@id/callvu_sdk_listSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_clearButton" android:resource="@id/callvu_sdk_clearButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_addButton" android:resource="@id/callvu_sdk_addButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editFirstText" android:resource="@id/callvu_sdk_editFirstText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_firstLabelSavedData" android:resource="@id/callvu_sdk_firstLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_value" android:resource="@string/callvu_sdk_value"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_secondLabelSavedData" android:resource="@id/callvu_sdk_secondLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_label" android:resource="@string/callvu_sdk_label"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_popUpTitle" android:resource="@string/callvu_sdk_popUpTitle"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_okLabel" android:resource="@string/callvu_sdk_okLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editFirstText" android:resource="@id/callvu_sdk_editFirstText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editSecondText" android:resource="@id/callvu_sdk_editSecondText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cancelLabel" android:resource="@string/callvu_sdk_cancelLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data_item" android:resource="@layout/callvu_sdk_saved_data_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtValue" android:resource="@id/callvu_sdk_txtValue"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtLabel" android:resource="@id/callvu_sdk_txtLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data_dialog_box" android:resource="@layout/callvu_sdk_saved_data_dialog_box"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editFirstText" android:resource="@id/callvu_sdk_editFirstText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editSecondText" android:resource="@id/callvu_sdk_editSecondText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_firstLabelSavedData" android:resource="@id/callvu_sdk_firstLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_secondLabelSavedData" android:resource="@id/callvu_sdk_secondLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_value" android:resource="@string/callvu_sdk_value"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_label" android:resource="@string/callvu_sdk_label"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_deleteDataFromDataBase" android:resource="@id/callvu_sdk_deleteDataFromDataBase"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.sdk.ida.callvu.UI.activities.CameraActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <meta-data android:name="callvu_sdk_camera_screen" android:resource="@layout/callvu_sdk_camera_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_btnTakePicture" android:resource="@id/callvu_sdk_btnTakePicture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_btnSend" android:resource="@id/callvu_sdk_btnSend"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cameraSurface" android:resource="@id/callvu_sdk_cameraSurface"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_retake" android:resource="@string/callvu_sdk_retake"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_take_picture" android:resource="@string/callvu_sdk_take_picture"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.sdk.ida.callvu.UI.activities.OfflineActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data android:name="callvu_sdk_main_offline_screen" android:resource="@layout/callvu_sdk_main_offline_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_dialog_item" android:resource="@layout/callvu_sdk_offline_dialog_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_long_press_dialog" android:resource="@layout/callvu_sdk_offline_long_press_dialog"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_long_press_dialog_he" android:resource="@layout/callvu_sdk_offline_long_press_dialog_he"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_get_display" android:resource="@layout/callvu_sdk_get_display"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_listViewOfflineScreen" android:resource="@id/callvu_sdk_listViewOfflineScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_frameLayoutScreenContainer" android:resource="@id/callvu_sdk_frameLayoutScreenContainer"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_RelativeLayoutCallEvent" android:resource="@id/callvu_sdk_RelativeLayoutCallEvent"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_backButtonItem" android:resource="@id/callvu_sdk_backButtonItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_ImageButtonDeleatOffline" android:resource="@id/callvu_sdk_ImageButtonDeleatOffline"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_screenName" android:resource="@id/callvu_sdk_screenName"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_screenTime" android:resource="@id/callvu_sdk_screenTime"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_showScreen" android:resource="@string/callvu_sdk_showScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offlineDelete" android:resource="@string/callvu_sdk_offlineDelete"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offlineClose" android:resource="@string/callvu_sdk_offlineClose"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_areUSure" android:resource="@string/callvu_sdk_areUSure"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_yes" android:resource="@string/callvu_sdk_yes"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_no" android:resource="@string/callvu_sdk_no"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_list_header" android:resource="@layout/callvu_sdk_offline_list_header"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_list_item_he" android:resource="@layout/callvu_sdk_offline_list_item_he"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_list_item" android:resource="@layout/callvu_sdk_offline_list_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtCompanyNameOffline" android:resource="@id/callvu_sdk_txtCompanyNameOffline"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtTimeOffline" android:resource="@id/callvu_sdk_txtTimeOffline"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submit_phone_item" android:resource="@layout/callvu_sdk_submit_phone_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_bgListItem" android:resource="@id/callvu_sdk_bgListItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_firstLabelSubmitPhone" android:resource="@id/callvu_sdk_firstLabelSubmitPhone"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_secondLabelSubmitPhone" android:resource="@id/callvu_sdk_secondLabelSubmitPhone"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_button_item_grid" android:resource="@layout/callvu_sdk_right_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_button_item_grid" android:resource="@layout/callvu_sdk_left_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_button_item_grid" android:resource="@layout/callvu_sdk_center_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_image_button_item_grid" android:resource="@layout/callvu_sdk_right_image_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_image_button_item_grid" android:resource="@layout/callvu_sdk_left_image_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_image_button_item_grid" android:resource="@layout/callvu_sdk_center_image_button_item_grid"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_label_item" android:resource="@layout/callvu_sdk_right_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_label_item" android:resource="@layout/callvu_sdk_left_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_label_item" android:resource="@layout/callvu_sdk_center_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_image_item" android:resource="@layout/callvu_sdk_image_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_image_item" android:resource="@layout/callvu_sdk_left_image_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_post_delay_mili" android:resource="@integer/callvu_sdk_post_delay_mili"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_defaultPressedColor" android:resource="@color/callvu_sdk_defaultPressedColor"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonGridMinHeight" android:resource="@dimen/callvu_sdk_buttonGridMinHeight"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayou" android:resource="@id/callvu_sdk_linearLayou"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtn" android:resource="@id/callvu_sdk_itemBackgroundBtn"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackground" android:resource="@id/callvu_sdk_itemBackground"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonRelative" android:resource="@id/callvu_sdk_buttonRelative"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItem" android:resource="@id/callvu_sdk_textViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonItem" android:resource="@id/callvu_sdk_buttonItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainMenuLayout" android:resource="@id/callvu_sdk_mainMenuLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_pressedColor" android:resource="@id/callvu_sdk_pressedColor"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_ImageViewItem" android:resource="@id/callvu_sdk_ImageViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_drawable_loading" android:resource="@drawable/callvu_sdk_loading"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayouItem" android:resource="@id/callvu_sdk_linearLayouItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_gridMinHeight1" android:resource="@dimen/callvu_sdk_gridMinHeight1"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_gridMinHeight2" android:resource="@dimen/callvu_sdk_gridMinHeight2"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtn" android:resource="@id/callvu_sdk_itemBackgroundBtn"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageViewItem" android:resource="@id/callvu_sdk_imageViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_button_item" android:resource="@layout/callvu_sdk_right_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_button_item" android:resource="@layout/callvu_sdk_left_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_button_item" android:resource="@layout/callvu_sdk_center_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_image_button_item" android:resource="@layout/callvu_sdk_right_image_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_image_button_item" android:resource="@layout/callvu_sdk_left_image_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_image_button_item" android:resource="@layout/callvu_sdk_center_image_button_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_label_item" android:resource="@layout/callvu_sdk_right_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_label_item" android:resource="@layout/callvu_sdk_left_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_label_item" android:resource="@layout/callvu_sdk_center_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_image_item" android:resource="@layout/callvu_sdk_image_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_image_item" android:resource="@layout/callvu_sdk_left_image_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayoutTitle" android:resource="@id/callvu_sdk_linearLayoutTitle"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_title_right" android:resource="@layout/callvu_sdk_offline_title_right"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_title_left" android:resource="@layout/callvu_sdk_offline_title_left"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_title" android:resource="@layout/callvu_sdk_right_title"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_title" android:resource="@layout/callvu_sdk_left_title"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayoutMessage" android:resource="@id/callvu_sdk_linearLayoutMessage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_right_label_item" android:resource="@layout/callvu_sdk_right_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_left_label_item" android:resource="@layout/callvu_sdk_left_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_center_label_item" android:resource="@layout/callvu_sdk_center_label_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItem" android:resource="@id/callvu_sdk_textViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_linearLayoutMessage" android:resource="@id/callvu_sdk_linearLayoutMessage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_labelCompany" android:resource="@id/callvu_sdk_labelCompany"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageCompany" android:resource="@id/callvu_sdk_imageCompany"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonBanner" android:resource="@id/callvu_sdk_imageButtonBanner"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_bannerParent" android:resource="@id/callvu_sdk_bannerParent"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonMute" android:resource="@id/callvu_sdk_imageButtonMute"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageButtonSpeaker" android:resource="@id/callvu_sdk_imageButtonSpeaker"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_ImageButtonInfoCall" android:resource="@id/callvu_sdk_ImageButtonInfoCall"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_seperateInfo" android:resource="@id/callvu_sdk_seperateInfo"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_post_delay_mili" android:resource="@integer/callvu_sdk_post_delay_mili"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_drawable_loading" android:resource="@drawable/callvu_sdk_loading"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_service_icon_size" android:resource="@integer/callvu_sdk_service_icon_size"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_defaultPressedColor" android:resource="@color/callvu_sdk_defaultPressedColor"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submit_phone" android:resource="@layout/callvu_sdk_submit_phone"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_listSubmit" android:resource="@id/callvu_sdk_listSubmit"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submitEditText" android:resource="@id/callvu_sdk_submitEditText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_errorMessage" android:resource="@id/callvu_sdk_errorMessage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_leftError" android:resource="@id/callvu_sdk_leftError"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtErroLeft" android:resource="@id/callvu_sdk_txtErroLeft"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtErroRight" android:resource="@id/callvu_sdk_txtErroRight"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submitEditText" android:resource="@id/callvu_sdk_submitEditText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_drawable_loading" android:resource="@drawable/callvu_sdk_loading"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_defaultPressedColor" android:resource="@color/callvu_sdk_defaultPressedColor"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonListMinHeight" android:resource="@dimen/callvu_sdk_buttonListMinHeight"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_message_screen" android:resource="@layout/callvu_sdk_message_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_message_screen_center" android:resource="@layout/callvu_sdk_message_screen_center"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_message_screen_right" android:resource="@layout/callvu_sdk_message_screen_right"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_message_screen_right" android:resource="@layout/callvu_sdk_message_screen_right"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_inputMessage" android:resource="@id/callvu_sdk_inputMessage"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnSubmit" android:resource="@id/callvu_sdk_itemBackgroundBtnSubmit"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_submit_message_button" android:resource="@id/callvu_sdk_submit_message_button"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundSubmit" android:resource="@id/callvu_sdk_itemBackgroundSubmit"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemSubmit" android:resource="@id/callvu_sdk_textViewItemSubmit"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnContinue" android:resource="@id/callvu_sdk_itemBackgroundBtnContinue"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_continue_waiting_button" android:resource="@id/callvu_sdk_continue_waiting_button"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundContinue" android:resource="@id/callvu_sdk_itemBackgroundContinue"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemAbort" android:resource="@id/callvu_sdk_textViewItemAbort"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_buttonListMinHeight" android:resource="@dimen/callvu_sdk_buttonListMinHeight"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_picture_screen" android:resource="@layout/callvu_sdk_picture_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cameraPicture" android:resource="@id/callvu_sdk_cameraPicture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cameraPicture" android:resource="@id/callvu_sdk_cameraPicture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnCapture" android:resource="@id/callvu_sdk_itemBackgroundBtnCapture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_captureButton" android:resource="@id/callvu_sdk_captureButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_pressedColorCapture" android:resource="@id/callvu_sdk_pressedColorCapture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemCapture" android:resource="@id/callvu_sdk_textViewItemCapture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemCapture" android:resource="@id/callvu_sdk_textViewItemCapture"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnMail" android:resource="@id/callvu_sdk_itemBackgroundBtnMail"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mailButton" android:resource="@id/callvu_sdk_mailButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_pressedColorMail" android:resource="@id/callvu_sdk_pressedColorMail"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemMail" android:resource="@id/callvu_sdk_textViewItemMail"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_itemBackgroundBtnGallery" android:resource="@id/callvu_sdk_itemBackgroundBtnGallery"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_galleryButton" android:resource="@id/callvu_sdk_galleryButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_pressedColorGallery" android:resource="@id/callvu_sdk_pressedColorGallery"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItemGallery" android:resource="@id/callvu_sdk_textViewItemGallery"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_gallery" android:resource="@string/callvu_sdk_gallery"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_static_screen" android:resource="@layout/callvu_sdk_static_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageLayout" android:resource="@id/callvu_sdk_imageLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_imageViewStaticScreen" android:resource="@id/callvu_sdk_imageViewStaticScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_webViewStaticScreen" android:resource="@id/callvu_sdk_webViewStaticScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewItem" android:resource="@id/callvu_sdk_textViewItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_post_delay_mili" android:resource="@integer/callvu_sdk_post_delay_mili"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_string_loading" android:resource="@string/callvu_sdk_loading"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_textViewInCall" android:resource="@id/callvu_sdk_textViewInCall"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.sdk.ida.callvu.UI.activities.EmptyActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="callvu_sdk_activity_empty" android:resource="@layout/callvu_sdk_activity_empty"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_callvu_appicon_on" android:resource="@drawable/callvu_sdk_callvu_appicon_on"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_notification_title" android:resource="@string/callvu_sdk_notification_title"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_okLabel" android:resource="@string/callvu_sdk_okLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cancelLabel" android:resource="@string/callvu_sdk_cancelLabel"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="AuthenticationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="Launcher" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:name="About" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".openscreen.OpenScreenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data android:name="callvu_sdk_typeID" android:resource="@string/callvu_sdk_typeID"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeLicenceNumber" android:resource="@string/callvu_sdk_typeLicenceNumber"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeLicencePlateNumber" android:resource="@string/callvu_sdk_typeLicencePlateNumber"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeMisc" android:resource="@string/callvu_sdk_typeMisc"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeAddress" android:resource="@string/callvu_sdk_typeAddress"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeName" android:resource="@string/callvu_sdk_typeName"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typePhoneNumber" android:resource="@string/callvu_sdk_typePhoneNumber"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeCustomerNumber" android:resource="@string/callvu_sdk_typeCustomerNumber"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeZipCode" android:resource="@string/callvu_sdk_typeZipCode"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeSSN" android:resource="@string/callvu_sdk_typeSSN"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data" android:resource="@layout/callvu_sdk_saved_data"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data_dialog_box" android:resource="@layout/callvu_sdk_saved_data_dialog_box"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_tabs_bg" android:resource="@layout/callvu_sdk_tabs_bg"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_backBtn" android:resource="@id/callvu_sdk_backBtn"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_tabsText" android:resource="@id/callvu_sdk_tabsText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_content" android:resource="@id/callvu_sdk_content"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_listSavedData" android:resource="@id/callvu_sdk_listSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_clearButton" android:resource="@id/callvu_sdk_clearButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_addButton" android:resource="@id/callvu_sdk_addButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editFirstText" android:resource="@id/callvu_sdk_editFirstText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_firstLabelSavedData" android:resource="@id/callvu_sdk_firstLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_value" android:resource="@string/callvu_sdk_value"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_secondLabelSavedData" android:resource="@id/callvu_sdk_secondLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_label" android:resource="@string/callvu_sdk_label"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_popUpTitle" android:resource="@string/callvu_sdk_popUpTitle"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_okLabel" android:resource="@string/callvu_sdk_okLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editFirstText" android:resource="@id/callvu_sdk_editFirstText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editSecondText" android:resource="@id/callvu_sdk_editSecondText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cancelLabel" android:resource="@string/callvu_sdk_cancelLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data_item" android:resource="@layout/callvu_sdk_saved_data_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtValue" android:resource="@id/callvu_sdk_txtValue"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtLabel" android:resource="@id/callvu_sdk_txtLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data_dialog_box" android:resource="@layout/callvu_sdk_saved_data_dialog_box"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editFirstText" android:resource="@id/callvu_sdk_editFirstText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editSecondText" android:resource="@id/callvu_sdk_editSecondText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_firstLabelSavedData" android:resource="@id/callvu_sdk_firstLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_secondLabelSavedData" android:resource="@id/callvu_sdk_secondLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_value" android:resource="@string/callvu_sdk_value"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_label" android:resource="@string/callvu_sdk_label"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_deleteDataFromDataBase" android:resource="@id/callvu_sdk_deleteDataFromDataBase"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_main_offline_screen" android:resource="@layout/callvu_sdk_main_offline_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_dialog_item" android:resource="@layout/callvu_sdk_offline_dialog_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_long_press_dialog" android:resource="@layout/callvu_sdk_offline_long_press_dialog"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_long_press_dialog_he" android:resource="@layout/callvu_sdk_offline_long_press_dialog_he"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_get_display" android:resource="@layout/callvu_sdk_get_display"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_listViewOfflineScreen" android:resource="@id/callvu_sdk_listViewOfflineScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_frameLayoutScreenContainer" android:resource="@id/callvu_sdk_frameLayoutScreenContainer"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_RelativeLayoutCallEvent" android:resource="@id/callvu_sdk_RelativeLayoutCallEvent"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_backButtonItem" android:resource="@id/callvu_sdk_backButtonItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_ImageButtonDeleatOffline" android:resource="@id/callvu_sdk_ImageButtonDeleatOffline"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_screenName" android:resource="@id/callvu_sdk_screenName"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_screenTime" android:resource="@id/callvu_sdk_screenTime"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_showScreen" android:resource="@string/callvu_sdk_showScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offlineDelete" android:resource="@string/callvu_sdk_offlineDelete"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offlineClose" android:resource="@string/callvu_sdk_offlineClose"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_areUSure" android:resource="@string/callvu_sdk_areUSure"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_yes" android:resource="@string/callvu_sdk_yes"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_no" android:resource="@string/callvu_sdk_no"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_list_header" android:resource="@layout/callvu_sdk_offline_list_header"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_list_item_he" android:resource="@layout/callvu_sdk_offline_list_item_he"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_list_item" android:resource="@layout/callvu_sdk_offline_list_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtCompanyNameOffline" android:resource="@id/callvu_sdk_txtCompanyNameOffline"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtTimeOffline" android:resource="@id/callvu_sdk_txtTimeOffline"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="locale" android:excludeFromRecents="true" android:name="LoginScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:label="@string/callvu_sdk_app_settings" android:name="CallVUSettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data android:name="callvu_sdk_main_offline_screen" android:resource="@layout/callvu_sdk_main_offline_screen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_dialog_item" android:resource="@layout/callvu_sdk_offline_dialog_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_long_press_dialog" android:resource="@layout/callvu_sdk_offline_long_press_dialog"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_long_press_dialog_he" android:resource="@layout/callvu_sdk_offline_long_press_dialog_he"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_get_display" android:resource="@layout/callvu_sdk_get_display"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_listViewOfflineScreen" android:resource="@id/callvu_sdk_listViewOfflineScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_frameLayoutScreenContainer" android:resource="@id/callvu_sdk_frameLayoutScreenContainer"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_mainLinearLayout" android:resource="@id/callvu_sdk_mainLinearLayout"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_RelativeLayoutCallEvent" android:resource="@id/callvu_sdk_RelativeLayoutCallEvent"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_backButtonItem" android:resource="@id/callvu_sdk_backButtonItem"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_ImageButtonDeleatOffline" android:resource="@id/callvu_sdk_ImageButtonDeleatOffline"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_screenName" android:resource="@id/callvu_sdk_screenName"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_screenTime" android:resource="@id/callvu_sdk_screenTime"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_showScreen" android:resource="@string/callvu_sdk_showScreen"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offlineDelete" android:resource="@string/callvu_sdk_offlineDelete"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offlineClose" android:resource="@string/callvu_sdk_offlineClose"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_areUSure" android:resource="@string/callvu_sdk_areUSure"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_yes" android:resource="@string/callvu_sdk_yes"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_no" android:resource="@string/callvu_sdk_no"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_list_header" android:resource="@layout/callvu_sdk_offline_list_header"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_list_item_he" android:resource="@layout/callvu_sdk_offline_list_item_he"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_offline_list_item" android:resource="@layout/callvu_sdk_offline_list_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtCompanyNameOffline" android:resource="@id/callvu_sdk_txtCompanyNameOffline"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtTimeOffline" android:resource="@id/callvu_sdk_txtTimeOffline"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeID" android:resource="@string/callvu_sdk_typeID"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeLicenceNumber" android:resource="@string/callvu_sdk_typeLicenceNumber"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeLicencePlateNumber" android:resource="@string/callvu_sdk_typeLicencePlateNumber"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeMisc" android:resource="@string/callvu_sdk_typeMisc"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeAddress" android:resource="@string/callvu_sdk_typeAddress"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeName" android:resource="@string/callvu_sdk_typeName"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typePhoneNumber" android:resource="@string/callvu_sdk_typePhoneNumber"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeCustomerNumber" android:resource="@string/callvu_sdk_typeCustomerNumber"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeZipCode" android:resource="@string/callvu_sdk_typeZipCode"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_typeSSN" android:resource="@string/callvu_sdk_typeSSN"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data" android:resource="@layout/callvu_sdk_saved_data"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data_dialog_box" android:resource="@layout/callvu_sdk_saved_data_dialog_box"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_tabs_bg" android:resource="@layout/callvu_sdk_tabs_bg"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_backBtn" android:resource="@id/callvu_sdk_backBtn"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_tabsText" android:resource="@id/callvu_sdk_tabsText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_content" android:resource="@id/callvu_sdk_content"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_listSavedData" android:resource="@id/callvu_sdk_listSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_clearButton" android:resource="@id/callvu_sdk_clearButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_addButton" android:resource="@id/callvu_sdk_addButton"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editFirstText" android:resource="@id/callvu_sdk_editFirstText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_firstLabelSavedData" android:resource="@id/callvu_sdk_firstLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_value" android:resource="@string/callvu_sdk_value"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_secondLabelSavedData" android:resource="@id/callvu_sdk_secondLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_label" android:resource="@string/callvu_sdk_label"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_popUpTitle" android:resource="@string/callvu_sdk_popUpTitle"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_okLabel" android:resource="@string/callvu_sdk_okLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editFirstText" android:resource="@id/callvu_sdk_editFirstText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editSecondText" android:resource="@id/callvu_sdk_editSecondText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_cancelLabel" android:resource="@string/callvu_sdk_cancelLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data_item" android:resource="@layout/callvu_sdk_saved_data_item"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtValue" android:resource="@id/callvu_sdk_txtValue"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_txtLabel" android:resource="@id/callvu_sdk_txtLabel"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_saved_data_dialog_box" android:resource="@layout/callvu_sdk_saved_data_dialog_box"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editFirstText" android:resource="@id/callvu_sdk_editFirstText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_editSecondText" android:resource="@id/callvu_sdk_editSecondText"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_firstLabelSavedData" android:resource="@id/callvu_sdk_firstLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_secondLabelSavedData" android:resource="@id/callvu_sdk_secondLabelSavedData"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_value" android:resource="@string/callvu_sdk_value"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_label" android:resource="@string/callvu_sdk_label"><nothingHere/></meta-data>
+            <meta-data android:name="callvu_sdk_deleteDataFromDataBase" android:resource="@id/callvu_sdk_deleteDataFromDataBase"><nothingHere/></meta-data>
+        </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:name="com.sdk.ida.callvu.OutgoingCallInterceptor">
+            <intent-filter android:priority="1">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sdk.ida.callvu.IncomingCallInterceptor">
+            <intent-filter android:priority="1">
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sdk.ida.callvu.GcmBroadcastReciver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.ida.callvu"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sdk.ida.callvu.reciver.SMSReciver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sdk.ida.callvu.GCMIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.ida.callvu.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLAG_GRANT_READ_URI_PERMISSION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.ida.callvu.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.apps.plus.permission.PICASA_STORE"><nothingHere/></uses-permission>
+    </manifest>

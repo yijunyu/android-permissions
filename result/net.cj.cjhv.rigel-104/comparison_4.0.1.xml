@@ -1,0 +1,20 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.CHANGE_NETWORK_STATE</permission>
+    <permission>android.permission.DISABLE_KEYGUARD</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.SYSTEM_ALERT_WINDOW</permission>
+    <permission>android.permission.WRITE_OWNER_DATA</permission>
+    <permission>android.permission.INTERACT_ACROSS_USERS_FULL</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+    <permission>android.permission.READ_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.PREVENT_POWER_KEY</permission>
+    <permission>android.permission.READ_OWNER_DATA</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+  </under-specification>
+</comparison>

@@ -1,8 +1,0 @@
-<comparison>
-  <over-specification/>
-  <under-specification>
-    <permission>android.permission.WAKE_LOCK</permission>
-    <permission>android.permission.RECORD_AUDIO</permission>
-    <permission>android.permission.CAMERA</permission>
-  </under-specification>
-</comparison>

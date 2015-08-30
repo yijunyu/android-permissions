@@ -1,0 +1,13 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.RECEIVE_SMS</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+    <permission>android.permission.READ_SMS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+  </under-specification>
+</comparison>

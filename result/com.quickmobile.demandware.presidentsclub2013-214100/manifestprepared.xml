@@ -1,0 +1,189 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.quickmobile.demandware.presidentsclub2013">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/AppName" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:configChanges="orientation" android:name="com.quickmobile.conference.start.ApplicationStart" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.quickmobile.conference.databaseInfo.DownloadDatabaseActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.start.MainEventActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.start.NestedAppHomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.common.DocumentViewer"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.common.VideoPlayActivity"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.qmactivity.QMWebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.EncryptDatabaseActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.SplashActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.TellAFriendActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.SettingsActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.FeedbackActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.FrommersCityGuideActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.FacebookActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.SocialActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.generic.GenericListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.generic.GenericTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.article.ArticlesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.article.details.ArticleDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.AttendeeTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.AttendeeTabFragment1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.AttendeeTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.AttendeesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.AttendeesActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.AttendeesActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.details.AttendeeDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.details.AttendeeDetailsFragmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.details.AttendeeDetailsWithPhotoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.details.AttendeeTabDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.attendee.AttendeesEmailLookupActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.briefcase.BriefcaseActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.databaseInfo.DatabaseInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.databaseInfo.details.DatabaseInfoDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.document.DocumentsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.document.EventDocumentsFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.document.details.DocumentDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.document.details.DocumentDetailsFragmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.EventsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.EventsTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.EventDetailsSurveyTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.EventTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.EventsPagerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.WhatsOnNowActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.details.EventInfoFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.details.EventDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.details.EventDetailsActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.details.EventDetailsActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.details.EventDetailsTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.myschedule.MyScheduleAndMeetingFragmentTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.myschedule.MyScheduleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.myschedule.MyScheduleAndMeetingPagerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.myschedule.MyScheduleAndMeetingPagerActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.tracks.TrackEventsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.event.tracks.TracksActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.exhibitor.ExhibitorsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.exhibitor.ExhibitorsActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.exhibitor.ExhibitorsActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.map.details.InteractiveMapsDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.map.MapsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.exhibitor.ExhibitorsActivityWithLogo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.exhibitor.details.ExhibitorDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.gallery.PhotoGalleryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.gallery.GalleryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.gallery.GalleryActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.gallery.photo.PhotoFragmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.gallery.photo.ThumbnailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.gallery.photo.upload.PhotoUploadActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.gallery.photo.upload.PhotoUploadProgressActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.infobooth.InfoBoothsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.infobooth.details.InfoBoothDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.infobooth.ConferenceMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.login.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.login.ForgetPasswordActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.message.MessagesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.message.MessageCenterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.message.MessageComposeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.message.MessageConversationsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.message.details.MessageConversationDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.message.details.MessageDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.mynotes.MyNotesWithHeadersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.mynotes.details.MyNotesDetailsViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.mynotes.details.MyNotesDetailsEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.mynotes.MyNotesSendByEmailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.qrcode.QRCodeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.contactExchange.ContactExchangeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.leadGeneration.LeadGenerationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.contactExchange.PinCodeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.questionAndAnswer.QuestionAndAnswerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.questionAndAnswer.QuestionAndAnswerDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.quickmeeting.NewQuickMeetingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.quickmeeting.QuickMeetingDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.quickmeeting.QuickMeetingResponseDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.speaker.SpeakersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.speaker.SpeakersFragmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.speaker.details.SpeakerDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.speaker.details.SpeakerDetailsActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.speaker.EventSpeakersFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.speaker.SpeakersTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.speaker.SpeakersTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.myFavourites.MyFavouritesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.sponsor.SponsorsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.sponsor.details.SponsorDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.sponsor.details.SponsorDetailsActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.sponsor.details.SponsorWebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.AttendeeSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.EventSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.ExhibitorSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.ExhibitorWithLogoSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.ExhibitorLandmarkSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.MessageSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.UniversalSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.UniversalSearchActivity2" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.SponsorSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.SpeakerSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.search.AttendeeEmailLookupSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.speakout.SpeakOutsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.speakout.SpeakOutPostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.survey.SurveysActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.survey.PollsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.survey.EventSurveysFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.survey.details.SurveyDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.survey.details.SurveyOpenEndedQuestionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.survey.details.SurveyQuestionCheckBoxesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.survey.ParentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.survey.SurveysTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.survey.SurveysTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="New Twitter Feed" android:name="com.quickmobile.twitter.TwitterMainFragmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="New Twitter Detail" android:name="com.quickmobile.twitter.TwitterDetailFragmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.video.VideosActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.venue.VenuesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.venue.details.VenueInfoFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.venue.details.VenueMapFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.venue.details.VenueDetailsTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.venue.details.VenueDetailsFragmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.venue.details.VenueDetailsMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.conference.venue.details.VenueDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.snap.SnapMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.snap.SnapEventsFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.snap.MyEventsFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.quickmobile.snap.HomeFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Twitter Detail View" android:name="com.quickmobile.twitter.TwitterDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Twitter Feed View" android:name="com.quickmobile.twitter.TwitterFeedActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Twitter Hash Tags" android:name="com.quickmobile.twitter.TwitterHashTagsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <meta-data android:name="TemplateVersion" android:value="1.2.12"><nothingHere/></meta-data>
+    <receiver android:name="com.quickmobile.push.MyC2dmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.quickmobile.demandware.presidentsclub2013"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.quickmobile.demandware.presidentsclub2013"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.quickmobile.receiver.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <category android:name="com.quickmobile.demandware.presidentsclub2013"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.quickmobile.quickstart.database.NewDatabaseUpdateService"><nothingHere/></service>
+        <service android:name="com.quickmobile.webservice.WebServiceCacheService"><nothingHere/></service>
+        <service android:name="com.quickmobile.snap.ContentDownloadService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <permission android:name="com.quickmobile.demandware.presidentsclub2013.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="com.quickmobile.demandware.presidentsclub2013.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    </manifest>

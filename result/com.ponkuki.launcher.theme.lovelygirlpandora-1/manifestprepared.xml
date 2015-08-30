@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ponkuki.launcher.theme.lovelygirlpandora">
+    <application android:allowBackup="false" android:icon="@drawable/theme_icon" android:label="@string/app_name">
+        <activity android:excludeFromRecents="true" android:icon="@drawable/theme_icon" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.campmobile.launcher.themeapp.DialogActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/theme_icon" android:label="@string/app_name" android:name="com.campmobile.launcher.themeapp.PreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="com.campmobile.launcher.theme"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.campmobile.launcher.themeapp.UriHandleActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="com.ponkuki.launcher.theme.lovelygirlpandora" android:scheme="theme"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <receiver android:name="com.campmobile.launcher.themeapp.ThemeAppBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.campmobile.launcher.action.FIRST_START"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+<supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

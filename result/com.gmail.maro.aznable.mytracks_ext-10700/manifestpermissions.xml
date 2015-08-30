@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>com.sonyericsson.extras.liveware.aef.EXTENSION_PERMISSION</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_EXTERNAL_STORAGE</name>
+  </permission>
+  <permission>
+    <name>android.permission.ACCESS_COARSE_LOCATION</name>
+  </permission>
+  <permission>
+    <name>android.permission.ACCESS_FINE_LOCATION</name>
+  </permission>
+  <permission>
+    <name>android.permission.ACCESS_MOCK_LOCATION</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>com.google.android.apps.mytracks.READ_TRACK_DATA</name>
+  </permission>
+  <permission>
+    <name>com.google.android.apps.mytracks.WRITE_TRACK_DATA</name>
+  </permission>
+  <permission>
+    <name>com.google.android.apps.mytracks.TRACK_NOTIFICATIONS</name>
+  </permission>
+</permissions>

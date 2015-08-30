@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </under-specification>
+</comparison>

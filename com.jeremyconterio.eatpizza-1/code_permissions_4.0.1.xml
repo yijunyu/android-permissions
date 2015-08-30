@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<calls>
-  <call>
-    <file>./smali/com/yourcompany/wrapper/wrapper.java</file>
-    <line>38</line>
-    <permissions/>
-  </call>
-</calls>

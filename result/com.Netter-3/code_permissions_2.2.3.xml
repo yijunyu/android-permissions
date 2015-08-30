@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/odysys/netter/affichageInfos/InfosAdapter.java</file>
+    <line>136</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/odysys/netter/aide/AideActivity.java</file>
+    <line>31</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/odysys/netter/affichageFiche/AffichageFicheActivity.java</file>
+    <line>618</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.ACCESS_NETWORK_STATE</name>
+  </permission>
+  <permission>
+    <name>android.permission.READ_PHONE_STATE</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.GET_ACCOUNTS</name>
+  </permission>
+  <permission>
+    <name>android.permission.WAKE_LOCK</name>
+  </permission>
+  <permission>
+    <name>android.permission.VIBRATE</name>
+  </permission>
+  <permission>
+    <name>air.LittleMermaidFree.mokento.com.permission.C2D_MESSAGE</name>
+  </permission>
+  <permission>
+    <name>com.google.android.c2dm.permission.RECEIVE</name>
+  </permission>
+</permissions>

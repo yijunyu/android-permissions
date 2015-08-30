@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="info.fiveonline.slidingmenu">
+    <application android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name" android:largeHeap="true" android:name="info.fiveonline.slidingmenu.Controller" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="info.fiveonline.slidingmenu.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="MainActivity"><nothingHere/></activity>
+        <activity android:name="TouchImageView"><nothingHere/></activity>
+        <activity android:name="FullImageActivity"><nothingHere/></activity>
+        <activity android:name="FullImageActivity1"><nothingHere/></activity>
+        <activity android:name="FullImageActivity2"><nothingHere/></activity>
+        <activity android:name="FullImageActivity3"><nothingHere/></activity>
+        <activity android:name="Form" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="Colors" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="Print" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="Plain" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="Ancle" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="AlertDialogManager" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="CommonDetector" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="WakeLocker" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="Home" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="About" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="Product" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="NewArrival" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="Contact" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="RegisterActivity"><nothingHere/></activity>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="info.fiveonline.cofit"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="info.fiveonline.slidingmenu.GCMIntentService"><nothingHere/></service>
+    </application>
+<permission android:name="info.fiveonline.cofit.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="info.fiveonline.cofit.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

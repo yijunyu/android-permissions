@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.BLUETOOTH</name>
+  </permission>
+  <permission>
+    <name>android.permission.BLUETOOTH_ADMIN</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_EXTERNAL_STORAGE</name>
+  </permission>
+  <permission>
+    <name>android.permission.READ_EXTERNAL_STORAGE</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_INTERNAL_STORAGE</name>
+  </permission>
+  <permission>
+    <name>android.permission.READ_INTERNAL_STORAGE</name>
+  </permission>
+  <permission>
+    <name>android.permission.GET_TASKS</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.GET_ACCOUNTS</name>
+  </permission>
+  <permission>
+    <name>android.permission.USE_CREDENTIALS</name>
+  </permission>
+</permissions>

@@ -1,7 +1,0 @@
-<comparison>
-  <over-specification/>
-  <under-specification>
-    <permission>android.permission.GET_TASKS</permission>
-    <permission>android.permission.VIBRATE</permission>
-  </under-specification>
-</comparison>

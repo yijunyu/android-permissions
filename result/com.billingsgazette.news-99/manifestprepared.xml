@@ -1,0 +1,69 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.billingsgazette.news">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.lee.news.NewsApplication" android:theme="@style/Theme.LeeNews.Core">
+        <activity android:label="Account Login" android:name="com.lee.news.activity.AccountLoginActivity" android:theme="@style/Theme.LeeNews.Dialog"><nothingHere/></activity>
+        <activity android:label="Feedback" android:name="com.lee.news.activity.FeedbackActivity" android:theme="@style/Theme.LeeNews.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.ContentPagerActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.ContentUriPagerActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.BusinessActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.DownloadsActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.DealsActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.InboxActivity" android:theme="@style/Theme.LeeNews.Core.DrawerIcon"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.EditorialActivity" android:theme="@style/Theme.LeeNews.Core.DrawerIcon">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lee.news.activity.ImageSwipeViewActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.SearchActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.SettingsActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.WebActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.CalendarCategoriesActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.CalendarEventListActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.CalendarEventSearchActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.VenueViewActivity"><nothingHere/></activity>
+        <activity android:name="com.lee.news.activity.StatisticsActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/release_google_api_key"><nothingHere/></meta-data>
+        <provider android:authorities="com.billingsgazette.news.urbanairship.provider" android:exported="false" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider"><nothingHere/></provider>
+        <provider android:authorities="com.billingsgazette.news.provider" android:exported="false" android:name="com.lee.news.provider.NewsReaderProvider" android:syncable="true"><nothingHere/></provider>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.billingsgazette.news"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.lee.news.api.IntentReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.lee.news.sync.BloxSyncBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        <service android:label="Segments Service" android:name="com.urbanairship.location.LocationService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.lee.news.sync.BloxSyncService"><nothingHere/></service>
+        </application>
+<permission android:name="com.billingsgazette.news.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.billingsgazette.news.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    </manifest>

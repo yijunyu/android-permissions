@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ideapp.beautypouch">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".StartPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MakeupProjectActivity"><nothingHere/></activity>
+        <activity android:name=".listview"><nothingHere/></activity>
+        <activity android:name=".detailview"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".inputitem"><nothingHere/></activity>
+        <activity android:name=".story"><nothingHere/></activity>
+        <activity android:name=".helper"><nothingHere/></activity>
+        <activity android:name=".helper1_1"><nothingHere/></activity>
+        <activity android:name=".helper1_2"><nothingHere/></activity>
+        <activity android:name=".helper2_1"><nothingHere/></activity>
+        <activity android:name=".helper3_1"><nothingHere/></activity>
+        <activity android:name=".tab_main"><nothingHere/></activity>
+        <activity android:name="com.ideapp.beautypouch.ListView_Gallery"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

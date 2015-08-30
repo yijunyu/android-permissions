@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="rgi.random">
+    <application android:allowBackup="true" android:debuggable="true" android:description="@string/appDescription" android:enabled="true" android:hasCode="true" android:icon="@drawable/icon" android:killAfterRestore="false" android:label="@string/app_name" android:restoreNeedsApplication="false" android:vmSafeMode="true">
+        <activity android:label="@string/app_name" android:name=".randomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/preferences" android:name=".PreferencesActivity"><nothingHere/></activity>
+    </application>
+</manifest>

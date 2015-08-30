@@ -1,0 +1,162 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:name="Drivewise.ly-drive with friends" package="com.Smoothdrive">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".SmoothApplication">
+        <activity android:name=".v3.ui.SummaryScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".v3.ui.TripHistoryScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name=".v3.ui.ProgressScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".v3.ui.MapScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".UI.TabFeedback" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".v3.ui.AboutScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".v3.ui.StatisticsScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".v3.ui.AboutWebScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".v3.ui.SettingsScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".v3.ui.FacebookLoginScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".v3.ui.InTripScreen" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".v3.ui.CarSelectorScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleInstance" android:name=".v3.ui.SplashScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC1F6O1iw_s3AJrJJx445I5ggSDFj8Bisk"><nothingHere/></meta-data>
+        <receiver android:enabled="true" android:name="com.driveway.io.network.ConnectivityChangesReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.driveway.io.network.files.FileSendingResponseHandler">
+            <intent-filter>
+                <action android:name="com.Smoothdrive.fura"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.driveway.co.de.eng.EngineEventsReceiver">
+            <intent-filter>
+                <action android:name="com.driveway.dt.LaunchService"><nothingHere/></action>
+                <action android:name="com.driveway.dt.TDGTr"><nothingHere/></action>
+                <action android:name="com.driveway.dt.AppL"><nothingHere/></action>
+                <action android:name="com.driveway.dt.StSpCh"><nothingHere/></action>
+                <action android:name="com.driveway.dt.TStD"><nothingHere/></action>
+                <action android:name="com.driveway.dt.TEndD"><nothingHere/></action>
+                <action android:name="com.driveway.core.engine.T_S_M"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.driveway.co.de.eng.BtStateReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"><nothingHere/></action>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.driveway.co.de.eng.EnvironmentChangesReceiver">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name=".v3.core.CompetitionManager"><nothingHere/></service>
+        <service android:name="com.driveway.io.network.files.FileUploadManager"><nothingHere/></service>
+        <service android:name="com.driveway.io.network.light.SenderService"><nothingHere/></service>
+        <service android:name=".app.RegistratorService"><nothingHere/></service>
+        <service android:name="com.driveway.co.re.TripRecorderService"><nothingHere/></service>
+        <service android:name="com.driveway.app.CalendarManager"><nothingHere/></service>
+        <service android:name="com.driveway.app.ConfigurationManager"><nothingHere/></service>
+        <service android:name="com.driveway.co.de.eng.SpeChService"><nothingHere/></service>
+        <service android:name="com.driveway.co.de.eng.GManipulator"><nothingHere/></service>
+        <service android:name="com.driveway.co.de.eng.PolWoService"><nothingHere/></service>
+        <service android:exported="true" android:name="com.driveway.co.de.geo.RecTrIntentService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.driveway.co.act.WaDetector"><nothingHere/></service>
+        <service android:exported="false" android:name="com.driveway.co.act.ActivityRecognitionIntentService"><nothingHere/></service>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.sensor.compass" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SECURE_SETTINGS" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    </manifest>

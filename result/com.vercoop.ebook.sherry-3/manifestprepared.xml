@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vercoop.ebook.sherry">
+    <application android:icon="@drawable/laucher_icon" android:label="@string/app_name" android:name="com.vercoop.ebook.sherry.GlobalApplication" android:theme="@style/Theme.noTitle">
+        <activity android:label="@string/app_name" android:name="com.vercoop.ebook.sherry.VercoopBook_Sherry">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vercoop.ebook.activities.VercoopBookActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.test.VercoopBookTestEntry"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.vercoop.ebook.activities.StartupLoadingViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.PrepareSkinActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.vercoop.ebook.activities.RotateActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.vercoop.ebook.activities.ContentActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.vercoop.ebook.activities.LibraryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.ClassicalLoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.vercoop.ebook.activities.LoadingViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.DetailPageActivity"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.ZoomedInGalleryActivity"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.InformationViewActivity"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.test.CustomizingTest"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.test.ScrollViewCustomizingTest"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.test.ArticleViewTest"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.PublicLoginActivity"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.PreferenceSettingActivity"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.BookStoreLibraryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.ReaderLibraryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.SeriesBookDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.TwinToggleTestActivity"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.test.SimpleAudioViewTest"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.test.ContentViewTest"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.UserLoginActivity"><nothingHere/></activity>
+        <activity android:name="com.vercoop.ebook.activities.test.DetailPageActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.vercoop.ebook.activities.ContentToonTypedActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.vercoop.ebook.skyepub.StartActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:label="BookView" android:name="com.vercoop.ebook.skyepub.BookViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+    <service android:name="com.vercoop.ebook.interfaces.BookHandlerService"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    </manifest>

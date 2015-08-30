@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.expirycontrol">
+    <application android:allowBackup="true" android:icon="@drawable/expiry" android:label="@string/app_name" android:theme="@style/Theme.Customizedbar">
+        <activity android:configChanges="layoutDirection" android:label="@string/app_name" android:name="com.expirycontrol.ui.Product_List">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_add_product" android:name="com.expirycontrol.ui.add_product" android:parentActivityName="com.expirycontrol.ui.Product_List">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.expirycontrol.ui.add_product"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_product_detail" android:name="com.expirycontrol.ui.Product_Detail" android:parentActivityName="com.expirycontrol.ui.Product_List">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.expirycontrol.ui.Product_List"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_preferences" android:name="com.expirycontrol.ui.preferences" android:parentActivityName="com.expirycontrol.ui.preferences">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.expirycontrol.ui.preferences"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_edit_product" android:name="com.expirycontrol.ui.edit_product" android:parentActivityName="com.expirycontrol.ui.Product_List">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.expirycontrol.ui.Product_List"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_about" android:name="com.expirycontrol.ui.about" android:parentActivityName="com.expirycontrol.ui.Product_List">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.expirycontrol.ui.Product_List"><nothingHere/></meta-data>
+        </activity>
+    <receiver android:name="com.expirycontrol.services.MainServiceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.expirycontrol.services.MainService"><nothingHere/></service>
+        </application>
+<supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Android.Resultsman.ResultsmanTouch">
+    <application android:icon="@drawable/ddisplay" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".DisplayEventlist">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Resultsman Touch - About" android:name="Aboutscreen"><nothingHere/></activity>
+        <activity android:label="Resultsman Touch - Competitors" android:name=".DisplayCompList"><nothingHere/></activity>
+        <activity android:label="Resultsman Touch - Competitor" android:name=".DisplayCompetitor"><nothingHere/></activity>
+        <activity android:label="Resultsman Touch -Events" android:name=".DisplayRunList"><nothingHere/></activity>
+        <activity android:label="Resultsman Touch - Classes" android:name="DisplayGroupList"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

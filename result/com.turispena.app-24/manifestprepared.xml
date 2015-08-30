@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.turispena.app">
+    <application android:icon="@drawable/logo" android:label="@string/APPLICATION_NAME" android:name="com.demo.app.Demo" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.splash.SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.home.HomeScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.help.HelpScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.poi.SpotsScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.poi.SpotScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.poi.RoutesScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.poi.RouteScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.map.MapPointScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.map.MapRouteScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.map.DirectionsScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/APPLICATION_NAME" android:launchMode="singleTop" android:name="com.demo.app.screen.config.FileExplorerScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

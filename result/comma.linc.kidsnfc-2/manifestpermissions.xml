@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.NFC</name>
+  </permission>
+  <permission>
+    <name>android.permission.CALL_PHONE</name>
+  </permission>
+  <permission>
+    <name>android.permission.RECORD_AUDIO</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_EXTERNAL_STORAGE</name>
+  </permission>
+</permissions>

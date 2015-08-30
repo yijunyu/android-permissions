@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/mathmaverick/satmathadaysampler/SecondAct.java</file>
+    <line>42</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/mathmaverick/satmathadaysampler/SATMathADaySamplerActivity.java</file>
+    <line>186</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/mathmaverick/satmathadaysampler/SATMathADaySamplerActivity.java</file>
+    <line>213</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

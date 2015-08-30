@@ -1,7 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.INTERNET</permission>
-    <permission>android.permission.READ_PHONE_STATE</permission>
-  </over-specification>
-  <under-specification/>
-</comparison>

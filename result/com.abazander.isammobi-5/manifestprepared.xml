@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.abazander.isammobi">
+    <application android:debuggable="false" android:description="@string/app_description" android:enabled="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".ISAMMobiApplication" android:theme="@style/Theme.ISAMMobi">
+        <activity android:label="@string/app_name" android:name="com.abazander.isammobi.RootActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/configuration_root_title" android:name="com.abazander.isammobi.ConfigurationRootActivity"><nothingHere/></activity>
+        <activity android:label="@string/globalsearch_title" android:name="com.abazander.isammobi.GlobalSearchActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

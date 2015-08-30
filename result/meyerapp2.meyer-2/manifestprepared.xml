@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="meyerapp2.meyer">
+    <application android:icon="@drawable/ic_launcher" android:label="meyer">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="meyer" android:name="com.genuitec.mobione.build.template.android.Main" android:screenOrientation="unspecified">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="meyer" android:name="com.genuitec.mobione.android.PlayVideoActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="meyer" android:name="com.phonegap.plugins.pdf.ProxyActivity" android:screenOrientation="unspecified">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="meyer" android:name="org.apache.cordova.DroidGap" android:screenOrientation="unspecified">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

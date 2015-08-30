@@ -1,0 +1,16 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.SET_ORIENTATION</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.DEVICE_POWER</permission>
+    <permission>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.BLUETOOTH</permission>
+    <permission>android.permission.BLUETOOTH_ADMIN</permission>
+    <permission>android.permission.CAMERA</permission>
+    <permission>android.permission.MODIFY_AUDIO_SETTINGS</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.trantor.e3">
+    <application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity android:name="com.trantor.e3.SplashScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".DisclaimerScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".HomeScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".AboutUsScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".HelpWithFeelings" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FeelingsDrainingYou" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".HelpForKids" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".HelpForParents" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".HowDoesE3Help" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".HowDoesE3Works" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".NeedHelpNow" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".SignFeelings" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Sorting" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".SortYourFeelings" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".WhatAmIFeeling" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".WhoCanHelp" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".YouAreNotAlone" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".TimeForHelp" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Anxious" android:screenOrientation="portrait"><nothingHere/></activity>
+c
+<activity android:name=".Angry" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Sad" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".AmIAnxious" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".WhyFeelAnxiety" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FlipAnxiety" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".EmpoweringQuestions" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".PdfViewerActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

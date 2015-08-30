@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.clockwallpaper3d">
+    <application android:icon="@drawable/ic_launcher_wallpaper" android:label="@string/wallpapers">
+        <activity android:exported="true" android:label="@string/clock3d_settings" android:name=".ClockWallpaper3DSettings" android:theme="@android:style/Theme.Light.WallpaperSettings"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14fd4f896368e6"><nothingHere/></meta-data>
+    <service android:icon="@drawable/ic_launcher_wallpaper" android:label="@string/clock_wallpaper_3d" android:name="ClockWallpaper3D" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/clock3d"><nothingHere/></meta-data>
+        </service>
+        </application>
+    <uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

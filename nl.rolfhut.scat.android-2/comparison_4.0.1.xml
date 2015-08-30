@@ -1,9 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.CHANGE_WIFI_MULTICAST_STATE</permission>
-    <permission>android.permission.CHANGE_WIFI_STATE</permission>
-  </over-specification>
-  <under-specification>
-    <permission>android.permission.WAKE_LOCK</permission>
-  </under-specification>
-</comparison>

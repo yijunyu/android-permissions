@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.wdincerguners">
+    <application android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.wdincerguners.AppsBuilderApplication" android:screenOrientation="portrait" android:theme="@style/AppsBuilderTheme">
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.wdincerguners.AppsBuilderSplash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".AppsBuilderCategory"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderTabView"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderWebView"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderFeed"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderContact"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderGallery"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderGallerySlider"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderAudio"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderVideo"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderCustomViewViewer"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderAudioService"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderMapActivity"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderForm"><nothingHere/></activity>
+        <activity android:name=".AudioRecorder" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderTabSlideActivity"><nothingHere/></activity>
+        <activity android:name=".AppsBuilderFullScreenVideoView"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value=""><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.wdincerguners"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.wdincerguners.GCMIntentService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.wdincerguners.AppsBuilderPushService" android:process=":remote"><nothingHere/></service>
+        <service android:name="com.wdincerguners.AppsBuilderDownloadService"><nothingHere/></service>
+        </application>
+<permission android:name="com.wdincerguners.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.wdincerguners.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="false" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.wdincerguners.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.wdincerguners.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    </manifest>

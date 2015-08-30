@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.deoliance.leschiffonschics.olapush">
+    <application android:icon="@drawable/icone_market_2" android:label="@string/app_name" android:largeHeap="true" android:name="fr.pcsoft.wdjava.core.application.WDAppManager">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".wdgen.GWDPTETRAKSYS_market$WDLanceur" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1aj_RapportEvenements$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1al_Aide$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1ak_Reglages$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1aa_Accueil$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1af_Initialisation$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1ad_Produits$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1ag_Localisation$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1ab_BonsPlans$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1ah_MessageErreur$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1ai_Notifications$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1ac_Categories$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wdgen.GWDFFA1ae_Fiche$WDActiviteFenetre" android:screenOrientation="portrait" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:name="fr.pcsoft.wdjava.ui.activite.WDActivite$BlankActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <meta-data android:name="fr.pcsoft.first_window_name" android:value="FA1aa_Accueil"><nothingHere/></meta-data>
+        <meta-data android:name="sender_id" android:value="L895896523567"><nothingHere/></meta-data>
+    <receiver android:name="fr.pcsoft.wdjava.notification.push.WDNotifPushManager$GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.deoliance.leschiffonschics.olapush"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="fr.pcsoft.wdjava.core.service.WDServiceLocal"><nothingHere/></service>
+        <service android:name="fr.pcsoft.wdjava.notification.push.WDNotifPushManager$GCMIntentService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.deoliance.leschiffonschics.olapush.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="true"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.deoliance.leschiffonschics.olapush.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

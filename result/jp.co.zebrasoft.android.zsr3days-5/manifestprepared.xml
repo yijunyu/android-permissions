@@ -1,0 +1,199 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="jp.co.zebrasoft.android.zsr3days">
+    <application android:icon="@drawable/zsricon" android:label="@string/app_name" android:theme="@style/SampleTheme.Light">
+        <activity android:name="MainTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.co.zebrasoft.android.zsr3days.Drag" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="jp.co.zebrasoft.android.zsr3days.list.BlockNumberEntryActivity"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="jp.co.zebrasoft.android.zsr3days.list.RecordNumberEntryActivity"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="jp.co.zebrasoft.android.zsr3days.list.RecFileListActivity"><nothingHere/></activity>
+        <activity android:exported="false" android:name="jp.co.zebrasoft.android.zsr3days.list.LockNumberEntryActivity"><nothingHere/></activity>
+        <activity android:name="jp.co.zebrasoft.android.zsr3days.PreferencesViewer"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/title2" android:name="jp.co.zebrasoft.android.zsr3days.ZSuperRecorderPreferenceActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.PREFERENCE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="jp.co.zebrasoft.android.zsr3days.ZSuperRecorderDialog" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.co.zebrasoft.android.zsr3days.timer.Config"><nothingHere/></activity>
+        <activity android:name="ZSuperRecorderEasyPrefActivity">
+            <intent-filter android:icon="@drawable/zsricon" android:label="@string/title2">
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="*" android:mimeType="*/*" android:pathPattern=".*.zsrconf" android:scheme="file"><nothingHere/></android-data>
+                <android-data android:host="*" android:mimeType="application/zsrconf" android:pathPattern=".*.zsrconf" android:scheme="file"><nothingHere/></android-data>
+            <category android:name="android.intent.category.PREFERENCE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="Kankyo_View"><nothingHere/></activity>
+        <receiver android:name="jp.co.zebrasoft.android.zsr3days.receiver.TelephoneOutgoingReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="jp.co.zebrasoft.android.zsr3days.receiver.TelephonIncommingReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="jp.co.zebrasoft.android.zsr3days.receiver.ZSuperRecorderStartUp">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/w_add" android:label="@string/msg165" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Add">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/w_list" android:label="@string/msg166" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_List">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/w_set" android:label="@string/msg168" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Setting">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/w_t_on" android:label="@string/msg169" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Target">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/w_on" android:label="@string/msg170" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Toggle">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/w_rec_off" android:label="@string/msg167" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Rec">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/task_b_on" android:label="@string/msg171" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Task">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/reset_key" android:label="@string/msg181" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Reset">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/block" android:label="@string/msg240" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Block">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/w_pause_off" android:label="@string/msg274" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Pause">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:icon="@drawable/w_timer_on" android:label="@string/msg289" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Timer">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgete"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="jp.co.zebrasoft.android.zsr3days.receiver.ZSuperRecorderWakeup">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="jp.co.zebrasoft.android.zsr3days.receiver.ZSR_zCloakServer">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zcloakserver.send"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="jp.co.zebrasoft.android.zsr3days.receiver.GetContactService"><nothingHere/></service>
+        <service android:name="jp.co.zebrasoft.android.zsr3days.rec.ZSuperRecorder"><nothingHere/></service>
+        <service android:name="jp.co.zebrasoft.android.zsr3days.rec.ZSuperRecorderStartupService"><nothingHere/></service>
+        <service android:exported="false" android:name="jp.co.zebrasoft.android.zsr3days.rec.LayerService"><nothingHere/></service>
+        <service android:exported="false" android:icon="@drawable/w_add" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Add_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3day.ADD_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:icon="@drawable/w_list" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_List_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3day.LIST_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:icon="@drawable/w_set" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Setting_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3days.SETTING_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:icon="@drawable/w_t_on" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Target_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3days.TARGET_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:icon="@drawable/w_on" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Toggle_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3days.TOGGLE_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:icon="@drawable/w_rec_off" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Rec_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3days.REC_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Task_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3days.TASK_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Reset_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3days.RESET_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Block_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3days.BLOCK_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Pause_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3days.PAUSE_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="jp.co.zebrasoft.android.zsr3days.widget.ZSR_Widdet_Timer_Service">
+            <intent-filter>
+                <action android:name="jp.co.zebrasoft.android.zsr3days.TIMER_BTNCLICK"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="jp.co.zebrasoft.android.zsr3days.timer.BellService"><nothingHere/></service>
+        <service android:name="jp.co.zebrasoft.android.zsr3days.receiver.ZSuperRecorderWakeupService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

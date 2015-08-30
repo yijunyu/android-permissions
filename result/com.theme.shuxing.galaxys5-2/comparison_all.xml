@@ -1,0 +1,18 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.MOUNT_UNMOUNT_FILESYSTEMS</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.SYSTEM_ALERT_WINDOW</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.READ_USER_DICTIONARY</permission>
+    <permission>android.permission.READ_SOCIAL_STREAM</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+    <permission>android.permission.WRITE_CONTACTS</permission>
+  </under-specification>
+</comparison>

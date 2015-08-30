@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.launch.bubblev1p0">
+    <application android:allowBackup="true" android:icon="@drawable/logo_v4" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.launch.bubblev1p0.IntroPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="Bubblemain"><nothingHere/></activity>
+        <activity android:name="RegistrationPage"><nothingHere/></activity>
+        <activity android:name="LandingPage"><nothingHere/></activity>
+        <activity android:name="GuestLoc"><nothingHere/></activity>
+        <activity android:name="ForgotPassword"><nothingHere/></activity>
+        <activity android:name="SuccessfulChange"><nothingHere/></activity>
+        <activity android:name="ChangePassword"><nothingHere/></activity>
+        <activity android:name="LandingPageDisplay">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="ThreadPage">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="Regcomp"><nothingHere/></activity>
+        <activity android:name="ProfilePage"><nothingHere/></activity>
+        <activity android:name="ProfilePageEdit"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

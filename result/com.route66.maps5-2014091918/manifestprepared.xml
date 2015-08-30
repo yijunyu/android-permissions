@@ -1,0 +1,143 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.route66.maps5">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/eStrNavigate6" android:name=".app.R66Application">
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name=".map.MapActivity" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="standard" android:name=".map.MainMapActivity" android:theme="@style/Theme.R66.Map"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name=".app.NavigationReceiver" android:noHistory="true" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="geo"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="maps.google.com" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="*" android:pathPattern="/maps.*" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*" android:pathPattern="/maps.*" android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="maps.google.com" android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="66.com" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="66.com" android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="route66"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="r66"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/postal-address_v2"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name=".app.GpuConfigActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:hardwareAccelerated="true" android:name=".mvc.GenericActivity" android:theme="@style/ThemeDialog" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.GenericGridActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.GenericActivityWithHeader" android:theme="@style/ThemeDialog"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:hardwareAccelerated="true" android:name=".mvc.GenericExpandableListActivity" android:theme="@style/ThemeDialog"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.GenericLicensesBuyActivity" android:theme="@style/ThemeDialog"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.GenericFormActivity" android:theme="@style/ThemeDialog"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.genericformlist.GenericFormListActivity" android:theme="@style/ThemeDialog" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.GenericWebViewActivity" android:theme="@style/ThemeDialog"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.SearchAddressActivity" android:theme="@style/ThemeDialog"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.AboutActivity" android:theme="@style/ThemeDialog"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.VoucherActivity" android:theme="@style/ThemeDialog"><nothingHere/></activity>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name=".mvc.AlertsActivity" android:theme="@style/ThemeDialog" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name=".util.ShowDialogActivity" android:noHistory="true" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/eStrHelp" android:name=".widgets.WebViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name=".notifications.NotificationsWebViewActivity"><nothingHere/></activity>
+        <activity android:name=".map.FakeActivity"><nothingHere/></activity>
+        <activity android:name=".error.CrashReportActivity" android:noHistory="true" android:process=":crash" android:theme="@style/ThemeDialogCrashReport"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"><nothingHere/></meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:resource="@dimen/r66_multiwindow_min_width"><nothingHere/></meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:resource="@dimen/r66_multiwindow_min_height"><nothingHere/></meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:resource="@dimen/r66_multiwindow_min_width"><nothingHere/></meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:resource="@dimen/r66_multiwindow_min_height"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/eStrAppId"><nothingHere/></meta-data>
+    <receiver android:name=".app.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".app.MagneticFeildChangedReceiver">
+            <intent-filter>
+                <action android:name="com.route66.action.MAGNETIC_FIELD_CHANGED_INCREASE"><nothingHere/></action>
+                <action android:name="com.route66.action.MAGNETIC_FIELD_CHANGED_DECREASE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".gcm.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.R66.android"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name=".sensors.MagneticSensorListener" android:process=":magnetic.sensor.listener"><nothingHere/></service>
+        <service android:name=".gcm.GcmIntentService"><nothingHere/></service>
+        <service android:exported="false" android:label="@string/eStrNavigate6" android:name="com.R66.android.geofence.GeofenceTransitionsIntentService"><nothingHere/></service>
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.R66.android.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.R66.android.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

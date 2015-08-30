@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mamonde.show">
+    <application android:allowBackup="true" android:hardwareAccelerated="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.mamonde.show.MainActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.mamonde.show.activity.MyShowActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.mamonde.show.activity.StartActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.mamonde.show.activity.StartActivity_First" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_RESP_ACTIVITY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="itest"><nothingHere/></android-data>
+            <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.mamonde.show.activity.RecordActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.mamonde.show.activity.StartAnoActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.mamonde.show.activity.ShowActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.mamonde.show.activity.Copy_2_of_RecordActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.mamonde.show.activity.HeChengActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.PublishActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.GeneralInterfaceActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.ConversationActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.FriendActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.Authorize"><nothingHere/></activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.GeneralDataShowActivity"><nothingHere/></activity>
+        <activity android:name="com.tencent.weibo.sdk.android.component.ReAddActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="com.renren.mobile.rmsdk.oauth.auth.OAuthActivity"><nothingHere/></activity>
+        <activity android:name="com.renren.mobile.rmsdk.oauth.auth.ChooseAccountActivity"><nothingHere/></activity>
+    </application>
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera.front"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+</manifest>

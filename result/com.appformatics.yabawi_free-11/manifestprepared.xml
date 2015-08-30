@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.appformatics.yabawi_free">
+    <application android:debuggable="false" android:icon="@drawable/ic_app_homescreen" android:label="@string/AppName" android:theme="@android:style/Theme.Light">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:label="@string/AppName" android:name=".MainApp" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".FakeBatteryUsageScreen" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/AppName" android:name=".FileChooser"><nothingHere/></activity>
+        <activity android:label="@string/HelpButtonText" android:name=".Help"><nothingHere/></activity>
+        <activity android:label="@string/EulaTitle" android:name=".Eula"><nothingHere/></activity>
+        <activity android:label="@string/ChangeButtonText" android:name=".SkinsList" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"><nothingHere/></activity>
+        <activity android:label="@string/QRcodeTitleText" android:name=".ShowQR" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".prefs" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <receiver android:icon="@drawable/ic_app_widgetslist" android:label="@string/widget_name_1x1" android:name=".BatteryWidget1x1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider_1x1"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:icon="@drawable/ic_app_widgetslist" android:label="@string/widget_name_1x2" android:name=".BatteryWidget1x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider_1x2"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:icon="@drawable/ic_app_widgetslist" android:label="@string/widget_name_2x1" android:name=".BatteryWidget2x1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider_2x1"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:icon="@drawable/ic_app_widgetslist" android:label="@string/widget_name_2x2" android:name=".BatteryWidget2x2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider_2x2"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:icon="@drawable/ic_app_widgetslist" android:label="@string/widget_name_4x1" android:name=".BatteryWidget4x1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider_4x1"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="BootCompletedReceiver" android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:label="MediaMountedReceiver" android:name=".MediaMountedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:label="PackageAddedReceiver" android:name=".PackageAddedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </receiver>
+        <service android:name=".YabawiUpdateService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

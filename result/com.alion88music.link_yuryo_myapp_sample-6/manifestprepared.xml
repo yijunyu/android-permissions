@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.alion88music.link_yuryo_myapp_sample">
+    <application android:allowBackup="false" android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.alion88music.app.AlionMusicApplication" android:theme="@style/Alion.NoActionBar">
+        <activity android:allowTaskReparenting="true" android:clearTaskOnLaunch="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.alion88music.Agreement" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alion88music.ArtistSelect" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.alion88music.EnterPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.alion88music.HomePageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.alion88music.ParentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.alion88music.Top" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.alion88music.Registration" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="websignage.android">
+    <application android:icon="@drawable/ico_app1" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="websignage">
+            <intent-filter>
+                <action android:name="android.intent.action.DEFAULT"><nothingHere/></action>
+                <category android:name="android.intent.category.VIEW"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="ActivityGruppi"><nothingHere/></activity>
+        <activity android:name="ActivityPlayerIco"><nothingHere/></activity>
+        <activity android:name="ActivityPlayerNoIco"><nothingHere/></activity>
+        <activity android:name="ActivityDettPlayer"><nothingHere/></activity>
+        <activity android:name="ActivityScreenshot"><nothingHere/></activity>
+        <activity android:name="ActivityCondizioniOperative"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ActivityGoogleMaps" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ActivityTab" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

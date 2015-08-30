@@ -1,0 +1,9 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.READ_LOGS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,222 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ranosys.createappv1.singapore_realty">
+    <application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:largeHeap="true" android:name=".MyApplication" android:theme="@style/Theme.Sherlock">
+        <activity android:label="@string/app_name" android:name="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow"><nothingHere/></activity>
+        <activity android:label="@string/split_bill" android:name="com.ranosys.createappv1.singapore_realty.splitbill.SplittBillActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/reservation" android:name="com.ranosys.createappv1.singapore_realty.reservation.ReservationActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:clearTaskOnLaunch="true" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="zxing.appspot.com" android:path="/scan" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="www.google.com" android:path="/m/products/scan" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="www.google.co.uk" android:path="/m/products/scan" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="scan" android:path="/" android:scheme="zxing"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/news_letter" android:name="com.ranosys.createappv1.singapore_realty.newsletter.NewsLetterActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_events_list" android:name="com.ranosys.createappv1.singapore_realty.event.EventsListActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_event_detail" android:name="com.ranosys.createappv1.singapore_realty.event.EventDetailActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.event.EventsListActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.event.EventsListActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_more" android:name="com.ranosys.createappv1.singapore_realty.MoreActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/voice_record" android:name="com.ranosys.createappv1.singapore_realty.voicecapture.VoiceCaptureActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/bean_cam" android:name="cameratab.CameraActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/calculator" android:name="calculator.CalculatorActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/bean_cam" android:name="cameratab.MakePhotoActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/menu" android:name="menulisttab.MenuListActivityActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_menu_product_desc" android:name="menulisttab.MenuProductListActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_product_description" android:name="menulisttab.MenuProductDescActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/notepad" android:name="note.NoteEdit" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/notepad" android:name="note.NoteList" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/about_us" android:name="aboutus.AboutUsListActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/estore" android:name="estore.EstoreCategoryListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/product_list" android:name="estore.EstoreCategoryProductListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_aruound_us_list" android:name="com.ranosys.createappv1.singapore_realty.aroundus.AruoundUsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_around_us_map" android:name="com.ranosys.createappv1.singapore_realty.aroundus.AroundUsMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/contact_us" android:name="com.ranosys.createappv1.singapore_realty.contactus.ContactUs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/contact_us" android:name="com.ranosys.createappv1.singapore_realty.contactus.ContactUsDescription" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.contactus.Mappath" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/pdf" android:name="pdf.reader.PDFListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="pdf.reader.ViewPdfActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_product_description" android:name="estore.ProductDescriptionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_score_board" android:name="com.ranosys.createappv1.singapore_realty.scoreboard.ScoreBoardActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_add_player" android:name="com.ranosys.createappv1.singapore_realty.scoreboard.AddPlayerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_you_tube" android:name="com.ranosys.createappv1.singapore_realty.youtube.YouTubeActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/gallery" android:name="com.ranosys.createappv1.singapore_realty.gallery.GalleryActivity" android:parentActivityName="com.ranosys.createappv1.singapore_realty.HomeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ranosys.createappv1.singapore_realty.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.facebook.Facebook" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.rentalcalculator.RentalCalculator" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="estore.SSSWebView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_buy_now" android:name="estore.BuyNowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="returnurl" android:scheme="http://sss"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.paypal.android.MEP.PayPalActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.fanwall.FanWallActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.fanwall.ShareOnFacebook" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/Loyalty_rewards" android:name="com.ranosys.createappv1.singapore_realty.loyalty.LoyaltyRewardActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/check_in" android:name="com.ranosys.createappv1.singapore_realty.checkin.CheckIn" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.checkin.CheckInLoc" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/check_in" android:name="com.ranosys.createappv1.singapore_realty.checkin.Pathview" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.checkin.ShareOnFacebook" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.tellafriend.ShareOnFacebook" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.realestate.MappathRealEstate" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.realestate.SubPropertyList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.realestate.PropertyList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.realestate.RealEstateItemDescription" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_instagram" android:name="com.ranosys.createappv1.singapore_realty.instagram.InstagramActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="returnurl" android:scheme="http://returnurl"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_twiter" android:name="com.ranosys.createappv1.singapore_realty.twitter.TwiterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_qr_loyalty_reward" android:name="com.ranosys.createappv1.singapore_realty.qr.QrLoyaltyRewardActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_capture" android:name="com.ranosys.createappv1.singapore_realty.qr.CaptureActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_open_shop_scan_share" android:name="com.ranosys.createappv1.singapore_realty.OpenShopScanShareActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/tell_a_friend" android:name="com.ranosys.createappv1.singapore_realty.tellafriend.TellAFriend" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/feedback" android:name="com.ranosys.createappv1.singapore_realty.feedback.Feedback" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/feed_back_form" android:name="com.ranosys.createappv1.singapore_realty.feedback.FeedbackForm" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/messages" android:name="com.ranosys.createappv1.singapore_realty.message.Message" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.youtube.YouTubePlayerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_insta_web_view" android:name="com.ranosys.createappv1.singapore_realty.instagram.InstaWebView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_add_player_dialog" android:name="com.ranosys.createappv1.singapore_realty.scoreboard.AddPlayerDialog" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_qradapter" android:name="com.ranosys.createappv1.singapore_realty.qr.QRAdapter" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/overview" android:name="aboutus.AboutUsDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_push_notification" android:name="com.ranosys.createappv1.singapore_realty.pushnotifications.PushNotificationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_insta" android:name="com.ranosys.createappv1.singapore_realty.Insta.InstaActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_instagram" android:name="com.ranosys.createappv1.singapore_realty.instagram.Instagram" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_instagram_web_view" android:name="com.ranosys.createappv1.singapore_realty.instagram.Instagram_web_view" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_alt_audio_recorder" android:name="com.dev.audio.record.AltAudioRecorder" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_add_player_dialog" android:name="com.ranosys.createappv1.singapore_realty.scoreboard.Add_player_dialog" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.youtube.FullscreenDemoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.youtube.PlayerViewDemoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="true" android:label="@string/title_activity_show_message" android:name="com.ranosys.createappv1.singapore_realty.ShowMessageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_loyalty_reward_list" android:name="com.ranosys.createappv1.singapore_realty.loyalty.LoyaltyRewardListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_loyalty_reward_adapter" android:name="com.ranosys.createappv1.singapore_realty.LoyaltyRewardAdapter" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_loyalty_reward_list_adapter" android:name="com.ranosys.createappv1.singapore_realty.loyalty.LoyaltyRewardListAdapter" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_qrlist_adpater" android:name="com.ranosys.createappv1.singapore_realty.qr.QRListAdpater" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_qrlist" android:name="com.ranosys.createappv1.singapore_realty.qr.QRListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_check_in_list" android:name="com.ranosys.createappv1.singapore_realty.checkin.CheckInListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_check_in_adapter" android:name="com.ranosys.createappv1.singapore_realty.checkin.CheckInAdapter" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.appointment.Appointment" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.ranosys.createappv1.singapore_realty.SplashScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.ImageGridActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.ImageDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_home_second" android:name="com.ranosys.createappv1.singapore_realty.HomeSecondActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_home_third" android:name="com.ranosys.createappv1.singapore_realty.HomeThirdActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.HomeSelectorActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ranosys.createappv1.singapore_realty.website.WebSite" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_see_comments" android:name="com.ranosys.createappv1.singapore_realty.fanwall.SeeComments" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_event_list" android:name="com.ranosys.createappv1.singapore_realty.event.EventListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_event_detail_new" android:name="com.ranosys.createappv1.singapore_realty.event.EventDetailNewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_website_listing" android:name="com.ranosys.createappv1.singapore_realty.website.WebsiteListing" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_essential_number_list" android:name="com.ranosys.createappv1.singapore_realty.essentialNumber.EssentialNumberListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCXINluprG2MOBycZlxMgd_Vq0kVB84jPw"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"><nothingHere/></meta-data>
+    <receiver android:name="com.ranosys.createappv1.singapore_realty.ProximityAlertBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.ranosys.createappv1.singapore_realty.ProximityAlertBroadcastReceiver"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.ranosys.createappv1.singapore_realty"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:label="vikas" android:name="com.ranosys.createappv1.singapore_realty.ProximityAlertService"><nothingHere/></service>
+        <service android:name="com.ranosys.createappv1.singapore_realty.GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.ranosys.createappv1.singapore_realty.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.ranosys.createappv1.singapore_realty.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.ranosys.createappv1.singapore_realty.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.ranosys.createappv1.singapore_realty.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    </manifest>

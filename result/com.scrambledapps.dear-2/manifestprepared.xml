@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.scrambledapps.dear">
+    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/dear_logo" android:label="@string/name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name="com.scrambledapps.dear.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_home" android:name="com.scrambledapps.dear.Home"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_home" android:name="com.scrambledapps.dear.Home$DetailsActivity"><nothingHere/></activity>
+        <activity android:label="video" android:name="com.scrambledapps.dear.Video"><nothingHere/></activity>
+    </application>
+</manifest>

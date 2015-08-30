@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.mobbisys.hungama">
+    <application android:icon="@drawable/mh" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".TabsPage" android:screenOrientation="portrait" android:theme="@style/CustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActerPage" android:screenOrientation="portrait" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Acters" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".IndexableListViewActivity"><nothingHere/></activity>
+        <activity android:name=".VideosnmoviesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".First" android:screenOrientation="portrait" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Second" android:screenOrientation="portrait" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Third" android:screenOrientation="portrait" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Fourth" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Five" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Six" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Seven" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Eight" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Nine" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Ten" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Eleven" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Gabbarsongs" android:screenOrientation="portrait" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name=".Rachasongs"><nothingHere/></activity>
+        <activity android:name=".Dammu"><nothingHere/></activity>
+        <activity android:name=".Eega"><nothingHere/></activity>
+        <activity android:name=".Ishq"><nothingHere/></activity>
+        <activity android:name=".LoveFailure"><nothingHere/></activity>
+        <activity android:name=".Naishtam"><nothingHere/></activity>
+        <activity android:name=".SMS"><nothingHere/></activity>
+    </application>
+<compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"><nothingHere/></screen>
+    </compatible-screens>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    </manifest>

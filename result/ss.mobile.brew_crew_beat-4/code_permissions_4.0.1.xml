@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/ss/mobile/brew_crew_beat/Webview$SsWebViewClient.java</file>
+    <line>75</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/ss/mobile/brew_crew_beat/Webview.java</file>
+    <line>49</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/ss/mobile/brew_crew_beat/Webview.java</file>
+    <line>65</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/ss/mobile/brew_crew_beat/Webview.java</file>
+    <line>121</line>
+    <permissions/>
+  </call>
+</calls>

@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

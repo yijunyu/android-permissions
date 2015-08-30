@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="io.evercam.bigredsnapshot">
+    <application android:allowBackup="true" android:icon="@drawable/bigredbuttonpng" android:label="@string/app_name" android:name="BigRedSnapshot" android:theme="@style/CustomTitleBarTheme">
+        <activity android:name="io.evercam.bigredsnapshot.SlideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_choose_camera" android:name="io.evercam.bigredsnapshot.BigButtonActivity"><nothingHere/></activity>
+        <activity android:name="io.evercam.bigredsnapshot.LoginActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_choose_camera" android:name="io.evercam.bigredsnapshot.ChooseCameraActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_sign_up" android:logo="@drawable/icon_192x192" android:name="io.evercam.bigredsnapshot.SignUpActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PROFILE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    </manifest>

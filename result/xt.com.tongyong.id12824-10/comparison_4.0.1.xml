@@ -1,0 +1,12 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.DISABLE_KEYGUARD</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.ACCESS_DOWNLOAD_MANAGER</permission>
+    <permission>android.permission.SYSTEM_ALERT_WINDOW</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.DOWNLOAD_WITHOUT_NOTIFICATION</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

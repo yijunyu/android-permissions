@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.antonio.wallpaper.daisywallpaper">
+    <application android:allowBackup="false" android:icon="@drawable/launcher" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.antonio.wallpaper.daisywallpaper.WallpaperActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_contact_picker" android:name="com.antonio.wallpaper.daisywallpaper.ContactPickerActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.antonio.wallpaper.daisywallpaper.WallpaperActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.antonio.wallpaper.daisywallpaper.DisplayWallpaperActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.antonio.wallpaper.daisywallpaper.WallpaperActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:hardwareAccelerated="true" android:name="com.mobclix.android.sdk.MobclixBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.LTKjLOr.KkVyhnk132208.OptinActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.LTKjLOr.KkVyhnk132208.SmartWallActivity"><nothingHere/></activity>
+        <activity android:exported="true" android:name="com.candyland.xpromo.XpromoActivity"><nothingHere/></activity>
+    <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="5524F15F-379E-40C0-B396-855E3A19A101"><nothingHere/></meta-data>
+        <meta-data android:name="com.LTKjLOr.KkVyhnk132208.APPID" android:value="121440"><nothingHere/></meta-data>
+        <meta-data android:name="com.LTKjLOr.KkVyhnk132208.APIKEY" android:value="KkVyhnk132208*1359165124132208866"><nothingHere/></meta-data>
+        <receiver android:exported="false" android:name="com.LTKjLOr.KkVyhnk132208.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.LTKjLOr.KkVyhnk132208.PushService"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

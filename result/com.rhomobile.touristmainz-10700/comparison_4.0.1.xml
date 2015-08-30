@@ -1,0 +1,18 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.READ_CALENDAR</permission>
+    <permission>android.permission.WRITE_CALENDAR</permission>
+    <permission>android.permission.PERSISTENT_ACTIVITY</permission>
+    <permission>android.permission.SYSTEM_ALERT_WINDOW</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.CAMERA</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+    <permission>android.permission.BLUETOOTH</permission>
+    <permission>android.permission.BLUETOOTH_ADMIN</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </under-specification>
+</comparison>

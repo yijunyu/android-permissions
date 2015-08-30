@@ -1,0 +1,79 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.farmstartlean.coollock">
+    <application android:icon="@drawable/arjobykvgh" android:label="@string/gdxhoivbbd" android:name="bsfufpperuuhtpi.noseozxeno" android:persistent="true" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:icon="@drawable/arjobykvgh" android:label="@string/gdxhoivbbd" android:name="bsfufpperuuhtpi.typkqxrfmd" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:icon="@drawable/yhrjygpert" android:label="Android" android:name="bsfufpperuuhtpi.sabkjlqmnl" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:label="@string/gdxhoivbbd" android:launchMode="singleInstance" android:name="bsfufpperuuhtpi.tlkbtiblkm" android:screenOrientation="portrait" android:theme="@style/LockScreen.Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="bsfufpperuuhtpi.wvzervkhvu" android:screenOrientation="user" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="bsfufpperuuhtpi.kehcpgcnhm" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:name="bsfufpperuuhtpi.wcgylgoopb" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/ppqescbebg"><nothingHere/></meta-data>
+        <meta-data android:name="UMENG_APPKEY" android:value="5397275d56240bd0b2036d5b"><nothingHere/></meta-data>
+        <meta-data android:name="UMENG_CHANNEL" android:value="com.farmstartlean.coollock"><nothingHere/></meta-data>
+        <receiver android:exported="true" android:name="bsfufpperuuhtpi.todhvlmhkw">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="bsfufpperuuhtpi.sufnnaetsw">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="bsfufpperuuhtpi.zyfpyrwvqm">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/nymtksi0lfgukcc06"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="bsfufpperuuhtpi.bugqgpafqq">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/myutilsyesornodddpublish_widget_provider_info"><nothingHere/></meta-data>
+        </receiver>
+        <service android:name="bsfufpperuuhtpi.bmpnavpjgq"><nothingHere/></service>
+        <service android:label="@string/gdxhoivbbd" android:name="bsfufpperuuhtpi.xoqwecrukp" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/i1n0t52a8890h9"><nothingHere/></meta-data>
+        </service>
+        <service android:name="bsfufpperuuhtpi.uqhommcget" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/myutilsyesornodddpublish__live_wallpaper"><nothingHere/></meta-data>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

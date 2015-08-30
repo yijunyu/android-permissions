@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="za.co.conor.mallinfo.android.eastgate">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Theme.Eastgate">
+        <activity android:label="@string/app_name_l" android:launchMode="singleTop" android:name="za.co.conor.mallinfo.android.MallinfoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Events" android:name="za.co.conor.mallinfo.android.EventsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="za.co.conor.mallinfo.android.ProductDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="za.co.conor.mallinfo.android.MoviesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="za.co.conor.mallinfo.android.EventDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Stores" android:launchMode="singleTop" android:name="za.co.conor.mallinfo.android.StoresActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="Store Detail" android:name="za.co.conor.mallinfo.android.StoreDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Login" android:name="za.co.conor.mallinfo.android.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="My Wishlist" android:name="za.co.conor.mallinfo.android.MyWishesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Share Wishes" android:name="za.co.conor.mallinfo.android.ShareWishesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Register" android:name="za.co.conor.mallinfo.android.RegisterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="My Stuff" android:name="za.co.conor.mallinfo.android.PassportActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Search Top Voted" android:name="za.co.conor.mallinfo.android.TopVotedActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Gift Card" android:name="za.co.conor.mallinfo.android.GiftCardActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Search Products" android:name="za.co.conor.mallinfo.android.GiftIdeasActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Products" android:name="za.co.conor.mallinfo.android.ProductsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Friends Wishes" android:name="za.co.conor.mallinfo.android.FriendsWithWishes" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Competition" android:name="za.co.conor.mallinfo.android.CompetitionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Friends Wishes" android:name="za.co.conor.mallinfo.android.FriendsWishesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Mall Map" android:name="za.co.conor.mallinfo.android.MallMapActivity"><nothingHere/></activity>
+        <activity android:label="Product Detail" android:name="za.co.conor.mallinfo.android.WebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Scan Product Code" android:name="za.co.conor.mallinfo.android.ScannerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Specials" android:name="za.co.conor.mallinfo.android.SpecialsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Wishes" android:name="za.co.conor.mallinfo.android.WishesTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Add Product" android:name="za.co.conor.mallinfo.android.AddProductActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:label="Assign Product" android:name="za.co.conor.mallinfo.android.AssignProductActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="My Top 10" android:name="za.co.conor.mallinfo.android.Top10Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Me" android:name="za.co.conor.mallinfo.android.MeTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Product Image" android:name="za.co.conor.mallinfo.android.ImageViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Deals" android:name="za.co.conor.mallinfo.android.DealActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Most Popular" android:name="za.co.conor.mallinfo.android.MostPopularActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Most Popular" android:name="za.co.conor.mallinfo.android.TopVotedStoresActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Rate Store" android:name="za.co.conor.mallinfo.android.RateStoreActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Parking" android:name="za.co.conor.mallinfo.android.ParkingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="My Top10" android:name="za.co.conor.mallinfo.android.MyTop10Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Information" android:name="za.co.conor.mallinfo.android.BragActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Leisure" android:name="za.co.conor.mallinfo.android.LeisureActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

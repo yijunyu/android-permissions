@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ozonewifi">
+    <application android:icon="@drawable/ozonlogo2" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".ScreenFirst">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".wifiManager"><nothingHere/></activity>
+        <activity android:name=".WifiTester"><nothingHere/></activity>
+        <activity android:name=".PlayVideoResFolder"><nothingHere/></activity>
+        <activity android:name=".PlayVideoThreadActivity"><nothingHere/></activity>
+        <activity android:name=".AircelPlayVideo"><nothingHere/></activity>
+        <activity android:name=".ThreadActivity"><nothingHere/></activity>
+        <activity android:name=".AboutUs"><nothingHere/></activity>
+        <activity android:name=".ConnectWithNetwork"><nothingHere/></activity>
+        <receiver android:name="com.ozonewifi.myWifiReceiver"><nothingHere/></receiver>
+    <service android:enabled="true" android:name=".WifiServices"><nothingHere/></service>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+<uses_permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses_permission>
+    </manifest>

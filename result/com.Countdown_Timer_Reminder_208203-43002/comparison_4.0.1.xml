@@ -1,0 +1,9 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </under-specification>
+</comparison>

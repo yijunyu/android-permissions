@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.simplyusefulapps.android.wallpaper.valantinesday.free">
+    <application android:icon="@drawable/icon" android:label="@string/wallpapers">
+        <activity android:label="@string/wallpaper" android:name="com.simplyusefulapps.android.wallpaper.StarterApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <service android:label="@string/wallpaper" android:name="com.simplyusefulapps.android.wallpaper.OTWallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/otwallpaper"><nothingHere/></meta-data>
+        </service>
+    </application>
+<uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    </manifest>

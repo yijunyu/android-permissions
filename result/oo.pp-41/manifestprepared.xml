@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="oo.pp">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="&#52397;&#51452;&#45824;&#54617;&#44368; &#52964;&#48036;&#45768;&#54000; " android:logo="@drawable/ic_launcher" android:theme="@style/AppTheme">
+        <activity android:label="&#52397;&#51452;&#45824; &#52964;&#48036;&#45768;&#54000; " android:name="oo.pp.Main" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="CnC&#47566;&#51008;&#51060;&#50857; &#48512;&#53441;&#54644;&#50836;." android:name="Cju1"><nothingHere/></activity>
+        <activity android:label="CnC&#47566;&#51008;&#51060;&#50857; &#48512;&#53441;&#54644;&#50836;." android:name="Cju3"><nothingHere/></activity>
+        <activity android:label="CnC&#47566;&#51008;&#51060;&#50857; &#48512;&#53441;&#54644;&#50836;." android:name="Cju2"><nothingHere/></activity>
+        <activity android:label="CnC&#47566;&#51008;&#51060;&#50857; &#48512;&#53441;&#54644;&#50836;." android:name="Cju4"><nothingHere/></activity>
+        <activity android:label="CnC&#47566;&#51008;&#51060;&#50857; &#48512;&#53441;&#54644;&#50836;." android:name="Cju5"><nothingHere/></activity>
+        <activity android:label="CnC&#47566;&#51008;&#51060;&#50857; &#48512;&#53441;&#54644;&#50836;." android:name="Cju6"><nothingHere/></activity>
+        <activity android:label="CnC&#47566;&#51008;&#51060;&#50857; &#48512;&#53441;&#54644;&#50836;." android:name="Cju7"><nothingHere/></activity>
+        <activity android:label="&#52292;&#54021;&#48169;&#53440;&#51088;&#45716; &#50644;&#53552;&#45580;&#47476;&#47732; &#51077;&#47141;" android:name="Ch"><nothingHere/></activity>
+        <activity android:label="&#52397;&#51452;&#49884;&#45236;&#48260;&#49828;" android:name="Bus"><nothingHere/></activity>
+        <activity android:label="&#52397;&#51452;&#49884;&#45236;&#48260;&#49828;" android:name="Liv"><nothingHere/></activity>
+        <activity android:label="&#51204;&#54868;&#48264;&#54840;" android:name="Telgo"><nothingHere/></activity>
+        <activity android:label="&#44368;&#47924; &#51077;&#54617; &#54617;&#49373;" android:name="Tell1"><nothingHere/></activity>
+        <activity android:label="&#44221;&#49345;&#45824;" android:name="Tell2"><nothingHere/></activity>
+        <activity android:label="&#49324;&#44284;&#45824;" android:name="Tell3"><nothingHere/></activity>
+        <activity android:label="&#51064;&#47928;&#45824;" android:name="Tell4"><nothingHere/></activity>
+        <activity android:label="&#51060;&#44277;&#45824;" android:name="Tell5"><nothingHere/></activity>
+        <activity android:label="&#49324;&#48276;&#45824;" android:name="Tell6"><nothingHere/></activity>
+        <activity android:label="&#50696;&#49696;&#45824;" android:name="Tell7"><nothingHere/></activity>
+        <activity android:label="&#48372;&#44148;&#51032;&#47308;&#45824;" android:name="Tell8"><nothingHere/></activity>
+        <activity android:label="&#51649;&#54624;&#54617;&#48512;" android:name="Tell9"><nothingHere/></activity>
+        <activity android:label="&#47700;&#45684; &#45580;&#47480;&#54980; &#50024;&#52824;&#53364;&#47533; &#51060;&#47492;&#51077;&#47141;&#54616;&#47732;&#46104;&#50836;." android:name="Tell10"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

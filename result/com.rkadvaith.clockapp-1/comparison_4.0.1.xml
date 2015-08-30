@@ -1,0 +1,9 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.com.rkadvaith.clockapp.alarmclock.AlarmPreferencession.DISABLE_KEYGUARD</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+  </under-specification>
+</comparison>

@@ -1,8 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
-  </over-specification>
-  <under-specification>
-    <permission>android.permission.KILL_BACKGROUND_PROCESSES</permission>
-  </under-specification>
-</comparison>

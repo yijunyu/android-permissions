@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cat.android.jb.calcch2olite">
+    <application android:allowBackup="true" android:allowClearUserData="true" android:icon="@drawable/ic_calcch2olite" android:label="@string/app_name" android:name="cat.android.jb.calcch2olite.Calcch2oLiteApplication">
+        <activity android:label="@string/app_name" android:name="cat.android.jb.calcch2olite.Principal">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/titol_resum_aliments" android:name="cat.android.jb.calcch2olite.ResumAliments">
+            <intent-filter>
+                <action android:name="VIEW_LIST_RESUMALIMENTS"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/appconfiguracio" android:name="cat.android.jb.calcch2olite.Configuracio">
+            <intent-filter>
+                <action android:name="VIEW_CONFIGURACIO"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/appinfo" android:name="cat.android.jb.calcch2olite.Info">
+            <intent-filter>
+                <action android:name="VIEW_INFO"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/appdetallaliment" android:name="cat.android.jb.calcch2olite.DetallAliment">
+            <intent-filter>
+                <action android:name="VIEW_DETALLALIMENT"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/appcalculadora" android:name="cat.android.jb.calcch2olite.Calculadora">
+            <intent-filter>
+                <action android:name="VIEW_CALCULADORA"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/titol_llista_calculadora" android:name="cat.android.jb.calcch2olite.LlistaCalculadora">
+            <intent-filter>
+                <action android:name="VIEW_LIST_LLISTACALCULADORA"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

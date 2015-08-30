@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.atlascopco.industrialtechniquecatalogs.android">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/homeScreenTitle" android:largeHeap="true" android:name=".MainApplication" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name=".folioview.FolioActivity" android:theme="@style/FolioActivityTheme"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name=".LibraryActivity" android:theme="@style/LibraryTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/fullscreenVideoLabel" android:name=".content.overlays.FullscreenVideoActivity" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name=".WebViewActivity" android:theme="@style/LibraryTheme"><nothingHere/></activity>
+        <activity android:exported="true" android:label="Sdcard Folio Browser - For Testing Purposes Only" android:name=".placeholder.SdcardBrowserActivity" android:theme="@android:style/Theme.Light"><nothingHere/></activity>
+        <receiver android:name=".content.MediaPlaybackManager">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name=".service.AndroidServiceExecutor$AndroidService"><nothingHere/></service>
+        <service android:exported="true" android:name="com.adobe.dps.sdk.ViewerSdkService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

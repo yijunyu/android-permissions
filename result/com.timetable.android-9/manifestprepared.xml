@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.timetable.android">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="TimetableApp" android:theme="@style/Holo.Theme.Light.DarkActionBar">
+        <activity android:label="@string/app_name" android:name="com.timetable.android.activities.EventDayViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/pref_title" android:name="com.timetable.android.activities.SettingsActivity" android:theme="@style/Holo.Theme.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:name="com.timetable.android.activities.EventAddActivity"><nothingHere/></activity>
+        <activity android:name="com.timetable.android.activities.EventEditActivity"><nothingHere/></activity>
+        <activity android:name="com.timetable.android.alarm.AlarmDialogActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <receiver android:enabled="true" android:exported="false" android:name="com.timetable.android.ServiceStarter">
+            <intent-filter>
+                <action android:name="com.timetable.android.ACTION_APP_STARTED"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.timetable.android.alarm.AlarmService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.timetable.android.EventMuter"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.timetable.android.EventService"><nothingHere/></service>
+        <uses-library android:name="android.test.runner"><nothingHere/></uses-library>
+    </application>
+    <instrumentation android:label="All Tests" android:name="com.timetable.android.tests.MyInstrumentationTestRunner" android:targetPackage="com.timetable.android"><nothingHere/></instrumentation>
+<supports-screens android:largeScreens="true" android:xlargeScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

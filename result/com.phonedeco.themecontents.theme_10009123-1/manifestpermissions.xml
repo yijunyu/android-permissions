@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>com.skt.sptagentgl.ThemeProvider.THEME</name>
+  </permission>
+</permissions>

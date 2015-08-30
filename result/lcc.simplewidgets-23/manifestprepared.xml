@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="lcc.simplewidgets">
+    <application android:allowBackup="false" android:description="@string/app_descr" android:icon="@drawable/ic_launcher_swc" android:label="@string/app_name" android:theme="@android:style/Theme.Light">
+        <activity android:excludeFromRecents="true" android:name="cstick.csw.MainPreferencesActivity" android:screenOrientation="portrait" android:theme="@style/CustomTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="cstick.csw.ConfigurationActivity" android:screenOrientation="portrait" android:theme="@style/CustomTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="cstick.csw.ContactActionActivity" android:theme="@style/CustomTheme">
+            <intent-filter>
+                <action android:name="cstick.csw.action.ContactAction"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="cstick.csw.QuickDialerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cstick.csw.action.QuickDialer"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <receiver android:label="@string/widget_label_small" android:name="cstick.csw.ContactAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="cstick.csw.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="cstick.csw.action.APPWIDGET_QUICKCONTACT"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgetprovidersmall"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="@string/widget_label_medium" android:name="cstick.csw.MediumAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="cstick.csw.action.APPWIDGET_QUICKCONTACT"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgetprovidermedium"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="@string/widget_label_large" android:name="cstick.csw.LargeAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="cstick.csw.action.APPWIDGET_QUICKCONTACT"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidgetproviderlarge"><nothingHere/></meta-data>
+        </receiver>
+        </application>
+<uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

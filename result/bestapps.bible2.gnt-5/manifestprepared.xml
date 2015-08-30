@@ -1,0 +1,98 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="bestapps.bible2.gnt" package="bestapps.bible2.gnt">
+    <application android:allowBackup="true" android:icon="@drawable/bible" android:label="@string/app_name" android:theme="@style/theme.light">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="bestapps.bible2.gnt.Chapter" android:theme="@style/chapter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="bestapps.bible2.gnt.PassageChapter" android:theme="@style/chapter"><nothingHere/></activity>
+        <activity android:exported="false" android:name="bestapps.bible2.gnt.Search" android:theme="@style/theme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:exported="false" android:name="bestapps.bible2.gnt.About" android:theme="@style/theme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="bestapps.bible2.gnt.Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="application/zip"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*/bibledata-.*\\.zip"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="bestapps.bible2.gnt.Result"><nothingHere/></activity>
+        <activity android:label="@string/searchinbible" android:launchMode="singleTask" android:name="bestapps.bible2.gnt.Passage">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="search" android:path="" android:scheme="bible"><nothingHere/></android-data>
+                <android-data android:host="piebridge.me" android:path="/search" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.piebridge.me" android:path="/search" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="piebridge.me" android:path="/search" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="www.piebridge.me" android:path="/search" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="*.biblegateway.com" android:pathPrefix="/passage" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.biblegateway.com" android:pathPrefix="/passage" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="*.biblica.com" android:pathPrefix="/bibles/chapter" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.biblica.com" android:pathPrefix="/bibles/chapter" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="bibles.org" android:pathPrefix="/search/" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="bibles.org" android:pathPrefix="/search/" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="*.bibles.org" android:pathPrefix="/search/" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.bibles.org" android:pathPrefix="/search/" android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="text/plain"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.ulgiesjgv.pfcqmdono194795.AdActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.ulgiesjgv.pfcqmdono194795.BrowserActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.ulgiesjgv.pfcqmdono194795.PlayActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <meta-data android:name="com.ulgiesjgv.pfcqmdono194795.APPID" android:value="230568"><nothingHere/></meta-data>
+        <meta-data android:name="com.ulgiesjgv.pfcqmdono194795.APIKEY" android:value="android*1405417275194795988"><nothingHere/></meta-data>
+        <provider android:authorities="bestapps.bible2.gnt.provider" android:exported="false" android:name="bestapps.bible2.gnt.Provider"><nothingHere/></provider>
+        <provider android:authorities="bestapps.bible2.gnt" android:name="bestapps.bible2.gnt.Suggestion" android:permission="android.permission.GLOBAL_SEARCH"><nothingHere/></provider>
+        <receiver android:name="bestapps.bible2.gnt.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE"><nothingHere/></action>
+                <android-data android:host="24253" android:scheme="android_secret_code"><nothingHere/></android-data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ulgiesjgv.pfcqmdono194795.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:exported="false" android:name="com.ulgiesjgv.pfcqmdono194795.AdService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    </manifest>

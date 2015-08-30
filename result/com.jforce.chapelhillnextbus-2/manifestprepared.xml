@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jforce.chapelhillnextbus" platformBuildVersionCode="21" platformBuildVersionName="5.0-1521886">
+    <application android:allowBackup="true" android:icon="@drawable/ic_logo_white_bevel" android:label="@string/activity_main_title" android:theme="@style/Theme.Chapelhillnavy">
+        <activity android:label="@string/activity_main_title" android:name="com.jforce.chapelhillnextbus.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_test" android:name="com.jforce.chapelhillnextbus.TestActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

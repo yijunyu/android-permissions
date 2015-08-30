@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/en/test/competence/istqb/fundation/developer/android/Exam$MyCount.java</file>
+    <line>643</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/en/test/competence/istqb/fundation/developer/android/ShowPicture.java</file>
+    <line>23</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/en/test/competence/istqb/fundation/developer/android/ShowPicture.java</file>
+    <line>23</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

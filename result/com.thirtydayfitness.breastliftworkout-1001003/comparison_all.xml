@@ -1,0 +1,19 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.WRITE_CONTACTS</permission>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.READ_USER_DICTIONARY</permission>
+    <permission>android.permission.READ_SOCIAL_STREAM</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+    <permission>android.permission.BLUETOOTH</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.appixia.faerieorganic">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".AppDelegateInstance" android:theme="@style/Appixia.Holo.Theme.Light.DarkActionBar">
+        <activity android:label="@string/app_name" android:name="com.appixia.engine.controllers.SplashScreenController" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Appixia Visualizer" android:name="com.appixia.engine.controllers.AppixiaLoginController" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.appixia.engine.modules.root.TabBarController" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:label="Video Player" android:name="com.appixia.engine.controllers.MoviePlayerController"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:name="com.appixia.engine.helpers.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.appixia.faerieorganic"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.appixia.engine.helpers.GcmIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.appixia.faerieorganic.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.appixia.faerieorganic.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

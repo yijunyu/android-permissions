@@ -1,0 +1,205 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sec.spp.push">
+    <application android:allowBackup="false" android:icon="@drawable/icon" android:label="Samsung Push Service" android:manageSpaceActivity="ManagerSpaceActivity" android:name="com.sec.spp.push.PushClientApplication">
+        <activity android:label="Samsung Push Service" android:name="com.sec.spp.push.ManagerSpaceActivity"><nothingHere/></activity>
+        <activity android:label="PushSvc" android:name=".PushClientActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.sec.spp.push.update.PopupMessage" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+    <provider android:authorities="com.sec.spp.provider" android:exported="true" android:name="com.sec.spp.push.provider.PushClientProvider" android:writePermission="com.sec.spp.permission.PUSH_SERVICE_PROVIDER"><nothingHere/></provider>
+        <provider android:authorities="com.sec.spp.accessKeyProvider" android:exported="true" android:name="com.sec.spp.push.provider.AccessKeyProvider" android:process=":RemoteNotiProcess" android:writePermission="com.sec.spp.permission.PUSH_SERVICE_PROVIDER"><nothingHere/></provider>
+        <provider android:authorities="com.sec.spp.reginfo.provider" android:exported="true" android:name="com.sec.spp.push.provider.RegInfoProvider" android:permission="com.sec.spp.permission.GET_REG_INFO"><nothingHere/></provider>
+        <receiver android:name="com.sec.spp.push.StartupReceiver">
+            <intent-filter>
+                <action android:name="com.sec.spp.action.SPP_REQUEST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.monitor.SystemStateMoniter">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.EMERGENCY_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.heartbeat.HeartBeat"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.receiver.ProvAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.receiver.PROVISIONING_ACTION"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.control.FrequentInitControl">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.FREQUENT_INIT_ACTION"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.update.Update">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.UPDATE_ACTION"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.spp.push.receiver.AomMonitor">
+            <intent-filter>
+                <action android:name="com.skt.aom.intent.receive.KEEP_ALIVE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.spp.push.PreferenceReceiver">
+            <intent-filter>
+                <action android:name="com.sec.spp.action.SPP_PREFERENCE_SET"><nothingHere/></action>
+                <action android:name="com.sec.spp.spppushtest.ACTION_DUMP_SPP_LOG_REQUEST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.receiver.ConnectionStateCheckReceiver">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.ACTION_CONNECTION_STATE_CHECK"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.spp.push.receiver.LocaleChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.receiver.RegistrationNotiReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.receiver.ProviderInfoReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.receiver.SendAckRequestReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.receiver.DeviceIdReqReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.receiver.DeviceIdRespReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.sec.spp.push.receiver.PackageInfoChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.spp.push.receiver.OneDayCheckTimer">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.DAY_TIMER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.spp.push.log.logsender.LogBroadcastReceiver" android:permission="com.sec.dlc.permission.DLC_REQUEST">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.DLC_AVAILABLE"><nothingHere/></action>
+                <action android:name="com.sec.spp.push.DLC_UNAVAILABLE"><nothingHere/></action>
+                <action android:name="com.sec.spp.push"><nothingHere/></action>
+                <action android:name="com.sec.spp.push.DLC_REPLY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.spp.push.dlc.util.DlcRegiReceiver" android:process=":RemoteDlcProcess">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.REQUEST_REGISTER"><nothingHere/></action>
+                <action android:name="com.sec.spp.push.REQUEST_DEREGISTER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".dlc.sender.DlcRequestReceiver" android:permission="com.sec.dlc.permission.DLC_REQUEST" android:process=":RemoteDlcProcess">
+            <intent-filter>
+                <action android:name="com.sec.dlc.DLC_REQUEST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".dlc.sender.SelfPingNotiReceiver" android:permission="com.sec.dlc.permission.DLC_REQUEST" android:process=":RemoteDlcProcess">
+            <intent-filter>
+                <action android:name="com.sec.dlc.SELF_PING_NOTI"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name=".dlc.sender.DlcForcedPvAlarmReceiver" android:process=":RemoteDlcProcess"><nothingHere/></receiver>
+        <receiver android:exported="false" android:name=".dlc.test.TestReceiver" android:process=":RemoteDlcProcess">
+            <intent-filter>
+                <action android:name="com.sec.dlc.TEST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name=".notisvc.registration.PackageRemovedReceiver" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name=".notisvc.alarm.AlarmEventManager" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <android-data android:scheme="notisvc_timer:"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name=".notisvc.card.CardActionLauncher" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.notisvc.CARD_CLICK"><nothingHere/></action>
+                <action android:name="com.sec.spp.push.notisvc.CARD_CLEAR"><nothingHere/></action>
+                <action android:name="com.sec.spp.push.notisvc.STREAMING_CLICK"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name=".notisvc.registration.RegistrationReceiver" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.BIGJOE_REGI"><nothingHere/></action>
+                <action android:name="com.sec.spp.push.NOTIFICATION_NOTICE"><nothingHere/></action>
+                <action android:name="com.sec.spp.push.AGREE_REGI"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".notisvc.agent.push.PushReceiver" android:permission="com.sec.dlc.permission.DLC_REQUEST" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <action android:name="1563e038015c430d"><nothingHere/></action>
+                <action android:name="com.sec.spp.RegistrationChangedAction"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.spp.push.notisvc.registration.LocaleChangedReceiver" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.spp.push.notisvc.registration.PhoneStatusChangeReceiver" android:permission="com.sec.dlc.permission.DLC_REQUEST" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <action android:name="com.sec.spp.BOOT_COMPLETE"><nothingHere/></action>
+                <action android:name="com.sec.spp.notification.serviceStatusChange"><nothingHere/></action>
+                <action android:name="com.sec.spp.push.UPDATE_NOTICE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.spp.push.notisvc.registration.UserAgreementReceiver" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <action android:name="com.sec.spp.action.USER_AGREEMENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.sec.spp.push.receiver.ForceUpdateAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.receiver.ForceUpdateAlarmReceiver"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.sec.spp.push.receiver.LdUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.ldUpdate"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.sec.spp.push.PushClientService"><nothingHere/></service>
+        <service android:exported="true" android:name="com.sec.spp.push.RequestService">
+            <intent-filter>
+                <action android:name="com.sec.spp.push.PUSH_CLIENT_SERVICE_ACTION"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.sec.spp.push.monitor.SystemStateMonitorService"><nothingHere/></service>
+        <service android:name="com.sec.spp.push.log.collector.PushClientLogCollectService"><nothingHere/></service>
+        <service android:exported="true" android:name=".dlc.writer.WriterService" android:process=":RemoteDlcProcess"><nothingHere/></service>
+        <service android:exported="false" android:name=".dlc.sender.SenderService" android:process=":RemoteDlcProcess"><nothingHere/></service>
+        <service android:exported="false" android:name=".dlc.db.DbService" android:process=":RemoteDlcProcess"><nothingHere/></service>
+        <service android:name=".notisvc.card.notification.AudioStreamingService" android:permission="com.sec.dlc.permission.DLC_REQUEST" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <action android:name="com.sec.spp.AudioStreamingService"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </service>
+        <service android:name=".notisvc.card.overlay.VideoOverlayService" android:permission="com.sec.dlc.permission.DLC_REQUEST" android:process=":RemoteNotiProcess">
+            <intent-filter>
+                <action android:name="android.intent.action.CONFIGURATION_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<permission android:description="@string/permission_description" android:label="@string/permission_label" android:name="com.sec.spp.permission.PUSH_SERVICE_PROVIDER"><nothingHere/></permission>
+    <permission android:description="@string/permission_description" android:label="@string/permission_label" android:name="com.sec.spp.push.permission.AOM_KEEPALIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.sec.dlc.permission.DLC_REQUEST" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.sec.spp.permission.GET_REG_INFO" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.sec.spp.permission.PUSH_SERVICE_PROVIDER"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.sec.spp.push.permission.AOM_KEEPALIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.sec.dlc.permission.DLC_REQUEST"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.sec.spp.permission.GET_REG_INFO"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_a1a30b694300dac6f59ae7b791d9eef52f677d5a5fe53412b7608126d463248f21f62f60c9bc92da81138bf6f292302d960c7273f648e5596bc9fea9ca594701e696c0917204658ac9f0e74745807472e9d3e9977f667274ee768334b7f9004f9a0046decafe7e068ad420d39e629d727f6b28195b118d7f7a4230be62243bd1"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.sec.spp.permission.TOKEN_93826e86cec89c5a525ae83ddf9ebd98ecc233c92e8756bc704afa2d0778c64fdb5fef0d4cf09b8d73963b6df482827430806db3a69e587adc1c167cc50e7207453c58ea58cad7caaef5646b8deb9556378af5867696aa51fbca0e2f918d7d12a6f0b7acd5bba2d48c6688ee2089b816ad6fb0bc395f6986b71129090f423d3d"><nothingHere/></uses-permission>
+    </manifest>

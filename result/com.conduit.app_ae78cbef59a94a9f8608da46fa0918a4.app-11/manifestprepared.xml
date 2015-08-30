@@ -1,0 +1,64 @@
+<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" package="com.conduit.app_ae78cbef59a94a9f8608da46fa0918a4.app">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.conduit.app.ConduitApplication">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.conduit.app.ConduitFragAct" android:theme="@style/application_main_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.conduit.app.pages.map.MapsActivity" android:theme="@style/application_clear_theme"><nothingHere/></activity>
+        <activity android:name="com.conduit.app.pages.map.MapsActivityAmazon" android:theme="@style/application_clear_theme"><nothingHere/></activity>
+        <activity android:name="com.conduit.app.SettingsScreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.conduit.app.gallery.PhotoGalleryActivity" android:theme="@style/application_main_theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.conduit.app.internalbrowser.InternalBrowserActivity" android:theme="@style/application_main_theme"><nothingHere/></activity>
+        <activity android:name="com.conduit.app.pages.livealbum.LiveAlbumCameraActivity" android:screenOrientation="portrait" android:theme="@style/application_main_theme"><nothingHere/></activity>
+        <activity android:name="com.conduit.app.social.LinkedinLoginAct" android:screenOrientation="portrait" android:theme="@style/application_main_theme"><nothingHere/></activity>
+        <activity android:name="com.conduit.app.pages.qrcode.QRScannerActivity" android:screenOrientation="portrait" android:theme="@style/application_main_theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="GOOGLE_MAPS_V2_API"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.conduit.app.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.conduit.app_ae78cbef59a94a9f8608da46fa0918a4.app"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.conduit.app.adm.AmazonADMMessageHandler$AmazonReceiver" android:permission="com.amazon.device.messaging.permission.SEND">
+            <intent-filter>
+                <action android:name="com.amazon.device.messaging.intent.REGISTRATION"><nothingHere/></action>
+                <action android:name="com.amazon.device.messaging.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.conduit.app_ae78cbef59a94a9f8608da46fa0918a4.app"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.conduit.app.pages.audio.AudioService"><nothingHere/></service>
+        <service android:name="com.conduit.app.gcm.GCMIntentService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.conduit.app.adm.AmazonADMMessageHandler"><nothingHere/></service>
+        <service android:name="com.conduit.app.gcm.ShowNotificationService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        <amazon:enable-feature android:name="com.amazon.geo.maps" android:required="false"><nothingHere/></amazon:enable-feature>
+        <amazon:enable-feature android:name="com.amazon.device.messaging" android:required="false"><nothingHere/></amazon:enable-feature>
+        </application>
+<permission android:name="com.conduit.app_ae78cbef59a94a9f8608da46fa0918a4.app.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.conduit.app_ae78cbef59a94a9f8608da46fa0918a4.app.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.truiton.supportmapfragment.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.conduit.app_ae78cbef59a94a9f8608da46fa0918a4.app.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.conduit.app_ae78cbef59a94a9f8608da46fa0918a4.app.permission.RECEIVE_ADM_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

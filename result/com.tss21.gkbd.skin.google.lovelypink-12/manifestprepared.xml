@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tss21.gkbd.skin.google.lovelypink">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".MainActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name=".TSSkinPackReceiver">
+            <intent-filter>
+                <action android:name="com.tss21.gkbd.skinpack.TS_SKIN_PACK_DETECT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.ALTERNATIVE"><nothingHere/></category>
+                <category android:name="android.intent.category.SELECTED_ALTERNATIVE"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

@@ -1,0 +1,70 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.plasticitylabs.android">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.plasticitylabs.android.storage.PlasticityApplicationClass" android:theme="@style/AppTheme">
+        <activity android:name="com.urbanairship.actions.ActionActivity"><nothingHere/></activity>
+        <activity android:exported="false" android:name="com.urbanairship.actions.LandingPageActivity" android:parentActivityName="com.plasticitylabs.android.ui.activities.SignInActivity">
+            <intent-filter>
+                <action android:name="com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.plasticitylabs.android.ui.activities.SignInActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:label="@string/app_name" android:name="com.plasticitylabs.android.ui.activities.SignInActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/sign_up" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.SignUpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/your_happiness" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.HappinessActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.HomeActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/profile_setup" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.EditProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/frequent_hero" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.FrequentHeroActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/your_voice" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.SingleSurveyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/settings" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.SettingsActivity"><nothingHere/></activity>
+        <activity android:name="com.plasticitylabs.android.ui.activities.ProductTourActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/posts" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.PostDetailsActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.PreviewImageActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.CameraActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/new_status" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.NewStatusActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/camera_roll" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.CameraRollActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.OtherUserProfile"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/profile_details" android:logo="@drawable/ic_actionbar_logo" android:name="com.plasticitylabs.android.ui.activities.UserDetailActivity" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="f04f4bf4c9fc94bffffb9d569a8d62b92aec3fbb"><nothingHere/></meta-data>
+    <provider android:authorities="com.plasticitylabs.android.urbanairship.provider" android:exported="true" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider" android:permission="com.plasticitylabs.android.permission.UA_DATA"><nothingHere/></provider>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.plasticitylabs.android"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.plasticitylabs.android.notifications.UrbanAirshipIntentReceiver"><nothingHere/></receiver>
+        <service android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        <service android:name="com.urbanairship.richpush.RichPushUpdateService"><nothingHere/></service>
+        <service android:name="com.urbanairship.actions.ActionService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.plasticitylabs.android.service.CreateStatusService"><nothingHere/></service>
+        </application>
+<permission android:name="com.plasticitylabs.android.permission.UA_DATA" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.plasticitylabs.android.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.plasticitylabs.android.permission.UA_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.plasticitylabs.android.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

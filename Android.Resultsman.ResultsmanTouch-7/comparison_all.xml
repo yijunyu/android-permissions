@@ -1,6 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.VIBRATE</permission>
-  </over-specification>
-  <under-specification/>
-</comparison>

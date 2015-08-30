@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ru.canvas_concept.telenaocontrol">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="ru.canvas_concept.telenaocontrol.ClobalValues" android:theme="@style/AppTheme">
+        <activity android:name="ru.canvas_concept.telenaocontrol.Behaviors"><nothingHere/></activity>
+        <activity android:name="ru.canvas_concept.telenaocontrol.ConnectionValues"><nothingHere/></activity>
+        <activity android:name="ru.canvas_concept.telenaocontrol.Controls"><nothingHere/></activity>
+        <activity android:name="ru.canvas_concept.telenaocontrol.Stat"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ru.canvas_concept.telenaocontrol.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

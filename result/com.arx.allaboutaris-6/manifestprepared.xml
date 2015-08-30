@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.arx.allaboutaris">
+    <application android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name" android:theme="@style/AppBaseTheme">
+        <activity android:label="@string/app_name" android:name="com.arx.allaboutaris.SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:label="@string/main_activity" android:name="com.arx.allaboutaris.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/news_feed_fragment" android:name="com.arx.allaboutaris.NewsFeedFragment"><nothingHere/></activity>
+        <activity android:label="@string/news_feed_fragment_football" android:name="com.arx.allaboutaris_third.NewsFeedFragmentFootball"><nothingHere/></activity>
+        <activity android:label="@string/single_post_fragment" android:name="com.arx.allaboutaris.SinglePostFragment"><nothingHere/></activity>
+        <activity android:label="@string/news_feed_fragment_basketball" android:name="com.arx.allaboutaris.NewsFeedFragmentBasketball"><nothingHere/></activity>
+        <activity android:label="@string/various_fragment" android:name="com.arx.allaboutaris.VariousFragment"><nothingHere/></activity>
+        <activity android:label="@string/news_feed_fragment_various" android:name="com.arx.allaboutaris.NewsFeedFragmentVarious"><nothingHere/></activity>
+        <activity android:label="@string/blog_fragment" android:name="com.arx.allaboutaris.BlogFragment"><nothingHere/></activity>
+        <activity android:label="@string/news_feed_fragment_blog" android:name="com.arx.allaboutaris.NewsFeedFragmentBlog"><nothingHere/></activity>
+        <activity android:label="@string/blog_single_post_fragment" android:name="com.arx.allaboutaris.BlogSinglePostFragment"><nothingHere/></activity>
+        <activity android:label="@string/yellowTV_fragment" android:name="com.arx.allaboutaris.YellowTVFragment"><nothingHere/></activity>
+        <activity android:name="info.arx.imageslider.FullScreenViewActivity"><nothingHere/></activity>
+        <activity android:name="info.arx.imageslider.GridViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="4132500"><nothingHere/></meta-data>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

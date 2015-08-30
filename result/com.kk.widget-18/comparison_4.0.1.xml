@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CHANGE_NETWORK_STATE</permission>
+    <permission>android.permission.READ_CALL_LOG</permission>
+    <permission>android.permission.READ_CALENDAR</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+    <permission>android.permission.READ_SMS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+  </under-specification>
+</comparison>

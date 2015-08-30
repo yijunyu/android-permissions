@@ -1,4 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="klye.plugin.km">
-    <application android:icon="@drawable/icon" android:label="Language.Khmer"><nothingHere/></application>
-<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
-    </manifest>

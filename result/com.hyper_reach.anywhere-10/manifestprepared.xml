@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hyper_reach.anywhere">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:launchMode="singleTask" android:name="com.hyperreach.activities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hyperreach.activities.SplashScreen2Activity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_alerts" android:launchMode="singleInstance" android:name="com.hyperreach.activities.AlertsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_manage_locations" android:launchMode="singleInstance" android:name="com.hyperreach.activities.ManageLocationsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_settings" android:launchMode="singleInstance" android:name="com.hyperreach.activities.SettingsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tracking" android:launchMode="singleInstance" android:name="com.hyperreach.activities.SettingsTrackingActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_updates" android:name="com.hyperreach.activities.SettingsUpdatesActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_alerts" android:launchMode="singleInstance" android:name="com.hyperreach.activities.SimpleLocationListingActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.hyperreach.activities.SettingsOtherActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_add_location" android:launchMode="singleInstance" android:name="com.hyperreach.activities.AddLocationActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_alert_detail" android:launchMode="singleInstance" android:name="com.hyperreach.activities.AlertDetailActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_alert_detail" android:launchMode="singleInstance" android:name="com.hyperreach.activities.SettingsStatusActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="4030500"><nothingHere/></meta-data>
+        <receiver android:name="com.hyperreach.receivers.AlarmReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="BootListener" android:name="com.hyperreach.receivers.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hyperreach.receivers.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.hyper_reach.anywhere"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.hyperreach.util.GcmIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.hyper_reach.anywhere.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.hyper_reach.anywhere.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    </manifest>

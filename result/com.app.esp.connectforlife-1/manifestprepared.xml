@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.app.esp.connectforlife">
+    <application android:allowBackup="true" android:hardwareAccelerated="false" android:icon="@drawable/launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="SplashActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".ui.HomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.ThirtyOneDaysActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.ThirtyOneDaysIntroductionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.DayActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.DayDetailActivity"><nothingHere/></activity>
+        <activity android:name=".ui.MyJournalActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.MyJournalDayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".ui.MyConnectionIntroductionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.MyConnectionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.MyJournalIntroductionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.GetInActionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.GraceInActionIntroductionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.ResourceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.ResourceIntroductionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.GetInActionSMSActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.MyConnectionSectionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.SocialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".ui.ConnectionSelectActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".ui.AddContactActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.GetInActionEmailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".ui.ChooseGraceInActionContactacts" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".ui.ChooseGraceInActionContactactnumber" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".ui.AboutAboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.AboutEndorseActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.AboutIntroductionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <receiver android:name=".service.ImageReceiver"><nothingHere/></receiver>
+    <service android:name=".service.ImageService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

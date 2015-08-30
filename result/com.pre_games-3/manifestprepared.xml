@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pre_games">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.pre_games.Cover" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Menu" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.pre_games.MENU"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Parabara" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.pre_games.PARABARA"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".QuePreferis" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.pre_games.QUEPREFERIS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Rapidito" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.pre_games.RAPIDITO"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ThreeMAn" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.pre_games.THREEMAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".SetPlayersNamesThreeMan" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.pre_games.SETPLAYERSNAMESTHREEMAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".FirstThreeman" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.pre_games.FIRSTTHREEMAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".SecondThreeman" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.pre_games.SECONDTHREEMAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".YoNunca" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.pre_games.YONUNCA"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.pre_games.Moneda" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.pre_games.MONEDA"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

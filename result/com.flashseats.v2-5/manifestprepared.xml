@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.flashseats.v2">
+    <application android:icon="@drawable/icon" android:label="Flash Seats" android:name="flashseats.FlashseatsApp">
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="My Account" android:name="flashseats.activities.account.AccountActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Add Payment Method" android:name="flashseats.activities.account.AddPaymentActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="My Activity" android:name="flashseats.activities.account.BidDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Login" android:name="flashseats.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Mobile Id" android:name="flashseats.activities.account.MobileIdActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="My Active Listings" android:name="flashseats.activities.account.MyActiveListingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="My Pending Transfers" android:name="flashseats.activities.account.MyPendingTransferActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="My Activity" android:name="flashseats.activities.account.MyTicketActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Preview Sale" android:name="flashseats.activities.account.PreviewSellActivity" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Preview Transfer" android:name="flashseats.activities.account.PreviewTransferActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Sell Tickets" android:name="flashseats.activities.account.SellTicketActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Ticket Details" android:name="flashseats.activities.account.TicketDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Transfer Ticket" android:name="flashseats.activities.account.TransferTicketActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Welcome" android:name="flashseats.WelcomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="More" android:name="flashseats.activities.misc.MoreActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Confirm Purchase" android:name="flashseats.activities.inventory.ConfirmPurchaseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Purchase" android:name="flashseats.activities.inventory.PurchaseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="About Flash Seats" android:name="flashseats.AboutFlashSeatsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Display Page" android:name="flashseats.DisplayRulesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="My Location" android:name="flashseats.activities.misc.PickInitialLocationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Events" android:name="flashseats.activities.inventory.EventListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Home" android:name="flashseats.activities.inventory.HomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Map" android:name="flashseats.activities.inventory.MapActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Available Tickets" android:name="flashseats.activities.inventory.AvailableTicketsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="My Settings" android:name="flashseats.SettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Terms and Conditions" android:name="flashseats.TermsAndConditionsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:icon="@drawable/icon" android:label="@string/AppName" android:name="flashseats.Flashseats" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:name="flashseats.FlashseatsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:name="flashseats.FlashseatsListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:name="flashseats.FlashseatsTabActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Register" android:name="flashseats.activities.account.RegisterActivity" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <provider android:authorities="com.flashseats.v2.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+</manifest>

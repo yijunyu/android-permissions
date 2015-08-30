@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jwpware.moviehangdemo">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.jwpware.moviehangdemo.GlobalClass" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.jwpware.moviehangdemo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_options" android:name="com.jwpware.moviehangdemo.Options" android:parentActivityName="com.jwpware.moviehangdemo.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.jwpware.moviehangdemo.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_instructions" android:name="com.jwpware.moviehangdemo.Instructions" android:parentActivityName="com.jwpware.moviehangdemo.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.jwpware.moviehangdemo.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_play" android:name="com.jwpware.moviehangdemo.Play" android:parentActivityName="com.jwpware.moviehangdemo.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.jwpware.moviehangdemo.MainActivity"><nothingHere/></meta-data>
+        </activity>
+    </application>
+</manifest>

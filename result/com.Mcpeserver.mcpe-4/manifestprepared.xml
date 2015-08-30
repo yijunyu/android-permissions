@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.Mcpeserver.mcpe">
+    <application android:icon="@drawable/icom" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="second"><nothingHere/></activity>
+        <activity android:name="three"><nothingHere/></activity>
+        <activity android:name="four"><nothingHere/></activity>
+        <activity android:name="five"><nothingHere/></activity>
+        <activity android:name="six"><nothingHere/></activity>
+        <activity android:name="seven"><nothingHere/></activity>
+        <activity android:name="mail"><nothingHere/></activity>
+        <activity android:name="regist"><nothingHere/></activity>
+        <activity android:name="gogo"><nothingHere/></activity>
+        <activity android:name="three2"><nothingHere/></activity>
+        <activity android:name="three3"><nothingHere/></activity>
+        <activity android:name="three4"><nothingHere/></activity>
+        <activuty android:name="kakao"><nothingHere/></activuty>
+    </application>
+</manifest>

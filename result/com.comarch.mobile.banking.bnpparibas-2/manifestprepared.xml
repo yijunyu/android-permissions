@@ -1,0 +1,269 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.comarch.mobile.banking">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.comarch.mobile.banking.application.BaseApplication" android:theme="@style/CoreDefaultTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.comarch.mobile.banking.views.base.StartActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.comarch.mobile.banking.fortis.DashBoardActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="Activity ekranu startowego">
+                <action android:name="com.comarch.mobile.intent.action.START_ACTIVITY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.comarch.mobile.banking.fortis.DashBoardLoggedActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.intent.action.LOGGED_ACTIVITY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/exchangeRatesActivityLabel" android:name="com.comarch.mobile.banking.exchangerates.views.fortis.FortisExchangeRatesActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.EXR_SHOW_LIST"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/currencyConverterActivityLabel" android:name="com.comarch.mobile.banking.currencyconverter.views.fortis.FortisCurrencyConverterActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.CUR_ACTION"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/notificationsActivityLabel" android:name="com.comarch.mobile.banking.notifications.views.list.NotificationsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.NOT_ACTION"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/notificationsActivityLabel" android:name="com.comarch.mobile.banking.notifications.views.details.NotificationsDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/atmsActivityLabel" android:name="com.comarch.mobile.banking.maps.views.fortis.AtmsLoaderActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.MAP_SHOW_ATMS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/atmsActivityLabel" android:name="com.comarch.mobile.banking.maps.views.fortis.AtmsMapActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.MAPS_ATMS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/atmsActivityLabel" android:name="com.comarch.mobile.banking.maps.views.fortis.AtmsSearchListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/branchesActivityLabel" android:name="com.comarch.mobile.banking.maps.views.fortis.BranchesLoaderActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.MAP_SHOW_BRANCHES"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/branchesActivityLabel" android:name="com.comarch.mobile.banking.maps.views.fortis.BranchesMapActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.MAPS_BRANCHES"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/branchesActivityLabel" android:name="com.comarch.mobile.banking.maps.views.fortis.BranchesSearchListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/loginActivityLabel" android:name="com.comarch.mobile.banking.login.views.fortis.FortisLoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.LOGIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/loginActivityLabel" android:name="com.comarch.mobile.banking.login.views.fortis.FortisPinPasswordActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/loginProfilesActivityLabel" android:name="com.comarch.mobile.banking.login.profiles.views.fortis.FortisProfilesListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.CHOOSE_PROFILE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/activationActivityLabel" android:name="com.comarch.mobile.banking.activation.views.ActivationCheckActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.ACT_ACTIVATION_CHECK"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/activationActivityLabel" android:name="com.comarch.mobile.banking.activation.views.ActivationActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.ACT_ACTIVATION"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/activationActivityLabel" android:name="com.comarch.mobile.banking.activation.views.ActivationConfirmActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.ACT_ACTIVATION_CONFIRM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.comarch.mobile.banking.barcodes.views.BarcodesCaptureActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@style/CoreDefaultTheme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.BRC_CAPTURE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/accountsListActivityLabel" android:name="com.comarch.mobile.banking.accounts.list.AccountsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.ACC_SHOW_ACCOUNTS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/accountsListActivityLabel" android:name="com.comarch.mobile.banking.accounts.details.AccountDetailsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/accountsListActivityLabel" android:name="com.comarch.mobile.banking.accounts.details.AccountDetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.SHOW_ACCOUNTS_DETAILS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/historyActivityLabel" android:name="com.comarch.mobile.banking.accounts.history.AccountHistoryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.SHOW_ACCOUNTS_HISTORY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/historyActivityLabel" android:name="com.comarch.mobile.banking.accounts.history.AccountHistoryDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/contactsActivityLabel" android:name="com.comarch.mobile.banking.fortis.ContactsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/paymentsListActivityLabel" android:name="com.comarch.mobile.banking.fortis.navigation.views.PaymentsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.TRA_SHOW_TRANSFERS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/paymentsTemplateListActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.paymenttemplate.list.PaymentTemplatesListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.PAY_SHOW_TEMPLATE_LIST"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/paymentsTemplateDetailsActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.paymenttemplate.details.PaymentTemplateDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/domesticTransferActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.domestic.DomesticTransferActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.DOM_ACTION_TRANSFER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/domesticTransferActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.domestic.DomesticTransferDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/prepaidTransferActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.fortis.prepaid.PrepaidTransferActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.PRE_ACTION_TRANSFER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/notificationsDetailsActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.fortis.prepaid.PrepaidTransferDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/visitingCardActivityLabel" android:name="com.comarch.mobile.banking.visitingcard.views.fortis.FortisVisitingCardActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.VIS_ACTION"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/cardRepaymentActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.cardrepayment.CardRepaymentActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.CP_ACTION_TRANSFER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/cardRepaymentActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.cardrepayment.CardRepaymentDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/internalTransferActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.internal.InternalTransferActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.IT_ACTION_TRANSFER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/internalTransferActivityLabel" android:name="com.comarch.mobile.banking.transfers.views.internal.InternalTransferDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/cardsListActivityLabel" android:name="com.comarch.mobile.banking.cards.views.list.CardsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.CRD_SHOW_CARDS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/cardsListActivityLabel" android:name="com.comarch.mobile.banking.cards.views.CardsDetailsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/cardsListActivityLabel" android:name="com.comarch.mobile.banking.cards.views.CardDetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.SHOW_CARD_DETAILS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/historyActivityLabel" android:name="com.comarch.mobile.banking.cards.views.CardHistoryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.SHOW_CARD_HISTORY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/historyActivityLabel" android:name="com.comarch.mobile.banking.cards.views.CardHistoryDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/cardsListActivityLabel" android:name="com.comarch.mobile.banking.cards.views.CardLimitsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.SHOW_CHANGE_LIMITS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/depositsListActivityLabel" android:name="com.comarch.mobile.banking.deposits.views.fortis.list.FortisDepositsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.DEP_SHOW_DEPOSITS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/depositsListActivityLabel" android:name="com.comarch.mobile.banking.deposits.views.fortis.detail.FortisDepositDetailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.DEP_SHOW_DEPOSIT_DETAIL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/depositsListActivityLabel" android:name="com.comarch.mobile.banking.deposits.views.fortis.create.FortisDepositCreateActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/depositsListActivityLabel" android:name="com.comarch.mobile.banking.deposits.views.fortis.create.FortisDepositCreateConfirmActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/depositsListActivityLabel" android:name="com.comarch.mobile.banking.deposits.views.fortis.terminate.FortisDepositTerminateActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/dash_board_news" android:name="com.comarch.mobile.banking.news.views.NewsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.NEW_SHOW_LIST"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/dash_board_news" android:name="com.comarch.mobile.banking.news.views.NewsDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.comarch.mobile.banking.qrcode.views.QRCodeTransferScannerActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@style/CoreDefaultTheme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.QRC_SCAN_CODE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/loansActivityLabel" android:name="com.comarch.mobile.banking.loans.views.LoanListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.LOAN_LIST_SHOW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/loansActivityLabel" android:name="com.comarch.mobile.banking.loans.views.LoanDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/creditsSimulatorActivityLabel" android:name="com.comarch.mobile.banking.creditssimulator.views.CreditsSimulatorListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.CREDITS_SIMULATOR_LIST_SHOW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/creditsSimulatorActivityLabel" android:name="com.comarch.mobile.banking.creditssimulator.views.CreditsSimulatorEditActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="false" android:label="@string/creditsSimulatorActivityLabel" android:name="com.comarch.mobile.banking.creditssimulator.views.CreditsSimulatorDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <provider android:authorities="com.comarch.mobile.banking.image.provider" android:name="com.comarch.mobile.banking.visitingcard.views.fortis.FortisCachedFileProvider"><nothingHere/></provider>
+        <service android:enabled="true" android:exported="false" android:label="Zarzadca dostepem do danych" android:name="com.comarch.mobile.banking.fortis.datamanager.FortisDataManager">
+            <intent-filter android:label="Data manager">
+                <action android:name="com.comarch.mobile.banking.intent.action.DATA_MANAGER"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:label="Kretor polaczenia HTTP" android:name="com.comarch.mobile.banking.http.AsyncHttpCallerService">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.ACTION_CONNECT"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:label="Kretor managera widokow" android:name="com.comarch.mobile.banking.fortis.viewsmanager.FortisViewManagerService">
+            <intent-filter>
+                <action android:name="com.comarch.mobile.banking.intent.action.GET_VIEWS_MANAGER"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+    </application>
+<uses-feature android:name="android.hardware.camera" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    </manifest>

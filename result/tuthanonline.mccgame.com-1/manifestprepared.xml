@@ -1,0 +1,113 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="tuthanonline.mccgame.com">
+    <application android:debuggable="false" android:enabled="true" android:icon="@drawable/icon" android:label="@string/app_name" android:persistent="false" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="tuthanonline.mccgame.com.MoaiActivity" android:screenOrientation="landscape" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.ziplinegames.moai.MoaiMoviePlayer" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Facebook" android:name="vn.minhchaucorporation.core.FacebookAuthActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Twitter" android:name="vn.minhchaucorporation.core.TwitterAuthActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="vn.minhchaucorporation.core.socialauth.yahoo.YahooScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <android-data android:configChanges="keyboardHidden|orientation|screenSize" android:host="LoginYahooActivity" android:scheme="mc"><nothingHere/></android-data>
+            <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.PersonalInformation" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.MainForm" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.CardRechargeMain" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.CardRecharge" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.MCCardRecharge" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.CardAgencyMain" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.CardAgencyList" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.CardAgencyDistrict" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.CreditCardRecharge" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:name="vn.minhchaucorporation.core.socialauth.googleplus.GooglePlus"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.Login" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.SignUp" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.NewsSocialPanel"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.NewsSocialDetail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="vn.minhchaucorporation.core.ui.main.PayHelp"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="error.tuthanonline.mccgame.com"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="-383988902"><nothingHere/></meta-data>
+        <meta-data android:name="vn.minhchaucorporation.core.socialauth.yahoo.ConsumerKey" android:value="dj0yJmk9ZE5pRTJTaU9TNTd1JmQ9WVdrOVZWWmxWM0pvTldFbWNHbzlNakEzT1RNME9UTTJNZy0tJnM9Y29uc3VtZXJzZWNyZXQmeD1mYQ--"><nothingHere/></meta-data>
+        <meta-data android:name="vn.minhchaucorporation.core.socialauth.yahoo.ConsumerSecret" android:value="797621dbd8eefaea4c93cfea3b6b4c17609129bb"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="TDGA_APP_ID" android:value="403A348F5DB558816ADB26509C3CFE6A"><nothingHere/></meta-data>
+        <meta-data android:name="TDGA_CHANNEL_ID" android:value="yuzhuo"><nothingHere/></meta-data>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"><nothingHere/></meta-data>
+        <meta-data android:name="JPUSH_APPKEY" android:value="1aa92636ba5f53f8357f9cf4"><nothingHere/></meta-data>
+    <receiver android:name="com.ziplinegames.moai.MoaiLocalNotificationReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"><nothingHere/></action>
+                <category android:name="error.tuthanonline.mccgame.com"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver"><nothingHere/></receiver>
+        <service android:name="vn.minhchaucorporation.core.service.AssistiveTouchService"><nothingHere/></service>
+        <service android:name="vn.minhchaucorporation.core.service.CreditCardOrderService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.DownloadService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"><nothingHere/></action>
+                <action android:name="cn.jpush.android.intent.REPORT"><nothingHere/></action>
+                <action android:name="cn.jpush.android.intent.PushService"><nothingHere/></action>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+    <permission android:name="err.tuthanonline.mccgame.com.permission.JPUSH_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="true"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="error.tuthanonline.mccgame.com.permission.JPUSH_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    </manifest>

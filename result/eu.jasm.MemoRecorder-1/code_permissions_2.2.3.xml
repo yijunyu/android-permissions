@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/eu/jasm/MemoRecorder/MemoRecorderActivity.java</file>
+    <line>298</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/eu/jasm/MemoRecorder/MemoRecorderActivity.java</file>
+    <line>272</line>
+    <permissions>
+      <permission>
+        <name>android.permission.RECORD_AUDIO</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/eu/jasm/MemoRecorder/MemoRecorderActivity.java</file>
+    <line>314</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

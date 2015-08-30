@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.guestlistpromotions.guestlist">
+    <application android:allowBackup="true" android:icon="@drawable/appicon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.uservoice.uservoicesdk.activity.PortalActivity"><nothingHere/></activity>
+        <activity android:name="com.uservoice.uservoicesdk.activity.ForumActivity"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.uservoice.uservoicesdk.activity.ArticleActivity"><nothingHere/></activity>
+        <activity android:name="com.uservoice.uservoicesdk.activity.TopicActivity"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.uservoice.uservoicesdk.activity.ContactActivity"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.uservoice.uservoicesdk.activity.PostIdeaActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.guestlistpromotions.guestlist.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.guestlistpromotions.guestlist.OpenClubListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.DashboardActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.FeedbackActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.AroundMe" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.GuestRegistrationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.ClubListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.PhotosActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.InviteActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.ClubDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.FavoriteActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.CabCallActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.ClubEventsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.PramotionsListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.EventsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.EventDetailsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.FriendsListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.MyBookingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.ViewPhotoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.InvitationDetailScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.CommingSoonActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.ClubPramotionsListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.MapTesting" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.LogoutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.guestlistpromotions.guestlist.SettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyByVesBj1wL1GVajudRBH57WkvIPyI8G7M"><nothingHere/></meta-data>
+    <receiver android:name="com.guestlist.gsm.MyBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.example.gcm"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.guestlistpromotions.guestlist.SearchVenueService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.example.gcm.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.guestlistpromotions.guestlist.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.guestlistpromotions.guestlist.permission.READ_GSERVICES" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.guestlistpromotions.guestlist.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

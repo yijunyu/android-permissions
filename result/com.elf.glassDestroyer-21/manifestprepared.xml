@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.elf.glassDestroyer">
+    <application android:icon="@drawable/icon" android:label="Glass Tower" android:name="MyApp">
+        <activity android:label="Glass Tower" android:name=".GameActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ielfgame.elfEngine.module.more.MoreActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.EntryScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.ShowResultOverlayActivity" android:theme="@style/sl_dialog"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketHeaderActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.entry.EntryListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.post.PostOverlayActivity" android:theme="@style/sl_dialog"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreHeaderActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserAddBuddyListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserHeaderActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserDetailListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailHeaderActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.achievement.AchievementHeaderActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.achievement.AchievementListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.news.NewsHeaderActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.news.NewsListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengeHeaderActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengeListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengeAcceptListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengeCreateListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.challenge.ChallengePaymentActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsPictureListActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.framework.ScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.framework.TabsActivity"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.SocialMarketScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.LeaderboardsScreenActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d85bf145c6af"><nothingHere/></meta-data>
+        <meta-data android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" android:value="true"><nothingHere/></meta-data>
+    <receiver android:exported="true" android:name="com.admob.android.ads.analytics.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        </application>
+    <supports-screens android:anyDensity="false" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

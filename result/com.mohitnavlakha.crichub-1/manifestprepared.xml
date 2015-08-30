@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mohitnavlakha.crichub">
+    <application android:allowBackup="true" android:icon="@drawable/crichub_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="ScoreActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="ScorecardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="MatchesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="PastMatchesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="UpcomingMatchesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="SeriesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="OngoingSeriesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="UpcomingSeriesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="TeamScheduleTabActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="SeriesTeamsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="SeriesScheduleActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,6 +1,0 @@
-<comparison>
-  <over-specification/>
-  <under-specification>
-    <permission>android.permission.ACCESS_WIFI_STATE</permission>
-  </under-specification>
-</comparison>

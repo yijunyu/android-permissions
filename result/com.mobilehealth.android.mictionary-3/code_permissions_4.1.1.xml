@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/mobilehealth/android/mictionary/MentionsLegalesActivity.java</file>
+    <line>0</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/com/mobilehealth/android/mictionary/EnvoyerActivity.java</file>
+    <line>0</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/com/mobilehealth/android/mictionary/EnvoyerActivity.java</file>
+    <line>0</line>
+    <permissions/>
+  </call>
+</calls>

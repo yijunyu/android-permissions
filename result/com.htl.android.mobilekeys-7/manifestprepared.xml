@@ -1,0 +1,79 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.htl.android.mobilekeys">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.zaplox.android.mobilekeys.MyApplication" android:theme="@style/Theme.Sherlock.Light">
+        <activity android:label="@string/app_name" android:name="com.zaplox.android.mobilekeys.activities.SignUpActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.NoActionBar" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.zaplox.android.mobilekeys.activities.KeyListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.zaplox.android.mobilekeys.activities.KeyRingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.zaplox.android.mobilekeys.activities.StartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="zaplox.com" android:pathPrefix="/open" android:scheme="http"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"><nothingHere/></action>
+                <android-data android:host="zaplox.com" android:pathPrefix="/open" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/settings_title" android:name="com.zaplox.android.mobilekeys.activities.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_account_settings" android:name="com.zaplox.android.mobilekeys.activities.AccountSettingsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.htl.android.mobilekeys.intent.ACCOUNT_SETTINGS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_connectivity_settings" android:name="com.zaplox.android.mobilekeys.activities.ConnectivitySettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.zaplox.android.mobilekeys.intent.CONNECTIVITY_SETTINGS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_login" android:name="com.zaplox.android.mobilekeys.activities.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.NoActionBar" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:label="@string/title_forgot_password" android:name="com.zaplox.android.mobilekeys.activities.RequestPasswordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.NoActionBar" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_view_key" android:launchMode="singleTop" android:name="com.zaplox.android.mobilekeys.activities.KeyViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zaplox.android.mobilekeys.VIEW_KEY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_view_fob" android:launchMode="singleTop" android:name="com.zaplox.android.mobilekeys.activities.FobViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zaplox.android.mobilekeys.VIEW_FOB"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_view_key" android:name="com.zaplox.android.mobilekeys.activities.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"><nothingHere/></activity>
+        <activity android:name="net.hockeyapp.android.FeedbackActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <provider android:authorities="com.htl.android.mobilekeys.fobprovider" android:exported="false" android:name="com.zaplox.android.mobilekeys.contentprovider.FobContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.htl.android.mobilekeys.keyprovider" android:exported="false" android:name="com.zaplox.android.mobilekeys.contentprovider.KeyContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.htl.android.mobilekeys.customerprovider" android:exported="false" android:name="com.zaplox.android.mobilekeys.contentprovider.CustomerContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.htl.android.mobilekeys.identityprovider" android:exported="false" android:name="com.zaplox.android.mobilekeys.contentprovider.IdentityContentProvider"><nothingHere/></provider>
+        <receiver android:name="com.zaplox.android.mobilekeys.MyBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.zaplox.android.mobilekeys"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.zaplox.android.mobilekeys.services.UnlockService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.zaplox.android.mobilekeys.services.KeySyncService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.zaplox.android.mobilekeys.services.FobSyncService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.zaplox.android.mobilekeys.services.GCMRegistrationService"><nothingHere/></service>
+    </application>
+<permission android:name="com.zaplox.android.mobilekeys.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.zaplox.android.mobilekeys.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

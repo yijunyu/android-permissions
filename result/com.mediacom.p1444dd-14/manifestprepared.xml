@@ -1,0 +1,174 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.appmachine.intern.runtime">
+    <application android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/appicon" android:label="MediaCom Cannes Lions" android:name="appmachine.AMApplication" android:theme="@style/Theme.Old">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="a.AI" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="a.FI" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="a.LI_2"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="a.MI_1" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="a.OI"><nothingHere/></activity>
+        <activity android:name="a.VJ" android:theme="@android:style/Theme.NoDisplay"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="a.OL" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="a.TL"><nothingHere/></activity>
+        <activity android:name="a.UL"><nothingHere/></activity>
+        <activity android:name="a.CM_3"><nothingHere/></activity>
+        <activity android:name="a.EM"><nothingHere/></activity>
+        <activity android:name="a.EO_1"><nothingHere/></activity>
+        <activity android:name="a.FO_1"><nothingHere/></activity>
+        <activity android:name="a.HO_3"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="a.NO_1" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="a.CQ" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="a.FR"><nothingHere/></activity>
+        <activity android:name="appmachine.DebugActivity"><nothingHere/></activity>
+        <activity android:name="a.BU" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:clearTaskOnLaunch="true" android:name="a.FU" android:noHistory="true" android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="a.RV"><nothingHere/></activity>
+        <activity android:name="a.UV"><nothingHere/></activity>
+        <activity android:name="a.HW"><nothingHere/></activity>
+        <activity android:name="a.LW"><nothingHere/></activity>
+        <activity android:name="a.PW"><nothingHere/></activity>
+        <activity android:name="a.SW"><nothingHere/></activity>
+        <activity android:name="a.VW"><nothingHere/></activity>
+        <activity android:name="a.WW"><nothingHere/></activity>
+        <activity android:name="a.EX"><nothingHere/></activity>
+        <activity android:name="a.IX"><nothingHere/></activity>
+        <activity android:name="a.KX"><nothingHere/></activity>
+        <activity android:name="a.MX"><nothingHere/></activity>
+        <activity android:name="a.PX"><nothingHere/></activity>
+        <activity android:name="a.RX"><nothingHere/></activity>
+        <activity android:name="a.WX"><nothingHere/></activity>
+        <activity android:name="a.XX"><nothingHere/></activity>
+        <activity android:name="a.DY"><nothingHere/></activity>
+        <activity android:name="a.FY"><nothingHere/></activity>
+        <activity android:name="a.HY"><nothingHere/></activity>
+        <activity android:name="a.JY"><nothingHere/></activity>
+        <activity android:name="a.LY"><nothingHere/></activity>
+        <activity android:name="a.OY"><nothingHere/></activity>
+        <activity android:name="a.PY"><nothingHere/></activity>
+        <activity android:name="a.QY"><nothingHere/></activity>
+        <activity android:name="a.RY"><nothingHere/></activity>
+        <activity android:name="a.XY"><nothingHere/></activity>
+        <activity android:name="a.CZ"><nothingHere/></activity>
+        <activity android:name="a.HAB"><nothingHere/></activity>
+        <activity android:name="a.OAB"><nothingHere/></activity>
+        <activity android:name="a.PAB"><nothingHere/></activity>
+        <activity android:name="a.QAB"><nothingHere/></activity>
+        <activity android:name="a.RAB"><nothingHere/></activity>
+        <activity android:name="a.TAB"><nothingHere/></activity>
+        <activity android:name="a.VAB"><nothingHere/></activity>
+        <activity android:name="a.WAB"><nothingHere/></activity>
+        <activity android:name="a.ZAB"><nothingHere/></activity>
+        <activity android:name="a.GBB"><nothingHere/></activity>
+        <activity android:name="a.JBB"><nothingHere/></activity>
+        <activity android:name="a.LBB"><nothingHere/></activity>
+        <activity android:name="a.OBB"><nothingHere/></activity>
+        <activity android:name="a.RBB"><nothingHere/></activity>
+        <activity android:name="a.TBB"><nothingHere/></activity>
+        <activity android:name="a.WBB"><nothingHere/></activity>
+        <activity android:name="a.XBB"><nothingHere/></activity>
+        <activity android:name="a.ACB"><nothingHere/></activity>
+        <activity android:name="a.CCB"><nothingHere/></activity>
+        <activity android:name="a.ECB"><nothingHere/></activity>
+        <activity android:name="a.MCB"><nothingHere/></activity>
+        <activity android:name="a.RCB"><nothingHere/></activity>
+        <activity android:name="a.SCB"><nothingHere/></activity>
+        <activity android:name="a.BDB"><nothingHere/></activity>
+        <activity android:name="a.DDB"><nothingHere/></activity>
+        <activity android:name="a.EDB"><nothingHere/></activity>
+        <activity android:name="a.HDB"><nothingHere/></activity>
+        <activity android:name="a.IDB"><nothingHere/></activity>
+        <activity android:name="a.MDB"><nothingHere/></activity>
+        <activity android:name="a.QDB"><nothingHere/></activity>
+        <activity android:name="a.TDB"><nothingHere/></activity>
+        <activity android:name="a.VDB"><nothingHere/></activity>
+        <activity android:name="a.WDB"><nothingHere/></activity>
+        <activity android:name="a.YDB"><nothingHere/></activity>
+        <activity android:name="a.BEB"><nothingHere/></activity>
+        <activity android:name="a.CEB"><nothingHere/></activity>
+        <activity android:name="a.DEB"><nothingHere/></activity>
+        <activity android:name="a.EEB"><nothingHere/></activity>
+        <activity android:name="a.HEB"><nothingHere/></activity>
+        <activity android:name="a.JEB"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="a.QEB" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="a.VEB"><nothingHere/></activity>
+        <activity android:name="a.XEB"><nothingHere/></activity>
+        <activity android:name="a.ZEB"><nothingHere/></activity>
+        <activity android:name="a.AFB"><nothingHere/></activity>
+        <activity android:name="a.BFB"><nothingHere/></activity>
+        <activity android:name="a.CFB"><nothingHere/></activity>
+        <activity android:name="a.DFB"><nothingHere/></activity>
+        <activity android:name="a.EFB"><nothingHere/></activity>
+        <activity android:name="a.HFB"><nothingHere/></activity>
+        <activity android:name="a.LFB"><nothingHere/></activity>
+        <activity android:name="a.MFB"><nothingHere/></activity>
+        <activity android:name="a.OFB"><nothingHere/></activity>
+        <activity android:name="a.QFB"><nothingHere/></activity>
+        <activity android:name="a.RFB"><nothingHere/></activity>
+        <activity android:name="a.TFB"><nothingHere/></activity>
+        <activity android:name="a.UFB"><nothingHere/></activity>
+        <activity android:name="a.BGB"><nothingHere/></activity>
+        <activity android:name="a.DGB" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="a.JGB"><nothingHere/></activity>
+        <activity android:name="a.UGB"><nothingHere/></activity>
+        <activity android:name="a.VGB"><nothingHere/></activity>
+        <activity android:name="a.XGB"><nothingHere/></activity>
+        <activity android:name="a.AHB"><nothingHere/></activity>
+        <activity android:name="a.DHB"><nothingHere/></activity>
+        <activity android:name="a.HHB"><nothingHere/></activity>
+        <activity android:name="a.IHB"><nothingHere/></activity>
+        <activity android:name="a.JHB"><nothingHere/></activity>
+        <activity android:name="a.VHB"><nothingHere/></activity>
+        <activity android:name="a.XHB"><nothingHere/></activity>
+        <activity android:name="a.YHB"><nothingHere/></activity>
+        <activity android:name="a.AIB"><nothingHere/></activity>
+        <activity android:name="a.BIB"><nothingHere/></activity>
+        <activity android:name="a.CIB"><nothingHere/></activity>
+        <activity android:name="a.DIB"><nothingHere/></activity>
+        <activity android:name="a.EIB"><nothingHere/></activity>
+        <activity android:name="a.GIB"><nothingHere/></activity>
+        <activity android:name="a.IIB"><nothingHere/></activity>
+        <activity android:name="a.JIB"><nothingHere/></activity>
+        <activity android:name="a.KIB"><nothingHere/></activity>
+        <activity android:name="a.LIB"><nothingHere/></activity>
+        <activity android:name="a.NIB"><nothingHere/></activity>
+        <activity android:name="a.BPC"><nothingHere/></activity>
+        <activity android:label="Web Authenticator" android:name="xamarin.auth.FormAuthenticatorActivity"><nothingHere/></activity>
+        <activity android:label="Web Authenticator" android:name="xamarin.auth.WebAuthenticatorActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:label="Scanner" android:name="zxing.mobile.ZxingActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAMUZ-9HDZVyQ5LPtKS4GZM_Sdu9mqRjl4"><nothingHere/></meta-data>
+    <provider android:authorities="com.mediacom.p1444dd.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+        <receiver android:name="appmachine.gcm.PushHandlerBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.mediacom.p1444dd"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.mediacom.p1444dd"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gcm.intent.RETRY"><nothingHere/></action>
+                <category android:name="com.mediacom.p1444dd"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="appmachine.gcm.PushHandlerService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.mediacom.p1444dd.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.mediacom.p1444dd.permission.C2D_MESSAGE"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.mediacom.p1444dd.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.mediacom.p1444dd.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

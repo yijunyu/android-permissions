@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sh0ckwave.quotevocabulary">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        <activity android:label="@string/app_name" android:name="com.sh0ckwave.quotevocabulary.MainActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/dashboard" android:name="com.sh0ckwave.quotevocabulary.MainMenu" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.sh0ckwave.quotevocabulary.allquotes.AllQuotesFragmentActivity" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/authors" android:name="com.sh0ckwave.quotevocabulary.authors.AllAuthorsActivity" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.sh0ckwave.quotevocabulary.allquotes.AllQuotesImage" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/categories" android:name="com.sh0ckwave.quotevocabulary.allcategories.AllCategoriesActivity" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.sh0ckwave.quotevocabulary.quote_detail.QuoteDetailFragmentActivity" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/tit_dict" android:name="com.sh0ckwave.quotevocabulary.dict.DictActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/your_words" android:name="com.sh0ckwave.quotevocabulary.words.WordTabActivity" android:theme="@style/tabTheme"><nothingHere/></activity>
+        <activity android:name="com.sh0ckwave.quotevocabulary.words.TabBookmark" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.sh0ckwave.quotevocabulary.words.TabRecent" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.sh0ckwave.quotevocabulary.words.TabTest" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/test" android:name="com.sh0ckwave.quotevocabulary.test.TestActivity" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/training" android:name="com.sh0ckwave.quotevocabulary.test.training.TestTrainingActivity" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/writing" android:name="com.sh0ckwave.quotevocabulary.test.writing.TestWritingActivity" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/writing" android:name="com.sh0ckwave.quotevocabulary.test.listening.TestListeningActivity" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

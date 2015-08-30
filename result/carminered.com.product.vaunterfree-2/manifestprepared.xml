@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="carminered.com.product.vaunterfree">
+    <application android:allowClearUserData="true" android:debuggable="false" android:icon="@drawable/spendpadhi" android:label="@string/app_name" android:testOnly="false">
+        <activity android:label="@string/app_name" android:name=".VaunterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/activity_edit_asset" android:name=".AssetPropertiesActivity"><nothingHere/></activity>
+        <activity android:label="@string/activity_edit_category" android:name=".CategoryPropertiesActivity"><nothingHere/></activity>
+        <activity android:label="@string/activity_edit_liability" android:name=".LiabilityPropertiesActivity"><nothingHere/></activity>
+    </application>
+</manifest>

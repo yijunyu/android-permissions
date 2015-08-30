@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<permissions>
-  <permission>
-    <name>android.permission.READ_EXTERNAL_STORAGE</name>
-  </permission>
-</permissions>

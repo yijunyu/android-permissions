@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<permissions>
-  <permission>
-    <name>android.permission.BLUETOOTH</name>
-  </permission>
-  <permission>
-    <name>android.permission.BLUETOOTH_ADMIN</name>
-  </permission>
-</permissions>

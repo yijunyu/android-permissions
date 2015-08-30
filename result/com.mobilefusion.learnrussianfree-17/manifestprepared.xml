@@ -1,0 +1,102 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.mobilefusion.learnrussianfree">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/CustomButton">
+        <activity android:label="@string/app_name" android:name=".Splash" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Menu" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.MENU"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Option" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.OPTION"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".True" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.TRUEORFALSE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".MemoryMatch" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.MEMORYMATCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".MemoryRecall" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.MEMORYRECALL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Crossword" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.CROSSWORD"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Flash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.FLASH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Hangman" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.HANGMAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Anagram" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.ANAGRAM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Choose" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.CHOOSE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.mobilefusion.learnrussianfree.WordSearch" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.WORDSEARCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.mobilefusion.learnrussianfree.SpellingTest" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.mobilefusion.learnrussianfree.SPELLINGTEST"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.ispeech.iSpeechFramework" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <meta-data android:name="ispeech_api_key" android:value="3028a1c8127a522016b4cf342e699d15"><nothingHere/></meta-data>
+        <meta-data android:name="debug" android:value="false"><nothingHere/></meta-data>
+    <receiver android:name="com.mobilefusion.learnrussianfree.BillingReceiver">
+- <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.inapp.purchasing.ResponseReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mobilefusion.learnrussianfree.BillingService"><nothingHere/></service>
+- </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="muhammadbabar.findme">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:name="findme.activities.FindMe" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="findme.activities.Signup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="findme.activities.Login" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="findme.activities.RecoverPassword" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="findme.activities.FindMeTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="findme.activities.Find" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="findme.activities.Search" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="findme.activities.Chat" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="findme.activities.Conversation" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="findme.activities.Profile" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

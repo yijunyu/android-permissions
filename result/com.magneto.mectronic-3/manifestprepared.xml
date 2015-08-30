@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.magneto.mectronic">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.magneto.mectronic.apps.ApplicationDetails" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:name="com.magneto.mt.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/app_name" android:name="com.magneto.mt.activity.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.SearchSuccessActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.PartDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.RFQActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.SendMailActvity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.MyAlertActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.SearchUnSuccessActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.FullPartDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:name="com.magneto.mt.activity.BuyNowAcivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:name="com.magneto.mt.activity.WebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.RFQListActivty" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.DistriProfileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.AlertUtility" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.AllAlertActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.SharingActivty" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.magneto.mt.activity.RFQSecondActivty" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="xlarge"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="xlarge"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="xlarge"><nothingHere/></screen>
+    </compatible-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,9 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.INTERACT_ACROSS_USERS_FULL</permission>
-    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
-  </over-specification>
-  <under-specification>
-    <permission>android.permission.MANAGE_ACCOUNTS</permission>
-  </under-specification>
-</comparison>

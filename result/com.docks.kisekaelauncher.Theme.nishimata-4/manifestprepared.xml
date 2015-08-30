@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.docks.kisekaelauncher.Theme.nishimata">
+    <application android:icon="@drawable/theme_icon" android:label="@string/theme_title">
+        <activity android:label="@string/theme_title" android:name="com.docks.kisekaelauncher.Theme.nishimata.main" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="com.docks.kisekaelauncherPRO.THEMES"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.docks.kisekaelauncher.icons.ACTION_PICK_ICON"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.docks.kisekaelauncher.Theme.nishimata.WebShortcutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnCloseSystemDialogs="true" android:icon="@drawable/theme_icon" android:label="@string/pick_wallpaper" android:name="com.docks.kisekaelauncher.Theme.nishimata.WallpaperChooser" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.app.GlasMagasinet">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".MainScreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".SectionedDemo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Map"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Info"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".OfferGUI"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Mapping"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

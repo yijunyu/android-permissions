@@ -1,0 +1,130 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="naveen.callerfullscreen">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Translucent">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Fullpage"><nothingHere/></activity>
+        <activity android:name=".PhoneCall"><nothingHere/></activity>
+        <activity android:exported="true" android:label="@string/cube2_settings" android:name=".shakeWallpaperSettings" android:theme="@android:color/darker_gray">
+            <intent-filter>
+                <category android:name="android.intent.category.PREFERENCE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".FlashScreen"><nothingHere/></activity>
+        <activity android:name=".EndFullpage"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboard|keyboardHidden" android:launchMode="singleTask" android:name="com.widdit.lockScreen.activities.MainActivity" android:screenOrientation="portrait" android:taskAffinity="com.widdit" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"><nothingHere/></action>
+                <category android:name="android.intent.category.MONKEY"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:name="com.widdit.lockScreen.activities.TermsAndConditionsActivity" android:screenOrientation="portrait" android:taskAffinity="com.widdit" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.widdit.lockScreen.activities.SettingsActivity" android:screenOrientation="portrait" android:taskAffinity="com.widdit" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.inmobi.androidsdk.IMBrowserActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer"><nothingHere/></activity>
+        <meta-data android:name="PUBLISHER_ID" android:value="77558"><nothingHere/></meta-data>
+        <meta-data android:name="HOME_BASE_ID" android:value="816816"><nothingHere/></meta-data>
+        <meta-data android:name="HOMEBASE_SECURE" android:value="true"><nothingHere/></meta-data>
+        <receiver android:label="@string/app_name" android:name=".HelloWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/hello_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name=".OnBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.service.receivers.ScreenStateAndBootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.widdit.lockScreen.receivers.SMSNotificationsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.PhoneCallReciever">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.OutgoingPhoneCallReciever">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.NetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.BreakingMessageReceiver">
+            <intent-filter>
+                <action android:name="com.widdit.homebase.BREAKING_MESSAGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.PackageAddedReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.PackageRemovedReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.WidditGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="."><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.shell.AlarmReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.inmobi.commons.analytics.androidsdk.IMAdTrackerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name=".CallService" android:process=".remoteservice"><nothingHere/></service>
+        <service android:label="@string/wallpaper_cube2" android:name=".shakeWallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/kiss"><nothingHere/></meta-data>
+        </service>
+        <service android:name="com.widdit.lockScreen.service.HomeBaseService"><nothingHere/></service>
+        <service android:name="com.widdit.lockScreen.service.DataService"><nothingHere/></service>
+        <service android:name="com.widdit.lockScreen.service.BackgroundSoundService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.inmobi.commons.internal.ActivityRecognitionManager"><nothingHere/></service>
+    </application>
+    <uses-feature android:name="android.software.live_wallpaper" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"><nothingHere/></uses-permission>
+</manifest>

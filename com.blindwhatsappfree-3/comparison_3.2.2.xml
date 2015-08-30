@@ -1,9 +1,0 @@
-<comparison>
-  <over-specification>
-    <permission>android.permission.CHANGE_NETWORK_STATE</permission>
-    <permission>android.permission.RESTART_PACKAGES</permission>
-    <permission>android.permission.KILL_BACKGROUND_PROCESSES</permission>
-    <permission>android.permission.ACCESS_WIFI_STATE</permission>
-  </over-specification>
-  <under-specification/>
-</comparison>

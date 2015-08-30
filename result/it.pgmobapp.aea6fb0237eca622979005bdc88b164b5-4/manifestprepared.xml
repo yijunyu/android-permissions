@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="it.pgmobapp.aea6fb0237eca622979005bdc88b164b5">
+    <application android:allowClearUserData="true" android:debuggable="false" android:enabled="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".MyApplication">
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".GMaps" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".NotificationActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="it.pgmobapp.aea6fb0237eca622979005bdc88b164b5"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        <uses-permission android:name="android.permission.SEND"><nothingHere/></uses-permission>
+        <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+        <uses-permission android:name="com.google.android.c2dm.permission.SEND"><nothingHere/></uses-permission>
+        <uses-permission android:name="com.google.android.c2dm.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </application>
+    <permission android:name="it.pgmobapp.aea6fb0237eca622979005bdc88b164b5.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="it.pgmobapp.aea6fb0237eca622979005bdc88b164b5.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+</manifest>

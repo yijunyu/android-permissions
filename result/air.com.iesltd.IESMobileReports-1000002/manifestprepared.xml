@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="air.com.adobe.appentry">
+    <application android:icon="@drawable/icon" android:label="Reports">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Reports" android:launchMode="singleTask" android:name=".AppEntry" android:screenOrientation="nosensor" android:theme="@style/Theme.NoShadow" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="airDownloadURL" android:value="https://market.android.com/details?id=com.adobe.air"><nothingHere/></meta-data>
+            <meta-data android:name="autoOrients" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="false"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="43e6c61c-4661-4779-a432-2d6b65817780"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="MobileReports.swf"><nothingHere/></meta-data>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

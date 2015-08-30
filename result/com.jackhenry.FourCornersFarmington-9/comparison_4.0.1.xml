@@ -1,0 +1,6 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_MOCK_LOCATION</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

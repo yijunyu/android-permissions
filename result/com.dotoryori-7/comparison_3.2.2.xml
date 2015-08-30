@@ -1,0 +1,11 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.INTERNET</permission>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.RESTART_PACKAGES</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

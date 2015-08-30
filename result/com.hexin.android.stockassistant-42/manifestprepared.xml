@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hexin.android.stockassistant">
+    <application android:allowBackup="true" android:hardwareAccelerated="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.hexin.android.stockassistant.StockassistantApplication" android:theme="@style/NoTitleBarStyle">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.hexin.android.stockassistant.LogoActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleBarStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.hexin.android.stockassistant.StockassistantActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.hexin.android.stockassistant.voicesearch.VoiceSearchTalkActivity" android:screenOrientation="portrait" android:theme="@style/translucent" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.hexin.android.stockassistant.ShakeStockActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.hexin.android.stockassistant.AboutActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.hexin.android.stockassistant.SameTypeQueryActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.hexin.android.stockassistant.SearchActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.hexin.android.stockassistant.count.UserCenterActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.hexin.android.stockassistant.SettingActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.hexin.android.stockassistant.SerchResultActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.hexin.android.stockassistant.SerchResultActivityForOtherApp" android:theme="@style/NoTitleBarStyle">
+            <intent-filter>
+                <action android:name="com.hexin.android.stockassistant.SearchStock"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="hexinxuanguassistant"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.hexin.android.stockassistant.OpenFileActivity" android:theme="@style/NoTitleBarStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="application/pdf" android:scheme="file"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="application/pdf" android:scheme="content"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="*" android:pathPattern=".*[pP][dD][fF]" android:scheme="file"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.hexin.android.stockassistant.userguide.ZXGGuide" android:theme="@style/guide_bg"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="cx.hell.android.pdfview.AboutPDFViewActivity"><nothingHere/></activity>
+        <activity android:label="@string/options" android:name="cx.hell.android.pdfview.Options"><nothingHere/></activity>
+        <activity android:name="com.hexin.android.stockassistant.IWENCAIFeedBackActivity">
+            <intent-filter>
+                <action android:name="com.hexin.android.iwencai.feedback"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="UMS_APPKEY" android:value="c0ec6ccd61c3234b957046cf7c0246e9"><nothingHere/></meta-data>
+        <meta-data android:name="CHANNEL" android:value="googlePlay"><nothingHere/></meta-data>
+    <service android:name="com.wbtech.ums.update.AppUpgradeService" android:process=":remote"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"><nothingHere/></uses-permission>
+    </manifest>

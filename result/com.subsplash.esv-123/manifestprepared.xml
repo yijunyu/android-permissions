@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.subsplash.esv">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.subsplash.esv.ESVBible" android:theme="@android:style/Theme.Light">
+        <activity android:label="ESV Bible" android:launchMode="singleTask" android:name="com.subsplash.esv.BibleActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.subsplash.esv.BrowseActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:name="com.subsplash.esv.HistoryActivity" android:theme="@style/ESVTheme">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:name="com.subsplash.esv.FavoritesActivity" android:theme="@style/ESVTheme">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.subsplash.esv.SearchActivity" android:screenOrientation="portrait" android:theme="@style/ESVTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.subsplash.esv.HighlightsActivity" android:theme="@style/ESVTheme">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:name="com.subsplash.esv.NotesActivity" android:theme="@style/ESVTheme">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:name="com.subsplash.esv.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/ESVTheme">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:name="com.subsplash.esv.AboutActivity" android:screenOrientation="portrait" android:theme="@style/ESVTheme">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:name="com.subsplash.esv.FacebookPostDialog" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:name="com.subsplash.esv.TwitterPostDialog" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <receiver android:name="com.subsplash.esv.MainActivity$MainReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.subsplash.esv.BibleActivity$BibleReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.subsplash.esv.SearchActivity$SearchReceiver">
+            <intent-filter>
+                <action android:name="android.search.action.GLOBAL_SEARCH"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.subsplash.esv.service.BookPickerService">
+            <intent-filter><nothingHere/></intent-filter>
+        </service>
+        <service android:name="com.subsplash.esv.service.BookParserService">
+            <intent-filter><nothingHere/></intent-filter>
+        </service>
+        <service android:name="com.subsplash.esv.service.LayoutService">
+            <intent-filter><nothingHere/></intent-filter>
+        </service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

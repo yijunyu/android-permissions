@@ -1,3 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.trackaroo.apps.mobile.android.Trackmaster.layouts.logger.RaceTime">
-    <application android:icon="@drawable/layout48" android:label="@string/app_name"><nothingHere/></application>
-</manifest>

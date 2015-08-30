@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.appsministry.litres.book567455">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ico" android:label="&#1057;&#1083;&#1091;&#1095;&#1072;&#1081; &#1080;&#1079; &#1087;&#1088;&#1072;&#1082;&#1090;&#1080;&#1082;&#1080;, &#1050;&#1080;&#1088;&#1072; &#1048;&#1079;&#1084;&#1072;&#1081;&#1083;&#1086;&#1074;&#1072;" android:name="biz.neoline.app_core.ui.android.library.NBAndroidApplication" android:theme="@style/Theme.FullScreen">
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/ico" android:label="&#1057;&#1083;&#1091;&#1095;&#1072;&#1081; &#1080;&#1079; &#1087;&#1088;&#1072;&#1082;&#1090;&#1080;&#1082;&#1080;, &#1050;&#1080;&#1088;&#1072; &#1048;&#1079;&#1084;&#1072;&#1081;&#1083;&#1086;&#1074;&#1072;" android:launchMode="singleTask" android:name="biz.neoline.android.reader.NeoBookReader" android:theme="@style/Theme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value="biz.neoline.android.reader.TextSearchActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="biz.neoline.android.reader.TextSearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:name="biz.neoline.android.reader.LibraryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="biz.neoline.android.reader.BookmarksAndTocActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Sorry" android:name="biz.neoline.app_core.ui.android.library.CrashReportingActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="biz.neoline.app_core.ui.android.dialogs.DialogActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="biz.neoline.test.DonationActivity" android:theme="@style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.klpcjg.wyxjvs102320.MainActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.klpcjg.wyxjvs102320.BrowserActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.klpcjg.wyxjvs102320.VDActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.mobclix.android.sdk.MobclixBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.klpcjg.wyxjvs102320.APPID" android:value="66394"><nothingHere/></meta-data>
+        <meta-data android:name="com.klpcjg.wyxjvs102320.APIKEY" android:value="android*1346100839102320974"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="B679E8EE-F495-4C09-8FD4-DA2AD9CB1960"><nothingHere/></meta-data>
+        <receiver android:exported="true" android:name="com.google.android.apps.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="biz.neoline.app_core.core.application.ShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

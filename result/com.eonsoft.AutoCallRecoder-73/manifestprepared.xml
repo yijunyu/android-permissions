@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.eonsoft.AutoCallRecoder">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_main" android:name="com.eonsoft.AutoCallRecoder.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black" android:windowSoftInputMode="stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_main" android:launchMode="singleTask" android:name="com.eonsoft.AutoCallRecoder.ListA" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:label="@string/settings" android:name="com.eonsoft.AutoCallRecoder.Settings" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/memo" android:name="com.eonsoft.AutoCallRecoder.Memo" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/settings" android:name="com.eonsoft.AutoCallRecoder.Password" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="net.daum.adam.publisher.impl.AdInterstitialActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.eonsoft.AutoCallRecoder.ReceiverCall" android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.eonsoft.AutoCallRecoder.MP3Service"><nothingHere/></service>
+        <service android:name="com.eonsoft.AutoCallRecoder.ServiceCall"><nothingHere/></service>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+</manifest>

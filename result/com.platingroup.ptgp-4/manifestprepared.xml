@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.platingroup.ptgp">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="LauncherActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="MusicListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="MusicPlayerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="ScoresListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="ScheduleListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="PlayersListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="NewsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="MoviesListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="PlayerInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="NewsDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="InfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

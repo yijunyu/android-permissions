@@ -1,0 +1,12 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.READ_CALENDAR</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_CALENDAR</permission>
+    <permission>android.permission.FLASHLIGHT</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.CHANGE_NETWORK_STATE</permission>
+  </under-specification>
+</comparison>

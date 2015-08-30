@@ -1,0 +1,266 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.INNOVE9">
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher_phone" android:label="@string/app_name">
+        <activity android:name="com.INNOVE9.ui.ScreenSplash" android:theme="@style/DarkTheme.NoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.INNOVE9.ui.SipHome" android:screenOrientation="portrait" android:theme="@style/DarkTheme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter><nothingHere/></intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="com.INNOVE9.phone.action.DIALER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="android.intent.action.DIAL"><nothingHere/></action>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+                <android-data android:scheme="csip"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="com.INNOVE9.phone.action.CALLLOG"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="com.INNOVE9.phone.action.FAVORITES"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="com.INNOVE9.phone.action.MESSAGES"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.INNOVE9.ui.calllog.CallLogDetailsActivity" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/filters" android:name="com.INNOVE9.ui.filters.AccountFilters" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/filters" android:name="com.INNOVE9.ui.filters.EditFilter" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/choose_wizard" android:name="com.INNOVE9.wizards.WizardChooser" android:theme="@style/DarkTheme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:enabled="@bool/use_hc_prefs" android:label="@string/prefs" android:name="com.INNOVE9.ui.prefs.hc.MainPrefs" android:permission="android.permission.CONFIGURE_SIP" android:theme="@style/Sherlock.__Theme.Light">
+            <intent-filter>
+                <action android:name="com.INNOVE9.ui.action.PREFS_GLOBAL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:enabled="@bool/use_cupcake_prefs" android:label="@string/prefs" android:name="com.INNOVE9.ui.prefs.cupcake.MainPrefs" android:permission="android.permission.CONFIGURE_SIP" android:theme="@style/DarkTheme">
+            <intent-filter>
+                <action android:name="com.INNOVE9.ui.action.PREFS_GLOBAL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="com.INNOVE9.ui.prefs.cupcake.PrefsLoaderActivity" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/filters" android:name="com.INNOVE9.ui.prefs.PrefsFilters" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/prefs_fast" android:name="com.INNOVE9.ui.prefs.PrefsFast" android:permission="android.permission.CONFIGURE_SIP" android:theme="@style/DarkTheme.Dialog">
+            <intent-filter>
+                <action android:name="com.INNOVE9.ui.action.PREFS_FAST"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/codecs" android:name="com.INNOVE9.ui.prefs.Codecs" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:label="@string/test_audio" android:name="com.INNOVE9.ui.prefs.AudioTester" android:screenOrientation="portrait" android:theme="@style/DarkTheme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/edit" android:name="com.INNOVE9.wizards.BasePrefsWizard" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:label="Log in" android:name="com.INNOVE9.ui.account.AccountWizard" android:screenOrientation="portrait" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:label="Log in" android:name="com.INNOVE9.ui.dialpad.DialerFragment" android:screenOrientation="portrait" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:label="Log in" android:name="com.INNOVE9.ui.contacts.ContactManager" android:screenOrientation="portrait" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:label="Log in" android:name="com.INNOVE9.ui.calllog.CallLogListFragment" android:screenOrientation="portrait" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:name="com.INNOVE9.ui.dialpad.OffLineDialerFragment" android:theme="@style/DarkTheme">
+            <intent-filter>
+                <action android:name="com.INNOVE9.ui.dialpad.OffLineDialerFragment"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Log in" android:name="com.INNOVE9.ui.dialpad.NewDialpad" android:screenOrientation="portrait" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:label="Log in" android:name="com.INNOVE9.ui.contacts.NewContact" android:screenOrientation="portrait" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:name="com.INNOVE9.ui.more.CallerInformation" android:theme="@style/DarkTheme">
+            <intent-filter>
+                <action android:name="com.INNOVE9.ui.more.CallerInformation"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.INNOVE9.ui.dialpad.AccessNumberList" android:theme="@style/DarkTheme">
+            <intent-filter>
+                <action android:name="com.INNOVE9.ui.dialpad.AccessNumberList"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.INNOVE9.ui.more.CountryList" android:theme="@style/DarkTheme">
+            <intent-filter>
+                <action android:name="com.INNOVE9.ui.more.CountryList"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="false" android:configChanges="orientation" android:excludeFromRecents="true" android:label="@string/call" android:launchMode="singleTask" android:name="com.INNOVE9.ui.outgoingcall.OutgoingCallChooser" android:permission="android.permission.USE_SIP" android:process=":sipStack" android:taskAffinity="" android:theme="@style/DarkTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL"><nothingHere/></action>
+                <android-data android:scheme="csip"><nothingHere/></android-data>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+                <android-data android:scheme="sips"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="android.phone.extra.NEW_CALL_INTENT"><nothingHere/></action>
+                <android-data android:scheme="csip"><nothingHere/></android-data>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+                <android-data android:scheme="sips"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="orientation" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.INNOVE9.ui.incall.InCallActivity" android:permission="android.permission.CONFIGURE_SIP" android:process=":sipStack" android:taskAffinity="" android:theme="@style/DarkTheme.NoTitle">
+            <intent-filter android:priority="10">
+                <action android:name="com.INNOVE9.phone.action.INCALL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/pickup_sip_uri" android:name="com.INNOVE9.ui.PickupSipUri" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/prefs_media" android:name="com.INNOVE9.ui.incall.InCallMediaControl" android:taskAffinity="com.INNOVE9.ui.incall.InCallActivity" android:theme="@style/DarkTheme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.INNOVE9.widgets.AccountWidgetConfigure" android:theme="@style/DarkTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.INNOVE9.widgets.ShortcutWidgetConfigure" android:theme="@style/DarkTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.INNOVE9.ui.messages.MessageActivity" android:theme="@style/DarkTheme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/accounts" android:name="com.INNOVE9.ui.account.AccountsEditList" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:name="com.INNOVE9.ui.account.AccountEdit" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:label="Add Contact" android:name="com.INNOVE9.ui.contacts.AddContactDialog" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="INNOVE9" android:name="com.INNOVE9.ui.more.AboutDialog" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.INNOVE9.wizards.impl.MondotalkCreate" android:theme="@style/DarkTheme"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_local_call_log" android:name="com.INNOVE9.ui.more.CallLogAdapter1"><nothingHere/></activity>
+    <activity-alias android:label="@string/app_name" android:launchMode="singleTask" android:name="com.INNOVE9.ui.SipDialer" android:targetActivity="com.INNOVE9.ui.SipHome" android:theme="@style/DarkTheme" android:uiOptions="splitActionBarWhenNarrow">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO"><nothingHere/></action>
+                <android-data android:scheme="csip"><nothingHere/></android-data>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+                <android-data android:scheme="sips"><nothingHere/></android-data>
+                <android-data android:host="csip" android:scheme="imto"><nothingHere/></android-data>
+                <android-data android:host="sip" android:scheme="imto"><nothingHere/></android-data>
+                <android-data android:host="skype" android:scheme="imto"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="csip"><nothingHere/></android-data>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+                <android-data android:scheme="sips"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity-alias>
+        <activity-alias android:configChanges="orientation" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.INNOVE9.ui.PrivilegedOutgoingSipCallBroadcaster" android:permission="android.permission.CALL_PRIVILEGED" android:targetActivity="com.INNOVE9.ui.outgoingcall.OutgoingCallChooser" android:theme="@style/DarkTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_PRIVILEGED"><nothingHere/></action>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity-alias>
+        <activity-alias android:configChanges="orientation" android:enabled="false" android:excludeFromRecents="true" android:label="@string/sip_call" android:launchMode="singleTask" android:name="com.INNOVE9.ui.PrivilegedOutgoingCallBroadcaster" android:permission="android.permission.CALL_PRIVILEGED" android:targetActivity="com.INNOVE9.ui.outgoingcall.OutgoingCallChooser" android:theme="@style/DarkTheme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_PRIVILEGED"><nothingHere/></action>
+                <android-data android:scheme="tel"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_PRIVILEGED"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/phone"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/phone_v2"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/person"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO"><nothingHere/></action>
+                <android-data android:scheme="smsto"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity-alias>
+        <meta-data android:name="app_type" android:value="nightly"><nothingHere/></meta-data>
+        <meta-data android:name="app_channel" android:value="trunk"><nothingHere/></meta-data>
+        <provider android:authorities="com.INNOVE9.prefs" android:name="com.INNOVE9.service.PreferenceProvider" android:permission="android.permission.CONFIGURE_SIP"><nothingHere/></provider>
+        <provider android:authorities="com.INNOVE9.db" android:name="com.INNOVE9.db.DBProvider" android:permission="android.permission.CONFIGURE_SIP" android:process=":sipStack"><nothingHere/></provider>
+        <receiver android:name="com.INNOVE9.service.DeviceStateReceiver" android:process=":sipStack">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.INNOVE9.service.DeviceStateReceiver" android:permission="android.permission.CONFIGURE_SIP" android:process=":sipStack">
+            <intent-filter>
+                <action android:name="com.INNOVE9.accounts.activate"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.INNOVE9.service.HeadsetButtonReceiver"><nothingHere/></receiver>
+        <receiver android:icon="@drawable/ic_launcher_phone" android:label="@string/gadget_title" android:name="com.INNOVE9.widgets.AccountWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.INNOVE9.service.ACCOUNT_CHANGED"><nothingHere/></action>
+                <action android:name="com.INNOVE9.service.REGISTRATION_CHANGED"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:icon="@drawable/ic_ab_favourites_holo_dark" android:label="@string/csipsimple_shortcut" android:name="com.INNOVE9.widgets.ShortcutWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appshortcut_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.INNOVE9.plugins.telephony.CallHandler" android:permission="android.permission.PROCESS_OUTGOING_CALLS" android:process=":sipStack">
+            <intent-filter>
+                <action android:name="com.INNOVE9.phone.action.HANDLE_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.INNOVE9.service.SipService" android:permission="android.permission.CONFIGURE_SIP" android:process=":sipStack">
+            <intent-filter>
+                <action android:name="com.INNOVE9.service.SipService"><nothingHere/></action>
+                <action android:name="com.INNOVE9.service.SipConfiguration"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name=".service.Downloader"><nothingHere/></service>
+        </application>
+<permission android:description="@string/permdesc_useSip" android:label="@string/permlab_configureSip" android:name="android.permission.USE_SIP" android:permissionGroup="android.permission-group.COST_MONEY" android:protectionLevel="dangerous"><nothingHere/></permission>
+    <permission android:description="@string/permdesc_configureSip" android:label="@string/permlab_configureSip" android:name="android.permission.CONFIGURE_SIP" android:permissionGroup="android.permission-group.COST_MONEY" android:protectionLevel="dangerous"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.microphone" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_SIP"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CONFIGURE_SIP"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PROFILE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"><nothingHere/></uses-permission>
+    </manifest>

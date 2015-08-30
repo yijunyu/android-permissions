@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/securelinksoftware/free/slprivacyfilter/i.java</file>
+    <line>0</line>
+    <permissions>
+      <permission>
+        <name>android.permission.GET_TASKS</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/securelinksoftware/free/slprivacyfilter/i.java</file>
+    <line>0</line>
+    <permissions>
+      <permission>
+        <name>android.permission.GET_TASKS</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/securelinksoftware/free/slprivacyfilter/j.java</file>
+    <line>0</line>
+    <permissions>
+      <permission>
+        <name>android.permission.GET_TASKS</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

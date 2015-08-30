@@ -1,0 +1,8 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.RECORD_AUDIO</permission>
+  </under-specification>
+</comparison>

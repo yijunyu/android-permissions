@@ -1,6 +1,0 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pluto="http://www.w3.org/2001/pluto.html" android:hasCode="false" android:installLocation="internalOnly" package="com.dustinb.theme.gunmetalcobalt">
-    <application android:icon="@drawable/icon" android:label="@string/theme_name">
-        <activity android:label="@string/theme_name" android:name="com.tmobile.theme.Foo"><nothingHere/></activity>
-    </application>
-    <theme pluto:author="@string/author" pluto:copyright="@string/copyright" pluto:name="@string/theme_name" pluto:preview="@drawable/preview" pluto:styleId="@style/Gunmetal Cobalt" pluto:styleName="@string/style_appearance_name" pluto:themeId="Gunmetal Cobalt" pluto:wallpaperImage="@drawable/wallpaper"><nothingHere/></theme>
-</manifest>

@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.diandiandidi.rememberIt">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".settings.SettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ActivityOpenFile"><nothingHere/></activity>
+    <receiver android:name="BootReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="AlarmReceiver">
+            <intent-filter>
+                <action android:name="cn.diandiandidi.rememberIt.alarm"><nothingHere/></action>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </receiver>
+        <receiver android:name="NotificationReceiver">
+            <intent-filter android:priority="10">
+                <action android:name="cn.diandiandidi.rememberIt.orderedAlarm"><nothingHere/></action>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </receiver>
+        <receiver android:name="ActivityReceiver">
+            <intent-filter>
+                <action android:name="cn.diandiandidi.rememberIt.notifiy"><nothingHere/></action>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </receiver>
+        <receiver android:name="RepeatAlarmReceiver">
+            <intent-filter>
+                <action android:name="cn.diandiandidi.rememberIt.repeatAlarm"><nothingHere/></action>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </receiver>
+        </application>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

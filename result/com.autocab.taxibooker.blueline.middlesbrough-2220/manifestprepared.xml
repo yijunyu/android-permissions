@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.autocab.taxibooker.blueline.middlesbrough">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/ApplicationName" android:name="androidbookingapp.BookingApplication" android:theme="@android:style/Theme.Black">
+        <activity android:label="@string/current_bookings_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.ActiveBookingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/booking_status_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.BookingTrackActivityV2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationName" android:launchMode="singleTop" android:name="androidbookingapp.activities.CabExchangeInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/cab_media_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.CabMediaCategoryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/cab_media_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.CabMediaCouponActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/cab_media_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.CabMediaPlaylistActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/location_select_address" android:launchMode="singleTop" android:name="androidbookingapp.activities.LocationActivityV2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/location_edit_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.LocationEditActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationName" android:launchMode="singleTop" android:name="androidbookingapp.activities.MultiCompanyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/payment_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.PaymentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationName" android:launchMode="singleTop" android:name="androidbookingapp.activities.PrivacyPolicyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/additional_info_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.AdditionalInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="androidbookingapp.activities.AddressListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/address_search_address" android:launchMode="singleTop" android:name="androidbookingapp.activities.AddressSearchOptionsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/address_search_address" android:launchMode="singleTop" android:name="androidbookingapp.activities.AddressSearchActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/address_search_postcode" android:launchMode="singleTop" android:name="androidbookingapp.activities.PostcodeSearchActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/booking_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.BookingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/cancel_booking_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.CancelBookingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/send_message_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.SendMessageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationName" android:launchMode="singleTop" android:name="androidbookingapp.activities.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/registration_title" android:launchMode="singleTop" android:name="androidbookingapp.activities.RegistrationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/update" android:launchMode="singleTop" android:name="androidbookingapp.activities.AppUpgradeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAZVdNiTRbbWCGIcxd6-UchCaqSkjCzVQs"><nothingHere/></meta-data>
+        <provider android:authorities="com.autocab.taxibooker.blueline.middlesbrough.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    <receiver android:name="androidbookingapp.services.PushNotificationBroadcast"><nothingHere/></receiver>
+        <service android:label="@string/ServiceName" android:name="androidbookingapp.services.PushNotificationService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+</manifest>

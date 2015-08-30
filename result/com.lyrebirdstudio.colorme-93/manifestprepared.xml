@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.lyrebirdstudio.colorme">
+    <application android:hardwareAccelerated="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.lyrebird.splashofcolor.lib.MyApplication" android:theme="@style/Theme.HoloEverywhereDark">
+        <activity android:label="@string/app_name" android:name="com.lyrebird.splashofcolor.lib.SessionActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.lyrebird.splashofcolor.lib.SessionListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:name="com.lyrebird.splashofcolor.lib.ShaderActivity"><nothingHere/></activity>
+        <activity android:name="com.lyrebird.splashofcolor.lib.HelpActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.lyrebird.splashofcolor.lib.BuyMeActivity" android:theme="@style/DialogHoloDark"><nothingHere/></activity>
+        <activity android:name="com.lyrebird.splashofcolor.lib.MoreAppsActivity" android:theme="@style/DialogHoloDark"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:name="com.mobfox.sdk.InAppWebView"><nothingHere/></activity>
+        <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MoPubActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mopub.mobileads.MraidBrowser"><nothingHere/></activity>
+        <activity android:name="com.crittercism.NotificationActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.appbrain.AppBrainActivity"><nothingHere/></activity>
+        <activity android:name="com.lyrebird.splashofcolor.lib.SettingsActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.lyrebirdstudio.twitter.TwitterMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.lyrebirdstudio.twitter.FollowUsActivity" android:theme="@style/DialogHoloDark"><nothingHere/></activity>
+        <activity android:name="com.lyrebirdstudio.twitter.TwitterLoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.tapit.adview.AdActivity"><nothingHere/></activity>
+        <activity android:name="com.lyrebirdstudio.imagesavelib.ImageSavedActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.cr.facebook.FacebookLike"><nothingHere/></activity>
+        <activity android:name="com.cr.facebook.FacebookActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.cr.facebook21.FacebookActivity21" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lyrebirdstudio.cropimages.CropActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14e01f3fda8c6c"><nothingHere/></meta-data>
+        <meta-data android:name="appirater" android:value="20"><nothingHere/></meta-data>
+        <meta-data android:name="amazon_market" android:value="0"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/global_tracker"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:exported="true" android:name="com.appbrain.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.appbrain.AppBrainService"><nothingHere/></service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

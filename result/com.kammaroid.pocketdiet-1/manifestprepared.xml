@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.kammaroid.pocketdiet">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_splash_screen" android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_splash_screen" android:name=".MainActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_view1" android:name=".View1"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_view2" android:name=".View2"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tip1" android:name=".tips.Tip1"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tip2" android:name=".tips.Tip2"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tip2" android:name=".tips.Tip3"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tip2" android:name=".tips.Tip4"><nothingHere/></activity>
+    </application>
+</manifest>
