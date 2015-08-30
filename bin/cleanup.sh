@@ -53,6 +53,4 @@ cat ~/result/min-sdk-version.txt | while read f; do
   fi
 done
 }
-
-#pscout_remove 8 14
 main
