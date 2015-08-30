@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.atelierdumobile.samsung.galaxys3">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true">
+        <activity android:excludeFromRecents="true" android:immersive="true" android:name=".VideoIntroActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:immersive="true" android:name=".MenuActivity" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:immersive="true" android:name=".VideoPlayerActivity" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:immersive="true" android:name=".AccessActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:immersive="true" android:name=".SpecActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name=".services.SamsungPreferenceActivity" android:screenOrientation="portrait">
+            <intent-filer>
+                <action android:name=".services.SamsungPreferenceActivity"><nothingHere/></action>
+                <category android:name="android.intent.cetagory.PREFERENCE"><nothingHere/></category>
+            </intent-filer>
+        </activity>
+        <receiver android:name=".services.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name=".services.NotificationService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

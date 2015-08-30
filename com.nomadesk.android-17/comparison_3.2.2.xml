@@ -1,0 +1,12 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+  </under-specification>
+</comparison>

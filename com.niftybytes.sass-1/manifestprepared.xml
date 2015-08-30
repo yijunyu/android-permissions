@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.niftybytes.sass">
+    <application android:icon="@drawable/icon" android:label="SASS" android:name=".Main">
+        <activity android:name="com.niftybytes.pocketpush.DispatchActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.niftybytes.pocketpush.ImageActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.niftybytes.pocketpush.NotificationActivity" android:taskAffinity=""><nothingHere/></activity>
+        <activity android:name="com.niftybytes.pocketpush.PunchDialog" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.niftybytes.pocketpush.RedeemDialog" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.niftybytes.pocketpush.LocationMap"><nothingHere/></activity>
+        <activity android:name="com.niftybytes.pocketpush.TestDevice"><nothingHere/></activity>
+        <activity android:name="com.niftybytes.pocketpush.ViewPDF"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.niftybytes.pocketpush.scanner.ScannerActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.niftybytes.pocketpush.WebActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <receiver android:name="com.niftybytes.pocketpush.polling.PollingReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.niftybytes.pocketpush.polling.PollingService"><nothingHere/></service>
+    <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

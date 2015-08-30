@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="com.newhello.barometer" package="com.barometr.light">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".TestActivity1"><nothingHere/></activity>
+        <activity android:name=".TestActivity2"><nothingHere/></activity>
+        <activity android:name=".TestActivity3"><nothingHere/></activity>
+        <activity android:name=".TestActivity4"><nothingHere/></activity>
+        <activity android:name=".TestActivity5"><nothingHere/></activity>
+        <activity android:name=".InfoActivity"><nothingHere/></activity>
+        <activity android:name=".LongTermActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".TabInfoEntry">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".TabEntryFromWidget1"><nothingHere/></activity>
+        <activity android:name=".TabEntryFromWidget2"><nothingHere/></activity>
+        <activity android:name=".TabEntryFromWidget3"><nothingHere/></activity>
+        <activity android:name=".TabEntryFromWidget4"><nothingHere/></activity>
+        <activity android:name=".TabEntryFromWidget5"><nothingHere/></activity>
+        <activity android:name=".TabInfoFromWidget"><nothingHere/></activity>
+    <receiver android:label="@string/app_name" android:name=".HelloWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/hello_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        </application>
+</manifest>

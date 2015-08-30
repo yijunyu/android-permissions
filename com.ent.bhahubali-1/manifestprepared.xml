@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ent.bhahubali">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name=".DashBoard" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.startapp.android.eula.EULAActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity" android:taskAffinity="com.ent.bhahubali.AppWall" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.startapp.android.publish.AppWallActivity" android:taskAffinity="com.ent.bhahubali.AppWall" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.Songs"><nothingHere/></activity>
+        <activity android:name="com.ent.bhahubali.SongsDetails"><nothingHere/></activity>
+        <activity android:name="com.ent.bhahubali.StreamingMp3Player"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.Wiki" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.MP3Songs_Parts" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.Videos_Songs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.MP3Songs_SDetails1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.VideoSongs_Index_Movie_Wise" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.Videos" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.MP3SongsIndex" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.SendMail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.CommentReview" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.ent.bhahubali.SoftwareUpdate" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.Commetn_Review_Enter" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.PlayRTSPVideo"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.News" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.PhotoSildeShow" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.PhotosDetails" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.OtherApp" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.VideoDownload" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.Videos1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.VideoDownloadList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.OtherAppDescription" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ent.bhahubali.VideoPlayer" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.ent.bhahubali.youtube.OpenYouTubePlayerActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    <com.startapp.android.publish.banner.banner3d.Banner3D android:id="@id/startApp3DBanner" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_height="wrap_content" android:layout_width="wrap_content"><nothingHere/></com.startapp.android.publish.banner.banner3d.Banner3D>
+        </application>
+<meta-data android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" android:value="true"><nothingHere/></meta-data>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    </manifest>

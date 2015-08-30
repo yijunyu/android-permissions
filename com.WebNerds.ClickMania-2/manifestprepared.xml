@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.WebNerds.ClickMania">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.WebNerds.ClickMania.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".MyMenu">
+            <intent-filter>
+                <action android:name="com.WebNerds.ClickMania.CLEARSCREEN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".AdWindow">
+            <intent-filter>
+                <action android:name="com.WebNerds.ClickMania.ADWINDOW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".About">
+            <intent-filter>
+                <action android:name="com.WebNerds.ClickMania.ABOUT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Game">
+            <intent-filter>
+                <action android:name="com.WebNerds.ClickMania.STARTGAME"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

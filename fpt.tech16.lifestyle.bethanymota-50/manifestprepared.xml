@@ -1,0 +1,119 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="fpt.tech16.lifestyle.bethanymota">
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.dev.ndt.ads.v7.uil.UILApplication" android:theme="@style/Theme.Sherlock">
+        <activity android:label="@string/app_name" android:name="com.dev.ndt.ads.v7.FeaturedAppActivity"><nothingHere/></activity>
+        <activity android:exported="true" android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.LauncherActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.frame.FrameSplashActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.frame.FrameMenuActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.frame.FrameCatActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.frame.FrameEditActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.frame.FramePhotoViewActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.youtube.MainSplash"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.youtube.MainMenu"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.youtube.MainList"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="fpt.tech16.lifestyle.bethanymota.youtube.MainPlay" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.font.FontSplashActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.font.FontMenuActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.font.FontCatActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.font.FontSubCatActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.font.FontListFontActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.font.FontDetailActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.anime.AnimeMain"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.anime.AnimeListMovies"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.anime.AnimeListEpisodes"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="fpt.tech16.lifestyle.bethanymota.anime.AnimePlay" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="io.vov.vitamio.activity.InitActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.movie.MovieMainActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.movie.MovieCategoriesActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.movie.MovieCategoriesVideosActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.movie.MovieLanguagesActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.movie.MovieLanguagesVideosActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="fpt.tech16.lifestyle.bethanymota.movie.MoviePlayActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.manga.ui.MangaMain"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.manga.ui.MangaListMangas"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.manga.ui.MangaListChapters"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.manga.ui.MangaImageDetailActivity" android:parentActivityName="fpt.tech16.lifestyle.bethanymota.manga.ui.MangaListChapters">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="fpt.tech16.lifestyle.bethanymota.manga.ui.ListChapters"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.onet.OnetSplassScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.onet.OnetMenu" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.onet.OnetHelp" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.onet.OnetPlay" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.onet.OnetSetting" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.onet.OnetHeightDollar" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/main_activity_label" android:name="fpt.tech16.lifestyle.bethanymota.ring.RingdroidSelectActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"><nothingHere/></action>
+                <android-data android:mimeType="audio/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.OPENABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="fpt.tech16.lifestyle.bethanymota.ring.RingdroidEditActivity">
+            <intent-filter android:label="@string/edit_intent">
+                <action android:name="android.intent.action.EDIT"><nothingHere/></action>
+                <android-data android:mimeType="audio/*"><nothingHere/></android-data>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="fpt.tech16.lifestyle.bethanymota.ring.RingChooseContactActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer"><nothingHere/></activity>
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity" android:taskAffinity="fpt.tech16.lifestyle.bethanymota.AppWall" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.startapp.android.publish.AppWallActivity" android:taskAffinity="fpt.tech16.lifestyle.bethanymota.AppWall" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:finishOnTaskLaunch="true" android:hardwareAccelerated="true" android:name="com.aviary.android.feather.FeatherActivity" android:process=":standalone" android:screenOrientation="unspecified" android:theme="@style/AviaryTheme" android:uiOptions="splitActionBarWhenNarrow"><nothingHere/></activity>
+        <activity android:launchMode="standard" android:name="com.aviary.android.feather.AlertActivity" android:noHistory="true" android:theme="@style/AviaryTheme.Dialog">
+            <intent-filter>
+                <action android:name="aviary.intent.action.ALERT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="fpt.tech16.lifestyle.bethanymota.photoeditor.PhotoEditorMainActivity" android:screenOrientation="unspecified" android:theme="@style/BaseTheme.Impl">
+            <intent-filter>
+                <action android:name="android.intent.action.CHOOSER"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/image_details" android:launchMode="singleTop" android:name="fpt.tech16.lifestyle.bethanymota.photoeditor.PhotoEditorImageInfoActivity" android:noHistory="true" android:theme="@style/AviaryTheme.Custom.Dialog"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.aviary.android.feather.v1.API_KEY" android:value="662bb5aee89db3fe"><nothingHere/></meta-data>
+        <provider android:authorities="fpt.tech16.lifestyle.bethanymota.HiResProvider" android:exported="false" android:name="com.aviary.android.feather.library.providers.FeatherContentProvider" android:process=":standalone"><nothingHere/></provider>
+        <provider android:authorities="fpt.tech16.lifestyle.bethanymota.AviaryCdsProvider" android:exported="false" android:name="com.aviary.android.feather.cds.AviaryCdsProvider" android:process=":aviarycds" android:syncable="true"><nothingHere/></provider>
+        <receiver android:name="com.aviary.android.feather.cds.AviaryCdsReceiver" android:process=":aviarycds">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.aviary.android.feather.cds.AviaryCdsService" android:process=":aviarycds">
+            <intent-filter>
+                <action android:name="aviary.intent.action.CDS_DOWNLOAD_START"><nothingHere/></action>
+                <action android:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

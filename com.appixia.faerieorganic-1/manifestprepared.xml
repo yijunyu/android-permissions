@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.appixia.faerieorganic">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".AppDelegateInstance" android:theme="@style/Appixia.Holo.Theme.Light.DarkActionBar">
+        <activity android:label="@string/app_name" android:name="com.appixia.engine.controllers.SplashScreenController" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Appixia Visualizer" android:name="com.appixia.engine.controllers.AppixiaLoginController" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.appixia.engine.modules.root.TabBarController" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:label="Video Player" android:name="com.appixia.engine.controllers.MoviePlayerController"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

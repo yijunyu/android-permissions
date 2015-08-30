@@ -1,0 +1,92 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="fr.sent.messenger">
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/sent" android:label="@string/Sent" android:largeHeap="true" android:name="fr.sent.activity.ApplicationLoader" android:requiredAccountType="@string/ACCOUNT_TYPE" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:label="@string/Sent" android:name="fr.sent.activity.AuthentificationActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:label="@string/Sent" android:name="fr.sent.activity.WelcomeActivity" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="fr.sent.messenger.activity.DiscussionsActivity" android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:label="@string/Profile" android:name="fr.sent.messenger.activity.ProfileActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:icon="@drawable/ic_action_edit" android:label="@string/Modify_Photo" android:name="fr.sent.messenger.activity.ModifyPhotoActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:name="fr.sent.messenger.activity.ChatActivity" android:parentActivityName="fr.sent.messenger.activity.DiscussionsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:label="@string/Speek_with" android:name="fr.sent.messenger.activity.UsersActivity" android:parentActivityName="fr.sent.messenger.activity.DiscussionsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:label="@string/New_group" android:name="fr.sent.messenger.activity.NewGroupParticipantsActivity" android:parentActivityName="fr.sent.messenger.activity.DiscussionsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:label="@string/New_group" android:name="fr.sent.messenger.activity.NewGroupFinishActivity" android:parentActivityName="fr.sent.messenger.activity.NewGroupParticipantsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:icon="@drawable/mysent" android:label="@string/mySent" android:launchMode="singleInstance" android:name="fr.sent.calendar.activity.NextCourseActivity" android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:label="@string/Settings" android:launchMode="singleInstance" android:name="fr.sent.calendar.activity.CalendarPreferencesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize|smallestScreenSize" android:label="@string/Settings" android:launchMode="singleInstance" android:name="fr.sent.email.activity.EmailPreferencesActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="fr.sent.alarm.AlarmAlertFullScreen" android:screenOrientation="nosensor" android:showOnLockScreen="true" android:taskAffinity="" android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <provider android:authorities="@string/authority_provider_email" android:exported="false" android:label="@string/Email" android:name="fr.sent.email.syncadapter.EmailProvider" android:syncable="true"><nothingHere/></provider>
+        <receiver android:exported="false" android:name="fr.sent.calendar.notification.BroadcastReceiverClickNotification">
+            <intent-filter>
+                <action android:name="fr.sent.messenger.ACTION_CLICK_NOTIFICATION"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="fr.sent.alarm.AlarmReceiver">
+            <intent-filter>
+                <action android:name="fr.sent.alarm.ACTION_ALARM_ALERT"><nothingHere/></action>
+                <action android:name="fr.sent.alarm.ACTION_ALARM_KILLED"><nothingHere/></action>
+                <action android:name="fr.sent.alarm.ACTION_ALARM_CANCEL_SNOOZE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="fr.sent.alarm.AlarmInitReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.TIME_SET"><nothingHere/></action>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.LOCALE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:exported="true" android:name="fr.sent.authentification.AuthenticationService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"><nothingHere/></meta-data>
+        </service>
+        <service android:exported="false" android:name="fr.sent.connection.TcpService" android:process=":remote"><nothingHere/></service>
+        <service android:exported="true" android:name="fr.sent.calendar.syncadapter.CalendarSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/calendar_syncadapter"><nothingHere/></meta-data>
+        </service>
+        <service android:exported="true" android:name="fr.sent.email.syncadapter.EmailSyncService" android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/email_syncadapter"><nothingHere/></meta-data>
+        </service>
+        <service android:exported="false" android:name="fr.sent.alarm.AlarmKlaxon">
+            <intent-filter>
+                <action android:name="fr.sent.alarm.ACTION_ALARM_ALERT"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"><nothingHere/></uses-permission>
+    </manifest>

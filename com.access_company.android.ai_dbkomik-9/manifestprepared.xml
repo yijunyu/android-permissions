@@ -1,0 +1,118 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.access_company.android.ai_dbkomik">
+    <application android:debuggable="false" android:icon="@drawable/icon_app" android:label="@string/app_name" android:name=".PBApplication" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".main.ToMainActivityAndOtherTranslatorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name=".viewer.ibunko.NetAdViewer" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.OutSideToMainActivityTranslatorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="com-access-mv50"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="com-access-mf"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".top.TopActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".bookshelf.ShelfActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".store.StoreActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".preference.SettingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".link.LinkActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name=".viewer.magazine.MGViewerActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.magazine.MGBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.magazine.MGDefaultWebActivityForMGViewer" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.magazine.MGInlineVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".viewer.magazine.MGMapViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.magazine.MGMiniBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.magazine.MGVideoActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.magazine.MGPreferenceActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".wallpaper.WallpaperActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.wallpaper.WallpaperViewerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.wallpaper.WallpaperActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name=".viewer.ibunko.ReaderActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".DefaultWebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".productlist.ProductListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".twitter.TwitterSignIn" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".twitter.TwitterClientActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".facebook.FacebookClientActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.ibunko.RateClientActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ContentsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ContentsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".news.PvListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".game.GameActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".news.NewsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".viewer.common.SettingViewerActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".preference.SettingWebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".HelpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".viewer.common.BookMarkDialog" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name=".viewer.ViewerStarterDummyActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".preference.InquiryForm" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".IntroVideoActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name=".preference.AccountAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="stateUnchanged"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".DialogActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name=".viewer.xmdf.XmdfViewerActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name=".inapp_billing.BillingPurchaseActivity" android:noHistory="false" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".preference.ContentsFileDeleteAllActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".browsefile.FolderActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".preference.SettingDownloadTargetActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <meta-data android:name="NETAD_APPLICATION_TOKEN" android:value="9g847ojvs8u1iwid5jn2"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <provider android:authorities="com.access_company.android.ai_dbkomik.OCF" android:name="com.access_company.android.nfbookreader.epub.OCFContentProvider" android:permission="com.access_company.android.ai_dbkomik.permission.NOT_OPEN"><nothingHere/></provider>
+        <receiver android:name=".inapp_billing.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name=".ips_billing.SmsReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".widget.Widget" android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
+            <intent-filter>
+                <action android:name="com.android.launcher.action.INSTALL_SHORTCUT"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider"><nothingHere/></meta-data>
+        </receiver>
+    <service android:name=".common.MGDownloadService" exported="false"><nothingHere/></service>
+        <service android:name=".inapp_billing.BillingService"><nothingHere/></service>
+        <service android:exported="false" android:name=".common.MGContentsManagerDoCheckContentDelayEvaluationFullIntentService"><nothingHere/></service>
+        <service android:exported="false" android:name=".util.ContentsFileDeleteAllIntentService"><nothingHere/></service>
+        </application>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"><nothingHere/></uses-permission>
+</manifest>

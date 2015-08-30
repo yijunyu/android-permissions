@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="czech.librarymoshaf">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.Splash">
+            <intent-filter>s
+<action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.MainActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.moshaf"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.BookOne"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.BookTwo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.BookThree"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.BookFour"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.BookFive"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.BookSix"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.BookSeven"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.BookEight"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="czech.librarymoshaf.ContactUs"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

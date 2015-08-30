@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.kt.gimhae.train">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.kt.gimhae.train.GimhaeTrainAppl">
+        <activity android:label="@string/app_name" android:name=".GimhaeTrainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="MenuViewFlipperActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".SubMenuListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".StationListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".DetailInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".DetailInfoActivity2" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name=".ThumbnailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".SubMenu04Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".RealityShowActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".menu03.SubMenu03Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name=".menu03.FoodListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name=".menu03.BuildingListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".common.ShowWebActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".common.ShowWebActivity2" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".common.ShowImageInWeb" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".common.ShowMapActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".common.ShowMapItemizedOverlay" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".common.ShowMapView" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".common.ShowMapItemizedOverlay2" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+    <receiver android:name="com.kt.gimhae.train.Common.NetworkCheck" android:process=":remote">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

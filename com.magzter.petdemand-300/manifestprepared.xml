@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.magzter.petdemand">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/icon128" android:label="@string/app_name" android:largeHeap="true" android:name="com.magzter.utils.MagzterApp" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.magzter.petdemand.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name=".HomeTabScreen"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.magzter.petdemand.MagzterTabActivity"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.Store"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.MyCollections"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.OtherMagazines"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.Bookmarks"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.SettingsScreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.magzter.petdemand.LoginScreen"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.RegisterScreen"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.TwitterLogin"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.WebViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.magzter.petdemand.VideoPlayer"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.SettingsScreen_Mobile"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.Coupon"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.artifex.mupdf.MuPDFActivity"><nothingHere/></activity>
+        <activity android:name="com.magzter.petdemand.Playstore"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.magzter.petdemand.PaypalPurchaseActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity"><nothingHere/></activity>
+        <activity android:name="io.card.payment.DataEntryActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="5"><nothingHere/></meta-data>
+        <receiver android:exported="true" android:name="com.google.android.gms.auth.sample.GetNameInBackground$CallbackReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.sample.helloauth.Callback"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:exported="false" android:name="com.paypal.android.sdk.payments.PayPalService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

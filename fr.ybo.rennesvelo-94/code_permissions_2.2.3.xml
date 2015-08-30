@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/fr/ybo/opendata/rennes/util/HttpConnecteur.java</file>
+    <line>43</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/fr/ybo/opendata/rennes/util/HttpConnecteur.java</file>
+    <line>46</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

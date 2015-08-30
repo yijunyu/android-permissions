@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.viewspection.internaluseonly">
+    <application android:icon="@drawable/policyholdericon" android:label="ViewSpection Home" android:name="viewspectionmobile.policyholder.androidui.ViewSpectionMobileApplication">
+        <activity android:configChanges="orientation" android:icon="@drawable/policyholdericon" android:label="@string/Messages.ApplicationName" android:name="viewspectionmobile.policyholder.androidui.SplashActivity" android:noHistory="true" android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="Log In" android:name="viewspectionmobile.policyholder.androidui.views.main.LogInView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Dashboard" android:name="viewspectionmobile.policyholder.androidui.views.main.DashboardView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Welcome" android:name="viewspectionmobile.policyholder.androidui.views.survey.AddressView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Dogs &amp; Livestock" android:name="viewspectionmobile.policyholder.androidui.views.survey.dogsandlivestock.DogsAndLivestockView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Dog(s)" android:name="viewspectionmobile.policyholder.androidui.views.survey.dogsandlivestock.DogsView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Livestock" android:name="viewspectionmobile.policyholder.androidui.views.survey.dogsandlivestock.LivestockView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Dwelling" android:name="viewspectionmobile.policyholder.androidui.views.survey.dwelling.DwellingPhotosView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Interior" android:name="viewspectionmobile.policyholder.androidui.views.survey.InteriorView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Outside" android:name="viewspectionmobile.policyholder.androidui.views.survey.liability.OutsideView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Outbuildings" android:name="viewspectionmobile.policyholder.androidui.views.survey.outbuilding.OutbuildingsView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Upload" android:name="viewspectionmobile.policyholder.androidui.views.survey.UploadView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Hot Tub" android:name="viewspectionmobile.policyholder.androidui.views.survey.poolandhottub.HotTubView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Pool &amp; Hot Tub" android:name="viewspectionmobile.policyholder.androidui.views.survey.poolandhottub.PoolAndHotTubView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Pool" android:name="viewspectionmobile.policyholder.androidui.views.survey.poolandhottub.PoolView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Questions" android:name="viewspectionmobile.policyholder.androidui.views.survey.QuestionsView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Utility" android:name="viewspectionmobile.policyholder.androidui.views.survey.UtilityView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Welcome" android:name="viewspectionmobile.policyholder.androidui.views.survey.WelcomeView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="WoodStove" android:name="viewspectionmobile.policyholder.androidui.views.survey.woodstove.WoodstovePhotosView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="WoodStove" android:name="viewspectionmobile.policyholder.androidui.views.survey.woodstove.WoodstoveView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Log In" android:name="viewspectionmobile.androidui.views.main.AuthRequestView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Help" android:name="viewspectionmobile.androidui.views.main.HelpView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Inspection" android:name="viewspectionmobile.androidui.views.main.InspectionNoteView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Update" android:name="viewspectionmobile.androidui.views.main.UpdateAppView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Help" android:name="viewspectionmobile.androidui.views.survey.PhotoView" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <provider android:authorities="com.viewspection.internaluseonly.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

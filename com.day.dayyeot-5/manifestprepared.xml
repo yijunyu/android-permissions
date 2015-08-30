@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.day.dayyeot">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.day.dayyeot.Intro" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.day.dayyeot.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.day.dayyeot.Game1Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.day.dayyeot.Game2Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.day.dayyeot.CollectionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.day.dayyeot.ItemActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.day.dayyeot.EndingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.day.dayyeot.GameResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.tnkfactory.ad.AdWallActivity"><nothingHere/></activity>
+        <activity android:name="com.tnkfactory.ad.AdMediaActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="net.daum.adam.publisher.impl.AdInterstitialActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.become21.adlibrary.FrontAdViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.become21.adlibrary.AppsWallActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.become21.adlibrary.MiddleAdViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.become21.adlibrary.StoryWallActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="tnkad_app_id" android:value="8020e0c0-c0c1-c30e-e03c-1c0c0c040a03"><nothingHere/></meta-data>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

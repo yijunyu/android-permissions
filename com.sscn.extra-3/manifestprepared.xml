@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sscn.extra">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="SSCApplication" android:theme="@style/AppTheme">
+        <activity android:name=".activity.SSCSplashActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name=".activity.SSCLoginActivity" android:theme="@android:style/Theme.Holo.NoActionBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".activity.SSCMainActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Holo.NoActionBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".activity.SSCVideoActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Holo.NoActionBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.agora.gallery.activity.MediaPhotoGalleryDetails2" android:screenOrientation="landscape" android:theme="@android:style/Theme.Holo"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".activity.SSCInfoActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Holo.NoActionBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.agora.gallery.activity.MediaPhotoGalleryDetails" android:screenOrientation="landscape" android:theme="@android:style/Theme.Holo.NoActionBar"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

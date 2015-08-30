@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ZidanGosadi.charity">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.ZidanGosadi.charity.MainActivity" android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_interduce" android:name="com.ZidanGosadi.charity.Interduce" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_menu1" android:name="com.ZidanGosadi.charity.Menu1" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_insan" android:name="com.ZidanGosadi.charity.Insan" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="&#1580;&#1605;&#1593;&#1610;&#1575;&#1578; &#1578;&#1581;&#1601;&#1610;&#1592; &#1575;&#1604;&#1602;&#1585;&#1570;&#1606;" android:name="com.ZidanGosadi.charity.Quran" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_kelana" android:name="com.ZidanGosadi.charity.Kelana" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_srtan" android:name="com.ZidanGosadi.charity.Srtan" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_atfal_moawgin" android:name="com.ZidanGosadi.charity.Atfal_moawgin" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_sout" android:name="com.ZidanGosadi.charity.Sout" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_naga" android:name="com.ZidanGosadi.charity.Naga" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_anaya" android:name="com.ZidanGosadi.charity.Anaya" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_zamazm" android:name="com.ZidanGosadi.charity.Zamazm" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_sand" android:name="com.ZidanGosadi.charity.Sand" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_iskan" android:name="com.ZidanGosadi.charity.Iskan" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_osrah" android:name="com.ZidanGosadi.charity.Osrah" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_atba" android:name="com.ZidanGosadi.charity.Atba" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_takafl" android:name="com.ZidanGosadi.charity.Takafl" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_mwadh" android:name="com.ZidanGosadi.charity.Mwadh" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_masajd" android:name="com.ZidanGosadi.charity.Masajd" android:screenOrientation="locked"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_about" android:name="com.ZidanGosadi.charity.About"><nothingHere/></activity>
+    </application>
+</manifest>

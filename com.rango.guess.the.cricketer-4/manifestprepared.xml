@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rango.guess.the.cricketer">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.rango.guess.the.cricketer.Level2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.playhaven.src.publishersdk.content.PHContentView" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.rango.guess.the.cricketer.Start" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.rango.guess.the.cricketer.MoreGames" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.playhaven.android.view.FullScreen" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="localhost" android:pathPattern="/full" android:scheme="playhaven"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.playhaven.android.push.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="com.playhaven.android"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.parse.PushService"><nothingHere/></service>
+        </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.plasticsoupfoundation.microbeads">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="org.plasticsoupfoundation.microbeads.SplashScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="org.plasticsoupfoundation.microbeads.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="org.plasticsoupfoundation.microbeads.TabActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="org.plasticsoupfoundation.microbeads.AddProductActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="org.plasticsoupfoundation.microbeads.TakePhotoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="org.plasticsoupfoundation.microbeads.RegionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+    </application>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.STORAGE"><nothingHere/></uses-permission>
+    </manifest>

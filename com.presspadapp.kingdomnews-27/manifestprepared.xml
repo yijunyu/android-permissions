@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.presspadapp.kingdomnews">
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.presspadapp.PressPadApp" android:theme="@style/PressPad_Light1">
+        <activity android:label="@string/app_name" android:name="com.presspad.ui.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tapfortap.FullScreenAdActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.presspad.ui.ActivityMain"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.artifex.mupdfdemo.MuPDFActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.presspad.ui.ActivityUri">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="uitest" android:scheme="presspad"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="6de9149e84a01df92c7784060731bbc300fc14f8"><nothingHere/></meta-data>
+    <receiver android:name="com.presspad.gcm.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.presspad.gcm"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.presspad.api.DownloadService.stopDownloadReceiver"><nothingHere/></receiver>
+        <service android:name="com.presspad.gcm.GcmIntentService"><nothingHere/></service>
+        <service android:name="com.presspad.api.DownloadService"><nothingHere/></service>
+        </application>
+<permission android:name="com.presspad.gcm.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.presspad.gcm.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

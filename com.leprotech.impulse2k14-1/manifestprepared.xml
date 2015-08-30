@@ -1,0 +1,383 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.leprotech.impulse2k14">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.First">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.FIRST"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Second">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.SECOND"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Main">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Onstage">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.ONSTAGE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Ofstage">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.OFSTAGE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Technical">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.TECHNICAL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Solosong">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.SOLOSONG"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Solodance">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.SOLODANCE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Duetsong">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.SOLOSONG"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Groupdance">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.GROUPDANCE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Syndance">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.SYNDANCE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Rjdits">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.RJDITS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Mrmrs">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.MRMRS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Mockpress">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.MOCKPRESS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Spotacting">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.SPOTACTING"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Fashionshow">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.FASHIONSHOW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Informal">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.INFORMAL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Soapcarving">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.SOAPCARVING"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Mehendidesign">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.MEHENDIDESIGN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Facepainting">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.FACEPAINTING"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Clickon">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.CLICKON"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Adzap">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.ADZAP"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Trs">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.TRS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Rangoli">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.RANGOLI"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Fantasy">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.FANTASY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Jam">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.JAM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Eureca">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.EURECA"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Resonance">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.RESONANCE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Besttechy">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.BESTTECHY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Brainfuzz">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.BRAINFUZZ"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Luducs">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.LUDUCS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Facebook">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.FACEBOOK"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Network">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.NETWORK"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Junkyard">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.JUNKYARD"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Circuit">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.CIRCUIT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Smart">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.SMART"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Cadd">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.CADD"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Buildit">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.BUILDIT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Circuitmaster">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.CIRCUITMASTER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Codinggeeks">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.CODINGGEEKS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Themechanic">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.THEMECHANIC"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Aquarocket">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.AQUAROCKET"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Tech">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.TECH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Fireyour">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.FIREYOUR"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Fluxus">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.FLUXUS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Postbox">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.POSTBOX"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Frames">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.FRAMES"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Treasure">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.TREASURE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Modelme">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.MODELME"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Web">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.WEB"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Quantity">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.QUANTITY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.K13">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.K13"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.K12">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.K12"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.K11">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.K11"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Mainactivity">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.MAINACTIVITY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Exone">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.EXONE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Extwo">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.EXTWO"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Exthree">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.EXTHREE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Exfour">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.EXFOUR"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Exfive">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.EXFIVE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Exsix">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.EXSIX"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.leprotech.impulse2k14.Exseven">
+            <intent-filter>
+                <action android:name="com.leprotech.impulse2k14.EXSEVEN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

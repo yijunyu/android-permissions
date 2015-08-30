@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.talfen.tel">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="Application" android:theme="@style/TelnicTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".Talfen" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".ContactDetails"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".Map"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".Settings"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".About"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".MainWedding"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

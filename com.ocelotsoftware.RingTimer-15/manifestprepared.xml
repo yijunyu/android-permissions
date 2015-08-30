@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ocelotsoftware.RingTimer">
+    <application android:allowBackup="false" android:icon="@drawable/ringtimer" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:label="@string/app_name" android:name=".RingTimerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".MyBroadcastReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="true" android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+<uses-feature android:name="android.hardware.telephony" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    </manifest>

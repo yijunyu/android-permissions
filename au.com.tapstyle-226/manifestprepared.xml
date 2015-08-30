@@ -1,0 +1,88 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="au.com.tapstyle">
+    <application android:allowBackup="true" android:backupAgent="au.com.tapstyle.util.BackupAgent" android:icon="@drawable/logo_icon" android:label="@string/app_name" android:name="au.com.tapstyle.BaseApplication" android:restoreAnyVersion="true" android:theme="@style/MainTheme">
+        <activity android:name="au.com.tapstyle.activity.MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="singleTask" android:name="com.dropbox.client2.android.AuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="db-n0was354ivr5mct"><nothingHere/></android-data>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="au.com.tapstyle.activity.customer.CustomerSearchActivity" android:theme="@style/DialogTheme"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.customer.CustomerInfoActivity" android:theme="@style/DialogTheme" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.service.ServiceRecordActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.service.ServiceRecordPortraitActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.service.drawing.PainterActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="au.com.tapstyle.activity.catalog.CatalogPhotoListActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.catalog.CatalogPhotoDetailActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.catalog.PhotoSelectActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.schedule.v2.ScheduleActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.schedule.AppointmentActivity" android:theme="@style/DialogTheme"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.stats.StatsActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.stats.GraphZoomActivity" android:theme="@style/DialogTheme"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.stats.StatsMenuActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.stats.AnalyticsActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.marketing.MarketingPreferenceActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.marketing.MarketingActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.marketing.ReminderSendActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="au.com.tapstyle.activity.admin.AdminPreferenceActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.AdminBusinessDayHourActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.AdminBackupActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.LicenseIabV3Activity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.LicenseToolActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.LicensePreferenceActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.AdminDebugActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.DataImportActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.AccountingSettingActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.AdminPasswordActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.TaxRateActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.RegionLanguageActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.ReceiptActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.MailSettingActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.AboutInfoActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.DataSyncActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.ResetActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.masterdata.GoodsMasterActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.masterdata.StylistActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.masterdata.PaymentMethodActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.masterdata.GiftVoucherMasterActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.masterdata.ServiceMenuMasterActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.admin.masterdata.ItemCategoryActivity" android:theme="@style/DialogTheme"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.account.AccountPreferenceActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.account.PaymentReviewActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.account.ExpenseManagementActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.account.ExpenseEditActivity" android:theme="@style/DialogTheme"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.account.ProfitReviewActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.account.GiftVoucherReviewActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.account.YearlyReportActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.checkout.CheckOutActivity"><nothingHere/></activity>
+        <activity android:name="au.com.tapstyle.activity.checkout.PaymentActivity" android:theme="@style/DialogTheme"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAITh7Cm5JPo6ikyvcMebqgNVs9w0qTH6UTug0biw"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="f44bca647e3c7dd5612689d954877bd0494b5120"><nothingHere/></meta-data>
+    </application>
+<supports-screens android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="br.com.vinicius.dreamnotes">
+    <application android:allowBackup="true" android:icon="@drawable/ic_dreamnotes" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ListaPrincipal"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_dream_editor" android:name=".DreamEditor" android:parentActivityName=".ListaPrincipal">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="br.com.vinicius.dreamnotes.ListaPrincipal"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_dream_updater" android:name=".DreamUpdater">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="br.com.vinicius.dreamnotes.ListaPrincipal"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_setup_notification" android:name=".settings.SetupNotification"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_sharing" android:name=".Sharing"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/APP_ID"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <service android:name=".settings.ScheduleService"><nothingHere/></service>
+        <service android:name=".settings.NotifyService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.oxysweet11.flowerslovehdlivewallpaper">
+    <application android:allowBackup="true" android:icon="@drawable/launcher" android:label="@string/wallpaperName">
+        <activity android:exported="true" android:label="@string/settings" android:name="com.oxysweet11.flowerslovehdlivewallpaper.SettingsActivity"><nothingHere/></activity>
+        <activity android:label="@string/wallpaperName" android:name="com.oxysweet11.flowerslovehdlivewallpaper.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.oxysweet11.flowerslovehdlivewallpaper.Preview"><nothingHere/></activity>
+        <activity android:label="@string/news" android:name="com.oxysweet11.flowerslovehdlivewallpaper.About"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.oxysweet11.flowerslovehdlivewallpaper.AlarmReceiver"><nothingHere/></receiver>
+        <service android:enabled="true" android:label="@string/wallpaperName" android:name="com.oxysweet11.flowerslovehdlivewallpaper.LiveWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"><nothingHere/></meta-data>
+        </service>
+        </application>
+<uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

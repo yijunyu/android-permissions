@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.LEO.Word_Prep_Pro">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="WordPrepProApplication" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Main_Tab"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Game_Suicide"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Game_Two_Min"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Word_Review"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Game_Suicide_Def"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Game_Two_Min_Def"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Game_Flash"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Game_Speed"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Game_Elimination"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="Word_Prep_Pro_Game_Spelling"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

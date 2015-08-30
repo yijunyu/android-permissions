@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/up/edu/mxd/Test2Activity.java</file>
+    <line>88</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/up/edu/mxd/Test2Activity$MyWebViewClient.java</file>
+    <line>32</line>
+    <permissions/>
+  </call>
+</calls>

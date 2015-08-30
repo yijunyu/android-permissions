@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="fr.mcnamara.irelandtravelguide">
+    <application android:debuggable="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:testOnly="false">
+        <activity android:label="@string/app_name" android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="DistanceListView"><nothingHere/></activity>
+        <activity android:name="NoDistanceListView"><nothingHere/></activity>
+        <activity android:name="ClickedItem"><nothingHere/></activity>
+        <activity android:name="ClickedThis"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

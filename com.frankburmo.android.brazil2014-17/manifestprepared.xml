@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.frankburmo.android.brazil2014">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppBaseTheme">
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.MenuActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.PredictActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.RegisterActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.MatchPagerActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.LeaguesActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.FixturesActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.GroupsActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.KnockoutsActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.LeaderboardPagerActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.frankburmo.android.brazil2014.AboutActivity"><nothingHere/></activity>
+        <receiver android:name="WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info"><nothingHere/></meta-data>
+        </receiver>
+    </application>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

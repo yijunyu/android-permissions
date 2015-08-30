@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dlto.atom.tuneon">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/themename" android:theme="@android:style/Theme.Holo.DialogWhenLarge">
+        <activity android:excludeFromRecents="true" android:name="com.skp.theme.MasterActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/launchMarketTitle" android:name="com.skp.theme.LaunchMarketActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.skp.theme.DefaultLauncherInfoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name="com.skp.theme.DummyActivity">
+            <intent-filter>
+                <action android:name="com.skp.launcher.THEME"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

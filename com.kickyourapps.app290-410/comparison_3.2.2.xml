@@ -1,0 +1,18 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.WRITE_CONTACTS</permission>
+    <permission>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</permission>
+    <permission>android.permission.CAMERA</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+    <permission>android.permission.BROADCAST_STICKY</permission>
+    <permission>android.permission.RECEIVE_SMS</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+    <permission>android.permission.MODIFY_AUDIO_SETTINGS</permission>
+    <permission>android.permission.RECORD_VIDEO</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+    <permission>android.permission.RECORD_AUDIO</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.localradiofree.finland">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeScreens="true" android:theme="@android:style/Theme.NoTitleBar" android:xlargeScreens="true">
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".RadioTabActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="RadioActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="RadioListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".RadioHistoryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".RadioFavoriteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.localradio.alarmclock.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.localradio.alarmclock.SelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.localradio.alarmclock.AlarmRadioTabActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.localradio.alarmclock.SongsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.localradio.alarmclock.TabMusicListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.localradio.alarmclock.AlbumActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.localradio.alarmclock.ArtistActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.localradio.alarmclock.AlbumSelectedActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.localradio.alarmclock.ArtistSelectedActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.localradiofree.finland.RadioRecordActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.localradiofree.twitter.TwitterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.localradiofree.twitter.TwitterAuthorizationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.localradio.alarmclock.MultipleItemsList" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.localradiofree.soundcloud.SoundcloudapiActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.facebook.share.FacebookConnect"><nothingHere/></activity>
+        <activity android:name=".WebviewAdsenseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.appbrain.AppBrainActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.adsdk.sdk.banner.InAppWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="false" android:name="com.adsdk.sdk.video.RichMediaActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.adsdk.sdk.mraid.MraidActivity"><nothingHere/></activity>
+    <receiver android:name="com.localradiofree.finland.ServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.localradiofree.finland.RadioAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.localradiofree.finland.RadioTabActivity"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.android.apps.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.appbrain.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name=".ForegroundService"><nothingHere/></service>
+        <service android:name="com.appbrain.AppBrainService"><nothingHere/></service>
+        </application>
+<supports-screens android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    </manifest>

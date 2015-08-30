@@ -1,0 +1,109 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.meeemooo.app">
+    <application android:allowBackup="true" android:description="@string/app_name" android:hardwareAccelerated="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:logo="@drawable/ic_launcher" android:name="com.meeemooo.app.MMApplication" android:theme="@style/Theme.Gumbo">
+        <activity android:label="@string/app_name" android:name="com.meeemooo.app.activity.WelcomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_login" android:name="com.meeemooo.app.activity.LoginActivity" android:parentActivityName="com.meeemooo.app.activity.WelcomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.meeemooo.app.activity.WelcomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_sign_up" android:name="com.meeemooo.app.activity.SignUpActivity" android:parentActivityName="com.meeemooo.app.activity.WelcomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.meeemooo.app.activity.WelcomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_memos_list" android:launchMode="singleTop" android:name="com.meeemooo.app.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/ListActionBarTheme" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_base" android:name="com.meeemooo.app.activity.BaseActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_left_side" android:name="com.meeemooo.app.activity.LeftSideActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_me" android:name="com.meeemooo.app.activity.MeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_add_friends" android:name="com.meeemooo.app.activity.AddFriendsActivity" android:parentActivityName="com.meeemooo.app.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.meeemooo.app.activity.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.meeemooo.app.SpalshScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.meeemooo.app.activity.MemoActivity" android:parentActivityName="com.meeemooo.app.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.meeemooo.app.activity.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.meeemooo.app.gcm.PushArrivalActivity"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_address_book_contact_picker" android:name="com.meeemooo.app.activity.AddressBookContactPickerActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_photo_view" android:name="com.meeemooo.app.activity.PhotoViewActivity" android:theme="@style/FullscreenTheme"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_settings" android:name="com.meeemooo.app.activity.SettingsActivity" android:parentActivityName="com.meeemooo.app.activity.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_chat" android:name="com.meeemooo.app.activity.ChatActivity" android:parentActivityName="com.meeemooo.app.activity.MainActivity" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.meeemooo.app.activity.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.meeemooo.app.activity.DeadlineActivity" android:theme="@android:style/Theme.Holo.Light.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_friend" android:name="com.meeemooo.app.FriendActivity" android:parentActivityName="com.meeemooo.app.activity.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.meeemooo.app.activity.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_show_item" android:name="com.meeemooo.app.activity.ShowItemActivity" android:parentActivityName="com.meeemooo.app.activity.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.meeemooo.app.activity.MainActivity"><nothingHere/></meta-data>
+        </activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <receiver android:label="NetworkConnection" android:name="com.meeemooo.app.broadcastreceiver.ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.meeemooo.app"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.meeemooo.app.broadcastreceiver.DeadlineAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.meeemooo.app.ALARM"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.meeemooo.app.broadcastreceiver.PushChatReceiver">
+            <intent-filter>
+                <action android:name="com.meeemooo.app.CHAT_NEW_MESSAGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.meeemooo.app.broadcastreceiver.PushMemoReceiver">
+            <intent-filter>
+                <action android:name="com.meeemooo.app.MEMO_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.meeemooo.app.broadcastreceiver.PushRequestReceiver">
+            <intent-filter>
+                <action android:name="com.meeemooo.app.REQUEST_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.meeemooo.app.broadcastreceiver.PushFriendReceiver">
+            <intent-filter>
+                <action android:name="com.meeemooo.app.FRIEND"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.parse.PushService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.meeemooo.app.broadcastreceiver.DeadlineAlarmService"><nothingHere/></service>
+        </application>
+<permission android:name="com.meeemooo.app.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.meeemooo.app.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    </manifest>

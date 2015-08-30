@@ -1,0 +1,12 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_SETTINGS</permission>
+    <permission>android.permission.CHANGE_CONFIGURATION</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.READ_LOGS</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.smartone.loop">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.smartone.loop.AppActivity" android:screenOrientation="portrait" android:theme="@style/AppBaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nuthon.common.loop.activity.ContentActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarActivity"><nothingHere/></activity>
+        <activity android:name="com.nuthon.common.loop.activity.InAppBrowserActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarActivity"><nothingHere/></activity>
+        <activity android:name="com.nuthon.common.loop.activity.PhotoViewerActivity"><nothingHere/></activity>
+        <activity android:name="com.nuthon.common.loop.activity.FullScreenAdActivity" android:screenOrientation="portrait" android:theme="@style/Theme.CustomTranslucent"><nothingHere/></activity>
+        <activity android:name="com.nuthon.common.loop.activity.WeatherActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarOverlayActivity"><nothingHere/></activity>
+        <activity android:name="com.nuthon.common.loop.activity.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.nuthon.common.loop.activity.SettingActivity" android:parentActivityName="com.smartone.loop.AppActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarOverlayActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.smartone.loop.AppActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.nuthon.common.loop.activity.MessageActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarActivity"><nothingHere/></activity>
+        <receiver android:name=".GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.smartone.loop"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.nuthon.common.loop.sevices.ReportingService"><nothingHere/></service>
+    </application>
+<permission android:name="com.smartone.loop.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="false" android:xlargeScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.smartone.loop.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

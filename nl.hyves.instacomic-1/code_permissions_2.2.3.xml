@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/nl/hyves/instacomic/upload/ComicUploader.java</file>
+    <line>75</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/nl/hyves/instacomic/upload/ComicUploader.java</file>
+    <line>100</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/nl/hyves/instacomic/Installation.java</file>
+    <line>23</line>
+    <permissions>
+      <permission>
+        <name>android.permission.READ_PHONE_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

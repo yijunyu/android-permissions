@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.closecrowd.TeaChimer">
+    <application android:icon="@drawable/teachimerapp" android:label="@string/app_name" android:name="com.closecrowd.TeaChimer.TeaChimerApp">
+        <activity android:label="@string/app_name" android:name="TeaList" android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.closecrowd.entries"><nothingHere/></android-data>
+            <category android:name="android.intent.category.VIEW"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.closecrowd.entries"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/title_edit" android:name="TeaEditor" android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <action android:name="android.intent.action.EDIT"><nothingHere/></action>
+                <action android:name="android.intent.action.INSERT"><nothingHere/></action>
+                <action android:name="android.intent.action.DELETE"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.closecrowd.entry"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DELETE"><nothingHere/></action>
+                <action android:name="android.intent.action.INSERT"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.closecrowd.entries"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/title_timer" android:name="TeaTimer" android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="com.closecrowd.teachimer.INTENT_START"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.closecrowd.entry"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+    <provider android:authorities="com.closecrowd.teachimer.provider" android:name="com.closecrowd.TeaChimer.TeaProvider"><nothingHere/></provider>
+        </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+</manifest>

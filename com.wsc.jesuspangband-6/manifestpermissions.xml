@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.READ_PHONE_STATE</name>
+  </permission>
+  <permission>
+    <name>android.permission.READ_CONTACTS</name>
+  </permission>
+  <permission>
+    <name>com.android.vending.BILLING</name>
+  </permission>
+  <permission>
+    <name>com.wsc.jesuspangband.permission.C2D_MESSAGE</name>
+  </permission>
+  <permission>
+    <name>com.google.android.c2dm.permission.RECEIVE</name>
+  </permission>
+  <permission>
+    <name>android.permission.GET_ACCOUNTS</name>
+  </permission>
+  <permission>
+    <name>android.permission.WAKE_LOCK</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.VIBRATE</name>
+  </permission>
+  <permission>
+    <name>android.permission.CAMERA</name>
+  </permission>
+</permissions>

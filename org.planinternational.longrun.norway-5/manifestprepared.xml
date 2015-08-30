@@ -1,0 +1,103 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="org.planinternational.longrun.norway">
+    <application android:icon="@drawable/ic_launcher_plan" android:label="@string/app_name" android:name="org.planinternational.longrun.PlanApplication">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.planinternational.longrun.activity.TestActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.planinternational.longrun.activity.StartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="org.planinternational.longrun.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.tab.MapActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.planinternational.longrun.activity.tab.OverviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Overview"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.tab.RunActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.tab.ToplistActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Stats"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.tab.BadgesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Badges"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.run.RunMapActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.run.RunDisplayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.run.ShowRunOnMapActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/activity_title_terms_and_conditions" android:name="org.planinternational.longrun.activity.TermsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Overview"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/activity_title_register" android:name="org.planinternational.longrun.activity.RegisterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Overview"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/activity_title_upload_facebook_profile_badge" android:name="org.planinternational.longrun.activity.UploadFacebookProfileBadgeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Overview">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.overview.CreateTeamActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Overview"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.overview.TeamInvitesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Overview"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.overview.TeamInviteActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Overview"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.overview.ChallengeRunActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Overview"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.UserTopListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Stats"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.TeamTopListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Stats"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.RecentBadgesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan.Overview"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.UserListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.UserInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.TeamInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.BadgeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.RunsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.CountriesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.planinternational.longrun.activity.CountryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/become_a_sponsor" android:name="org.planinternational.longrun.activity.BecomeSponsorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/become_sponsor_more_about_sponsorship" android:name="org.planinternational.longrun.activity.BecomeSponsorAboutActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/activity_title_preferences" android:name="org.planinternational.longrun.activity.PreferencesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Plan"><nothingHere/></activity>
+        <receiver android:name="org.planinternational.longrun.urbanairship.PlanCoreReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.push.c2dm.C2DMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="org.planinternational.longrun.norway"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="org.planinternational.longrun.norway"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.planinternational.longrun.urbanairship.IntentReceiver"><nothingHere/></receiver>
+    <service android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="org.planinternational.longrun.norway.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="org.planinternational.longrun.norway.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

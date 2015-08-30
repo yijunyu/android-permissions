@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.puma.namecard">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:installLocation="preferExternal" android:label="@string/app_name" android:name=".common.PumaApplication">
+        <activity android:label="@string/app_name" android:name=".SplashActivity" android:screenOrientation="portrait" android:theme="@style/NoTransition">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".SplashFirstActivity" android:screenOrientation="portrait" android:theme="@style/NoTransition"><nothingHere/></activity>
+        <activity android:name=".TutorialActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".PumaSocialActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".AlbumViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".CollectionActivity" android:screenOrientation="portrait" android:theme="@style/SlideTransition"><nothingHere/></activity>
+        <activity android:name=".CreateActivity" android:screenOrientation="portrait" android:theme="@style/SlideTransition"><nothingHere/></activity>
+        <activity android:name=".trim.TrimActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".HowtoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".SettingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".TermsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".friendpicker.FriendPickerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".photopicker.FriendPhotoPicker" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.puma.namecard.drumroll.NameDrumPickerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name=".components.CustomDialogChoosePict" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name=".components.CustomDialogSend" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".components.CustomDialogSendComplete" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".components.CustomDialogExpandCard" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".components.CustomDialogCardInfo" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".components.CustomDialogSendAttension" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".components.CustomDialogSaved" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".components.CustomDialogDeleteAttension" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".components.CustomDialogTerms" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".components.CustomDialogLetsCreate" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".http.DefaultWebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".twitter.TwitterSettingAct" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".twitter.TwitterLoginAct" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".mixi.MixiSetupActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <receiver android:name="jp.puma.namecard.c2dm.C2DMRegistrationReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="jp.puma.namecard"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="jp.puma.namecard"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:name="jp.puma.namecard.c2dm.C2DMReceiver"><nothingHere/></service>
+        </application>
+<permission android:name="jp.puma.namecard.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="jp.puma.namecard.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

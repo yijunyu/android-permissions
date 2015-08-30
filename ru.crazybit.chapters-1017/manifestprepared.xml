@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="ru.crazybit.chapters">
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="ru.crazybit.chapters.ApplicationDemo" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+            <android-data android:scheme="ru.crazybit.lostchapters"><nothingHere/></android-data>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.tapjoy.TapjoyFullScreenAdWebView" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.chartboost.sdk.CBDialogActivity" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.tapjoy.TJCOffersWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.tapjoy.TapjoyFeaturedAppWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.tapjoy.TapjoyVideoView"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.playhaven.src.publishersdk.content.PHContentView" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustResize">&gt;
+<nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/googleGamesServicesID"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/applicationId"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="ru.crazybit.lostchapters"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.inapp.purchasing.ResponseReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".alarm.AlarmReceiver" android:process=":remote"><nothingHere/></receiver>
+        <receiver android:exported="true" android:name="ru.crazybit.chapters.TTReferralReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="ru.crazybit.chapters.GCMIntentService"><nothingHere/></service>
+        </application>
+    <permission android:name="ru.crazybit.chapters.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="ru.crazybit.lostchapters.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+</manifest>

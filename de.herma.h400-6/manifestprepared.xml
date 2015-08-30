@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="de.herma.h400">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="de.herma.h400.main.H400App" android:theme="@style/H400DefaultTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="de.herma.h400.main.HomeActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="de.herma.h400.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/activity_title_logger" android:name="de.herma.blueterm.BlueTerm" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/select_device" android:name="de.herma.herma400.network.service.ConnectActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="de.herma.blueterm.TermPreferences"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:excludeFromRecents="true" android:label="@string/activity_title_serviceio" android:name="de.herma.herma400.view.InputsOutputsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:excludeFromRecents="true" android:label="@string/activity_title_serviceinfos" android:name="de.herma.herma400.view.ServiceInformationActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/activity_title_info" android:name="de.herma.herma400.view.InfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/activity_title_display" android:name="de.herma.herma400.display.DisplayActivity" android:screenOrientation="landscape" android:theme="@style/H400DisplayTheme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <receiver android:name="de.herma.h400.main.StartAtBootServiceReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        </application>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

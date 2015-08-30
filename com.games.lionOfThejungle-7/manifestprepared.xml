@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.games.lionOfThejungle">
+    <application android:allowBackup="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".ScoreLoop" android:screenOrientation="landscape">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".LionOfTheJungle" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.amazon.ags.html5.overlay.GameCircleUserInterface" android:theme="@style/GCOverlay"><nothingHere/></activity>
+        <activity android:allowTaskReparenting="true" android:launchMode="singleTask" android:name="com.amazon.identity.auth.device.authorization.AuthorizationActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="com.games.lionOfThejungle" android:scheme="amzn"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.amazon.ags.html5.overlay.GameCircleAlertUserInterface" android:theme="@style/GCAlert"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.revmob.ads.fullscreen.FullscreenActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.chartboost.sdk.CBDialogActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.burstly.lib.component.networkcomponent.burstly.BurstlyFullscreenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.greystripe.sdk.GSFullscreenActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.inmobi.androidsdk.IMBrowserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.burstly.lib.component.networkcomponent.jumptap.JumptapActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.games.lionOfThejungle.ModeSelectionActivity"><nothingHere/></activity>
+        <activity android:name="com.games.lionOfThejungle.GamePlayActivity"><nothingHere/></activity>
+        <activity android:name="com.games.lionOfThejungle.AchievementsActivity"><nothingHere/></activity>
+        <activity android:name="com.games.lionOfThejungle.AchievementActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.scoreloop.client.android.core.ui.ProxyActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.scoreloop.client.android.core.paymentprovider.fortumo.FortumoPaymentActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.EntryScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.PostScoreOverlayActivity" android:screenOrientation="landscape" android:theme="@style/sl_dialog"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.ShowResultOverlayActivity" android:screenOrientation="landscape" android:theme="@style/sl_dialog"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.BuddiesScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.LeaderboardsScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.ChallengesScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.AchievementsScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.SocialMarketScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.ProfileScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.scoreloop.client.android.ui.PaymentScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.GameItemsScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketHeaderActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.market.MarketListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.entry.EntryListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.post.PostOverlayActivity" android:screenOrientation="landscape" android:theme="@style/sl_dialog"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreHeaderActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.score.ScoreListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserAddBuddyListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserHeaderActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserDetailListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.user.UserListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailHeaderActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameDetailListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.game.GameListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.achievement.AchievementHeaderActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.achievement.AchievementListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.component.profile.ProfileSettingsPictureListActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.framework.ScreenActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.scoreloop.client.android.ui.framework.TabsActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+    <receiver android:enabled="true" android:name="com.amazon.identity.auth.device.authorization.PackageIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.inapp.purchasing.ResponseReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+<uses-feature android:glEsVersion="0x20000"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    </manifest>

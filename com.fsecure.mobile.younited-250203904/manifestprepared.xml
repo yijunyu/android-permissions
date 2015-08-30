@@ -1,0 +1,165 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.fsecure.mobile.sync">
+    <application android:icon="@drawable/icon" android:label="@string/APP_NAME" android:largeHeap="true" android:name="com.fsecure.mobile.sync.SyncApplication" android:theme="@style/MAIN_THEME">
+        <activity android:configChanges="keyboardHidden" android:launchMode="singleTask" android:name="com.fsecure.mobile.sync.StartupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="younitedbyfsecure"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/HOME" android:launchMode="singleTop" android:name="com.fsecure.mobile.sync.MainActivity" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.fsecure.mobile.sync.UploadActivity" android:theme="@style/DIALOG_THEME">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <action android:name="android.intent.action.SEND_MULTIPLE"><nothingHere/></action>
+                <android-data android:mimeType="application/*"><nothingHere/></android-data>
+                <android-data android:mimeType="audio/*"><nothingHere/></android-data>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+                <android-data android:mimeType="video/*"><nothingHere/></android-data>
+                <android-data android:mimeType="text/*"><nothingHere/></android-data>
+                <android-data android:mimeType="multipart/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.fsecure.mobile.sync.DialogActivity" android:theme="@style/DIALOG_THEME"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/ABOUT_MENU_TITLE" android:name="com.fsecure.mobile.sync.AboutActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.fsecure.mobile.sync.ConnectionLostActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.fsecure.mobile.sync.RetryActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/LICENSES_LABEL" android:name="com.fsecure.mobile.sync.EulaActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/LICENSES_LABEL" android:name="com.fsecure.mobile.sync.LicenseViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:launchMode="singleTop" android:name="com.fsecure.mobile.sync.fullscreen.FullScreenActivity" android:parentActivityName="com.fsecure.mobile.sync.MainActivity" android:theme="@style/FULLSCREEN_THEME">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.fsecure.mobile.sync.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.fsecure.mobile.sync.fullscreen.FullScreenMediaActivity" android:theme="@style/FULLSCREEN_THEME"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.fsecure.mobile.sync.IdPQueryActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/LOG_IN" android:name="com.fsecure.mobile.sync.OperatorActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.fsecure.mobile.sync.OperatorLoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/SETTING_MENU_TITLE" android:name="com.fsecure.mobile.sync.SettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/BACKUP_MENU_TITLE" android:name="com.fsecure.mobile.sync.AutoBackupSettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/SETTINGS_NETWORK_CONNECTIVITY_TITLE" android:name="com.fsecure.mobile.sync.NetworkSettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/SETUP_AUTO_BACKUP_TITLE_ANDROID" android:name="com.fsecure.mobile.sync.AutoBackupWizardActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.fsecure.mobile.sync.FilterActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.fsecure.mobile.sync.iap.IapActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.fsecure.mobile.sync.versioncheck.VersionCheckActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.fsecure.mobile.sync.cloudconfiguration.CloudConfigurationDownloadActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/SETTINGS_PRIVACY_TITLE" android:name="com.fsecure.mobile.sync.TrackingSettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/SIDEBAR_ACCOUNT_TITLE" android:name="com.fsecure.mobile.sync.account.MyAccountActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.fsecure.mobile.sync.util.DeviceContentPicker" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.fsecure.mobile.sync.addto.AddToActivity"><nothingHere/></activity>
+        <activity android:name="com.fsecure.mobile.sync.messages.ChangeDefaultSmsAppActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <action android:name="android.intent.action.SENDTO"><nothingHere/></action>
+                <android-data android:scheme="sms"><nothingHere/></android-data>
+                <android-data android:scheme="smsto"><nothingHere/></android-data>
+                <android-data android:scheme="mms"><nothingHere/></android-data>
+                <android-data android:scheme="mmsto"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.google.sample.castcompanionlibrary.cast.player.VideoCastControllerActivity" android:parentActivityName="com.fsecure.mobile.sync.fullscreen.FullScreenActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.fsecure.mobile.sync.fullscreen.FullScreenActivity"><nothingHere/></meta-data>
+            </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.fsecure.mobile.sync.versioncheck.VersionCheckAlarmReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:label="ConnectivityBroadcastReceiver" android:name="com.fsecure.mobile.sync.ConnectivityBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="com.fsecure.mobile.sync.ERROR_BROADCAST"><nothingHere/></action>
+                <action android:name="com.fsecure.mobile.sync.offline.OfflineState.OFFLINE_STATE_CHANGED"><nothingHere/></action>
+                <action android:name="com.fsecure.mobile.sync.offline.OfflineState.OFFLINE_UPDATE_STATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.fsecure.mobile.sync.backup.SmsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.fsecure.mobile.sync.messages.SmsReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.fsecure.mobile.sync.messages.MmsReceiver" android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER"><nothingHere/></action>
+                <android-data android:mimeType="application/vnd.wap.mms-message"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.fsecure.mobile.analytics.InstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.sample.castcompanionlibrary.remotecontrol.VideoIntentReceiver">
+            <intent-filter>
+                <action android:name="com.google.sample.castcompanionlibrary.action.toggleplayback"><nothingHere/></action>
+                <action android:name="com.google.sample.castcompanionlibrary.action.stop"><nothingHere/></action>
+                <action android:name="com.google.sample.castcompanionlibrary.action.notificationvisibility"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:enabled="true" android:exported="false" android:name="com.fsecure.mobile.sync.filetransfer.FileTransferService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.fsecure.mobile.sync.backup.BackupService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.fsecure.mobile.sync.backup.BackupScannerService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.fsecure.mobile.sync.DeleteService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.fsecure.mobile.sync.offline.OfflineService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.fsecure.mobile.sync.fullscreen.MediaPlayerService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.fsecure.mobile.sync.backup.BackupSyncAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"><nothingHere/></meta-data>
+        </service>
+        <service android:exported="true" android:name="com.fsecure.mobile.sync.backup.BackupSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/contactsyncadapter"><nothingHere/></meta-data>
+        </service>
+        <service android:exported="true" android:name="com.fsecure.mobile.sync.messages.HeadlessSmsSendService" android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE"><nothingHere/></action>
+                <android-data android:scheme="sms"><nothingHere/></android-data>
+                <android-data android:scheme="smsto"><nothingHere/></android-data>
+                <android-data android:scheme="mms"><nothingHere/></android-data>
+                <android-data android:scheme="mmsto"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.sample.castcompanionlibrary.notification.VideoCastNotificationService">
+            <intent-filter>
+                <action android:name="com.google.sample.castcompanionlibrary.action.toggleplayback"><nothingHere/></action>
+                <action android:name="com.google.sample.castcompanionlibrary.action.stop"><nothingHere/></action>
+                <action android:name="com.google.sample.castcompanionlibrary.action.notificationvisibility"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    </manifest>

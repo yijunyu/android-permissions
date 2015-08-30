@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.ncut.csie">
+    <application android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.ncut.csie.Ncut_Csie_Ver1Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_index" android:name="com.ncut.csie.Index" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_test3" android:name="com.ncut.csie.Aboutus" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_test1" android:name="com.ncut.csie.Emergency" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_test2" android:name="com.ncut.csie.Car" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_test_4" android:name="com.ncut.csie.Teacher" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_content" android:name="com.ncut.csie.bulletin_content" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_subject" android:name="com.ncut.csie.Subject" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_csie" android:name="com.ncut.csie.Csie" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_exam" android:name="com.ncut.csie.Exam" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_internet" android:name="com.ncut.csie.Internet" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_internet_webview" android:name="com.ncut.csie.Internet_webview" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_bulletin" android:name="com.ncut.csie.Bulletin" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_project" android:name="com.ncut.csie.Project" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_question" android:name="com.ncut.csie.Question" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_question_tell" android:name="com.ncut.csie.Question_tell" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_question_select" android:name="com.ncut.csie.Question_select" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_love_csie" android:name="com.ncut.csie.Love_csie" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_login" android:name="com.ncut.csie.Login" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_change_ps" android:name="com.ncut.csie.Change_ps" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_calendar" android:name="com.ncut.csie.Calendar_1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_calendar" android:name="com.ncut.csie.Calendar_file" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_information" android:name="com.ncut.csie.Information" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_exam_choose" android:name="com.ncut.csie.Exam_choose" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_project_system" android:name="com.ncut.csie.Project_system_login" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_project_system_bulletin" android:name="com.ncut.csie.Project_system_bulletin" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_project_system_bulletin_content" android:name="com.ncut.csie.Project_system_bulletin_content" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_project_system_index" android:name="com.ncut.csie.Project_system_index" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_project_system_file" android:name="com.ncut.csie.Project_system_file" android:screenOrientation="portrait"><nothingHere/></activity>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <category android:name="com.ncut.csie"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.ncut.csie.GCMIntentService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.ncut.csie.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.ncut.csie.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

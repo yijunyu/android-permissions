@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rexcola.sortingchaos">
+    <application android:icon="@drawable/sortingchaosicon512" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.rexcola.sortingchaos.SortingChaos" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.RECORD_AUDIO</name>
+  </permission>
+  <permission>
+    <name>android.permission.VIBRATE</name>
+  </permission>
+</permissions>

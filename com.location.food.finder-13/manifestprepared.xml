@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.location.food.finder">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".Luncher" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="AddressActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="DetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ChangeLocation" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="FoodFinder" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.touchadserver.SDK.TouchadsActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.pontiflex.mobile.webview.sdk.activities.MultiOfferActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.pontiflex.mobile.webview.sdk.activities.RegistrationActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.boost.beluga.push.PushAdsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.boost.beluga.hotapps.HotAppsActivity"><nothingHere/></activity>
+        <activity android:name="com.mobfox.sdk.InAppWebView"><nothingHere/></activity>
+    <meta-data android:name="TouchadsPublisherId" android:value="80c293f24420a2470e2466621237dd0d"><nothingHere/></meta-data>
+        <receiver android:name="com.boost.beluga.tracker.TrackerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.boost.beluga.push.PushReceiver"><nothingHere/></receiver>
+        <service android:name="LocationService">
+            <intent-filter>
+                <action android:name="LocationService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.boost.beluga.util.downloadhelper.DownloadService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

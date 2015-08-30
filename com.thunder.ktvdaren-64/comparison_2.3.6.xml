@@ -1,0 +1,16 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_APN_SETTINGS</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.SYSTEM_ALERT_WINDOW</permission>
+    <permission>android.permission.READ_LOGS</permission>
+    <permission>android.permission.PROCESS_OUTGOING_CALLS</permission>
+    <permission>android.permission.DISABLE_KEYGUARD</permission>
+    <permission>android.permission.BROADCAST_STICKY</permission>
+    <permission>android.permission.FLASHLIGHT</permission>
+    <permission>android.permission.MOUNT_UNMOUNT_FILESYSTEMS</permission>
+    <permission>android.permission.CHANGE_CONFIGURATION</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

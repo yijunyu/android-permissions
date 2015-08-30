@@ -1,0 +1,208 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pickride.pickride.us_massachusettstaxi">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".PickRideApplication" android:persistent="true" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".loading.LoadingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".PickRide" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".contacts.ShowContactsActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.event.EventAddMainActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.event.EventAddTrafficActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.event.EventAddWorkActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.event.EventListviewActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.event.EventStatusActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreChargeResultActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreSettingAlipayActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreTaxiChargeTypeActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MorePointcardChargeActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreTaxiChargeActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreSettingBankForTaxiActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreTaxiCommonProblemActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreTaxiHasproblemActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.ShareWeiboActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreShareActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreChangePhoneActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreMainViewActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreCarInfoActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreChangePasswordActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreSafeInfoActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreUserInfoActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreUpdateUserActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreSystemSettingActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreAboutPickrideAvtivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreTaxiSettingActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreTaxiApproveActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreCreditAndHitoryActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreHistoryListActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreHistorySetNoteActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreCarpoolHistoryDetailActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreRealtimeHistoryDetailActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreComplainActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreAcountWebViewActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.MoreFeedbackActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.realtime.rider.RealTimeRiderMainActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.realtime.rider.RealTimeRiderEditFromAddressActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.realtime.rider.RealTimeRiderGoToMapActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.realtime.rider.RealTimeRiderWaitingGrabedMapActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.realtime.rider.RealTimeRiderWaittingDriverMapActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.realtime.rider.RealTimeRiderRateForDriverActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.TaxiMainHaseventActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.TaxiMainActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.realtime.RealTimeForTaxiMainActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.realtime.RealTimeTaxiNewDispatchActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.realtime.RealTimeForTaxiOnRoadActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.realtime.RealTimeForTaxiTaskPersonActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.realtime.RealTimeForTaxiHelpActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.realtime.RealTimeForTaxiCheckOutActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.taxi.realtime.RealTimeForTaxiRatingActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".base.SelectPlaceByMoveMapActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".joinin.JoinInFirstActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".joinin.JoinInSecondStepPhoneActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".joinin.JoinInThirdStepVehicleActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".about.OwnTextActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".about.AboutActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".about.AboutLeaderController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".login.RetrievePasswordController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".joinin.JoinInAgreeConrtoller" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".base.SelectConturyActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineUpdateUserActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineCommonActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineCarpoolController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineCarpoolSettingController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineCarpoolSettingNotes" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineCarpoolShowPersonController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundServiceAddRentcarActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundRentcarListActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundTestimonialsActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.MyTestimonialsActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundParkingListActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundServiceMainActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundInsteadListActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundServiceAddParkingActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundServiceAddInsteadActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.ordertaxi.OrderTaxiForDriverOrderListActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.ordertaxi.OrderTaxiForDriverListActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.ordertaxi.OrderTaxiForDriverMapDetailActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".joinin.JoinInController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".joinin.AddVehicleControll" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".login.LoginController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.Content" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".HowToUseTemp" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineCarpoolSettingGPSActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundServiceInsteadDriveMainView" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".base.ShowPositionActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".base.SelectPointActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundServiceInsteadDrivePublishActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundServiceParkingMainActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.arroundservice.ArroundServicePublishParkingActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.history.HistoryDetailController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.account.OptionsChangePasswordController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.account.OptionsAccountEditProfileController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.account.OptionsEmailGroupController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.account.OptionsAccountDriverDetailController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.account.OptionsAccountRiderDetailController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.OptionsHomeOfficeWeiboController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.OptionsFeedBackController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.OptionsBuildYourBusinessController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.howtouse.HowToUseController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.newsfeed.OptionsNewsFeedController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.options.OptionsSynchroContactsController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineCarpoolShowHomeOfficeOnMapActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineCarpoolNormalCarpoolController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.offline.OfflineCarpoolSettingHomeAndOfficeController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.history.HistoryMainController" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".main.ordertaxi.AppointCallCarActivity" android:screenOrientation="portrait" android:theme="@style/register_activity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:name=".BootReceiever" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".base.LocationUpdateBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.pickride.pickride.us_massachusettstaxi.updatelocation"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".taxtautowork.TaxiAutoworkAlarmReceiever">
+            <intent-filter>
+                <action android:name="com.pickride.pickride.us_massachusettstaxi.taxiautowork"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".RiderNewsAlarmReceiever">
+            <intent-filter>
+                <action android:name="com.pickride.pickride.us_massachusettstaxi.alarm.ridernews"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".DriverGetOrderAlarmReceiever">
+            <intent-filter>
+                <action android:name="com.pickride.pickride.us_massachusettstaxi.alarm.driverorder"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".KillProcessAlarmReceiever">
+            <intent-filter>
+                <action android:name="com.pickride.pickride.us_massachusettstaxi.alarm.killprocess"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".taxtautowork.TaxiUpdateSettingReceiever">
+            <intent-filter>
+                <action android:name="com.pickride.pickride.us_massachusettstaxi.taxiupdatesetting.action"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".taxtautowork.TaxiAutoWorkAutoLoginReceiever">
+            <intent-filter>
+                <action android:name="com.pickride.pickride.us_massachusettstaxi.taxipreautologin.action"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ReceieverSMSReceiever">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:enabled="true" android:name=".base.GPSService"><nothingHere/></service>
+        <service android:enabled="true" android:name=".base.EmptyService"><nothingHere/></service>
+        <service android:enabled="true" android:name=".taxtautowork.TaxiAutoworkService"><nothingHere/></service>
+        <service android:enabled="true" android:name="BackgroundService"><nothingHere/></service>
+        <service android:enabled="true" android:name=".websocket.CoreService"><nothingHere/></service>
+        <service android:enabled="true" android:name=".RiderNewsService"><nothingHere/></service>
+        <service android:enabled="true" android:name=".DriverGetOrderService"><nothingHere/></service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PERSISTENT_ACTIVITY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+</manifest>

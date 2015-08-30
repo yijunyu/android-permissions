@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.ACCESS_SUPERUSER</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

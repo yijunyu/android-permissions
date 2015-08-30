@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hidglobal.ia.token.cbagroup">
+    <application android:allowBackup="false" android:icon="@drawable/icon" android:label="@string/my_app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".ActivIDActivity" android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.Activation1Activity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.Activation2Activity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.Activation3Activity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.SetPinActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:name=".activity.EnterPinActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.ChallengeActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleTop" android:name=".activity.SignatureActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.TokenInfoActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.DisplayOTPActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.OptionsActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.SplashActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.OTPMenuActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name=".activity.UnlockActivity" android:stateNotNeeded="true" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:finishOnTaskLaunch="true" android:launchMode="singleTop" android:name=".activity.SignatureQRScannerActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+    </application>
+</manifest>

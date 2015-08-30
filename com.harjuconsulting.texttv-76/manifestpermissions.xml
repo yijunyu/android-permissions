@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.ACCESS_NETWORK_STATE</name>
+  </permission>
+  <permission>
+    <name>android.permission.ACCESS_COARSE_LOCATION</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_EXTERNAL_STORAGE</name>
+  </permission>
+</permissions>

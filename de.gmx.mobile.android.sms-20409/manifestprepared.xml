@@ -1,0 +1,183 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="de.gmx.mobile.android.sms">
+    <application android:allowClearUserData="true" android:icon="@drawable/icon" android:label="@string/app_name_long" android:name="de.gmx.mobile.android.sms.GmxSmsMain" android:theme="@style/Theme.Gmx">
+        <activity android:label="@string/app_name_wrapped" android:name="de.gmx.mobile.android.sms.activities.Splashscreen" android:theme="@style/Theme.Gmx.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="de.gmx.mobile.android.sms.activities.wizards.StartWizards">
+            <intent-filter>
+                <action android:name="de.gmx.intent.action.START_SINGLE_WIZARD"><nothingHere/></action>
+                <action android:name="de.gmx.intent.action.START_WIZARDS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="de.gmx.mobile.android.sms.activities.wizards.LoginWizardGMX"><nothingHere/></activity>
+        <activity android:name="de.gmx.mobile.android.sms.activities.wizards.LoginWizardSender"><nothingHere/></activity>
+        <activity android:name="de.gmx.mobile.android.sms.activities.wizards.LoginWizardVerification"><nothingHere/></activity>
+        <activity android:label="" android:launchMode="singleTask" android:name="de.gmx.mobile.android.sms.activities.HomeOverview">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/mms-sms"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name_wrapped" android:name="de.gmx.mobile.android.sms.activities.MessageThread" android:parentActivityName="de.gmx.mobile.android.sms.activities.HomeOverview" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android-dir/mms-sms"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.gmx.mobile.android.freemessages.thread"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="de.gmx.mobile.android.sms.activities.HomeOverview"><nothingHere/></meta-data>
+            </activity>
+        <activity android:label="" android:name="de.gmx.mobile.android.sms.activities.MessageThreadDelete" android:parentActivityName="de.gmx.mobile.android.sms.activities.NewMessage">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="de.gmx.mobile.android.sms.activities.NewMessage"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name_wrapped" android:name="de.gmx.mobile.android.sms.activities.NewMessage" android:parentActivityName="de.gmx.mobile.android.sms.activities.HomeOverview" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <action android:name="android.intent.action.SENDTO"><nothingHere/></action>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:scheme="sms"><nothingHere/></android-data>
+                <android-data android:scheme="smsto"><nothingHere/></android-data>
+                <android-data android:scheme="mms"><nothingHere/></android-data>
+                <android-data android:scheme="mmsto"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="de.gmx.mobile.android.sms.activities.HomeOverview"><nothingHere/></meta-data>
+            </activity>
+        <activity android:label="" android:name="de.gmx.mobile.android.sms.activities.Settings">
+            <intent-filter>
+                <action android:name="de.gmx.intent.action.Settings.enableFreemessage"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="de.gmx.mobile.android.sms.activities.RecommendActivity" android:parentActivityName="de.gmx.mobile.android.sms.activities.HomeOverview">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="de.gmx.mobile.android.sms.activities.HomeOverview"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="" android:name="de.gmx.mobile.android.sms.activities.ContactSelection" android:parentActivityName="de.gmx.mobile.android.sms.activities.NewMessage" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="de.gmx.intent.action.PICK"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="de.gmx.mobile.android.sms.activities.NewMessage"><nothingHere/></meta-data>
+            </activity>
+        <activity android:label="" android:name="de.gmx.mobile.android.sms.activities.BlockContacts" android:parentActivityName="de.gmx.mobile.android.sms.activities.Settings">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="de.gmx.mobile.android.sms.activities.Settings"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="de.gmx.mobile.android.sms.activities.LicenseActivity"><nothingHere/></activity>
+        <activity android:label="" android:name="de.gmx.mobile.android.sms.activities.DatePicker"><nothingHere/></activity>
+        <activity android:label="@string/app_name_wrapped" android:name="de.gmx.mobile.android.sms.activities.HelpActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="de.gmx.mobile.android.sms" android:scheme="help"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="" android:launchMode="singleTop" android:name="de.gmx.mobile.android.sms.activities.SMSInstantMessagePopupActivity" android:parentActivityName="de.gmx.mobile.android.sms.activities.HomeOverview" android:taskAffinity="" android:theme="@style/Theme.Gmx.Popup">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="de.gmx.mobile.android.sms.activities.HomeOverview"><nothingHere/></meta-data>
+        </activity>
+        <provider android:authorities="de.gmx.mobile.android.sms.provider.SMSProvider" android:exported="false" android:name="de.einsundeins.mobile.android.smslib.provider.sms.SMSProvider"><nothingHere/></provider>
+        <provider android:authorities="de.gmx.mobile.android.sms.provider.freemessage.FreeMessageProvider" android:exported="false" android:name="de.einsundeins.mobile.android.smslib.provider.freemessage.FreeMessageProvider"><nothingHere/></provider>
+        <provider android:authorities="de.gmx.mobile.android.sms.provider.blacklist.BlacklistProvider" android:exported="false" android:name="de.einsundeins.mobile.android.smslib.provider.blacklist.BlacklistProvider"><nothingHere/></provider>
+        <provider android:authorities="de.gmx.mobile.android.sms.provider.registration.RegistrationProvider" android:exported="false" android:name="de.einsundeins.mobile.android.smslib.provider.registration.RegistrationProvider"><nothingHere/></provider>
+        <receiver android:enabled="false" android:exported="false" android:name="de.einsundeins.mobile.android.smslib.services.SMSNotificationReceiver">
+            <intent-filter>
+                <action android:name="de.gmx.intent.action.BROADCAST_SMS_RECEIVED"><nothingHere/></action>
+                <action android:name="de.gmx.intent.action.BROADCAST_MMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="de.gmx.mobile.android.sms"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="de.gmx.mobile.android.sms.GCMNotifier" android:permission="de.gmx.mobile.android.sms.permission.BROADCAST">
+            <intent-filter android:priority="0">
+                <action android:name="de.gmx.intent.action.FreeMessage.newMessages"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="false" android:name="de.gmx.mobile.android.sms.services.BackgroundSMSReceiver">
+            <intent-filter>
+                <action android:name="de.gmx.intent.action.BROADCAST_SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:name="de.einsundeins.mobile.android.smslib.services.ConnectionChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="@bool/preKitKat" android:name="de.einsundeins.mobile.android.smslib.services.smsreceiver.PrivilegedSmsReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="@bool/hasKitKat" android:name="de.einsundeins.mobile.android.smslib.services.smsreceiver.KitkatSmsReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER"><nothingHere/></action>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="@bool/hasKitKat" android:name="com.android.mms.transaction.PushReceiver" android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER"><nothingHere/></action>
+                <android-data android:mimeType="application/vnd.wap.mms-message"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+    <service android:exported="false" android:name="de.gmx.mobile.android.sms.services.GmxSMSSendService"><nothingHere/></service>
+        <service android:exported="false" android:name="de.einsundeins.mobile.android.smslib.services.number.NumberVerificationService2"><nothingHere/></service>
+        <service android:exported="false" android:name="de.einsundeins.mobile.android.smslib.services.freemessage.FreeMessageService"><nothingHere/></service>
+        <service android:exported="false" android:name="de.einsundeins.mobile.android.smslib.services.blacklist.BlacklistService"><nothingHere/></service>
+        <service android:exported="false" android:name="de.einsundeins.mobile.android.smslib.services.registration.RegistrationService"><nothingHere/></service>
+        <service android:exported="false" android:name="de.gmx.mobile.android.sms.services.BackgroundActivityService"><nothingHere/></service>
+        <service android:name="de.gmx.mobile.android.sms.GCMIntentService"><nothingHere/></service>
+        <service android:exported="false" android:name="de.gmx.mobile.android.sms.services.GmxStatisticService">
+            <intent-filter>
+                <action android:name="de.gmx.intent.action.STATISTICS"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="de.einsundeins.mobile.android.smslib.services.smsreceiver.SmsReceiverService"><nothingHere/></service>
+        <service android:exported="false" android:name="de.einsundeins.mobile.android.smslib.services.update.ApplicationUpdateService"><nothingHere/></service>
+        <service android:enabled="@bool/hasKitKat" android:name="de.einsundeins.mobile.android.smslib.services.QuickResponseSmsSendService" android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE"><nothingHere/></action>
+                <android-data android:scheme="sms"><nothingHere/></android-data>
+                <android-data android:scheme="smsto"><nothingHere/></android-data>
+                <android-data android:scheme="mms"><nothingHere/></android-data>
+                <android-data android:scheme="mmsto"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.android.mms.transaction.TransactionService"><nothingHere/></service>
+        </application>
+    <permission android:name="de.gmx.mobile.android.sms.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="de.gmx.mobile.android.sms.permission.BROADCAST" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="de.gmx.mobile.android.sms.permission.BROADCAST"><nothingHere/></uses-permission>
+    <uses-permission android:name="de.gmx.mobile.android.sms.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.u.control">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="UControl" android:name="ParseApp" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.u.control.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.u.control.MyCustomReceiver">
+            <intent-filter>
+                <action android:name="com.u.control.UPDATE_STATUS"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.u.control"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.parse.PushService"><nothingHere/></service>
+        </application>
+<permission android:name="com.u.control.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.u.control.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

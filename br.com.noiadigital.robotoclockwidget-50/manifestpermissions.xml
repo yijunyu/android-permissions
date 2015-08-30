@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.WAKE_LOCK</name>
+  </permission>
+  <permission>
+    <name>com.android.vending.BILLING</name>
+  </permission>
+</permissions>

@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="de.eezzy.admin.ry6vl4">
+    <application android:debuggable="false" android:icon="@drawable/appicon" android:label="myFATZER" android:name="MyfatzerApplication">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name=".MyfatzerActivity" android:theme="@style/Theme.Titanium">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.appcelerator.titanium.TiActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.appcelerator.titanium.TiTranslucentActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="screenSize" android:name="ti.modules.titanium.ui.android.TiPreferencesActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="ti.modules.titanium.map.TiMapActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="ti.modules.titanium.media.TiCameraActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="ti.modules.titanium.media.TiVideoActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCPjH0O9XTgmXXiB3doLbzdqrzpKjr2XCk"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="de.eezzy.admin.ry6vl4"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="de.eezzy.admin.ry6vl4"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:exported="false" android:name="org.appcelerator.titanium.analytics.TiAnalyticsService"><nothingHere/></service>
+        <service android:name="com.activate.gcm.GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <permission android:name="de.eezzy.admin.ry6vl4.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="de.eezzy.admin.ry6vl4.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="de.eezzy.admin.ry6vl4.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="de.eezzy.admin.ry6vl4.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

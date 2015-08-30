@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.abashrawi.walaa">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:supportsRtl="false" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.eminbugrasaral.millionaireandroid.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_game" android:name="com.eminbugrasaral.millionaireandroid.GameActivity" android:parentActivityName="com.eminbugrasaral.millionaireandroid.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.eminbugrasaral.millionaireandroid.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_wrong_answer" android:name="com.eminbugrasaral.millionaireandroid.WrongAnswerActivity" android:parentActivityName="com.eminbugrasaral.millionaireandroid.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.eminbugrasaral.millionaireandroid.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_completed" android:name="com.eminbugrasaral.millionaireandroid.CompletedActivity" android:parentActivityName="com.eminbugrasaral.millionaireandroid.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.eminbugrasaral.millionaireandroid.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_completed" android:name="com.eminbugrasaral.millionaireandroid.PhoneFriendActivity" android:parentActivityName="com.eminbugrasaral.millionaireandroid.GameActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_completed" android:name="com.eminbugrasaral.millionaireandroid.AudienceActivity" android:parentActivityName="com.eminbugrasaral.millionaireandroid.GameActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_completed" android:name="com.eminbugrasaral.millionaireandroid.SocialActivity" android:parentActivityName="com.eminbugrasaral.millionaireandroid.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.eminbugrasaral.millionaireandroid.HelpActivity" android:parentActivityName="com.eminbugrasaral.millionaireandroid.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

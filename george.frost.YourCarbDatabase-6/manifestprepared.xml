@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="george.frost.YourCarbDatabase">
+    <application android:icon="@drawable/logo" android:label="@string/app_name">
+        <activity android:label="Your Carbs Database" android:name="com.android.CarbCount.CarbCountActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Your Carbs Database" android:name="com.android.CarbCount.New"><nothingHere/></activity>
+        <activity android:label="Your Carbs Database" android:name="com.android.CarbCount.view"><nothingHere/></activity>
+        <activity android:label="Your Carbs Database" android:name="com.android.CarbCount.Edit"><nothingHere/></activity>
+        <activity android:label="Your Carbs Database" android:name="com.android.CarbCount.Search"><nothingHere/></activity>
+        <activity android:label="Your Carbs Database" android:name="com.android.CarbCount.viewSearch"><nothingHere/></activity>
+        <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+        <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+        <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+        </application>
+</manifest>

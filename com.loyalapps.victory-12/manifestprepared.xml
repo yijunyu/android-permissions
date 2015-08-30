@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.loyalapps.victory">
+    <application android:icon="@drawable/icon" android:label="Victory" android:name="com.loyalapps.LoyalAppsApplication" android:theme="@style/CustomTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.loyalapps.RootActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.NoAppLoadedActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.HomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.loyalapps.SignInActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.UserAppsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.SpecialsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.SpecialActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.StaticTextActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.NewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.NewsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.EventsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.EventActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.LocationsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.LocationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.StaffProfileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.FlickrSetsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.FlickrSetActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.FlickrImageGalleryActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.InfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.loyalapps.ContactUsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.loyalapps.OAuthActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.loyalapps.TwitterShareActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.loyalapps.PunchCardActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="com.loyalapps.victory" android:scheme="x-oauthflow"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <receiver android:name="com.loyalapps.C2DMReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.loyalapps.victory"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.loyalapps.victory"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.loyalapps.library.services.LoyalAppsService"><nothingHere/></service>
+    </application>
+<permission android:name="com.loyalapps.victory.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODE_WORLD_WRITABLE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.loyalapps.victory.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

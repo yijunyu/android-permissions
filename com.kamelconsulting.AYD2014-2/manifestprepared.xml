@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.kamelconsulting.AYD2014">
+    <application android:allowBackup="true" android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="locale|keyboard|keyboardHidden|orientation|screenSize" android:label="AYD2014" android:name="com.kamelconsulting.AYD2014.MainActivity" android:screenOrientation="portrait"> //added 2014.6.9
+            android:theme="@android:style/Theme.Black.NoTitleBar" &gt;
+<intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_draw" android:name="com.kamelconsulting.AYD2014.DrawActivity"><nothingHere/></activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mlmtrainingapps_dxngrouptraining">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".DXNGroup">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Training"><nothingHere/></activity>
+        <activity android:name=".LeadGenerationTraining"><nothingHere/></activity>
+        <activity android:name=".RecruitmentTraining"><nothingHere/></activity>
+        <activity android:name=".LeadershipAndDuplicationTraining"><nothingHere/></activity>
+        <activity android:name=".MLM_Global_Uni"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development1"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development2"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development3"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development4"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development5"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development6"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development7"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development8"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development9"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development10"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development11"><nothingHere/></activity>
+        <activity android:name=".MLM_Leadership_Development12"><nothingHere/></activity>
+        <activity android:name=".Lead_Generation_From_Faceboo"><nothingHere/></activity>
+        <activity android:name=".Insider_Secrets_To_Newspaper_Advertising"><nothingHere/></activity>
+        <activity android:name=".Ways_to_Generate_Leads_For_MLM_Business"><nothingHere/></activity>
+        <activity android:name=".Cheap_And_Easy_Ways_To_Advertise_Your_Home_Business"><nothingHere/></activity>
+        <activity android:name=".Why_Cold_Calling_is_Obsolete_in_MLM"><nothingHere/></activity>
+        <activity android:name=".Basics_Of_MLM_Recruiting_And_Prospecting"><nothingHere/></activity>
+        <activity android:name=".Key_Success_Tips_In_Online_MLM_Recruiting"><nothingHere/></activity>
+        <activity android:name=".Become_A_Top_MLM"><nothingHere/></activity>
+        <activity android:name=".A_Day_Recruiting_Game_Plan_For_Your_Business"><nothingHere/></activity>
+        <activity android:name=".How_Not_To_Do_MLM_Recruiting"><nothingHere/></activity>
+        <activity android:name=".About_Us"><nothingHere/></activity>
+        <activity android:name=".WebViewActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

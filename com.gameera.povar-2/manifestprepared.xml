@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gameera.povar">
+    <application android:icon="@drawable/icon" android:label="&#1055;&#1086;&#1089;&#1086;&#1073;&#1080;&#1077; &#1089;&#1090;&#1091;&#1076;&#1077;&#1085;&#1090;&#1072;. &#1050;&#1091;&#1093;&#1085;&#1103;: &#1055;&#1088;&#1086;&#1089;&#1090;&#1099;&#1077; &#1088;&#1077;&#1094;&#1077;&#1087;&#1090;&#1099;">
+        <activity android:label="&#1055;&#1086;&#1089;&#1086;&#1073;&#1080;&#1077; &#1089;&#1090;&#1091;&#1076;&#1077;&#1085;&#1090;&#1072;. &#1050;&#1091;&#1093;&#1085;&#1103;: &#1055;&#1088;&#1086;&#1089;&#1090;&#1099;&#1077; &#1088;&#1077;&#1094;&#1077;&#1087;&#1090;&#1099;" android:launchMode="singleInstance" android:name="com.gameera.MainTab.FragmentTabs" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light"><nothingHere/></activity>
+        <activity android:name="com.gameera.MainTab.preload">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="false" android:xlargeScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

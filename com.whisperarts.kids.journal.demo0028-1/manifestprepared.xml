@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.whisperarts.kids.journal.demo0028">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/demo_0028" android:label="@string/demo_0028" android:largeHeap="true" android:name="com.whisperarts.kids.journal.demo.JournalApplication" android:theme="@style/ViewerTheme">
+        <activity android:name="com.whisperarts.kids.journal.demo.JournalActivityDemo" android:screenOrientation="sensorLandscape" android:theme="@style/ViewerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <meta-data android:name="projectId" android:value="0028_demo"><nothingHere/></meta-data>
+        </application>
+<uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.andromo.dev64075.app91464">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher_icon" android:label="@string/app_name" android:name="AndromoAcraApplication">
+        <activity android:label="@string/app_name" android:name=".Rss13837" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Rss14364" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Youtube10975" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Youtube11359" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Custompage35988" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website47760" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website47761" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website47762" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".Twitter4910" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".Twitter5114" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:name=".RSSContentActivity" android:theme="@style/AndromoTheme.ActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".AndromoDashboardActivity" android:theme="@style/AndromoTheme.ActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <provider android:authorities="com.andromo.dev64075.app91464.provider.RSSFeed" android:exported="false" android:name=".RSSFeedProvider"><nothingHere/></provider>
+        <service android:name=".RssService"><nothingHere/></service>
+        </application>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

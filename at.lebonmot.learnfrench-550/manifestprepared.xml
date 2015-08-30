@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="at.lebonmot.learnfrench" platformBuildVersionCode="21" platformBuildVersionName="5.0-1521886">
+    <application android:allowBackup="true" android:backupAgent="at.lebonmot.learnfrench.objects.MyBackupAgent" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/le_bon_mot_background">
+        <activity android:label="@string/app_name" android:name="at.lebonmot.learnfrench.activities.StartMenu" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="at.lebonmot.learnfrench.activities.Preferences" android:screenOrientation="portrait" android:theme="@style/preference_screen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="at.lebonmot.learnfrench.activities.StartMenu"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="at.lebonmot.learnfrench.lesson.LessonFragmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="at.lebonmot.learnfrench.activities.UnitsOverview" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="at.lebonmot.learnfrench.activities.LevelsMenu"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name=".activities.Achievements" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="at.lebonmot.learnfrench.activities.StartMenu"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="at.lebonmot.learnfrench.activities.Info" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="at.lebonmot.learnfrench.activities.StartMenu"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="at.lebonmot.learnfrench.activities.LevelsMenu" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="at.lebonmot.learnfrench.activities.StartMenu"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="at.lebonmot.learnfrench.test.TestFragmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="at.lebonmot.learnfrench.activities.UnitMenu" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="at.lebonmot.learnfrench.Activities.UnitsOverview"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="at.lebonmot.learnfrench.grammar.Grammar" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="at.lebonmot.learnfrench.test.BrickFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.crittercism.NotificationActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIsYOZzEcOZ1Vz6EOr6vdqYBvlXfDbReypufjKpQ"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:exported="true" android:name="at.lebonmot.learnfrench.widget.WordWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="android.appwidget.action.APPWIDGET_RESIZE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info"><nothingHere/></meta-data>
+        </receiver>
+        <service android:name="at.lebonmot.learnfrench.audio.MusicManagerService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

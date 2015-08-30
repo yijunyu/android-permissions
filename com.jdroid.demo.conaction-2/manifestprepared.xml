@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.jdroid.demo.conaction">
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.jdroid.conaction.JdriodApplication" android:vmSafeMode="true">
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|touchscreen" android:label="@string/app_name" android:name="com.jdroid.conaction.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|touchscreen" android:label="@string/app_name" android:name="com.jdroid.conaction.activities.MyTabActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|touchscreen" android:label="@string/app_name" android:name="com.jdroid.conaction.activities.ActionsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|touchscreen" android:label="@string/app_name" android:name="com.jdroid.conaction.activities.ConditionsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|touchscreen" android:label="@string/app_name" android:name="com.jdroid.conaction.activities.MapsActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|navigation|orientation|screenLayout|touchscreen" android:name="com.jdroid.conaction.activities.ShortcutActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|touchscreen" android:name="com.jdroid.conaction.activities.BrightnessActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|touchscreen" android:label="@string/app_name" android:name="com.jdroid.conaction.activities.PrefsActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|touchscreen" android:label="@string/app_name" android:name="com.jdroid.conaction.activities.SpreakActivity"><nothingHere/></activity>
+    <activity-alias android:label="@string/app_name" android:name=".app.CreateShortcuts" android:targetActivity="com.jdroid.conaction.activities.ShortcutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity-alias>
+        <receiver android:label="receiver" android:name="com.jdroid.conaction.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+                <action android:name="com.jdroid.conaction.SMSSEND"><nothingHere/></action>
+                <action android:name="com.jdroid.conaction.SMSCANCEL"><nothingHere/></action>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:label="Condition checker" android:name="com.jdroid.conaction.ConditionService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+<uses-feature android:name="android.hardware.microphone" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

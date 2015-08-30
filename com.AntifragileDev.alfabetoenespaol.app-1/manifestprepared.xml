@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.AntifragileDev.alfabetoenespaol.app">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.AntifragileDev.alfabetoenespaol.app.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.AntifragileDev.alfabetoenespaol.app.AlphabetActivity"><nothingHere/></activity>
+        <activity android:name="com.AntifragileDev.alfabetoenespaol.app.ShapeActivity"><nothingHere/></activity>
+        <activity android:name="com.AntifragileDev.alfabetoenespaol.app.NumberActivity"><nothingHere/></activity>
+        <activity android:name="com.AntifragileDev.alfabetoenespaol.app.ColorActivity"><nothingHere/></activity>
+    </application>
+</manifest>

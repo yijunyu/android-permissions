@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="us.happy.birthday.song">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="HAPPY BIRTHDAY" android:name="us.happy.birthday.song.Menus" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="us.happy.birthday.song.MyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.startapp.android.publish.AppWallActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.revmob.ads.fullscreen.FullscreenActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.revmob.app.id" android:value="542678a7097ca9cf0609555d"><nothingHere/></meta-data>
+    <receiver android:name="us.happy.birthday.song.REDERE">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/redere_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.ironsource.mobilcore.InstallationTracker" android:process=":installationTracker"><nothingHere/></receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.ironsource.mobilcore.MobileCoreReport" android:process=":mcServiceProcess"><nothingHere/></service>
+        <service android:enabled="true" android:label="PASSWORD LIVE WALLPAPER" android:name="us.happy.birthday.song.MyWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/mywallpaper"><nothingHere/></meta-data>
+        </service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

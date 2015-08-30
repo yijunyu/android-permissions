@@ -1,0 +1,12 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.ACCESS_MOCK_LOCATION</permission>
+    <permission>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</permission>
+    <permission>android.permission.INSTALL_LOCATION_PROVIDER</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+    <permission>android.permission.ACCESS_CHECKIN_PROPERTIES</permission>
+    <permission>android.permission.CONTROL_LOCATION_UPDATES</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

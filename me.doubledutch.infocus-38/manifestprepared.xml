@@ -1,0 +1,244 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="me.doubledutch.infocus">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="me.doubledutch.DoubleDutchApplication" android:theme="@style/Theme.flockv2">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.LinkHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="dd-5035f6aa-b13c-4538-9ca0-2a745862d97e"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="me.doubledutch.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+            <android-data android:scheme="infocus"><nothingHere/></android-data>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.NotificationsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.HyveActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.WebOAuthActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.SocialSignUpActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.ItemReviewListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.BadgesActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.BadgeActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="me.doubledutch.ui.QRCodeActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.LeadScannerActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ProfileDisplayActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.ImageDetailsActivity" android:theme="@style/Theme.flockv2.noOverlayActionbar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.activity.LeaderBoardNavigationActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="me.doubledutch.ui.phone.MicroAppErrorFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.FriendsFeedActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.FriendsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.FriendsListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.FriendsRequestsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.ActivityFeedFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.CheckinFeedListFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.PeopleMatchingActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.SearchingUsersByNameActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.AddFriendsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.AddressBookActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.CheckInActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.CheckedInActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.AddReviewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.CheckinCommentsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.LeaderboardActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.LocalsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.SettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="me.doubledutch.ui.PreferencesActivity" android:theme="@style/Theme.flockv2.noOverlayActionbar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.SettingsPasswordActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ItemsWithTimingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ItemsWithDescriptionActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ItemsScheduleActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ApplicationActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.WebSiteActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.GeoWebSiteActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.TopicsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.QRCodeScanActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.PhotoFeedFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.VenueMapFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.HyveItemsWithTimingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ProfileWithSettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.infocus.GlobalFeedActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.infocus.ToggleFriendFeedActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.ActivityInfoExpandedFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="me.doubledutch.ui.AgendaListFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ResetPasswordActivity">
+            <intent-filter>
+                <action android:name="me.doubledutch.CHANGE_PASSWORD"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.UsersInAppActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.CheckinFeedFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="me.doubledutch.ui.phone.LikeCommentNotificationActionActivity" android:theme="@style/Theme.flockV2.Translucent.NoActionBar">
+            <intent-filter>
+                <action android:name="me.doubledutch.infocus.like_action"><nothingHere/></action>
+                <action android:name="me.doubledutch.infocus.comment_action"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.ItemsWithDescriptionFragmentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <action android:name="android.intent.action.EDIT"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.doubledutch.infocus.businesses"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="me.doubledutch.ui.tablet.UsersListMultiPaneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="@string/provider.users.mimeType_dir"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="me.doubledutch.ui.tablet.ItemsListMultiPaneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.ItemsWithTimingFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.UpdateFragmentActivity" android:theme="@style/Theme.flockv2.noOverlayActionbar">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <action android:name="android.intent.action.SEND_MULTIPLE"><nothingHere/></action>
+                <android-data android:mimeType="text/plain"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.exhibitor.ExhibitorGridFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="me.doubledutch.ui.confirmationcard.ConfirmationCardFragmentActivity" android:theme="@style/Theme.SemiTransparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.HyveItemsWithTimingsFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.BadgesFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.LeaderboardActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.BadgeFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.LeaderBoardFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.WebOAuthFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.tablet.ItemsWithTimingMultiPaneActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.SubjectWithSurveyListFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.ItemsWithSurveyFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.SurveyPagerFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.StartSurveyFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.SurveyFinishedFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.SurveyListFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.ProfileWithSettingsFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.ProfileDisplayFragmentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="@string/provider.users.mimeType_item"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.WebsiteFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.CheckinCommentsFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.SubjectListFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.GlobalSearchFragmentActivity" android:theme="@style/Theme.flockv2.noOverlayActionbar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.TopicsLinksFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.AboutConfirmationFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.ItemDetailsFragmentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="@string/provider.businesses.mimeType_item"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.CheckedInFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.ConnectionsFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="me.doubledutch.ui.phone.MapLocalFeedActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.VideoViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.TTUrlFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.LeadListFragmentActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.phone.UsersFragmentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="@string/provider.businesses.mimeType_dir"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.dd.cache.view.UsersFragmentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="@string/provider.users.mimeType_dir"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="me.doubledutch.ui.SearchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.helpshift.HelpshiftActivity" android:theme="@style/HSThemeLight"><nothingHere/></activity>
+        <activity android:name="com.helpshift.HSAddIssue" android:theme="@style/HSThemeLight"><nothingHere/></activity>
+        <activity android:name="com.helpshift.HSAddProfile" android:theme="@style/HSThemeLight"><nothingHere/></activity>
+        <activity android:name="com.helpshift.HSMessages" android:theme="@style/HSThemeLight"><nothingHere/></activity>
+        <activity android:name="com.helpshift.HSQuestionsList" android:theme="@style/HSThemeLight"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.helpshift.HSQuestion" android:theme="@style/HSThemeLight"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.helpshift.HSSection" android:theme="@style/HSThemeLight"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.helpshift.HSInbox" android:theme="@style/HSThemeLight"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.helpshift.HSFaqs" android:theme="@style/HSThemeLight"><nothingHere/></activity>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.SignInChooseAccountActivity" android:theme="@style/v3_signin_theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:name="me.doubledutch.SigninEnterPasswordActivity" android:theme="@style/v3_signin_theme" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:name="me.doubledutch.SigninEnterEmailActivity" android:theme="@style/v3_signin_theme" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.PrivacyPolicyActivity" android:theme="@style/v3_signin_theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.SignInEventPickerActivity" android:theme="@style/v3_signin_theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ProfileFillerActivity" android:theme="@style/Theme.flockv2.noOverlayActionbar" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.OnboardingFlowActivity" android:theme="@style/v3_signin_theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="me.doubledutch.ui.SSOLoginActivity" android:theme="@style/v3_signin_theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="me.doubledutch.ui.WebViewActivity" android:theme="@style/v3_signin_theme"><nothingHere/></activity>
+        <meta-data android:name="android.app.default_searchable" android:value="me.doubledutch.ui.SearchActivity"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <provider android:authorities="@string/provider.authority" android:exported="false" android:name="me.doubledutch.provider.DDProvider"><nothingHere/></provider>
+        <receiver android:name="me.doubledutch.alarm.AgendaAlarmSetter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="me.doubledutch.alarm.AgendaAlarmReceiver"><nothingHere/></receiver>
+        <receiver android:name=".GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="me.doubledutch.infocus"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="me.doubledutch.cache.service.DDService"><nothingHere/></service>
+        <service android:name="me.doubledutch.util.CloudConfigFileManager"><nothingHere/></service>
+        <service android:name="me.doubledutch.util.offline.CacheBoundService"><nothingHere/></service>
+        <service android:name="me.doubledutch.util.offline.LeadExportService"><nothingHere/></service>
+        <service android:name="me.doubledutch.api.services.ImageUploadService"><nothingHere/></service>
+        <service android:name="me.doubledutch.alarm.AgendaAlarmService"><nothingHere/></service>
+        <service android:name=".GcmIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="me.doubledutch.infocus.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PROFILE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="me.doubledutch.infocus.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="me.doubledutch.infocus.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

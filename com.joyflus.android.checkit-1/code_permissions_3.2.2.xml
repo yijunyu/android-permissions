@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/joyflus/android/checkit/view/AlarmDialog.java</file>
+    <line>43</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

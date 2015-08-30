@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="hu.abon.voks">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="hu.abon.voks.VoksApplication" android:theme="@style/AppBaseTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="hu.abon.voks.StartActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="hu.abon.voks.RegCheckActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="hu.abon.voks.MainActivity"><nothingHere/></activity>
+        <activity android:name="hu.abon.voks.WebViewer"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="hu.abon.voks.VoteForPartyActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="hu.abon.voks.DeleteAllDataActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="hu.abon.voks.RegistrationContainerActivity"><nothingHere/></activity>
+        <activity android:name="hu.abon.voks.VideoPlayerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="hu.abon.voks.PasscodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="hu.abon.voks.VoteForPoliticianActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="hu.abon.voks.NotificationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="hu.abon.voks.AllDataDeletedActivity"><nothingHere/></activity>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.parse.PushService"><nothingHere/></service>
+        <service android:name=".VoteNowDownloadService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.broadlearning.eclass">
+    <application android:allowBackup="true" android:icon="@drawable/app_icon_100" android:label="@string/appName" android:logo="@drawable/titlebar_eclass_logo" android:name=".includes.MyApplication" android:theme="@style/BaseAppTheme">
+        <activity android:label="@string/appName" android:name="com.broadlearning.eclass.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/LoginTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:label="@string/appName" android:name="com.broadlearning.eclass.MainActivity" android:parentActivityName="com.broadlearning.eclass.account.AccountActivity" android:screenOrientation="portrait" android:theme="@style/BaseAppTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.broadlearning.eclass.account.AccountActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/appName" android:name="com.broadlearning.eclass.account.AccountActivity" android:screenOrientation="portrait" android:theme="@style/BaseAppTheme"><nothingHere/></activity>
+        <activity android:label="@string/appName" android:name="com.broadlearning.eclass.settings.SettingActivity" android:screenOrientation="portrait" android:theme="@style/BaseAppTheme"><nothingHere/></activity>
+        <activity android:label="@string/about_us" android:name="com.broadlearning.eclass.settings.AboutUsActivity" android:screenOrientation="portrait" android:theme="@style/BaseAppTheme"><nothingHere/></activity>
+        <activity android:label="@string/terms_of_use" android:name="com.broadlearning.eclass.settings.TermsOfUseActivity" android:screenOrientation="portrait" android:theme="@style/BaseAppTheme"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:name="com.broadlearning.eclass.gcm.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.broadlearning.eclass"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.broadlearning.eclass.gcm.GcmIntentService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.broadlearning.eclass.gcm.GCMService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.broadlearning.eclass.calendar.DateEventService"><nothingHere/></service>
+        </application>
+<permission android:name="com.broadlearning.eclass.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.broadlearning.eclass.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

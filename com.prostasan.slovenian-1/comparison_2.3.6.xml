@@ -1,0 +1,9 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.INTERNET</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+  </under-specification>
+</comparison>

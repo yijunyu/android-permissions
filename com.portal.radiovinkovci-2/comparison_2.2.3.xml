@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.WRITE_SETTINGS</permission>
+    <permission>android.permission.RECORD_AUDIO</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.SEND_SMS</permission>
+  </under-specification>
+</comparison>

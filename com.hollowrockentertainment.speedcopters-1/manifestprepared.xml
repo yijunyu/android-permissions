@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" android:theme="@android:style/Theme.NoTitleBar" package="com.hollowrockentertainment.speedcopters">
+    <application android:debuggable="false" android:icon="@drawable/app_icon" android:label="@string/app_name">
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.upsight.unity.UnityPlayerNativeActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.playhaven.android.view.FullScreen" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="localhost" android:pathPattern="/full" android:scheme="playhaven"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.google.example.games.pluginsupport.SignInHelperActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.google.example.games.pluginsupport.SelectOpponentsHelperActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.google.example.games.pluginsupport.InvitationInboxHelperActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="734938585994"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.appstate.APP_ID" android:value="734938585994"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:name="com.playhaven.android.push.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.hollowrockentertainment.speedcopters"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.playhaven.android.push.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="com.playhaven.android"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        </application>
+    <permission android:name="com.hollowrockentertainment.speedcopters.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.sensor.accelerometer"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.hollowrockentertainment.speedcopters.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.sth">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/ApplicationName" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ApplicationName" android:launchMode="singleTask" android:name=".ui.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/AboutActivity.Title" android:name=".ui.activities.AboutActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/EditBookmarkActivity.Title" android:name=".ui.activities.EditBookmarkActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".ui.activities.BookmarksListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.activities.HistoryListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.activities.DownloadsListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.activities.AdBlockerWhiteListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ui.activities.BookmarksHistoryActivity"><nothingHere/></activity>
+        <activity android:label="@string/ChangelogActivity.Title" android:name=".ui.activities.ChangelogActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".ui.activities.preferences.PreferencesActivity"><nothingHere/></activity>
+        <activity android:label="@string/HomepagePreferenceActivity.Title" android:name=".ui.activities.preferences.HomepagePreferenceActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/SearchUrlPreferenceActivity.Title" android:name=".ui.activities.preferences.SearchUrlPreferenceActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/UserAgentPreferenceActivity.Title" android:name=".ui.activities.preferences.UserAgentPreferenceActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".ui.activities.MobileViewListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.activities.WeaveBookmarksListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.activities.preferences.WeavePreferencesActivity"><nothingHere/></activity>
+        <activity android:label="@string/WeaveServerPreferenceActivity.Title" android:name=".ui.activities.preferences.WeaveServerPreferenceActivityctivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    <provider android:authorities="com.sth.providers.zircobookmarkscontentprovider" android:name=".providers.ZircoBookmarksContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.sth.providers.weavecontentprovider" android:name=".providers.WeaveContentProvider"><nothingHere/></provider>
+        <receiver android:name="com.sth.utils.ProxyChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PROXY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+<uses-feature android:name="android.hardware.touchscreen" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

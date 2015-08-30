@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shabox.lw.dancing.tux.lite">
+    <application android:debuggable="false" android:description="@string/app_info" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="DancingTuxApplication">
+- <activity android:label="@string/app_name" android:name="DancingTuxActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+- <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+- <activity android:label="@string/app_name" android:name="DancingTuxSettings" android:screenOrientation="sensor" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+    <service android:label="@string/app_name" android:name="DancingTuxWallpaper" android:permission="android.permission.BIND_WALLPAPER">
+- <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/settings"><nothingHere/></meta-data>
+        </service>
+        </application>
+<uses-feature android:name="android.software.live_wallpaper" android:required="true"><nothingHere/></uses-feature>
+- </manifest>

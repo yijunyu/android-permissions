@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.ride.passenger.capitalcity">
+    <application android:configChanges="keyboard|keyboardHidden|orientation" android:icon="@drawable/icon" android:label="@string/FleetHeaderBarTitle" android:name="mono.android.app.Application" android:theme="@style/Theme.Splash">
+        <activity android:alwaysRetainTaskState="true" android:launchMode="singleTask" android:name="passenger.Application" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="xamarin.media.MediaPickerActivity"><nothingHere/></activity>
+        <meta-data android:name="LOCALYTICS_APP_KEY" android:value=""><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA0uhZW7VaHsbIsWqd4gSOEd1cpCjFEICY"><nothingHere/></meta-data>
+        <provider android:authorities="com.ride.passenger.capitalcity.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    <receiver android:name="passenger.PushHandlerBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.ride.passenger.capitalcity"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gcm.intent.RETRY"><nothingHere/></action>
+                <category android:name="com.ride.passenger.capitalcity"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.ride.passenger.capitalcity"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="passenger.utils.NetworkStateChanged"><nothingHere/></receiver>
+        <service android:name="passenger.PushHandlerService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <permission android:name="com.ride.passenger.capitalcity.permission.C2D_MESSAGE"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.ride.passenger.capitalcity.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+</manifest>

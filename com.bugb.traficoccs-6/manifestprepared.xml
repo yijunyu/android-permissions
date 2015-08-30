@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bugb.traficoccs">
+    <application android:allowBackup="false" android:icon="@drawable/app_icon" android:label="@string/App_Name" android:theme="@style/AppTheme" android:uiOptions="splitActionBarWhenNarrow">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".PreferencesActivity" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:label="@string/Report_Login_With" android:launchMode="singleInstance" android:name=".LoginActivity" android:noHistory="true" android:theme="@style/NoTitleDialog"><nothingHere/></activity>
+        <activity android:label="@string/Twitter_Login_Connecting" android:launchMode="singleInstance" android:name=".TwitterLogin" android:theme="@style/NoTitleDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="twitterTraficoCCS" android:scheme="twitter"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/Share_Traffic_Send" android:name=".ShareActivity" android:theme="@style/NoTitleDialog"><nothingHere/></activity>
+        <activity android:name=".FacebookLogin" android:theme="@style/NoTitleDialog"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name=".ReportActivity" android:noHistory="true" android:theme="@style/NoTitleDialog"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,13 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CALL_PHONE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+    <permission>android.permission.SYSTEM_ALERT_WINDOW</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.BROADCAST_STICKY</permission>
+    <permission>android.permission.SET_WALLPAPER</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+  </under-specification>
+</comparison>

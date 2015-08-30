@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.apps.thief_tracker_video">
+    <application android:icon="@drawable/icon" android:label="Thief Tracker Video">
+        <activity android:label="Thief Tracker Video" android:name="com.apps.thief_tracker_video.DeviceAdminPreferenceActivity$DeviceAdminSampleReceiver$TakePictureActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.SAMPLE_CODE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Thief Tracker Video" android:name="com.apps.thief_tracker_video.TakePictureActivity" android:theme="@style/TranslucentGreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Thief Tracker Video" android:name="com.apps.thief_tracker_video.DisplayImageActivity" android:theme="@style/TranslucentGreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="Thief Tracker Video" android:name="com.apps.thief_tracker_video.SirenActivity" android:theme="@style/TranslucentGreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.appbrain.AppBrainActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    <receiver android:description="@string/sample_device_admin_description" android:label="Thief Tracker Video" android:name="com.apps.thief_tracker_video.DeviceAdminPreferenceActivity$DeviceAdminSampleReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"><nothingHere/></action>
+            </intent-filter>
+        <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin_sample"><nothingHere/></meta-data>
+            </receiver>
+        <receiver android:exported="true" android:name="com.appbrain.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.apps.thief_tracker_video.RecorderService"><nothingHere/></service>
+        <service android:name="com.appbrain.AppBrainService"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

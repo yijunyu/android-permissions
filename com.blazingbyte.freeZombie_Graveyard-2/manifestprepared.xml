@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.blazingbyte.freeZombie_Graveyard">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:exported="true" android:label="@string/aquarium_settings" android:name="com.blazingbyte.freeZombie_Graveyard.AquariumSettings"><nothingHere/></activity>
+    <service android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.blazingbyte.freeZombie_Graveyard.AquariumWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/aquarium"><nothingHere/></meta-data>
+        </service>
+        </application>
+<uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

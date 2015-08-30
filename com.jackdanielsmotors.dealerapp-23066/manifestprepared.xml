@@ -1,0 +1,137 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jackdanielsmotors.dealerapp">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Theme.DealerApp">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.jackdanielsmotors.dealerapp.pro.ui.SplashScreen" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Custom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.LocationSelectorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.DateTimeSelectorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.shared.BoardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.Dashboard" android:screenOrientation="portrait" android:theme="@style/Theme.Custom" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.lite.MailingForm" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.lite.GenericDeptActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.lite.serviceDept" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.jackdanielsmotors.dealerapp.lite.dealerappWebView" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.lite.AboutUs" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jackdanielsmotors.dealerapp.lite.DealerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jackdanielsmotors.dealerapp.lite.TabWidget" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jackdanielsmotors.dealerapp.lite.DeptActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jackdanielsmotors.dealerapp.lite.SocialActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jackdanielsmotors.dealerapp.lite.LinksActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jackdanielsmotors.dealerapp.lite.BoardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jackdanielsmotors.dealerapp.lite.PushMessageView" android:screenOrientation="portrait" android:theme="@style/Theme.Custom"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.PushMessageDetailActivity" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.InventoryListViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.InventoryFragmentStatePager" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.InventoryBrowseActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.ActionBarTabs" android:screenOrientation="portrait" android:stateNotNeeded="true" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.ImageActivity" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.InventoryMoreDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.inventory.InventoryImageFragmentPagerSupport" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.InventorySearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.InventoryThumbGridActivity" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.InventoryFavoritesActivity" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.InventoryImageActivity" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.OfferLogixListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.inventory.OfferLogixDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.MailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.IdentityActivity" android:noHistory="true" android:screenOrientation="portrait" android:stateNotNeeded="true" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.ToolKitFragment" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.FlashlightActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.RoadsideAssistanceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.jackdanielsmotors.dealerapp.pro.ui.ParkingAssistantActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.jackdanielsmotors.dealerapp.pro.ui.ContactUsDeptActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.RSSDetailView" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.RSSPagerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.CameraActivity" android:noHistory="true" android:screenOrientation="landscape" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.QrActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.LoanCalculatorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.AddressActivity" android:screenOrientation="portrait" android:theme="@style/CustomDialog"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.GeofencingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_hours" android:name="com.jackdanielsmotors.dealerapp.pro.ui.HoursActivity" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.accidentguide.AccidentGuideMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.accidentguide.AccidentGuideRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.accidentguide.AccidentGuideFormActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.accidentguide.AccidentGuideWitnessActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.accidentguide.AccidentGuideEmergencyPersActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.accidentguide.AccidentGuideNotesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.mygarage.VehicleAddEditView" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.logic.pagers.MyGaragePager" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.mygarage.VehicleNotesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.mygarage.ServiceHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.mygarage.ServiceHistoryDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.mygarage.VehicleYMMActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.mygarage.VehicleInputVinActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.mygarage.VehicleMileageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.mygarage.VehicleTrimStyleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.serviceguide.ScheduleServiceGuideStep1" android:screenOrientation="portrait" android:stateNotNeeded="true" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.serviceguide.ScheduleServiceGuideStep2" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.serviceguide.ScheduleServiceGuideStep3" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.serviceguide.ScheduleServiceGuideSummary" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.serviceguide.ScheduleServiceGuideServiceAdvisor" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.Notes" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jackdanielsmotors.dealerapp.pro.ui.VehicleDropOffActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.mygarage.PendingDropOffActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.PreferredLocationSelectorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.ProPaymentWebview" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.ProPaymentCardForm" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:name="com.jackdanielsmotors.dealerapp.pro.ui.NotificationSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Example"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_about_us_fragment" android:name="com.jackdanielsmotors.dealerapp.pro.ui.AboutUsFragment"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_rss_fragment" android:name="com.jackdanielsmotors.dealerapp.pro.ui.RssFragment"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_links_fragment" android:name="com.jackdanielsmotors.dealerapp.pro.ui.LinksFragment"><nothingHere/></activity>
+        <activity android:name=".pro.ui.inventory.InventoryLocationActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB_ZOrWodFY8hnf60_wHUQWOjrntZbufl0"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.jackdanielsmotors.dealerapp"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.jackdanielsmotors.dealerapp.pro.logic.recievers.VSMReciever">
+            <intent-filter>
+                <action android:name="com.jackdanielsmotors.dealerapp.BROADCAST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jackdanielsmotors.dealerapp.pro.logic.recievers.AlarmReceiver"><nothingHere/></receiver>
+        <receiver android:exported="false" android:name="com.jackdanielsmotors.dealerapp.pro.data.MyWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.jackdanielsmotors.dealerapp.GCMIntentService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.jackdanielsmotors.dealerapp.ReceiveTransitionsIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.jackdanielsmotors.dealerapp.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.jackdanielsmotors.dealerapp.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="false"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.jackdanielsmotors.dealerapp.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.jackdanielsmotors.dealerapp.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/Clock/Reminder/HourlyReminder.java</file>
+    <line>19</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/Clock/Reminder/HourlyReminder.java</file>
+    <line>22</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/Clock/Reminder/HourlyReminder.java</file>
+    <line>23</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

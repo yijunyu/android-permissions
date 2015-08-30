@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gmail.maro.aznable.mytracks_ext">
+    <application android:allowBackup="true" android:icon="@drawable/icon5" android:label="@string/app_name">
+        <receiver android:exported="true" android:name=".ExtensionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.liveware.aef.registration.EXTENSION_REGISTER_REQUEST"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.liveware.aef.registration.ACCESSORY_CONNECTION"><nothingHere/></action>
+                <action android:name="android.intent.action.LOCALE_CHANGED"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.liveware.aef.notification.VIEW_EVENT_DETAIL"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.liveware.aef.notification.REFRESH_REQUEST"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.widget.START_REFRESH_IMAGE_REQUEST"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.widget.STOP_REFRESH_IMAGE_REQUEST"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.widget.ONTOUCH"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.liveware.extension.util.widget.scheduled.refresh"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.control.START"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.control.STOP"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.control.PAUSE"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.control.RESUME"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.control.ERROR"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.control.KEY_EVENT"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.control.TOUCH_EVENT"><nothingHere/></action>
+                <action android:name="com.sonyericsson.extras.aef.control.SWIPE_EVENT"><nothingHere/></action>
+                <action android:name="com.google.android.apps.mytracks.TRACK_PAUSED"><nothingHere/></action>
+                <action android:name="com.google.android.apps.mytracks.TRACK_RESUMED"><nothingHere/></action>
+                <action android:name="com.google.android.apps.mytracks.TRACK_STARTED"><nothingHere/></action>
+                <action android:name="com.google.android.apps.mytracks.TRACK_STOPPED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="SampleExtensionService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="com.sonyericsson.extras.liveware.aef.EXTENSION_PERMISSION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.apps.mytracks.READ_TRACK_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.apps.mytracks.WRITE_TRACK_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.apps.mytracks.TRACK_NOTIFICATIONS"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="jp.co.hiropro.ipost684">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="jp.co.hiropro.ipost684.Globals" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="jp.co.hiropro.ipost684.VideoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="jp.co.hiropro.ipost684.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="jp.co.hiropro.ipost684.ViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.activity.MainActivityGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="jp.co.hiropro.ipost684.TabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.activity.MenuActivityGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.activity.NewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.activity.SettingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.activity.CouponActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.news.NewsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.menu.MenuSubActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.menu.MenuMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.menu.MenuDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.webview.WebActivity" android:screenOrientation="portrait" android:theme="@style/WebViewTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.order.OrderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.mainte.MainteActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.branch.BranchActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.user.UserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.user.UserLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.user.UserRegistActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.main.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="org.kazzz.CalendarTest" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.main.ShopDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ipost.branch.BranchDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="jp.co.hiropro.ipost684"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="jp.co.hiropro.ipost684.GCMIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="jp.co.hiropro.ipost684.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="jp.co.hiropro.ipost684.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.rainbowapps.gpslogger.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.avitus.lostpowers">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.avitus.lostpowers.GameActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.appflood.AFPanelActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.appflood.AFFullScreenActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.appflood.AFListActivity" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name=""><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.appflood.AFInterstitialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Swarm" android:name="com.swarmconnect.SwarmMainActivity" android:screenOrientation="portrait" android:theme="@style/HoloTheme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <service android:name="com.swarmconnect.NotificationService" android:process=":swarm"><nothingHere/></service>
+    </application>
+    <uses-feature android:glEsVersion="0x20000"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

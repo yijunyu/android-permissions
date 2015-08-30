@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.parag.ROW4">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".ROW4">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="Game_Selection"><nothingHere/></activity>
+        <activity android:name="Help"><nothingHere/></activity>
+        <activity android:name="Loading"><nothingHere/></activity>
+        <activity android:name="Play_Ground_11"><nothingHere/></activity>
+        <activity android:name="Play_Ground_12"><nothingHere/></activity>
+        <activity android:name="Play_Ground_21"><nothingHere/></activity>
+        <activity android:name="Play_Ground_22"><nothingHere/></activity>
+        <activity android:name="Player_Selection"><nothingHere/></activity>
+        <activity android:name="Rating"><nothingHere/></activity>
+        <activity android:name="Stricker_Selection_1"><nothingHere/></activity>
+        <activity android:name="Stricker_Selection_2"><nothingHere/></activity>
+        <activity android:name="Stricker_Selection_12"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,168 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.project.petss">
+    <application android:icon="@drawable/petss_icon2" android:label="@string/app_name" android:name="org.geometerplus.android.fbreader.FBReaderApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_main" android:name="com.project.petss.Welcome" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_main" android:name="com.project.petss.BookShelf" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_main" android:name="com.project.petss.Registration_Form" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_main" android:name="com.project.petss.Registration_Form_Second" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_main" android:name="com.project.petss.Index" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_main" android:name="com.project.petss.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.TestPapers" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.TestPaperNew" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.TestPaperNormal" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.TestPaperRandom" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.TextBooks" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.Videos" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.QuestionPaperList" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.QuestionPaperList_Mock" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.QuestionPaperList_Subjective" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.Question_Paper_List" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.PlayVideo" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.IntroVideo" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.project.petss.FinishTest" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.error.BookReadingErrorActivity" android:process=":error" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.ERROR"><nothingHere/></action>
+                <android-data android:scheme="BookReadingException"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="org.geometerplus.android.fbreader.NotesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="FBReader crash" android:name=".error.BugReportActivity" android:process=":crash" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.crash.FixBooksDirectoryActivity" android:process=":crash" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.CRASH"><nothingHere/></action>
+                <android-data android:scheme="CachedCharStorageException"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.crash.MissingNativeLibraryActivity" android:process=":crash" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.CRASH"><nothingHere/></action>
+                <android-data android:scheme="ExceptionInInitializerError"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:icon="@drawable/fbreader" android:label="FBReader" android:launchMode="singleTask" android:name="org.geometerplus.android.fbreader.FBReader" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.fbreader.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="fbreader-action"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.CancelActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.image.ImageViewActivity" android:process=":imageView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.library.BookInfoActivity" android:process=":library" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="org.geometerplus.android.fbreader.library.LibrarySearchActivity" android:process=":library" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="org.geometerplus.android.fbreader.library.LibraryActivity" android:process=":library" android:screenOrientation="portrait">
+            <meta-data android:name="android.app.default_searchable" android:value="org.geometerplus.android.fbreader.library.LibrarySearchActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.TOCActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="org.geometerplus.android.fbreader.BookmarksActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.BookmarkEditActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.preferences.PreferenceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.preferences.EditBookInfoActivity" android:process=":library" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="org.geometerplus.android.fbreader.network.NetworkSearchActivity" android:process=":networkLibrary" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="org.geometerplus.android.fbreader.network.NetworkLibraryPrimaryActivity" android:process=":networkLibrary" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.fbreader.action.OPEN_NETWORK_CATALOG"><nothingHere/></action>
+                <android-data android:host="*" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*" android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        <meta-data android:name="android.app.default_searchable" android:value="org.geometerplus.android.fbreader.network.NetworkSearchActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.network.NetworkLibrarySecondaryActivity" android:process=":networkLibrary" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.network.AuthenticationActivity" android:process=":networkLibrary" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.network.BuyBooksActivity" android:process=":networkLibrary" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.network.AddCatalogMenuActivity" android:process=":networkLibrary" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.network.AddCustomCatalogActivity" android:process=":networkLibrary" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.fbreader.action.ADD_OPDS_CATALOG"><nothingHere/></action>
+                <android-data android:host="data.fbreader.org" android:path="/add_catalog/editUrl" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="*" android:scheme="opds"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.ADD_OPDS_CATALOG_URL"><nothingHere/></action>
+                <android-data android:host="*" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.fbreader.action.ADD_OPDS_CATALOG_URL"><nothingHere/></action>
+                <android-data android:host="*" android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.network.AuthorizationMenuActivity" android:process=":networkLibrary" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.network.TopupMenuActivity" android:process=":networkLibrary" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.network.NetworkBookInfoActivity" android:process=":networkLibrary" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="*" android:scheme="litres-book"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.geometerplus.android.fbreader.tips.TipsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+    <receiver android:name="org.geometerplus.android.fbreader.library.KillerCallback" android:process=":library"><nothingHere/></receiver>
+        <receiver android:name="org.geometerplus.android.fbreader.network.ListenerCallback" android:process=":networkLibrary">
+            <intent-filter>
+                <action android:name="android.fbreader.action.network.SIGNIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="org.geometerplus.android.fbreader.api.ApiService">
+            <intent-filter>
+                <action android:name="android.fbreader.action.API"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </service>
+        <service android:launchMode="singleTask" android:name="org.geometerplus.android.fbreader.libraryService.LibraryService" android:process=":libraryService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.project.petss.MyService" android:process=":myservice"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.project.petss.MemoryCheckService" android:process=":memorycheckservice"><nothingHere/></service>
+        <service android:name="org.geometerplus.android.fbreader.network.BookDownloaderService" android:process=":networkLibrary"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

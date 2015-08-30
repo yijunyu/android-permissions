@@ -1,0 +1,74 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ssoft.appstock">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="com.ssoft.appstock.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.ssoft.appstock.Intro" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="appstock" android:scheme="myapp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_login" android:name="com.ssoft.appstock.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_id_pw_serch" android:name="com.ssoft.appstock.IdPwSerchActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_clause" android:name="com.ssoft.appstock.ClauseActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_join" android:name="com.ssoft.appstock.JoinActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_member" android:name="com.ssoft.appstock.MemberActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_welcome" android:name="com.ssoft.appstock.WelcomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_board_write" android:name="com.ssoft.appstock.BoardWriteActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_board_detail" android:name="com.ssoft.appstock.BoardDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_recommend" android:name="com.ssoft.appstock.RecommendActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_vip" android:name="com.ssoft.appstock.VipActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_myinfo" android:name="com.ssoft.appstock.MyinfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_notice" android:name="com.ssoft.appstock.NoticeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_message" android:name="com.ssoft.appstock.MessageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_message_detail" android:name="com.ssoft.appstock.MessageDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_message_send" android:name="com.ssoft.appstock.MessageSendActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_my_page" android:name="com.ssoft.appstock.MyPageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_point" android:name="com.ssoft.appstock.PointActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_proposer" android:name="com.ssoft.appstock.ProposerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_breakdown" android:name="com.ssoft.appstock.BreakdownActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_writing" android:name="com.ssoft.appstock.WritingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_scrap" android:name="com.ssoft.appstock.ScrapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_set" android:name="com.ssoft.appstock.SetActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_termination" android:name="com.ssoft.appstock.TerminationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_pop" android:name="com.ssoft.appstock.PopActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_payment" android:name="com.ssoft.appstock.PaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_payment_webview" android:name="com.ssoft.appstock.PaymentWebviewActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_bank" android:name="com.ssoft.appstock.BankActivity"><nothingHere/></activity>
+    <receiver android:launchMode="singleTop" android:name="com.ssoft.appstock.C2DM_BroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.ssoft.appstock"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.ssoft.appstock"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ssoft.appstock.GCMIntentService"><nothingHere/></receiver>
+        <service android:name="com.ssoft.appstock.GCMIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.ssoft.appstock.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="com.ssoft.appstock.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.SEND"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    </manifest>

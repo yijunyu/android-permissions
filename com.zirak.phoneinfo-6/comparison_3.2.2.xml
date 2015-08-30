@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.LISTEN_CELL_LOCATION</permission>
+    <permission>android.permission.CHANGE_WIFI_STATE</permission>
+    <permission>android.permission.LISTEN_SIGNAL_STRENGTH</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+  </under-specification>
+</comparison>

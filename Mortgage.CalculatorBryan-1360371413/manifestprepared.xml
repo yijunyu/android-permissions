@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="Mortgage.CalculatorBryan">
+    <application android:icon="@drawable/icon" android:label="Sheila Bryan's Mortgage Mapp" android:name="io.trigger.forge.android.core.ForgeApp">
+        <activity android:configChanges="locale|fontScale|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|touchscreen|uiMode" android:launchMode="singleTask" android:name="io.trigger.forge.android.core.ForgeActivity" android:screenOrientation="portrait" android:stateNotNeeded="true" android:theme="@style/DefaultTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="Mortgage.CalculatorBryan" android:exported="true" android:name="io.trigger.forge.android.core.ForgeContentProvider"><nothingHere/></provider>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="io.trigger.forge.android.modules.payments.PaymentsReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.parse.PushService"><nothingHere/></service>
+        <service android:name="io.trigger.forge.android.modules.payments.PaymentsService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

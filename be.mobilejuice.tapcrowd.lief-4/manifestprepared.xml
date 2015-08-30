@@ -1,0 +1,107 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="be.mobilejuice.tapcrowd.lief">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name="be.mobilejuice.tapcrowd.lief.Splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.SplashEvent" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.SplashVenue" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.TCLauncher" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.TCLauncherList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.TCLauncherEvent" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.TCLauncherVenue" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.InfoApp" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.InfoEvent" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.InfoFestival" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.InfoVenue" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.EventList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ExhibitorsPerSession" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.VenueList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ExhibitorList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.AttendeeList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ArtistDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionGroupsList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionGroupList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionListAll" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.FBnews" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.Map" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.Webview" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.News" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.NewsDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionsPerSessionGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionsPerSeparator" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.News" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SocialMediaTabs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SponsorDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ProgramPerProgramGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ProgramDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.Sponsors" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.Favorites" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.QR" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ExhibitorDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SponsorViewPager" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.Tickets" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.utils.ShareOnFacebook" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.VenueAppTabs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ExhibitorTabs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.RSS" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ExhiBrands" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ExhiCats" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.Gallery"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ExhiCatsByExhi" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.GroupSwipe" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.GroupList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.GroupListNEW" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.business.Info" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.business.Location" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.business.Contact" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.CatalogDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.AttendeeDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.HtmlParser" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.AppList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.LoginScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.FestivalSession" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.FestivalMediaTabs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.FBPost" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.ImagesList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.Notes" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.NotesOf" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.AddNote" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.PersonalProgram" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.VenuesEventsTabs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.EventTagsList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.FlashLight" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionByStage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.FindMyTent" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.FindFriends" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.FBPicture" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.CameraView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionsPerLocation" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.TCLauncherResto" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.restoflavor.NewsFeeds" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.restoflavor.modules.Catalog" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.restoflavor.CatalogManager" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.restoflavor.InfoManager" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.restoflavor.modules.Info" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SpeakerDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.restoflavor.modules.CatalogDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.restoflavor.modules.TeamDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.restoflavor.modules.SocialMediaTabs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SessionsOfSpeaker" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SpeakerList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="be.mobilejuice.tapcrowd.lief.modules.SpeakerDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+    <service android:name="be.mobilejuice.tapcrowd.lief.service.UpdateService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

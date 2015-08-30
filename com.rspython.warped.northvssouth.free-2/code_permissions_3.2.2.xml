@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/rspython/warped/northvssouth/free/HighResMapActivity.java</file>
+    <line>21</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/rspython/warped/northvssouth/free/HighResMapActivity.java</file>
+    <line>22</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

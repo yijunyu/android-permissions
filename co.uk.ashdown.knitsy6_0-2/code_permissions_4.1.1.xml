@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/co/uk/ashdown/knitsy6_0/FriarBook.java</file>
+    <line>174</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/co/uk/ashdown/knitsy6_0/FriarBook.java</file>
+    <line>121</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/co/uk/ashdown/knitsy6_0/FriarBook.java</file>
+    <line>129</line>
+    <permissions/>
+  </call>
+</calls>

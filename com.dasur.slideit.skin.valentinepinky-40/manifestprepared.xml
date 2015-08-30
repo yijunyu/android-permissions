@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.dasur.slideit.skin.valentinepinky">
+    <application android:icon="@drawable/app_skin" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="standard" android:name="com.dasur.theme.pack.ActivityPopup" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+    <receiver android:exported="true" android:name="com.dasur.theme.pack.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.dasur.theme.pack.ServiceThemePack">
+            <intent-filter>
+                <action android:name="dasur.slideit.theme.action.ADDON_THEME_PACK"><nothingHere/></action>
+                <android-data android:mimeType="dasur.slideit.addon/themepack"><nothingHere/></android-data>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.dasur.theme.pack.CheckService"><nothingHere/></service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+</manifest>

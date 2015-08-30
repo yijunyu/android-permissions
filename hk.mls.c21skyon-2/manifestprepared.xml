@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="hk.mls.c21skyon">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="SplashScreen" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#20027;&#30446;&#37636;" android:name=".HotList" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#27155;&#30436;&#25628;&#23563;" android:name=".PropSearcher" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#25628;&#23563;&#32080;&#26524;" android:name=".PropList" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#27155;&#30436;&#35443;&#24773;" android:name=".PropDetail" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#32879;&#32097;&#25105;&#20497;" android:name=".BranchList" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#20998;&#34892;&#35443;&#24773;" android:name=".BranchDetail" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#26356;&#22810;..." android:name=".More" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#27155;&#30436;&#26597;&#30475;&#32000;&#37636;" android:name=".PropHis" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#25353;&#25581;&#35336;&#31639;" android:name=".MortCal" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#25353;&#25581;&#36039;&#26009;" android:name=".MortCalDetail" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#26368;&#26032;&#25104;&#20132;" android:name=".TranSearcher" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#25628;&#23563;&#32080;&#26524;" android:name=".TranList" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#25104;&#20132;&#32000;&#37636;&#35443;&#24773;" android:name=".TranDetail" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name=".ArtList" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name=".WebViewer" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#31649;&#29702;&#21729;&#30331;&#20837;" android:name=".AdminLogin" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name=".PropDetailUploadPhoto" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#36023;&#23478;&#30041;&#35328;" android:name=".PropEnquiry" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#22320;&#22294;&#25653;&#27155;" android:name=".MapSearchV2" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="&#30456;&#29255;" android:name=".PhotoViewerV2" android:theme="@style/AppTheme_Detail"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAPNOzTwmt0QLGdFuWyrWVIFRl1t3FnZYc"><nothingHere/></meta-data>
+    </application>
+    <permission android:name="hk.mls.c21skyon.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="hk.mls.c21skyon.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,11 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.FLASHLIGHT</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.CHANGE_WIFI_STATE</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+  </under-specification>
+</comparison>

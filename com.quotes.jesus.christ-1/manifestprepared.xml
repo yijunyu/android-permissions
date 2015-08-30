@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.quotes.jesus.christ">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.quotes.jesus.christ.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.quotes.jesus.christ.AcercaDeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.quotes.jesus.christ.WebViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.airpush.android.SmartWallActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.airpush.android.BrowserActivity"><nothingHere/></activity>
+        <activity android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <meta-data android:name="com.airpush.android.APPID" android:value="162139"><nothingHere/></meta-data>
+        <meta-data android:name="com.airpush.android.APIKEY" android:value="android*1372179885152816537"><nothingHere/></meta-data>
+        <meta-data android:name="ADBUDDIZ_PUBLISHER_KEY" android:value="TEST_PUBLISHER_KEY"><nothingHere/></meta-data>
+    <receiver android:label="@string/widget_name" android:name="com.quotes.jesus.christ.MyNewWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.quotes.jesus.christ.8BITCLOCK_WIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/my_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:exported="false" android:name="com.airpush.android.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.airpush.android.PushService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

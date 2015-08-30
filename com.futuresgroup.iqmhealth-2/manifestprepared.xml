@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.futuresgroup.iqmhealth">
+    <application android:allowBackup="true" android:icon="@drawable/iqc" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.futuresgroup.iqmobile.IQMobileMain"><nothingHere/></activity>
+        <activity android:label="@string/htc_tittle" android:name="com.futuresgroup.htc.HTCMainActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.futuresgroup.iqmobile.DataView"><nothingHere/></activity>
+        <activity android:label="@string/defaulter_tittle" android:name="com.futuresgroup.contacttracking.ContactTrackingActivity1"><nothingHere/></activity>
+        <activity android:label="@string/defaulter_tittle" android:name="com.futuresgroup.contacttracking.ContactTrackingActivity2">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.futuresgroup.iqmobile.IQMobileMain"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.futuresgroup.iqmobile.DataTable"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.futuresgroup.contacttracking.PatientList"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.futuresgroup.iqmobile.UserSettings"><nothingHere/></activity>
+        <activity android:label="@string/home_visit_tittle" android:name="com.futuresgroup.homevisit.HomeVsistActivity"><nothingHere/></activity>
+        <activity android:label="@string/htc_tittle" android:name="com.futuresgroup.htc.PartialdataTable"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.futuresgroup.iqmhealth.LoginActivity" android:parentActivityName="com.futuresgroup.iqmobile.UserSettings" android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.futuresgroup.iqmobile.UserSettings"><nothingHere/></meta-data>
+            </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

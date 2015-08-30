@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jpsoft.audiofilecutter">
+- <application android:icon="@drawable/ringdroidlogo" android:label="@string/ringdroid_app_name">
+-  
+- <activity android:label="@string/main_activity_label" android:name=".RingdroidSelectActivity">
+- <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+- <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"><nothingHere/></action>
+                <android-data android:mimeType="audio/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.OPENABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.startapp.android.publish.AppWallActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+-  
+- <activity android:configChanges="keyboardHidden|orientation" android:name=".RingdroidEditActivity">
+- <intent-filter android:label="@string/edit_intent">
+                <action android:name="android.intent.action.EDIT"><nothingHere/></action>
+                <android-data android:mimeType="audio/*"><nothingHere/></android-data>
+            </intent-filter>
+        </activity>
+- <activity android:configChanges="keyboardHidden|orientation" android:name=".ChooseContactActivity"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

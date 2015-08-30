@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pns.bonenpot">
+    <application android:icon="@drawable/app_icon" android:label="Bone and Pot" android:launchMode="singleTask" android:theme="@style/ImageTargetsTheme">
+        <activity android:name="com.qualcomm.QCARSamples.ImageTargets.EtrifectaMain" android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qualcomm.QCARSamples.ImageTargets.info" android:screenOrientation="sensorPortrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="Map" android:name="com.qualcomm.QCARSamples.ImageTargets.mapV2"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCW_tiddvuhaDKAdxSjCDlUtx8V4nivIXI"><nothingHere/></meta-data>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.pns.bonenpot.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.pns.bonenpot.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission> ` </manifest>

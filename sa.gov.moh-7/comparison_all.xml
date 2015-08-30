@@ -1,0 +1,9 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.KILL_BACKGROUND_PROCESSES</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+  </under-specification>
+</comparison>

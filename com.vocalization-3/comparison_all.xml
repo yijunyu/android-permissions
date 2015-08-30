@@ -1,0 +1,6 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+  </under-specification>
+</comparison>

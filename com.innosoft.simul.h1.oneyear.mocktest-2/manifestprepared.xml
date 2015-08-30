@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.innosoft.simul.h1.oneyear.mocktest">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="com.innosoft.simul.library.Intro" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.innosoft.simul.library.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.PatternStudyActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.AllListenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.PlayAudio" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.PatternStudyFamousActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.PatternStudyInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.PatternAnalyze" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.QuestionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.AnswerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.WAnswerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.RealTestAnswerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.DictationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.DictAnswerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.DownloadZipActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.SettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.Infomation" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.SimulStore" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.innosoft.simul.library.CfAct" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    </manifest>

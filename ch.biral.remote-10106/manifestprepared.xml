@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="ch.biral.remote">
+    <application android:allowBackup="true" android:allowClearUserData="true" android:backupAgent="ch.biral.remote.Backup" android:icon="@drawable/ic_launcher_remote" android:label="@string/Application_Name" android:name=".Application" android:restoreAnyVersion="true">
+        <activity android:description="@string/Application_Description" android:exported="true" android:icon="@drawable/ic_launcher_remote" android:label="@string/Application_Name" android:name="ch.biral.remote.ui.Main" android:theme="@style/Biral"><nothingHere/></activity>
+        <activity android:description="@string/Application_Description" android:exported="true" android:icon="@drawable/ic_launcher_remote" android:label="@string/Application_Name" android:name="ch.biral.remote.ui.Splash" android:theme="@style/Biral">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:description="@string/Preferences_Description" android:icon="@drawable/ic_menu_preferences" android:label="@string/Preferences_Name" android:name=".ui.preferences.Activity" android:theme="@style/Biral">
+            <intent-filter>
+                <category android:name="android.intent.category.CATEGORY_PREFERENCE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <service android:description="@string/DB_Service_Description" android:enabled="true" android:exported="false" android:icon="@drawable/ic_launcher_remote" android:label="@string/DB_Service_Name" android:name=".db.Service"><nothingHere/></service>
+        <service android:description="@string/Socket_Service_Description" android:enabled="true" android:exported="false" android:icon="@drawable/ic_launcher_remote" android:label="@string/Socket_Service_Name" android:name=".socket.Service"><nothingHere/></service>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

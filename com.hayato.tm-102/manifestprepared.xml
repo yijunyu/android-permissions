@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hayato.tm">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_tapee" android:name="com.hayato.tm.TapeeActivity" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.hayato.tm.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hayato.tm.LoginActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_site_management" android:name="com.hayato.tm.SiteManagementActivity" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/title_activity_tag_management" android:name="com.hayato.tm.TagManagementActivity" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_tag_information" android:name="com.hayato.tm.TagInformationActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_tag_information" android:name="com.hayato.tm.S2TagInformationActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_url_information" android:name="com.hayato.tm.S2UrlInformationActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_write_tag" android:name="com.hayato.tm.WriteTagActivity" android:theme="@style/AppTheme"><nothingHere/></activity>
+    </application>
+<uses-feature android:name="android.hardware.nfc" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.NFC"><nothingHere/></uses-permission>
+    </manifest>

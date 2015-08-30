@@ -1,0 +1,288 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="org.stfrancis.mobile">
+    <application android:debuggable="false" android:icon="@drawable/applogo" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon30minus.ui.SplashScreen" android:screenOrientation="portrait" android:theme="@style/FadeNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon30minus.ui.MainView" android:theme="@style/FadeNoTitleBarTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.PreferencesView"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon30minus.ui.LoginViewDialog" android:theme="@style/ReverseVerticalDialogSlide"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.MFACodeCheckView" android:theme="@style/ReverseVerticalDialogSlide"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.MFAChannelSelectView" android:theme="@style/ReverseVerticalDialogSlide"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/ui_WalletLabel" android:name="org.wescom.mobilecommon30minus.ui.AccountListView" android:theme="@style/HorizontalSlideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_AboutLabel" android:name="org.wescom.mobilecommon30minus.ui.AboutView" android:theme="@style/HorizontalSlideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_FAQLabel" android:name="org.wescom.mobilecommon30minus.ui.FAQsView" android:theme="@style/HorizontalSlideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name="org.wescom.mobilecommon.ui.FindATMDetailsView" android:theme="@style/FixedVerticalDialogSlide"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_FindATMLabel" android:name="org.wescom.mobilecommon.ui.FindATMView" android:theme="@style/HorizontalSlideTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.AddressListView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.PhoneListView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.EmailListView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon30minus.ui.webView"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/ui_TransferLabel" android:name="org.wescom.mobilecommon30minus.ui.TransferFundsView" android:theme="@style/HorizontalSlideNoTitleBarTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ui_WalletLabel" android:name="org.wescom.mobilecommon.ui.OtherMemberAccountSelectView" android:theme="@style/HorizontalSlideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ui_WalletLabel" android:name="org.wescom.mobilecommon.ui.NewMemberAccountSelectView" android:theme="@style/HorizontalSlideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_WalletLabel" android:name="org.wescom.mobilecommon.ui.AccountSelectView" android:theme="@style/HorizontalSlideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_TransactionScreenTitle" android:name="org.wescom.mobilecommon30minus.ui.TransactionListView" android:theme="@style/HorizontalSlideNoFadeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.wescom.mobilecommon.ui.FacebookView">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.wescom.mobilecommon.ui.TwitterView">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.wescom.mobilecommon.ui.TwitterLoginView">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ui_LocationListScreenTitle" android:name="org.wescom.mobilecommon30minus.ui.LocationsListView" android:theme="@style/HorizontalSlideNoFadeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ui_CheckImagesScreenTitle" android:name="org.wescom.mobilecommon30minus.ui.CheckImageView" android:theme="@style/FadeNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ui_PendingTransactionDetailsScreenTitle" android:name="org.wescom.mobilecommon30minus.ui.PendingTransactionDetailsView" android:theme="@style/HorizontalSlideNoFadeNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_BillPayLabel" android:name="org.wescom.mobilecommon30minus.ui.BillPayView" android:theme="@style/HorizontalSlideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_BillPayScheduleLabel" android:name="org.wescom.mobilecommon.ui.BillPayScheduleView" android:theme="@style/HorizontalSlideNoFadeTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.BillPayAccountSelectView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.BillPayFrequencySelectView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.BillPayPayeeSelectView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_BillPayPendingLabel" android:name="org.wescom.mobilecommon30minus.ui.BillPayPendingListView" android:theme="@style/HorizontalSlideNoFadeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ui_BillPayPendingDetailsLabel" android:name="org.wescom.mobilecommon.ui.BillPayPendingDetailsView" android:theme="@style/HorizontalSlideNoFadeTheme" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_BillPayHistoryLabel" android:name="org.wescom.mobilecommon30minus.ui.BillPayHistoryListView" android:theme="@style/HorizontalSlideNoFadeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ui_BillPayHistoryDetailsLabel" android:name="org.wescom.mobilecommon.ui.BillPayHistoryDetailsView" android:theme="@style/HorizontalSlideNoFadeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon30minus.ui.GeezeoWebView" android:theme="@style/HorizontalSlideNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_BillPayLabel" android:name="org.wescom.mobilecommon30minus.ui.PayPalView" android:theme="@style/HorizontalSlideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_BillPayLabel" android:name="org.wescom.mobilecommon.ui.PayPalHowView" android:theme="@style/HorizontalSlideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_TransactionScreenTitle" android:name="org.wescom.mobilecommon30minus.ui.PayPalHistoryListView" android:theme="@style/HorizontalSlideNoFadeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ui_BillPayHistoryDetailsLabel" android:name="org.wescom.mobilecommon.ui.PayPalHistoryDetailsView" android:theme="@style/HorizontalSlideNoFadeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_BillPayScheduleLabel" android:name="org.wescom.mobilecommon.ui.PayPalPaymentView" android:theme="@style/HorizontalSlideNoFadeTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ui_BillPayScheduleLabel" android:name="org.wescom.mobilecommon.ui.PayPalConfirmationView" android:theme="@style/HorizontalSlideNoFadeTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.PayPalTypeSelectView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.PayPalRecipientView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/ui_TransferLabel" android:name="org.wescom.mobilecommon30minus.ui.LoanApplicationView" android:theme="@style/HorizontalSlideNoTitleBarTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.LoanTypeSelectView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.LoanTermSelectView" android:theme="@style/VerticalDialogSlide"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/ui_loanAppViewTitle" android:name="org.wescom.mobilecommon.ui.LoanApplicantView" android:theme="@style/HorizontalSlideNoTitleBarTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/ui_loanAppViewTitle" android:name="org.wescom.mobilecommon.ui.LoanReferenceView" android:theme="@style/HorizontalSlideNoTitleBarTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/ui_loanAppViewTitle" android:name="org.wescom.mobilecommon.ui.LoanEmployerView" android:theme="@style/HorizontalSlideNoTitleBarTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon30minus.ui.RemoteDepositView" android:theme="@style/HorizontalSlideNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon30minus.ui.RemoteDepositMenuView" android:theme="@style/HorizontalSlideNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon30minus.ui.RemoteDepositHistoryListView" android:theme="@style/HorizontalSlideNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.RemoteDepositHistoryDetailView" android:theme="@style/HorizontalSlideNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.RemoteDepositCamera" android:screenOrientation="landscape" android:theme="@style/HorizontalSlideNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.RemoteDepositStatusView" android:theme="@style/HorizontalSlideNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="org.wescom.mobilecommon.ui.RemoteDepositAccountSelectView" android:theme="@style/HorizontalSlideNoTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/appdata_mapKey"><nothingHere/></meta-data>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <instrumentation android:label="stfrancis" android:name="android.test.InstrumentationTestRunner" android:targetPackage="org.stfrancis.mobile"><nothingHere/></instrumentation>
+    <permission android:name="org.wescom.ibranch.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="org.wescom.ibranch.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+</manifest>

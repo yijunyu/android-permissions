@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="hu.gever.tivadarkemping">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="hu.gever.tivadarkemping.MainActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="hu.gever.tivadarkemping.FullImageActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="4030500"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB7Sewb6vH4Lwr3NORHQmna3ceS9ft82LY"><nothingHere/></meta-data>
+        <uses-library android:name="com.google.android.maps" android:required="true"><nothingHere/></uses-library>
+        </application>
+<permission android:name="hu.gever.tivadarkemping.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="hu.gever.tivadarkemping.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

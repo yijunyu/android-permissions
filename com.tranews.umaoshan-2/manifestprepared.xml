@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.tranews.umaoshan">
+    <application android:icon="@drawable/icon_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/main_content" android:name=".MainContent"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/menu_content" android:name=".MenuContent"><nothingHere/></activity>
+        <activity android:label="@string/open_map" android:name=".MyMapActivity"><nothingHere/></activity>
+        <activity android:label="@string/fans" android:name=".FansPage"><nothingHere/></activity>
+        <activity android:label="@string/submit" android:name=".ShareTo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

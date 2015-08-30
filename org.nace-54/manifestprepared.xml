@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:debuggable="true" package="org.nace">
+    <application android:icon="@drawable/nace_icon1" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation" android:label="@string/title_activity_main" android:name=".SplashView" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name=".LogScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".NaceActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name=".TermsOfCondition" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".Grade" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".InfoScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".SettingsActivitynew" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".EditPicture" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".MyCertificates" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".MyApplications" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".ContactUs" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.Calculator" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.OhmCalculator" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.AnodeResistance" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.GalvanicAnode" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.RectifierEfficiency" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.RectEfficiencyCalc" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.ConversionCalculator" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.WeightCalculator" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.CoatingCalculators" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.CoatingCalcOptions" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.SurfaceAreaCalculators" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.Resistance" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".calculators.CoatingCoverage" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".Verify" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".SettingsFinal" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+    </application>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

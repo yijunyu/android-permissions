@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.teneues.coolcities.shanghai">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/city_name_localized" android:name="com.teneues.tnguide.GuideApplication" android:theme="@style/Theme.messeguidetheme">
+        <activity android:label="@string/city_name_localized" android:launchMode="singleTask" android:name="com.teneues.tnguide.activities.StartActivity" android:noHistory="true" android:theme="@style/Theme.messeguidetheme_noActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tndmSha"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.teneues.tnguide.activities.MesseGuideMainMenuActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.MainMenuActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.ApproachActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.MesseGuideSiteMapActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.CCPoiDetailActivity" android:theme="@style/Theme.messeguidetheme_Trans"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.MapViewActivity" android:theme="@style/Theme.coolcities"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.SettingsActivity" android:theme="@style/Theme.Sherlock.Light"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.CityInfosActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.PublicTransportInfoActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.LinePlanActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.PhotoCreditsCategoryActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.PhotoCreditsActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.PhotoCreditDetailActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.OfflineMapActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.AdditionalAppsActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.MesseGuideFairImpressionsActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.NonCCPoiDetailActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.MyCityActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.VisualTourActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.GalleryActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.MyFavoritesActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.PoiFilterActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.PoiFilterMultipleChoiceActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.PoiFilterRangeActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.MapViewTourActivity" android:theme="@style/Theme.messeguidetheme"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.MyTourActivity"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.MapViewRouteActivity" android:theme="@style/Theme.messeguidetheme"><nothingHere/></activity>
+        <activity android:name="com.teneues.tnguide.activities.BrowserActivity"><nothingHere/></activity>
+        <receiver android:name="com.teneues.tnguide.gcm.broadcast.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.teneues.tnguide"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+    </application>
+    <permission android:name="com.teneues.tnguide.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.teneues.tnguide.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,146 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.media5corp.m5f.PoltysRcs">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/appApplicationLabel" android:name="com.media5corp.m5f.Common.CAppSfone" android:theme="@style/Theme.m5fApplication">
+        <activity android:name="com.media5corp.m5f.Rcs.CActStartUpSphere">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+                <android-data android:scheme="tel"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL"><nothingHere/></action>
+                <action android:name="android.intent.action.CALL_PRIVILEGED"><nothingHere/></action>
+                <android-data android:scheme="tel"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+                <android-data android:mimeType="application/pdf"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"><nothingHere/></android-data>
+                <android-data android:mimeType="application/msword"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.ms-excel"><nothingHere/></android-data>
+                <android-data android:mimeType="text/plain"><nothingHere/></android-data>
+                <android-data android:mimeType="application/rtf"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.ms-powerpoint"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"><nothingHere/></android-data>
+                <android-data android:mimeType="application/zip"><nothingHere/></android-data>
+                <android-data android:mimeType="application/x-rar-compressed"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+                <android-data android:mimeType="application/pdf"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"><nothingHere/></android-data>
+                <android-data android:mimeType="application/msword"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.ms-excel"><nothingHere/></android-data>
+                <android-data android:mimeType="text/plain"><nothingHere/></android-data>
+                <android-data android:mimeType="application/rtf"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.ms-powerpoint"><nothingHere/></android-data>
+                <android-data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"><nothingHere/></android-data>
+                <android-data android:mimeType="application/zip"><nothingHere/></android-data>
+                <android-data android:mimeType="application/x-rar-compressed"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.media5corp.m5f.Rcs.CActMainSphereTablet" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.media5corp.m5f.Rcs.CActMainSpherePhone" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.media5corp.m5f.Rcs.CActIncomingSessionDialog" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.media5corp.m5f.Rcs.CActDialSphere" android:theme="@style/Activity_NoActionBar_Dialog"><nothingHere/></activity>
+        <activity android:name="com.media5corp.m5f.Rcs.Settings.CActPrefSettingsSphere"><nothingHere/></activity>
+        <activity android:name="com.media5corp.m5f.Rcs.Settings.CActPrefBlockedNumbersSphere"><nothingHere/></activity>
+        <activity android:name="com.media5corp.m5f.Rcs.Settings.CActPrefBlockedNumberSphere"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Rcs.CActSignInSphere" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Rcs.CActSignInJoyn" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Rcs.CActSignInJoynPasscode" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActAbout" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActContacts" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActDial" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActFavorites" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActHelp" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.media5corp.m5f.Common.CActInCall" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.media5corp.m5f.Common.CActInCallDialer" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.media5corp.m5f.Common.CActMain" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActMore" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActNetworkTraces" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActRecent" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActSignIn" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActSignOut" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActTraces" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActVoicemail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.CActWelcome" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPreconfIpPbxSelection" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPreconfItspSelection" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefAccount" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefAccountList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefAdvanced" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefAdHocConference" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefBandwidthModifier" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefCodecs" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefHoldAndResume" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefKeepAlive" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefPresenceAndXcap" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefPresenceAuthList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefPresence" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefXcap" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefServers" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefSettings" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefTraceNodes" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefVideo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefVideoCodec" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefVideoSharing" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefImageSharing" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefFileTransfer" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefIM" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActNewAccountWizard" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefTelUri" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefCapabilityDiscovery" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefBlockedNumbers" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.media5corp.m5f.Common.Settings.CActPrefBlockedNumber" android:screenOrientation="portrait"><nothingHere/></activity>
+        <provider android:authorities="@string/appApplicationFileProviderName" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"><nothingHere/></meta-data>
+        </provider>
+    <receiver android:name="com.media5corp.m5f.Common.CAutoStartBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/appApplicationName" android:name="com.media5corp.m5f.Common.CSvcSfone"><nothingHere/></service>
+        </application>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-configuration android:reqTouchScreen="stylus"><nothingHere/></uses-configuration>
+    <uses-configuration android:reqTouchScreen="finger"><nothingHere/></uses-configuration>
+    <uses-feature android:name="android.hardware.touchscreen"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.microphone"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.portrait"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

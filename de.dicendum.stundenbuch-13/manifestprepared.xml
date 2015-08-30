@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="de.dicendum.stundenbuch">
+    <application android:alwaysDrawnWithCache="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".GlobalClass" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/title_activity_stbsplash_screen" android:name=".STBSplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".STBContentViewController" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".STBSettingsViewController" android:screenOrientation="portrait"><nothingHere/></activity>
+        <receiver android:enabled="true" android:name="de.dicendum.stundenbuch.ReminderReceiver"><nothingHere/></receiver>
+        <service android:name=".ReminderService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

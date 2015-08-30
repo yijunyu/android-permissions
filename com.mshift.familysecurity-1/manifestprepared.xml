@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mshift.familysecurity">
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".SplashScreen" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".MShiftTabBarWidget" android:theme="@android:style/Theme.NoTitleBar">
+            <action android:name="com.mshift.MShiftTabBarWidget"><nothingHere/></action>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".RegularBankingActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".LocationsActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

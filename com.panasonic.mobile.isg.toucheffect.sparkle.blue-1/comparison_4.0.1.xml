@@ -1,0 +1,6 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.SYSTEM_ALERT_WINDOW</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

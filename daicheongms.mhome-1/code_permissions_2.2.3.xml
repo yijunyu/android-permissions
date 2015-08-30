@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/pths/mhome/PthsActivity.java</file>
+    <line>21</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/pths/mhome/PthsActivity.java</file>
+    <line>39</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/pths/mhome/PthsActivity$DraptWebViewClient.java</file>
+    <line>50</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

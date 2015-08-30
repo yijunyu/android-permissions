@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mathmaverick.satmathadaysampler">
+    <application android:icon="@drawable/icon" android:label="SAT Math Problem-A-Day Sampler">
+        <activity android:label="SAT Math Problem-A-Day Sampler" android:name=".SATMathADaySamplerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:name=".SecondAct" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".ThirdAct"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

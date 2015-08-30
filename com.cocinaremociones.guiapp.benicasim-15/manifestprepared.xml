@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.cocinaremociones.guiapp.benicasim">
+    <application android:icon="@drawable/icono" android:label="@string/app_name">
+        <activity android:configChanges="orientation" android:name="com.cocinaremociones.guiapp.benicasim.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="navigation|orientation|screenSize" android:name="com.cocinaremociones.guiapp.benicasim.Listad22" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="navigation|orientation|screenSize" android:label="@string/title_activity_detalles" android:name="com.cocinaremociones.guiapp.benicasim.Detalles" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="navigation|orientation|screenSize" android:label="@string/title_activity_carga_web" android:name="com.cocinaremociones.guiapp.benicasim.CargaWeb"><nothingHere/></activity>
+        <activity android:name="com.cocinaremociones.guiapp.benicasim.Votaciones" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.cocinaremociones.guiapp.benicasim.Comentario" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_oferta" android:name="com.cocinaremociones.guiapp.benicasim.Oferta"><nothingHere/></activity>
+        <activity android:name="com.cocinaremociones.guiapp.benicasim.AlertaMensaje" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.cocinaremociones.guiapp.benicasim.AlertaMensaje2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_audio_guia" android:name="com.cocinaremociones.guiapp.benicasim.AudioGuia" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_subscripciones" android:name="com.cocinaremociones.guiapp.benicasim.Subscripciones" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.cocinaremociones.guiapp.benicasim.Download" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="navigation|orientation|screenSize" android:name="com.cocinaremociones.guiapp.benicasim.Mapav2" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="navigation|orientation|screenSize" android:name="com.cocinaremociones.guiapp.benicasim.Mapav2One" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDnGk6Nnt7kRr0Th469BWLqqCOrNRVAobo"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.parse.PushService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

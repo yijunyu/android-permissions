@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.codymace.colormatch">
+    <application android:allowBackup="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+        <activity android:label="@string/app_name" android:name="com.codymace.colormatch.GameActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.codymace.colormatch.HomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_top_scores" android:name="com.codymace.colormatch.TopScoresActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.revmob.ads.fullscreen.FullscreenActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <meta-data android:name="com.revmob.app.id" android:value="5418b515f7c511ad48879fff"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id"><nothingHere/></meta-data>
+    </application>
+<meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"><nothingHere/></meta-data>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

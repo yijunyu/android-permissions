@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.T2corp.DarkDungeonI">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:exported="true" android:label="@string/wallpaper_settings" android:name="DarkDungeonISettings"><nothingHere/></activity>
+    <service android:enabled="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.T2corp.DarkDungeonI.DarkDungeonI" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter android:priority="1">
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"><nothingHere/></meta-data>
+        </service>
+        </application>
+<uses-feature android:glEsVersion="0x20000" android:name="android.software.live_wallpaper" android:required="true"><nothingHere/></uses-feature>
+    </manifest>

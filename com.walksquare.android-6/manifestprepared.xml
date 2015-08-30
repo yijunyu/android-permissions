@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.walksquare.android">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="WalksquareApplication">
+        <activity android:label="@string/app_name" android:name=".Home" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/activity_settings" android:name=".Walksquare" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/pedometer_title" android:name=".Pedometer" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/activity_settings" android:name=".Settings" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/about_title" android:name=".About" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="Snaptic Note" android:name=".Snaptic" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/walklogger_title" android:name=".WalkLogger" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <service android:name=".StepService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/HKExpo/kineticspace/net/information.java</file>
+    <line>108</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/HKExpo/kineticspace/net/latestnew.java</file>
+    <line>66</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/HKExpo/kineticspace/net/mainScreen.java</file>
+    <line>35</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/HKExpo/kineticspace/net/sellticket.java</file>
+    <line>65</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/HKExpo/kineticspace/net/floorplan.java</file>
+    <line>64</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/HKExpo/kineticspace/net/whathot.java</file>
+    <line>65</line>
+    <permissions/>
+  </call>
+</calls>

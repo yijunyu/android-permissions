@@ -1,0 +1,176 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.codexmind.florahotelapartments">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.codexmind.florahotelapartments.SplashScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.codexmind.florahotelapartments.ActivityMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityStartExploring" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityStartExplore_Sub1_Sub1" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityStartExplore_Sub1_Sub3" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityStartExplore_Sub1_Sub5" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityStartExplore_Sub1_Sub7" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityStartExplore_Sub1_Sub8" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityStartExplore_Sub1_Sub9" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityShowDetails" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityShare" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityStartExplore_Sub1_Sub3_Sub" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.Activity_Gallery_Sliding" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:name="com.codexmind.florahotelapartments.Rooms_Displayimage" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityInfoAboutHotel" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityTodayInStockHolm" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityArticle" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_activity_start_explore__sub1__sub5" android:name="com.codexmind.florahotelapartments.ActivityStartExplore_Sub1_Sub6"><nothingHere/></activity>
+        <activity android:name="com.codexmind.florahotelapartments.Activity_Info_about_hotel_Gallery_Sliding" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityAboutUs" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityHotelFacilities" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityHotelFacilitiesShowDetails" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivitySpecialOffers" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_activity_special_offers__show_details" android:name="com.codexmind.florahotelapartments.ActivitySpecialOffers_ShowDetails"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_activity_main_map" android:name="com.codexmind.florahotelapartments.ActivityMainMap" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_activity_main_map" android:name="com.codexmind.florahotelapartments.ActivityMainMapOnly" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityMainMap1" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityShowCityMap" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_mapdemouptobottom" android:name="com.codexmind.florahotelapartments.Mapdemouptobottom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="Activity offline map" android:name="com.codexmind.florahotelapartments.ActivityOflineMap">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="Map" android:name="com.codexmind.florahotelapartments.ActivityMainMapNeighborhood">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityStartExplore_MyStockHolm_GalleryView" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:name="com.codexmind.florahotelapartments.Webviewhotel" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityInfoAbtHotelMisc" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityInfoAbtHotelMiscDetails" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.codexmind.florahotelapartments.ActivityMaster" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDBFMaVhiTXqvIz7q7GbtQpWEpeJZNPWvM"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

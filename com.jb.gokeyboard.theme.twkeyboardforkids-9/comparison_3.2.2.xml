@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.READ_LOGS</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+  </under-specification>
+</comparison>

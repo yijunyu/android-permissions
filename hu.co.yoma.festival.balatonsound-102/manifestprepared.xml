@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="hu.co.yoma.festival.balatonsound">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".FestivalApp">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name=".MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <receiver android:enabled="true" android:name=".receivers.NetworkStateChangedReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:enabled="true" android:label="NotificationService" android:name=".services.NotificationService">
+            <intent-filter>
+                <action android:name="hu.co.yoma.festival.balatonsound.services.NotificationService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:label="MyLocationService" android:name=".services.MyLocationService"><nothingHere/></service>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+</manifest>

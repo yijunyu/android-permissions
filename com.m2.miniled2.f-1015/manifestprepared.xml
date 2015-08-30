@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.m2.miniled2.f">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".Main" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ConsentDialog" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".activity.Creat_a_Board" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".activity.Led_List" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".activity.Creat_Light_Stick" android:screenOrientation="landscape"><nothingHere/></activity>
+        <service android:enabled="true" android:label="@string/app_name" android:name=".live_wallpaper.LedWallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"><nothingHere/></meta-data>
+        </service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

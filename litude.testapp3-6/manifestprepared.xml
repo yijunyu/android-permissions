@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="litude.testapp3">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="litude.testapp3.MyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="capsule" android:name="litude.testapp3.capsule"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_cone" android:name="litude.testapp3.cone"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_silo" android:name="litude.testapp3.silo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_sphere" android:name="litude.testapp3.sphere"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_rectangular" android:name="litude.testapp3.rectangular"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tube" android:name="litude.testapp3.tube"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_prism" android:name="litude.testapp3.prism"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_pyramid" android:name="litude.testapp3.pyramid"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

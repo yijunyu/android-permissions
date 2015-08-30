@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.broov.freemuslimbabynames">
+    <application android:icon="@drawable/baby_icon" android:label="@string/app_name" android:theme="@android:style/Theme.Light">
+        <activity android:alwaysRetainTaskState="false" android:clearTaskOnLaunch="true" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:name=".SplashLoadingScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainClient" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".MainWindow" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".Numerology" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".SearchMain" android:theme="@style/Theme.NoTitleBar.WithColoredSpinners" android:windowSoftInputMode="adjustNothing|stateVisible"><nothingHere/></activity>
+        <activity android:name=".ContentView" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".PollOption" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustNothing|stateVisible"><nothingHere/></activity>
+        <activity android:name=".FacebookPoll" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustNothing|stateVisible"><nothingHere/></activity>
+        <activity android:name=".Favorites" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".BabyNamesList" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".PopularCategories" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".ModernNamesPage" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".PopularCategoriesNamesList" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".SearchResultsNamesList" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".SplashScreen" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/feedback" android:name=".Feedback"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.inmobi.androidsdk.IMBrowserActivity"><nothingHere/></activity>
+    </application>
+<supports-screens android:anyDensity="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

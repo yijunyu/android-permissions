@@ -1,0 +1,15 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.READ_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.CHANGE_NETWORK_STATE</permission>
+    <permission>android.permission.BLUETOOTH</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+  </under-specification>
+</comparison>

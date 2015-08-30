@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="de.TLabs.moccha">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/MyTitleBar">
+        <activity android:label="@string/app_name" android:name=".Registration" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="de.TLabs.moccha.MoCChaActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.settings.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.settings.BackgroundSetting" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.utils.SettingTextView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.CanteenTabHost" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.Favorites" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.UniCanteenExpanList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.Map" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.Sheduling" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.CanteenWeekMenuTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.MealDetails" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.CanteenMapViewer" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.DayMealMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.canteen.CanteenInformation" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.buildingPlan.BuildingPlan" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.buildingPlan.BuildingsMapViewer" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.studies.Study" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.utils.WebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.utils.CustomListView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.utils.EventsDetails" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.tucourses.TUCoursesTabHost" android:screenOrientation="portrait" android:theme="@style/MyTitleBar"><nothingHere/></activity>
+        <activity android:name="de.TLabs.tucourses.TUCoursesTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.tucourses.TUCoursesFirstSubTable" android:screenOrientation="portrait" android:theme="@style/MyTitleBar"><nothingHere/></activity>
+        <activity android:name="de.TLabs.tucourses.KursTerminDetails" android:screenOrientation="portrait" android:theme="@style/MyTitleBar"><nothingHere/></activity>
+        <activity android:name="de.TLabs.tucourses.KursDetails" android:screenOrientation="portrait" android:theme="@style/MyTitleBar"><nothingHere/></activity>
+        <activity android:name="de.TLabs.tucourses.TUCoursesFavorites" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.udkcourses.UDKCoursesTabHost" android:screenOrientation="portrait" android:theme="@style/MyTitleBar"><nothingHere/></activity>
+        <activity android:name="de.TLabs.udkcourses.UDKCoursesTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.udkcourses.UDKCoursesFirstSubTable" android:screenOrientation="portrait" android:theme="@style/MyTitleBar"><nothingHere/></activity>
+        <activity android:name="de.TLabs.udkcourses.UDKKursTerminDetails" android:screenOrientation="portrait" android:theme="@style/MyTitleBar"><nothingHere/></activity>
+        <activity android:name="de.TLabs.udkcourses.UDKKursDetails" android:screenOrientation="portrait" android:theme="@style/MyTitleBar"><nothingHere/></activity>
+        <activity android:name="de.TLabs.udkcourses.UDKCoursesFavorites" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.staatsoper.StaatsOperActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.staatsoper.GalerieGrid" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.staatsoper.ImageViewer" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.tubevents.TUBEventActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.twitter.TwitterActivity" android:screenOrientation="portrait" android:theme="@style/MyTitleBar"><nothingHere/></activity>
+        <activity android:name="de.TLabs.contacts.ContactsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.utils.SearchCourse" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.TLabs.examinationoffice.ExaminationOffice" android:screenOrientation="portrait"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCiLaMk4VAImmYhlMiSg6z-6XPjGjiTE8o"><nothingHere/></meta-data>
+    </application>
+<permission android:name="de.TLabs.moccha.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="de.TLabs.moccha.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

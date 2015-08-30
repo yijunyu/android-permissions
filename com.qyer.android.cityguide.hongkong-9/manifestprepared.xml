@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.qyer.android.cityguide.hongkong">
+    <application android:debuggable="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.qyer.android.cityguide.hongkong.AppContext">
+        <activity android:name="com.qyer.android.cityguide.activity.LauncherActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qyer.android.cityguide.activity.AdvertActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.AccountLoginActivity" android:screenOrientation="portrait" android:theme="@style/theme_act_anim_push" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.AccountRegisterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.AccountLoginUnitedActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.MainRecommendActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.DestPoiListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.DestHotelListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.MainMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.CityIntroductionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.CitySubjectDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.qyer.android.cityguide.activity.PoiDetailActivity" android:screenOrientation="sensor" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.NearPoiListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.SharePoiActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Dialog"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.PoiIntroductionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.BrowserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.PoiCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.PoiCommentEditActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Push_Dialog" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.PoiPhotoAlbumActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.PoiPhotoBrowseActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.MainMoreActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.ShareConfigActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.RecommendAppActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.FeedBackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.qyer.android.cityguide.activity.ShareAppActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qyer.android.sns.activity.SinaOauthActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qyer.android.sns.activity.TencentOauthActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qyer.android.sns.activity.SinaWeiboEditActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qyer.android.sns.activity.TencentEditActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qyer.android.sns.activity.SinaWeiboSsoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="UMENG_APPKEY" android:value="516d1c8a527015bcad000001"><nothingHere/></meta-data>
+        <meta-data android:name="UMENG_CHANNEL" android:value="google"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyD8tUb8Y46GD9UA0Cyc-QsEaGzwRRwXtFw"><nothingHere/></meta-data>
+    <receiver android:name="com.qyer.android.cityguide.receiver.PushMessageAlarmer"><nothingHere/></receiver>
+        <receiver android:name="com.qyer.android.cityguide.receiver.YahooWeatherAlarmer"><nothingHere/></receiver>
+        <receiver android:name="com.qyer.android.cityguide.receiver.CityAlarmer"><nothingHere/></receiver>
+        <service android:name="net.tsz.afinal.http.DownloadService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+<uses-feature android:glEsVersion="131072" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.qyer.android.cityguide.hongkong.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

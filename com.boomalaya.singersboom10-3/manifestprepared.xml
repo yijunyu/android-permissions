@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.boomalaya.singersboom10">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".IshayLeviActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".VideosTabActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".HomeTabActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".ShowsTabActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".MessagesTabActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".ImagesTabActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="&#1499;&#1514;&#1489;&#1493;&#1514;" android:name=".ArticlesTabActivity"><nothingHere/></activity>
+        <activity android:name=".MoreTabActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".AboutSubject" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".AboutApp" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".VideoItemActivity"><nothingHere/></activity>
+        <activity android:name=".ImageItemsActivity"><nothingHere/></activity>
+        <activity android:name=".ArticleItemActivity"><nothingHere/></activity>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.boomalaya.singersboom10"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+    </application>
+<permission android:name="com.boomalaya.singersboom10.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.boomalaya.singersboom10.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

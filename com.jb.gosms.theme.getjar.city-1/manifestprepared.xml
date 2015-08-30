@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jb.gosms.theme.getjar.city">
+    <application android:icon="@drawable/jb_smsmms" android:label="@string/app_name" android:name=".ThemeApp">
+        <activity android:excludeFromRecents="true" android:label="@string/app_name_desc" android:launchMode="singleInstance" android:name=".GoSmsInstallDialog" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:name=".ApplyThemeActivity" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="com.jb.gosms.theme.getjar.applytheme.new"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name_desc" android:name=".ForSearchSms" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.jb.mms.theme.offical.getjar.new"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThemeApplyPreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".ThemePreviewActivity"><nothingHere/></activity>
+        <receiver android:name=".ComponentControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="indivipopup.close.window.operation"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

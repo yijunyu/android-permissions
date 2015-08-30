@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.BLUETOOTH</name>
+  </permission>
+  <permission>
+    <name>android.permission.BLUETOOTH_ADMIN</name>
+  </permission>
+  <permission>
+    <name>android.permission.CAMERA</name>
+  </permission>
+  <permission>
+    <name>android.permission.WAKE_LOCK</name>
+  </permission>
+</permissions>

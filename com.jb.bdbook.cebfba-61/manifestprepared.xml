@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:label="@string/ggbook_name" package="com.jb.bdbook.cebfba">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/ggbook_name" android:theme="@style/ContentOverlay1">
+        <activity android:name="jb.activity.mbook.MBookApp" android:screenOrientation="portrait" android:theme="@style/StartActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ggbook_filter_name" android:launchMode="singleTask" android:name="com.ggbook.activity.BlankStartActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/StartActivityTheme"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:label="@string/ggbook_filter_name" android:launchMode="singleTask" android:name="com.ggbook.fragment.BookFragmentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.help.HelpActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.user.UserAvatarActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.appcenter.AppCenterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.user.UserLoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.user.FindPWActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.ggbook.user.PhoneRegisterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.setting.SettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.recharge.RechargeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.limitFree.LimitFreeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.monthly.MonthlyListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.monthly.MonthlyDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.monthly.PersonalMonthlyListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.ggbook.search.SearchBookActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.bookimport.BookImportActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.introduction.BookIntroductionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.special.BookSpecialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.ggbook.category.BookCategoryBookListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.ggbook.topic.BookTopicItemActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.ggbook.readpage.BookReadActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.superbook.SuperBookActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.activity.BookServerPageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.recentlyread.BookRecentlyReadActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.readending.ReadeEndingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:launchMode="singleTask" android:name="com.tencent.tauth.TAuthView" android:theme="@style/ThemeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="auth"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="com.jiubang.report.CrashReportDialog" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.ggbook.rechargerecord.BookRechargeRecordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.ggbook.consumerecord.BookConsumeRecordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.ggbook.msgcenter.BookMsgCenterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.activity.BookListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.ggbook.user.EditUserInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="jb.activity.mbook.wxapi.WXPayEntryActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowNoTitle="true"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.ggbook.topic.BookTopicActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+    <meta-data android:name="versionCode" android:value="61"><nothingHere/></meta-data>
+        <meta-data android:name="versionName" android:value="7.5.3"><nothingHere/></meta-data>
+        <meta-data android:name="ProductType" android:value="sgl"><nothingHere/></meta-data>
+        <meta-data android:name="isEmbedded" android:value="0"><nothingHere/></meta-data>
+        <meta-data android:name="isHtmlEnabled" android:value="1"><nothingHere/></meta-data>
+        <receiver android:name="jb.activity.mbook.wxapi.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+</manifest>

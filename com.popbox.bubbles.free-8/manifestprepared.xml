@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.popbox.bubbles.free">
+    <application android:icon="@drawable/icon" android:label="@string/wallpaper_bubbles">
+        <activity android:exported="true" android:label="@string/bubbles_settings_title" android:name="BubblesSettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.popbox.bubbles.common.BubblesInfoActivity" android:screenOrientation="portrait" android:theme="@style/Dim"><nothingHere/></activity>
+        <activity android:name="com.popbox.bubbles.common.BubblesColorPreviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.popbox.bubbles.common.BubblesColorStrengthPreviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.popbox.bubbles.common.BubblesBouncePreviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.popbox.bubbles.common.BubblesElastPreviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.popbox.bubbles.common.BubblesRadiusPreviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.popbox.bubbles.common.BubblesGravityPreviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.popbox.bubbles.common.BubblesNumPreviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.popbox.bubbles.common.BubblesShadowPreviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <service android:label="@string/wallpaper_bubbles" android:name="com.popbox.bubbles.common.BubblesService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/bubbles"><nothingHere/></meta-data>
+        </service>
+        </application>
+<uses-feature android:glEsVersion="0x10001" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    </manifest>

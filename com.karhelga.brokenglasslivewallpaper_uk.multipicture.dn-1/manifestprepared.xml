@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.karhelga.brokenglasslivewallpaper_uk.multipicture.dn">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true">
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.MultiPictureSetting"><nothingHere/></activity>
+        <activity android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.QRViewer" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light"><nothingHere/></activity>
+        <activity android:icon="@drawable/ic_picsource_album" android:label="@string/pref_album_title" android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.picsource.AlbumSource">
+            <intent-filter>
+                <action android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.action.GET_PICTURE_SOURCE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/ic_picsource_folder" android:label="@string/pref_folder_title" android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.picsource.FolderSource">
+            <intent-filter>
+                <action android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.action.GET_PICTURE_SOURCE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/folder_picker_title" android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.picsource.FolderPicker"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.LaunchDispatcher" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/shortcut_name_settings" android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.CreateShortcut" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+    <service android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.MultiPictureService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/multipicture"><nothingHere/></meta-data>
+        </service>
+        <service android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.picsource.SinglePickService">
+            <intent-filter>
+                <action android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.plugin.LazyPickService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.picsource.AlbumPickService">
+            <intent-filter>
+                <action android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.plugin.LazyPickService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.picsource.FolderPickService">
+            <intent-filter>
+                <action android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.plugin.LazyPickService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.picsource.FolderDirectPickService" android:process=":internalPlugin">
+            <intent-filter>
+                <action android:name="com.karhelga.brokenglasslivewallpaper_uk.multipicture.plugin.LazyPickService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    </manifest>

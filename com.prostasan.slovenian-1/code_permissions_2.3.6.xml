@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/prostasan/home/InfoActivity.java</file>
+    <line>101</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/prostasan/home/HomeActivity.java</file>
+    <line>233</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

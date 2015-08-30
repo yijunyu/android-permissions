@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.FIMobile.Consumers">
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".push.MessageActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".Maps.EmbeddedMap" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".Maps.LocationDetails" android:screenOrientation="sensor" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name=".BackToHomePageDialog" android:screenOrientation="sensor" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:clearTaskOnLaunch="false" android:configChanges="keyboardHidden|orientation|screenSize" android:finishOnTaskLaunch="false" android:launchMode="singleTask" android:name=".Launcher" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:finishOnTaskLaunch="false" android:launchMode="singleTask" android:name=".Fi_Mobile" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name=".HomePage" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".profit.ProfitEnrollForm" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".profit.ProfitChangePassword" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:name=".Products" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name=".Browser" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".ATMLocator" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".HtmlBrowser" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".LocationDetailsList" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name=".RDLogin" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".RDMenu" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".RDTransactionsList" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name=".RDTransactionReview" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".RDCalculator" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".CameraActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".PreviewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".RDDepositStatus" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".RDShowCheckImage" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".bluepoint.BPMenu" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".bluepoint.BPMakeDeposit" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".bluepoint.BPDepositStatus" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".bluepoint.BPTransactionReview" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".bluepoint.BPTransactionsList" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".profit.ProfitMenu" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".profit.ProfitMakeDeposit" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".profit.ProfitDepositStatus" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".profit.ProfitTransactionReview" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".profit.ProfitTransactionsList" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".SilverCloud" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="fimobile.android"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET" android:required="true"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" android:required="true"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

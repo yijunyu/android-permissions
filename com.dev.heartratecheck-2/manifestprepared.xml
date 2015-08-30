@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dev.heartratecheck">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.dev.heartratecheck.HeartRateCheckActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="GRAPHS" android:name="com.dev.heartratecheck.HeartRateCheckActivityGraphsDisplay" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="INTRO" android:name="com.dev.heartratecheck.HeartRateCheckActivityDisplay" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay3" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay4" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay5" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay6" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay7" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay8" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay9" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay10" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay11" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay12" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay13" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay14" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay15" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay16" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay17" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay18" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay19" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay20" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay21" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="HEART RATE" android:name="com.dev.heartratecheck.HeartRateCheckActivityMainDisplay22" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="CONFIGURATION" android:name="com.dev.heartratecheck.ConfigActivity"><nothingHere/></activity>
+        <activity android:label="EXPORT" android:name="com.dev.heartratecheck.ExportActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="EMAIL" android:name="com.dev.heartratecheck.EmailDatabase" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="EDIT ITEM" android:name="com.dev.heartratecheck.EditItemActivity3" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="LIST" android:name="com.dev.heartratecheck.ListViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="E-MAIL DATABASE" android:name="com.dev.heartratecheck.UtilitiesActivity2"><nothingHere/></activity>
+        <activity android:label="HELP" android:name="com.dev.heartratecheck.HelpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="FACEBOOK" android:name="com.dev.heartratecheck.FaceBookActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="SHARE" android:name="com.dev.heartratecheck.OtherEmailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="SHARE" android:name="com.dev.heartratecheck.OtherEmailActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="WEB SITE" android:name="com.dev.heartratecheck.WebSiteViewActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    </application>
+    <permission android:name="android.permission.FLASHLIGHT" android:permissionGroup="android.permission-group.HARDWARE_CONTROLS" android:protectionLevel="normal"><nothingHere/></permission>
+<supports-screens android:anyDensity="false" android:resizeable="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    </manifest>

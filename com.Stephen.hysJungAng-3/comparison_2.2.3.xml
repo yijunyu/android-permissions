@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_SETTINGS</permission>
+    <permission>android.permission.INTERNET</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

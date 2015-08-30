@@ -1,0 +1,229 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.webileapps.resolutions">
+    <application android:debuggable="false" android:icon="@drawable/rt_appicon" android:label="@string/app_name" android:name="com.webileapps.resolutions.app.ResolutionsApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".DemoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".LoginScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".LoginScreenActivityNew" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".UserSignUpActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".UniqueNameSelectionActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ResolutionsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ResolutionDetailActivityNew" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ComposeResolutionActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".OptionsPageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ContactsEmailPickListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".NotificationsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".SettingsPageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".FeedbackActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".WebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="rt"><nothingHere/></android-data>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".InviteThruEmailsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.InviteFriendsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".CommitterResolutionDetailActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.ContactsEmailListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.BuddiesListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.ContactsFBListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.SearchRTUsersListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.ResolutionDetailFriendsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/pending_requests" android:name="com.webileapps.resolutions.PendingRequestsListActivityNew" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/pending_requests" android:name="com.webileapps.resolutions.CommentPicturePostActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.ProgressTrackingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.CommitterResolutionConversationActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.UserProfilePageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.ResolutionConversationActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.XDMActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="@string/prod_domain" android:scheme="http"><nothingHere/></android-data>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.MilestonesActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.GoogleAccountsLoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.webileapps.resolutions.TaskStackBuilderProxyActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.webileapps.resolutions.FloatingWindowActivity" android:theme="@style/AppTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/prod_applicationId"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.webileapps.resolutions"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="@bool/has_honeycomb" android:label="ResolutionTweet" android:name="com.webileapps.resolutions.widgets.RTWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/rt_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.webileapps.resolutions.ReminderActivity"><nothingHere/></receiver>
+        <receiver android:name="com.webileapps.resolutions.receivers.SnoozeActionReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:name="com.webileapps.resolutions.receivers.ResolutionBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="@bool/has_honeycomb" android:exported="false" android:name="com.webileapps.resolutions.services.RTWidgetRemoteViewService" android:permission="android.permission.BIND_REMOTEVIEWS"><nothingHere/></service>
+        <service android:name="com.webileapps.resolutions.services.CheckinService"><nothingHere/></service>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+        <service android:name="com.webileapps.resolutions.services.RTFloatingwindowService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.webileapps.resolutions.services.ResolutionService"><nothingHere/></service>
+        </application>
+<permission android:name="com.webileapps.resolutions.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.webileapps.resolutions.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

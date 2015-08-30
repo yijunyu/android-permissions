@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CHANGE_NETWORK_STATE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.BROADCAST_STICKY</permission>
+    <permission>android.permission.SET_WALLPAPER</permission>
+    <permission>android.permission.WAKE_LOCK</permission>
+  </under-specification>
+</comparison>

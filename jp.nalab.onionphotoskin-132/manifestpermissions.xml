@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.SYSTEM_ALERT_WINDOW</name>
+  </permission>
+  <permission>
+    <name>android.permission.READ_EXTERNAL_STORAGE</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_EXTERNAL_STORAGE</name>
+  </permission>
+</permissions>

@@ -1,0 +1,81 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.livedial">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.livedial.app.LiveDialApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.livedial.ui.LoadingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="livedial"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.livedial.ui.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.livedial.ui.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyWelcomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyQuestionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.RankingSurveyQuestionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.RatingSurveyQuestionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SingleChoiceSurveyQuestionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.MultiSelectSurveyQuestionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.ScalingSurveyQuestionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyCreationSelectionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyCreationMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyCreationQuestionTypeListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyQuestionListAnswerCreationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyQuestionAddAnswerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyQuickAnswerTemplateActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyQuestionScalingAnswerCreationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyCreationPrePublishActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyCreationPublishActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.DateTimePickerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SurveyResultsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.RegistrationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.UserProfileActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.UserProfileLevel1Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.UserProfileLevel2Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.UserProfileLevel3Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.RegistrationSuccessActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.ChoiceListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.ProfessionDesignationListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.CertificatesListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.GroupListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.GroupCreationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.ContactsSelectionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.ForgotPasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.LicenseAgreementActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.SettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.PollPointsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.livedial.ui.BaseActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TJCOffersWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TapjoyFullScreenAdWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TapjoyVideoView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.TJAdUnitView" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.mraid.view.ActionHandler"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.mraid.view.Browser"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.livedial.ui.GcmBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.livedial"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.livedial.ui.GcmIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.livedial.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.livedial.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.apps.photos.permission.GOOGLE_PHOTOS"><nothingHere/></uses-permission>
+    </manifest>

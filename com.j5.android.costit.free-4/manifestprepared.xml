@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.j5.android.costit.free">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".ui.ProjectsViewActivityFree" android:theme="@style/Theme.j5_no_caption" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".ui.ProjectViewActivityFree" android:theme="@style/Theme.j5_no_caption" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".ui.PreferencesActivity" android:theme="@style/Theme.j5_no_caption" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <provider android:authorities="com.j5.android.costit.free.contentprovider.projectscontentprovider" android:name="com.j5.android.costit.free.contentprovider.ProjectsContentProvider"><nothingHere/></provider>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

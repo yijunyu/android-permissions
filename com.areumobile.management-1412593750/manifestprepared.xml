@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.areumobile.management">
+    <application android:debuggable="false" android:icon="@drawable/appicon" android:label="Are U Mobile Restaurant  Manager" android:name="AreUMobileRestaurantManagerApplication">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".AreUMobileRestaurantManagerActivity" android:theme="@style/Theme.Titanium">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.appcelerator.titanium.TiActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.appcelerator.titanium.TiTranslucentActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="ti.modules.titanium.ui.android.TiPreferencesActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBa10PNUU1KiOLPb2hCVWoUb1beeOWf7DY"><nothingHere/></meta-data>
+    <service android:exported="false" android:name="org.appcelerator.titanium.analytics.TiAnalyticsService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.areumobile.management.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+<uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.usb.host" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.areumobile.management.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

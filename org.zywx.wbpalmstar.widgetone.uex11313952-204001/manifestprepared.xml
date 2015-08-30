@@ -1,0 +1,112 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="org.zywx.wbpalmstar.widgetone.uex11313952">
+    <application android:allowBackup="false" android:allowClearUserData="false" android:hardwareAccelerated="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="org.zywx.wbpalmstar.widgetone.WidgetOneApplication" android:vmSafeMode="true">
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="org.zywx.wbpalmstar.engine.EBrowserActivity" android:screenOrientation="portrait" android:theme="@style/browser_main_theme" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="org.zywx.wbpalmstar.platform.mam.PolicyActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name="org.zywx.wbpalmstar.platform.mam.PolicyInfoActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexzxing.client.android.CaptureActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="org.zywx.wbpalmstar.plugin.uexcontacts.ContactActivity"><nothingHere/></activity>
+        <activity android:name="org.zywx.wbpalmstar.plugin.uexaudio.PMusicPlayerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="org.zywx.wbpalmstar.plugin.uexaudio.PMusicFileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexfilemgr.FilexplorerActivity" android:theme="@style/Style_platform_no_title_and_background"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexvideo.VideoPlayerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexaudio.AudioRecorderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.ueximagebrowser.ImageWatcherActivity" android:screenOrientation="sensor" android:theme="@style/Style_platform_no_title_and_background"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.ueximagebrowser.ImagePreviewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.ueximagebrowser.ImageReviewActivity" android:theme="@style/Style_platform_activity_transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.ueximagebrowser.PictureActivity" android:theme="@style/Style_platform_full_screen_no_title_background"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexphoneGap.PhoneGap" android:theme="@style/browser_main_theme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexbluetoothprint.BlueToothActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexcamera.CustomCamera" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.CAMERA_PLUGIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.tencent.weibo.webview.OAuthV1AuthorizeWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexbaidumap.BaiduMapLocationActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexappmarket.AppMarketMainActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.tencent.weibo.webview.OAuthV2AuthorizeWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.vudroid.pdfdroid.PdfViewerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="application/pdf"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexnewslist.NewsListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexhexagonal.TouchRotateActivity" android:theme="@style/Style.Cube.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexinput.InputUIActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexwxxmpp.ChatWindowActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexwxxmpp.GroupChatWindowActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexwxxmpp.PhotoViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexwxxmpp.LocationShowActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexappmarket.AppMarketPadMainActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uextimemachine.TimeMachineActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="org.zywx.wbpalmstar.wbpalm.V8PalmActivity" android:process=":game" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <receiver android:name="org.zywx.wbpalmstar.plugin.uexLocalNotification.EAlarmReceiver">
+            <intent-filter>
+                <action android:name="alarm_1"><nothingHere/></action>
+                <action android:name="alarm_2"><nothingHere/></action>
+                <action android:name="alarm_3"><nothingHere/></action>
+                <action android:name="alarm_4"><nothingHere/></action>
+                <action android:name="alarm_5"><nothingHere/></action>
+                <action android:name="alarm_6"><nothingHere/></action>
+                <action android:name="alarm_7"><nothingHere/></action>
+                <action android:name="alarm_8"><nothingHere/></action>
+                <action android:name="alarm_9"><nothingHere/></action>
+                <action android:name="alarm_10"><nothingHere/></action>
+                <action android:name="android.intent.action.TIME_SET"><nothingHere/></action>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.LOCALE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.zywx.wbpalmstar.plugin.uexpushconfig.WBootBroadCastReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.zywx.wbpalmstar.platform.analytics.PushBroadCastReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="org.zywx.wbpalmstar.plugin.uexpushconfig.WBootService" android:process=":push"><nothingHere/></service>
+        <service android:enabled="true" android:name="org.zywx.wbpalmstar.plugin.uexwxxmpp.ChatService"><nothingHere/></service>
+        <service android:enabled="true" android:name="org.zywx.wbpalmstar.platform.analytics.PushService" android:process=":push"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":push"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="org.zywx.wbpalmstar.platform.memoryControl.KeepForeService" android:process="com.android.acore">
+            <intent-filter>
+                <action android:name="appcan.intent.action.largeHeap"><nothingHere/></action>
+            </intent-filter>
+        </service>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    </manifest>

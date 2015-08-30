@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="air.KillerSudokuFreeNew">
+    <application android:enabled="true" android:hardwareAccelerated="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="false" android:label="@string/app_name" android:launchMode="singleTask" android:name=".AppEntry" android:screenOrientation="user" android:theme="@style/Theme.NoShadow" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="namespaceVersion" android:value="4.0"><nothingHere/></meta-data>
+            <meta-data android:name="aspectRatio" android:value="portrait"><nothingHere/></meta-data>
+            <meta-data android:name="autoOrients" android:value="false"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="1dcbd920-c29e-4a35-a076-af095aacb231"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="UniversalSudoku.swf"><nothingHere/></meta-data>
+            <meta-data android:name="containsVideo" android:value="false"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.playhaven.src.publishersdk.content.PHContentView" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.playhaven.android.view.FullScreen"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name="com.chartboost.sdk.CBImpressionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Login" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:name="com.tapfortap.FullScreenAdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jirbo.adcolony.AdColonyOverlay" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustNothing"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jirbo.adcolony.AdColonyFullscreen" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jirbo.adcolony.AdColonyBrowser" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+    <meta-data android:name="__ChartboostAir__AppID" android:value="53928bc71873da32c77bcd4a"><nothingHere/></meta-data>
+        <meta-data android:name="__ChartboostAir__AppSignature" android:value="e671cc358896384d1725f76982175c70541fb548"><nothingHere/></meta-data>
+        <receiver android:name="com.playhaven.android.push.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="com.playhaven.myscheme" android:scheme="myscheme"><nothingHere/></android-data>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="com.playhaven.android"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.playhaven.android.push.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="air.KillerSudokuFreeNew"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        </application>
+    <permission android:name="air.KillerSudokuFreeNew.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="air.KillerSudokuFreeNew.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

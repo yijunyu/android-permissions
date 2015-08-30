@@ -1,0 +1,110 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.moconavi.android.mss">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/mss_app_name" android:name="jp.moconavi.android.mss.MssApplication" android:theme="@style/Moconavi">
+        <activity android:label="@string/mss_app_name" android:launchMode="singleTop" android:name="jp.moconavi.android.ui.TopActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="jp.moconavi.android.ui.LaunchActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="mss.movinostar.com" android:pathPrefix="/gateway/android/intent" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:scheme="mss"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.LicenseViewActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.LoginActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.ReLoginActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.FirstLoginActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.FirstPasswordInputActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.NsasLoginActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.NsasReLoginActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.NsasFirstPasswordInputActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.NsasIcCardPasswordInputActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.NsasReIcCardPasswordInputActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.UriSettingActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.AppSettingActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.ServiceListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.ServiceSettingActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.PasswordSettingActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.MailListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.MailDeleteActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.MailSearchActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.MailDetailActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.LinkifyTextViewActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="mss" android:pathPrefix="/newmail" android:scheme="mss"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.AttachListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.MailAddressListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.MailEditActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.CardListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.CardGroupListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.CardViewActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.CardEditActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.ContactMenuListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.GAddressListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.GASearchActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.GALContactSearchActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.CalendarMonthActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.CalendarWeekActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.CalendarDayActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.ScheduleEditActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.CalendarGroupListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.TextBoxModalActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.RadioModalActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.CheckBoxModalActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.TimeBoxModalActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="jp.moconavi.android.ui.SvgtActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.AddressTopActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.OUAddressListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.PersonalAddressListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.AddressViewActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.AddressEditActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.AddressSearchModalActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.AddressHolderListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="jp.moconavi.android.ui.SitemapActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="jp.moconavi.android.ui.CrmEntityListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="jp.moconavi.android.ui.CrmFilterActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="jp.moconavi.android.ui.EntityObjectFormActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="jp.moconavi.android.ui.LongTextViewActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="jp.moconavi.android.ui.CrmCalendarActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.LookupControlModalActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.LookupSearchActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.TemplateTargetListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.TemplateListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.AnnotationListActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.AnnotationEditActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="jp.moconavi.android.ui.WebBrowserActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="jp.moconavi.android.ui.MailSignatureSettingActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="jp.moconavi.android.ui.VpnNotifyActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="vpn-notify" android:scheme="moconavi"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+    </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

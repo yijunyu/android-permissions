@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.hersheybears">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".HersheyBearsApplication" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".activities.HomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name=".activities.CalendarActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.GameSheetActivity"><nothingHere/></activity>
+        <activity android:name=".activities.PhotosActivity"><nothingHere/></activity>
+        <activity android:name=".activities.VideosActivity"><nothingHere/></activity>
+        <activity android:name=".activities.PhotoDetailActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.FanZoneActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.NewsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.EmailSignupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateVisible"><nothingHere/></activity>
+        <activity android:name=".activities.FacebookActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.RosterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.SettingsActivity"><nothingHere/></activity>
+        <activity android:name=".activities.ScheduleActivity"><nothingHere/></activity>
+        <activity android:name=".activities.DivisionActivity"><nothingHere/></activity>
+        <meta-data android:name="com.parse.push.notification_icon" android:resource="@drawable/icon"><nothingHere/></meta-data>
+        <provider android:authorities="com.hersheybears.scheduleprovider" android:name=".contentproviders.SchedulesContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.hersheybears.videosprovider" android:name=".contentproviders.VideosContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.hersheybears.photosprovider" android:name=".contentproviders.PhotosContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.hersheybears.newsprovider" android:name=".contentproviders.NewsContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.hersheybears.playersprovider" android:name=".contentproviders.PlayersContentProvider"><nothingHere/></provider>
+        <receiver android:name=".broadcastreceivers.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastreceivers.GameNotificationReceiver"><nothingHere/></receiver>
+        <receiver android:exported="false" android:name="com.hersheybears.broadcastreceivers.Receiver">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.parse.push.intent.OPEN"><nothingHere/></action>
+                <action android:name="com.parse.push.intent.DELETE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.hersheybears"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:enabled="true" android:name=".services.RadioService"><nothingHere/></service>
+        <service android:name="com.parse.PushService"><nothingHere/></service>
+        </application>
+<permission android:name="com.hersheybears.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screen android:largeScreens="true"><nothingHere/></supports-screen>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.hersheybears.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

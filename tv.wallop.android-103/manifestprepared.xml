@@ -1,0 +1,67 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="tv.wallop.android">
+    <application android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:allowTaskReparenting="true" android:label="@string/app_name_short" android:launchMode="singleTop" android:name=".SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="tv.wallop.android" android:scheme="wallop"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name=".TabsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".PlayerTabActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".ProgramTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".RankingTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".EventTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".EventDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".MypageTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".MyPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".MypagePointActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".MypagePointIntroActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".MoviePlayerActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".InformationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".ServiceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".CompanyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".PrivacyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".PrivacyTermsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".TermsOfUseActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".SBPActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".PointsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".FaqActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".TermsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".WalogActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".WalogEditActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".CircleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".CircleLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".CirclePaymentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".CircleSevenActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".CommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".OnAirInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".NavigationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".DestinationsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".DestinationsLocalSearchActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".NewsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".ShopDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".ProgramArchiveActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".ProgramArchiveDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".FreeProgramArchiveActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".FreeProgramArchiveListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".AccountRegisterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".AccountEditActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".RecommendProgramsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <service android:name="MusicPlayerService" android:screenOrientation="portrait"><nothingHere/></service>
+        <service android:name="MusicPlayerLiveService" android:screenOrientation="portrait"><nothingHere/></service>
+        <service android:name="ArchivePlayerService" android:screenOrientation="portrait"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

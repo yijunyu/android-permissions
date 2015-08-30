@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.impossibleapps.mobmoney">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".StocksApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MyStocksActivity"><nothingHere/></activity>
+        <activity android:name=".activity.IndexStocksActivity"><nothingHere/></activity>
+        <activity android:name=".activity.HighLowStocksActivity"><nothingHere/></activity>
+        <activity android:name=".activity.FeedsActivity"><nothingHere/></activity>
+        <activity android:name=".activity.FeedDetailsActivity"><nothingHere/></activity>
+        <activity android:name=".activity.ChartActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".activity.WidgetConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <receiver android:name=".widget.StockWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/stock_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <service android:enabled="true" android:name=".widget.UpdateService"><nothingHere/></service>
+    </application>
+<supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

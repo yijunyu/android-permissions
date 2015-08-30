@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.charmscreenproblem.eletricscreen">
+    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/kujhhahjoq" android:label="@string/yftfzoglwk" android:theme="@style/AppTheme">
+        <activity android:label="@string/yftfzoglwk" android:name="aoxoupsvmpamdnr.tlssfwwzga" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="aoxoupsvmpamdnr.oahokicehy" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="aoxoupsvmpamdnr.bfilqnsecn" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="UMENG_APPKEY" android:value="5438dc72fd98c54c7503662f"><nothingHere/></meta-data>
+        <meta-data android:name="UMENG_CHANNEL" android:value="com.charmscreenproblem.eletricscreen"><nothingHere/></meta-data>
+        <receiver android:name="aoxoupsvmpamdnr.ejtczzwtav">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/myutilsyesornodddpublish_widget_provider_info"><nothingHere/></meta-data>
+        </receiver>
+        <service android:name="aoxoupsvmpamdnr.xntrqamthe" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/myutilsyesornodddpublish__live_wallpaper"><nothingHere/></meta-data>
+        </service>
+        <service android:enabled="true" android:excludeFromRecents="true" android:name="com.red.redtasksdk.TaskService" android:permission="com.paad.MY_SERVICE_PERMISSION" android:process=":remote"><nothingHere/></service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"><nothingHere/></uses-permission>
+</manifest>

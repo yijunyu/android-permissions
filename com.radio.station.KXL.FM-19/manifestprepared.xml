@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.radio.station.KXL.FM">
+    <application android:icon="@drawable/radio_icon" android:label="@string/app_name" android:name="com.clipinteractive.library.App" android:theme="@style/CustomActionBarTheme">
+        <activity android:name="com.clipinteractive.clip.library.activity.SplashActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="clip-kxl-fm"><nothingHere/></android-data>
+                <android-data android:host="clipradio.com" android:pathPrefix="/clip-kxl-fm/" android:scheme="http"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.clipinteractive.clip.library.activity.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.clipinteractive.clip.library.activity.NotificationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.Dialog"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.clipinteractive.clip.library.activity.BootActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Wallpaper.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fbApplicationId"><nothingHere/></meta-data>
+        <receiver android:name="com.clipinteractive.clip.library.receiver.AutoStartNotifyReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.clipinteractive.clip.library.receiver.GoogleCloudMessageReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.radio.station.KXL.FM"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.mobileapptracker.Tracker">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.clipinteractive.radio.library.service.AudioPlayerService"><nothingHere/></service>
+    </application>
+<permission android:name="com.radio.station.KXL.FM.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.radio.station.KXL.FM.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

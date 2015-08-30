@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="net.hoboo.android">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="net.hoboo.android.HobooApp" android:theme="@style/AppTheme">
+        <activity android:name="net.hoboo.android.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="net.hoboo.android.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_detail" android:name="net.hoboo.android.DetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_about" android:name="net.hoboo.android.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_settings" android:name="net.hoboo.android.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_report" android:name="net.hoboo.android.ReportActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <provider android:authorities="net.hoboo.provider.hoboo" android:exported="false" android:name="net.hoboo.android.database.HobooProvider" android:readPermission="true" android:writePermission="true"><nothingHere/></provider>
+        <receiver android:name="net.hoboo.android.window.PhoneStatReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="net.hoboo.android.service.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="net.hoboo.android.service.AlarmReceiver"><nothingHere/></receiver>
+    <service android:exported="false" android:name="net.hoboo.android.service.HobooSyncService"><nothingHere/></service>
+        <service android:name="net.hoboo.android.window.TelephonyService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

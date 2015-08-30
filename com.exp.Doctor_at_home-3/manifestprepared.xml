@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.exp.Doctor_at_home">
+    <application android:icon="@drawable/ayurvedaicon1" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="doc.com.doctorathome.Doctor_At_Home_newActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="doc.com.doctorathome.Mainmenu"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Haircare"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Hair_diseasemain"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Hair_remediemain"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Remediemain"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Diseasemain"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Foot_remediemain"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Lip_remediemain"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Skin_remediemain" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Eye_remediemain"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Hand_remediemain"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Weightloss_remediemain"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Buttonadapter"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Newdoc"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Tabskinremedie"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Tabskindiet"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Tabremedieans"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.Tabskintips"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.About"><nothingHere/></activity>
+        <activity android:name="doc.com.doctorathome.SharefbActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <compatible-screens>
+            <screen android:screenSize="xlarge"><nothingHere/></screen>
+        </compatible-screens>
+    <supports-screens android:xlargeScreens="true"><nothingHere/></supports-screens>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

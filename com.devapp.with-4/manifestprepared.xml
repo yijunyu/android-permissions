@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.devapp.with">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".IntroApp" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="PartnerActivity" android:name=".PartnerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="ServiceActivity" android:name=".ServiceActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="DevlopmentActivity" android:name=".DevlopmentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

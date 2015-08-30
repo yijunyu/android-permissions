@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.RECORD_AUDIO</permission>
+  </under-specification>
+</comparison>

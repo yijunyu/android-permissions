@@ -1,0 +1,254 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hippione">
+    <application android:allowBackup="false" android:icon="@drawable/icon50" android:label="@string/app_name" android:name="com.hippione.service.CrashApplication" android:persistent="true">
+        <activity android:allowTaskReparenting="true" android:configChanges="orientation" android:label="@string/app_name" android:name=".ui.startup" android:screenOrientation="portrait" android:taskAffinity="com.hippione.ui.SipHome" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="orientation" android:launchMode="singleTask" android:name="com.hippione.ui.SipHome" android:screenOrientation="portrait" android:taskAffinity="com.hippione.ui.SipHome" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden">
+            <intent-filter android:priority="10">
+                <action android:name="com.hippione.phone.action.DIALER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="com.hippione.phone.action.CALLLOG"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="com.hippione.phone.action.MESSAGES"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hippione.ui.login" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.deleteacc" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.readprivacy" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.stricker_show" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.ringsetting" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.profilemanament" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.mainsetting" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.stricker_details" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.EditGroup" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.RingToneActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.fontsizesetting" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.blacklist" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.savecontact" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.logemailui" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.chatsetting" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.photoquality" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.videoquality" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.Purchase" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.QRcode.android.encode.qrcodesetting" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.xmppBroadcast" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.void_setting" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.supprorthttp" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.vschome" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.groupchat" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.selcet_group_chat_friends" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.transferxmppmsg" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.chat_maplocation" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.view_sharecontactinfo" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.utils.OpenYouTubePlayerActivity"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.GallerySwitcherActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.xmpp_client" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.ViewCustomerPic" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.xmpp_send_broadcast" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.miniactivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.support" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.support_context" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.ShowContactInfo" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.advancesettingui" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.realcharge" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.WebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="com.hippione.ui.Dialer" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.showcallhistory" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.share_contact" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.CallLogsList"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.callback" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.ContactsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.CallLog" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.callingcard" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.hippione.ui.chat_session" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.edit_send_image" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.select_chat_user" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.loginreceipt" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/welcome_caption_text" android:launchMode="singleTask" android:name="com.hippione.ui.WelcomeScreen" android:screenOrientation="nosensor" android:theme="@style/CupcakeDialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.help.Help" android:theme="@style/CupcakeDialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.help.Faq" android:theme="@style/CupcakeDialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.help.Legal" android:theme="@style/CupcakeDialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/accounts" android:name="com.hippione.ui.AccountsList"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/accounts" android:name="com.hippione.ui.ReorderAccountsList"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/filters" android:name="com.hippione.ui.AccountFilters"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/filters" android:name="com.hippione.ui.EditFilter" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:name="com.hippione.QRcode.android.CaptureActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@style/CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/choose_wizard" android:name="com.hippione.wizards.WizardChooser" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.hippione.ui.BuddyList"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.prefs.MainPrefs" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.prefs.PrefsNetwork" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.prefs.PrefsMedia" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.prefs.PrefsUI" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.prefs.PrefsCalls" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.prefs.PrefsFilters" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/prefs_fast" android:name="com.hippione.ui.prefs.PrefsFast" android:theme="@style/CupcakeDialog">
+            <intent-filter>
+                <action android:name="com.hippione.ui.prefs.PrefsFast"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.prefs.Codecs" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.prefs.PrefsSecurity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/test_audio" android:name="com.hippione.ui.prefs.AudioTester" android:screenOrientation="portrait" android:theme="@style/CupcakeDialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.wizards.BasePrefsWizard" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleInstance" android:name="com.hippione.ui.OutgoingCallChooser" android:theme="@style/CupcakeDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.CALL"><nothingHere/></action>
+                <android-data android:scheme="csip"><nothingHere/></android-data>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+                <android-data android:scheme="sips"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter android:priority="-1">
+                <action android:name="android.phone.extra.NEW_CALL_INTENT"><nothingHere/></action>
+                <android-data android:scheme="csip"><nothingHere/></android-data>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+                <android-data android:scheme="sips"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO"><nothingHere/></action>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="csip"><nothingHere/></android-data>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+                <android-data android:scheme="sips"><nothingHere/></android-data>
+                <android-data android:scheme="imto"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="orientation" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.hippione.ui.InCallActivity2" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter android:priority="10">
+                <action android:name="com.hippione.phone.action.INCALL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/pickup_sip_uri" android:name="com.hippione.ui.PickupSipUri" android:theme="@style/CupcakeDialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/prefs_media" android:name="com.hippione.ui.InCallMediaControl" android:taskAffinity="com.hippione.ui.InCallActivity" android:theme="@style/CupcakeDialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.hippione.ui.messages.ConversationList" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".ui.messages.ComposeMessageActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity-alias android:configChanges="orientation" android:launchMode="singleInstance" android:name="PrivilegedOutgoingCallBroadcaster" android:targetActivity="com.hippione.ui.OutgoingCallChooser" android:theme="@style/CupcakeDialog">
+            <intent-filter>
+                <android-data android:scheme="sip"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity-alias>
+        <provider android:authorities="com.hippione.prefs" android:name=".service.PreferenceProvider"><nothingHere/></provider>
+        <receiver android:name="com.hippione.service.DeviceStateReceiver" android:process=":hippionespservice">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="android.intent.action.ANY_DATA_STATE"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="com.hippione.accounts.activate"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hippione.service.OutgoingCall">
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hippione.service.HeadsetButtonReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.hippione"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.hippione"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hippione.service.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hippione.service.ShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.hippione.plugins.telephony.CallHandler" android:permission="android.permission.PROCESS_OUTGOING_CALLS">
+            <intent-filter>
+                <action android:name="com.hippione.phone.action.HANDLE_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name=".service.SipService" android:process=":hippionespservice">
+            <intent-filter>
+                <action android:name="com.hippione.service.SipService"><nothingHere/></action>
+                <action android:name="com.hippione.service.SipConfiguration"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+        <service android:enabled="true" android:name=".service.SensorService"><nothingHere/></service>
+        <service android:name="com.hippione.service.DownloadLibService"><nothingHere/></service>
+        <service android:name=".utils.httpgetdataserver"><nothingHere/></service>
+        <service android:exported="true" android:name="com.hippione.service.RecordPlayerService" android:process=":hippionespservice1"><nothingHere/></service>
+        <service android:name="com.hippione.service.Init_date_Service"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+    </application>
+    <permission android:name="com.hippione.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:description="@string/permdesc_useSip" android:label="@string/permlab_useSip" android:name="android.permission.USE_SIP" android:permissionGroup="android.permission-group.COST_MONEY" android:protectionLevel="dangerous"><nothingHere/></permission>
+    <permission android:description="@string/permdesc_configureSip" android:label="@string/permlab_configureSip" android:name="android.permission.CONFIGURE_SIP" android:permissionGroup="android.permission-group.COST_MONEY" android:protectionLevel="dangerous"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.microphone" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_SIP"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CONFIGURE_SIP"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.hippione.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+</manifest>

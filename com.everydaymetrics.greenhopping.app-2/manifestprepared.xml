@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.everydaymetrics.greenhopping.app">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="GreenHopping" android:name="com.everydaymetrics.greenhopping.app.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Green Hopping" android:name="com.everydaymetrics.greenhopping.app.CityActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_store_list" android:name="com.everydaymetrics.greenhopping.app.StoreListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_store_detail" android:name="com.everydaymetrics.greenhopping.app.StoreDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_zone" android:name="com.everydaymetrics.greenhopping.app.ZoneActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Green Hopping" android:name="com.everydaymetrics.greenhopping.app.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDcMKcIO7Fqp_weGAFJDpuBH7Tcra8KBAY"><nothingHere/></meta-data>
+        <meta-data android:name="CLOUDINARY_URL" android:value="cloudinary://375165173171783:nSCDFWXMW4J_t9iY4DKSx4wMFis@green-hopping"><nothingHere/></meta-data>
+        </application>
+<uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

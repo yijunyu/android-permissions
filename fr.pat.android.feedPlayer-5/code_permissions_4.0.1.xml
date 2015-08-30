@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/fr/pat/android/feedPlayer/ContainerData.java</file>
+    <line>55</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/fr/pat/android/feedPlayer/ContainerData.java</file>
+    <line>55</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

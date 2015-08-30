@@ -1,0 +1,149 @@
+<manifest xmlns:admobsdk="http://schemas.android.com/apk/res/com.noticesoftware.MouthofTheSouthShore" xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.noticesoftware.MouthofTheSouthShore">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".NNApplication">
+        <activity android:configChanges="keyboardHidden" android:label="@string/app_name" android:launchMode="singleInstance" android:name=".NoticeNewsActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Notice News" android:launchMode="singleInstance" android:name=".NewsMenuActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="Search" android:launchMode="singleInstance" android:name=".SearchActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="MouthofTheSouthShoresearch"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="Topics" android:launchMode="singleInstance" android:name=".TopicsActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Customize" android:launchMode="singleInstance" android:name=".CustomizeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Article" android:launchMode="singleInstance" android:name=".ReaderActivity" android:screenOrientation="user" android:theme="@android:style/Theme.Light.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Twitter" android:launchMode="singleInstance" android:name=".TwitterActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Articles" android:launchMode="singleInstance" android:name=".CategoryActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Video" android:launchMode="singleInstance" android:name=".VideoActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="About" android:launchMode="singleInstance" android:name=".AboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Report" android:launchMode="singleInstance" android:name=".ReportPickerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">	&gt;
+<intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Report" android:launchMode="standard" android:name=".ReportActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Add Categories" android:launchMode="standard" android:name=".AddCatActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.mobfox.sdk.InAppWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.vdopia.client.android.VDOActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <meta-data android:name="com.sensenetworks.apikey" android:value="91934e39364cfe14d7f2f8c267004af2"><nothingHere/></meta-data>
+        <meta-data android:name="ADMARVEL_PARTNER_ID" android:value="c12ba70c41e33cbe"><nothingHere/></meta-data>
+        <meta-data android:name="ADMARVEL_SITE_ID" android:value="4176"><nothingHere/></meta-data>
+    <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".NoticeAlarm">
+            <intent-filter>
+                <action android:name="com.noticesoftware.MouthofTheSouthShore.UPDATE_ALERT"><nothingHere/></action>
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="NNAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.noticesoftware.MouthofTheSouthShore.FORCE_WIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/nn_appwidget_info"><nothingHere/></meta-data>	android:updatePeriodMillis="6000000"
+</receiver>
+        <receiver android:name="com.google.android.c2dm.C2DMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.noticesoftware.MouthofTheSouthShore"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.noticesoftware.MouthofTheSouthShore"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:launchMode="singleTop" android:name=".AlertService"><nothingHere/></service>
+        <service android:name=".C2DMReceiver"><nothingHere/></service>
+        <service android:enabled="true" android:launchMode="singleTop" android:name=".C2DMRegisterService"><nothingHere/></service>
+        </application>
+<permission android:name="com.noticesoftware.MouthofTheSouthShore.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.noticesoftware.MouthofTheSouthShore.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

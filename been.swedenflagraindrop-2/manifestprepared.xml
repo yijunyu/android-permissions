@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="been.swedenflagraindrop">
+    <application android:allowBackup="false" android:debuggable="false" android:icon="@drawable/icon" android:label="@string/appName">
+        <activity android:exported="true" android:label="Settings" android:name="com.sbg.lwc.LiveWallpaperSettings" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:name="com.oolp.lw.MainActivity" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity" android:taskAffinity="been.swedenflagraindrop.AppWall" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.startapp.android.publish.AppWallActivity" android:taskAffinity="been.swedenflagraindrop.AppWall" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="5077000"><nothingHere/></meta-data>
+    <service android:label="@string/appName" android:name="com.sbg.lwc.SBLiveWallpaper" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/lwp_resource"><nothingHere/></meta-data>
+        </service>
+        </application>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

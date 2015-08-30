@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.baramil.sajums.trial">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".Main" android:screenOrientation="portrait" android:theme="@style/maintheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".CommonMenuBar" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".Almanac" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".MyungsikInput" android:screenOrientation="portrait" android:theme="@style/subtheme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".MyungsikList" android:screenOrientation="portrait" android:theme="@style/subtheme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".MyungsikModify" android:screenOrientation="portrait" android:theme="@style/subtheme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".MyungsikView" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".MyungsikAnalysis01" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".MyungsikAnalysis02" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".SearchTime" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".Config" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".MyungsikGroupList" android:screenOrientation="portrait" android:theme="@style/subtheme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".MyungsikGroupCode" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".Notice" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".MyungsikGroupView" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+        <activity android:name=".MyungsikAlmanac" android:screenOrientation="portrait" android:theme="@style/subtheme"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+</manifest>

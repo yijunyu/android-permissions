@@ -1,0 +1,25 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_APN_SETTINGS</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.INSTALL_DRM</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.RECEIVE_MMS</permission>
+    <permission>android.permission.READ_PROFILE</permission>
+    <permission>android.permission.MMS_SEND_OUTBOX_MSG</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.READ_SYNC_SETTINGS</permission>
+    <permission>android.permission.WRITE_SOCIAL_STREAM</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.READ_USER_DICTIONARY</permission>
+    <permission>android.permission.READ_SOCIAL_STREAM</permission>
+    <permission>android.permission.BLUETOOTH</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+    <permission>android.permission.MODIFY_AUDIO_SETTINGS</permission>
+    <permission>android.permission.CHANGE_WIFI_STATE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+    <permission>android.permission.BLUETOOTH_ADMIN</permission>
+  </under-specification>
+</comparison>

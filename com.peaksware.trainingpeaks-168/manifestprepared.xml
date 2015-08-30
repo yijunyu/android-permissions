@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.peaksware.trainingpeaks">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.peaksware.trainingpeaks.TPMobileApp" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboard" android:label="@string/app_name" android:name="com.peaksware.trainingpeaks.activities.LoginActivity" android:theme="@style/StartUpAppTheme" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.peaksware.trainingpeaks.activities.MainActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+        <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+            </activity>
+        <activity android:label="@string/title_activity_tabbed_workout_item" android:name="com.peaksware.trainingpeaks.activities.WorkoutItemActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.MainActivity" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.peaksware.trainingpeaks.activities.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_workout_item" android:name="com.peaksware.trainingpeaks.activities.WorkoutDataActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.WorkoutItemActivity" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.peaksware.trainingpeaks.activities.WorkoutItemActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_metric_item" android:name="com.peaksware.trainingpeaks.activities.MetricItemActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.MainActivity" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.peaksware.trainingpeaks.activities.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_add_item" android:name="com.peaksware.trainingpeaks.activities.AddItemActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.peaksware.trainingpeaks.activities.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_meal_item" android:name="com.peaksware.trainingpeaks.activities.MealItemActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.peaksware.trainingpeaks.activities.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_nutrition_item" android:name="com.peaksware.trainingpeaks.activities.NutritionItemActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.peaksware.trainingpeaks.activities.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/settings" android:name="com.peaksware.trainingpeaks.activities.SettingsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_exercise_libraries" android:name="com.peaksware.trainingpeaks.activities.ExerciseLibrariesActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.AddItemActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+        <meta-data android:name="android.app.searchable" android:resource="@xml/searchable_libraries"><nothingHere/></meta-data>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.peaksware.trainingpeaks.activities.AddItemActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:label="@string/title_activity_exercise_library_items" android:name="com.peaksware.trainingpeaks.activities.ExerciseLibraryItemsActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.ExerciseLibrariesActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+        <meta-data android:name="android.app.searchable" android:resource="@xml/searchable_library_items"><nothingHere/></meta-data>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.peaksware.trainingpeaks.activities.ExerciseLibrariesActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/title_activity_sign_up" android:name="com.peaksware.trainingpeaks.activities.SignUpActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.LoginActivity" android:theme="@style/StartUpAppTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.peaksware.trainingpeaks.activities.LoginActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/title_activity_sign_up" android:name="com.peaksware.trainingpeaks.activities.SetupProfileActivity" android:theme="@style/StartUpAppTheme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_in_app_purchases" android:name="com.peaksware.trainingpeaks.activities.InAppPurchasesActivity" android:parentActivityName="com.peaksware.trainingpeaks.activities.SettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_training_plan" android:name="com.peaksware.trainingpeaks.activities.TrainingPlanActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_training_plan_details" android:name="com.peaksware.trainingpeaks.activities.TrainingPlanDetailsActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBAeWaA86nHTOlRQbrjwywdkvVFO6y_6w4"><nothingHere/></meta-data>
+        <meta-data android:name="android.app.default_searchable" android:value="com.peaksware.trainingpeaks.activities.MainActivity"><nothingHere/></meta-data>
+        <receiver android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.peaksware.trainingpeaks.services.rest.RestExecutorService"><nothingHere/></service>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"><nothingHere/></service>
+        </application>
+<uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

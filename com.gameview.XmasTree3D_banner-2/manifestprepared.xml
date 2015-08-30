@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" android:theme="@android:style/Theme.NoTitleBar" package="com.gameview.XmasTree3D_banner">
+    <application android:icon="@drawable/app_icon" android:label="@string/app_name" android:manageSpaceActivity="com.am.analytics.activities.ManageDataActivity">
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.gameview.XmasTree3D_banner.UnityPlayerNativeActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.am.ammobsdk.activities.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.am.ammobsdk.activities.AMIActivity"><nothingHere/></activity>
+        <activity android:name="com.am.analytics.activities.ManageDataActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <meta-data android:name="com.am.ammob.appId" android:value="android.434648.googleplay"><nothingHere/></meta-data>
+        <meta-data android:name="com.am.ammob.netId" android:value="3"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="5089000"><nothingHere/></meta-data>
+    <service android:name="com.am.ammobsdk.services.SA" android:process="com.gameview.XmasTree3D_banner.a"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SB" android:process="com.gameview.XmasTree3D_banner.b"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SC" android:process="com.gameview.XmasTree3D_banner.c"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SD" android:process="com.gameview.XmasTree3D_banner.d"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SE" android:process="com.gameview.XmasTree3D_banner.e"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SF" android:process="com.gameview.XmasTree3D_banner.f"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SG" android:process="com.gameview.XmasTree3D_banner.g"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SH" android:process="com.gameview.XmasTree3D_banner.h"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SI" android:process="com.gameview.XmasTree3D_banner.i"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SJ" android:process="com.gameview.XmasTree3D_banner.j"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SK" android:process="com.gameview.XmasTree3D_banner.k"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SL" android:process="com.gameview.XmasTree3D_banner.l"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SM" android:process="com.gameview.XmasTree3D_banner.m"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SN" android:process="com.gameview.XmasTree3D_banner.n"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SO" android:process="com.gameview.XmasTree3D_banner.o"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SP" android:process="com.gameview.XmasTree3D_banner.p"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SQ" android:process="com.gameview.XmasTree3D_banner.q"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SR" android:process="com.gameview.XmasTree3D_banner.r"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SS" android:process="com.gameview.XmasTree3D_banner.s"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.ST" android:process="com.gameview.XmasTree3D_banner.t"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SV" android:process="com.gameview.XmasTree3D_banner.v"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SW" android:process="com.gameview.XmasTree3D_banner.w"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SX" android:process="com.gameview.XmasTree3D_banner.x"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SY" android:process="com.gameview.XmasTree3D_banner.y"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SZ" android:process="com.gameview.XmasTree3D_banner.z"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.FocusService" android:process="com.gameview.XmasTree3D_banner.u"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.BService"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.EDService"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SService"><nothingHere/></service>
+        </application>
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture"><nothingHere/></supports-gl-texture>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.sensor.accelerometer"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+</manifest>

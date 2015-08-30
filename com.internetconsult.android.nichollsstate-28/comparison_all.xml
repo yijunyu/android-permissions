@@ -1,0 +1,13 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_CALENDAR</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+  </under-specification>
+</comparison>

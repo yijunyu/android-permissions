@@ -1,0 +1,147 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ali.evensiandroidsln">
+    <application android:allowBackup="true" android:icon="@drawable/largeicon2_new" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.EnteranceActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.Login"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.MainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MainMenu"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.CreateEvent">
+            <intent-filter>
+                <action android:name="android.intent.action.CreateEvent"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.EditEvent">
+            <intent-filter>
+                <action android:name="android.intent.action.EditEvent"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.MngEventMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MngEventMenu"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.UpdateEvents">
+            <intent-filter>
+                <action android:name="android.intent.action.UpdateEvents"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.UpdateGuest">
+            <intent-filter>
+                <action android:name="android.intent.action.UpdateGuest"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.ViewLocation" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ViewLocation"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.GuestMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.GuestMenu"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.CreateGuest" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.CreateGuest"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.EditGuest" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.EditGuest"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.ImportContacts" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ImportContacts"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.CreateToDoItem" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.CreateToDoItem"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.UpdateTask">
+            <intent-filter>
+                <action android:name="android.intent.action.UpdateTask"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.EditTodoTask">
+            <intent-filter>
+                <action android:name="android.intent.action.EditTodoTask"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.TaskTabCreate">
+            <intent-filter>
+                <action android:name="android.intent.action.TaskTabCreate"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.CreateTodoSubItems">
+            <intent-filter>
+                <action android:name="android.intent.action.CreateTodoSubItems"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.AlarmNotificationActicvity">
+            <intent-filter>
+                <action android:name="android.intent.action.AlarmNotificationActicvity"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.AlarmReceiverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.AlarmReceiverActivity"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ali.evensiandroidsln.TaskTabUpdate">
+            <intent-filter>
+                <action android:name="android.intent.action.TaskTabUpdate"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCpMfy1D85fg3ybKYkEgNRPEA_bh1JY8K8"><nothingHere/></meta-data>
+        <receiver android:name="com.ali.evensiandroidsln.AlarmManagerBroadcastReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.ali.evensiandroidsln.AlarmManagerBroadcastReceiver" android:process=":remote"><nothingHere/></receiver>
+        <service android:label="@string/app_name" android:name="com.ali.evensiandroidsln.ReminderNotification"><nothingHere/></service>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.ali.evensiandroidsln.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.ali.evensiandroidsln.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

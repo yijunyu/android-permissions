@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/shkim/mylight/WidgetProvider.java</file>
+    <line>135</line>
+    <permissions>
+      <permission>
+        <name>android.permission.CAMERA</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/shkim/mylight/MainActivity.java</file>
+    <line>101</line>
+    <permissions>
+      <permission>
+        <name>android.permission.CAMERA</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/shkim/mylight/MainActivity.java</file>
+    <line>38</line>
+    <permissions>
+      <permission>
+        <name>android.permission.CAMERA</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

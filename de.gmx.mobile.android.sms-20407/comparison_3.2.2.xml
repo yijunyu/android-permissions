@@ -1,0 +1,19 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CALL_PHONE</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.RECEIVE_MMS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.SEND_SMS</permission>
+    <permission>android.permission.DISABLE_KEYGUARD</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.BLUETOOTH</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+    <permission>android.permission.CHANGE_WIFI_STATE</permission>
+    <permission>android.permission.BLUETOOTH_ADMIN</permission>
+    <permission>android.permission.WRITE_CONTACTS</permission>
+  </under-specification>
+</comparison>

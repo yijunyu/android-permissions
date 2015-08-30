@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.freeway.WeddingFrames">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.freeway.WeddingFrames.PhotoFramesApplication">
+        <activity android:label="@string/app_name" android:name="Main" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.freeway.WeddingFrames.PhotoFrameEditActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.freeway.WeddingFrames.PhotoFrameChooserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.am.pumper.activities.AdActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.am.pumper.activities.AMIActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <meta-data android:name="com.am.adlib.appId" android:value="android.19812.googleplay"><nothingHere/></meta-data>
+        <meta-data android:name="com.am.ammob.netId" android:value="3"><nothingHere/></meta-data>
+        <service android:name="com.am.pumper.services.EDService"><nothingHere/></service>
+        <service android:name="com.am.pumper.services.FocusService"><nothingHere/></service>
+    </application>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+</manifest>

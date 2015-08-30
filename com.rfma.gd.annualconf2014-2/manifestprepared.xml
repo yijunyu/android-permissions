@@ -1,0 +1,125 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gatherdigital.android">
+    <application android:icon="@drawable/ic_launcher" android:label="RFMA 2014" android:name="com.gatherdigital.android.Application" android:theme="@style/Theme.Sherlock">
+        <activity android:excludeFromRecents="true" android:name="com.gatherdigital.android.widget.AlertActivity" android:theme="@style/Theme.Sherlock.Dialog"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name="com.gatherdigital.android.widget.ConfirmationActivity" android:theme="@style/Theme.Sherlock.Dialog"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name="com.gatherdigital.android.widget.PromptActivity" android:theme="@style/Theme.Sherlock.Dialog"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.AttendeeActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.AttendeeProfileEditActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.AttendeeListActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.BrowserActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.CalendarActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.CustomLinkActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.CustomSchemeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="open" android:scheme="gatherdigitalb3Cl"><nothingHere/></android-data>
+            <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.gatherdigital.android.activities.EventActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.EventListActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.EventSurveyActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.ExhibitorActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.ExhibitorListActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.gatherdigital.android.activities.GatheringListActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.gatherdigital.android.activities.HomeActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.InfoActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.InfoListActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.LeaderboardActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.LocationActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.LinkListActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gatherdigital.android.activities.MeetingActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.MemberActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.MemberListActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.MemberProfileEditActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.MessageActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.MessageListActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.NewsFeedActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.NewsFeedListActivity"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name="com.gatherdigital.android.activities.PasswordRequestActivity" android:theme="@style/Theme.Sherlock.Dialog"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.PersonalEventActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.PosterListActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.ProfileActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.RegistrationActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.SiteMapActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.ScheduledEventListActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.SiteMapListActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.SpeakerActivity"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.SpeakerListActivity"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name="com.gatherdigital.android.activities.TermFilterActivity" android:theme="@style/Theme.Sherlock.Dialog"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name="com.gatherdigital.android.activities.VisitorIdentificationActivity" android:theme="@style/Theme.Sherlock.Dialog"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.gatherdigital.android.activities.MessageSendActivity" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.gatherdigital.android.activities.ProfileActivity"><nothingHere/></activity>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="b28dc982a78e1daa44d06340a46e3339107a8284"><nothingHere/></meta-data>
+    <provider android:authorities="com.rfma.gd.annualconf2014.AssignedEventProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.AssignedEventProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.AttendeeProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.AttendeeProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.AttendeeProfileProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.AttendeeProfileProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.MemberProfileProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.MemberProfileProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.AttendeeTermProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.AttendeeTermProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.CategoryProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.CategoryProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.BadgeProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.BadgeProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.BadgeAwardProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.BadgeAwardProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.CheckInProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.CheckInProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.EventProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.EventProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.EventLinkProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.EventLinkProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.EventSpeakerProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.EventSpeakerProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.EventSurveyAnswerProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.EventSurveyAnswerProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.EventSurveryResponseProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.EventSurveryResponseProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.EventTermProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.EventTermProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.ExhibitorProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.ExhibitorProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.ExhibitorLinkProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.ExhibitorLinkProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.ExhibitorTermProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.ExhibitorTermProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.InfoProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.InfoProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.LinkProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.LinkProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.LocationProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.LocationProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.MeetingProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.MeetingProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.MemberProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.MemberProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.MessageProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.MessageProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.NewsFeedProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.NewsFeedProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.PersonalEventProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.PersonalEventProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.FavoriteResourceProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.FavoriteResourceProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.ScheduledEventProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.ScheduledEventProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.SiteMapProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.SiteMapProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.SpeakerProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.SpeakerProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.SurveyProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.SurveyProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.SurveyQuestionProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.SurveyQuestionProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.TermProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.TermProvider"><nothingHere/></provider>
+        <provider android:authorities="com.rfma.gd.annualconf2014.TweetProvider" android:exported="false" android:multiprocess="false" android:name="com.gatherdigital.android.data.providers.TweetProvider"><nothingHere/></provider>
+        <receiver android:name="com.gatherdigital.android.gcm.BroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.gatherdigital.android"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.gatherdigital.android.services.AppConfigurationSyncService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.gatherdigital.android.services.GatheringSyncService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.gatherdigital.android.services.UserEntityUploadService"><nothingHere/></service>
+        <service android:name="com.gatherdigital.android.gcm.NotificationIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.gatherdigital.android.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.gatherdigital.android.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

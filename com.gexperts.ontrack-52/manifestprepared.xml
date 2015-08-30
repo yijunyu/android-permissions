@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.gexperts.ontrack">
+    <application android:icon="@drawable/launcher_icon" android:label="@string/app_name" android:name="com.gexperts.ontrack.OnTrackApplication" android:theme="@style/Default">
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.InitializeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.HomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.WebViewActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.DashboardActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.EditListActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/enter_entry" android:name="com.gexperts.ontrack.EditEntryActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/enter_entry" android:name="com.gexperts.ontrack.AddEntryActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/enter_entry" android:name="com.gexperts.ontrack.AddMultipleActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/reminder" android:name="com.gexperts.ontrack.AddReminderActivity"><nothingHere/></activity>
+        <activity android:label="@string/reports" android:name="com.gexperts.ontrack.reports.ReportsActivity"><nothingHere/></activity>
+        <activity android:label="@string/graphs" android:name="com.gexperts.ontrack.graphs.GraphsActivity"><nothingHere/></activity>
+        <activity android:label="@string/customize" android:name="com.gexperts.ontrack.CustomizeActivity"><nothingHere/></activity>
+        <activity android:label="@string/tools" android:name="com.gexperts.ontrack.ToolsActivity"><nothingHere/></activity>
+        <activity android:label="@string/log_book" android:name="com.gexperts.ontrack.reports.logbook.LogBookActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.reports.AverageStatisticsActivity"><nothingHere/></activity>
+        <activity android:label="@string/glucose_by_category" android:name="com.gexperts.ontrack.reports.GlucoseByCategoryActivity"><nothingHere/></activity>
+        <activity android:label="@string/food_by_category" android:name="com.gexperts.ontrack.reports.FoodByCategoryActivity"><nothingHere/></activity>
+        <activity android:label="@string/medication_by_subtype" android:name="com.gexperts.ontrack.reports.MedicationBySubTypeActivity"><nothingHere/></activity>
+        <activity android:label="@string/export" android:name="com.gexperts.ontrack.export.ExportActivity"><nothingHere/></activity>
+        <activity android:label="@string/backup" android:name="com.gexperts.ontrack.backup.BackupActivity"><nothingHere/></activity>
+        <activity android:label="@string/restore" android:name="com.gexperts.ontrack.backup.RestoreActivity"><nothingHere/></activity>
+        <activity android:label="@string/purge" android:name="com.gexperts.ontrack.PurgeActivity"><nothingHere/></activity>
+        <activity android:label="@string/glucose_ranges_graph" android:name="com.gexperts.ontrack.graphs.pie.GlucoseRangeGraphActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_manage_reminders" android:name="com.gexperts.ontrack.ReminderListActivity"><nothingHere/></activity>
+        <activity android:label="@string/edit_reminder" android:name="com.gexperts.ontrack.ReminderActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_manage_categories" android:name="com.gexperts.ontrack.CategoryListActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/edit_category" android:name="com.gexperts.ontrack.CategoryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_manage_subtypes" android:name="com.gexperts.ontrack.SubTypeListActivity"><nothingHere/></activity>
+        <activity android:label="@string/edit_subtype" android:name="com.gexperts.ontrack.SubTypeActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_manage_sub_types" android:name="com.gexperts.ontrack.ManageSubTypeActivity"><nothingHere/></activity>
+        <activity android:label="@string/welcome" android:name="com.gexperts.ontrack.setup.WelcomeActivity" android:theme="@style/SetupTheme"><nothingHere/></activity>
+        <activity android:label="@string/setup_types_title" android:name="com.gexperts.ontrack.setup.TypesActivity" android:theme="@style/SetupTheme"><nothingHere/></activity>
+        <activity android:label="@string/setup_glucose_title" android:name="com.gexperts.ontrack.setup.GlucoseActivity" android:theme="@style/SetupTheme"><nothingHere/></activity>
+        <activity android:label="@string/setup_add_button_title" android:name="com.gexperts.ontrack.setup.AddButtonActivity" android:theme="@style/SetupTheme"><nothingHere/></activity>
+        <activity android:label="@string/setup_donate_title" android:name="com.gexperts.ontrack.setup.DonateActivity" android:theme="@style/SetupTheme"><nothingHere/></activity>
+        <activity android:label="@string/daily_food_total_graph" android:name="com.gexperts.ontrack.graphs.daterange.FoodDailyTotalGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/bp_graph" android:name="com.gexperts.ontrack.graphs.daterange.BPGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/weight_graph" android:name="com.gexperts.ontrack.graphs.daterange.WeightGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/daily_averages_graph" android:name="com.gexperts.ontrack.graphs.daterange.DailyAveragesGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/glucose_graph" android:name="com.gexperts.ontrack.graphs.daterange.GlucoseGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/pulse_graph" android:name="com.gexperts.ontrack.graphs.daterange.PulseGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/exercise_graph" android:name="com.gexperts.ontrack.graphs.daterange.ExerciseGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/medication_graph" android:name="com.gexperts.ontrack.graphs.daterange.MedicationGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/hba1c_graph" android:name="com.gexperts.ontrack.graphs.daterange.HbA1cGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/glucose_time_of_day_graph" android:name="com.gexperts.ontrack.graphs.daily.GlucoseDailyGraphActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/preferences" android:name="com.gexperts.ontrack.EditPreferencesActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/homefilter" android:name="com.gexperts.ontrack.EditListFilterActivity" android:theme="@style/Default.Dark"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.promptemail.PromptEmailActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.home.HomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.aboutus.AboutUsActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.help.HelpActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.add.AddActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.aboutus.OptOutActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.filechooser.FileChooserActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.setup.SetAddBehaviorActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.setup.SetGlucoseRangeActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.gexperts.ontrack.v40.setup.SetUnitsActivity"><nothingHere/></activity>
+        <receiver android:name="com.gexperts.ontrack.util.ReminderAlarmReceiver"><nothingHere/></receiver>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

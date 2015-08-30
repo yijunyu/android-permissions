@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vouclicar.app">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="Vouclicar.com">
+        <activity android:label="Vouclicar.com" android:name="com.vouclicar.mobile.SplashScreen" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Vouclicar.com" android:name="com.vouclicar.mobile.MainActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="kr.co.saramin.Career">
+    <application android:enabled="true" android:icon="@drawable/icon_57" android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name=".HowThereIntro" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GALLERY"><nothingHere/></action>
+                <android-data android:host="kr.co.howthere" android:scheme="howgetjob"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="kr.co.howthere" android:scheme="howgetjob"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="kr.co.saramin.Career.MainInitActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="MainTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="main" android:launchMode="singleTop" android:name=".CommonWebView" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="ContactsProviderActivity"><nothingHere/></activity>
+        <activity android:name="SmsSendViewActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="kr.co.saramin.common.layout.PushPopupActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="kr.co.saramin.common.webview.EventWebView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <receiver android:name="kr.co.saramin.Career.C2dmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="kr.co.saramin.Career"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="kr.co.saramin.Career"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    </application>
+    <permission android:name="kr.co.saramin.Career.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="kr.co.saramin.Career.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

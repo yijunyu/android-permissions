@@ -1,0 +1,87 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.legion2app.biznes.s">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.android.vk.group.VkGroupApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.android.vk.group.activities.StartActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.android.vk.group.activities.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.android.vk.group.activities.MainSlideActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.setup2app.zajmissoboj.MESSAGE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.android.vk.group.activities.WallPostDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.vkpart.photoviewer.PhotoViewerActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.android.vk.group.activities.WebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="ru.wapstart.plus1.sdk.MraidBrowser"><nothingHere/></activity>
+        <activity android:exported="false" android:name="com.android.vk.group.activities.CaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:exported="true" android:name="mobi.dash.extras.AdActivity"><nothingHere/></activity>
+        <activity android:exported="true" android:name="mobi.dash.sdk.chartboost.ChartboostActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:exported="true" android:name="mobi.dash.sdk.AdmobActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.mdotm.android.view.MdotMActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mdotm.android.vast.VastInterstitialActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.smaato.soma.interstitial.InterstitialActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.adsdk.sdk.banner.InAppWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="false" android:name="com.adsdk.sdk.video.RichMediaActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.adsdk.sdk.mraid.MraidBrowser"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.inmobi.androidsdk.IMBrowserActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_id"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.setup2app.zajmissoboj"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="mobi.dash.overapp.DisplayCheckRebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="mobi.dash.wifi.AdsWifiReceiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE"><nothingHere/></action>
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.inmobi.commons.analytics.androidsdk.IMAdTrackerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.android.vk.group.services.CustomService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.android.vk.group.services.AudioPlayerService"><nothingHere/></service>
+        <service android:label="Display Check" android:name="mobi.dash.overapp.DisplayCheckService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.inmobi.commons.internal.ActivityRecognitionManager"><nothingHere/></service>
+        </application>
+<permission android:name="com.legion2app.biznes.s.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.legion2app.biznes.s.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

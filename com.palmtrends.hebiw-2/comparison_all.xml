@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.BAIDU_LOCATION_SERVICE</permission>
+    <permission>android.permission.ACCESS_MOCK_LOCATION</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</permission>
+    <permission>android.permission.CHANGE_WIFI_STATE</permission>
+  </under-specification>
+</comparison>

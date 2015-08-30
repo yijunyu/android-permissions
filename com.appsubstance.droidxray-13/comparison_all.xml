@@ -1,0 +1,11 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.BATTERY_STATS</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.GET_PACKAGE_SIZE</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+  </under-specification>
+</comparison>

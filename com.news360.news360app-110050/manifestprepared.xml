@@ -1,0 +1,203 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.news360.news360app">
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.news360.news360tabletcore.GAppHoneycomb" android:theme="@style/DefaultNews360Theme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.news360.news360app.widget.WidgetCategoryActivityFroyoNormal" android:taskAffinity="com.news360.news360app.widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.news360.news360app.widget.WidgetCategoryActivityFroyoSmall" android:taskAffinity="com.news360.news360app.widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.news360.widget.autoflip"><nothingHere/></action>
+                <action android:name="com.news360.widget.refresh"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_previous_click"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_next_click"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.news360.news360app.widget.WidgetCategoryActivityFroyoLarge" android:taskAffinity="com.news360.news360app.widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.news360.widget.autoflip"><nothingHere/></action>
+                <action android:name="com.news360.widget.refresh"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_previous_click"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_next_click"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.news360.news360tabletcore.widget.WidgetCategoryActivityCarousel" android:taskAffinity="com.news360.news360tabletcore.widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="@string/widget_settings_host" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.news360.news360tabletcore.widget.WidgetCategoryActivityCarousel2x4" android:taskAffinity="com.news360.news360tabletcore.widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="@string/widget_settings_host2" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.news360.news360tabletcore.Launcher" android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="e.apsalar.com" android:pathPrefix="/api/v1/appstore/com.news360.news360app" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.news360.news360tabletcore.Splash" android:windowSoftInputMode="adjustNothing"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.news360.news360tabletcore.RootActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="@string/web_run_host_category" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+                <android-data android:host="@string/web_run_host_usercategory" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+                <android-data android:host="@string/web_run_host_object" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+                <android-data android:host="@string/web_run_host_source" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+                <android-data android:host="@string/web_run_host_topic" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.news360.news360app.controller.article.ArticleLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="@string/web_run_host_article" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.news360.news360app.controller.article.TabletArticleActivity" android:theme="@style/ArticleActivityTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360tabletcore.intro.TermsOfUseActivity" android:theme="@style/HalfTranslucentActivityTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360tabletcore.intro.PrivacyPolicyActivity" android:theme="@style/HalfTranslucentActivityTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360tabletcore.settings.MutedSourcesActivity" android:theme="@style/HalfTranslucentActivityTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360tabletcore.settings.DeveloperSettingsActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360tabletcore.welcome.WelcomeActivity" android:theme="@style/HalfTranslucentActivityTheme" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:launchMode="singleTop" android:name="com.news360.news360app.Splash" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.news360.news360app.RootActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="@string/web_run_host_category" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+                <android-data android:host="@string/web_run_host_usercategory" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="" android:name="com.news360.news360app.controller.article.PhoneArticleActivity" android:screenOrientation="user" android:theme="@style/ArticleActivityTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360app.profile.ProfilePageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="@string/web_run_host_object" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+                <android-data android:host="@string/web_run_host_source" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+                <android-data android:host="@string/web_run_host_topic" android:scheme="@string/web_run_scheme"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360app.settings.CustomLocationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360app.account.SignInActivity" android:screenOrientation="portrait" android:theme="@style/TranslucentActivityTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360app.saved.SavedActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360app.settings.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360app.settings.ServicesDialogActivity" android:screenOrientation="portrait" android:theme="@style/TranslucentActivityTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360app.category.CategoryAddActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@style/TranslucentActivityTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.news360.news360tabletcore.widget.WidgetLocationActivity" android:theme="@style/TranslucentActivityTheme"><nothingHere/></activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_applicationId"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <provider android:authorities="com.news360.news360app.widgetimagecontentprovider" android:enabled="@bool/supportHoneycomb" android:exported="true" android:multiprocess="true" android:name="com.news360.news360tabletcore.widget.WidgetImageContentProvider"><nothingHere/></provider>
+        <receiver android:enabled="@bool/notSupportHoneycomb" android:label="News360Medium" android:name="com.news360.news360app.widget.WidgetsReceiverFroyoNormal">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.news360.widget.autoflip"><nothingHere/></action>
+                <action android:name="com.news360.widget.refresh"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_previous_click"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_next_click"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/smart_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:enabled="@bool/notSupportHoneycomb" android:label="News360Small" android:name="com.news360.news360app.widget.WidgetsReceiverFroyoSmall">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.news360.widget.autoflip"><nothingHere/></action>
+                <action android:name="com.news360.widget.refresh"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_previous_click"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_next_click"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/smart_small_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:enabled="@bool/notSupportHoneycomb" android:label="News360Large" android:name="com.news360.news360app.widget.WidgetsReceiverFroyoLarge">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.news360.widget.autoflip"><nothingHere/></action>
+                <action android:name="com.news360.widget.refresh"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_previous_click"><nothingHere/></action>
+                <action android:name="com.news360.widget.move_next_click"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/smart_large_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:enabled="@bool/supportHoneycomb" android:label="News360" android:name="com.news360.news360tabletcore.widget.WidgetsReceiverCarousel">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"><nothingHere/></action>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"><nothingHere/></action>
+                <action android:name="com.news360.widget.autoflip"><nothingHere/></action>
+                <action android:name="com.news360.widget.refresh"><nothingHere/></action>
+                <action android:name="com.news360.widget.element_click"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/carousel_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:enabled="@bool/supportHoneycomb" android:label="News360" android:name="com.news360.news360tabletcore.widget.WidgetsReceiverCarousel2x4">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE_OPTIONS"><nothingHere/></action>
+                <action android:name="com.sec.android.widgetapp.APPWIDGET_RESIZE"><nothingHere/></action>
+                <action android:name="com.news360.widget.autoflip"><nothingHere/></action>
+                <action android:name="com.news360.widget.refresh"><nothingHere/></action>
+                <action android:name="com.news360.widget.element_click"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/carousel_widget_provider_2x4"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.news360.news360app"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="@bool/supportHoneycomb" android:exported="false" android:name="com.news360.news360tabletcore.widget.WidgetServiceCarousel" android:permission="android.permission.BIND_REMOTEVIEWS"><nothingHere/></service>
+        <service android:enabled="@bool/supportHoneycomb" android:exported="false" android:name="com.news360.news360tabletcore.widget.WidgetServiceCarousel2x4" android:permission="android.permission.BIND_REMOTEVIEWS"><nothingHere/></service>
+        <service android:name="com.news360.news360app.GCMIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.news360.news360app.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.news360.news360app.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <android:uses-permission android:maxSdkVersion="18" android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></android:uses-permission>
+    </manifest>

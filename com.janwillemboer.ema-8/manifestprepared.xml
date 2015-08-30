@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.janwillemboer.ema">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="PagesList"><nothingHere/></activity>
+        <activity android:name="NewPageName" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="EditPage"><nothingHere/></activity>
+        <activity android:name="ViewPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.janwillemboer.ema.dropbox.EditSyncPreferences"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="singleTask" android:name="com.dropbox.client2.android.AuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="db-l8tliwhtfvkrxl7"><nothingHere/></android-data>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <provider android:authorities="com.janwillemboer.ema.localfile" android:name=".LocalFileContentProvider"><nothingHere/></provider>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,110 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="net.parentlink.wpsd">
+    <application android:icon="@drawable/ic_app_logo" android:label="@string/app_name" android:largeHeap="true" android:name="net.parentlink.common.PLApplication" android:theme="@style/Theme.Parentlink">
+        <activity android:name="net.parentlink.wpsd.HomeScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/News" android:name="net.parentlink.wpsd.NewsMash" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/Sports" android:name="net.parentlink.wpsd.Sports" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.ArticleViewPager" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.SocialMedia" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.WebViewSelector" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.SuperCorner" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="net.parentlink.wpsd.TipLine" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/inbox" android:name="net.parentlink.wpsd.Inbox" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".HomeScreen"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="net.parentlink.wpsd.MessageViewPager" android:screenOrientation="portrait" android:theme="@style/Theme.ParentLink.NoAnimation">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Inbox"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="net.parentlink.wpsd.AlertList" android:screenOrientation="portrait" android:theme="@style/Theme.ParentLink.NoAnimation">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".Inbox"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="net.parentlink.wpsd.TipLineOrgChooser" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="" android:logo="@drawable/parentlinklogowhite" android:name="net.parentlink.wpsd.ChooseDistrict" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:label="@string/calendar" android:name="net.parentlink.wpsd.Calendar" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.SportsPageSelector" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/web_calendars" android:name="net.parentlink.wpsd.CalendarWeb" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.OrgSplash" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.OrgChooser" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/login_with_google" android:name="net.parentlink.wpsd.GoogleAccountChooser" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.GoogleLoginWebView" android:screenOrientation="portrait" android:theme="@style/Theme.ParentLink.NoAnimation"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.Media" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.MediaFullScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/log_in" android:name="net.parentlink.wpsd.Login" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.Settings" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.Resources" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.SourceSelection" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.EventCalendar" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.SplashScreen" android:screenOrientation="portrait" android:theme="@style/Holo.Theme.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="net.parentlink.wpsd.Directory" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".HomeScreen"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="net.parentlink.wpsd.BusinessTypes" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.BusinessList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.CalendarTracks" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.CalendarTracksEvents" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.OrganizationInfo" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".HomeScreen"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="net.parentlink.common.OrganizationAccountList" android:screenOrientation="portrait" android:theme="@style/Theme.ParentLink.NoAnimation"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.OrganizationAccountInfo" android:screenOrientation="portrait" android:theme="@style/Theme.ParentLink.NoAnimation"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.FullScreenImage" android:screenOrientation="portrait" android:theme="@style/Theme.ParentLink.NoAnimation"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.AccountInfo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/Edit_Account_Information" android:name="net.parentlink.common.AccountEdit" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.AccountBusRoutes" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/Classes" android:name="net.parentlink.common.AccountClasses" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/Class_Info" android:name="net.parentlink.common.AccountClass" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/Assignments" android:name="net.parentlink.common.AccountAssignments" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/Assignment_Info" android:name="net.parentlink.common.AccountAssignment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/Attendance" android:name="net.parentlink.common.AccountAttendance" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.AccountEditDeliveryAddress" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/Library" android:name="net.parentlink.common.Library" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.CalendarEventDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.CalendarEventNotes" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.CustomLink" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.common.PLInfo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.SchoolFinder" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.SetupWizard" android:screenOrientation="portrait" android:theme="@style/PLDialog"><nothingHere/></activity>
+        <activity android:name="net.parentlink.wpsd.CommunityStream" android:screenOrientation="portrait"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="3265130"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_api_key"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="net.parentlink.wpsd"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="net.parentlink.wpsd.LocaleChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="net.parentlink.wpsd.GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+<permission android:name="net.parentlink.wpsd.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="net.parentlink.wpsd.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

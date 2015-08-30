@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bgexpertsllc.africafest">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.bgexpertsllc.africafest.MyApplication" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.bgexpertsllc.africafest.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="push.PushWebViewer" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.bgexpertsllc.africafest.AlarmActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <provider android:authorities="com.bgexpertsllc.africafest.urbanairship.provider" android:exported="false" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider"><nothingHere/></provider>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.bgexpertsllc.africafest"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="push.IntentReceiver"><nothingHere/></receiver>
+    <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        </application>
+<permission android:name="com.bgexpertsllc.africafest.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.bgexpertsllc.africafest.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

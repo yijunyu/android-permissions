@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="ru.nfos.aura.energy">
+    <application android:allowBackup="true" android:icon="@drawable/app_battery_icon" android:label="@string/energy_app_name">
+        <activity android:configChanges="locale" android:icon="@drawable/app_battery_icon" android:label="@string/help_app_name" android:name="ru.nfos.aura.shared.AuraHelpActivity" android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:icon="@drawable/app_battery_icon" android:label="@string/other_apps_app_name" android:name="ru.nfos.aura.shared.AuraOtherAppsActivity" android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:icon="@drawable/battery_icon" android:label="@string/energy_app_name" android:name="ru.nfos.aura.energy.EnergyActivity" android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:icon="@drawable/battery_discharge_icon" android:label="@string/battery_discharge_app_name" android:name="ru.nfos.aura.energy.BatteryDischargeActivity" android:theme="@android:style/Theme.Light">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale" android:icon="@drawable/battery_icon" android:label="@string/energy_preferences_app_name" android:name="ru.nfos.aura.energy.EnergyPreferencesActivity" android:theme="@android:style/Theme">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name="ru.nfos.aura.shared.AuraPollingReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"><nothingHere/></action>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"><nothingHere/></action>
+                <action android:name="android.intent.action.BATTERY_LOW"><nothingHere/></action>
+                <action android:name="android.intent.action.BATTERY_OKAY"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"><nothingHere/></action>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </receiver>
+        <receiver android:name="ru.nfos.aura.shared.AuraRespawnReceiver">
+            <intent-filter>
+                <action android:name="ru.nfos.aura.RESPAWN_ACTION"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:icon="@drawable/battery_icon" android:label="@string/battery_widget_name" android:name="ru.nfos.aura.energy.BatteryWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/battery_widget"><nothingHere/></meta-data>
+        </receiver>
+    <service android:icon="@drawable/app_battery_icon" android:name="ru.nfos.aura.shared.AuraPollingService"><nothingHere/></service>
+        <service android:icon="@drawable/app_world_icon" android:name="ru.nfos.aura.shared.WakeService"><nothingHere/></service>
+        <service android:icon="@drawable/battery_discharge_icon" android:name="ru.nfos.aura.energy.BatteryDischargeService"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

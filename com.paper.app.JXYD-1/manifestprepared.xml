@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.paper.app.JXYD">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name="com.paper.app.JXYD.MainTabActivity"><nothingHere/></activity>
+        <activity android:name="SplashActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.paper.app.JXYD.ActivityHome"><nothingHere/></activity>
+        <activity android:name="com.paper.app.JXYD.ActivityList"><nothingHere/></activity>
+        <activity android:name="com.paper.app.JXYD.ActivityDownload"><nothingHere/></activity>
+        <activity android:name="com.paper.app.JXYD.ActivityMore"><nothingHere/></activity>
+        <activity android:name="ActivityDetail"><nothingHere/></activity>
+        <activity android:name="ActivityNetDetail"><nothingHere/></activity>
+        <activity android:name="ActivityLocalDetail"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/xcysoft/android/wmp/widget/WMPWidget.java</file>
+    <line>129</line>
+    <permissions>
+      <permission>
+        <name>android.permission.SET_WALLPAPER</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

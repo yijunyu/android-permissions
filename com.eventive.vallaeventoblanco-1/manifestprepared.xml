@@ -1,0 +1,96 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.eventive.vallaeventoblanco">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.novagecko.eventive.App" android:theme="@style/testStyle">
+        <activity android:label="@string/app_name" android:name="com.novagecko.eventive.ui.SplashVC" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.novagecko.eventive.ui.MainMenuVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.ui.ConfigVC" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.ui.MyAppVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.sponsors.ui.SponsorDetailVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.sponsors.ui.SponsorsVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.ParticipantsVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.AttendingCompaniesVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.AttendingCompanyDetailVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.AttendantsVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.AttendantDetailVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.SpeakersVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.SpeakerDetailVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.documentation.ui.GeneralInfoVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.placesofinterest.ui.EventAddressVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.documentation.ui.EventOrganizerVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.documentation.ui.DocumentationVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.documentation.ui.PresentationVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.documentation.ui.VideosVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.maps.ui.GVCdeMapVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.maps.ui.MapVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.messages.ui.MessagesDetailVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.messages.ui.MessagesVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.placesofinterest.ui.PlacesInterestDetailVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.placesofinterest.ui.PlacesOfInterestVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.schedule.ui.ActivitiesOfDayVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.schedule.ui.ActivityOfDayDetailVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.schedule.ui.DatesOfInterestVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.schedule.ui.DateOfInterestDetailVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.schedule.ui.ScheduleVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.speeches.ui.SpeechesVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.userschedule.ui.UserScheduleVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.ParticipantsPlusVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.ui.AppInfoVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.maps.ui.GuideMapVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.maps.ui.MapRouteVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.maps.ui.MapSearchVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.documentation.ui.DocumentDetailVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.ui.LoginVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.ui.NewUserVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.messages.ui.MessagesMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.messages.ui.MessagesDetailActivityVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.sponsors.ui.SponsorsMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.sponsors.ui.SponsorsDetailActivityVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.schedule.ui.DatesInterestDetailActivityVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.schedule.ui.DatesInterestMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.schedule.ui.ActivitiesDetailActivityVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.schedule.ui.ActivitiesMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.CompanyMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.CompanyDetailActivityVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.SpeakerMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.SpeakerDetailActivityVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.AttendantMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.attendants.ui.AttendantDetailActivityVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.placesofinterest.ui.PlaceOfInterestMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.placesofinterest.ui.PlacesMapActivity"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.placesofinterest.ui.PlaceOfInterestDetailActivityVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.userschedule.ui.UserScheduleMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.userschedule.ui.UserScheduleDetailActivityVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.speeches.ui.SpeechesMainVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.documentation.ui.DocumentOnlineVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.documentation.ui.LinksVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.eventive.ui.ProfileVC"><nothingHere/></activity>
+        <activity android:name="com.novagecko.passwordrecovery.PasswordRecoveryVC" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.novagecko.passwordrecovery.ChangePasswordVC" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.novagecko.eventive.webview.ui.WebPlayerVC"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.eventive.vallaeventoblanco"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.eventive.vallaeventoblanco.GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.eventive.vallaeventoblanco.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.eventive.vallaeventoblanco.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

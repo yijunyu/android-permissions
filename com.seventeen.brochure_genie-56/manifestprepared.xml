@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.seventeen.brochure_genie">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="ui.App">
+        <activity android:label="@string/app_name" android:name="ui.IssueList" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="ui.Popup" android:theme="@style/AppThemeDialog"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ui.MoreInfo" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ui.Subscribe" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ui.Login" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ui.Help" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.librelio.activity.MuPDFActivity" android:theme="@style/Theme.Fullscreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.librelio.activity.MainMagazineActivity"><nothingHere/></meta-data>
+        </activity>
+        <provider android:authorities="com.seventeen.brochure_genie" android:exported="false" android:name="db.CP"><nothingHere/></provider>
+        <provider android:authorities="com.seventeen.brochure_genie.urbanairship.provider" android:exported="false" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider"><nothingHere/></provider>
+        <receiver android:name="networking.PushReceiver">
+            <intent-filter>
+                <action android:name="com.urbanairship.push.NOTIFICATION_OPENED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.seventeen.brochure_genie"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="networking.DownloadQueue" android:process=":downloadqueue" class="networking.DownloadQueue">
+            <intent-filter>
+                <action android:name="com.seventeen.brochure_genie.DownloadQueue" android:value="com.seventeen.brochure_genie.DownloadQueue"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:label="Push Notification Worker Service" android:name="com.urbanairship.push.PushWorkerService"><nothingHere/></service>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        <service android:label="Segments Service" android:name="com.urbanairship.location.LocationService"><nothingHere/></service>
+    </application>
+<permission android:name="com.seventeen.brochure_genie.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.seventeen.brochure_genie.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    </manifest>

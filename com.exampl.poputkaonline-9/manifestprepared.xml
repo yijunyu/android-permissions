@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.exampl.poputkaonline">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/logo" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.exampl.poputkaonline.DashboardActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_login" android:name="com.exampl.poputkaonline.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_login" android:name="com.exampl.poputkaonline.NewPassActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="&#1057;&#1086;&#1086;&#1073;&#1097;&#1077;&#1085;&#1080;&#1103;" android:name="com.exampl.poputkaonline.MessagesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="&#1052;&#1086;&#1080; &#1079;&#1072;&#1103;&#1074;&#1082;&#1080;" android:name="com.exampl.poputkaonline.RidesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_choice" android:name="com.exampl.poputkaonline.ChoiceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_reg_without_region" android:name="com.exampl.poputkaonline.RegWithoutRegionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_regwithoutregion_step_two" android:name="com.exampl.poputkaonline.RegwithoutregionStepTwoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_reg_without_region_driver" android:name="com.exampl.poputkaonline.RegWithoutRegionDriverActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_regwithout_region_driver_step_two" android:name="com.exampl.poputkaonline.RegwithoutRegionDriverStepTwoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_reg_without_region_step_three" android:name="com.exampl.poputkaonline.RegWithoutRegionStepThreeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_map" android:name="com.exampl.poputkaonline.MapActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="xyz"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_forget_password" android:name="com.exampl.poputkaonline.ForgetPasswordActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCm7MTNGgCzwBViKN-TUGrkpc-688gByrE"><nothingHere/></meta-data>
+        <provider android:authorities="com.loaders.loaderinbox" android:name="com.loaders.LoaderInbox$SimpleProvider"><nothingHere/></provider>
+        <provider android:authorities="com.loaders.loadersent" android:name="com.loaders.LoaderSent$SimpleProvider"><nothingHere/></provider>
+        <provider android:authorities="com.loaders.loaderrequest" android:name="com.loaders.LoaderRequest$SimpleProvider"><nothingHere/></provider>
+        <provider android:authorities="com.loaders.loaderrides" android:name="com.loaders.LoaderRides$SimpleProvider"><nothingHere/></provider>
+        <receiver android:name="com.library.TimeAlarm"><nothingHere/></receiver>
+    <service android:name="com.library.GPSService"><nothingHere/></service>
+        <service android:name="com.library.MessageService" android:process=":myservice"><nothingHere/></service>
+        <service android:name="com.library.RequestService" android:process=":myrequest"><nothingHere/></service>
+        <service android:name="com.library.VerifyService" android:process=":myverify"><nothingHere/></service>
+        <service android:name="com.library.DeleteRequestService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.exampl.poputkaonline.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="in.wptrafficanalyzer.locationroutedirectionmapv2.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    </manifest>

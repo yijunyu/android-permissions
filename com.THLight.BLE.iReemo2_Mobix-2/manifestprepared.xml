@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.THLight.BLE.iReemo2_Mobix">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_thlight" android:label="@string/app_name_thlight" android:name="com.THLight.BLE.iReemo2.ui.THLApp" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UIMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UIBLEList" android:screenOrientation="nosensor"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UISettings" android:screenOrientation="nosensor"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UISettingHelp" android:screenOrientation="nosensor"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UISettingPurchase" android:screenOrientation="nosensor"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UISettingScrollDir" android:screenOrientation="nosensor"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UISettingPPTStartFrom" android:screenOrientation="nosensor"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UISettingAirMouse" android:screenOrientation="nosensor"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UISettingLaserPoint" android:screenOrientation="nosensor"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.THLight.BLE.iReemo2.ui.UIAbout" android:screenOrientation="nosensor"><nothingHere/></activity>
+        <service android:enabled="true" android:name="com.THLight.BLE.ScanService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

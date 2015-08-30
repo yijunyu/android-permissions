@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.loyaltyplant.partner.taxiaprel">
+    <application android:debuggable="false" android:icon="@drawable/ic_" android:label="&#1058;&#1072;&#1082;&#1089;&#1080; &#1040;&#1087;&#1088;&#1077;&#1083;&#1100;" android:name="mono.android.app.Application">
+        <activity android:label="KingBar" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="BaseActivity" android:name="frontend.BaseActivity"><nothingHere/></activity>
+        <activity android:name="frontend.activities.delivery.BaseDelivery" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.delivery.CartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="frontend.activities.delivery.CategoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.delivery.DeliveryMenuActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.FormActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="frontend.activities.delivery.ItemActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.InfoScreenActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.DebugActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.InviteFriendActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="frontend.activities.MainScreenActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.MapWithMarkersActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.MultiBrandListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.OutletInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.RestoreAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.ShowQrCodeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="frontend.SlideshowActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="frontend.activities.ShowCouponActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.StartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:label="&#1058;&#1072;&#1082;&#1089;&#1080; &#1040;&#1087;&#1088;&#1077;&#1083;&#1100;" android:name="frontend.StartApplication" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="frontend.SumInputActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <activity android:name="frontend.activities.ValidationScreenActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LP"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyD_G8xCjiEy_AQKLXrT5_ZyiCGeqG02slE"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <provider android:authorities="com.loyaltyplant.partner.taxiaprel.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    <receiver android:name="frontend.helpers.PushHandlerBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gcm.intent.RETRY"><nothingHere/></action>
+                <category android:name="com.loyaltyplant.partner.taxiaprel"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.loyaltyplant.partner.taxiaprel"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.loyaltyplant.partner.taxiaprel"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="frontend.helpers.PushHandlerService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.loyaltyplant.partner.taxiaprel.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.loyaltyplant.partner.taxiaprel.permission.C2D_MESSAGE"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.loyaltyplant.partner.taxiaprel.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.loyaltyplant.partner.taxiaprel.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+</manifest>

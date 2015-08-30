@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="pl.cocolab.woodstock">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="pl.cocolab.woodstock.WoodApp">
+        <activity android:name="pl.cocolab.woodstock.splash.SplashActivity_" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="pl.cocolab.woodstock.home.HomeActivity_" android:screenOrientation="portrait" android:theme="@style/WoodTheme"><nothingHere/></activity>
+        <activity android:name="pl.cocolab.woodstock.home.map.MapActivity_" android:screenOrientation="portrait" android:theme="@style/WoodTheme"><nothingHere/></activity>
+        <activity android:configChanges="layoutDirection|orientation|screenLayout|screenSize" android:name="pl.cocolab.woodstock.home.game.ListOfCardsActivity_" android:screenOrientation="portrait" android:theme="@style/WoodTheme"><nothingHere/></activity>
+        <activity android:name="pl.cocolab.woodstock.util.youtube.YoutubeActivity" android:theme="@style/SplashTheme"><nothingHere/></activity>
+        <activity android:configChanges="layoutDirection|orientation|screenLayout|screenSize" android:name="com.facebook.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="pl.cocolab.woodstock.home.notification.NotificationActivity_" android:screenOrientation="portrait" android:theme="@style/WoodTheme"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="c32570ed04aeee17846e7f2c38f6e0208696d161"><nothingHere/></meta-data>
+    <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="pl.cocolab.woodstock"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="pl.cocolab.woodstock.sync.StartBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="pl.cocolab.woodstock.home.CustomPushReceiver">
+            <intent-filter>
+                <action android:name="coco.WOOD"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="pl.cocolab.woodstock.home.notification.WoodAlarmReceiver"><nothingHere/></receiver>
+        <service android:name="pl.cocolab.woodstock.sync.SyncService"><nothingHere/></service>
+        <service android:name="pl.cocolab.woodstock.sync.NotificationSyncService"><nothingHere/></service>
+        <service android:name="com.parse.PushService"><nothingHere/></service>
+        <service android:name="org.countly.OpenUDID_service">
+            <intent-filter>
+                <action android:name="org.openudid.GETUDID"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<permission android:name="pl.cocolab.woodstock.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="pl.cocolab.woodstock.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

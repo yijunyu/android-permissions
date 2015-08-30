@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="org.qtapp.shoplistreminder">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="Shopping List Reminder" android:name="org.qtproject.qt5.android.bindings.QtApplication">
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:label="@string/app_name" android:launchMode="singleTop" android:name="org.qtproject.qt5.android.bindings.QtActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.app.lib_name" android:value="ShoppingListReminder"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.qt_sources_resource_id" android:resource="@array/qt_sources"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.repository" android:value="default"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.qt_libs_resource_id" android:resource="@array/qt_libs"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.bundled_libs_resource_id" android:resource="@array/bundled_libs"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.bundle_local_qt_libs" android:value="1"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.bundled_in_lib_resource_id" android:resource="@array/bundled_in_lib"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.bundled_in_assets_resource_id" android:resource="@array/bundled_in_assets"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.use_local_qt_libs" android:value="1"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.libs_prefix" android:value="/data/local/tmp/qt/"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.load_local_libs" android:value="plugins/platforms/android/libqtforandroid.so:lib/libQt5QuickParticles.so"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.load_local_jars" android:value="jar/QtAndroid.jar:jar/QtAndroidAccessibility.jar:jar/QtAndroid-bundled.jar:jar/QtAndroidAccessibility-bundled.jar"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.static_init_classes" android:value=""><nothingHere/></meta-data>
+            <meta-data android:name="android.app.ministro_not_found_msg" android:value="@string/ministro_not_found_msg"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.ministro_needed_msg" android:value="@string/ministro_needed_msg"><nothingHere/></meta-data>
+            <meta-data android:name="android.app.fatal_error_msg" android:value="@string/fatal_error_msg"><nothingHere/></meta-data>
+        </activity>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES"><nothingHere/></uses-permission>
+</manifest>

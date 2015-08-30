@@ -1,0 +1,107 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.readbooks.readbooks">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/APP_NAME" android:name="com.readbooks.readbooks.ReadbooksApplication" android:persistent="true" android:theme="@style/AppTheme">
+        <activity android:name="com.readbooks.readbooks.SplashScreenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="readbooks"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="startreading"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <action android:name="android.intent.action.GET_CONTENT"><nothingHere/></action>
+                <android-data android:pathPattern=".*\\.acsm"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:scheme="content"><nothingHere/></android-data>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <action android:name="android.intent.action.GET_CONTENT"><nothingHere/></action>
+                <android-data android:pathPattern=".*\\.pdf"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:scheme="content"><nothingHere/></android-data>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <action android:name="android.intent.action.GET_CONTENT"><nothingHere/></action>
+                <android-data android:pathPattern=".*\\.epub"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:scheme="content"><nothingHere/></android-data>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.readbooks.readbooks.MainTabActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustNothing|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.MyBooksFragmentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.NowReadingGroupActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.readbooks.readbooks.NowReadingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.NowReadingInfosActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.NowReadingTocListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.MoreGroupActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.MoreActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.MoreArchivesDetails" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.MoreGeneralSettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.ReaderSettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.MoreHelpActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.MoreFAQ" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.MoreAboutActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.MultipleActivationFragmentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.BookmarksHighlightsListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.InfoBookDetailsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.readbooks.readbooks.WebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.TabGroupActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.RBTabGroupActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.NoteActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.NoteEditActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.readbooks.readbooks.SearchActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.StoreActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.readbooks.readbooks.ActivationFragmentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:pathPattern=".*\\newpassword"><nothingHere/></android-data>
+                <android-data android:host="com.readbooks.readbooks"><nothingHere/></android-data>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <service android:enabled="true" android:name="com.readbooks.readbooks.services.AutoSyncroService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    </manifest>

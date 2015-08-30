@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.talex.tb302">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="TaxiApplication">
+        <activity android:label="@string/Title_MainActivity" android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="talex"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/Title_ProfileActivity" android:name=".activities.ProfileActivity"><nothingHere/></activity>
+        <activity android:label="@string/Title_RegistrationActivity" android:name=".activities.RegistrationActivity"><nothingHere/></activity>
+        <activity android:label="@string/Title_TaxiRufenActivity" android:name=".activities.TaxiRufenActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/Title_ManuelleOrteingabeActivity" android:name=".activities.ManuelleOrteingabeActivity"><nothingHere/></activity>
+        <activity android:label="@string/Title_TimeDialog" android:name=".dialogs.TimeDialog"><nothingHere/></activity>
+        <activity android:label="@string/Title_TaxiWaehlenActivity" android:name=".activities.TaxiWaehlenActivity"><nothingHere/></activity>
+        <activity android:label="@string/Title_FavoritenActivity" android:name=".activities.FavoritenActivity"><nothingHere/></activity>
+        <activity android:name=".activities.MessageActivity"><nothingHere/></activity>
+        <activity android:name=".activities.OverviewActivity"><nothingHere/></activity>
+        <activity android:name=".activities.SplashActivity"><nothingHere/></activity>
+        <activity android:name=".activities.MoreOptionsActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".activities.HelpActivity"><nothingHere/></activity>
+        <activity android:name=".activities.AboutActivity"><nothingHere/></activity>
+    <service android:enabled="true" android:exported="true" android:name="com.talex.tb302.service.TaxiService" android:process="com.talex.tb302">
+            <intent-filter>
+                <action android:name="com.talex.tb302.service.TaxiService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+</manifest>

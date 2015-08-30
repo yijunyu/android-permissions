@@ -1,0 +1,16 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.READ_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.DISABLE_KEYGUARD</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.CAMERA</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.MODIFY_AUDIO_SETTINGS</permission>
+    <permission>android.permission.RECORD_AUDIO</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rain.divip">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:noHistory="true" android:theme="@style/AppTheme">
+        <activity android:name="com.rain.divip.SplashScreen" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name=".MainActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Settings" android:theme="@style/AppTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.PREFERENCE"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:name="com.rain.divip.dialog.CustomDialog_SupernetInput" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.dialog.CustomDialog_VlsmInput" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".Email" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name=".About" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.keyes.youtube.OpenYouTubePlayerActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_IP" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_CIDR" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_SUBNET" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_SUPERNET" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_VLSM" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_METRIC" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_IPv6" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_SUBNETv6" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_BASE" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.rain.divip.help.Help_EUI64" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

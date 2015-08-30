@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.MODIFY_AUDIO_SETTINGS</permission>
+    <permission>android.permission.READ_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.RECORD_VIDEO</permission>
+    <permission>android.permission.CAMERA</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+    <permission>android.permission.INTERNET</permission>
+  </under-specification>
+</comparison>

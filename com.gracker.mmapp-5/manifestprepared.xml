@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gracker.mmapp">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.gracker.mmapp.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_login" android:name=".LoginActivity" android:parentActivityName=".MainActivity" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_logout" android:name=".LogoutActivity" android:parentActivityName=".MainActivity" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_topup" android:name=".TopupActivity" android:parentActivityName=".MainActivity" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_registration" android:name=".RegistrationActivity" android:parentActivityName=".MainActivity" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_settings" android:name="com.gracker.mmapp.SettingsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_feedback" android:name="com.gracker.mmapp.FeedbackActivity" android:parentActivityName=".MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_koddaftar" android:name="com.gracker.mmapp.KodDaftarActivity" android:parentActivityName=".MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"><nothingHere/></meta-data>
+        </activity>
+    </application>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.nomadesk.android">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".NomadeskApplication" android:theme="@style/Theme.D1">
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name=".activities.LoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name=".activities.LoginBasicAuthActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.DashboardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.OfflineDashboard"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.OfflineBrowserActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.FavoritesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.SettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.TheftguardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.TheftguardActiveActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.TheftguardHistoryActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.TheftguardMapActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.MyAccountActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.MyAccountInfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.MyAccountEditActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.MyAccountPasswordActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.AccountWizardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.NewAccountWizardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.ExistingAccountWizardActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activities.ForgotPasswordActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.FileserversActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.FileserverPropertiesActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.GuestActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.ReinviteActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name=".activities.NewFileserverActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.BrowserActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.BrowserActivityGroup"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.SendLinkActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.InviteFileserverActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activities.SearchActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/googleapikey"><nothingHere/></meta-data>
+        <uses-library android:name="com.google.android.maps" android:required="true"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.nomadesk.android.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.nomadesk.android.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

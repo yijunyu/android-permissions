@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="air.com.ohsnahs.frufru">
+    <application android:hardwareAccelerated="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name=".AppEntry" android:screenOrientation="user" android:theme="@style/Theme.NoShadow" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="namespaceVersion" android:value="3.9"><nothingHere/></meta-data>
+            <meta-data android:name="aspectRatio" android:value="portrait"><nothingHere/></meta-data>
+            <meta-data android:name="autoOrients" android:value="false"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="7a0f599a-8a6b-47cb-9435-19a8ab7c9024"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="frufru_android.swf"><nothingHere/></meta-data>
+            <meta-data android:name="containsVideo" android:value="false"><nothingHere/></meta-data>
+        </activity>
+        <receiver android:name="com.milkmangames.extensions.android.IABBillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.milkmangames.extensions.android.IABBillingService"><nothingHere/></service>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+</manifest>

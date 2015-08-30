@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="it.portalclub.portalclubapp">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_main" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.MainActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_login" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.LoginActivity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_elenco_annunci" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.ElencoAnnunciActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_dettaglio_annuncio" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.DettaglioAnnuncioActivity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inserimento_annuncio2" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio2Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inserimento_annuncio3" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio3Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_inserimento_annuncio_foto" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio10Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inserimento_annuncio1" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio1Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inserimento_annuncio4" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio4Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inserimento_annuncio5" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio5Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inserimento_annuncio6" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio6Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inserimento_annuncio7" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio7Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inserimento_annuncio8" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio8Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inserimento_annuncio9" android:launchMode="singleTop" android:name="it.portalclub.portalclubapp.InserimentoAnnuncio9Activity" android:theme="@style/sfondo"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_dettaglio_foto" android:name="it.portalclub.portalclubapp.DettaglioFotoActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

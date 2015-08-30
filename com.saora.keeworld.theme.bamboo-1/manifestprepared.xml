@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.saora.keeworld.theme.bamboo">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.saora.keeworld.theme.template.ThemeActivity">
+            <intent-filter>
+                <action android:name="com.saora.keeworld.theme.action.details"><nothingHere/></action>
+                <category android:name="com.saora.keeworld.theme"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="com.saora.keeworld.theme.configresource" android:resource="@xml/theme"><nothingHere/></meta-data>
+        </activity>
+    </application>
+</manifest>

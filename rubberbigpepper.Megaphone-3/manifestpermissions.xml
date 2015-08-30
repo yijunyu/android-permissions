@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.RECORD_AUDIO</name>
+  </permission>
+  <permission>
+    <name>android.permission.MODIFY_AUDIO_SETTINGS</name>
+  </permission>
+</permissions>

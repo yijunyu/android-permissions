@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pioneerrx.rxlocal.newenglandmailorder">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/template_app_name" android:name="com.newtechsys.rxlocal.RxLocalApp" android:theme="@style/RxLocalAppTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/template_app_name" android:name="com.newtechsys.rxlocal.ui.ui.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="@string/template_launcher_name">
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/forgot_my" android:name="com.newtechsys.rxlocal.ui.ui.ForgotActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/pin_number" android:name="com.newtechsys.rxlocal.ui.ui.PinLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/create_your_pin" android:name="com.newtechsys.rxlocal.ui.ui.PinCreateActivity" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/register_statelist_header" android:name="com.newtechsys.rxlocal.ui.registration.StateListActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/register_citylist_header" android:name="com.newtechsys.rxlocal.ui.registration.CityListActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/register_locationlist_header" android:name="com.newtechsys.rxlocal.ui.registration.LocationListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/change_store" android:name="com.newtechsys.rxlocal.ui.registration.ChangeStoreActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/step_one" android:name="com.newtechsys.rxlocal.ui.registration.Step1Activity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/step_two" android:name="com.newtechsys.rxlocal.ui.registration.Step2Activity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/step_three" android:name="com.newtechsys.rxlocal.ui.registration.Step3Activity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/template_app_name" android:name="com.newtechsys.rxlocal.ui.MainMenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/contact_us" android:name="com.newtechsys.rxlocal.ui.ContactActivity" android:theme="@style/RxLocalAppTheme.Secondary"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/patients" android:name="com.newtechsys.rxlocal.ui.patient.PatientListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/prescriptions" android:name="com.newtechsys.rxlocal.ui.refill.PrescriptionListActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/rx_details" android:name="com.newtechsys.rxlocal.ui.refill.PrescriptionDetailActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/pickup_options" android:name="com.newtechsys.rxlocal.ui.refill.PickupOptionsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/profile" android:name="com.newtechsys.rxlocal.ui.profile.PocketProfileActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/add_new_patient" android:name="com.newtechsys.rxlocal.ui.patient.PatientAddActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/change_info" android:name="com.newtechsys.rxlocal.ui.settings.ChangeInfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/reminders" android:name="com.newtechsys.rxlocal.ui.reminder.ReminderListActivity" android:theme="@style/RxLocalAppTheme.Tertiary"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/reminders" android:name="com.newtechsys.rxlocal.ui.reminder.ReminderEditActivity" android:theme="@style/RxLocalAppTheme.Tertiary"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/times" android:name="com.newtechsys.rxlocal.ui.reminder.TimeListActivity" android:theme="@style/RxLocalAppTheme.Tertiary"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/repeat" android:name="com.newtechsys.rxlocal.ui.reminder.ReminderRepeatEditActivity" android:theme="@style/RxLocalAppTheme.Tertiary"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/medications" android:name="com.newtechsys.rxlocal.ui.reminder.ReminderMedicationListActivity" android:theme="@style/RxLocalAppTheme.Tertiary"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:label="@string/medication_reminder" android:launchMode="singleTask" android:name="com.newtechsys.rxlocal.ui.reminder.IncomingReminderActivity" android:taskAffinity="" android:theme="@style/RxLocalAppTheme.Tertiary"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/terms_of_use" android:name="com.newtechsys.rxlocal.auth.TermsOfUseActivity"><nothingHere/></activity>
+        <activity android:label="@string/reset_password" android:name="com.newtechsys.rxlocal.login.ResetPasswordActivity"><nothingHere/></activity>
+        <activity android:label="@string/reset_password" android:name="com.newtechsys.rxlocal.login.ResetPasswordLogonNameActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_settings" android:name="com.newtechsys.rxlocal.ui.settings.SettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/change_pin" android:name="com.newtechsys.rxlocal.ui.settings.ChangePinActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/change_password" android:name="com.newtechsys.rxlocal.ui.settings.ChangePasswordActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="Unavailable" android:name="com.newtechsys.rxlocal.ui.ui.deviceAuth.DeviceAuthUnavailableActivity" android:parentActivityName="com.newtechsys.rxlocal.ui.ui.LoginActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.newtechsys.rxlocal.ui.ui.LoginActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="Verify" android:name="com.newtechsys.rxlocal.ui.ui.deviceAuth.DeviceAuthVerifyIdentityActivity" android:parentActivityName="com.newtechsys.rxlocal.ui.ui.LoginActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.newtechsys.rxlocal.ui.ui.LoginActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="Access Code" android:name="com.newtechsys.rxlocal.ui.ui.deviceAuth.DeviceAuthAccessCodeActivity" android:parentActivityName="com.newtechsys.rxlocal.ui.ui.deviceAuth.DeviceAuthVerifyIdentityActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.newtechsys.rxlocal.ui.ui.deviceAuth.DeviceAuthVerifyIdentityActivity"><nothingHere/></meta-data>
+        </activity>
+    <meta-data android:name="com.crashlytics.ApiKey" android:value="f1c53617f506d8408e8663dd49a6c7c8b021a795"><nothingHere/></meta-data>
+        <receiver android:name="com.newtechsys.rxlocal.reminder.ReminderReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.newtechsys.rxlocal.reminder.ReminderBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.newtechsys.rxlocal.reminder.ReminderRescheduleService">
+            <intent-filter>
+                <action android:name="com.newtechsys.rxlocal.reminder.ReminderRescheduleService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

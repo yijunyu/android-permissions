@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.SiteWrapper">
+    <application android:icon="@drawable/icon" android:label="&#1062;&#1074;&#1077;&#1090;&#1099; &#1080; &#1082;&#1086;&#1084;&#1085;&#1072;&#1090;&#1085;&#1099;&#1077; &#1088;&#1072;&#1089;&#1090;&#1077;&#1085;&#1080;&#1103;" android:name="mono.android.app.Application">
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="false" android:name="sitewrapper.MainActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.gyuhpc.gbneiczrqyzywniwlh.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    <receiver android:name="sitewrapper.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="sitewrapper.NotifyServ"><nothingHere/></service>
+        </application>
+    <service android:name="SiteWrapper.NotifyServ"><nothingHere/></service>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+</manifest>

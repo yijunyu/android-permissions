@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.qigame.lock.global.playingfootball">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.qiigame.flocker.theme.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="themes" android:resource="@xml/themes_info" android:value="0"><nothingHere/></meta-data>
+        <receiver android:enabled="false" android:name="com.qiigame.flocker.theme.PackageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.qiigame.flocker.theme.DisableComponentsReceiver">
+            <intent-filter>
+                <action android:name="com.qiigame.flocker.theme.action.DISABLE_COMPONENTS"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+<uses-feature android:name="com.qiigame.flocker.themes" android:required="false"><nothingHere/></uses-feature>
+    </manifest>

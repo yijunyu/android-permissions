@@ -1,0 +1,8 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.RECORD_AUDIO</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

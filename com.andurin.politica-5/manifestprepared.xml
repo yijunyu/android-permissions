@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.andurin.politica">
+    <application android:allowBackup="true" android:icon="@drawable/icono" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.andurin.politica.Principal" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/foro" android:name=".ForoX"><nothingHere/></activity>
+        <activity android:label="@string/menu" android:name="com.andurin.politica.Menu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/referenciasy" android:name=".Referencias"><nothingHere/></activity>
+        <activity android:label="@string/menu" android:name="com.andurin.politica.Anarquismo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.anarquismo.AnarquismoDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/historia" android:name="com.andurin.politica.anarquismo.AnarquismoHistoria"><nothingHere/></activity>
+        <activity android:label="@string/corrprincipales" android:name="com.andurin.politica.anarquismo.AnarquismoCorrientes"><nothingHere/></activity>
+        <activity android:label="@string/nuevascorr" android:name="com.andurin.politica.anarquismo.AnarquismoNuevasCorr"><nothingHere/></activity>
+        <activity android:label="@string/cultura" android:name="com.andurin.politica.anarquismo.AnarquismoCultura"><nothingHere/></activity>
+        <activity android:label="@string/criticas" android:name="com.andurin.politica.anarquismo.AnarquismoCriticas"><nothingHere/></activity>
+        <activity android:label="@string/comunismo" android:name="com.andurin.politica.Comunismo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.comunismo.ComunismoDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/criticas" android:name="com.andurin.politica.comunismo.ComunismoCritica"><nothingHere/></activity>
+        <activity android:label="@string/desarrollo" android:name="com.andurin.politica.comunismo.ComunismoDesarrollo"><nothingHere/></activity>
+        <activity android:label="@string/historia" android:name="com.andurin.politica.comunismo.ComunismoHistoria"><nothingHere/></activity>
+        <activity android:label="@string/sociedad" android:name="com.andurin.politica.comunismo.ComunismoSociedad"><nothingHere/></activity>
+        <activity android:label="@string/marxismo" android:name="com.andurin.politica.Marxismo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.marxismo.MarxismoDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/criticas" android:name="com.andurin.politica.marxismo.MarxismoCriticas"><nothingHere/></activity>
+        <activity android:label="@string/conceptos" android:name="com.andurin.politica.marxismo.MarxismoConceptos"><nothingHere/></activity>
+        <activity android:label="@string/marxismo" android:name="com.andurin.politica.Socialismo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/conceptos" android:name="com.andurin.politica.socialismo.SocialismoConceptos"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.socialismo.SocialismoDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/historia" android:name="com.andurin.politica.socialismo.SocialismoHistoria"><nothingHere/></activity>
+        <activity android:label="@string/socialdemocracia" android:name=".SocialDemocracia" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/conceptos" android:name="com.andurin.politica.socialdemocracia.SocialDemocraciaConceptos"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.socialdemocracia.SocialDemocraciaDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/historia" android:name="com.andurin.politica.socialdemocracia.SocialDemocraciaHistoria"><nothingHere/></activity>
+        <activity android:label="@string/capitalismo" android:name=".Capitalismo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/conceptos" android:name="com.andurin.politica.capitalismo.CapitalismoConceptos"><nothingHere/></activity>
+        <activity android:label="@string/criticas" android:name="com.andurin.politica.capitalismo.CapitalismoCriticas"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.capitalismo.CapitalismoDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/origen" android:name="com.andurin.politica.capitalismo.CapitalismoOrigen"><nothingHere/></activity>
+        <activity android:label="@string/tipos" android:name="com.andurin.politica.capitalismo.CapitalismoTipos"><nothingHere/></activity>
+        <activity android:label="@string/democraciacristiana" android:name=".DemocraciaCristiana" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/conceptos" android:name="com.andurin.politica.democraciacristiana.DemocraciaCristianaConceptos"><nothingHere/></activity>
+        <activity android:label="@string/historia" android:name="com.andurin.politica.democraciacristiana.DemocraciaCristianaHistoria"><nothingHere/></activity>
+        <activity android:label="@string/liberalismo" android:name=".Liberalismo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/conceptos" android:name="com.andurin.politica.liberalismo.LiberalismoConceptos"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.liberalismo.LiberalismoDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/tipos" android:name="com.andurin.politica.liberalismo.LiberalismoTipos"><nothingHere/></activity>
+        <activity android:label="@string/conservadurismo" android:name=".Conservadurismo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/conceptos" android:name="com.andurin.politica.conservadurismo.ConservadurismoConceptos"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.conservadurismo.ConservadurismoDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/historia" android:name="com.andurin.politica.conservadurismo.ConservadurismoHistoria"><nothingHere/></activity>
+        <activity android:label="@string/tipos" android:name="com.andurin.politica.conservadurismo.ConservadurismoTipos"><nothingHere/></activity>
+        <activity android:label="@string/fascismo" android:name=".Fascismo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/conceptos" android:name="com.andurin.politica.fascismo.FascismoConceptos"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.fascismo.FascismoDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/historia" android:name="com.andurin.politica.fascismo.FascismoHistoria"><nothingHere/></activity>
+        <activity android:label="@string/tipos" android:name="com.andurin.politica.fascismo.FascismoTipos"><nothingHere/></activity>
+        <activity android:label="@string/nazismo" android:name=".Nazismo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/conceptos" android:name="com.andurin.politica.nazismo.NazismoConceptos"><nothingHere/></activity>
+        <activity android:label="@string/definicion" android:name="com.andurin.politica.nazismo.NazismoDefinicion"><nothingHere/></activity>
+        <activity android:label="@string/historia" android:name="com.andurin.politica.nazismo.NazismoHistoria"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        </application>
+<supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

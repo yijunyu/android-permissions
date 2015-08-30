@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.mfl.app.findCarrier">
+    <application android:allowBackup="false" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/Theme.Sherlock">
+        <activity android:label="@string/app_name" android:name="com.mfl.app.findCarrier.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/pref_settings_title" android:name="com.mfl.app.findCarrier.ui.Prefs"><nothingHere/></activity>
+        <activity android:name="com.mfl.app.findCarrier.ui.Notification_CallLog"><nothingHere/></activity>
+        <activity android:name="com.mfl.app.findCarrier.ui.CallLogActivity"><nothingHere/></activity>
+        <activity android:name=".ui.ContactSearchCarrierActivity"><nothingHere/></activity>
+        <receiver android:name="com.mfl.app.findCarrier.receivers.OutgoingCallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.mfl.app.findCarrier.receivers.PhoneState">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mfl.app.findCarrier.NetworkCarrierService"><nothingHere/></service>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="air.com.adobe.appentry">
+    <application android:icon="@drawable/icon" android:label="what is angina">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="what is angina" android:launchMode="singleTask" android:name=".AppEntry" android:screenOrientation="nosensor" android:theme="@style/Theme.NoShadow" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="aspectRatio" android:value="portrait"><nothingHere/></meta-data>
+            <meta-data android:name="autoOrients" android:value="false"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="false"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="d0deb91a-c2b3-4bd9-940e-0ab078c1b921"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="what is angina.swf"><nothingHere/></meta-data>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+</manifest>

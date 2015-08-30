@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.READ_CALENDAR</permission>
+    <permission>android.permission.WRITE_CALENDAR</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+  </under-specification>
+</comparison>

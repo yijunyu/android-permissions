@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.myfirstam.android">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.myfirstam.android.application.FirstAmApplication" android:theme="@style/FirstAmTheme">
+        <activity android:label="@string/app_name" android:name="com.myfirstam.android.activity.SplashActivity" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_login" android:name="com.myfirstam.android.activity.LoginActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_overview" android:name="com.myfirstam.android.activity.OverviewActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_links" android:name="com.myfirstam.android.activity.LinksActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_web_view" android:name="com.myfirstam.android.activity.WebViewActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_comps_refine" android:name="com.myfirstam.android.activity.PropertyComparableSalesRefineActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_property_report" android:name="com.myfirstam.android.activity.PropertyReportActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_property_view" android:name="com.myfirstam.android.activity.PropertyMoreActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_help" android:name="com.myfirstam.android.activity.HelpActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_help" android:name="com.myfirstam.android.activity.SimpleHelpActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_property_report_combined" android:name="com.myfirstam.android.activity.PropertyReportCombinedActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_comparable_sales_map_list" android:name="com.myfirstam.android.activity.PropertyComparableSalesSelectionActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_google_play_services_error" android:name="com.myfirstam.android.activity.GooglePlayServicesErrorActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_menu_web_view" android:name="com.myfirstam.android.activity.WebViewMenuActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tutorial_menu" android:name="com.myfirstam.android.activity.TutorialMenuActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tutorial" android:name="com.myfirstam.android.activity.TutorialActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/order_customer_service_activity_title" android:name="com.myfirstam.android.activity.OrderCustomerServiceActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_title_escrow_orders" android:name="com.myfirstam.android.activity.TitleEscrowOrdersActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_order_details" android:name="com.myfirstam.android.activity.TitleEscrowOrderDetailsActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_eula" android:name="com.myfirstam.android.activity.EulaActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="org.acra.CrashReportDialog"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/android_maps_v2_api_key"><nothingHere/></meta-data>
+        <provider android:authorities="com.firstam.myfirstam.provider.FIRSTAM_PROVIDER" android:exported="false" android:name="com.myfirstam.android.provider.FirstAmProvider"><nothingHere/></provider>
+        <receiver android:exported="true" android:name="com.myfirstam.android.manager.DownloadManager$NotificationReceiver">
+            <intent-filter>
+                <action android:name="com.firstam.myfirstam.action.OPEN_FILE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.myfirstam.android.service.webservice.WebService"><nothingHere/></service>
+        </application>
+<compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="213" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="213" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="213" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="xlarge"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="xlarge"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="xlarge"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="xlarge"><nothingHere/></screen>
+        <screen android:screenDensity="213" android:screenSize="xlarge"><nothingHere/></screen>
+    </compatible-screens>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

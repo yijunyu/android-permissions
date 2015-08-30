@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:pluto="http://www.w3.org/2001/pluto.html" android:hasCode="false" android:installLocation="internalOnly" package="com.achep.theme.sense">
+    <application android:hasCode="false" android:icon="@drawable/icon" android:label="@string/theme_name"><nothingHere/></application>
+    <theme pluto:author="@string/author" pluto:copyright="@string/copyright" pluto:name="@string/theme_name" pluto:preview="@drawable/preview" pluto:styleId="@style/Sense" pluto:styleName="@string/style_appearance_name" pluto:themeId="Sense">
+        <meta-data android:name="com.tmobile.theme.redirections" android:resource="@xml/redirections"><nothingHere/></meta-data>
+    </theme>
+<uses-feature android:name="com.tmobile.software.themes"><nothingHere/></uses-feature>
+    </manifest>

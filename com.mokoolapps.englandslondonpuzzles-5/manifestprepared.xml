@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mokoolapps.englandslondonpuzzles">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.mokool.templatefree.MyApplication">
+        <activity android:name="com.mokool.templatefree.SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mokool.templatefree.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.BaseKIIPActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.PuzzleDifficulty" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.PuzzleGallaryScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.ResumeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.MoreGames" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.Game" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.GameSlide" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.GameJigsaw" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.FacebookGallary" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mokool.templatefree.socialshare.FBSharingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity">
+            <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.revmob.ads.fullscreen.FullscreenActivity"><nothingHere/></activity>
+        <activity android:name="com.playhaven.src.publishersdk.content.PHContentView" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.mokool.templatefree.socialshare.twitter.PrepareRequestTokenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="callback" android:scheme="x-oauthflow-twitter"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|uiMode" android:name="com.flurry.android.FlurryFullscreenTakeoverActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/game_center_app_id"><nothingHere/></meta-data>
+        <service android:enabled="true" android:name="com.mokool.templatefree.service.SoundService"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    </manifest>

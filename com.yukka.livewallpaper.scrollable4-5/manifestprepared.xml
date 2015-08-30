@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.yukka.livewallpaper.scrollable4">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="HowToActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:icon="@drawable/top25" android:label="@string/app_name" android:name="com.yukka.livewallpaper.Settings" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <category android:name="android.intent.category.PREFERENCE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.wKgKZQEi.rvzHifCC107265.SmartWallActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.wKgKZQEi.rvzHifCC107265.BrowserActivity"><nothingHere/></activity>
+        <meta-data android:name="com.wKgKZQEi.rvzHifCC107265.APPID" android:value="75762"><nothingHere/></meta-data>
+        <meta-data android:name="com.wKgKZQEi.rvzHifCC107265.APIKEY" android:value="nIiDmJcC84332*1322485478843326357"><nothingHere/></meta-data>
+        <receiver android:exported="false" android:name="com.wKgKZQEi.rvzHifCC107265.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.yukka.PackageAddedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+    <service android:enabled="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="LiveWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter android:priority="1">
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"><nothingHere/></meta-data>
+        </service>
+        <service android:exported="false" android:name="com.wKgKZQEi.rvzHifCC107265.PushService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.wKgKZQEi.rvzHifCC107265.AdService"><nothingHere/></service>
+        </application>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

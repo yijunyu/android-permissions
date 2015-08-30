@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.aidasvilnius.balsavimosimuliatorius">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="Balsavimo Simuliatorius">
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name=".mblandroid" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name="AppReceiver"><nothingHere/></receiver>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="true"><nothingHere/></uses-feature>
+    </manifest>

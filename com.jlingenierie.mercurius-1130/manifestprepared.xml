@@ -1,0 +1,96 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.jlingenierie.mercurius">
+    <application android:allowBackup="true" android:enabled="true" android:icon="@drawable/icon_mercurius" android:label="@string/app_name" android:name="com.jlingenierie.mercurius.Mercurius" android:theme="@android:style/Theme">	)
+<activity android:label="@string/app_name" android:name="com.jlingenierie.mercurius.MedusaStartActivity" android:theme="@style/AboutDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.jlingenierie.mercurius.MessageSelectionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CHOOSER"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.jlingenierie.mercurius.EULAActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="EULA"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.jlingenierie.mastermind.ReportActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="USER_REPORT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.jlingenierie.mastermind.TutorialActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="TUTORIAL"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="LocalizedMessageSelection"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.jlingenierie.mercurius.SenderActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.jlingenierie.mercurius.ContactSelectionActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jlingenierie.mercurius.CallHistorySelectionActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jlingenierie.mercurius.ContactGroupSelectionActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.jlingenierie.mercurius.CustomMessageEditionActivity" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="com.jlingenierie.mercurius.AboutMedusaActivity" android:screenOrientation="portrait" android:theme="@style/AboutDialog">
+            <intent-filter>
+                <action android:name="ABOUT_ACTION"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/action_preferences" android:name="com.jlingenierie.mercurius.Preferences">
+            <intent-filter>
+                <action android:name="PREFERENCES"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/label_export" android:name="com.jlingenierie.mercurius.ExportMessagesActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="EXPORT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:name="com.jlingenierie.mercurius.MessageSenderWidgetSelectionActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    <receiver android:label="@string/widget_name" android:name="com.jlingenierie.mercurius.MessageSenderWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.jlingenierie.mercurius.MESSAGESENDER_WIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.jlingenierie.mercurius.MESSAGESENDER_WIDGET_CONFIGURE"><nothingHere/></action>
+                <action android:name="com.jlingenierie.mercurius.MESSAGESENDER_WIDGET_REMOVE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget1_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.jlingenierie.android.communicator.SMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.jlingenierie.android.cerebro.CerebroService"><nothingHere/></service>
+        <service android:name="com.jlingenierie.mercurius.UpdateWidgetService"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

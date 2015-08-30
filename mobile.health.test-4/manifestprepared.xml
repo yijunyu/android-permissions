@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="mobile.health.test">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/health1" android:label="@string/app_name">
+        <activity android:launchMode="singleTask" android:name=".HealthActivity" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:label="~~~Long press to delete~~~" android:name="fav" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="MENU button &gt; Favourites" android:name="beauty" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Long Press Image &gt; Save &amp; Wallpaper" android:name="web" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="MENU button &gt; Favourites" android:name="dis" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="MENU button &gt; Favourites" android:name="mw" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="MENU button &gt; Favourites" android:name="fit" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="MENU button &gt; Favourites" android:name="med" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="MENU button &gt; Favourites" android:name="hn" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="MENU button &gt; Favourites" android:name="repro" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="MENU button &gt; Home" android:name="mo" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="MENU button &gt; Favourites" android:name="cd" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="Press MENU button for more." android:name="beautytips" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="Press MENU button for more." android:name="disdef" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="Press MENU button for more." android:name="fittips" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="Press MENU button for more." android:name="meddef" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="Press MENU button for more." android:name="mwtips" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="Press MENU button for more." android:name="cdterms" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="Press MENU button for more." android:name="reprotips" android:screenOrientation="sensor"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,92 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shopgate.android.app10298">
+    <application android:allowBackup="false" android:debuggable="false" android:description="@string/app_description" android:hardwareAccelerated="true" android:icon="@drawable/shopgate_icon" android:label="Smoketown.de  Headshop" android:largeHeap="true">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Smoketown.de  Headshop" android:launchMode="singleTop" android:name="com.shopgate.android.view.StartupPage" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.android.apps.analytics.easytracking.TrackedActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.MainPageUnregistered" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.MainPageRegistered" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.ChangeAccountSettings" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.ShopPage" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.ProductList"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.CatalogList"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.shopgate.android.view.ProductDetailsPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.CartPage"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.shopgate.android.view.RegistrationPage" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.ShopList"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.ShopsByCategoryList"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.SettingsPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.MarketplacesPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.DebugPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.AddressPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.MadeOrdersPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.PaymentPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.ShippingPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.ShopTermsPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.Impressum"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.AppInfoPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.ThxForYourOrderPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.shopgate.android.view.ChannelPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.shopgate.android.view.RatingPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.shopgate.android.view.WriteReviewPage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.BarcodePage">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.CashpointCheckout"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.catalogView.CatalogPageEXPERIMENTAL"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.FavoriteList"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.shopgate.android.view.VideoViewActivity" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.tablet.TabletFragmentsContainer" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.shopgate.android.view.tablet.TabletCashpointCheckout" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.shopgate.android.view.tablet.TabletPaymentPage" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.shopgate.android.view.tablet.TabletAddressPage" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.shopgate.android.view.tablet.TabletShippingPage" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.shopgate.android.view.tablet.TabletRegistrationPage" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.google.zxing.client.android.HelpActivity" android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/preferences_name" android:name="com.google.zxing.client.android.PreferencesActivity"><nothingHere/></activity>
+        <receiver android:name="com.google.android.c2dm.C2DMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.shopgate.android.app10298"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.c2dm.C2DMessaging" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.shopgate.android.app10298"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.shopgate.android.controller.ConnectionServiceImpl"><nothingHere/></service>
+    </application>
+<permission android:name="com.shopgate.android.app10298.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="false"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.shopgate.android.app10298.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

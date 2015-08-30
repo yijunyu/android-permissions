@@ -1,0 +1,89 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="air.com.disney.hiddendisney.goo">
+    <application android:hardwareAccelerated="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name=".AppEntry" android:screenOrientation="user" android:theme="@style/Theme.NoShadow" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="namespaceVersion" android:value="4.0"><nothingHere/></meta-data>
+            <meta-data android:name="aspectRatio" android:value="landscape"><nothingHere/></meta-data>
+            <meta-data android:name="autoOrients" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="4ec11132-de57-497c-b335-0bc0a049d47a"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="AOAMobile.swf"><nothingHere/></meta-data>
+            <meta-data android:name="containsVideo" android:value="false"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:name="com.freshplanet.ane.AirFacebook.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.freshplanet.ane.AirFacebook.DialogActivity"><nothingHere/></activity>
+        <activity android:name="com.freshplanet.ane.AirFacebook.ExtendAccessTokenActivity"><nothingHere/></activity>
+        <activity android:name="com.playdom.android.iap.activity.PurchaseActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mobilenetwork.referralstore.DMNReferralStoreActivity">
+            <intent-filter>
+                <android-data android:scheme="dmoanalytics"><nothingHere/></android-data>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.playdom.msdk.internal.GooglePlayActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.burstly.lib.component.networkcomponent.burstly.BurstlyFullscreenActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="495949170494812"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="4030500"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="71198758370"><nothingHere/></meta-data>
+        <receiver android:name=".BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.kochava.android.tracker.ReferralCapture">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.juankpro.ane.localnotif.AlarmIntentService"><nothingHere/></receiver>
+        <receiver android:name="com.juankpro.ane.localnotif.AlarmRestoreOnBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.milkmangames.extensions.android.push.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="air.com.disney.hiddendisney.goo"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="air.com.disney.hiddendisney.goo"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name=".BillingService"><nothingHere/></service>
+        <service android:name="com.disneymobile.analytics.DMOAnalyticsService"><nothingHere/></service>
+        <service android:name="com.juankpro.ane.localnotif.LocalNotificationIntentService"><nothingHere/></service>
+        <service android:name="com.milkmangames.extensions.android.push.GCMIntentService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.disney.hiddendisney.goo.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="air.com.disney.hiddendisney.goo.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.disney.hiddendisney.goo.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="air.com.disney.hiddendisney.goo.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.piapps.android.crl2011">
+    <application android:debuggable="false" android:icon="@drawable/c_launcher" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".Main" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="ADWHIRL_KEY" android:value="125b5fa380824538ba1505199a0fee48"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Cricket 20-20 Champions" android:name="com.piapps.android.utils.About" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Cricket Champions" android:name="CrLg2011"><nothingHere/></activity>
+        <activity android:label="Summary" android:name=".Summary"><nothingHere/></activity>
+        <activity android:label="Schedule" android:name=".Schedule"><nothingHere/></activity>
+        <activity android:label="Teams" android:name=".Teams"><nothingHere/></activity>
+        <activity android:label="Team" android:name=".Team"><nothingHere/></activity>
+        <activity android:label="Live Match Summary" android:name=".Match">
+            <meta-data android:name="ADWHIRL_KEY" android:value="125b5fa380824538ba1505199a0fee48"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Match Summary" android:name=".MatchInfo" android:screenOrientation="portrait">
+            <meta-data android:name="ADWHIRL_KEY" android:value="125b5fa380824538ba1505199a0fee48"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="Live Match" android:name=".MatchLive"><nothingHere/></activity>
+        <activity android:label="Tweets" android:name="TweetListActivity"><nothingHere/></activity>
+        <activity android:label="Network Connectivity Manager" android:name="com.piapps.android.service.NetworkConnectivityReceiver"><nothingHere/></activity>
+        <activity android:label="Settings" android:name="com.piapps.android.utils.AppSettings"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivityity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <meta-data android:name="ADWHIRL_KEY" android:value="125b5fa380824538ba1505199a0fee48"><nothingHere/></meta-data>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d90d669b004c"><nothingHere/></meta-data>
+        <meta-data android:name="ADMOB_INTERSTITIAL_PUBLISHER_ID" android:value="a14d90d669b004c"><nothingHere/></meta-data>
+        <meta-data android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" android:value="true"><nothingHere/></meta-data>
+        <provider android:authorities="com.piapps.android.provider.crpv" android:name="com.piapps.android.provider.LContentProvider"><nothingHere/></provider>
+        <receiver android:exported="true" android:name="com.admob.android.ads.analytics.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.piapps.android.service.NetworkConnectivityReceiver" class="com.piapps.android.service.NetworkConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.piapps.android.service.ILiveUpdateService" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.piapps.android.service.ILiveUpdateService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+</manifest>

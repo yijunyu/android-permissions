@@ -1,0 +1,66 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.chownow.mustardcafenewport">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/application_title" android:name="com.chownow.mustardcafenewport.controller.ChowNowApplication" android:theme="@style/AppTheme">
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.MobileHubActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.SplashScreenActivity" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.MapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.MenuActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.ItemDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.AccountSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.PaymentMethodActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.AddressBookActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.PhoneBookActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.SignupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.OrderLaterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.OrderHistoryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.ResetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.chownow.mustardcafenewport.view.mainscreens.TipCalculatorActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBZEmR2_tVsY1aVD-NNx6q6C20fevf4VyE"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+        <provider android:authorities="com.chownow.mustardcafenewport.urbanairship.provider" android:exported="false" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider"><nothingHere/></provider>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.chownow.mustardcafenewport"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.chownow.mustardcafenewport.controller.uairship.IntentReceiver"><nothingHere/></receiver>
+        <receiver android:exported="true" android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:label="Push Notification Worker Service" android:name="com.urbanairship.push.PushWorkerService"><nothingHere/></service>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService"><nothingHere/></service>
+        </application>
+<permission android:name="com.chownow.mustardcafenewport.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.chownow.mustardcafenewport.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

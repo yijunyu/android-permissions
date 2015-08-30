@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vng.eps">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".ActivityZingPay" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityLogin" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityTransaction" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityTopup" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivitySMS" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityCard" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityAtm" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityAtmCard" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityDepositCard" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityAtmSelectBank" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityAtmBIDVCard" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ActivityError" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ActivityAtmOtp" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ActivityAtmFinal" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ActivityConvertZX" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ActivityAtmBIDVOtp" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ActivityConvertZXSelectServer" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ActivityConvertZXSelectXuAmount" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="ActivityDepositCardResult" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <receiver android:name=".ActivityStartup">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".NetworkConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.vng.service.SmsService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"><nothingHere/></uses-permission>
+    </manifest>

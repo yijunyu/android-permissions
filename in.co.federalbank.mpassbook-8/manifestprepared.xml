@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="in.co.federalbank.mpassbook">
+    <application android:allowBackup="true" android:icon="@drawable/logoicon" android:label="@string/app_name" android:name="in.co.federalbank.mpassbook.app.GlobalState" android:theme="@style/Theme.mPassbookOrange">
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="in.co.federalbank.mpassbook.app.PinCodeActivityV2" android:theme="@style/Theme.mPassbookPIN">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="@string/app_name" android:name="in.co.federalbank.mpassbook.app.MainActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Search Results" android:launchMode="singleTask" android:name="in.co.federalbank.mpassbook.app.DisplaySearchResultActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Transaction Details" android:launchMode="singleTask" android:name="in.co.federalbank.mpassbook.app.TransactionDetailsActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="in.co.federalbank.mpassbook.InstallActivity"><nothingHere/></activity>
+    <receiver android:name="in.co.federalbank.mpassbook.services.UpdateAlarmReciever"><nothingHere/></receiver>
+        <receiver android:name="in.co.federalbank.mpassbook.services.RestartAlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="in.co.federalbank.mpassbook.services.UpdateService"><nothingHere/></service>
+        <service android:name="in.co.federalbank.mpassbook.services.DataSyncService"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    </manifest>

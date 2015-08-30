@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="air.com.adobe.appentry">
+    <application android:icon="@drawable/icon" android:label="iReverse">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="iReverse" android:launchMode="singleTask" android:name=".AppEntry" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="autoOrients" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="2dfbad9d-0810-4135-94d1-57108e6d829c"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="ReversiAndroid.swf"><nothingHere/></meta-data>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

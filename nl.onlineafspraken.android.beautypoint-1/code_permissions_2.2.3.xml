@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/nl/onlineafspraken/android/beautypoint/Main.java</file>
+    <line>59</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/nl/onlineafspraken/android/beautypoint/CustomWebViewClient.java</file>
+    <line>10</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

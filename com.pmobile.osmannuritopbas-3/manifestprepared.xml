@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pmobile.osmannuritopbas">
+    <application android:icon="@drawable/kucuk_icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.pmobile.osmannuritopbas.StreamingMp3Player" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.hrupin.streamingmedia.STREAMINGMP3PLAYER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.pmobile.osmannuritopbas.NatureSoundsLimitlessActivity" android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="com.hrupin.streamingmedia.STREAMINGMP3PLAYER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Giris">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Facebook Sayfam&#305;z&#305; Be&#287;enebilirsiniz!" android:name="com.pmobile.osmannuritopbas.FacebookView"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

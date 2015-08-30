@@ -1,0 +1,148 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.talkandyou.agent">
+    <application android:allowBackup="true" android:allowTaskReparenting="false" android:icon="@drawable/icon64" android:label="@string/app_name" android:largeHeap="true" android:persistent="false" android:taskAffinity="com.talkandyou.agent" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".ui.TalkAndYou" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="pc080"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tnu"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tnuhttps"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tnuhttp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".ui.TnuSettings" android:screenOrientation="portrait">	android:excludeFromRecents="true"
+			android:taskAffinity=""&gt;
+<nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.talkandyou.codecs.Codecs$CodecSettings"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:label="@string/app_name" android:name=".ui.InCallScreen" android:screenOrientation="portrait" android:taskAffinity=""><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.DialerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.MyInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.MainHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:name=".ui.MoveTopActivity" android:noHistory="true"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.BlockListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.HistoryListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.MemoUserListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.MemoUserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.MemoSendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.SmsUserListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.SmsUserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.SmsSendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.FriendListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.PhoneBookActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.ItemInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:launchMode="standard" android:name=".ui.WebActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tnuhttps"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tnuhttp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".ui.Buy070Activity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".ui.Get050Activity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name=".ui.SyncIdActivity" android:noHistory="true" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".ui.BuyCoinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.PhoneAuthActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.TalkAlarmIntroActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ui.CountryCodeSMSListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name=".ui.C2DMNotifySleepActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:label="@string/app_name" android:name=".ui.C2DMNotifyPopupActivity" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".ui.FriendListCheckBoxActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".ui.PhoneBookCheckBoxActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".ui.MemoSendPhotoPreview"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".ui.VersionInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".ui.numid.PhoneAuthStep1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.numid.PhoneAuthStep2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.numid.Login2Step1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.numid.Login2Step21Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.numid.Login2Step22Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <receiver android:name=".ui.OneShotAlarm1"><nothingHere/></receiver>
+        <receiver android:name=".ui.OneShotAlarm2"><nothingHere/></receiver>
+        <receiver android:name=".ui.OneShotAlarm3"><nothingHere/></receiver>
+        <receiver android:name=".ui.LoopAlarm"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:name=".ui.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"><nothingHere/></action>
+                <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+                <android-data android:path="com.talkandyou.agent.ui"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".TnuGcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.talkandyou.agent"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ui.OneShotAlarmUpdateVersion"><nothingHere/></receiver>
+        <service android:name=".TnuGcmIntentService"><nothingHere/></service>
+        <service android:label="talk&amp;you Service" android:name="TalkAndYouService"><nothingHere/></service>
+        <service android:name=".ui.C2DMNotifyPopupService"><nothingHere/></service>
+        </application>
+<permission android:name="com.talkandyou.agent.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.talkandyou.agent.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    </manifest>

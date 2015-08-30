@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="co.dynaco.acofanud">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="co.dynaco.acofanud.AplicacionServicioParse" android:screenOrientation="portrait" android:theme="@style/inphoTheme">
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.InphoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.CustomDialogActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.UpdateActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.MainMenuActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.NewsListActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.NewsContentActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.EventListActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.EventMenuActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.ActivityListActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.ActivityMenuActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.MyEventActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.AssociationMenuActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.AssociatedListActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.AssociatedMenuActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.SettingsActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.ForumActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.HtmlViewActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.ActualitiesListActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.ForumActivityInternal"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.RespondeActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="co.dynaco.acofanud.MyEventMenuActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_recibidor" android:name="co.dynaco.acofanud.RecibidorActivity"><nothingHere/></activity>
+    <receiver android:name="co.dynaco.acofanud.Broadcaster" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+                <action android:name="android.net.wifi.STATE_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="co.dynaco.acofanud"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.parse.PushService"><nothingHere/></service>
+        </application>
+<permission android:name="co.dynaco.acofanud.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="co.dynaco.acofanud.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gba.emu">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/app_icon" android:label="@string/app_label" android:theme="@style/MyTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="aGBA">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="FileChooser"><nothingHere/></activity>
+        <activity android:name="StateSlotsActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="KeyProfilesActivity"><nothingHere/></activity>
+        <activity android:name="HelpActivity"><nothingHere/></activity>
+        <activity android:name="GamePreferences"><nothingHere/></activity>
+        <activity android:name="EmulatorSettings" android:process=":emulator"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="EmulatorActivity" android:process=":emulator">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="application/zip"><nothingHere/></android-data>
+                <android-data android:mimeType="application/octet-stream"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.vungle.publisher.FullScreenAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <service android:name="EmulatorService" android:process=":emulator"><nothingHere/></service>
+        <service android:exported="false" android:name="com.vungle.publisher.VungleService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

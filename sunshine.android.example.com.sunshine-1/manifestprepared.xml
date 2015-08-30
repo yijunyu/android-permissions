@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="sunshine.android.example.com.sunshine">
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="sunshine.android.example.com.sunshine.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_detail" android:name="sunshine.android.example.com.sunshine.DetailActivity" android:parentActivityName="sunshine.android.example.com.sunshine.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="sunshine.android.example.com.sunshine.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_settings" android:name="sunshine.android.example.com.sunshine.SettingsActivity" android:parentActivityName="sunshine.android.example.com.sunshine.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="sunshine.android.example.com.sunshine.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <provider android:authorities="sunshine.android.example.com.sunshine" android:exported="false" android:name="sunshine.android.example.com.sunshine.data.WeatherProvider" android:syncable="true"><nothingHere/></provider>
+        <service android:name="sunshine.android.example.com.sunshine.sync.SunshineAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"><nothingHere/></meta-data>
+        </service>
+        <service android:exported="true" android:name="sunshine.android.example.com.sunshine.sync.SunshineSyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter"><nothingHere/></meta-data>
+        </service>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,137 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".GOScreenLockInstallDialog" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".ForSearch" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.jiubang.goscreenlock.theme"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".guide.ViewPageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".PreviewTheme" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.AppThemeSetActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="com.jiubang.goscreenlock.themeset"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name=".crop.CropImageActivity"><nothingHere/></activity>
+        <activity android:background="@android:color/transparent" android:name=".MyFileManager" android:theme="@style/dialog"><nothingHere/></activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.weather.util.AddChinaCityActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.weather.util.AddCityActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.weather.util.BrowseCityActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.weather.util.PopularcityActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name=".DialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.jiubang.goscreenlock.action.showGetJarDialog.com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.getjar.sdk.rewards.GetJarWebViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.getjar.sdk.rewards.GetJarActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.sponsorpay.sdk.android.publisher.OfferWallActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.sdk.android.publisher.TJCOffersWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.sdk.android.publisher.TapjoyFeaturedAppWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.sdk.android.publisher.TapjoyReEngagementAdWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tapjoy.sdk.android.publisher.TapjoyVideoView"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:name=".DiscountActivity" android:process=".DiscountActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="DISCOUNT_ACTION_PRE_com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="mp.MpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+    <provider android:authorities="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.extdata" android:multiprocess="true" android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.ThemeSetProvider"><nothingHere/></provider>
+        <provider android:authorities="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.unread.provider" android:name=".smstool.UnreadProvider"><nothingHere/></provider>
+        <provider android:authorities="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.weather.util.provider" android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.weather.util.DatabaseContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.util.myprovider" android:multiprocess="true" android:name=".weather.util.MyProvider"><nothingHere/></provider>
+        <receiver android:name=".ComponentControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jiubang.goscreenlock.action.hide_theme_icon"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.guide.LauncherReceiver">
+            <intent-filter>
+                <action android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.action.launcher_ad_first"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.action.launcher_ad_second"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.getjar.sdk.data.metadata.PackageMonitor">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="mp.MpSMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name=".GoDownloadService" android:process="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.GoDownloadService"><nothingHere/></service>
+        <service android:name="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.weather.util.WeatherService" android:process="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.weather.util.WeatherService">
+            <intent-filter><nothingHere/></intent-filter>
+        </service>
+        <service android:name=".switcher.handler.FlashlightOpenService" android:process="com.jiubang.goscreenlock.theme.cjpwhitesoul.getjar.switcher.handler.FlashlightOpenService">
+            <intent-filter><nothingHere/></intent-filter>
+        </service>
+        <service android:name="com.getjar.sdk.rewards.GetJarService"><nothingHere/></service>
+        <service android:name="mp.MpService"><nothingHere/></service>
+        <service android:name="mp.StatusUpdateService"><nothingHere/></service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+<uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    </manifest>

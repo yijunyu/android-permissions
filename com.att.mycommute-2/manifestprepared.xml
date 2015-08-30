@@ -1,0 +1,55 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.att.mycommute">
+    <application android:debuggable="false" android:icon="@drawable/mycommute_icon" android:label="@string/app_name2" android:name="com.att.mycommute.TrafficApplication">
+        <activity android:configChanges="orientation" android:label="@string/app_name2" android:launchMode="singleTop" android:name="com.att.mycommute.activities.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" class="com.att.mycommute.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name2" android:launchMode="singleTop" android:name="com.att.mycommute.activities.EulaActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" class="com.att.mycommute.activities.EulaActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.att.mycommute.activities.SettingsScreen" android:screenOrientation="portrait" class="com.att.mycommute.activities.SettingsScreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.att.mycommute.activities.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" class="com.att.mycommute.activities.MainActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/about" android:launchMode="singleTop" android:name="com.att.mycommute.activities.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name="com.inrix.android.lib.main.ui.SearchScreen" android:screenOrientation="portrait" android:theme="@style/InrixActivityTheme" class="com.inrix.android.lib.main.ui.SearchScreen"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.att.mycommute.activities.ReportIncidentScreen" android:screenOrientation="portrait" android:theme="@style/InrixActivityTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.inrix.android.lib.main.ui.MapLocationScreen" android:screenOrientation="portrait" class="com.inrix.android.lib.main.ui.MapLocationScreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/top_reporters_page_caption" android:name="com.inrix.android.lib.main.ui.TopReportersActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/incident_screen_caption" android:name="com.inrix.android.lib.main.ui.IncidentScreen" android:screenOrientation="portrait" android:theme="@style/InrixActivityTheme" class="com.inrix.android.lib.main.ui.IncidentScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.RUN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.att.mycommute.InrixBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:label="@string/app_name2" android:name="com.att.mycommute.widget.InrixWidgetProvider" android:process=":widgetprocess">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="inrix.android.att.mycommute.action.update.widget.keyroutes"><nothingHere/></action>
+                <action android:name="inrix.android.att.mycommute.action.reload.keyroute.data"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/inrix_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <service android:enabled="true" android:name="com.att.mycommute.widget.InrixWidgetProvider$LocalWidgetService" android:process=":widgetprocess">
+            <intent-filter>
+                <action android:name="inrix.android.att.mycommute.action.updater.service"><nothingHere/></action>
+                <action android:name="inrix.android.att.mycommute.action.preferences.updated"><nothingHere/></action>
+            </intent-filter>
+        </service>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+</manifest>

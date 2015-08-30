@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="net.ayco.lavacollaaparcamiento">
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:launchMode="singleTask" android:name="net.ayco.lavacollaaparcamiento.activity.AInit" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="net.ayco.lavacollaaparcamiento.activity.AMenuPrincipal" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="net.ayco.lavacollaaparcamiento.activity.AHistorico" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="net.ayco.lavacollaaparcamiento.activity.AFormRegistro" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.ayco.lavacollaaparcamiento.activity.AFormPeticion" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.ayco.lavacollaaparcamiento.activity.AEnvioPeticion" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.ayco.lavacollaaparcamiento.activity.AEnvioPeticionTimeout" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.ayco.lavacollaaparcamiento.activity.AResultadoPeticion" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="net.ayco.lavacollaaparcamiento.network.PushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.GCM_RECEIVED_ACTION"><nothingHere/></action>
+                <category android:name="net.ayco.lavacollaaparcamiento"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="net.ayco.lavacollaaparcamiento.network.PushIntentService"><nothingHere/></service>
+    </application>
+<permission android:name="net.ayco.lavacollaaparcamiento.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="net.ayco.lavacollaaparcamiento.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

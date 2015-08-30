@@ -1,0 +1,17 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_MOCK_LOCATION</permission>
+    <permission>android.permission.READ_CALENDAR</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.DELETE_CACHE_FILES</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.CALL</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_CALENDAR</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.CHANGE_WIFI_STATE</permission>
+    <permission>android.permission.SET_WALLPAPER</permission>
+  </under-specification>
+</comparison>

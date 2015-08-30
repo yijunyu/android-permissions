@@ -1,0 +1,122 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="sk.datacrea.digitalCaddie.zuoz">
+    <application android:icon="@drawable/app_icon" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/Theme.HoloEverywhereLight">
+        <activity android:label="@string/app_name" android:name="sk.datacrea.digitalCaddie.zuoz.Views.HomePage" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.HolePage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.LoadSCPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.ResultsPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.SaveSCPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.ScoreCardPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.SelectPlayersPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.SelectPlayerPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.SelectScoreCardPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.GamePage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.HolePageScores">
+            <intent-filter>
+                <action android:name="sk.datacrea.digitalCaddie.zuoz.CHANGE_HOLE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.HolePageInfo">
+            <intent-filter>
+                <action android:name="sk.datacrea.digitalCaddie.zuoz.CHANGE_HOLE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.HolePageTop">
+            <intent-filter>
+                <action android:name="sk.datacrea.digitalCaddie.zuoz.CHANGE_HOLE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.HolePageHole">
+            <intent-filter>
+                <action android:name="sk.datacrea.digitalCaddie.zuoz.CHANGE_HOLE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.HolePagePar">
+            <intent-filter>
+                <action android:name="sk.datacrea.digitalCaddie.zuoz.CHANGE_HOLE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.HolePageGuide">
+            <intent-filter>
+                <action android:name="sk.datacrea.digitalCaddie.zuoz.CHANGE_HOLE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.SelectTeePage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.OurCoursesHomePage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.NewsUrlPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.WeatherPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.FacebookPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.CourseVideoPage" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.CourseVideoListPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.SendEmailPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.BookingPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.LoginPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.NewsPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.NewsPageRSSDescription" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.ContactUsPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.CourseGuide" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.CourseGuideBirdieListPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="sk.datacrea.digitalCaddie.zuoz.Views.CourseGuideBirdie" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.xtify.rn.RichNotifInboxActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.xtify.rn.RichNotifActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <provider android:authorities="sk.datacrea.digitalCaddie.zuoz.XTIFY_PROVIDER" android:exported="false" android:name="com.xtify.sdk.db.Provider"><nothingHere/></provider>
+        <receiver android:name="sk.datacrea.digitalCaddie.zuoz.SampleAlarmReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.xtify.sdk.c2dm.C2DMBroadcastReceiver">
+            <intent-filter android:permission="com.google.android.c2dm.permission.SEND">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="sk.datacrea.digitalCaddie.zuoz"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter android:permission="com.google.android.c2dm.permission.SEND">
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="sk.datacrea.digitalCaddie.zuoz"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="sk.datacrea.digitalCaddie.zuoz.XtifyNotifier">
+            <intent-filter>
+                <action android:name="com.xtify.sdk.NOTIFIER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xtify.sdk.NotifActionReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.xtify.sdk.wi.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="sk.datacrea.digitalCaddie.zuoz.SampleDownloaderService"><nothingHere/></service>
+        <service android:name="com.xtify.sdk.location.LocationUpdateService"><nothingHere/></service>
+        <service android:name="com.xtify.sdk.c2dm.C2DMIntentService"><nothingHere/></service>
+        <service android:name="com.xtify.sdk.alarm.MetricsIntentService"><nothingHere/></service>
+        <service android:name="com.xtify.sdk.alarm.TagIntentService"><nothingHere/></service>
+        <service android:name="com.xtify.sdk.alarm.RegistrationIntentService"><nothingHere/></service>
+        <service android:name="com.xtify.sdk.alarm.LocationIntentService"><nothingHere/></service>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <permission android:name="sk.datacrea.digitalCaddie.zuoz.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="sk.datacrea.digitalCaddie.zuoz.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+</manifest>

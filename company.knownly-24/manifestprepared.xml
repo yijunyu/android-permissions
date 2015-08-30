@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="company.knownly">
+    <application android:icon="@drawable/icon" android:label="Knownly">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="Knownly" android:name="company.knownly.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="company.knownly.LoginService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.SendImageService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.CreateGroupService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.DeleteGroupService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.FollowGroupService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.UnfollowGroupService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.SendMessageService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.UpdateService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.TestService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.BlockUserService"><nothingHere/></service>
+        <service android:exported="false" android:name="company.knownly.UpdateGroupService"><nothingHere/></service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+</manifest>

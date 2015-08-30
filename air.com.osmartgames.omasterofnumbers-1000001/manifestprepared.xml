@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="air.com.osmartgames.omasterofnumbers">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name=".AppEntry" android:screenOrientation="user" android:theme="@style/Theme.NoShadow" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="aspectRatio" android:value="landscape"><nothingHere/></meta-data>
+            <meta-data android:name="autoOrients" android:value="false"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="310ca74c-d956-49d5-a0e6-30e927932b5a"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="OMasterOfNumbers.swf"><nothingHere/></meta-data>
+        </activity>
+    </application>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="true"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

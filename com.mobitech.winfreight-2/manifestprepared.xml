@@ -1,0 +1,117 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mobitech.winfreight">
+    <application android:debuggable="false" android:icon="@drawable/wintile" android:label="@string/app_name">
+        <activity android:name="LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/inboxlist" android:name="com.mobitech.generic.activities.main.InboxListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.SynchActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.capture.ReadMeterActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.media.CapturePhotoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.TaskStepListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.capture.DisconnectMeterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.capture.LocationGPSActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.capture.ReconnectMeterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.capture.InstallMeterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.capture.InformationCodeMain" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.unused.NetGroupImageActivity"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.NotificationActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.capture.MeterNumberConfirmationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.capture.SignatureCaptureActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.ConfirmTimeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="biz.binarysolutions.signature.Capture" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="biz.binarysolutions.signature.CAPTURE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobitech.generic.activities.main.MainMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.media.VoiceNoteActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.media.VideoNoteActivitytivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.media.VideoPreview" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.main.OfficeInstructionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.SearchLongPressActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH_LONG_PRESS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobitech.generic.activities.main.MainMenuNoLock" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.customers.CustomerList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.customers.CustomerInformationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.ordering.ProductListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.ordering.ProductInformationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.widgets.DateSlider.Demo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.capture.QuestionStandardActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.ordering.OrderListActivity.OrderListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.ordering.OrderInformationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.customers.AreaListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.ordering.OrderItemInformationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.customers.CustomerAreaActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.media.ScanBarcodeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.unused.ScanBarcodeValidation"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.media.CameraActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.messaging.MobileMessageListActivity"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.messaging.MobileMessageActivity"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.SygicNavigation"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.MainMenuList"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.ordering.OrderListActivity"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.MainMenuListLocked"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.NumberPicker" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.HomeWait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mobitech.generic.activities.media.CaptureSignature" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.capture.DateTimeCapture"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.capture.CustomerSelect"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.capture.TaskOrderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobitech.generic.activities.media.TaskOrderCaptureSignature" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="SupportModeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.mobitech.generic.activities.main.SectionHeader" android:screenOrientation="portrait"><nothingHere/></activity>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.mobitech.generic.dispatch.main"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.mobitech.generic.services.DatabaseService"><nothingHere/></service>
+        <service android:name="com.mobitech.generic.services.CloudService"><nothingHere/></service>
+        <service android:name="com.mobitech.generic.dispatch.main.GCMIntentService"><nothingHere/></service>
+        <service android:name="com.mobitech.generic.services.BreadCrumbService"><nothingHere/></service>
+        <service android:name="com.mobitech.generic.services.PollingService"><nothingHere/></service>
+        </application>
+<permission android:name="com.mobitech.generic.dispatch.main.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.location"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.mobitech.generic.dispatch.main.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    </manifest>

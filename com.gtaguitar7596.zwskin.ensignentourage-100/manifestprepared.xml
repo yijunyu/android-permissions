@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gtaguitar7596.zwskin.ensignentourage">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:exported="true" android:name="com.gtaguitar7596.zwskin.ensignentourage.ZooperTemplate">
+            <intent-filter>
+                <action android:name="org.zooper.zw.TEMPLATES"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

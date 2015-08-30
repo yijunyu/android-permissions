@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" android:keepScreenOn="true" android:largeHeap="true" package="com.flexymind.letters">
+    <application android:icon="@drawable/icon" android:label="@string/APP_NAME" android:name="com.flexymind.letters.App">
+        <activity android:configChanges="locale|keyboardHidden|layoutDirection|orientation|screenSize" android:label="@string/APP_NAME" android:launchMode="singleTop" android:name="com.flexymind.letters.LettersActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="flexymind.letters"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <receiver android:name="com.flexymind.letters.app.AppScreenStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF"><nothingHere/></action>
+                <action android:name="android.intent.action.SCREEN_ON"><nothingHere/></action>
+                <action android:name="android.Intent.ACTION_USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.flexymind.letters.common.AlarmReceiver"><nothingHere/></receiver>
+        <receiver android:exported="true" android:name="com.flexymind.letters.analytics.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.google.analytics.tracking.android.CampaignTrackingService"><nothingHere/></service>
+        <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+        </application>
+    <supports-screens android:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+</manifest>

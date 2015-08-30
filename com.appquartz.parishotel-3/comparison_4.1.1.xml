@@ -1,0 +1,8 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CONTROL_LOCATION_UPDATES</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.nanoequipment.pizzahut">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="PHApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.nanoequipment.pizzahut.activities.SplashScreenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_profile" android:name="com.nanoequipment.pizzahut.activities.ProfileLoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_coupon" android:name="com.nanoequipment.pizzahut.activities.CouponActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_history" android:name="com.nanoequipment.pizzahut.activities.OrderStatusActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_register" android:name="com.nanoequipment.pizzahut.activities.RegisterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_confirm_register" android:name="com.nanoequipment.pizzahut.activities.ConfirmRegisterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_forgot_password" android:name="com.nanoequipment.pizzahut.activities.ForgotPasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_profile" android:name="com.nanoequipment.pizzahut.activities.ProfileActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_profile_edit" android:name="com.nanoequipment.pizzahut.activities.ProfileEditActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_feedback" android:name="com.nanoequipment.pizzahut.activities.FeedbackActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_faq" android:name="com.nanoequipment.pizzahut.activities.FaqActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_store_locator" android:name="com.nanoequipment.pizzahut.activities.StoreLocatorActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_store_locator_list" android:name="com.nanoequipment.pizzahut.activities.StoreLocatorListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_store_locator_detail" android:name="com.nanoequipment.pizzahut.activities.StoreLocatorDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_menu_order" android:name="com.nanoequipment.pizzahut.activities.MenuOrderActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_menu_order_step2" android:name="com.nanoequipment.pizzahut.activities.MenuOrderStep2Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_verify_payment" android:name="com.nanoequipment.pizzahut.activities.VerifyPaymentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_menu_main_category" android:name="com.nanoequipment.pizzahut.activities.MenuMainCategoryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_menu_item_details" android:name="com.nanoequipment.pizzahut.activities.MenuItemDetailsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.nanoequipment.pizzahut.activities.SlideTutorialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_terms_conditions" android:name="com.nanoequipment.pizzahut.activities.TermsConditionsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.nanoequipment.pizzahut.activities.DummyNotificationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCTUUmv9JxsHA6oQvqHCWWb4ldbE_zrTK8"><nothingHere/></meta-data>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.nanoequipment.pizzahut"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.nanoequipment.pizzahut.GCMIntentService"><nothingHere/></service>
+        <service android:name="com.nanoequipment.pizzahut.utils.CountDownTimerIntentService"><nothingHere/></service>
+        </application>
+<compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="large"><nothingHere/></screen>
+    </compatible-screens>
+    <permission android:name="com.nanoequipment.pizzahut.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.nanoequipment.pizzahut.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.nanoequipment.pizzahut.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.nanoequipment.pizzahut.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

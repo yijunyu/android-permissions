@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.mkb.naoi.sabianFree">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name=".appmain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="SendanMain" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="profile" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+    <supports-screens android:anyDensity="false" android:largeScreens="false" android:normalScreens="true" android:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

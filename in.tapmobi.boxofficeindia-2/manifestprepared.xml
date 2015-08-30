@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="in.tapmobi.boxofficeindia">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="in.tapmobi.boxofficeindia.BOIApplication" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.detail.DetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.detail.CollectionsDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.detail.CollectionsAllIndiaDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.detail.CollectionsCircuitDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.detail.CollectionsMutiplexDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.detail.CollectionsT20DetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.detail.TracDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.detail.DetailActivitySaved" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.detail.FullImageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.UserProfile" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.SocialActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="in.tapmobi.boxofficeindia.util.YouTubePlayerActivity" android:screenOrientation="landscape" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_magzine" android:name="in.tapmobi.boxofficeindia.detail.MagzineActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:name="in.tapmobi.boxofficeindia.PdfActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_pdf_list" android:name="in.tapmobi.boxofficeindia.PdfListActivity"><nothingHere/></activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

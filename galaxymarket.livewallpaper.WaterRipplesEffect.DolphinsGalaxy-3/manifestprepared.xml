@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="galaxymarket.livewallpaper.WaterRipplesEffect.DolphinsGalaxy">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="CatalogApplication" android:theme="@style/Theme.GDCatalog">
+        <activity android:label="@string/more_txt" android:name="galaxymarket.livewallpaper.WaterRipplesEffect.DolphinsGalaxy.Main" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/more_txt" android:name="galaxymarket.livewallpaper.WaterRipplesEffect.DolphinsGalaxy.CatalogMain" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="livewallpaper.catalog.CatalogActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="livewallpaper.catalog.AsyncImageViewListActivity"><nothingHere/></activity>
+        <activity android:exported="true" android:label="Preference" android:name="livewallpaper.settings.ClassicSettingsLW"><nothingHere/></activity>
+        <activity android:exported="true" android:label="Preference" android:name="livewallpaper.settings.SimpleSettingsLW"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout" android:name="com.appbrain.AppBrainActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.pokhv.zopub174021.AdActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.pokhv.zopub174021.BrowserActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.pokhv.zopub174021.VActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobvista.sdk.ad.InAppWebView" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.mobvista.sdk.ad.RichMediaActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.mobvista.sdk.ad.FullScreenAdActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.pokhv.zopub174021.APPID" android:value="221745"><nothingHere/></meta-data>
+        <meta-data android:name="com.pokhv.zopub174021.APIKEY" android:value="android*1390270089174021285"><nothingHere/></meta-data>
+        <meta-data android:name="mobvista.ads.sdk.apikey" android:value="2437004fd424ee1d4f93d6795fbe8bad"><nothingHere/></meta-data>
+        <meta-data android:name="mobvista.ads.sdk.appid" android:value="13612"><nothingHere/></meta-data>
+        <receiver android:exported="true" android:name="com.appbrain.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.pokhv.zopub174021.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/app_name" android:name="galaxymarket.livewallpaper.WaterRipplesEffect.DolphinsGalaxy.LW" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"><nothingHere/></meta-data>
+        </service>
+        <service android:name="com.appbrain.AppBrainService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.pokhv.zopub174021.LService"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    </manifest>

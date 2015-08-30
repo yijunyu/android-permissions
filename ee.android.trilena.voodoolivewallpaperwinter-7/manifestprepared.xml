@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="ee.android.trilena.voodoolivewallpaperwinter">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:exported="true" android:label="@string/wallpaper_settings" android:name=".VoodooLiveWallpaperSettings" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.WallpaperSettings"><nothingHere/></activity>
+        <activity android:exported="true" android:label="Home" android:name="ee.android.trilena.util.OpenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <service android:enabled="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".VoodooLiveWallpaper" android:permission="android.permission.BIND_WALLPAPER" android:screenOrientation="portrait">
+            <intent-filter android:priority="1">
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"><nothingHere/></meta-data>
+        </service>
+        </application>
+<uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

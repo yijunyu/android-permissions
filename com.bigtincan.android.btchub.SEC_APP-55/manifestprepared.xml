@@ -1,0 +1,197 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bigtincan.android.btchub.SEC_APP">
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_hub_launcher" android:label="@string/app_name_the_hub" android:largeHeap="true" android:name="com.opeak.seclib.OpeakApp" android:permission="com.opeak.launcher.permission.SEC_APP" android:taskAffinity="com.bigtincan.android.btchub.SEC_APP" android:theme="@style/Theme.TheHub">
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name_the_hub" android:name="com.bigtincan.btchub.activities.LoginActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="com.opeak.intent.category.SEC_LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"><nothingHere/></category>
+                <category android:name="com.samsung.android.intent.category.PENWINDOW_LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW.SEC_APP"><nothingHere/></action>
+                <android-data android:scheme="btcdashboard"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW.SEC_APP"><nothingHere/></action>
+                <android-data android:scheme="bigtincanhub"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW.SEC_APP"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="push.bigtincan.com"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW.SEC_APP"><nothingHere/></action>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="push.bigtincan.com"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND.SEC_APP"><nothingHere/></action>
+                <action android:name="android.intent.action.SEND_MULTIPLE.SEC_APP"><nothingHere/></action>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/app_name_the_hub" android:name="com.bigtincan.btchub.activities.SelectMyFilesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_MYFILES_CONTENT.SEC_APP"><nothingHere/></action>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.OPENABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.MainActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.StoryActivity" android:parentActivityName="com.bigtincan.btchub.activities.MainActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bigtincan.btchub.activities.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:exported="true" android:name="com.bigtincan.btchub.activities.SettingsActivity"><nothingHere/></activity>
+        <activity android:exported="true" android:name="com.bigtincan.btchub.activities.AskStoryPasswordActivity" android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"><nothingHere/></activity>
+        <activity android:exported="true" android:name="com.bigtincan.btchub.activities.NotificationsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bigtincan.btchub.activities.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:exported="true" android:name="com.bigtincan.btchub.activities.ImageZoomActivity" android:theme="@android:style/Theme.Holo.Light.NoActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.VideoActivity" android:theme="@android:style/Theme.Holo.Light.NoActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name_the_hub" android:name="com.bigtincan.btchub.activities.WebActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.HUB_WEB_VIEW.SEC_APP"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.EditStoryActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.ShareServerActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.ChannelInfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.screenlock.LockActivity" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.TrackerActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.SearchActivity" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.UserActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.ImageLibraryActivity" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.PasswordCheckDialogActivity" android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.ErrorDialogActivity" android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.ChangePasswordDialogActivity" android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar.MinWidth" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.LogoutProgressDialogActivity" android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.bigtincan.btchub.activities.PdfReaderActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:exported="true" android:name="com.bigtincan.btchub.activities.EmpyActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name_the_hub" android:launchMode="singleTask" android:name="com.bigtincan.btcoffice.Viewer" android:theme="@style/Theme.TheHub"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:exported="true" android:launchMode="singleTask" android:name="com.dropbox.client2.android.AuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW.SEC_APP"><nothingHere/></action>
+                <android-data android:scheme="db-2sieeenswgp2603"><nothingHere/></android-data>
+            <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.box.boxandroidlibv2.activities.OAuthActivity"><nothingHere/></activity>
+        <meta-data android:name="SectorVersionCode" android:value="1"><nothingHere/></meta-data>
+        <meta-data android:name="SectorVersionName" android:value="1.3.24574"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true"><nothingHere/></meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:resource="@dimen/app_defaultsize_w"><nothingHere/></meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:resource="@dimen/app_defaultsize_h"><nothingHere/></meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:resource="@dimen/app_minimumsize_w"><nothingHere/></meta-data>
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:resource="@dimen/app_minimumsize_h"><nothingHere/></meta-data>
+        <meta-data android:name="com.samsung.android.sdk.multiwindow.penwindow.enable" android:value="true"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="f9937ffcb7ea17a479a518f252133fd0ca74900f"><nothingHere/></meta-data>
+        <provider android:authorities="opeak.com.bigtincan.thehub.filesprovider" android:exported="true" android:grantUriPermissions="true" android:name="com.opeak.seclib.OpeakHubFileProvider" android:readPermission="com.bigtincan.android.btchub.permission.HubWidget.SEC_APP"><nothingHere/></provider>
+        <provider android:authorities="opeak.com.bigtincan.thehub.provider" android:exported="true" android:grantUriPermissions="true" android:name="com.opeak.seclib.OpeakHubVContentProvider" android:readPermission="com.bigtincan.android.btchub.permission.HubWidget.SEC_APP"><nothingHere/></provider>
+        <receiver android:name="com.opeak.seclib.OpeakWidgetStoryProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE.SEC_APP"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="com.opeak.appwidget.provider" android:resource="@xml/widget_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.opeak.seclib.OpeakGcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.google.android.gcm.demo.app"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.opeak.seclib.OpeakBootUpReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED.SEC_APP"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.opeak.seclib.OpeakNetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.opeak.seclib.OpeakPushNotificationsBroadcastReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.opeak.seclib.OpeakWipeData" android:process=":opkwipe">
+            <intent-filter>
+                <action android:name="com.opeak.security.ACTION_WIPE_SEC_APP"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.opeak.seclib.OpeakSettingsReceiver" android:permission="openpeak.permission.ADAM_MESSAGING">
+            <intent-filter>
+                <action android:name="com.opeak.action.UPDATE_SETTINGS"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.bigtincan.btchub.services.SyncSchedulerService"><nothingHere/></service>
+        <service android:name="com.bigtincan.btchub.services.FileDownloaderIntentService"><nothingHere/></service>
+        <service android:name="com.bigtincan.btchub.services.MyFilesDownloadService"><nothingHere/></service>
+        <service android:name="com.bigtincan.btchub.services.UploadStoryIntentService"><nothingHere/></service>
+        <service android:exported="false" android:label="OnRequestFileDownloaderService" android:name="com.bigtincan.btchub.services.OnRequestFileDownloaderService"><nothingHere/></service>
+        <service android:name="com.bigtincan.btchub.services.SyncIntentService"><nothingHere/></service>
+        <service android:name="com.bigtincan.btchub.services.ThumbnailsManagerIntentService"><nothingHere/></service>
+        <service android:name="com.bigtincan.btchub.services.MyIntentService"><nothingHere/></service>
+        <service android:exported="true" android:name="com.bigtincan.btchub.services.WidgetStoryService"><nothingHere/></service>
+        <service android:name="com.bigtincan.btchub.services.GcmIntentService"><nothingHere/></service>
+        <service android:name="com.opeak.OpeakIntentService">
+            <intent-filter>
+                <action android:name="com.opeak.action.UPDATE_COMPONENT_STATE"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.opeak.security.WipeService" android:process=":opkwipe"><nothingHere/></service>
+        <service android:exported="true" android:name="com.opeak.OpeakNotificationService"><nothingHere/></service>
+        <uses-library android:name="android.test.runner"><nothingHere/></uses-library>
+    </application>
+<permission android:name="com.bigtincan.android.btchub.SEC_APP.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.bigtincan.android.btchub.permission.HubWidget.SEC_APP" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.opeak.launcher.permission.SEC_APP"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gmail.permission.READ_GMAIL"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.bigtincan.android.btchub.SEC_APP.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.REORDER_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

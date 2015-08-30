@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="dael.ram1.app538">
+    <application android:allowBackup="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="dael.app.WebLoadActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="dael.app.About"><nothingHere/></activity>
+        <activity android:name="dael.app.RanatActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="dael.app.OpenPlayerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.revmob.ads.fullscreen.FullscreenActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.tapcontext.TapContextActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity" android:taskAffinity="dael.app.AppWall" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.startapp.android.publish.AppWallActivity" android:taskAffinity="dael.app.AppWall" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.labs302.android.components.AdActivity"><nothingHere/></activity>
+        <activity android:name="com.labs302.android.components.Rate" android:theme="@android:style/Theme.DeviceDefault.Dialog"><nothingHere/></activity>
+        <meta-data android:name="com.tapcontext.DEVELOPERKEY" android:value="pmfeqjcu9n"><nothingHere/></meta-data>
+        <receiver android:name="com.tapcontext.TapContextReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.ironsource.mobilcore.InstallationTracker" android:process=":installationTracker"><nothingHere/></receiver>
+        <receiver android:exported="true" android:name="com.appnext.appnextsdk.ReferralReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.labs302.android.components.AdsDialogEnablerIntentReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.labs302.android.components.AdsNotificationIntentReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.labs302.android.components.MainStartupIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.tapcontext.TapContextService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.ironsource.mobilcore.MobileCoreReport" android:process=":mcServiceProcess"><nothingHere/></service>
+        <service android:name="com.appnext.appnextsdk.DownloadService"><nothingHere/></service>
+        </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+</manifest>

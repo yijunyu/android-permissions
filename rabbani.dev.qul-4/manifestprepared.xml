@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="rabbani.dev.qul">
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/title_activity_home_" android:name=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Surah_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Surah_Activity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".About_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    </manifest>

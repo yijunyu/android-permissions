@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ajlogan1.schoolplannerlite">
+    <application android:icon="@drawable/schoolplannerlogolite" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:label="@string/app_name" android:name=".SchoolPlannerHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Add Homework" android:name="AddHomeworkActivity" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.ajlogan1.schoolplannerlite.AddHomeworkActivity"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Settings" android:name="Preferences">
+            <intent-filter>
+                <action android:name="com.ajlogan1.schoolplannerlite.Preferences"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Homework List" android:name="HomeworkListActivity">
+            <intent-filter>
+                <action android:name="com.ajlogan1.schoolplannerlite.HomeworkListActivity"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Homework Details" android:name="HomeworkDetailsActivity">
+            <intent-filter>
+                <action android:name="com.ajlogan1.schoolplannerlite.HomeworkDetailsActivity"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Pro Upgrade Notification" android:name="ProNotificationActivity">
+            <intent-filter>
+                <action android:name="com.ajlogan1.schoolplannerlite.ProNotificationActivity"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:sharedUserId="com.hydranetworks.levelcrossing" package="com.hydranetworks.levelcrossing">
+    <application android:debuggable="false" android:hardwareAccelerated="false" android:hasCode="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="false" android:name="com.apportable.app.VerdeApplication" android:theme="@style/FullScreenActivity">
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.apportable.activity.VerdeActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="fb582333791823443"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="fb582333791823443"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="android.app.libs" android:value="v cxx System icu CoreFoundation xml2 CommonCrypto crypto_1_01g ssl_1_01g Security SystemConfiguration CFNetwork Foundation GraphicsServices CoreGraphics BridgeKit OpenAL pango CoreText CoreAudio AudioFile AudioUnit AudioToolbox verde"><nothingHere/></meta-data>
+        <meta-data android:name="android.app.lib_name" android:value="verde"><nothingHere/></meta-data>
+        <meta-data android:name="android.app_name" android:value="Level Crossing"><nothingHere/></meta-data>
+        <meta-data android:name="android.target_app_store" android:value="google"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.iabv3" android:value="false"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.app.lifecycle_listeners" android:value="com.apportable.iap.ApportableIAP"><nothingHere/></meta-data>
+        <meta-data android:name="android.android_market_pubkey" android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkDIMpbOe7X3KN1hYlYmQKFcRz0NrmhiDiwofQ8NY79ZP8YqtqrLKHQ+Imhav5yKcfZPy/MzT+evYKuDz3h42dBl3B5rQKbmQMLEfBKAqmzHsMoTvS0xH8B0/sRPXAs+iX8GjPtBu6KR6qo2gWcTOa8ZpY3HvPIV5lfRzOSWySQM5ds3/RHbCv3x7D8YlXwnnmqCo/1HnG7jpku9dAWw6uZYx27ToiVMvueC66mJVBPig1W+Ojz14jpqYH57vPTJGopbvSGPF5eYo8HHnxExqpG4F7QYZzDcRgGIpaAK5yoAullV93rDOWuPbMHpstqtefcb3J8gXGhTrZX//mtnUFwIDAQAB"><nothingHere/></meta-data>
+        <meta-data android:name="android.license_key" android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkDIMpbOe7X3KN1hYlYmQKFcRz0NrmhiDiwofQ8NY79ZP8YqtqrLKHQ+Imhav5yKcfZPy/MzT+evYKuDz3h42dBl3B5rQKbmQMLEfBKAqmzHsMoTvS0xH8B0/sRPXAs+iX8GjPtBu6KR6qo2gWcTOa8ZpY3HvPIV5lfRzOSWySQM5ds3/RHbCv3x7D8YlXwnnmqCo/1HnG7jpku9dAWw6uZYx27ToiVMvueC66mJVBPig1W+Ojz14jpqYH57vPTJGopbvSGPF5eYo8HHnxExqpG4F7QYZzDcRgGIpaAK5yoAullV93rDOWuPbMHpstqtefcb3J8gXGhTrZX//mtnUFwIDAQAB"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.license_key" android:value="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkDIMpbOe7X3KN1hYlYmQKFcRz0NrmhiDiwofQ8NY79ZP8YqtqrLKHQ+Imhav5yKcfZPy/MzT+evYKuDz3h42dBl3B5rQKbmQMLEfBKAqmzHsMoTvS0xH8B0/sRPXAs+iX8GjPtBu6KR6qo2gWcTOa8ZpY3HvPIV5lfRzOSWySQM5ds3/RHbCv3x7D8YlXwnnmqCo/1HnG7jpku9dAWw6uZYx27ToiVMvueC66mJVBPig1W+Ojz14jpqYH57vPTJGopbvSGPF5eYo8HHnxExqpG4F7QYZzDcRgGIpaAK5yoAullV93rDOWuPbMHpstqtefcb3J8gXGhTrZX//mtnUFwIDAQAB"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.expansion.main.version" android:value="1414307484"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.expansion.main.size" android:value="126310155"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.expansion.patch.version" android:value="0"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.expansion.patch.size" android:value="0"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.splash_screen_type" android:value="letterbox"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.orientation" android:value="landscape"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.opengles2" android:value="true"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.opengles.true_color" android:value="true"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.c2dm.sender" android:value="gcm:810557304461"><nothingHere/></meta-data>
+        <meta-data android:name="apportable.abi_list" android:value="armeabi"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.apportable.expansion.downloader.ExpansionFileDownloaderAlarmReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.apportable.c2dm.C2DMRegistrationReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.hydranetworks.levelcrossing"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.apportable.c2dm.C2DMMessageReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.hydranetworks.levelcrossing"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.apportable.iap.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.apportable.media.AudioManagerService"><nothingHere/></service>
+        <service android:name="com.apportable.expansion.downloader.ExpansionFileDownloaderService"><nothingHere/></service>
+        <service android:name="com.apportable.iap.BillingService"><nothingHere/></service>
+        </application>
+<permission android:name="com.hydranetworks.levelcrossing.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture"><nothingHere/></supports-gl-texture>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.hydranetworks.levelcrossing.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

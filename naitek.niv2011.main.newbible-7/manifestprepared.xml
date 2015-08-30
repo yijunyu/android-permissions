@@ -1,0 +1,80 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="naitek.niv2011.main.newbible" package="naitek.niv2011.main.newbible">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/theme.light">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="naitek.niv2011.main.newbible.Chapter" android:theme="@style/chapter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.startapp.android.publish.AppWallActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleInstance" android:name="naitek.niv2011.main.newbible.PassageChapter" android:theme="@style/chapter"><nothingHere/></activity>
+        <activity android:exported="false" android:name="naitek.niv2011.main.newbible.Search" android:theme="@style/theme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:exported="false" android:name="naitek.niv2011.main.newbible.About" android:theme="@style/theme" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="naitek.niv2011.main.newbible.Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="application/zip"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*/bibledata-.*\\.zip"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="naitek.niv2011.main.newbible.Result"><nothingHere/></activity>
+        <activity android:label="@string/searchinbible" android:launchMode="singleTask" android:name="naitek.niv2011.main.newbible.Passage">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="search" android:path="" android:scheme="bible"><nothingHere/></android-data>
+                <android-data android:host="piebridge.me" android:path="/search" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.piebridge.me" android:path="/search" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="piebridge.me" android:path="/search" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="www.piebridge.me" android:path="/search" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="*.biblegateway.com" android:pathPrefix="/passage" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.biblegateway.com" android:pathPrefix="/passage" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="*.biblica.com" android:pathPrefix="/bibles/chapter" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.biblica.com" android:pathPrefix="/bibles/chapter" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="bibles.org" android:pathPrefix="/search/" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="bibles.org" android:pathPrefix="/search/" android:scheme="https"><nothingHere/></android-data>
+                <android-data android:host="*.bibles.org" android:pathPrefix="/search/" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.bibles.org" android:pathPrefix="/search/" android:scheme="https"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="text/plain"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <provider android:authorities="naitek.niv2011.main.newbible.provider" android:exported="false" android:name="naitek.niv2011.main.newbible.Provider"><nothingHere/></provider>
+        <provider android:authorities="naitek.niv2011.main.newbible" android:name="naitek.niv2011.main.newbible.Suggestion" android:permission="android.permission.GLOBAL_SEARCH"><nothingHere/></provider>
+        <receiver android:name="naitek.niv2011.main.newbible.Receiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SECRET_CODE"><nothingHere/></action>
+                <android-data android:host="24253" android:scheme="android_secret_code"><nothingHere/></android-data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

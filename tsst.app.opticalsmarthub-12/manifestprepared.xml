@@ -1,0 +1,148 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="tsst.app.opticalsmarthub">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:vmSafeMode="false">
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Intro" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".MainActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".Setting">
+            <meta-data android:name="android.preference" android:resource="@xml/settings"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Tab_FileManager"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".FileManager.ListViewFileActivity_Local">
+            <intent-filter>
+                <action android:name="tsst.filemanager.action.PICK_FILE"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="tsst.filemanager.action.PICK_FILE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="tsst.filemanager.action.PICK_DIRECTORY"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="tsst.filemanager.action.PICK_DIRECTORY"><nothingHere/></action>
+                <android-data android:scheme="smb"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="tsst.filemanager.action.PICK_DIRECTORY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"><nothingHere/></action>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.OPENABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".FileManager.ListViewFileActivity_SMB">
+            <intent-filter>
+                <action android:name="tsst.filemanager.action.PICK_ODD_DIRECTORY"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="tsst.filemanager.action.PICK_ODD_DIRECTORY"><nothingHere/></action>
+                <android-data android:scheme="smb"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="tsst.filemanager.action.PICK_ODD_DIRECTORY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".NullActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".AudioCDPlayer.AudioPlayer" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".AudioCDPlayer.TrackList"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".PhotoBackup.PhotoBackupMain" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".PhotoBackup.PhotoBackup_SelectTarget" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".PhotoBackup.PhotoBackup_BackupToDisc" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step1_SelectSource" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step2_SelectFilesFromSMB" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step2_SelectFilesFromLocal" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step3_SelectTarget" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step4_SelectLocationToLocal" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step4_SelectLocationToSMB" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step5_BackupFromLocalToDisc" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step5_BackupFromSMBToLocal" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step5_BackupFromLocalToSMB" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step5_BackupFromSMBToSMB_old" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step5_BackupFromSMBToDisc" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".SmartBackup.SmartBackup_Step5_BackupFromSMBToSMB" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="" android:name=".UPnP.BrowseActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".WebConfiguration"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ProductRegistration"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".WebProductIntroduction"><nothingHere/></activity>
+        <activity android:name=".FileManager.VideoViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ProDVD_app_name" android:name="com.android.prodvd.ProDVD_DVDInit" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="tsst.filemanager.action.PICK_ODD_DIRECTORY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/ProDVD_app_name" android:name="com.android.prodvd.DVDServersListActivity" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".LibTestApplicationActivity" android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.android.prodvd.ProDVD_SmartMobileMoviePlayer" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|touchscreen" android:multiprocess="true" android:name="com.android.prodvd.ProDVD_SmartMobileAudioPlayer" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.action.HEADSET_PLUG"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.android.prodvd.ProDVD_MusicExplorer" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.android.prodvd.ProDVD_MovieExplorer" android:screenOrientation="sensorLandscape" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.action.HEADSET_PLUG"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="tsst.app.opticalsmarthub" android:name=".Contents.FileManagerProvider"><nothingHere/></provider>
+    <service android:name=".UPnP.BrowserUpnpService"><nothingHere/></service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_SURFACE_FLINGER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DEVICE_POWER"><nothingHere/></uses-permission>
+    </manifest>

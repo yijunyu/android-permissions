@@ -1,0 +1,144 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.oshare.app" platformBuildVersionCode="14" platformBuildVersionName="4.0.2-1406408">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name=".parameters.AppParameters" android:theme="@style/oshare_custom">
+        <activity android:label="@string/app_name" android:name="com.oshare.app.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="com.oshare.app" android:scheme="oshareapp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.oshare.app.TwitterActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="com.oshare.app" android:scheme="osharetwitter"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.oshare.app.ORegisterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.oshare.app.NaviPageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:multiprocess="true" android:name="com.oshare.app.WaterFallActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/search_goods_by_photo" android:name="com.oshare.app.child.activity.ShopGoodsActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/share_to" android:name="com.oshare.app.child.activity.FashionStyleActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/introduction" android:name="com.oshare.app.child.activity.FeatureIntroduceActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/shared_photo" android:name="com.oshare.app.child.activity.SharePhotoActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/seek_user_text_collections" android:name="com.oshare.app.child.activity.CollectionLegsActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/display_popular_award" android:name="com.oshare.app.child.activity.AwardActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/home" android:name="com.oshare.app.child.activity.ProfilePageActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/photo_comments_detail_page" android:name="com.oshare.app.child.activity.PhotoCommentsActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/notification" android:name="com.oshare.app.child.activity.UserNotificationActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/inbox" android:name="com.oshare.app.child.activity.PrivateMessageActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/message_detail" android:name="com.oshare.app.child.activity.MessageDetailActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/new_message" android:name="com.oshare.app.child.activity.SendMessageActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/about_oshare" android:name="com.oshare.app.child.activity.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/search" android:name="com.oshare.app.child.activity.SearchActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/invite_friend" android:name="com.oshare.app.InviteFriendsActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/follow_friend" android:name="com.oshare.app.child.activity.FacebookFriendsActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.oshare.app.WaterFallActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.oshare.fragment.PhotoCommentsFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.oshare.fragment.CommentsListFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.oshare.fragment.EditCollectionsFragment" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.oshare.app.GCMLauncherActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:largeHeap="true" android:name="com.aviary.android.feather.FeatherActivity" android:process=":aviarysdk" android:screenOrientation="unspecified" android:theme="@style/AviaryTheme"><nothingHere/></activity>
+        <activity android:launchMode="standard" android:name="com.aviary.android.feather.AlertActivity" android:noHistory="true" android:theme="@style/AviaryTheme.Dialog">
+            <intent-filter>
+                <action android:name="aviary.intent.action.ALERT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="b53148271cf510850ed5acc0dfc10ed6c6e4724a"><nothingHere/></meta-data>
+        <meta-data android:name="com.aviary.android.feather.v1.API_KEY" android:value="7dafce77c67aa563"><nothingHere/></meta-data>
+    <provider android:authorities="com.oshare.app.AviaryCdsProvider" android:exported="false" android:name="com.aviary.android.feather.cds.AviaryCdsProvider" android:process=":aviarycds" android:syncable="true"><nothingHere/></provider>
+        <receiver android:name="com.aviary.android.feather.cds.AviaryCdsReceiver" android:process=":aviarycds">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.oshare.app"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="it.partytrack.sdk.MultipleReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="com.google.ads.conversiontracking.InstallReceiver" android:value="com.google.ads.conversiontracking.InstallReceiver"><nothingHere/></meta-data>
+        </receiver>
+        <service android:exported="false" android:name="com.aviary.android.feather.cds.AviaryCdsService" android:process=":aviarycds">
+            <intent-filter>
+                <action android:name="aviary.intent.action.CDS_DOWNLOAD_START"><nothingHere/></action>
+                <action android:name="aviary.intent.action.CDS_RESTORE_USER_ITEMS"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+        <service android:name="com.parse.PushService"><nothingHere/></service>
+        <service android:name="com.oshare.service.NotificationService"><nothingHere/></service>
+        </application>
+<permission android:name="android.permission.FLASHLIGHT" android:permissionGroup="android.permission-group.HARDWARE_CONTROLS" android:protectionLevel="normal"><nothingHere/></permission>
+    <permission android:name="com.oshare.app.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.oshare.app.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.enlesssoft.android.lightningdial">
+    <application android:icon="@drawable/icon_pad" android:label="@string/ApplicationNameAndroid" android:name="com.enlesssoft.android.lightningdial.LightningDialApplication" android:theme="@style/EsThemeDark">
+        <activity android:label="@string/ApplicationNameAndroid" android:name="com.enlesssoft.android.lightningdial.LightningDialActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name="com.enlesssoft.android.controls.activities.PickUrlActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name="com.enlesssoft.android.controls.activities.PickEmailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.MainMenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.MenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.NewDialItemMenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.DialItemEditActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.GlobalSettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.AppearanceSettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.HelpAndFeedbackMenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.VersionHistoryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.MoreInfoAndAboutMenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/ApplicationNameAndroid" android:name=".activities.SuggestedLinksMenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="large"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="large"><nothingHere/></screen>
+    </compatible-screens>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

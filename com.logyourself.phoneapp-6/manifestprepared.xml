@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.logyourself.phoneapp">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".LogSelector">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".SignIn"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".MainActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".InputActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".SignUpActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".NewCategorySelector"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".CategoryAdapt"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".DataViewTableActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".DataViewGraphActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    </manifest>

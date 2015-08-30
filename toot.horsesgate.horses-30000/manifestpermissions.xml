@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.READ_CALENDAR</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_CALENDAR</name>
+  </permission>
+</permissions>

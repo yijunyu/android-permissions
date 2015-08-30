@@ -1,0 +1,13 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.MOUNT_UNMOUNT_FILESYSTEMS</permission>
+    <permission>android.permission.CHANGE_CONFIGURATION</permission>
+    <permission>android.permission.ACCESS_MOCK_LOCATION</permission>
+    <permission>android.permission.INSTALL_PACKAGES</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.CHANGE_NETWORK_STATE</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+  </under-specification>
+</comparison>

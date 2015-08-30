@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="br.com.alyssonmyller.speaki">
+    <application android:allowBackup="true" android:icon="@drawable/btn_action_microphone" android:label="@string/app_name" android:name=".system.SpeakiApplication" android:theme="@style/MyTheme">
+        <activity android:label="@string/app_name" android:name=".activity.InitActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Speaki" android:name=".activity.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Speaki" android:name=".activity.InstrucaoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Speaki" android:name=".activity.SpeakiLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Speaki" android:name=".activity.MenuPrincipalActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="" android:name=".activity.SelecionaDestinatarioActivity" android:screenOrientation="portrait">
+            <meta-data android:name="br.com.alyssonmyller.speaki" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="Cadastro" android:name=".activity.CadastroContaActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activity.ContasLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activity.EasterEggActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activity.AmigosMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Twitter" android:name=".activity.TwitterLoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="t4jsample" android:scheme="oauth"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="Facebook" android:name="com.facebook.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activity.AmigosFragment" android:screenOrientation="portrait">
+            <meta-data android:name="br.com.alyssonmyller.speaki" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="br.com.alyssonmyller.speaki"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="br.com.alyssonmyller.speaki.receiver.SpeakiReceiver">
+            <intent-filter>
+                <action android:name="br.com.alyssonmyller.speaki.receiver.UPDATE_STATUS"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.parse.PushService"><nothingHere/></service>
+        </application>
+<permission android:name="br.com.alyssonmyller.speaki.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.NETWORK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="br.com.alyssonmyller.speaki.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

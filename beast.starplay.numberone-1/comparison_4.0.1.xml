@@ -1,0 +1,11 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.SET_WALLPAPER_HINTS</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_SETTINGS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.BROADCAST_STICKY</permission>
+  </under-specification>
+</comparison>

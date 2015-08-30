@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.flavourmonkey.loltime">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.flavourmonkey.loltime.TimeActivity"><nothingHere/></activity>
+        <activity android:name="com.flavourmonkey.loltime.SettingsActivity"><nothingHere/></activity>
+        <activity android:name="com.flavourmonkey.loltime.HelpActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.flavourmonkey.loltime.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:label="@string/widget_name" android:name="com.flavourmonkey.loltime.LolTimeAppWidgetProviderXXX">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.flavourmonkey.loltime.LOLTIME_WIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget1_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.flavourmonkey.loltime.ShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.flavourmonkey.loltime.ShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.flavourmonkey.loltime.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:label="LolTime Wallpaper" android:name="com.flavourmonkey.loltime.LolTimeWallpaperService" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wallpaper"><nothingHere/></meta-data>
+        </service>
+        <service android:icon="@drawable/ic_launcher" android:name="com.flavourmonkey.loltime.LolTimeService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="true" android:icon="@drawable/ic_launcher" android:name="com.flavourmonkey.loltime.LolTimeServiceSilent"><nothingHere/></service>
+        <service android:enabled="true" android:exported="true" android:icon="@drawable/ic_launcher" android:name="com.flavourmonkey.loltime.LolTimeServiceSilentGrab"><nothingHere/></service>
+        <service android:enabled="true" android:exported="true" android:icon="@drawable/ic_launcher" android:name="com.flavourmonkey.loltime.LolTimeServiceSilentSwap"><nothingHere/></service>
+        <service android:enabled="true" android:exported="true" android:icon="@drawable/ic_launcher" android:name="com.flavourmonkey.loltime.LolTimeServiceSilentNetwork"><nothingHere/></service>
+        <service android:enabled="true" android:exported="true" android:icon="@drawable/ic_launcher" android:name="com.flavourmonkey.loltime.LolTimeServiceSilentDaily"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    </manifest>

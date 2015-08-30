@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/statsheet/statblogs/RoosReport/Webview$SsWebViewClient.java</file>
+    <line>66</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/statsheet/statblogs/RoosReport/Webview.java</file>
+    <line>44</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/statsheet/statblogs/RoosReport/Webview.java</file>
+    <line>58</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/statsheet/statblogs/RoosReport/Webview.java</file>
+    <line>108</line>
+    <permissions/>
+  </call>
+</calls>

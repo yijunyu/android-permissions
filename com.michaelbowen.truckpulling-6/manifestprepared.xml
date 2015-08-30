@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.michaelbowen.truckpulling">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_main" android:name=".MainActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".GarageSelectActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".GarageUpgradeActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".GarageBuyActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".LocationSelectClassActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".LocationSelectLevelActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".LocationPrepActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".LocationSelectVehicleActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name=".MainPullActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".PullPlotActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".OptionsActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name=".OptionsTestActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".LocationSelectPlaceActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".HelpActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".PullReviewActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".ExtrasActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name=".ViewModelActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+</manifest>

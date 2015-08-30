@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.BLUETOOTH</permission>
+    <permission>android.permission.BLUETOOTH_ADMIN</permission>
+  </under-specification>
+</comparison>

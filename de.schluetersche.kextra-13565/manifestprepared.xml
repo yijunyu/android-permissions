@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="de.schluetersche.kextra">
+    <application android:hardwareAccelerated="@bool/COCO_HARDWARE_ACCELERATED" android:icon="@drawable/icon" android:label="@string/COCO_DISPLAY_NAME" android:name="de.dpag.contentconverter.ContentConverterApplication" android:theme="@style/COCO_THEME_SELECTOR">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/COCO_DISPLAY_NAME" android:name="de.dpag.contentconverter.DocumentPickerView.DocumentPickerViewController">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="de.dpag.contentconverter.TableOfContentsGallery.TableOfContentsGalleryViewController"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="de.dpag.contentconverter.DocumentView.DocumentViewController"><nothingHere/></activity>
+        <activity android:exported="false" android:name="de.dpag.contentconverter.Support.Settings"><nothingHere/></activity>
+        <activity android:exported="false" android:name="de.dpag.contentconverter.ExternalSubscriptions.ActivateExternalSubscriptionViewController" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="de.dpag.contentconverter.InAppBrowserView.InAppBrowserViewController"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="de.dpag.contentconverter.ImageGallery.ImageGalleryViewController"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="de.dpag.contentconverter.Help.HelpViewController"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="de.dpag.contentconverter.Registration.RegistrationViewController"><nothingHere/></activity>
+        <meta-data android:name="ApplicationDelegate" android:value="de.dpag.contentconverter.ContentConverterAppDelegate"><nothingHere/></meta-data>
+        <receiver android:name="com.kaldorgroup.pugpig.net.auth.google.Receiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.kaldorgroup.pugpig.net.auth.google.Service"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

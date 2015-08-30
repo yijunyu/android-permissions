@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="mb.cmm.absisimmobilier">
+    <application android:allowBackup="true" android:icon="@drawable/w_launcher_icn" android:label="@string/whitelabel_name" android:name="com.logicimmo.whitelabellib.WhiteLabelApplication" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/whitelabel_launcher_name" android:name="com.logicimmo.whitelabellib.ui.home.HomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/agenciesdetails_title" android:name="com.logicimmo.whitelabellib.ui.agencies.AgenciesDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/agencieslist_title" android:name="com.logicimmo.whitelabellib.ui.agencies.AgenciesListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/favorites_title" android:name="com.logicimmo.whitelabellib.ui.favorites.FavoritesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/searches_title" android:name="com.logicimmo.whitelabellib.ui.searches.SearchesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/searchform_title" android:name="com.logicimmo.whitelabellib.ui.searches.SearchFormActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/localitiesform_title" android:name="com.logicimmo.whitelabellib.ui.searches.criterias.localities.LocalitiesFormActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/localitychooser_title" android:name="com.logicimmo.whitelabellib.ui.searches.criterias.localities.LocalityChooserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/propertytypeschooser_title" android:name="com.logicimmo.whitelabellib.ui.searches.criterias.propertytypes.PropertyTypesChooserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/pricerangeform_title" android:name="com.logicimmo.whitelabellib.ui.searches.criterias.price.PriceRangeFormActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/arearangeform_title" android:name="com.logicimmo.whitelabellib.ui.searches.criterias.area.AreaRangeFormActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/numberofroomschooser_title" android:name="com.logicimmo.whitelabellib.ui.searches.criterias.numberofrooms.NumberOfRoomsChooserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/announcesearchresults_title" android:name="com.logicimmo.whitelabellib.ui.announces.AnnounceSearchResultsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/announcesdetails_title" android:name="com.logicimmo.whitelabellib.ui.announces.AnnouncesDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/announcesdetails_lots_title" android:name="com.logicimmo.whitelabellib.ui.announces.lots.AnnounceLotsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/announcepictures_title" android:name="com.logicimmo.whitelabellib.ui.announces.AnnouncePicturesActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAacO_42I9DI5DqBPmCwFK9q6ai3iQj8bc"><nothingHere/></meta-data>
+    <receiver android:name="com.logicimmo.whitelabellib.data.notifications.NotificationsReceiver"><nothingHere/></receiver>
+        <service android:enabled="true" android:name="com.logicimmo.whitelabellib.data.notifications.NotificationsService"><nothingHere/></service>
+        </application>
+<uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>com.google.android.c2dm.permission.RECEIVE</name>
+  </permission>
+  <permission>
+    <name>biz.t16.piggypos.permission.C2D_MESSAGE</name>
+  </permission>
+  <permission>
+    <name>android.permission.WAKE_LOCK</name>
+  </permission>
+  <permission>
+    <name>android.permission.NFC</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.GET_ACCOUNTS</name>
+  </permission>
+  <permission>
+    <name>android.permission.USE_CREDENTIALS</name>
+  </permission>
+</permissions>

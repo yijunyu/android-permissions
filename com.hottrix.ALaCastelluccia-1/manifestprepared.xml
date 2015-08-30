@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hottrix.ALaCastelluccia">
+    <application android:icon="@drawable/icon" android:label="La Castelluccia" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:label="La Castelluccia" android:name="ALaCastelluccia">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,88 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.androiddev.honey2">
+    <application android:allowClearUserData="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".HoneyApplication" android:theme="@style/Theme.HoneyLight">
+        <activity android:label="@string/app_name" android:name="org.androiddev.honey2.activity.BoardListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.androiddev.honey2.activity.CreateShortcutActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.androiddev.honey2.activity.SettingsActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.FavoriteListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.androiddev.honey2.activity.FavoriteListManageActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.NotificationReceiverActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.RecentListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.androiddev.honey2.activity.ThreadListActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.ThreadEntryListActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.Find2chSearchActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.SimilarThreadListActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.ThreadEntryEditActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.HelpActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.SettingAAFontActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.ImageViewerActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.NewThreadEditActivity"><nothingHere/></activity>
+        <activity android:name="org.androiddev.honey2.activity.IntentReceiverActivity">
+            <intent-filter android:icon="@drawable/icon" android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="*.2ch.net" android:pathPrefix="/test/read.cgi/" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.bbspink.com" android:pathPrefix="/test/read.cgi/" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="jbbs.livedoor.jp" android:pathPrefix="/bbs/read.cgi/" android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="*.machi.to" android:pathPrefix="/bbs/read.cgi/" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter android:icon="@drawable/icon" android:label="@string/app_name_send">
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:host="*.2ch.net" android:mimeType="text/*"><nothingHere/></android-data>
+                <android-data android:host="*.bbspink.com" android:mimeType="text/*"><nothingHere/></android-data>
+                <android-data android:host="jbbs.livedoor.jp" android:mimeType="text/*"><nothingHere/></android-data>
+                <android-data android:host="*.machi.to" android:mimeType="text/*"><nothingHere/></android-data>
+                <android-data android:mimeType="text/*" android:pathPrefix="/test/read.cgi/"><nothingHere/></android-data>
+                <android-data android:mimeType="text/*" android:pathPattern="/.*/"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="org.androiddev.honey2.activity.PickFileActivity"><nothingHere/></activity>
+        <receiver android:name="org.androiddev.honey2.broadcast.BeginCheckUpdateReceiver">
+            <intent-filter>
+                <action android:name="org.androiddev.honey2.service.HoneyService.BEGIN_CHECK_UPDATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="org.androiddev.honey2.broadcast.BeginCheckTimerUpdateReceiver">
+            <intent-filter>
+                <action android:name="org.androiddev.honey2.service.HoneyService.UPDATE_TIMER"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.TIME_SET"><nothingHere/></action>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="org.androiddev.honey2.service.HoneyService">
+            <intent-filter>
+                <action android:name="org.androiddev.honey2.service.IHoneyService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+</manifest>

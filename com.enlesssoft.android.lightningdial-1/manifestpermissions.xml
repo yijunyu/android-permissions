@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.READ_CONTACTS</name>
+  </permission>
+  <permission>
+    <name>android.permission.CALL_PHONE</name>
+  </permission>
+  <permission>
+    <name>android.permission.SEND_SMS</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+</permissions>

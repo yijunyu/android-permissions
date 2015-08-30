@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="buenavistadesoftware.grandesfrases">
+    <application android:icon="@drawable/icon" android:label="Grandes Frases">
+        <activity android:label="Grandes Frases" android:launchMode="singleTop" android:name=".main" android:screenOrientation="unspecified" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:label="Grandes Frases 1" android:name=".widgetservice$widgetservice_BR">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetservice_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name=".httputilsservice$httputilsservice_BR"><nothingHere/></receiver>
+    <service android:name=".widgetservice"><nothingHere/></service>
+        <service android:name=".httputilsservice"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="murugancinemas.ticketnew.android.ui">
+    <application android:allowBackup="false" android:allowClearUserData="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="murugancinemas.ticketnew.android.ui.TicketNewApplication" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="murugancinemas.ticketnew.android.ui.SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.MasterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.TheatreListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.MovieListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.ScheduleDatesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.MovieScheduleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.TheatreClassSelectionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.SeatLayoutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.UserLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.BookingInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.PaymentProcessActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.HelpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.PaymentGatewayActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.PGConfirmActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.RegistrationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.LastTransactionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.ConfirmationDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.TicketNewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.ContactActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.AutoSeatBookingInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.SelectTicketCountActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.LevelMessageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.MoviesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.MoviewiseSchedule" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="murugancinemas.ticketnew.android.ui.PGBankActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

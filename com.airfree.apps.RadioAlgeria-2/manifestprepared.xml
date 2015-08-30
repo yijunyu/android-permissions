@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.airfree.apps.RadioAlgeria">
+    <application android:icon="@drawable/icon" android:name="com.lingstech.lingsPlayer" android:theme="@style/app_theme">
+        <activity android:label="@string/app_name" android:name=".BBCRadioTab" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Root_Tab_Activity"><nothingHere/></activity>
+        <activity android:name=".Root_HomeActivity"><nothingHere/></activity>
+        <activity android:name=".Root_RentActivity"><nothingHere/></activity>
+        <activity android:name=".Root_Home_item"><nothingHere/></activity>
+        <activity android:name=".Tab_FavActivity"><nothingHere/></activity>
+        <activity android:name=".Tab_RecordActivity"><nothingHere/></activity>
+        <activity android:name=".Root_AddActivity"><nothingHere/></activity>
+        <activity android:name=".Tab_ShareAvtivity"><nothingHere/></activity>
+        <activity android:name=".Tab_PlayActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name=".Tab_PlayingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".WebViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,11 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_LOCATION</permission>
+    <permission>android.permission.ACCESS_ASSISTED_GPS</permission>
+    <permission>android.permission.ACCESS_GPS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+  </under-specification>
+</comparison>

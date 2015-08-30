@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="bot.ui">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="bot.ui.Main">
+        <activity android:alwaysRetainTaskState="true" android:label="@string/app_name" android:name="bot.ui.StartupActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="bot.ui.UIActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateUnchanged"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_prefs" android:name="bot.ui.UIPreferences"><nothingHere/></activity>
+        <service android:name="bot.ui.BotService"><nothingHere/></service>
+    </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+</manifest>

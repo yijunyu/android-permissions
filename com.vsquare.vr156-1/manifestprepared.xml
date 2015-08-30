@@ -1,0 +1,70 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.vsquare.vr156">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.vsquare.vr156.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vsquare.vr156.activity.SendAdDialogActivity" android:theme="@style/DialogTheme"><nothingHere/></activity>
+        <activity android:name="com.vsquare.vr156.activity.AdSettingDialogActivity" android:theme="@style/DialogTheme"><nothingHere/></activity>
+        <activity android:name="com.vsquare.vr156.activity.MessageDialogActivity" android:theme="@style/DialogTheme"><nothingHere/></activity>
+        <receiver android:enabled="true" android:exported="false" android:name="com.vsquare.vr156.receiver.BootCompletedBroadcastReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.vsquare.vr156.receiver.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.vsquare.vr156"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.klinker.android.send_message.SentReceiver">
+            <intent-filter>
+                <action android:name="com.example.mmssender.SMS_SENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.klinker.android.send_message.DeliveredReceiver">
+            <intent-filter>
+                <action android:name="com.example.mmssender.SMS_DELIVERED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.vsquare.vr156.service.OutgoingCallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:enabled="true" android:name="com.vsquare.vr156.service.MessageSenderService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.vsquare.vr156.service.PingService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.vsquare.vr156.service.GCMIntentService"><nothingHere/></service>
+        <service android:name="com.android.mms.transaction.TransactionService"><nothingHere/></service>
+        </application>
+<permission android:name="com.vsquare.vr156.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.NEW_OUTGOING_CALL"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.vsquare.vr156.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

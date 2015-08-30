@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="cz.halla.android">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".HallaApp" android:theme="@style/Theme.Halla">
+        <activity android:name=".Splash" android:theme="@style/Theme.Sherlock.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".AllRealizationsOverview"><nothingHere/></activity>
+        <activity android:name=".PhotoDetail" android:theme="@style/Theme.Sherlock.NoActionBar"><nothingHere/></activity>
+        <activity android:name=".AllRealizationsMap" android:process=":AllRealizationsMap"><nothingHere/></activity>
+        <activity android:name=".About"><nothingHere/></activity>
+        <activity android:name=".Licenses"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

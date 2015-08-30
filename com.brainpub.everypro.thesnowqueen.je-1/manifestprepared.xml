@@ -1,0 +1,6 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.brainpub.everypro.thesnowqueen.je">
+    <application android:allowBackup="true" android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.example.protectortest.MainActivity"><nothingHere/></activity>
+    </application>
+<permission android:label="@string/app_name" android:name="com.brainpub.protecter.V1"><nothingHere/></permission>
+    </manifest>

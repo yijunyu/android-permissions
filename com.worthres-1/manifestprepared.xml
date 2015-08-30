@@ -1,0 +1,61 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.worthres">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="SwebApplication">
+        <activity android:label="@string/app_name" android:name="RootActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".PhotoGalleryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".AudioListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".VideoListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".VideoShowActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".MarketCategoriesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".MarketItemsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".MarketItemActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name=".MediaItemActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/add_comment" android:launchMode="singleInstance" android:name=".SwebShareBox" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="SwebApps_Android" android:scheme="myapp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name=".ItemInfo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ItemComments" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BookmarkActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".CartActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ContactActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name=".MessageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".MapviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".MapviewMultipleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".TipCalculatorActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".MortageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".WebViewActivity" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FeedListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FormBasicActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FormCustomActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ZoomActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FeedViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".SuperActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".RandomizerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

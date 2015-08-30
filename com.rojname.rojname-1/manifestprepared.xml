@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.rojname.rojname">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/RNNActionBarTheme">
+        <activity android:name="com.rojname.rojname.NewsDetailsActivity"><nothingHere/></activity>
+        <activity android:name="com.rojname.rojname.NewsDescriptionActivity"><nothingHere/></activity>
+        <activity android:name="com.rojname.rojname.AboutUsActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.rojname.rojname.MyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

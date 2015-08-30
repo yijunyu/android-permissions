@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/kr/co/essential/main.java</file>
+    <line>79</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/kr/co/essential/main.java</file>
+    <line>63</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/kr/co/essential/main$MyWebClient.java</file>
+    <line>155</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/kr/co/essential/main$MyWebClient.java</file>
+    <line>160</line>
+    <permissions/>
+  </call>
+</calls>

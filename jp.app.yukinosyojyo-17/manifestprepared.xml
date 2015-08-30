@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="jp.app.yukinosyojyo">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.app.base.__Game" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.app.base.NotifyReceiver">
+            <intent-filter>
+                <action android:name="com.app.yukinosyojyo"><nothingHere/></action>
+                <category android:name="com.app.yukinosyojyo"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.app.base.NotifyService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

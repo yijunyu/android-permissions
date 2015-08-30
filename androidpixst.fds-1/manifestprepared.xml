@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="androidpixst.fds">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".MainApplication" android:theme="@style/AppTheme">
+        <activity android:name="com.unicon_ltd.konect.sdk.AppLauncherActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="androidpixst.fds.TopActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="TopActivity" android:scheme="androidfdx"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        <meta-data android:name="jp.live_aid.aid.DEFAULT_CREATIVE_STYLE" android:value="POPUP_IMAGE"><nothingHere/></meta-data>
+            </activity>
+        <activity android:name="androidpixst.fds.ErrorActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="androidpixst.fds.WebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <meta-data android:name="CLIENT_SITE_ID" android:value="9903000"><nothingHere/></meta-data>
+        <meta-data android:name="APP_URI" android:value="androidfdx://TopActivity/"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.unicon_ltd.konect.sdk.KonectNotificationsReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="androidpixst.fds"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.unicon_ltd.konect.sdk.KonectLocalNotificationsReceiver"><nothingHere/></receiver>
+        <service android:name="com.unicon_ltd.konect.sdk.KonectNotificationsService"><nothingHere/></service>
+        </application>
+<permission android:name="androidpixst.fds.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="androidpixst.fds.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

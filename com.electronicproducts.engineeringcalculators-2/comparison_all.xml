@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.INTERNET</permission>
+  </under-specification>
+</comparison>

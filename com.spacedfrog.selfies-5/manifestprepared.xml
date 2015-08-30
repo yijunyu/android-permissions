@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.spacedfrog.selfies">
+    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/logo" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_main" android:name="com.spacedfrog.selfies.activity.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.spacedfrog.selfies.activity.ActivityNotification" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_login" android:name="com.spacedfrog.selfies.activity.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_register" android:name="com.spacedfrog.selfies.activity.RegisterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_plist" android:name="com.spacedfrog.selfies.activity.ProjectListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_setup_project" android:name="com.spacedfrog.selfies.activity.SetupProject1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_setup_project2" android:name="com.spacedfrog.selfies.activity.SetupProject2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_setup_project3" android:name="com.spacedfrog.selfies.activity.SetupProject3Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_project" android:name="com.spacedfrog.selfies.activity.ProjectActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_show_picture" android:name="com.spacedfrog.selfies.activity.ShowPictureActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_show_picture" android:name="com.spacedfrog.selfies.activity.FragmentsSliderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_show_picture" android:name="com.spacedfrog.selfies.activity.FragmentSliderActivitySetup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_show_picture" android:name="com.spacedfrog.selfies.activity.FragmentsProjectSlider" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_movie_creator" android:name="com.spacedfrog.selfies.movie.MovieCreatorActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_movie_viewer" android:name="com.spacedfrog.selfies.movie.MovieViewerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_settings" android:name="com.spacedfrog.selfies.activity.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <receiver android:name="com.spacedfrog.selfies.utils.TimeAlarm"><nothingHere/></receiver>
+        </application>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

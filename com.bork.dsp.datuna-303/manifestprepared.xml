@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.bork.dsp.datuna">
+    <application android:icon="@drawable/app_datuner" android:label="@string/app_name" android:name=".MainApplication" android:theme="@style/thin_ab">
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name=".DaTunaTuner">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:label="Configurations" android:name=".MyPreferencesActivity" class="MyPreferencesActivity"><nothingHere/></activity>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14f3acdca9fef1"><nothingHere/></meta-data>
+    </application>
+<supports-screens android:anyDensity="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    </manifest>

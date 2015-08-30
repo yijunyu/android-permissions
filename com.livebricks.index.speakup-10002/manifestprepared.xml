@@ -1,0 +1,103 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.livebricks.index.speakup">
+    <application android:allowBackup="true" android:icon="@drawable/icon256" android:label="@string/app_icon_name" android:largeHeap="true" android:theme="@style/MYTheme">
+        <activity android:configChanges="locale" android:label="@string/app_icon_name" android:name=".IndexMainActivity" android:screenOrientation="portrait" android:theme="@style/MYTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.IndexWalkthroughsActivity" android:process=":walkthroughts" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".view.IndexCallActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexCallCategoryActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexCallActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexCatalogActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexCatalogActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexCatalogInformationActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexContactActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexCouponActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexExpertActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexFacebookActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexFavoriteActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexIntroActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexJobActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMapActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexMapActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMapLocationActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexParkingLocationActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexNewsActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexOrderActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexOrderActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexOrderInformationActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexProfileActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexProfileInformationActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexProfileActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexSearchActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexSetupActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexSetupActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexSetupHistoryPushActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexShareActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexShareActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexQRShareActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexSurveyActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexVideoActivity"><nothingHere/></activity>
+        <activity android:name=".utils.LBActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexProfileLocationActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexLinkActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMultilinkActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexDiningActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexDiningActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexDiningInformationActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMultispecialActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexMultispecialActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMultispecialDetailActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberRegisterFirstActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberRegisterSecondActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberDetailActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberModifyActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberCouponActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberOpinionActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberOpinionReplyActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexMemberOpinionDetailActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexApplinkActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexPhotoActivityStack"><nothingHere/></activity>
+        <activity android:name=".view.IndexPhotoActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexPhotoGridActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexPhotoPagerActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexFrontPageActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexPushActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexYoutubeActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexComingSoonActivity"><nothingHere/></activity>
+        <activity android:name=".view.IndexShortCutPhoneActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".view.IndexShortCutLocationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".view.IndexShortCutLocationMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".view.IndexShortCutSearchActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".view.IndexShortCutSearchDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".view.IndexHomePageActivity"><nothingHere/></activity>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.livebricks.index.speakup"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.livebricks.index.speakup.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.livebricks.index.speakup.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

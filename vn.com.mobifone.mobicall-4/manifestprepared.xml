@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="vn.com.mobifone.mobicall">
+    <application android:debuggable="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".core.App" android:theme="@style/Theme.C3CallTheme">
+        <activity android:label="@string/app_name" android:name=".activities.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ForgotPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".activities.RegisterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".activities.KeypadActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.SmsMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.SmsSendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".activities.SmsSendingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".activities.RecentsMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.ContactsMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.ContactsViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.ChangePasswordActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.SmsReceiverActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.SmsContactsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.MyMobileNumberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".activities.SettingsMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.SettingsMainListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.SettingsPreferenceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".activities.SettingsPreferenceListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name=".activities.BrowserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <receiver android:name=".service.CCallBootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name=".service.CCallService"><nothingHere/></service>
+        <service android:name=".service.InterceptCallService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    </manifest>

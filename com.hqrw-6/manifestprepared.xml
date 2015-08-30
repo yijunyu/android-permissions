@@ -1,0 +1,221 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hqrw">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.palmtrends.app.ShareApplication" android:persistent="true" android:theme="@style/AppTheme_Day">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hqrw.ui.InitAcitvity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_init"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.other.LeftAndRightActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_main"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.AnimArticleActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_article"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.AritcleCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_article_comment"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.ArticleCommentsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_article_comment_list"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.WeiboBangdingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_share_bangding"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.WeibofenxiangActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_share"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.weibo.WeiboCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_wb_comment"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.wb.WeiboShowImageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_wb_showimage"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.baseui.ShowWebInfo" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_showwebinfo"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.FmInfoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_fengmian"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.FMInfoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_wangqiinfo"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.setting.ST_ShareManager" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_st_share_manager"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.setting.FeedBack" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_st_feedback"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.setting.SearchActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_st_search"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.setting.TextSize" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_st_text"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.setting.Version" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_st_about"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.setting.FavActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_st_fav"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.other.SubscribeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_st_part"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.HomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_home"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.palmtrends.pic.PicInfoActivity" android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_partpic"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.Part1Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_part1"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.Part2Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_part2"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.PartWbActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_partwb"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.hqrw.ui.SettingActivty" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_setting"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.palmtrends.hqrw.ui.PicInfoActivity" android:screenOrientation="sensor">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_pic"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.palmtrends.wb.WeiBoInfoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.palmtrends.activity.hqrw.activity_wbinfo"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.palmtrends.push.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.palmtrends.alarm.action"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.palmtrends.push.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.palmtrends.push.push_receiver"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.palmtrends.apptime.AppTimeStatisticsService"><nothingHere/></service>
+        <service android:enabled="true" android:exported="false" android:name="com.palmtrends.push.MPushService">
+            <intent-filter>
+                <action android:name="android.intent.service.TASKSERVICE"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.palmtrends.push.push_server"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:permission="android.permission.BAIDU_LOCATION_SERVICE" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.6"><nothingHere/></action>
+            </intent-filter>
+        </service>
+    </application>
+<permission android:name="android.permission.BAIDU_LOCATION_SERVICE"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

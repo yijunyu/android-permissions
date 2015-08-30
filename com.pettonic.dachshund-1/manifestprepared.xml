@@ -1,0 +1,131 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.qbiki.seattleclouds">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.qbiki.seattleclouds.App">
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.seattleclouds.AppStarterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.app.default_searchable" android:value="none"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.seattleclouds.MyAppTabActivity" android:stateNotNeeded="false" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.seattleclouds.scapp.SCAppTabActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.app.default_searchable" android:value="none"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.seattleclouds.scapp.SCMyAppsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.app.default_searchable" android:value="none"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.seattleclouds.scapp.SCHomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data android:name="android.app.default_searchable" android:value="none"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.seattleclouds.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qbiki.seattleclouds.mosaic.MosaicActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qbiki.seattleclouds.mosaic.MosaicImageActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.feedback.FeedbackActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.feedback.MapsActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.mbfx.PhotoUploader" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.mbfx.LoginActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.mbfx.ForgotPasswordActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.mbfx.RegisterActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.feedback.LocationsListActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.feedback.MultiMapActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.qbiki.location.LocationDetectorActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/location_searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.qbiki.location.LocationPickerActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/location_searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.calendar.CalendarActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.calendar.EventEditActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.qbiki.modules.search.SearchActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/content_searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.savephoto.SavePhotoActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.dynamiclist.DynamicListActivity" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.starbucks.CardsListActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.starbucks.AddCardActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.starbucks.ViewCardActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:label="@string/app_name" android:name="com.qbiki.modules.quiz.QuizActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.notes.NotesListActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.notes.NotePagerActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.karaoke.KaraokeActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/app_name" android:name="com.qbiki.modules.photoeffect.PhotoEffectActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qbiki.seattleclouds.EmptyActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qbiki.modules.voicerecord.SCVoiceRecordPicker" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qbiki.modules.voicerecord.SCVoiceRecordList" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.puzzle.SCPuzzleGame" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.memogame.SCMemoGame" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.signaturestamp.SignatureStampActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.signaturestamp.DrawSurfaceActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.fbfanpage.FacebookFunPageActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.fbfanpage.FacebookBecomeFan" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qbiki.c2dm.AnnouncementActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qbiki.paypal.PayPalMessage" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="genmobii.dachshunds"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.barcodescanner.BarcodeScanner" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.barcodescanner.BarcodeDescription" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="net.sourceforge.zbar.android.ZBarScanner" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.coupon.CouponActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.phonegap.PhoneGapActivity">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.favorites.FavoritesActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.cameracover.CameraCoverActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.cameracover.CoverCamera" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.cameracover.CoversPreview" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.slideshow.SlideShowActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.qbiki.modules.loyalty.LoyaltyActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <provider android:authorities="com.pettonic.dachshund.internalfilecontentprovider" android:name="com.qbiki.util.InternalFileContentProvider"><nothingHere/></provider>
+        <receiver android:name="com.google.android.c2dm.C2DMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.pettonic.dachshund"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.pettonic.dachshund"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.qbiki.seattleclouds.C2DMReceiver"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.pettonic.dachshund.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.pettonic.dachshund.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

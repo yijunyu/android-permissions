@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.jaja.viselica">
+    <application android:allowBackup="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.jaja.viselica.m_application">
+        <activity android:label="@string/app_name" android:name="com.jaja.viselica.main_menu" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.jaja.viselica.game" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jaja.viselica.theme_select" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jaja.viselica.game_over" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jaja.viselica.game_static" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jaja.viselica.enter_word" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jaja.viselica.config" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jaja.viselica.wait_player" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jaja.viselica.wait_BT_game" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.jaja.viselica.theme_config" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="org.jajaz.bt_config.activity.bt_client" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="org.jajaz.bt_config.activity.bt_type_select" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        </application>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

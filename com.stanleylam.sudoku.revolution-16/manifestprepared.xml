@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.stanleylam.sudoku.revolution">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="com.stanleylam.sudoku.revolution.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.stanleylam.sudoku.revolution.SelectModeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.stanleylam.sudoku.revolution.OptionsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.stanleylam.sudoku.revolution.SelectLevelActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.stanleylam.sudoku.revolution.MainGameActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:excludeFromRecents="false" android:name="com.stanleylam.sudoku.revolution.WinDialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:excludeFromRecents="false" android:name="com.stanleylam.sudoku.revolution.RateDialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.stanleylam.sudoku.revolution.StatisticsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.stanleylam.sudoku.revolution.HelpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.stanleylam.sudoku.revolution.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.stanleylam.sudoku.revolution.BillingService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,364 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.appluco.apps.sn2415">
+    <application android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.appluco.apps.store.ApplucoApplication" android:theme="@style/Theme.Appluco">
+        <activity android:label="@string/app_name" android:name="com.appluco.apps.store.ui.MiiStoreActivity">
+            <intent-filter>
+                <action android:name="com.appluco.apps.sn2415.ACTION"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.apps"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.appluco.apps.store.ui.AppDetailActivity">
+            <intent-filter>
+                <action android:name="com.appluco.apps.sn2415.ACTION"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.apps"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.store.ui.MiiStoreActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.store.ui.AppTrackActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.store.ui.MiiStoreActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_search" android:launchMode="singleTop" android:name="com.appluco.apps.store.ui.SearchActivity" android:theme="@style/Theme.Appluco.GreyBackground">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.store.ui.MiiStoreActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_items" android:name="com.appluco.apps.store.ui.ItemsDetailActivity" android:theme="@style/Theme.Appluco.GreyBackground">
+            <intent-filter>
+                <action android:name="com.appluco.apps.sn2415.ACTION"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.items"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.store.ui.MiiStoreActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_news" android:name="com.appluco.apps.store.ui.NewsDetailActivity" android:theme="@style/Theme.Appluco.GreyBackground">
+            <intent-filter>
+                <action android:name="com.appluco.apps.sn2415.ACTION"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.news"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.store.ui.MiiStoreActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.store.ui.AppMapActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.appluco.apps.ui.AccountActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.appluco.apps.ui.InitActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.HomeActivity" android:theme="@style/Theme.App">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.store.ui.MiiStoreActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.CommentsActivity" android:theme="@style/Theme.App">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.PictureActivity" android:theme="@style/Theme.App">
+            <intent-filter>
+                <action android:name="com.appluco.apps.sn2415.ACTION"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.items"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:excludeFromRecents="false" android:name="com.appluco.apps.ui.ShareIntentActivity" android:theme="@style/Theme.Appluco.ShareDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="text/plain"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:excludeFromRecents="false" android:label="@string/description_selected_emotion" android:name="com.appluco.apps.ui.EmotionActivity" android:theme="@style/Theme.Sherlock.Light.Dialog">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.WebActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.PhotoBoothTakeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.photobooth"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:icon="@drawable/ic_tab_cancel" android:label="@string/description_reset_avatar" android:name="com.appluco.apps.ui.ResetPhotoActivity">
+            <intent-filter>
+                <action android:name="com.appluco.apps.sn2415.RESET_PROFILE_PHOTO"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:hardwareAccelerated="false" android:name="com.appluco.gallery.app.CropImage"><nothingHere/></activity>
+        <activity android:name="com.appluco.apps.ui.phone.SinglePaneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.news"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.news"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.items"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.items"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.clinic.chatroom"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.clinic.chatroom"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.wallpost"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.chatroom"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.chatroom"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.phone.AboutActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.phone.ShareActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_check_in" android:name="com.appluco.apps.ui.CheckInListActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:exported="false" android:name="com.appluco.apps.ui.phone.PhotoBoothChooseActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.photobooth"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_items" android:name="com.appluco.apps.ui.ProfileActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.phone.clinic.ClinicMakeApointmentActivity">
+            <intent-filter>
+                <action android:name="com.appluco.apps.sn2415.ACTION"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.clinic.apointment.available"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.phone.clinic.ClinicApointmentRecordActivity">
+            <intent-filter>
+                <action android:name="com.appluco.apps.sn2415.ACTION"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.clinic.apointment.record"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.ProfileActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_map" android:name="com.appluco.apps.ui.tablet.MapMultiPaneActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.phone.clinic.ClinicInformActivity">
+            <intent-filter>
+                <action android:name="com.appluco.apps.sn2415.ACTION"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.clinic.inform"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.ProfileActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.tablet.MultiPaneActivity" android:theme="@style/Theme.App">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.news"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.news"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.items"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.items"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.clinic.chatroom"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.clinic.chatroom"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.chatroom"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.chatroom"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.tablet.WeddingItemsActivity" android:theme="@style/Theme.App">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.items"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.appluco.apps.ui.tablet.WallpostActivity" android:theme="@style/Theme.App">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/vnd.appluco.wallpost"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_map" android:name="com.appluco.apps.ui.phone.MapActivity" android:theme="@style/Theme.taiwan66">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.appluco.gallery.app.Gallery">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/image"><nothingHere/></android-data>
+            <category android:name="android.intent.category.OPENABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/image"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.dir/video"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <action android:name="com.android.camera.action.REVIEW"><nothingHere/></action>
+                <android-data><nothingHere/></android-data>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+                <android-data android:scheme="content"><nothingHere/></android-data>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+                <android-data android:mimeType="appluco/image/*"><nothingHere/></android-data>
+                <android-data android:mimeType="image/jpeg"><nothingHere/></android-data>
+                <android-data android:mimeType="image/gif"><nothingHere/></android-data>
+                <android-data android:mimeType="image/png"><nothingHere/></android-data>
+                <android-data android:mimeType="image/x-ms-bmp"><nothingHere/></android-data>
+                <android-data android:mimeType="image/vnd.wap.wbmp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.camera.action.REVIEW"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+                <android-data android:scheme="content"><nothingHere/></android-data>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="video/mpeg4"><nothingHere/></android-data>
+                <android-data android:mimeType="video/mp4"><nothingHere/></android-data>
+                <android-data android:mimeType="video/3gp"><nothingHere/></android-data>
+                <android-data android:mimeType="video/3gpp"><nothingHere/></android-data>
+                <android-data android:mimeType="video/3gpp2"><nothingHere/></android-data>
+                <android-data android:mimeType="application/sdp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+                <android-data android:mimeType="video/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PICK"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.dir/image"><nothingHere/></android-data>
+                <android-data android:mimeType="vnd.android.cursor.dir/video"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:excludeFromRecents="true" android:icon="@drawable/ic_launcher" android:label="@string/appluco_login" android:name="com.appluco.apps.authenticator.AuthenticatorActivity"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:label="ui_activity_title" android:name="com.appluco.apps.authenticator.AccountFailActivity"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name="com.appluco.apps.ui.UpdateActivity" android:theme="@style/Theme.Appluco.Home"><nothingHere/></activity>
+        <activity android:name="com.appluco.apps.ui.SettingsActivity" android:theme="@style/Sherlock.__Theme.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/vnd.appluco.preferences"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.appluco.apps.ui.HomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="landscape" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_private_app" android:name="com.appluco.apps.ui.PrivateActivity" android:theme="@style/Theme.App"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/feedback_title" android:launchMode="singleTask" android:name="com.appluco.apps.ui.FeedbackformActivity" android:theme="@style/Theme.Sherlock.Light" android:uiOptions="splitActionBarWhenNarrow"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAytARVca_cjVlcIsr5ItLpG_QS2397Xfc"><nothingHere/></meta-data>
+        <meta-data android:name="android.app.default_searchable" android:value="com.appluco.apps.store.ui.SearchActivity"><nothingHere/></meta-data>
+    <provider android:authorities="com.appluco.apps.sn2415" android:label="@string/appluco_vendor" android:name="com.appluco.apps.provider.ScheduleProvider" android:readPermission="com.appluco.apps.sn2415.permission.READ_SCHEDULE" android:syncable="true" android:writePermission="com.appluco.apps.sn2415.permission.WRITE_SCHEDULE"><nothingHere/></provider>
+        <receiver android:name="com.appluco.apps.gcm.GCMRedirectedBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.appluco.apps.sn2415"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.appluco.apps.util.UpdateHelper$DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.appluco.apps.sync.AppUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.appluco.apps.sync.TriggerSyncReceiver"><nothingHere/></receiver>
+        <service android:name="com.appluco.apps.gcm.GCMIntentService"><nothingHere/></service>
+        <service android:name="com.appluco.apps.sync.ScheduleUpdaterService"><nothingHere/></service>
+        <service android:name="com.appluco.apps.util.UploadIntentService"><nothingHere/></service>
+        <service android:exported="true" android:name="com.appluco.apps.sync.SyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter_appluco"><nothingHere/></meta-data>
+        </service>
+        <service android:exported="true" android:name="com.appluco.apps.authenticator.AuthenticationService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"><nothingHere/></meta-data>
+        </service>
+        <service android:name="com.appluco.apps.util.FeedbackIntentService"><nothingHere/></service>
+        </application>
+    <permission android:description="@string/permission_write" android:label="@string/permission_write" android:name="com.appluco.apps.sn2415.permission.WRITE_SCHEDULE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:description="@string/permission_read" android:label="@string/permission_read" android:name="com.appluco.apps.sn2415.permission.READ_SCHEDULE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.appluco.apps.sn2415.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.appluco.apps.sn2415.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.landscape"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.NETWORK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_STATS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.appluco.apps.sn2415.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.appluco.apps.sn2415.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

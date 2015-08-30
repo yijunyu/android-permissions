@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="de.ralbus.stellplatz">
+    <application android:allowBackup="true" android:icon="@drawable/womo" android:label="@string/app_name" android:theme="@style/Theme.Sherlock">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".StartAuswahl">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="StellplatzAnzeigen"><nothingHere/></activity>
+        <activity android:label="@string/info_auswahl" android:name="NavigationStellplatz"><nothingHere/></activity>
+        <activity android:label="@string/btm_web" android:name="StellplatzBrowser"><nothingHere/></activity>
+        <activity android:name=".maps.GoogleMapsAnzeige"><nothingHere/></activity>
+        <activity android:name=".maps.GoogleMapsUmgebung"><nothingHere/></activity>
+        <activity android:name="UmgebungAnzeigen"><nothingHere/></activity>
+        <activity android:name="MeinStandort"><nothingHere/></activity>
+        <activity android:name="UmkreisSuchen"><nothingHere/></activity>
+        <activity android:name="OfflineSuche"><nothingHere/></activity>
+        <activity android:name="Voreinstellungen"><nothingHere/></activity>
+        <activity android:name=".anlegen.SfAnzeige"><nothingHere/></activity>
+        <activity android:name=".anlegen.SfNew"><nothingHere/></activity>
+        <activity android:name=".anlegen.SfListe"><nothingHere/></activity>
+        <activity android:name=".maps.GoogleMapsEigene"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="WebApp" android:theme="@style/Theme.Sherlock.Light.NoActionBar"><nothingHere/></activity>
+    <service android:name=".services.DatenbankService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <permission-group android:name="android.permission-group.STORAGE"><nothingHere/></permission-group>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.qnap.com.qgetpro">
+    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/qget_icon" android:label="@string/app_name" android:name=".GlobalSettingsApplication" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="com.qnap.com.qgetpro.MainActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.qnap.com.qgetpro.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:scheme="https"><nothingHere/></android-data>
+                <android-data android:scheme="ftp"><nothingHere/></android-data>
+                <android-data android:scheme="ftps"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.torrent"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="magnet"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:host="www.youtube.com" android:mimeType="text/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.qnap.com.qgetpro.GuideActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.qnap.com.qgetpro.WebViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.qnap.com.qgetpro.dsbtsearch.BtSearchActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.qnap.com.qgetpro.SettingActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.qnap.com.qgetpro.TeachActivity"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.qnap.com.qgetpro.AboutQget"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.qnap.login.servermanager.SearchLocalServerList" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.qnap.login.servermanager.EditServer" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.qnap.qgetpro.Qget">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.qnap.com.qgetpro.btfiles.BtUploadActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.qnap.com.qgetpro.addtaskurl.AddTaskUrlActivity"><nothingHere/></activity>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="62d2d86d13ca767d6a31004ee385ce01ee0fa943"><nothingHere/></meta-data>
+    <provider android:authorities="com.qnap.qget.qgetpro" android:name="com.qnap.com.qgetpro.contentprovider.QGProvider"><nothingHere/></provider>
+        <receiver android:name="com.qnap.com.qgetpro.WebViewActivity$MyBroadcastReceicer">
+            <intent-filter>
+                <action android:name="tw.android.DS_VIEW_BROADCAST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.qnap.com.qgetpro.dsbtsearch.BtSearchActivity$MyBtBroadcastReceicer">
+            <intent-filter>
+                <action android:name="tw.android.BT_DS_VIEW_BROADCAST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name=".ServiceNotify"><nothingHere/></service>
+        <service android:enabled="true" android:name=".ServiceNotifyForDLView"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

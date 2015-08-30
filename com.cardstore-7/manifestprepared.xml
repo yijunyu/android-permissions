@@ -1,0 +1,245 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cardstore">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="agi.app.AGIBaseApplication" android:theme="@style/Theme.NoTitleBar.Fullscreen">
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".splash.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name=".home.HomePageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_home"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name=".app.UpdateShieldActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_update_shield"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:label="@string/app_name" android:name=".categories.CategoriesActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_categories"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:label="@string/app_name" android:name="agi.app.preview.CardDisplayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_card_display"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:label="@string/app_name" android:name="agi.app.preview.CardPreviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_card_preview"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".more.MoreActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_more"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="agi.app.push.NewsAndOffersActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_news_and_offers"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="agi.app.push.NotificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_notifications"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="agi.app.settings.CompatibilitySettingsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_settings"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cardstore.account.AccountSettingsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_account_settings"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.cardstore.account.SignInPageActivity" android:windowSoftInputMode="stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_signin"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.cardstore.account.RegistrationPageActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_register"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="agi.app.account.update.UpdateUserEmailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_update_useremail"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="agi.app.account.update.UpdateUserPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_update_userpassword"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name=".reminders.ReminderSettingsActivity" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_reminders_settings"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.cardstore.more.FacebookSettingsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_facebook_settings"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:label="@string/app_name" android:name=".reminders.RemindersActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_reminders"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name=".webview.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleBar" android:windowSoftInputMode="adjustUnspecified|stateUnspecified">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_web_page"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="agi.app.send.SendConfirmationActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_send_confirmation"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.cardstore.cardbuilder.CardBuilderActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.edit_card"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="agi.app.cardbuilder.photo.PhotoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.edit_photo"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="agi.app.cardbuilder.photo.FacebookGalleryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_facebook_gallery"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="agi.app.cardbuilder.message.EnterMessageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.enter_message"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="agi.app.cardbuilder.message.MessageActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.edit_message"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="agi.app.cardbuilder.signature.SignatureActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.edit_signature"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="agi.app.send.MailYourCardActivity" android:windowSoftInputMode="stateUnchanged">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_send_options"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="agi.app.send.print.AddressEnvelopeActivity" android:screenOrientation="landscape" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_envelope"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="false" android:configChanges="keyboardHidden" android:exported="false" android:finishOnTaskLaunch="false" android:name=".send.print.EditAddressActivity" android:theme="@style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.edit_address"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="false" android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:finishOnTaskLaunch="false" android:name="agi.app.send.print.addressbook.AddressBookActivity" android:theme="@style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.address_book"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="agi.app.send.print.WebViewCheckoutActivity" android:theme="@style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_checkout_web_page"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="agi.app.send.print.AddressOptionsListActivity" android:windowSoftInputMode="stateUnchanged">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_locale_options"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:label="@string/app_name" android:launchMode="singleTask" android:name="agi.app.shields.ShieldsActivity">
+            <intent-filter>
+                <action android:name="com.cardstore.actions.view_shields"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_file_picker" android:name="io.filepicker.FilePicker"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_file_picker_auth" android:name="io.filepicker.AuthActivity"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/config_facebook_app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="64fe2cb573610f052897936ace1ce02277078fa0"><nothingHere/></meta-data>
+    <provider android:authorities="com.cardstore.urbanairship.provider" android:exported="false" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider"><nothingHere/></provider>
+        <receiver android:name="agi.app.reminders.BirthdayAlarm" android:process=":remote"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.cardstore"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="agi.app.push.DefaultPushReceiver">
+            <intent-filter>
+                <action android:name="com.urbanairship.push.PushManager.ACTION_NOTIFICATION_OPENED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="agi.facebook.service.FacebookService"><nothingHere/></service>
+        <service android:enabled="true" android:name="agi.apiclient.service.AGIService"><nothingHere/></service>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:label="Push Notification Worker Service" android:name="com.urbanairship.push.PushWorkerService"><nothingHere/></service>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        <service android:name="com.urbanairship.richpush.RichPushUpdateService"><nothingHere/></service>
+        </application>
+<permission android:name="com.cardstore.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="false" android:xlargeScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.cardstore.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

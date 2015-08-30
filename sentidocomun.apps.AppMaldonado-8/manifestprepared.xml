@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="sentidocomun.apps.AppMaldonado">
+    <application android:allowBackup="true" android:icon="@drawable/ico512x512" android:label="@string/nombre" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/nombre" android:name="sentidocomun.apps.AppMaldonado.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/title_activity_alojamientos" android:name="sentidocomun.apps.AppMaldonado.AlojamientosActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/title_activity_apartados" android:name="sentidocomun.apps.AppMaldonado.ApartadosActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_vista_web" android:name="sentidocomun.apps.AppMaldonado.VistaWebActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_categorias" android:name="sentidocomun.apps.AppMaldonado.CategoriasActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_detalle_categoria" android:name="sentidocomun.apps.AppMaldonado.DetalleCategoriaActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_detalle_web" android:name="sentidocomun.apps.AppMaldonado.DetalleWebActivity"><nothingHere/></activity>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="sentidocomun.apps.AppMaldonado"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="sentidocomun.apps.AppMaldonado.GCMIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="sentidocomun.apps.AppMaldonado.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="sentidocomun.apps.AppMaldonado.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

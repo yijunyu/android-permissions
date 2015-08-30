@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/servotronicstech/TVCNEWS/TVCWebSite.java</file>
+    <line>45</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/com/servotronicstech/TVCNEWS/TVCWebSite.java</file>
+    <line>49</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/com/servotronicstech/TVCNEWS/TVCWebSite.java</file>
+    <line>52</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/com/servotronicstech/TVCNEWS/TVCWebSite.java</file>
+    <line>27</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/com/servotronicstech/TVCNEWS/OurViewClient.java</file>
+    <line>10</line>
+    <permissions/>
+  </call>
+</calls>

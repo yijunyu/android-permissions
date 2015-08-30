@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.clinc.mesasdearquitectura">
+    <application android:allowBackup="true" android:icon="@drawable/clinc_icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.clinc.mesasdearquitectura.ImpulsoApplication" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.clinc.mesasdearquitectura.Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.clinc.mesasdearquitectura.Activity.ProductListActivity"><nothingHere/></activity>
+        <activity android:name="com.clinc.mesasdearquitectura.Activity.CategoryListActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.clinc.mesasdearquitectura.Activity.ProductDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.clinc.mesasdearquitectura.Activity.VariantSelectionActivity" android:theme="@style/Transparent"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.clinc.mesasdearquitectura.Activity.ProductContactFormActivity" android:theme="@style/Transparent"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.clinc.mesasdearquitectura.Activity.BuyProductWebViewActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.clinc.mesasdearquitectura.Activity.ProductDescriptionActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.clinc.mesasdearquitectura.Activity.ConnectionErrorActivity"><nothingHere/></activity>
+        <meta-data android:name="DATABASE" android:value="sugar_impulsolabs.db"><nothingHere/></meta-data>
+        <meta-data android:name="VERSION" android:value="2"><nothingHere/></meta-data>
+        <meta-data android:name="QUERY_LOG" android:value="true"><nothingHere/></meta-data>
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.clinc.mesasdearquitectura.Model"><nothingHere/></meta-data>
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.clinc.mesasdearquitectura"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clinc.mesasdearquitectura.Receiver.PushNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.impulso.PUSH_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.parse.PushService"><nothingHere/></service>
+        </application>
+<permission android:name="com.clinc.mesasdearquitectura.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.clinc.mesasdearquitectura.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

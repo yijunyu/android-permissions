@@ -1,0 +1,156 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.portal">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/iconpups" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.app.pup.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Logon" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.LOGON"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Sisstud" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.SIS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Faculty" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.FACULTY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Alum" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Headline" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Misc" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.News" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Nation" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Sports" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Tech" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Social" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.About" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Misce" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Aboutpup" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Abouts" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Contact" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Web" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Officials" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Vission" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Calendar" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Gal" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Hym" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Crea" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.ALUM"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.app.pup.Fac" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.app.pup.FAC"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,50 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.nearbee.rse.airria.iphone">
+    <application android:debuggable="false" android:icon="@drawable/appicon" android:label="MyAIRRIA" android:name="MyairriaApplication" android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="MyAIRRIA" android:name=".MyairriaActivity" android:theme="@style/Theme.Titanium">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.appcelerator.titanium.TiActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="org.appcelerator.titanium.TiTranslucentActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="ti.modules.titanium.ui.android.TiPreferencesActivity"><nothingHere/></activity>
+        <receiver android:name="ti.cloudpush.IntentReceiver"><nothingHere/></receiver>
+        <receiver android:name="ti.cloudpush.MQTTReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+                <action android:name="com.appcelerator.cloud.push.PushService.MSG_ARRIVAL"><nothingHere/></action>
+                <category android:name="android.intent.category.HOME"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="com.appcelerator.cloud.push.BroadcastReceiver.ArrivalActivity" android:value="ti.cloudpush.MQTTReceiver"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="ti.cloudpush.GCMReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.nearbee.rse.airria.iphone"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.appcelerator.cloud.push.PushBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.nearbee.rse.airria.iphone"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.appcelerator.cloud.push.PushService"><nothingHere/></service>
+        <service android:exported="false" android:name="org.appcelerator.titanium.analytics.TiAnalyticsService"><nothingHere/></service>
+    </application>
+    <permission android:name="com.nearbee.rse.airria.iphone.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.nearbee.rse.airria.iphone.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+</manifest>

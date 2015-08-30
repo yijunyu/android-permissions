@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="jp.main.hibicame.alphabetframecamera">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".AlphabetFrameCamera" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".BalloonGrid" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".ItemGrid" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".ColorGrid" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".Gousei" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".MyCamera" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".ShowDetails" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".PictureGrid2" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".SampleMultiTouch" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".CutView" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:name=".OekakiView" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="jp.co.cayto.appc.sdk.android.AgreementStarter" android:noHistory="true"><nothingHere/></activity>
+        <activity android:label="appC Contents" android:name="jp.co.cayto.appc.sdk.android.FloatContents"><nothingHere/></activity>
+        <meta-data android:name="Adlantis_Publisher_ID" android:value="MTgxODk%3D%0A"><nothingHere/></meta-data>
+        <meta-data android:name="appc_media_key" android:value="6f5515d34f1c4da9aa30ac8200de748d9be8da26"><nothingHere/></meta-data>
+        <receiver android:name="jp.co.cayto.appc.sdk.android.background.BgAppReceiver">
+            <intent-filter>
+                <action android:name="jp.co.cayto.appc.sdk.android.remote.command.gid.search"><nothingHere/></action>
+                <action android:name="jp.co.cayto.appc.sdk.android.remote.command.gid.set"><nothingHere/></action>
+                <action android:name="jp.co.cayto.appc.sdk.android.remote.command.gid.remove"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="BootStrap" android:name="jp.co.cayto.appc.sdk.android.background.BootStrap">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+    <service android:name="jp.co.cayto.appc.sdk.android.background.IDService" android:process=":outerProcessX"><nothingHere/></service>
+        </application>
+    <manifest>
+        <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"><nothingHere/></supports-screens>
+    </manifest>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

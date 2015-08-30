@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>com.quickmobile.demandware.presidentsclub2013.permission.C2D_MESSAGE</name>
+  </permission>
+  <permission>
+    <name>com.google.android.c2dm.permission.RECEIVE</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.ACCESS_COARSE_LOCATION</name>
+  </permission>
+  <permission>
+    <name>android.permission.ACCESS_FINE_LOCATION</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_CALENDAR</name>
+  </permission>
+  <permission>
+    <name>android.permission.ACCESS_NETWORK_STATE</name>
+  </permission>
+  <permission>
+    <name>android.permission.GET_TASKS</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_EXTERNAL_STORAGE</name>
+  </permission>
+  <permission>
+    <name>android.permission.CAMERA</name>
+  </permission>
+</permissions>

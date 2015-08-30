@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jx.jxcount">
+    <application android:icon="@drawable/tehepero_ico" android:label="&#12390;&#12408;&#12506;&#12525;&#12483;&#65281;Count!">
+        <receiver android:label="&#12390;&#12408;&#12506;&#12525;&#12483;&#65281;Count!" android:name="JxCount">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/jxcount"><nothingHere/></meta-data>
+        </receiver>
+        <service android:name="JxCount$MyService">
+            <intent-filter>
+                <action android:name="jx.jxcount.JxCount.ACTION_MY_TOUCH"><nothingHere/></action>
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

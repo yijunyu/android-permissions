@@ -1,0 +1,99 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.ifs.banking.fiid5399">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:logo="@null" android:name="com.banking.controller.IFSApplication" android:theme="@style/applicationTheme">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.banking.activities.SplashActivity" android:theme="@style/splashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.banking.activities.DispAttributionActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.banking.activities.LoginActivity" android:parentActivityName="com.banking.activities.SplashActivity" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.banking.activities.SplashActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.banking.activities.AccountDetailActivity" android:parentActivityName="com.banking.activities.LoginActivity" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.banking.activities.LoginActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.CheckImageDisplayActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.TransferActivity" android:parentActivityName="com.banking.activities.AccountDetailActivity" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.banking.activities.AccountDetailActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.TransferDetailActivity" android:parentActivityName="com.banking.activities.TransferActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.banking.activities.TransferActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.banking.activities.LocationActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.banking.activities.ContactUsActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.RDCNoCameraActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.BillPayActivity" android:parentActivityName="com.banking.activities.AccountDetailActivity" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.banking.activities.AccountDetailActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.AccountsHistoryActivity" android:parentActivityName="com.banking.activities.AccountDetailActivity" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.banking.activities.AccountDetailActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.banking.activities.DepositCheckActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.banking.activities.RDCGetStartedActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.banking.activities.ReviewSnapActivity" android:screenOrientation="landscape" android:theme="@style/cameraTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.LocationDetailActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.DefaultMapActivity"><nothingHere/></activity>
+        <activity android:name="com.banking.activities.PaymentDetailActivity" android:parentActivityName="com.banking.activities.BillPayActivity" android:screenOrientation="unspecified" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.banking.activities.BillPayActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.MakeNewPaymentActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.SchedulePaymentActivity" android:parentActivityName="com.banking.activities.BillPayActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.banking.activities.BillPayActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.PRListActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.PRCashBackActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.PROfferDetailActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.CheckDepositConfirmationActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.P2PActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.P2PUnregisteredActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.SnapPictureHelperActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.banking.activities.CameraActivity" android:process=".camera" android:screenOrientation="landscape" android:theme="@style/cameraTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.banking.activities.RegistrationActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.banking.activities.SSOBrowserActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.banking.activities.SSOErrorActivity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.MFAPollStatusActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.MFAConfirmIdActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.MFAAddChannelActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name=".controller.MFAFragmentController" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.MFAUpdateChannelActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.fragment.MFABaseFragment" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.MFAOOBStatusActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.MFASecurityInfoActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.MFAInformationActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.banking.activities.MFAInfoWebviewActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.banking.activities.VertifiImageProcessingActivity" android:process=".camera" android:screenOrientation="landscape" android:theme="@style/cameraTheme" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/googlemapkey_v2"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:name="com.banking.controller.IFSActivityController.KeyEventBroadcastReceiver"><nothingHere/></receiver>
+        <service android:name="com.banking.services.NetworkService"><nothingHere/></service>
+        <service android:name="com.banking.services.LogoutService"><nothingHere/></service>
+        <service android:name="com.banking.services.LoginService"><nothingHere/></service>
+        <service android:name="com.banking.services.MFADummyService"><nothingHere/></service>
+        <service android:name="com.banking.services.LocationService"><nothingHere/></service>
+        <service android:name="com.banking.services.PollStatusService"><nothingHere/></service>
+        <service android:name="com.banking.services.BillPayService"><nothingHere/></service>
+        <service android:name="com.banking.services.FundingAccountService"><nothingHere/></service>
+        <service android:name="com.banking.services.VertifiImageProcessorService" android:process=".camera"><nothingHere/></service>
+        <service android:name="com.banking.services.CameraProcessInitializerService" android:process=".camera"><nothingHere/></service>
+        <service android:name="com.banking.services.UnSecuredConfigService"><nothingHere/></service>
+        <service android:name="com.banking.services.P2PService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.ifs.banking.fiid5399.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.ifs.banking.fiid5399.permission.MAPS_RECEIVE" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="it.dutycashMobile">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".DutcashMobileActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Configurazione" android:name=".Configurazione" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="it.dutycash.Configurazione"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="VisualizzaContiAperti" android:name=".VisualizzaContiAperti" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="it.dutycash.VisualizzaContiAperti"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="VisualizzaDettaglioConto" android:name=".VisualizzaDettaglioConto" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="it.dutycash.VisualizzaDettaglioConto"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="VisualizzaStatisticaGiornaliera" android:name=".VisualizzaStatisticaGiornaliera" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="it.dutycash.VisualizzaStatisticaGiornaliera"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="ImpostaCliente" android:name=".ImpostaCliente" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="it.dutycash.ImpostaCliente"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="GridViewProdotti" android:name=".GridViewProdotti" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="it.dutycash.GridViewProdotti"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="VisualizzaVariazioni" android:name=".VisualizzaVariazioni" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="it.dutycash.VisualizzaVariazioni"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="VisualizzaCassieri" android:name=".VisualizzaCassieri" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="it.dutycash.VisualizzaCassieri"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

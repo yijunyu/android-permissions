@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="nanonet.aecpisa">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" debuggable="true">
+        <activity android:name="nanonet.aeccore.HomeActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.GalleryLoop" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.OtherActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.FormContatti" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.FormContattiLocale" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.FiltraProdotti" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="nanonet.aeccore.Mappe" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.Home" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="nanonet.aeccore.FotogalleryFB" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="nanonet.aeccore.ListaNewsDeejay" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="nanonet.aeccore.ListaAnnunciRaggruppataPerCategoria" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="nanonet.aeccore.Dettaglio" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.DettaglioDeejay" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.GalleryView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.Contatti" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.ListaPagine" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="nanonet.aeccore.SelezioneDaA" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.RicercaComuni" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.RicercaZone" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.Info" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.GalleryTestActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.AbilitaNotifiche" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleInstance" android:name="nanonet.aeccore.SplashScreen" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.InfoCredits" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.ChooseDateWithPicker" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.Calendar2" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="nanonet.aeccore.Calendar3" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAHmt0BH9akoFoY0bsSO6ZkIqP_0Lr8XtM"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:name="nanonet.aeccore.GCMBroadCastReceiverExtend" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="nanonet.aeccore.gcm"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="nanonet.aeccore.GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="nanonet.aeccore.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="nanonet.aecpisa.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="nanonet.aeccore.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="nanonet.aeccore.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

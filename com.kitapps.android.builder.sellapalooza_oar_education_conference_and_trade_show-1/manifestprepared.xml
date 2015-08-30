@@ -1,0 +1,130 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.kitapps.android.builder.sellapalooza_oar_education_conference_and_trade_show">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.kitapps.android.builder.socialconference_2.App" android:theme="@style/Theme.Builder">
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.builder.socialconference_2.StartActivity" android:theme="@style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.SplashActivity" android:noHistory="true" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.ScheduleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.EventActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.DebugInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.PartnersListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/search_default"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.SearchedPartnersListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/search_default"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.PartnerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.ExhibitorsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/search_default"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.SearchedExhibitorsListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/search_default"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.ExhibitorActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.SpeakersListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/search_default"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.SearchedSpeakersListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/search_default"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.SpeakerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.InfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.MapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.kitapps.android.activity.builder.phone.CustomMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.MapPointActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.NewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.kitapps.android.activity.builder.phone.ImageViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.WebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.TwitterListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.TwitterViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.TwitterPostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.BadgesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.ChatBadgeDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.SendMessageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.SendPhotoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.kitapps.android.activity.builder.phone.AboutListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.kitapps.android.activity.builder.phone.timeline.TimeLineActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.ChatBadgesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.CommentsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.PhotoDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.ProfileSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.BlockedUsersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.TakePhotoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.BadgeProfileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.TwitterAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.TwitterDedicatedAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.FacebookAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.kitapps.android.activity.builder.phone.LinkedinAuthActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.NewsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.eventbrite.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.eventbrite.WebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.PoweredByAttendifyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.RequestADemoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="@string/app_name" android:name="com.kitapps.android.activity.builder.phone.FirstHelpActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Builder.Transparent"><nothingHere/></activity>
+        <activity android:name="com.androidsocialnetworks.library.impl.activity.LinkedInAuthActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.androidsocialnetworks.library.impl.activity.TwitterAuthActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.androidsocialnetworks.library.impl.activity.FacebookAddToFriendsActivity"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyD5C8sqcAF9U3llK9OKaubLyEt_jqja0_Q"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <receiver android:name="com.kitapps.android.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.kitapps.android.builder.sellapalooza_oar_education_conference_and_trade_show"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.kitapps.android.builder.socialconference_2.Receiver">
+            <intent-filter>
+                <action android:name="com.kitapps.android.builder.sellapalooza_oar_education_conference_and_trade_show.NOTIF_EVENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.kitapps.android.GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.kitapps.android.builder.sellapalooza_oar_education_conference_and_trade_show.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.kitapps.android.builder.sellapalooza_oar_education_conference_and_trade_show.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

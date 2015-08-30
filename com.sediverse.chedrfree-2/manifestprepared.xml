@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sediverse.chedrfree">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="com.sediverse.MAINACTIVITY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/account_title" android:name=".AccountPage">
+            <intent-filter>
+                <action android:name="com.sediverse.ACCOUNTPAGE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Keypad">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/editIcon_label" android:name=".EditIconActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.sediverse.EDITICONACTIVITY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/editAccount_label" android:name=".EditAccounts" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.sediverse.EDITACCOUNTS"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/about_title" android:name=".About" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.sediverse.ABOUT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <receiver android:name="ChedrWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/provider_info"><nothingHere/></meta-data>
+        </receiver>
+        <uses-library android:name="android.test.runner"><nothingHere/></uses-library>
+    </application>
+    <instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.sediverse.chedrfree"><nothingHere/></instrumentation>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

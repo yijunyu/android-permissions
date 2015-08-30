@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dully79.icon.BlackGloss">
+    <application android:icon="@drawable/icon" android:label="@string/theme_title">
+        <activity android:label="@string/theme_title" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="com.anddoes.launcher.THEME"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

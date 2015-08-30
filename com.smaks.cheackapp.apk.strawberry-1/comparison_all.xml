@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+    <permission>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+    <permission>android.permission.GET_TASKS</permission>
+  </under-specification>
+</comparison>

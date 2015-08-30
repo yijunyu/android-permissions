@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="kz.ehistory.android">
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="kz.ehistory.android.EApplication" android:theme="@style/ETheme">
+        <activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.view.activity.BaseFullSlideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity> LoginBySocialActivity
+<activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.module.sign.view.SigninActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.module.login.view.LoginActivity" android:noHistory="false"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="standard" android:name="kz.ehistory.android.module.login.view.LoginBySocialWebActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.module.profile.view.ChangePasswordActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.module.common.entry.view.EntryActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.module.comment.view.CommentsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.module.debate.view.OpinionActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.module.profile.view.UserProfileActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.module.social.view.SocialActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="kz.ehistory.android.module.profile.view.ProfileActivity"><nothingHere/></activity>
+        <service android:exported="false" android:name="kz.ehistory.android.module.common.JacksonSpringAndroidSpiceServiceMultiThread"><nothingHere/></service>
+    </application>
+<uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

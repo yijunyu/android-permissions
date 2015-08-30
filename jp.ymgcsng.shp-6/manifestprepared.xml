@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="jp.ymgcsng.shp">
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:name=".activity.ItemListActivity"><nothingHere/></activity>
+        <activity android:name=".activity.CatalogActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activity.MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ShoppingListActivity"><nothingHere/></activity>
+        <activity android:name=".activity.ItemDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="text/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name=".activity.CategoryListActivity"><nothingHere/></activity>
+        <activity android:name=".activity.MyPreferenceActivity"><nothingHere/></activity>
+        <activity android:name=".activity.ShoppingListFlatActivity"><nothingHere/></activity>
+        <activity android:name=".activity.ShoppingListCategoryActivity"><nothingHere/></activity>
+        <activity android:name=".activity.ShoppingListPlaceActivity"><nothingHere/></activity>
+        <receiver android:name=".provider.BasicAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/basic_appwidget_info"><nothingHere/></meta-data>
+        </receiver>
+        <service android:name=".service.AppWidgetUpdateService"><nothingHere/></service>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

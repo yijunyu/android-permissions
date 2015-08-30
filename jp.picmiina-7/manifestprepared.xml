@@ -1,0 +1,112 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.picmiina">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/common_logoicon_header" android:name="jp.picmiina.PicmiinaApplication_" android:theme="@style/PicmiinaDefaultTheme">
+        <activity android:label="@string/app_name" android:name="jp.picmiina.SplashActivity_" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_timeline" android:name="jp.picmiina.ui.t.TimelineActivity_" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_profile" android:name="jp.picmiina.ui.u.ProfileActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_list" android:name="jp.picmiina.ui.g.GroupListActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_private_story_list" android:name="jp.picmiina.ui.p.PrivateStoryListActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_app_settings" android:name="jp.picmiina.ui.other.AppSettingsActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tutorial" android:name="jp.picmiina.ui.other.TutorialActivity_" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.NoActionBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_recommend" android:name="jp.picmiina.ui.other.RecommendActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_about_app" android:name="jp.picmiina.ui.other.AboutAppActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_inquiry" android:name="jp.picmiina.ui.other.InquiryActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_profile_settings" android:name="jp.picmiina.ui.u.ProfileSettingsActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_search_school" android:name="jp.picmiina.ui.u.SearchSchoolActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_create_friend_group" android:name="jp.picmiina.ui.g.CreateFriendGroupActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.picmiina.ui.g.CreateSchoolGroupActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_info_settings" android:name="jp.picmiina.ui.g.GroupInfoSettingsActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_story" android:name="jp.picmiina.ui.g.GroupStoryActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_story_photo" android:name="jp.picmiina.ui.g.GroupStoryPhotoActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_story_for_add_photo" android:name="jp.picmiina.ui.g.SelectStoryForAddPhotosActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_tag_photo" android:name="jp.picmiina.ui.g.GroupTagPhotoActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_merge_group_stories" android:name="jp.picmiina.ui.g.MergeGroupStoriesActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_move_photo_to_group_story" android:name="jp.picmiina.ui.g.SelectPhotosForMoveToStoryActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_story_moved_photos" android:name="jp.picmiina.ui.g.SelectStoryForMovePhotosActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_photos_for_delete" android:name="jp.picmiina.ui.g.SelectPhotosForDeleteActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_story_share" android:name="jp.picmiina.ui.g.GroupStoryShareActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_tag_photo_list" android:name="jp.picmiina.ui.g.GroupTagPhotoListActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_edit_tag" android:name="jp.picmiina.ui.g.GroupPhotoEditTagActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_member_list" android:name="jp.picmiina.ui.g.GroupMemberListActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_member_profile" android:name="jp.picmiina.ui.g.GroupMemberProfileActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_join_request_list" android:name="jp.picmiina.ui.g.JoinRequestListActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_invite_friend_to_group" android:name="jp.picmiina.ui.g.InviteFriendsToGroupActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_create_group_story" android:name="jp.picmiina.ui.g.CreateGroupStoryActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_add_photos_to_group_story" android:name="jp.picmiina.ui.g.AddPhotosToGroupStoryActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_add_photos_to_group_story" android:name="jp.picmiina.ui.g.GroupStoryPhotoViewer_" android:theme="@android:style/Theme.Holo.NoActionBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_private_story_photo_list" android:name="jp.picmiina.ui.p.PrivateStoryPhotoListActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_photos_for_move_to_private_story" android:name="jp.picmiina.ui.p.SelectPhotosForMoveToPrivateStoryActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_private_story_for_move_photos" android:name="jp.picmiina.ui.p.SelectPrivateStoryForMovePhotosActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_login" android:name="jp.picmiina.ui.n.LoginActivity_" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_new_registration_confirm" android:name="jp.picmiina.ui.n.NewRegistrationConfirmActivity_" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group" android:name="jp.picmiina.ui.g.GroupActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_merge_private_stories" android:name="jp.picmiina.ui.p.MergePrivateStoriesActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_private_story_photo_viewer" android:name="jp.picmiina.ui.p.PrivateStoryPhotoViewerActivity_" android:theme="@android:style/Theme.Holo.NoActionBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_agreement" android:name="jp.picmiina.ui.other.AgreementActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_developers" android:name="jp.picmiina.ui.other.DevelopersActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_oss_license" android:name="jp.picmiina.ui.other.OssLicenseActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_privacy_policy" android:name="jp.picmiina.ui.other.PrivacyPolicyActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_user_icon" android:name="jp.picmiina.ui.u.SelectUserIconActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_way_to_search_school" android:name="jp.picmiina.ui.u.WayToSearchSchoolActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_password_reminder" android:name="jp.picmiina.ui.other.PasswordReminderActivity_" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_report_abused" android:name="jp.picmiina.ui.other.ReportAbusedActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="" android:name="jp.picmiina.ui.other.InvitationsActivity_" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="invitations" android:scheme="hs.jp.picmiina"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_search_school_group" android:name="jp.picmiina.ui.u.SearchSchoolGroupActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_info_viewer" android:name="jp.picmiina.ui.g.GroupInfoViewerActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_join_new_group" android:name="jp.picmiina.ui.g.JoinNewGroupActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_qr_code_reader" android:name="jp.picmiina.ui.other.QrCodeReaderActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_invitation_qr_code_viewer" android:name="jp.picmiina.ui.other.InvitationQrCodeViewerActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_way_to_member_add" android:name="jp.picmiina.ui.g.WayToMemberAddActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="org.acra.CrashReportDialog"><nothingHere/></activity>
+        <activity android:label="" android:name="jp.picmiina.ui.g.GroupTabActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_group_photos_for_delete" android:name="jp.picmiina.ui.g.SelectGroupPhotosForDeleteActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_group_photos_to_add_album" android:name="jp.picmiina.ui.g.SelectGroupPhotosToAddAlbumActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_album_for_add_group_photo" android:name="jp.picmiina.ui.g.SelectAlbumForAddGroupPhotosActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_group_photo_viewer" android:name="jp.picmiina.ui.g.GroupPhotoViewerActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_for_invited_user" android:name="jp.picmiina.ForInvitedUserActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_photos_for_share" android:name="jp.picmiina.SelectPhotosForShareActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_confirm_share_photos" android:name="jp.picmiina.ConfirmSharePhotosActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_invite_member_after_create_group" android:name="jp.picmiina.InviteMemberAfterCreateGroupActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="LOCALYTICS_APP_KEY" android:value="8ae0df29af7ff45b70743a2-44f4ed7a-9ea6-11e3-99d4-009c5fda0a25"><nothingHere/></meta-data>
+        <receiver android:name="jp.picmiina.reciever.GcmBroadcastReceiver_" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="jp.picmiina"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="jp.picmiina.reciever.TokenAlarmReceiver_"><nothingHere/></receiver>
+        <service android:name="jp.picmiina.service.GcmIntentService_"><nothingHere/></service>
+        <service android:exported="false" android:name="jp.picmiina.service.LocalPhotoUpdateService_"><nothingHere/></service>
+        <service android:exported="false" android:name="jp.picmiina.service.PhotoUploadService_"><nothingHere/></service>
+        <service android:exported="false" android:name="jp.picmiina.service.PhotoUploadRegistrationService_"><nothingHere/></service>
+        </application>
+<permission android:name="jp.picmiina.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="jp.picmiina.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

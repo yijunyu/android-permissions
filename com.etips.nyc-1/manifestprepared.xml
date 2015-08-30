@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.etips.nyc">
+    <application android:debuggable="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.etips.nyc.TreeContentReader" android:theme="@style/AppTheme">
+        <activity android:name=".ui.MenuListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.LeafActivity"><nothingHere/></activity>
+        <activity android:name=".ui.ChooseLanguageActivity"><nothingHere/></activity>
+        <activity android:name="com.etips.prague.ui.tabs.info.InfoFragment"><nothingHere/></activity>
+        <activity android:name="com.etips.prague.ui.tabs.images.ImagesFragmentt"><nothingHere/></activity>
+        <activity android:name=".ui.tabs.map.PlaceMapFragment"><nothingHere/></activity>
+        <activity android:name=".ui.ImageViewActivity"><nothingHere/></activity>
+        <activity android:name=".wikitude.WikitudeARBrowserActivity" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".wikitude.PoiDetailActivity" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    </manifest>

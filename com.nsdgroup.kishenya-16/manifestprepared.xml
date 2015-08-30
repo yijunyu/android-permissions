@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.nsdgroup.kishenya">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.nsdgroup.kishenya.Kishenya" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.nsdgroup.kishenya.ui.activities.LaunchActivity" android:screenOrientation="sensorPortrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.nsdgroup.kishenya.ui.activities.MainFragmentActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.GalleryActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.WaresProductGalleryActivity" android:screenOrientation="sensorPortrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.BarcodeScannerActivity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.SingleInfoActivity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.nsdgroup.kishenya.ui.activities.RegisterActivity" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.UserAgreementActivity" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.StoreCityChooseActivity" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.StoreShowActivity" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.StoreShortShowActivity" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.StoreSearchActivity" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.nsdgroup.kishenya.ui.activities.CartActivity" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name=".ui.activities.ShopChooserActivity" android:screenOrientation="sensorPortrait"><nothingHere/></activity>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="a7e1ec307ae5ed0d744e88629d8f722f5a590b64"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBpbEVyAoL1nIrIVemrdRoaxd8YlZCXgGQ"><nothingHere/></meta-data>
+    <receiver android:name=".receivers.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.nsdgroup.kishenya"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.nsdgroup.kishenya.services.GcmIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.nsdgroup.kishenya.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.nsdgroup.kishenya.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.nsdgroup.kishenya.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.nsdgroup.kishenya.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

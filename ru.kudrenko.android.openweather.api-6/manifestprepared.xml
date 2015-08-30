@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ru.kudrenko.android.openweather.api">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="ru.kudrenko.android.openweather.WeatherApplication" android:theme="@style/AppTheme">
+        <activity android:name="ru.kudrenko.android.openweather.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="ru.kudrenko.android.openweather.activities.DescriptionActivity"><nothingHere/></activity>
+        <activity android:name="ru.kudrenko.android.openweather.activities.CityActivity"><nothingHere/></activity>
+        <receiver android:icon="@drawable/icon" android:label="@string/widget_name_2_1" android:name="ru.kudrenko.android.openweather.widgets.WeatherWidget21">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_metadata"><nothingHere/></meta-data>
+        </receiver>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

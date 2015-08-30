@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.liamw.root.addafeature">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:supportsRtl="false" android:theme="@style/AppTheme">
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:name="com.liamw.root.addafeature.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.liamw.root.addafeature.MainActivity">
+            <intent-filter>
+                <action android:name="com.liamw.root.addafeature.MAINACTIVITY"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.liamw.root.addafeature.DoneActivity">
+            <intent-filter>
+                <action android:name="com.liamw.root.addafeature.DONEACTIVITY"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

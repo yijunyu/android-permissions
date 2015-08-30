@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/wileyx/easybizapp/com/applauncher.java</file>
+    <line>44</line>
+    <permissions/>
+  </call>
+</calls>

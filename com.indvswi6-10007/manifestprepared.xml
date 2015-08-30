@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.indvswi6">
+    <application android:icon="@drawable/i" android:label="Ind Vs WI">
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:launchMode="singleTop" android:name="com.indvswi6.mobi.vserv.android.appwrapper.VservAdManager" android:process=":vserv" android:screenOrientation="portrait" android:theme="@style/Vserv.Theme.Sherlock" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|touchscreen" android:name=".IndVsWI6Activity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.indvswi6.mobi.vserv.org.ormma.view.Browser" android:screenOrientation="portrait" android:theme="@style/Vserv.Theme.Sherlock" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.indvswi6.mobi.vserv.org.ormma.view.OrmmaActionHandler" android:screenOrientation="portrait" android:theme="@style/Vserv.Theme.Sherlock" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

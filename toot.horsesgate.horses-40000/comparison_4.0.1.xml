@@ -1,0 +1,9 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.READ_CALENDAR</permission>
+    <permission>android.permission.WRITE_CALENDAR</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+  </under-specification>
+</comparison>

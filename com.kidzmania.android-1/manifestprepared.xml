@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.kidzmania.android">
+    <application android:allowBackup="true" android:icon="@drawable/launcher" android:label="@string/app_name" android:theme="@style/Theme.Base.AppCompat.Light.DarkActionBar">
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.kidzmania.navigationdrawerlegacy.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.kidzmania.navigationdrawerlegacy.FullscreenDemoActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

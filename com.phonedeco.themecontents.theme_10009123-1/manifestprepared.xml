@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.phonedeco.themecontents.theme_10009123">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.phonedeco.themecontents.theme_10009123.Theme" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+    <permission android:name="com.skt.sptagentgl.ThemeProvider.THEME" android:protectionLevel="dangerous"><nothingHere/></permission>
+    <uses-permission android:name="com.skt.sptagentgl.ThemeProvider.THEME"><nothingHere/></uses-permission>
+</manifest>

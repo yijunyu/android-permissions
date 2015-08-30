@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.meteociel.fr">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.meteociel.fr.application.MeteocielApplication" android:theme="@style/Theme.Sherlock.Light">
+        <activity android:name="com.meteociel.fr.application.activities.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.meteociel.fr.application.live.RadarActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.live.SatActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.activities.SingleImageActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.activities.LiveSingleImageActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.post.NewPostActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.activities.ChatActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.activities.SingleNewActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.activities.AboutPageActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.activities.SlidingActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.live.ObservationsActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.live.GaleryActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.activities.GeneralWebPageViewActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.help.WebPageViewActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.models.ModelWRFActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.models.GEFSDiagViewActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.models.ModelFavorisActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.models.ModelGEFSActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.models.ModelViewActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.models.NewModelViewActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.observations.ObservationsVillesViewActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.live.FoudreActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.live.ReportMapActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.frcom.meteociel.fr.application.live.ReportMapActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.observations.SingleObservationViewActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.previsions.PreviSingleVilleActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.jjoe64.graphview.GraphViewActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.previsions.SinglePrevisionViewActivity"><nothingHere/></activity>
+        <activity android:name=".com.meteociel.fr.application.post.MainPostActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.activities.SettingsActivity" android:theme="@style/Theme.Sherlock.Light"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.post.MainPostActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.vigilance.VigilanceDepartementsActivity"><nothingHere/></activity>
+        <activity android:name="com.meteociel.fr.application.vigilance.VigilanceBulletinViewActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

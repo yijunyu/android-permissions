@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tvimobile.thomay">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/Theme.Thomay" android:windowSoftInputMode="adjustPan|stateHidden">
+        <activity android:name="com.tvimobile.thomay.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.tvimobile.thomay.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/login" android:name="com.tvimobile.thomay.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.tvimobile.thomay.InformationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.tvimobile.thomay.DetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/edit" android:name="com.tvimobile.thomay.EditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/profile" android:name="com.tvimobile.thomay.UserProfile" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

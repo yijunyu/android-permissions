@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.peterhohsy.timer555calculator">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/Theme.AppCompat.Light">
+        <activity android:label="@string/app_name" android:name="com.peterhohsy.timer555calculator.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Monostable" android:name="Activity_monostable" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:label="Monostable Cicuit" android:name="Activity_monostable_circuit" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:label="Monostable Pulse" android:name="Activity_monostable_pulse" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:label="Component" android:name="Activity_monostable_comp" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:label="Astable" android:name="Activity_astable" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:label="Component" android:name="Activity_astable_comp" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:label="Frequency" android:name="Activity_astable_freq" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:label="Circuit" android:name="Activity_astable_circuit" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:label="File manager" android:name="com.peterhohsy.fm.fileManager_activity"><nothingHere/></activity>
+        <activity android:label="Preferred number" android:name="Activity_tolerance"><nothingHere/></activity>
+        <activity android:label="@string/MORE_APP" android:name="com.peterhohsy.more_app.Activity_moreapp"><nothingHere/></activity>
+        <activity android:name="com.startapp.android.publish.list3d.List3DActivity" android:taskAffinity="com.peterhohsy.timer555calculator.AppWall" android:theme="@android:style/Theme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.startapp.android.publish.AppWallActivity" android:taskAffinity="com.peterhohsy.timer555calculator.AppWall" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:label="Pin Assignment" android:name="Activity_pin"><nothingHere/></activity>
+        <activity android:label="Manufacturer" android:name="Activity_mfg"><nothingHere/></activity>
+        <activity android:label="@string/ABOUT" android:name="com.peterhohsy.discount.Activity_about" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:label="Apps Promotion" android:name="com.peterhohsy.discount.Activity_discount" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        </application>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

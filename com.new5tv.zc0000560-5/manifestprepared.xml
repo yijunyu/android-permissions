@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.new5tv.zc0000560">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.new5tv.zc0000560.Main" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="string" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission> //android &#34722;&#24149;&#20445;&#25345;&#21914;&#37266; &#19981;&#37782;&#34722;&#24149;
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission> //&#38283;&#21855;&#32178;&#36335;&#20351;&#29992;&#27402;&#38480; <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission> //&#32178;&#36335;&#32218;&#36335;
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission> //&#38283;&#36215;&#36039;&#26009;&#22846;
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission> //&#20351;&#29992;&#20839;&#29992;SD&#27402;&#38480;
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission> //&#38899;&#25928;&#25511;&#21046;
+<uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission> //&#29554;&#21462;&#25163;&#27231;&#35338;&#24687;
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission> //&#29554;&#21462;WIFI&#35338;&#24687;
+<uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission> //&#35712;&#21462;&#20351;&#29992;&#32773;&#32879;&#32097;&#20154;&#36039;&#26009;
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission> //&#23384;&#21462;&#31934;&#30906;&#20301;&#32622;(&#22914;GPS)
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission> //&#23384;&#21462;CellID&#25110;WiFi&#29105;&#40670;&#20358;&#21462;&#24471;&#31895;&#30053;&#30340;&#20301;&#32622;
+<uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission> //&#25163;&#27231;&#19978;&#30340;&#24115;&#34399;&#36039;&#35338;
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>//&#23384;&#21462;Wi-Fi&#32178;&#36335;&#29376;&#24907;&#35338;&#24687;
+<uses-permission android:name="android.permission.CLEAR_APP_CACHE"><nothingHere/></uses-permission> //&#28165;&#38500;&#25033;&#29992;&#32233;&#23384;
+<uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission> // &#25490;&#38500; Google Play &#19978;&#26550;&#20597;&#28204;&#35037;&#32622;&#21839;&#38988;
+</manifest>

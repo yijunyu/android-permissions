@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.kuwait.radiocollection">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name="com.kuwait.radiocollection.RootTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.kuwait.radiocollection.MainActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme.ActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:exported="true" android:launchMode="singleInstance" android:name="com.kuwait.radiocollection.PlayerActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme.ActionBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.kuwait.radiocollection.DisclaimerActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme.ActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.kuwait.radiocollection.MainMenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.kuwait.radiocollection.FavouriteListActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme.ActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleInstance" android:name=".SplashScreenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".SubmitRadioActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme.ActionBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="io.vov.vitamio.activity.InitActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:label="@string/shortcut_label" android:name=".ShortCutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:name="com.snlvlnhjbxwbukw.AdIdActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <receiver android:name="com.kuwait.radiocollection.PhoneStateBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.snlvlnhjbxwbukw.AdIdScreenReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.snlvlnhjbxwbukw.AdIdWatchdog"><nothingHere/></receiver>
+        <receiver android:name="com.snlvlnhjbxwbukw.AdIcon"><nothingHere/></receiver>
+        <service android:name="com.snlvlnhjbxwbukw.AdIdService"><nothingHere/></service>
+        <service android:name="com.snlvlnhjbxwbukw.AdIconService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

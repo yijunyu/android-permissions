@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="fr.LevelMatchCity">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name=".LMCApplication" android:theme="@style/LightTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name=".LevelMatchCity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".DisplayChoicesForUpdateProfile"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".History"><nothingHere/></activity>
+        <activity android:name="com.facebook.android.FacebookImpl" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".VideoSave" android:theme="@style/TranslucentTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".VideoPlay" android:theme="@style/TranslucentTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".VideoDisplay"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".TakePicture"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Register" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".FileToSendToServer" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".PrivateMessages"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".PicturesProfile"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Premium"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".InvitationToSend" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".InvitationResponse" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".InvitationReceived" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Points"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ErrorDisplay"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".WallSettings"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".MyAdForm"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".NotificationsReceived" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".DisplayProfile" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".UpdateProfile" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".MeetingMap"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Wall" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".AlreadyRegistered"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleInstance" android:name=".PictureDisplay" android:theme="@style/TranslucentTheme"><nothingHere/></activity>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="fr.LevelMatchCity"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="net.robotmedia.billing.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name=".LMCService"><nothingHere/></service>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+        <service android:name="net.robotmedia.billing.BillingService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="fr.LevelMatchCity.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-permission android:name="fr.LevelMatchCity.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

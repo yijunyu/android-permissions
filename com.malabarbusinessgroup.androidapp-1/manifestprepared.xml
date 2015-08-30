@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.malabarbusinessgroup.androidapp">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.malabarbusinessgroup.androidapp.FullscreenActivity" android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_test_login" android:name="com.malabarbusinessgroup.androidapp.TestLoginActivity" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.malabarbusinessgroup.androidapp.UserIdActivity" android:theme="@style/customTheme"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_welcome_page" android:name="com.malabarbusinessgroup.androidapp.WelcomePageActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_personal_details_activiy" android:name="com.malabarbusinessgroup.androidapp.PersonalDetailsActiviy"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_sala_details" android:name="com.malabarbusinessgroup.androidapp.SalaDetailsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_feed_back" android:name="com.malabarbusinessgroup.androidapp.FeedBack"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

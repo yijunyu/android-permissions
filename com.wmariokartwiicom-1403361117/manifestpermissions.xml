@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.ACCESS_NETWORK_STATE</name>
+  </permission>
+  <permission>
+    <name>com.wmariokartwiicom.permission.C2D_MESSAGE</name>
+  </permission>
+  <permission>
+    <name>com.google.android.c2dm.permission.RECEIVE</name>
+  </permission>
+  <permission>
+    <name>android.permission.WAKE_LOCK</name>
+  </permission>
+</permissions>

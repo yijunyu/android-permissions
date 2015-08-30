@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_SECURE_SETTINGS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+  </under-specification>
+</comparison>

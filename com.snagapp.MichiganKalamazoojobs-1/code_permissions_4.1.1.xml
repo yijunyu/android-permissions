@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/snagapp/MichiganKalamazoojobs/MichiganKalamazooJobsActivity.java</file>
+    <line>56</line>
+    <permissions/>
+  </call>
+</calls>

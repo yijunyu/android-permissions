@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.seppastien.IMYSFFree">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.seppastien.IMYSFFree.WidgetConfigure" android:theme="@style/themeFenetre">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.seppastien.IMYSFFree.IMissYouSoFarFree" android:theme="@style/themeFenetre">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.seppastien.IMYSFFree.About" android:theme="@style/themeFenetre">
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUT"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.seppastien.IMYSFFree.PickMap" android:theme="@style/themeFenetre"><nothingHere/></activity>
+    <receiver android:name="com.seppastien.IMYSFFree.IMissYouSoFarWidgetFree">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="android.appwidget.action.ACTION_APPWIDGET_DELETED"><nothingHere/></action>
+                <action android:name="android.appwidget.action.ACTION_APPWIDGET_DISABLED"><nothingHere/></action>
+                <action android:name="android.appwidget.action.ACTION_APPWIDGET_ENABLED"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info"><nothingHere/></meta-data>
+        </receiver>
+        <service android:name="com.seppastien.IMYSFFree.WidgetUpdate">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_BUTTON_UPDATE"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <uses-library android:name="com.google.android.maps" android:required="true"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

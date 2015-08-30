@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="uiuc.mlc2011">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:alwaysRetainTaskState="true" android:clearTaskOnLaunch="false" android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="false" android:label="@string/app_name" android:name=".Registration">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="false" android:label="@string/app_name" android:name=".ApplicationList"><nothingHere/></activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="false" android:label="@string/app_name" android:name=".QuizList"><nothingHere/></activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation" android:finishOnTaskLaunch="false" android:label="@string/app_name" android:name=".QuizQuestion"><nothingHere/></activity>
+        <activity android:alwaysRetainTaskState="true" android:finishOnTaskLaunch="false" android:label="@string/app_name" android:name=".reminder.AnnouncementList"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ShowAnswers"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".reminder.AnnouncementFlip"><nothingHere/></activity>
+        <service android:enabled="true" android:name=".reminder.ReminderService"><nothingHere/></service>
+    </application>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.slavjoy.dogboard">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="UILApplication">
+        <activity android:label="@string/app_name" android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/ac_name_image_list" android:name=".ImageListActivity"><nothingHere/></activity>
+        <activity android:label="@string/ac_name_image_grid" android:name=".ImageGridActivity"><nothingHere/></activity>
+        <activity android:label="@string/ac_name_image_pager" android:name=".ImagePagerActivity"><nothingHere/></activity>
+        <activity android:label="@string/ac_name_image_gallery" android:name=".ImageGalleryActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <receiver android:name=".widget.UILWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+        <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider"><nothingHere/></meta-data>
+            </receiver>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

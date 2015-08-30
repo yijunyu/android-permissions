@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.MODIFY_AUDIO_SETTINGS</permission>
+    <permission>android.permission.RESTART_PACKAGES</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WRITE_CONTACTS</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+    <permission>android.permission.CAMERA</permission>
+  </under-specification>
+</comparison>

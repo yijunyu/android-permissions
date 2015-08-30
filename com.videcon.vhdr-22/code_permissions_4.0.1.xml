@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/ctring/mViewer/sockutile.java</file>
+    <line>29</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

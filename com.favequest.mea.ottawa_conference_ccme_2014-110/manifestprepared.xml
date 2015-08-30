@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.favequest.mea.ottawa_conference_ccme_2014">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.favequest.mea2.MyEventAppsApplication" android:theme="@style/Theme.PageIndicatorDefaults">
+        <activity android:name="com.favequest.mea2.activities.MyEventAppActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.CalendarActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.PageListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.NewsItemListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.PageDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.CalendarDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.ImageDetailsActivity"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.VideoDetailsActivity"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.BannerDetailsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.LandingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.ChildSelectionActivity"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.SettingsActivity"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.MoreInfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.WebBrowserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.NewsItemActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.SponsorListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.SponsorActivity"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.InfoItemActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation|screenSize" android:name="com.favequest.mea2.activities.SouvenirCamActivity"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.SouvenirCameraPreview" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.MapLandingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.IllustratedMapActivity"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.MapDisplayActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.CheckinActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.NotesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.favequest.mea2.activities.SlideshowActivity" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:label="Wham City" android:name="com.whamcitylights.lib.activity.WhamActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_artez" android:name="com.favequest.mea2.activities.ArtezActivity"><nothingHere/></activity>
+        <activity android:label="LogIn" android:name="com.favequest.mea2.activities.ArtezLoginActivity"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.InfoItemsActivity"><nothingHere/></activity>
+        <activity android:name="com.favequest.mea2.activities.AlertsActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA5COxgtURQXzVrtf8bA5OtBv1ONXTu9BQ"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.favequest.mea2.services.DataSynchronizer"><nothingHere/></service>
+        <service android:name="com.favequest.mea2.services.CheckinService"><nothingHere/></service>
+        <service android:name="com.parse.PushService"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

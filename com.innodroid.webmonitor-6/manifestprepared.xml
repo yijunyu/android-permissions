@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.innodroid.webmonitor">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.innodroid.webmonitor.app.Application" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.innodroid.webmonitor.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_settings" android:name="com.innodroid.webmonitor.ui.SettingsActivity" android:parentActivityName=".ui.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/edit_monitor" android:name="com.innodroid.webmonitor.ui.MonitorEditActivity" android:parentActivityName=".ui.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ui.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/edit_schedule" android:name="com.innodroid.webmonitor.ui.MonitorEditScheduleActivity"><nothingHere/></activity>
+        <activity android:label="@string/edit_notifications" android:name="com.innodroid.webmonitor.ui.MonitorEditNotificationsActivity"><nothingHere/></activity>
+        <provider android:authorities="com.innodroid.webmonitor" android:exported="false" android:name="com.innodroid.webmonitor.data.AppDataProvider"><nothingHere/></provider>
+        <receiver android:name="com.innodroid.webmonitor.ui.MonitorWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/monitor_appwidget_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.innodroid.webmonitor.app.ConnectivityChangedReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.innodroid.webmonitor.app.PingerService"><nothingHere/></service>
+        <service android:name="com.innodroid.webmonitor.app.DataManagerService"><nothingHere/></service>
+        <service android:name="com.innodroid.webmonitor.app.MonitorWidgetService" android:permission="android.permission.BIND_REMOTEVIEWS"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

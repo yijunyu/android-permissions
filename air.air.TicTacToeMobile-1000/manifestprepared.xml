@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="air.air.TicTacToeMobile">
+    <application android:hardwareAccelerated="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name=".AppEntry" android:screenOrientation="user" android:theme="@style/Theme.NoShadow" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="namespaceVersion" android:value="3.8"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="fbb5c1b7-64a2-4617-b14d-0a1a3aab02f0"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="TicTacToeMobile.swf"><nothingHere/></meta-data>
+            <meta-data android:name="containsVideo" android:value="false"><nothingHere/></meta-data>
+        </activity>
+    </application>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="true"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

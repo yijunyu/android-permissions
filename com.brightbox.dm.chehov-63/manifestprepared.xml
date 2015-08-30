@@ -1,0 +1,86 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.brightbox.dm.chehov"> &gt;
+<application android:allowBackup="true" android:icon="@drawable/icon_main" android:label="@string/app_name" android:name="com.brightbox.dm.lib.DmApplication" android:theme="@style/DMTheme">
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ApproveActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="app" android:path="/activateuser" android:scheme="chehov"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.DealersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.DealerInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.DealersMapActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ForgotPasswordActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="app" android:path="/restorepassword" android:scheme="chehov"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.NewsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.MasterInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.NewsArticleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.RoadAssistanceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.OfferViewerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ProfileCarActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ProfileCarHistoryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ProfileOffersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.RegistrationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.SimpleRegistrationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.EditPhoneActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.AddCarActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ServiceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ServiceHistoryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ServiceCatalogActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ServiceRegistrationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.TutorialActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.TestsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.CarCreditActvity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.EmployeeListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.ActivityQAMessages" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.QADealerMessagesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.CarInsuranceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:logo="@drawable/icon_ab_logo" android:name="com.brightbox.dm.lib.OrderCallActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name="com.brightbox.dm.lib.PhotoViewerActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.brightbox.dm.lib.PhotoViewerActivity2" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.mixpanel.android.surveys.SurveyActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBXDTc-ifHgUKmb5Rkp3H3RTSfpuNDs78Y"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.brightbox.dm.chehov"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+    </application>
+<permission android:name="com.brightbox.dm.chehov.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.brightbox.dm.chehov.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.brightbox.dm.chehov.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.brightbox.dm.chehov.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,73 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="rentcompass.android.rentcompass">
+    <application android:allowBackup="true" android:icon="@drawable/rentcompass" android:label="@string/app_name" android:name="rentcompass.android.rentcompass.Application" android:theme="@style/RCActionBarTheme">
+        <activity android:name=".DetailsView" android:parentActivityName="rentcompass.android.rentcompass.MainMapView" android:theme="@style/RCActionBarThemeOverlay">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="rentcompass.android.rentcompass.MainMapView"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name=".UrlRouterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="www.rentcompass.com" android:pathPrefix="/Rental" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="www.rentcompass.com" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"><nothingHere/></action>
+                <android-data android:host="www.rentcompass.com" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name=".MainListActivity" android:parentActivityName="rentcompass.android.rentcompass.MainMapView" android:theme="@style/RCActionBarThemeOverlay">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="rentcompass.android.rentcompass.MainMapView"><nothingHere/></meta-data>&gt;
+</activity>
+        <activity android:name=".WebViewActivity"><nothingHere/></activity>
+        <activity android:name=".PhotoAlbum" android:theme="@style/AlbumTheme"><nothingHere/></activity>
+        <activity android:name=".FeedbackDialog" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".AboutViewActivity" android:parentActivityName="rentcompass.android.rentcompass.MainMapView">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="rentcompass.android.rentcompass.MainMapView"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name=".EmailActivity" android:windowSoftInputMode="stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:name=".FilterActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".PropertyMap" android:theme="@style/RCActionBarThemeOverlay"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name=".HomeActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name=".MainMapView" android:theme="@style/RCActionBarThemeOverlay"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".SearchCityView"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".SplashScreenView" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.app.default_searchable" android:value=".HomeActivity"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAjqVaz2rsGk8RtDlAnImtcVN2cC16FaS4"><nothingHere/></meta-data>
+        <provider android:authorities="rentcompasscities" android:name="CitySearchProvider" android:syncable="false"><nothingHere/></provider>
+        <receiver android:exported="true" android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.google.analytics.tracking.android.CampaignTrackingService"><nothingHere/></service>
+        <service android:name="rentcompass.android.rentcompass.DataContracts.WebServiceAsyncHelper"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

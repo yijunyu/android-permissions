@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="lg.webhard">
+    <application android:icon="@drawable/webhard_icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:exported="true" android:label="@string/app_name" android:name=".controller.WHIntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name=".controller.WHSettingLayoutActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".controller.WHSendMailActivity" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden" android:name=".controller.WHLoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".controller.WHMainActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".controller.WHSearchActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".controller.WHExplorerActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".controller.WHFileManagerActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".controller.WHActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".controller.WHLoadingActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".controller.WHRegisterWebViewActivity"><nothingHere/></activity>
+        <activity android:name=".controller.test.TestMainActivity"><nothingHere/></activity>
+        <activity android:name=".controller.test.TestWebView4KaKaoActivity"><nothingHere/></activity>
+        <activity android:name=".controller.test.TestContentsActivity"><nothingHere/></activity>
+        <activity android:name=".controller.test.TestFileManagerStateActivity"><nothingHere/></activity>
+        <activity android:name=".controller.test.WHDialogTestActivity"><nothingHere/></activity>
+        <activity android:name=".controller.test.TestDownUpLoadManagerActivity"><nothingHere/></activity>
+        <activity android:name=".controller.WHTestPageAcitivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="lg.webhard.controller.WHRelayDownUploadDialogActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".controller.WHMediaFolderActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".controller.WHMediaFileActivity"><nothingHere/></activity>
+        <activity android:name=".controller.changeId.WHUserIdListActivity"><nothingHere/></activity>
+    <service android:name=".model.sessionManager.WHSessionManagerService"><nothingHere/></service>
+        <service android:name=".model.downloadUploadManager.service.WHFileManagerServiceOfDownload"><nothingHere/></service>
+        <service android:name="lg.webhard.model.downloadUploadManager.service.WHFileManagerServiceOfUpload"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.REORDER_TASKS"><nothingHere/></uses-permission>
+    </manifest>

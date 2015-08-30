@@ -1,0 +1,8 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.BATTERY_STATS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+  </under-specification>
+</comparison>

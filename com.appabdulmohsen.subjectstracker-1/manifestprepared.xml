@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.appabdulmohsen.subjectstracker">
+    <application android:allowBackup="true" android:icon="@drawable/iconsubjecttracker" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.appabdulmohsen.subjectstracker.SubjectList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".Activity_subject_tracking">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".SubjectList"><nothingHere/></meta-data>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:name=".activity_todialog_notecontent" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+    <service android:name=".Service_reminder"><nothingHere/></service>
+        </application>
+</manifest>

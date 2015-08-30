@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sajjan.newsInTube">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainScreen"><nothingHere/></activity>
+        <activity android:name=".NewsInTube"><nothingHere/></activity>
+        <activity android:name=".Metro"><nothingHere/></activity>
+        <activity android:name=".EveningStandard"><nothingHere/></activity>
+        <activity android:name=".NewsWeb"><nothingHere/></activity>
+        <activity android:name=".BBCNews"><nothingHere/></activity>
+        <activity android:name=".BBCSports"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.admob.android.ads.AdMobActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14d49cb994bad8"><nothingHere/></meta-data>
+        <meta-data android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" android:value="true"><nothingHere/></meta-data>
+        <receiver android:exported="true" android:name="com.admob.android.ads.analytics.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+    <supports-screens android:anyDensity="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

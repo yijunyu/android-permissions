@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.accelprep.dmv.Mississippi">
+    <application android:icon="@drawable/icon" android:label="MS Driver" android:name="mono.android.app.Application">
+        <activity android:label="AccelPrep" android:name="accelprep.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="accelprep.SplashActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.accelprep.dmv.Mississippi.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    </application>
+<uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

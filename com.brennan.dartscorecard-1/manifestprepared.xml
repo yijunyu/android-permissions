@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.brennan.dartscorecard">
+    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/ic_launcher_dartboard_with_background" android:label="@string/my_app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/my_app_name" android:name="com.brennan.dartscorecard.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_hammer_game" android:name="com.brennan.dartscorecard.SettingsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_hammer_game" android:name="com.brennan.dartscorecard.HammerGameActivity"><nothingHere/></activity>
+    </application>
+</manifest>

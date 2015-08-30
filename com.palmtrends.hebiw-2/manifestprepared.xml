@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.palmtrends.hebiw">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.palmtrends.app.ShareApplication">
+        <activity android:label="@string/app_name" android:name="com.palmtrends.hebiw.ui.InitActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.weather.WeatherActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.weather.ChangeCityActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.palmtrends.hebiw.ui.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.palmtrends.hebiw.ui.HomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.palmtrends.hebiw.ui.ImageDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.ui.ArticleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.ui.EstateArticleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.ui.AddEstateActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.ui.AritcleCommentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.ui.ArticleCommentsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.ui.SettingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.setting.FeedBack" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.ui.FavoritesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.ui.SettingFavActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.setting.TextSize" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.settings.Version" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.settings.ReporterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.settings.DisclaimerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.weibo.WeiboBangdingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.weibo.WeiboGuanliActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.weibo.WeiboInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.hebiw.weibo.WeiboArticleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.weibo.WeiboForwardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.weibo.WeiboCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.weibo.WeibofenxiangActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.palmtrends.weibo.WeiboShowImageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <receiver android:exported="false" android:name="com.palmtrends.push.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.palmtrends.apptime.AppTimeStatisticsService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:permission="android.permission.BAIDU_LOCATION_SERVICE" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.6"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.palmtrends.push.PushService">
+            <intent-filter>
+                <action android:name="android.intent.service.TASKSERVICE"><nothingHere/></action>
+            </intent-filter>
+        </service>
+    </application>
+<permission android:name="android.permission.BAIDU_LOCATION_SERVICE"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"><nothingHere/></uses-permission>
+    </manifest>

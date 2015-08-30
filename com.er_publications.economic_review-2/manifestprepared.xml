@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.er_publications.economic_review">
+    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="com.er_publications.economic_review.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.er_publications.economic_review.ER_App"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.er_publications.economic_review.ER_Category"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.er_publications.economic_review.ER_ArticleContent"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.er_publications.economic_review.article_flipper"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,189 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="com.guidebook.apps.Paperless.android">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.guidebook.android.GuidebookApplication">
+        <activity android:launchMode="singleTask" android:name="com.guidebook.android.app.main.MainActivity" android:theme="@style/Theme.Guidebook" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.guide.module.map.MapActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.message.InboxActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.rss.RssActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:hardwareAccelerated="false" android:name="com.guidebook.android.app.guide.module.rss.RssInfoActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.pois.PoisActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.todo.TodoActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.message.MessageActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.twitter.TwitterActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.guidebook.android.app.guide.module.schedule.ScheduleActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.photo.AlbumActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:exported="true" android:name="com.guidebook.android.app.guide.module.details.ui.EventActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.notes.NotesActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.details.ui.PoiActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.attendees.full.ConnectedListActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.attendees.full.OtherListActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.guidebook.android.app.guide.module.attendees.preview.PreviewActivity" android:parentActivityName="com.guidebook.android.app.guide.container.ContainerActivity" android:theme="@style/Theme.Guidebook">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.guidebook.android.app.guide.container.ContainerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.guidebook.android.app.connection.ConnectionsActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.linkedaccounts.LinkAccountActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.signin.SignInActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.settings.SettingsActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.settings.ChangePasswordActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.cards.ManageCardsActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.cards.SelectCardActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.cards.ConfirmCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.connection.ConnectionProfileActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.cards.EditCardActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.notes.EditNoteActivity" android:theme="@style/Theme.Guidebook.Title" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.notes.EditDetailsNoteActivity" android:theme="@style/Theme.Guidebook.Title" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.cards.ChooseFieldActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.guide.container.DrawerTutorial" android:theme="@style/dialog"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.cards.CardTutorial" android:theme="@style/dialog"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.guide.module.photo.GalleryActivity" android:theme="@style/Gallery"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.main.browse.initial.InitialActivity" android:theme="@style/Theme.Guidebook"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.settings.EditProfileActivity" android:parentActivityName="com.guidebook.android.app.account.settings.SettingsActivity" android:theme="@style/Theme.Guidebook.Title"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.signin.login.twitter.TwitterSignInActivity"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.account.signin.login.linkedin.LinkedInSignInActivity"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.main.browse.category.CategoryActivity" android:theme="@style/Theme.Guidebook"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.main.browse.search.SearchActivity" android:theme="@style/Theme.Guidebook" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.guide.module.map.MultipleLinksActivity" android:theme="@style/GBDialog"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.guide.module.map.pin.MultiplePinActivity" android:theme="@style/GBDialog"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.guidepersistence.download.DownloadGuideActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.pdf.OpenPdfActivity" android:theme="@style/GBDialog"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.guidebook.android.LaunchActivity" android:theme="@style/Theme.GuidebookNoBar.Background">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.guidebook.android.guide.PhotoCaptionActivity" android:theme="@style/Theme.GuidebookNoBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="Redeem Code" android:name="com.guidebook.android.RedeemActivity" android:theme="@style/GBDialog" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.guide.MysSyncActivity" android:theme="@style/GBDialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.guidebook.android.app.guide.module.web.WebActivity" android:theme="@style/Theme.GuidebookNoBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="com.guidebook.android.webview"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="About Guidebook" android:name="com.guidebook.android.AboutActivity" android:theme="@style/Theme.GuidebookNoBar"><nothingHere/></activity>
+        <activity android:label="Search" android:name="com.guidebook.android.guide.SearchableActivity" android:theme="@style/Theme.GuidebookNoBar"><nothingHere/></activity>
+        <activity android:label="Calendar" android:name="com.guidebook.android.app.guide.module.calendar.CalendarActivity" android:theme="@style/Theme.Guidebook"><nothingHere/></activity>
+        <activity android:label="Share" android:name="com.guidebook.android.guide.ShareActivity" android:theme="@style/Theme.GuidebookNoBar"><nothingHere/></activity>
+        <activity android:label="Scanner" android:name="com.guidebook.android.guide.ScannerActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.GuidebookNoBar"><nothingHere/></activity>
+        <activity android:label="Google maps" android:name="com.guidebook.android.guide.GmapsActivity" android:theme="@style/Theme.GuidebookNoBar"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.guide.module.twitter.PostTweetActivity" android:theme="@style/GBDialog" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.app.guide.module.twitter.ReviewTweetActivity" android:theme="@style/GBDialog"><nothingHere/></activity>
+        <activity android:name="com.guidebook.android.guide.ReviewTwitterStatusActivity" android:theme="@style/GBDialog"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/GUIDEBOOK_SETTINGS" android:name="com.guidebook.android.GuidebookOptionsActivity" android:theme="@style/GBDialog"><nothingHere/></activity>
+        <activity android:label="Guidebook Tutorial" android:name="com.guidebook.android.app.main.TutorialActivity" android:theme="@style/Theme.GuidebookNoBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.guidebook.android.app.twitter.TwitterLoginActivity" android:theme="@style/Theme.GuidebookNoBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.guidebook.android.app.ExternalIntentReceiver" android:noHistory="true" android:taskAffinity=".externalintentreceiver" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+                <android-data android:host="@string/app_host_http"><nothingHere/></android-data>
+                <android-data android:pathPrefix="@string/app_path_prefix"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="@string/app_scheme_long"><nothingHere/></android-data>
+                <android-data android:scheme="@string/app_scheme"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.guidebook.android.appwidget.GuidebookAppWidgetConfigure">
+            <intent-filter>
+                <action android:name="android.appwidget.actionButtonState.APPWIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+        <provider android:authorities="com.guidebook.apps.Paperless.android.pdf" android:exported="true" android:name="com.guidebook.android.pdf.PdfProvider"><nothingHere/></provider>
+        <receiver android:name="com.guidebook.android.guide.EventAlertAlarm"><nothingHere/></receiver>
+        <receiver android:name="com.guidebook.android.guide.OnBootAlarmSetup" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.guidebook.android.guide.OnBootAlarmSetup" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.guidebook.android.push.PushReceiver">
+            <intent-filter>
+                <action android:name="com.guidebook.android.PUSH"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.guidebook.android.appwidget.GuidebookAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.actionButtonState.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/guidebook_appwidget_info"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.guidebook.android.push.gcm.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.guidebook.apps.Paperless.android"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.parse.PushService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+    <permission android:name="com.guidebook.apps.Paperless.android.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screen android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screen>
+<uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.guidebook.apps.Paperless.android.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

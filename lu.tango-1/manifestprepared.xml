@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="lu.tango">
+    <application android:allowBackup="true" android:icon="@drawable/launcher" android:label="@string/app_name" android:name="lu.tango.App" android:theme="@style/Theme.AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="lu.tango.activity.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/empty" android:name="lu.tango.activity.ExtraConsumptionActivity" android:parentActivityName="lu.tango.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lu.tango.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/empty" android:name="lu.tango.activity.ExtraOptionActivity" android:parentActivityName="lu.tango.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lu.tango.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/empty" android:name="lu.tango.activity.EshopListActivity" android:parentActivityName="lu.tango.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lu.tango.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/empty" android:name="lu.tango.activity.FaqActivity" android:parentActivityName="lu.tango.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lu.tango.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/empty" android:name="lu.tango.activity.MessageDetailActivity" android:parentActivityName="lu.tango.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lu.tango.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/empty" android:name="lu.tango.activity.LegalsActivity" android:parentActivityName="lu.tango.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lu.tango.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/empty" android:name="lu.tango.activity.ChangePasswordActivity" android:parentActivityName="lu.tango.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lu.tango.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/empty" android:name="lu.tango.activity.EshopDetailActivity" android:parentActivityName="lu.tango.activity.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="lu.tango.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="net.hockeyapp.android.UpdateActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC7YWiJWryykwV6tjeUXOdapS9DnlImjV4"><nothingHere/></meta-data>
+        </application>
+<uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.jiubang.goscreenlock.theme.flowerclassicgolocker">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".GOScreenLockInstallDialog" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="com.jiubang.goscreenlock.theme"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".ViewPageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <receiver android:name=".LauncherReceiver">
+            <intent-filter>
+                <action android:name="com.jiubang.goscreenlock.theme.flowerclassicgolocker.action.launcher_ad_first"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="com.jiubang.goscreenlock.theme.flowerclassicgolocker.action.launcher_ad_second"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+</manifest>

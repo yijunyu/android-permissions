@@ -1,0 +1,6 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.MODIFY_AUDIO_SETTINGS</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

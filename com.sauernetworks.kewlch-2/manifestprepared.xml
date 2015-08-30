@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sauernetworks.kewlch">
+    <application android:icon="@drawable/app_icon" android:label="@string/app_name">
+        <activity android:label="@string/title_configure" android:launchMode="singleTop" android:name=".KewlchConfig">
+            <intent-filter>
+                <action android:name="com.sauernetworks.kewlch.KewlchConfig.ACTION_WIDGET_CONFIGURE"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:label="@string/app_title" android:name=".KewlchFullscreen"><nothingHere/></activity>
+    <receiver android:label="@string/app_large_name" android:name=".largeKewlchWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/kewlch_large_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+        <service android:exported="true" android:name=".KewlchService" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.sauernetworks.kewlch.KewlchService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

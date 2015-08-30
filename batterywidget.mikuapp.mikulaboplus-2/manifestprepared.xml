@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="batterywidget.mikuapp.mikulaboplus">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="batterywidget.mikuapp.mikulaboplus.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"><nothingHere/></activity>
+        <activity android:name=".SetteiActivity"><nothingHere/></activity>
+        <receiver android:label="&#38651;&#27744;&#27531;&#37327;&#34920;&#31034;&#12454;&#12451;&#12472;&#12455;&#12483;&#12488;ver.&#21021;&#38899;&#12511;&#12463;(4&#215;4)" android:name="BatteryWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="&#38651;&#27744;&#27531;&#37327;&#34920;&#31034;&#12454;&#12451;&#12472;&#12455;&#12483;&#12488;ver.&#21021;&#38899;&#12511;&#12463;(2&#215;2)" android:name="BatteryWidget2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget2"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="&#38651;&#27744;&#27531;&#37327;&#34920;&#31034;&#12454;&#12451;&#12472;&#12455;&#12483;&#12488;ver.&#21021;&#38899;&#12511;&#12463;(1&#215;1)" android:name="BatteryWidget3">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget3"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="batterywidget.mikuapp.mikulaboplus"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="BatteryWidget$WidgetService"><nothingHere/></service>
+        <service android:name="BatteryWidget2$WidgetService"><nothingHere/></service>
+        <service android:name="BatteryWidget3$WidgetService"><nothingHere/></service>
+        <service android:name="batterywidget.mikuapp.mikulaboplus.GCMIntentService"><nothingHere/></service>
+    </application>
+    <permission android:name="batterywidget.mikuapp.mikulaboplus.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="batterywidget.mikuapp.mikulaboplus.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

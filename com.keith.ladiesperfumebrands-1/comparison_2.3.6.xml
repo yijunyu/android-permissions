@@ -1,0 +1,19 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_CONTACTS</permission>
+    <permission>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</permission>
+    <permission>android.permission.BROADCAST_STICKY</permission>
+    <permission>android.permission.RECEIVE_SMS</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+    <permission>android.permission.MODIFY_AUDIO_SETTINGS</permission>
+    <permission>android.permission.RECORD_VIDEO</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.NFC</permission>
+  </under-specification>
+</comparison>

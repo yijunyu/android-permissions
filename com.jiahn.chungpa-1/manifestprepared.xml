@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jiahn.chungpa">
+    <application android:allowBackup="true" android:icon="@drawable/chungpa_icon_512" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.jiahn.chungpa.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jiahn.chungpa.tableActivity"><nothingHere/></activity>
+        <activity android:name="com.jiahn.chungpa.WebViewActivity"><nothingHere/></activity>
+        <activity android:name="com.jiahn.chungpa.MainTabhostActivity"><nothingHere/></activity>
+        <activity android:name="com.jiahn.chungpa.BoardMainActivity"><nothingHere/></activity>
+        <activity android:name="com.jiahn.chungpa.IntroTabhostActivity"><nothingHere/></activity>
+    </application>
+<permission android:name="android.permission.INTERNET"><nothingHere/></permission>
+    <permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

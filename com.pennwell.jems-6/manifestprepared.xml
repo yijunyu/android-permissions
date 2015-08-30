@@ -1,0 +1,70 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pennwell.jems">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.pennwell.PWApplication" android:theme="@style/Theme.PWReaderTheme" android:uiOptions="none">
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWArticleActivity" android:theme="@style/Theme.PWReaderTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWSplashScreenActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWInterstitialActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWNewsActivity" android:theme="@style/Theme.PWReaderTheme"><nothingHere/></activity>
+        <activity android:label="@string/most_viewed" android:name="com.pennwell.activities.PWMostViewedActivity" android:theme="@style/Theme.PWReaderTheme"><nothingHere/></activity>
+        <activity android:label="@string/saved" android:name="com.pennwell.activities.PWSavedActivity" android:theme="@style/Theme.PWReaderTheme"><nothingHere/></activity>
+        <activity android:label="@string/videos" android:name="com.pennwell.activities.PWVideosActivity" android:theme="@style/Theme.PWReaderTheme"><nothingHere/></activity>
+        <activity android:label="@string/video_player" android:name="com.pennwell.activities.PWVideoPlayer" android:theme="@style/Theme.PWVideoPlayerTheme"><nothingHere/></activity>
+        <activity android:label="@string/webview_tab_title" android:name="com.pennwell.activities.PWWebViewActivity" android:theme="@style/Theme.PWReaderTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:icon="@drawable/event_fdic_icon" android:label="@string/app_name" android:name="com.pennwell.activities.PWEventHomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWExhibitorsActivity" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWExhibitorsDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWSessionsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWSessionDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWProductsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWProductsDetailActivity" android:theme="@style/Theme.Sherlock" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWShuttleScheduleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWGeneralInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWRegistrationScheduleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWSpecialEventsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWSettingsActivity" android:theme="@style/Theme.PWReaderTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.pennwell.activities.PWTopicCenterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWAboutActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWDownloadEventContentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWReaderTheme" android:uiOptions="none"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pennwell.activities.PWFloorPlanActivity" android:screenOrientation="portrait" android:theme="@style/Theme.PWEventTheme" android:uiOptions="none"><nothingHere/></activity>
+        <receiver android:enabled="true" android:name="com.pennwell.receivers.PWAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="android.appwidget.action.ACTION_PREVIOUS_ARTICLE"><nothingHere/></action>
+                <action android:name="android.appwidget.action.ACTION_NEXT_ARTICLE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_config"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.pennwell.receivers.PWEventDownloadCompleteReceiver">
+            <intent-filter>
+                <action android:name="com.pennwell.JEMS_EVENT_DOWNLOAD_COMPLETE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.pennwell.receivers.PWEventDeletionCompleteReceiver">
+            <intent-filter>
+                <action android:name="com.pennwell.JEMS_DELETION_COMPLETE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:exported="false" android:name="com.pennwell.services.WidgetUpdateService" android:permission="android.permission.BIND_REMOTEVIEWS"><nothingHere/></service>
+        <service android:exported="false" android:name="com.pennwell.services.PreHoneyCombWidgetUpdateService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.pennwell.services.EventDownloaderService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.pennwell.services.EventDeletionService"><nothingHere/></service>
+        <service android:name="com.parse.PushService"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

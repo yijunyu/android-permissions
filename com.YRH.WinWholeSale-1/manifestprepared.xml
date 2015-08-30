@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.YRH.WinWholeSale">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FindALocation.FindLocationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FindALocation.MapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FindALocation.LocationDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FindALocation.LocationDirectionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".GetAQuote.GetQuoteStep1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".GetAQuote.GetQuoteStep2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".GetAQuote.GetQuoteStep3Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".GetAQuote.GetQuoteStep4Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".GetAQuote.GetQuoteStep5Activity"><nothingHere/></activity>
+        <activity android:name=".GetAQuote.GetQuoteStep6Activity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FieldTools.FieldToolsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FieldTools.WaterConvActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FieldTools.ElectricalUnitConvActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FieldTools.PressureConvActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FieldTools.PipeSizeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FieldTools.SuggestAToolActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FieldTools.PipeSizeNaturalActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name=".FieldTools.PipeSizePropaneActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACBTUHActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACCelsiusActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACCFMActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACQsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACFahrenheitActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACSubcoolingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACSuperheatActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACWattsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACOhm1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACOhm2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACOhm3Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACOhm4Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACOhm5Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".FieldTools.HVACOhm6Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessToolsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessVideoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessConnectActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessNewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessNewsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningAbout1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningAbout2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningAmerican1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningAmerican2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningBeInActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningEasy1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningEasy2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningWeOffer1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningWeOffer2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningWhy1Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".BusinessTools.BusinessWinningWhy2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Help.HelpMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Help.HelpFeaturesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Help.HelpAboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Help.HelpBusinessToolsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Help.HelpFavoriteLocationsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Help.HelpFieldToolsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Help.HelpFindALocationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Help.HelpGetAQuoteActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCRzSZ8Y_UAOePcumTfc8ZAGA94yRWxc48"><nothingHere/></meta-data>
+        </application>
+<permission android:name="com.yrh.MapTest.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.yrh.MapTest.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

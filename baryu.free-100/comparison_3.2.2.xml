@@ -1,0 +1,12 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.SET_WALLPAPER_HINTS</permission>
+    <permission>android.permission.SET_WALLPAPER</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+    <permission>android.permission.INTERNET</permission>
+  </under-specification>
+</comparison>

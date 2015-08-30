@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/up/edu/mxd/Test2Activity.java</file>
+    <line>88</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/up/edu/mxd/Test2Activity$MyWebViewClient.java</file>
+    <line>32</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

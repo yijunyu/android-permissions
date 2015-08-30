@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="daily.computations.dailycomputations">
+    <application android:allowBackup="true" android:icon="@drawable/manoj" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="daily.computations.dailycomputations.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="daily.computations.dailycomputations.Starting"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Life"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Fin"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Conv"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Sal"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Insper"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Per"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Bmi"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Cur"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Dat"><nothingHere/></activity>
+        <activity android:name="daily.computations.dailycomputations.Temp"><nothingHere/></activity>
+    </application>
+</manifest>

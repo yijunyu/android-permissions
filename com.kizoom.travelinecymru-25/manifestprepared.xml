@@ -1,0 +1,75 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.kizoom.travelinecymru">
+    <application android:icon="@drawable/app_icon" android:label="@string/app_name" android:name="TravelineCymruApplication">
+        <activity android:configChanges="orientation" android:name=".activities.SplashActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".TravelineCymruMainActivity" android:theme="@style/whiteTitleBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/busAndCoach" android:launchMode="singleTop" android:name="com.kizoom.mybus.StopMapActivity" android:theme="@style/lightTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/mybus_searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/stop_board_title" android:name="com.kizoom.mybus.StopBoardActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:label="@string/stop_board_title" android:name="com.kizoom.mybus.WebStopBoardActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:name="com.kizoom.mybus.MyStopsActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:name=".activities.TravelineCymruMyStopsActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:label="@string/feedback" android:name="com.kizoom.mybus.FeedbackActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/planTrip" android:launchMode="singleTop" android:name="com.kizoom.travelinecymru.journeyPlan.JourneyCymruPlanRequestActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/selectFromTo" android:launchMode="singleTop" android:name="com.kizoom.travelinecymru.journeyPlan.TravelineCymruSearchActivity" android:theme="@style/lightTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/jp_searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/selectFromTo" android:launchMode="singleTop" android:name="com.kizoom.travelinecymru.journeyPlan.TravelineSearchMapActivity" android:theme="@style/lightTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/jp_searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/whenActivity" android:launchMode="singleTop" android:name="com.kizoom.travelinecymru.journeyPlan.CymruTimeActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:label="@string/tripOptions" android:launchMode="singleTop" android:name="com.kizoom.travelinecymru.journeyPlan.TravelineCymruJourneyPlanResultActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:label="@string/tripDetails" android:launchMode="singleTop" android:name="com.kizoom.travelinecymru.journeyPlan.CymruJourneyPlanActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/tripMap" android:launchMode="singleTop" android:name="com.kizoom.travelinecymru.journeyPlan.CymruJourneyPlanMapActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:name="com.kizoom.travelinecymru.journeyPlan.MyStopsJourneyPlanActivity" android:theme="@style/lightTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/fares_detail_title" android:launchMode="singleTop" android:name="com.kizoom.jp.JourneyLegFaresActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:label="@string/stop_board_title" android:name=".activities.StopBoardActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/busAndCoach" android:launchMode="singleTop" android:name=".activities.BusStopMapActivity" android:theme="@style/lightTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/mybus_searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".activities.ResourcBasedStaticStopMapActivity" android:theme="@style/lightTitleBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/mybus_searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/planJourney" android:name="com.kizoom.util.web.WebActivity" android:theme="@style/webActivityStyle"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/news" android:name="com.kizoom.news.MessageActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/news" android:name="com.kizoom.news.BadgeMessageListActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/taxiHeading" android:name="com.kizoom.mybus.taxi.TaxiActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/operators" android:launchMode="singleTop" android:name="com.kizoom.travelinecymru.operators.OperatorsListActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name=".activities.AboutActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name=".poi.PoiRichTextActivity" android:theme="@style/lightTitleBarTheme"><nothingHere/></activity>
+    <provider android:authorities="com.kizoom.travelineCymru.MyBusSearchSuggestionProvider" android:name="com.kizoom.mybus.search.MyBusSearchSuggestionProvider" android:readPermission="com.example.provider.READ_MY_DATA">
+            <path-permission android:pathPrefix="/search_suggest_query" android:readPermission="android.permission.GLOBAL_SEARCH"><nothingHere/></path-permission>
+        </provider>
+        <provider android:authorities="com.kizoom.travelinecymru.journeyPlan.JPSearchSuggestionProvider" android:name="com.kizoom.jp.service.PlanTripSearchSuggestionProvider" android:readPermission="com.example.provider.READ_MY_DATA">
+            <path-permission android:pathPrefix="/search_suggest_query" android:readPermission="android.permission.GLOBAL_SEARCH"><nothingHere/></path-permission>
+        </provider>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

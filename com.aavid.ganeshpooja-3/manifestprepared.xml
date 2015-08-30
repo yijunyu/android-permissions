@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.aavid.ganeshpooja">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.aavid.ganeshpooja.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySteps"><nothingHere/></activity>
+        <activity android:name=".ActivityEvePooja"><nothingHere/></activity>
+        <activity android:name=".ActivityAarti"><nothingHere/></activity>
+        <activity android:name=".ActivitySlidshow"><nothingHere/></activity>
+        <activity android:name=".ActivityMoreInfo"><nothingHere/></activity>
+        <activity android:name=".ActivityVisarjan"><nothingHere/></activity>
+        <activity android:name=".ActivtiySetup"><nothingHere/></activity>
+        <activity android:name=".ActivityNames"><nothingHere/></activity>
+        <activity android:name=".ActivityRequirment"><nothingHere/></activity>
+        <activity android:name=".ActivityMainGanpati"><nothingHere/></activity>
+        <activity android:name=".ActivityGanpatiInfo"><nothingHere/></activity>
+        <activity android:name=".ActivityAartiInfo"><nothingHere/></activity>
+        <activity android:name=".ActivtyAbout"><nothingHere/></activity>
+        <activity android:name=".ActivityGanpatiInformation"><nothingHere/></activity>
+        <activity android:name=".ActivityHome"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyD8rSZ1ZRyZYA1MqJzdT7WoA81Q2cSK8CU"><nothingHere/></meta-data>
+    </application>
+<permission android:name="com.aavid.ganeshpooja.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.aavid.ganeshpooja.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.darkminstrel.music">
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:logo="@drawable/ic_launcher" android:name=".AppMain" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_act_main" android:launchMode="singleTask" android:name=".ActMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/main_widget"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name=".ServiceMain$HeadsetButtonReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:label="@string/app_name" android:name=".ServiceMain"><nothingHere/></service>
+        </application>
+<compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="640" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="640" android:screenSize="normal"><nothingHere/></screen>
+    </compatible-screens>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dol.o461">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.dol.GlobalApplication" android:theme="@style/CustomTheme">
+        <activity android:label="@string/app_name" android:name="com.dol.Intro" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.dol.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.CelebrationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.GuestBookActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.dol.MyWeddingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.SettingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.WeddingHallActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.IntroduceActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.dol.ViewDetailImageActivity" android:parentActivityName=".MyWeddingActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MyWeddingActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.dol.MapViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.DateActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.dol.WriteActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.SelectContactActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.ViewVideo" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.dol.CeleViewDetailImageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.dol.GuideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.dol.ClientInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.dol.common.CustomTitleBarActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.dol.MainActivityDesign" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.dol.share.ShareFacebookActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.dol.share.ShareTwitterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Dialog" android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="twitter" android:scheme="wefu"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.dol.share.ShareTwitterLoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.android.twittercon.TWITTER_LOGIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dol.ResultRcvActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="@string/sheme"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <receiver android:name="com.dol.util.AlarmReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.dol.util.AlarmReceiver2"><nothingHere/></receiver>
+        <receiver android:name="com.dol.util.AlarmReceiver3"><nothingHere/></receiver>
+        <service android:name="com.dol.util.AlarmService_Service" android:process=":remote"><nothingHere/></service>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    </manifest>

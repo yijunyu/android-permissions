@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="knsoft.co.kr.bh.yiyeonmoo_tkd">
+    <application android:icon="@drawable/icon_main" android:label="&#50857;&#51064;&#45824;&#50857;&#47924;&#53468;&#44428;&#49828;&#53224;" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name=".Join" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".DB_check" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Tab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".People_list" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Message_list" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Setup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".People_search" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Messages" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".Setup_profile" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Setup_people_block" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Setup_notice" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".Setup_update_info" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Setup_manual" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Setup_version" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Location_User" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Life" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Grup_chat" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Grup_list" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".View_showkids" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_spot_study" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_photo" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_media" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_weekend_study" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_album" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_board" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_notice" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_home" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_home_reply" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Write_reply" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name=".Write_compose" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".Message_popup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Children_add" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="&#50868;&#54665;" android:name=".Location_driver" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="&#50724;&#49884;&#45716;&#44600;" android:name=".kid_location" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name=".Write_recompose" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="&#45800;&#50896;&#49688;&#51221;" android:name=".member_update" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="&#45800;&#50896;&#47785;&#47197;" android:name=".member_list" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:label="&#45800;&#50896;&#52628;&#44032;" android:name=".member_add" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="&#52636;&#49437; &#52404;&#53356;" android:name=".View_InCheck" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="&#52636;&#49437; &#52404;&#53356; &#48624;" android:name=".member_view" android:screenOrientation="portrait" android:theme="@style/Dialog"><nothingHere/></activity>
+        <activity android:name=".View_document" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_together" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="&#50937; &#48624;" android:name=".web_view" android:screenOrientation="portrait" android:theme="@style/Dialog"><nothingHere/></activity>
+        <activity android:name=".View_freeboard" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:name=".View_boss" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"><nothingHere/></activity>
+        <activity android:label="&#44368;&#50977;&#49373;&#54876;&#51221;&#48372; &#50937;&#48624;" android:name=".PR_view" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="&#44368;&#50977;&#49373;&#54876;&#51221;&#48372; &#48624;" android:name=".View_edu_list" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="&#44368;&#50977;&#49373;&#54876;&#51221;&#48372; &#47605;&#48624;" android:name=".View_info_location" android:screenOrientation="portrait" android:theme="@style/Dialog"><nothingHere/></activity>
+    <receiver android:name="knsoft.co.kr.bh.yiyeonmoo_tkd.C2dm_BroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="knsoft.co.kr.bh.yiyeonmoo_tkd"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="knsoft.co.kr.bh.yiyeonmoo_tkd"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <permission android:name="knsoft.co.kr.bh.yiyeonmoo_tkd.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="knsoft.co.kr.bh.yiyeonmoo_tkd.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+</manifest>

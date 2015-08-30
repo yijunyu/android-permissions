@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>com.appbody.handyNote.resource.permission.READ_DATA</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_EXTERNAL_STORAGE</name>
+  </permission>
+</permissions>

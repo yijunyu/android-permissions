@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.krug.appid">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="KRUG ID" android:logo="@drawable/krug_actionbar_icon_tablet" android:name="com.krug.appid.KrugIDApp">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="KRUG ID" android:logo="@drawable/krug_actionbar_icon_tablet" android:name="com.krug.appid.MainActivity" android:theme="@style/KrugActionBarStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:logo="@drawable/krug_actionbar_icon_tablet" android:name="com.krug.appid.AgeGateActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:logo="@drawable/krug_actionbar_icon_tablet" android:name="com.krug.appid.LoginActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:logo="@android:color/transparent" android:name="com.krug.appid.CreateAccountActivity" android:theme="@style/KrugActionBarStyle" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:logo="@android:color/transparent" android:name="com.krug.appid.LoginInfoActivity" android:theme="@style/KrugActionBarStyle" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.TutorialActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:launchMode="singleTop" android:logo="@drawable/krug_actionbar_icon_tablet" android:name="com.krug.appid.GuestHomepageActivity" android:theme="@style/KrugActionBarStyle" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:logo="@drawable/krug_actionbar_icon_tablet" android:name="com.krug.appid.KrugTypeIDActivity" android:theme="@style/KrugActionBarStyle" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:logo="@drawable/krug_actionbar_icon_tablet" android:name="com.krug.appid.KrugScanIDActivity" android:theme="@style/KrugActionBarStyle" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:logo="@drawable/krug_actionbar_icon_tablet" android:name="com.krug.appid.LoadingActivity" android:theme="@style/KrugActionBarStyle" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:logo="@android:color/transparent" android:name="com.krug.appid.CompleteAccountActivity" android:theme="@style/KrugActionBarStyle" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.krug.appid.GuestPageIDActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.AddCommentActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.AddPersonalNoteActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.LoginFormActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.GuestPageIDStoriesActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.FavoritesAndIterestsActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.MyAccountActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.ParametersActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.krug.appid.MyKrugID" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.VintagesActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.TwitterActivity" android:theme="@style/Krug.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="t4jsample" android:scheme="oauth"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.FacebookActivity" android:theme="@style/Krug.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.krug.appid.TwitterWebviewActivity" android:theme="@style/KrugActionBarStyle"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.LoginActivity" android:theme="@style/Krug.Transparent"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    </application>
+<uses-feature android:name="android.hardware.camera" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

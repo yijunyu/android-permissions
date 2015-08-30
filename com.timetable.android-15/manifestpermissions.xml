@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>com.android.alarm.permission.SET_ALARM</name>
+  </permission>
+  <permission>
+    <name>android.permission.WAKE_LOCK</name>
+  </permission>
+  <permission>
+    <name>android.permission.RECEIVE_BOOT_COMPLETED</name>
+  </permission>
+  <permission>
+    <name>android.permission.VIBRATE</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.READ_LOGS</name>
+  </permission>
+</permissions>

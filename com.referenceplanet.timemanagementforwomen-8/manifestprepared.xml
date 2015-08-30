@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.referenceplanet.timemanagementforwomen">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.pack.application.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.am.ammobsdk.activities.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.am.ammobsdk.activities.AMIActivity"><nothingHere/></activity>
+        <meta-data android:name="com.am.adlib.appId" android:value="android.85344.googleplay"><nothingHere/></meta-data>
+        <meta-data android:name="com.am.ammob.netId" android:value="1"><nothingHere/></meta-data>
+        <meta-data android:name="com.am.amazon.appId" android:value=""><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="5077000"><nothingHere/></meta-data>
+    <service android:name="com.am.ammobsdk.services.SA" android:process="com.referenceplanet.timemanagementforwomen.a"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SB" android:process="com.referenceplanet.timemanagementforwomen.b"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SC" android:process="com.referenceplanet.timemanagementforwomen.c"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SD" android:process="com.referenceplanet.timemanagementforwomen.d"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SE" android:process="com.referenceplanet.timemanagementforwomen.e"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SF" android:process="com.referenceplanet.timemanagementforwomen.f"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SG" android:process="com.referenceplanet.timemanagementforwomen.g"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SH" android:process="com.referenceplanet.timemanagementforwomen.h"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SI" android:process="com.referenceplanet.timemanagementforwomen.i"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SJ" android:process="com.referenceplanet.timemanagementforwomen.j"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SK" android:process="com.referenceplanet.timemanagementforwomen.k"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SL" android:process="com.referenceplanet.timemanagementforwomen.l"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SM" android:process="com.referenceplanet.timemanagementforwomen.m"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SN" android:process="com.referenceplanet.timemanagementforwomen.n"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SO" android:process="com.referenceplanet.timemanagementforwomen.o"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SP" android:process="com.referenceplanet.timemanagementforwomen.p"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SQ" android:process="com.referenceplanet.timemanagementforwomen.q"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SR" android:process="com.referenceplanet.timemanagementforwomen.r"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SS" android:process="com.referenceplanet.timemanagementforwomen.s"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.ST" android:process="com.referenceplanet.timemanagementforwomen.t"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SV" android:process="com.referenceplanet.timemanagementforwomen.v"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SW" android:process="com.referenceplanet.timemanagementforwomen.w"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SX" android:process="com.referenceplanet.timemanagementforwomen.x"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SY" android:process="com.referenceplanet.timemanagementforwomen.y"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SA" android:process="com.referenceplanet.timemanagementforwomen.z"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.FocusService" android:process="com.referenceplanet.timemanagementforwomen.u"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.BService"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.EDService"><nothingHere/></service>
+        </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+</manifest>

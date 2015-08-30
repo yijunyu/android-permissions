@@ -1,0 +1,87 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.apazine.asianceramics">
+    <application android:debuggable="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="AppDelegate">
+        <activity android:label="@string/app_name" android:name="com.apazine.asianceramics.activity.SplashActivity" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.apazine.asianceramics.activity.MuPDFActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="application/vnd.ms-xpsdocument"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="application/pdf"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="application/x-cbz"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.xps"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.pdf"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.cbz"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/outline_title" android:name="com.apazine.asianceramics.activity.OutlineActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout" android:label="@string/app_name" android:name="com.apazine.asianceramics.activity.LoginScreen" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout" android:label="@string/app_name" android:name="com.apazine.asianceramics.activity.DataCaptureScreen" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout" android:label="@string/app_name" android:name="com.apazine.asianceramics.activity.InstructionsScreen" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout" android:label="@string/app_name" android:name="com.apazine.asianceramics.activity.MoreInfo" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout" android:label="@string/app_name" android:name="com.apazine.asianceramics.activity.CustomPDFViewerActivity" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.apazine.asianceramics.activity.YoutubeViewerActivity" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenLayout" android:name="com.apazine.asianceramics.activity.WebLinksViewer" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.apazine.asianceramics"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.apazine.asianceramics.billing.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.apazine.asianceramics.GCMIntentService"><nothingHere/></service>
+        <service android:name="com.apazine.asianceramics.billing.BillingService"><nothingHere/></service>
+        </application>
+<permission android:name="com.apazine.asianceramics.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.apazine.asianceramics.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="org.share35.sigaocan">
+    <application android:allowBackup="true" android:configChanges="locale|orientation" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/XTheme">
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".a00coverpage" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".a01menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".a02menu"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:label="@string/app_name" android:name=".a04book"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:label="@string/app_name" android:name=".a05menu"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:label="@string/app_name" android:name=".b01about"><nothingHere/></activity>
+        <activity android:configChanges="locale" android:label="@string/app_name" android:name=".b02config"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".b03player"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".b04ShowText"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".C05StyleConf"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".C04LanguageConf"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".C03LangFour"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".B06BuyShowText"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".b07booknote"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".c01menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".c02menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".c09menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".Register"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".d00menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".d01menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".d02menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".d03webpage"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".E01menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".E02menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".E03menu"><nothingHere/></activity>
+        <activity android:configChanges="locale|orientation" android:label="@string/app_name" android:name=".D04moreapps"><nothingHere/></activity>
+        <activity android:name=".VideoSample" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".B09mark"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".B10note"><nothingHere/></activity>
+        <service android:enabled="true" android:name=".b05PlayService"><nothingHere/></service>
+        <service android:enabled="true" android:name=".b02DownService"><nothingHere/></service>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

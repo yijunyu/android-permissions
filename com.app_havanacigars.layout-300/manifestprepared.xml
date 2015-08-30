@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.app_havanacigars.layout">
+    <application android:icon="@drawable/icon_icon" android:label="@string/app_name" android:name="com.biznessapps.layout.BAcore">
+        <activity android:name="com.biznessapps.layout.views.MainView" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.biznessapps.activities.HomeScreenActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.biznessapps.activities.TwitterLoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.TwitterLoginTheme"><nothingHere/></activity>
+        <activity android:name="com.biznessapps.activities.GalleryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.biznessapps.activities.GalleryPreviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.biznessapps.activities.SingleFragmentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.PUSH_NOTIFICATION_NEW_DATA"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.biznessapps.activities.AroundUsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.biznessapps.layout.views.scanning.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.biznessapps.layout.views.map.LocationView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.paypal.android.MEP.PayPalActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.biznessapps.layout.views.loyalty.LoyaltyCardListView" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <service android:name="com.biznessapps.api.MessagesService"><nothingHere/></service>
+        <service android:name="com.biznessapps.player.PlayerService"><nothingHere/></service>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    </manifest>

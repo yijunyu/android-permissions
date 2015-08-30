@@ -1,0 +1,51 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.edupad.app.grade7.languagearts">
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/application_name" android:largeHeap="true" android:theme="@style/Theme.Transparent">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/application_name" android:name=".NavigationActivity" android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/image_displayer_activity" android:name=".ImageDisplayerActivity" android:theme="@style/FullscreenTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/score_popup_activity" android:name=".ScorePopupActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/store_activity" android:name=".StoreActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/modal_activity" android:name=".ModalActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/result_activity" android:name=".ResultController" android:theme="@style/FullscreenTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/ready_popup_activity" android:name=".ReadyPopupActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/parent_mail_activity" android:name=".ParentMailActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/feedback_activity" android:name=".FeedbackActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/player_list_activity" android:name=".PlayerListActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/add_player_activity" android:name=".AddPlayerActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/activate_license_activity" android:name=".ActivateLicenseActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/edit_player_activity" android:launchMode="singleInstance" android:name=".EditPlayerActivity" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/webview_activity" android:name=".WebViewActvity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/rating_activity" android:name=".RatingActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.facebook.LoginActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/content_list_activity" android:name=".ContentListActivity" android:theme="@style/FullscreenTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/theme_list_activity" android:name=".ThemeListActivity" android:theme="@style/FullscreenTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/login_activity" android:name=".LoginActivity" android:theme="@style/FullscreenTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name=".util.expansion.XAPKFileAlarmReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.amazon.inapp.purchasing.ResponseReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name=".util.expansion.XAPKFileDownloader"><nothingHere/></service>
+        <uses-library android:name="android.test.runner"><nothingHere/></uses-library>
+        </application>
+<instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.edupad.app.grade7.languagearts"><nothingHere/></instrumentation>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    </manifest>

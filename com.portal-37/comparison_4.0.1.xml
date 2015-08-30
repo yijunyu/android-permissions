@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.INTERNET</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+  </under-specification>
+</comparison>

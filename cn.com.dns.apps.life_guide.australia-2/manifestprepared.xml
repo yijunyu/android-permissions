@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.com.dns.apps.life_guide.australia">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".service.DnsApplication" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name=".ui.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:launchMode="singleTask" android:name=".ui.MainTabActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.SecondGuideLstActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.ShopLstActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.ShopDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.ShopCollectionLstActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.AdDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.AskForAdActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.ShopRouteSwitchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".message.ui.MessageLstActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.AboutUsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:name=".ui.HelpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <uses-library android:name="com.google.android.maps" android:required="true"><nothingHere/></uses-library>
+    </application>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

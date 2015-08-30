@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.CALL_PHONE</name>
+  </permission>
+  <permission>
+    <name>android.permission.READ_PHONE_STATE</name>
+  </permission>
+</permissions>

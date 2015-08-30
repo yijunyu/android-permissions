@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="zulu.breakout">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_activity_main" android:name="zulu.breakout.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Play"><nothingHere/></activity>
+        <activity android:name="PassLevel"><nothingHere/></activity>
+        <activity android:name="GameOverActivity"><nothingHere/></activity>
+        <activity android:name="GameWinActivity"><nothingHere/></activity>
+        <activity android:name="HighScore"><nothingHere/></activity>
+        <activity android:name="About"><nothingHere/></activity>
+        <activity android:name="SelectMode"><nothingHere/></activity>
+        <activity android:name="NextLevel"><nothingHere/></activity>
+    </application>
+</manifest>

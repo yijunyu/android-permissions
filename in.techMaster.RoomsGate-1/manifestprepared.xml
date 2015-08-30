@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" android:theme="@style/CustomTheme" package="in.techMaster.RoomsGate">
+    <application android:icon="@drawable/logo" android:label="RoomsGate" android:name="mono.android.app.Application" android:theme="@style/CustomTheme">
+        <activity android:label="TravelApp" android:name=".Activity" android:theme="@style/MyTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="TripToolsMainPage" android:name="TripToolsMainPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Weather Tool" android:name="techmaster.activities.triptools.WeatherToolCitySearch"><nothingHere/></activity>
+        <activity android:label="Flight tracker" android:name="techmaster.activities.triptools.FlightTrackerFlightDetails"><nothingHere/></activity>
+        <activity android:label="Check My Trip" android:name="techmaster.activities.triptools.CheckMyTripWebView"><nothingHere/></activity>
+        <activity android:label="Country Search" android:name="techmaster.activities.flight.FlightCountrySearch"><nothingHere/></activity>
+        <activity android:label="Hotel" android:name="techmaster.activities.hotel.HotelCitySelection"><nothingHere/></activity>
+        <activity android:label="City Search" android:name="techmaster.activities.flight.FlightCitySearch"><nothingHere/></activity>
+        <activity android:label="Round Trip" android:name="techmaster.activities.flight.FlightReturnTripResult"><nothingHere/></activity>
+        <activity android:label="My Trip" android:name="techmaster.activities.triptools.MyTripTabs"><nothingHere/></activity>
+        <activity android:label="Error Page" android:name="techmaster.activities.hotel.HotelErrorPage"><nothingHere/></activity>
+        <activity android:label="Payment Process" android:name="techmaster.activities.flight.PaymentProcess"><nothingHere/></activity>
+        <activity android:label="Booking Confirmation" android:name="techmaster.activities.flight.FlightBookingConfirmation"><nothingHere/></activity>
+        <activity android:label="Pax Review" android:name="techmaster.activities.flight.FlightPaxReview"><nothingHere/></activity>
+        <activity android:label="Destination Guide" android:name="techmaster.activities.triptools.DestinationGuideWebView"><nothingHere/></activity>
+        <activity android:label="Hotel" android:name="techmaster.activities.hotel.CustomList"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="Hotel" android:name="techmaster.activities.hotel.HotelPaymentDoneWithoutVoucher"><nothingHere/></activity>
+        <activity android:label="Hotel" android:name="techmaster.activities.hotel.HotelDetails"><nothingHere/></activity>
+        <activity android:label="Destination Guide" android:name="techmaster.activities.triptools.DestinationGuideCitySelection"><nothingHere/></activity>
+        <activity android:label="Hotel" android:name="techmaster.activities.hotel.HotelLoginTab"><nothingHere/></activity>
+        <activity android:label="Flight Search" android:name="techmaster.activities.flight.FlightSearchResult"><nothingHere/></activity>
+        <activity android:label="Flight Passenger" android:name="techmaster.activities.flight.FlightPassengerDetail"><nothingHere/></activity>
+        <activity android:label="Flight tracker" android:name="techmaster.activities.triptools.FlightTrackerAirportDetailsList"><nothingHere/></activity>
+        <activity android:label="Payment Process" android:name="techmaster.activities.hotel.HotelPaymentProcess"><nothingHere/></activity>
+        <activity android:label="SignIn/SignUp" android:name="techmaster.activities.flight.FlightLoginTabs"><nothingHere/></activity>
+        <activity android:label="Weather Tool" android:name="techmaster.activities.triptools.WeatherToolWeatherResults"><nothingHere/></activity>
+        <activity android:label="My Trip" android:name="techmaster.activities.triptools.MyTripBookingList"><nothingHere/></activity>
+        <activity android:label="Flight tracker" android:name="techmaster.activities.triptools.AirportSelection"><nothingHere/></activity>
+        <activity android:label="Hotel" android:name="techmaster.activities.hotel.HotelConfirmation"><nothingHere/></activity>
+        <activity android:label="Error Page" android:name="techmaster.activities.flight.FlightErrorPage"><nothingHere/></activity>
+        <activity android:label="About Us" android:name="techmaster.activities.customercare.AboutUs"><nothingHere/></activity>
+        <activity android:label="Hotel" android:name="techmaster.activities.hotel.HotelGuestDetailsDisplay"><nothingHere/></activity>
+        <activity android:label="Flight Search" android:name="techmaster.activities.flight.FlightSearch"><nothingHere/></activity>
+        <activity android:label="Weather Tool" android:name="techmaster.activities.triptools.WeatherToolDetails"><nothingHere/></activity>
+        <activity android:label="Flight tracker" android:name="techmaster.activities.triptools.FlightTrackerDetails"><nothingHere/></activity>
+        <activity android:icon="@drawable/logo" android:label="GTS Travel" android:name="techmaster.activities.TravelForceLiveMainPage"><nothingHere/></activity>
+        <activity android:label="Booking Confirmation" android:name="techmaster.activities.flight.FlightBookingWithOutTickect"><nothingHere/></activity>
+        <activity android:label="Check My Trip" android:name="techmaster.activities.triptools.CheckMyTripFillDetails"><nothingHere/></activity>
+        <activity android:label="Help" android:name="techmaster.activities.customercare.Help"><nothingHere/></activity>
+        <activity android:label="Hotel" android:name="techmaster.activities.hotel.HotelRoomDetails"><nothingHere/></activity>
+        <activity android:name="techmaster.activities.HomePageStarter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Error PNR" android:name="techmaster.activities.flight.FlightErrorPNR"><nothingHere/></activity>
+        <activity android:label="Airline Search" android:name="techmaster.activities.triptools.flighttracker.AirlineSearch"><nothingHere/></activity>
+        <activity android:icon="@drawable/icon" android:label="Hotel" android:name="techmaster.activities.hotel.HotelSearchPage"><nothingHere/></activity>
+        <activity android:label="Hotel" android:name="techmaster.activities.hotel.HotelGuestDetails"><nothingHere/></activity>
+        <activity android:label="Destination Guide" android:name="techmaster.activities.triptools.DestinationGuideDetails"><nothingHere/></activity>
+        <activity android:label="Error Payment" android:name="techmaster.activities.flight.PaymentError"><nothingHere/></activity>
+        <activity android:label="My Activity" android:name="techmaster.activities.customercare.FAQ"><nothingHere/></activity>
+        <activity android:label="My Trip" android:name="techmaster.activities.triptools.MyTripFareDetails"><nothingHere/></activity>
+        <activity android:label="Forgot password" android:name="techmaster.activities.triptools.mytrip.ForgotPasswordMyTrip"><nothingHere/></activity>
+        <activity android:label="Feedback" android:name="techmaster.activities.customercare.Feedback"><nothingHere/></activity>
+        <provider android:authorities="in.techMaster.RoomsGate.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

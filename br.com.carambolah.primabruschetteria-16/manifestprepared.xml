@@ -1,0 +1,88 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="br.com.carambolah.primabruschetteria">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="de.logic.util.ApplicationProvider" android:screenOrientation="portrait">
+        <activity android:label="@string/app_name" android:name="de.logic.stampr.view.SplashScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:launchMode="singleTop" android:name="de.logic.stampr.view.BaseTabActivity" android:screenOrientation="portrait" android:theme="@style/app_theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="de.logic.stampr.view.WebPageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="checking Activity for Cards" android:name="de.coeus.stampr.pushNotificationData" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.logic.stampr.view.PreferencesActivity" android:screenOrientation="portrait" android:theme="@style/no_title_bar"><nothingHere/></activity>
+        <activity android:label="@string/map_title" android:name="de.logic.stampr.view.VenuesMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/editcard_title" android:launchMode="singleTop" android:name="de.coeus.stampr.edit_card_activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/add_card_title" android:name="com.android.stampr.scan.loyaltyCardCameraCapture" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="de.coeus.stampr.show_dialog" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="Deals Detail" android:name="de.logic.stampr.view.DealsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.coeus.stampr.VirtualRedeemInfoForm" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.coeus.stampr.VirtualRedeemSecondScreen" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/add_card_title" android:name="de.coeus.stampr.loyaltycard_add_form" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/loyaltyCard_ViewMsg" android:name="de.coeus.stampr.LoyaltyCardView_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/Loyalty_Edit" android:name="de.coeus.stampr.Loyalty_EditCard_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.logic.stampr.view.TermsActivity" android:screenOrientation="portrait" android:theme="@style/no_title_bar"><nothingHere/></activity>
+        <activity android:label="@string/declaration_of_consent" android:name="de.logic.stampr.view.ConsentActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="de.logic.stampr.view.CampaignDetailsActivity" android:screenOrientation="portrait" android:theme="@style/no_title_bar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/add_card_title" android:name="de.logic.stampr.view.AddCardActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.logic.stampr.view.VenueDetails" android:screenOrientation="portrait" android:theme="@style/no_title_bar"><nothingHere/></activity>
+        <activity android:name="de.logic.stampr.view.ContentDetailsActivity" android:screenOrientation="portrait" android:theme="@style/no_title_bar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="de.logic.stampr.view.LoginActivity" android:screenOrientation="portrait" android:theme="@style/no_title_bar"><nothingHere/></activity>
+        <activity android:name="de.logic.stampr.view.SignUpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="de.logic.stampr.view.ChangePasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="de.logic.stampr.view.NotificationDialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="de.logic.stampr.view.ImageGalleryActivity" android:screenOrientation="sensor" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_api_key"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <provider android:authorities="br.com.carambolah.primabruschetteria.urbanairship.provider" android:exported="false" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider"><nothingHere/></provider>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="br.com.carambolah.primabruschetteria"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="de.logic.stampr.service.notifications.IntentReceiver"><nothingHere/></receiver>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:label="Push Notification Worker Service" android:name="com.urbanairship.push.PushWorkerService"><nothingHere/></service>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        </application>
+<permission android:name="br.com.carambolah.primabruschetteria.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="br.com.carambolah.primabruschetteria.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="br.com.carambolah.primabruschetteria.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="br.com.carambolah.primabruschetteria.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

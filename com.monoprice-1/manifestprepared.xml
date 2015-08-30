@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.monoprice">
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.monoprice.Monoprice" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.monoprice.activity.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.monoprice.activity.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_search" android:name="com.monoprice.activity.SearchActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CategoryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.SubCategoryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.SignInActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CreateAccountActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ProductListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ProductDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ProductDescriptionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ProductSpecificationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ProductFAQActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ProductGalleryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.PromotionBannerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ForgotPasswordActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ContactUsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.SupportActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ShopWithConfidenceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.PrivacyPolicyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.RefineActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CustomerReviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.PromotionProductActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CartActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.DisclaimerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.PromotionCodeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ShippingAddressActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.BillingAddressActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ConfirmOrderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ReturnPolicyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CreditCardActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.OrderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.OrderDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CallActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.NewProductActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ClearanceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CategoryFilterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.NoLogoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.NoLogoContactActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.NoLogoCustomerOrderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.FollowUsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.SocialShareActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.NotifyMeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ManageAccountActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ManageAddressActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.MultipleAddressActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CartAddressListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CartMultipleAddressActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.AddressVerificationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.ManageSecurityQuestionsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.VerifySecurityQuestionsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.monoprice.activity.CheckOrderStatusActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity"><nothingHere/></activity>
+        <activity android:name="io.card.payment.DataEntryActivity"><nothingHere/></activity>
+    <service android:exported="false" android:name="com.paypal.android.sdk.payments.PayPalService"><nothingHere/></service>
+        </application>
+<supports-screens android:largeScreens="false" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,105 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.live.wallpaper.lord.jesus">
+    <application android:icon="@drawable/icon" android:label="@string/Title">
+        <activity android:exported="true" android:label="@string/Preferences" android:name="com.live.wallpaper.lord.jesus.Preferences" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboard|keyboardHidden" android:launchMode="singleTask" android:name="com.widdit.lockScreen.activities.MainActivity" android:screenOrientation="portrait" android:taskAffinity="com.widdit" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"><nothingHere/></action>
+                <category android:name="android.intent.category.MONKEY"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:name="com.widdit.lockScreen.activities.TermsAndConditionsActivity" android:screenOrientation="portrait" android:taskAffinity="com.widdit" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.widdit.lockScreen.activities.SettingsActivity" android:screenOrientation="portrait" android:taskAffinity="com.widdit" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="PUBLISHER_ID" android:value="66975"><nothingHere/></meta-data>
+        <meta-data android:name="HOME_BASE_ID" android:value="813314"><nothingHere/></meta-data>
+    <receiver android:name="com.widdit.lockScreen.service.receivers.ScreenStateAndBootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.widdit.lockScreen.receivers.SMSNotificationsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.PhoneCallReciever">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.OutgoingPhoneCallReciever">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.NetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.BreakingMessageReceiver">
+            <intent-filter>
+                <action android:name="com.widdit.homebase.BREAKING_MESSAGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.PackageAddedReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.PackageRemovedReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.lockScreen.receivers.WidditGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="."><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.widdit.shell.AlarmReceiver"><nothingHere/></receiver>
+        <service android:label="@string/Title" android:name="com.live.wallpaper.lord.jesus.ValentinesWallpaper" android:permission="android.permission.BIND_WALLPAPER" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/live_wallpaper"><nothingHere/></meta-data>
+        </service>
+        <service android:name="com.widdit.lockScreen.service.HomeBaseService"><nothingHere/></service>
+        <service android:name="com.widdit.lockScreen.service.DataService"><nothingHere/></service>
+        <service android:name="com.widdit.lockScreen.service.BackgroundSoundService"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.software.live_wallpaper"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS" android:required="false"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    </manifest>

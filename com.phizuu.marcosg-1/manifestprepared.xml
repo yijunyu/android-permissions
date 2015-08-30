@@ -1,0 +1,126 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.phizuu.marcosg">
+    <application android:debuggable="false" android:icon="@raw/icon" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.phizuu.marcosg.HelloFacebookApplication" android:theme="@style/MyTheme">
+        <activity android:label="@string/app_name" android:name="com.phizuu.marcosg.SplashScreenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.phizuu.marcosg.MainTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.TestActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.TestActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.HomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.MoreTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.BioActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.WebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.UStreamActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.LinksActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.WorldMapView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.WorldMapInfo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.PlayUstreamActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.NewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.DisplayNews" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.VideoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.VideoDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.TwitterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.PodCastActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.FanwallActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.FanPostActivity" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.FanWallDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.FanPostReplyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.UserAccounts" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="phizuu" android:scheme="app"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.phizuu.marcosg.TwitterShare" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.PhotoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.GalleryActivityName" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.GalleryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.MusicActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.PlayMusicActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.Share_Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.FacebookShare" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.MusicDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.UpComingEvents" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.PastEvents" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.EventDisplay" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.EventsActivity_Detail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.EventsActivity_Tickets" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.EventsActivity_Rsvp" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.EventsActivity_photo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.UploadPhotoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.PlayPodcast" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.MalingListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.PhotoGalleryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.UserPhotoGalleryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.EventNewDesign" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.UserPhotoActivty" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.PlayerActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.comments.CommentsPostActivity" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.comments.CommentsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.comments.CommentsDetail" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.PhotoGalleryActivity1" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.UserPhotoGalleryActivity1" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.YouTubePlayerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.EventActivityNew"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.newArtistsActivity"><nothingHere/></activity>
+        <activity android:name="com.phizuu.marcosg.newSongsActivity"><nothingHere/></activity>
+        <activity android:name="com.socialize.ui.comment.CommentActivity"><nothingHere/></activity>
+        <activity android:name="com.socialize.ui.action.ActionDetailActivity"><nothingHere/></activity>
+        <activity android:name="com.socialize.ui.profile.ProfileActivity"><nothingHere/></activity>
+        <activity android:name="com.socialize.auth.facebook.FacebookActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.socialize.ui.SocializeLaunchActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_no_podcast" android:name="com.phizuu.marcosg.NoPodcastActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_text" android:name="com.phizuu.marcosg.MainActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_main" android:name="com.phizuu.marcosg.RegisterActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_you_tube_player" android:name="com.phizuu.marcosg.YouTubePlayer"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.example.mytwitter.MainActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.phizuu.marcosg.AndroidFacebookSample" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.example.mytwitter.TwitterOAuthActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="twitter" android:scheme="gabu"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.example.mytwitter.TweetActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_facebook" android:name="com.phizuu.marcosg.FacebookActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_twitter" android:name="com.phizuu.marcosg.TwitterWebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_twitter_login" android:name="com.phizuu.marcosg.TwitterLoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <meta-data android:name="com.crashlytics.ApiKey" android:value="15ca0c4852a27c5caf09fc8a34660c9487efcc79"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.phizuu.marcosg"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.phizuu.marcosg.GCMIntentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.phizuu.marcosg.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.phizuu.marcosg.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

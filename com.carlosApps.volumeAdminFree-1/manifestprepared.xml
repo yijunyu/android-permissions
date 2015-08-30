@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.carlosApps.volumeAdminFree">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".Control">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.carlosApps.volumeAdminFree.IconsControl"><nothingHere/></activity>
+        <receiver android:label="@string/app_name" android:name=".VolumeWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.carlosApps.volumeAdminFree.VolumeWidget.ACTION_WIDGET_VOL_DOWN"><nothingHere/></action>
+                <action android:name="com.carlosApps.volumeAdminFree.VolumeWidget.ACTION_WIDGET_VOL_UP"><nothingHere/></action>
+                <action android:name="com.carlosApps.volumeAdminFree.VolumeWidget.ACTION_WIDGET_VOL_TOOGLE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/volume_widget_provider"><nothingHere/></meta-data>
+        </receiver>
+    </application>
+</manifest>

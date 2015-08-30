@@ -1,0 +1,225 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.aloompa.summercamp">
+    <application android:icon="@drawable/launcher_icon" android:label="@string/GP_FESTIVAL_NAME" android:name="com.aloompa.summercamp.ThisApplication" android:theme="@style/FestTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/GP_FESTIVAL_NAME" android:name="com.aloompa.master.SplashPromoterActivity" android:screenOrientation="portrait" android:theme="@style/FestTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="map" android:scheme="com.aloompa.summercamp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="lineup" android:scheme="com.aloompa.summercamp"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/GP_FESTIVAL_NAME" android:launchMode="singleTop" android:name="com.aloompa.master.SplashAppActivity" android:screenOrientation="portrait" android:theme="@style/FestTheme.NoActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.promoter.AppListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.HomescreenActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.LandingActivity" android:screenOrientation="portrait" android:theme="@style/FestTheme.NoActionBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.CountDownActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.discover.DiscoverActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.discover.nowandnext.NowAndNextActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.BaseViewGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.settings.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.ProfileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.web.WebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.DefaultWebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.DefaultBaseWebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.DualViewWebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.AppCrashActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.ParkingListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.ParkingDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.map.MapAndRoadtripTabActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable_mpssp"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name=".map.ParkingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.athletes.AthletesTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.athletes.AthletesTempActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.athletes.AthleteViewGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.athletes.AthleteVideoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.athletes.RosterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.athletes.AthleteDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.athletes.LeaderBoardEventsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.athletes.LeaderBoardActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.LineupTabActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable_lssp"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.FiltersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.lineup.LineupViewGroup" android:screenOrientation="portrait">
+            <meta-data android:name="android.app.default_searchable" android:value="com.aloompa.master.lineup.LineupTabActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.RFIDUpdateActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.MyScheduleViewGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.MyScheduleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.MyScheduleSeparateActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.lineup.LineupActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.TimesAndStagesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.WhenWhereActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.TimesAndStagesViewGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.TimeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.NowPlayingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.TicketsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.TicketDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.stage.StageActivity" android:screenOrientation="portrait" android:theme="@style/FestTheme.ActionBar.Overlay"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.StageActivityOld" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.WhatsHotActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.WhatsHotViewGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.ArtistOfTheWeekActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.MoreActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.PartnersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.ProfileWebview" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.artist.ArtistDetailActivity" android:screenOrientation="portrait" android:theme="@style/FestTheme.ActionBar.Overlay"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.event.EventReviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.ArtistDetailDayPickActivity" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.ArtistSingleEventDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.ArtistDetailActivityNew" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.MultiArtistDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.ParticipantsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.ArtistFullImageActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.lineup.ArtistBioActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.retail.RetailTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.retail.ConfigurableRetailTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.retail.RetailViewGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.VendorActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.VendorBioActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.RatingHolder" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.VendorDetailMenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.VendorDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.VendorReadReviewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.VendorWriteReviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.StoreActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.ReviewMenuItemActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ReviewDialog" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.RetailersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.POIActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.ExcludedPOIActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.ExcludedPOIWhatsHotActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.poi.POIDetailActivity" android:screenOrientation="portrait" android:theme="@style/FestTheme.ActionBar.Overlay"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.AttractionsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.AttractionDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.EssentialsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.EssentialsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.RetailerDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.ReviewVendorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ReviewDialog" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.ReviewPOIActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ReviewDialog" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.retail.VendorWhatsHotActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:name="com.aloompa.master.soundcloud.SoundCloudActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.camera.CameraActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.droid4you.util.cropimage.CropImage"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.camera.PickAndCropPhotoActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.camera.FilterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.CameraActivityBasic" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.grid.GridViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.grid.MyScheduleGridViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.AccountsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.social.NewsAndSocialTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.NewsAndSocialViewGroup" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.FaqActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.faq.FaqDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.FaqQuestionsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.FaqCategoriesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.NewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.news.NewsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.TwitterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.ConnectActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.ConnectHeaderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.aloompa.master.social.PostActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Accounts"><nothingHere/></activity>
+        <activity android:name="com.aloompa.master.social.NewPostActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Accounts"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.TwitterLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.TwitterMyAccountLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.FacebookLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.TwitterFriendsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.RooOperateActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.social.ForumActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.BasicMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.v2.profest.ProFestMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.v2.prolocation.ProLocationShareMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.v2.proroadtrip.ProRoadstripMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.aloompa.master.map.MapTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.AddReviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.AddStopActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.LocationDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.ReadReviewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.map.RoadtripActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.TVActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:name="com.aloompa.master.radio.RadioActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.radio.RadioHistoryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.radio.RequestActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.weather.WeatherActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.groupme.demo.GroupMeDemo" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.groupme.sdk.activity.AuthorizeActivity" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.groupme.sdk.activity.PinEntryActivity" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.groupme.sdk.activity.GroupCreateActivity" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.groupme.sdk.activity.AddContactActivity" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.groupme.sdk.activity.GroupDetailActivity" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.photobingo.PhotoBingoLandingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.photobingo.PhotoBingoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.zxing.QRCodeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.aloompa.master.zxing.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="jim.h.common.android.lib.zxing.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="21683c1de5642fc76598e0617f0e79e9e564846c"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC9A4ch3BljG5_nzpCtXIeulC-73yTm88A"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <provider android:authorities="com.aloompa.summercamp.MPSSP" android:name="com.aloompa.summercamp.MPSSP"><nothingHere/></provider>
+        <provider android:authorities="com.aloompa.summercamp.LSSP" android:name="com.aloompa.summercamp.LSSP"><nothingHere/></provider>
+        <provider android:authorities="com.aloompa.summercamp.urbanairship.provider" android:exported="false" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider"><nothingHere/></provider>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.aloompa.summercamp"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.aloompa.master.util.NotificationReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.aloompa.master.urbanairship.UAIntentReceiver"><nothingHere/></receiver>
+        <service android:name=".radio.RadioService"><nothingHere/></service>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:label="Push Notification Worker Service" android:name="com.urbanairship.push.PushWorkerService"><nothingHere/></service>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        <service android:enabled="@bool/GP_SLACKER_RADIO_SERVICE" android:name="com.slacker.service.SlackerRadioServiceExternal"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.aloompa.bonaroo.radio.RadioService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.aloompa.summercamp.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.aloompa.summercamp.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

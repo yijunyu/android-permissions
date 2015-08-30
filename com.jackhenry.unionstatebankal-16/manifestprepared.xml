@@ -1,0 +1,50 @@
+<manifest xmlns:ns0="http://schemas.android.com/apk/res/android" ns0:versionCode="16" ns0:versionName="@string/version" package="com.jackhenry.unionstatebankal">
+    <application ns0:icon="@drawable/icon" ns0:label="@string/app_name" ns0:name=".GoDoughApp" ns0:theme="@style/AppTheme">
+        <activity ns0:configChanges="keyboard|keyboardHidden|orientation|screenSize" ns0:label="@string/app_name" ns0:launchMode="singleTop" ns0:name=".Home" ns0:screenOrientation="portrait" ns0:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action ns0:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category ns0:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity ns0:label="Location Search" ns0:name=".LocationSearch"><nothingHere/></activity>
+        <activity ns0:label="Location Result" ns0:name=".LocationResult"><nothingHere/></activity>
+        <activity ns0:label="Location Details" ns0:name=".LocationDetail"><nothingHere/></activity>
+        <activity ns0:label="Location Details" ns0:name=".LocationDetailMap"><nothingHere/></activity>
+        <activity ns0:label="Location Result" ns0:name=".LocationResultList"><nothingHere/></activity>
+        <activity ns0:name=".datastorage.UnbrandedPreferences"><nothingHere/></activity>
+        <activity ns0:configChanges="keyboard|keyboardHidden" ns0:label="@string/app_name" ns0:name=".rda.DepositCheckActivity" ns0:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action ns0:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data ns0:host="rda" ns0:scheme="jha"><nothingHere/></android-data>
+            <category ns0:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity ns0:label="@string/app_name" ns0:name=".rda.DepositDetailsActivity"><nothingHere/></activity>
+        <activity ns0:label="@string/app_name" ns0:name=".rda.AccountListActivity">
+            <meta-data ns0:name="android.support.PARENT_ACTIVITY" ns0:value="android.app.ListActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity ns0:label="@string/app_name" ns0:name=".rda.TransactionListActivity"><nothingHere/></activity>
+        <activity ns0:label="@string/title_activity_image_view" ns0:name=".rda.ImageViewActivity"><nothingHere/></activity>
+        <activity ns0:label="@string/title_activity_image_view" ns0:name=".rda.CheckViewActivity"><nothingHere/></activity>
+        <activity ns0:label="@string/title_deposit_success_view" ns0:name=".rda.DepositSuccessActivity"><nothingHere/></activity>
+        <activity ns0:name="com.jackhenry.unionstatebankal.NoNetworkActivity" ns0:screenOrientation="portrait"><nothingHere/></activity>
+        <activity ns0:launchMode="singleTop" ns0:name="com.jackhenry.unionstatebankal.SessionTimeoutWarningActivity" ns0:screenOrientation="portrait" ns0:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <meta-data ns0:name="com.google.android.maps.v2.API_KEY" ns0:value="AIzaSyAnp4XqasBQtfJ5eEhpwSfR6CA3pc5589Q"><nothingHere/></meta-data>
+    <uses-library ns0:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission ns0:name="com.jackhenry.unionstatebankal.permission.MAPS_RECEIVE" ns0:protectionLevel="signature"><nothingHere/></permission>
+    <permission ns0:name="com.jackhenry.unionstatebankal.permission.CONTENT_PROVIDER" ns0:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens ns0:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-feature ns0:name="android.hardware.camera" ns0:required="false"><nothingHere/></uses-feature>
+    <uses-feature ns0:name="android.hardware.camera.autofocus" ns0:required="false"><nothingHere/></uses-feature>
+    <uses-feature ns0:glEsVersion="0x20000" ns0:required="true"><nothingHere/></uses-feature>
+    <uses-permission ns0:name="com.jackhenry.unionstatebankal.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission ns0:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission ns0:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission ns0:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission ns0:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission ns0:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission ns0:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission ns0:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission ns0:name="android.permission.CAMERA" ns0:protectionLevel="normal"><nothingHere/></uses-permission>
+    </manifest>

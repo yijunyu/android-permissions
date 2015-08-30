@@ -1,0 +1,90 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="modbus.tesla.scada">
+    <application android:icon="@drawable/teslaicon3" android:label="@string/app_name" android:theme="@style/CustomActionBarTheme">
+        <activity android:label="@string/app_name" android:name=".M">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".CreateServer"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="AddObjectActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Design"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".TagProvider"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="DisplayScreens"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".EventTab"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".EventLog"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".EventList"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".EventMap"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ServersActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".AddressSpaceActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ScreensActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.scripts.IOScriptSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.scripts.IIOScriptSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.scripts.SwitchOnScheduleScriptSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.Settings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ScreenSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.UDTSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.TextSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ValueSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ValueStringSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.EditValueSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.EditStringSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.BinaryTextSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ValueTextSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.VenlouversSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.BinaryImageSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ImageSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.WebViewSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.BinaryWebViewSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ToggleButtonSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ImageButtonSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ButtonSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.BarSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.JumpButtonSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.CallPopupSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.FanSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ValveSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.TankSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.PipeSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.PumpSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ConveyorSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.CentrifugalPumpSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.LightSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.AnalogMeterSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.DigitalMeterSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.Trend2Settings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.SliderSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.CounterSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.SelectorSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.WarningLabelSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.LightButtonSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.IndicatorSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.TankCylinderVertSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.TankCylinderHorSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.AirBlowerSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.PointerSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.VoiceInputSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.SwitchSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.LineSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ContourSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.MultiTrendSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.MultiTagSettingsTab" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.MultiTagSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.AddEvent"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.BoolEventTagSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.ValueEventTagSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.AnalogEventTagSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".settings.MapSettings"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ScreenDesign"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ScriptDesign"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="ScreenDisplay"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".FileSelectActivity"><nothingHere/></activity>
+    <provider android:authorities="modbus.service.provider.ScadaTeslaProvider" android:name="modbus.tesla.provider.ScadaTeslaProvider"><nothingHere/></provider>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.oratech.gainpeace">
+    <application android:icon="@drawable/gainpeace" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".WhatIsIslam">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".CommonQuestions"><nothingHere/></activity>
+        <activity android:name=".HotTopics"><nothingHere/></activity>
+        <activity android:name=".TopicView"><nothingHere/></activity>
+        <activity android:name=".GainPeaceAudio"><nothingHere/></activity>
+        <activity android:name=".GainPeaceVideo"><nothingHere/></activity>
+        <activity android:name=".FreeStuff"><nothingHere/></activity>
+    </application>
+</manifest>

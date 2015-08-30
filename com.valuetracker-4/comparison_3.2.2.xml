@@ -1,0 +1,8 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.CAMERA</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

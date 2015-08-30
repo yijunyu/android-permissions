@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="baryu.free">
+    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/baryufree" android:label="@string/app_name" android:theme="@style/Theme.Sherlock">
+        <activity android:icon="@drawable/baryufree" android:label="@string/app_name" android:name="baryu.free.Icons">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="com.anddoes.launcher.THEME"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="com.gau.go.launcherex.theme.gowidget"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="com.fede.launcher.THEME_ICONPACK"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="org.adw.launcher.THEMES"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="com.gau.go.launcherex.theme"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/baryufree" android:label="@string/app_name" android:name="baryu.free.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="baryu.free.LauncherActivity"><nothingHere/></activity>
+        <activity android:name="baryu.free.Contact"><nothingHere/></activity>
+        <activity android:finishOnCloseSystemDialogs="true" android:icon="@drawable/wallpaper" android:label="@string/app_name" android:name="baryu.free.Wallpaper" android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="baryu.free.IconRequest"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"><nothingHere/></uses-permission>
+    </manifest>

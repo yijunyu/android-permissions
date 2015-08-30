@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="jp.co.weing.armurakami">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="jp.co.weing.artt.ArttApp">
+        <activity android:clearTaskOnLaunch="true" android:label="@string/app_name" android:name="jp.co.weing.artt.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:name="jp.co.weing.artt.MenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.CameraActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.MapsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.SpotLocationTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.SpotLocationCategoryListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.SpotLocationTagListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.SpotListTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.SpotListCategoryListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.SpotListTagListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.SpotListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="jp.co.weing.artt.SpotActivity" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.WebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="jp.co.weing.artt.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

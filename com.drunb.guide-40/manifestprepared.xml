@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.drunb.guide">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="App" android:theme="@style/AppTheme">
+        <activity android:launchMode="singleTop" android:name="SplashActivity_" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.drunb.guide.MainActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name=".wxapi.WXEntryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="SettingsActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="true" android:hardwareAccelerated="false" android:launchMode="singleTop" android:name=".ui.content.DetailWrapperActivity_" android:screenOrientation="portrait" android:theme="@style/ContentWhiteTheme"><nothingHere/></activity>
+        <activity android:name="com.umeng.fb.ui.SendFeedback" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.umeng.fb.ui.FeedbackConversations"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:name="com.umeng.fb.ui.FeedbackConversation" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="RecommendsActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="ShareActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name="com.tencent.weibo.webview.OAuthV2AuthorizeWebView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="SoHuLoginActivity_" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="CommentsActivity_" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <meta-data android:name="UMENG_APPKEY" android:value="50c7fd2552701569500000ea"><nothingHere/></meta-data>
+        <meta-data android:name="UMENG_CHANNEL" android:value="googleplay"><nothingHere/></meta-data>
+        <receiver android:name=".NetWorkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.umeng.common.net.DownloadingService" android:process=":DownloadingService"><nothingHere/></service>
+        <service android:name="BookMsgService_"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.com.auxdio">
+    <application android:icon="@drawable/app" android:label="@string/app_name" android:name="cn.com.auxdio.tools.GlobalApplication">
+        <activity android:label="@string/app_name" android:name="cn.com.auxdio.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".RemoteAudioActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".channel.ChannelActivity"><nothingHere/></activity>
+        <activity android:name=".control.ControlActivity"><nothingHere/></activity>
+        <activity android:name=".settings.SettingsActivity"><nothingHere/></activity>
+        <activity android:name=".settings.items.LanguageActivity"><nothingHere/></activity>
+        <activity android:name=".settings.items.NetworkActivity"><nothingHere/></activity>
+        <activity android:name=".settings.items.ModelActivity"><nothingHere/></activity>
+        <activity android:name=".settings.items.DeviceActivity"><nothingHere/></activity>
+        <activity android:name=".settings.items.ThemeActivity"><nothingHere/></activity>
+        <activity android:name=".settings.items.QueryActivity"><nothingHere/></activity>
+        <activity android:name=".settings.items.AboutActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

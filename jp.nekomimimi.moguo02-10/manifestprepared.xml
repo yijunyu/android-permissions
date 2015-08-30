@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="jp.nekomimimi.moguo02">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:layout_height="fill_parent" android:layout_width="fill_parent" android:name=".mogumogu" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="GameFeat" android:name="jp.basicinc.gamefeat.android.sdk.view.GameFeatAppActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="GameFeat" android:name="jp.basicinc.gamefeat.android.sdk.view.GameFeatAppChildActivity" android:screenOrientation="sensor"><nothingHere/></activity>
+        <meta-data android:name="gamefeat_site_id" android:value="520"><nothingHere/></meta-data>
+        <receiver android:enabled="true" android:exported="false" android:name="jp.basicinc.gamefeat.android.sdk.receiver.GameFeatBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

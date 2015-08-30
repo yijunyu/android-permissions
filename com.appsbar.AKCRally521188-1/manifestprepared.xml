@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.appsbar.AKCRally521188">
+    <application android:icon="@drawable/icon" android:label="@string/AppName" android:name=".Utilities.MyApplication">
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".AppIDActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Games.WackAMoleActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Games.MemoryGame"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Games.Jigsaw"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.ContactActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.WebViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.SocialLinksActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.PhotoGalleryActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.PhotoCoverFlowActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.PhotoGalleryFullActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.RSSActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.RSSActivity2"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.MediaGridActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.Media2ColumnActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.MediaListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.MediaFullscreenActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.MediaCoverFlowActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.CouponActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.MenuActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.FormsActivity" android:windowSoftInputMode="stateUnchanged"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.DiscographyActivity"><nothingHere/></activity>
+        <activity android:name=".Activities.CalendarActivity"><nothingHere/></activity>
+        <activity android:name=".Activities.EventsListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.EventsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.UserAppsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.UserNotificationsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.MenuItemFullActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.InterstitialActivity" android:noHistory="true"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Activities.ShoppingCartActivity" android:noHistory="true" android:windowSoftInputMode="stateUnchanged"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.spotoption.android.fivestarsoptiontar">
+    <application android:allowBackup="false" android:icon="@drawable/louncher_icon" android:label="Five Stars Option" android:name="com.spotoption.net.MainAppSingletone">
+        <activity android:name="com.spotoption.net.SplashActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:hardwareAccelerated="false" android:name="com.spotoption.net.BinaryOptionTradeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:name="com.spotoption.net.SixtySecondTradeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:name="com.spotoption.net.OneTouchOptionTradeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:name="com.spotoption.net.PairsOptionTradeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:name="com.spotoption.net.BaseTradeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.spotoption.net.MainTabActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.spotoption.net.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.spotoption.net.OpenAccountActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.spotoption.net.MyAccountActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.spotoption.net.PersonalDetailsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.spotoption.net.PositionsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.spotoption.net.SettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.spotoption.net.DepositFundsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="com.spotoption.net.SocialSettingsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:exported="true" android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.mobileapptracker.Tracker">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

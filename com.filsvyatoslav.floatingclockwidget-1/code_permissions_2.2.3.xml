@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/wei/mark/standout/StandOutWindow.java</file>
+    <line>1222</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/wei/mark/standout/StandOutWindow.java</file>
+    <line>1132</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

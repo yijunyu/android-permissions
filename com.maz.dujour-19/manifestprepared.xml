@@ -1,0 +1,69 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.maz.dujour">
+    <application android:allowBackup="false" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.maz.ui.MagAppZineApp" android:theme="@style/AppTheme">
+        <activity android:name="com.maz.ui.MagAppZine" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:launchMode="singleTask" android:name="com.maz.ui.PublicationGridActivity" android:noHistory="false" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="dujour"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.maz.reader.MazReader" android:noHistory="false" android:parentActivityName="com.maz.ui.PublicationGridActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.maz.ui.PublicationGridActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation" android:name="com.maz.ui.SettingsActivity" android:noHistory="false"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.maz.ui.VideoPlayer" android:theme="@style/PlayerTheme"><nothingHere/></activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.maz.ui.MazWebActivity" android:noHistory="false" android:theme="@style/SlidingTheme"><nothingHere/></activity>
+        <activity android:name="com.mazdigital.mazsdk.StreamPrefsActivity" android:theme="@style/mazsdk_SettingsActionBarTheme"><nothingHere/></activity>
+        <activity android:name="com.mazdigital.mazsdk.StreamHelpActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.mazdigital.mazsdk.StreamActivity" android:theme="@style/mazsdk_activity_theme"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.mazdigital.mazsdk.MazActivity" android:theme="@style/mazsdk_activity_theme"><nothingHere/></activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.mazdigital.mazsdk.StreamWebActivity" android:noHistory="false" android:theme="@style/mazsdk_SlidingTheme"><nothingHere/></activity>
+        <activity android:name="com.mazdigital.mazsdk.StreamLoginActivity" android:theme="@style/mazsdk_loginactivity_theme"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+    <provider android:authorities="com.maz.dujour.maz.provider" android:exported="false" android:name="com.maz.provider.PublicationProvider"><nothingHere/></provider>
+        <provider android:authorities="com.maz.dujour.streamsdk.provider.attachment" android:exported="true" android:name="com.mazdigital.mazsdk.CachedContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.maz.dujour.streamsdk.provider.clips" android:exported="false" android:name="com.mazdigital.mazsdk.ClipsContentProvider"><nothingHere/></provider>
+        <receiver android:name="com.maz.inapp.billing.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.ads.conversiontracking.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.amazon.inapp.purchasing.ResponseReceiver">
+            <intent-filter>
+                <action android:name="com.amazon.inapp.purchasing.NOTIFY" android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.maz.googlepushnotification.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.maz.androidapp"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.maz.inapp.billing.BillingService"><nothingHere/></service>
+        <service android:name="com.maz.googlepushnotification.GcmIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.maz.dujour.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.maz.dujour.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

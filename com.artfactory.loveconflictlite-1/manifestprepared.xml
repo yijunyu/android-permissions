@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.ansca.corona">
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="LoveConflict Android Lite" android:name="com.ansca.corona.CoronaApplication">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="LoveConflict Android Lite" android:launchMode="singleTask" android:name="com.ansca.corona.CoronaActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.ansca.corona.CameraActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.ansca.corona.VideoActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="IntroFlow" android:name="com.openfeint.internal.ui.IntroFlow" android:theme="@style/OFNestedWindow"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Dashboard" android:name="com.openfeint.api.ui.Dashboard" android:theme="@style/OFNestedWindow"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Settings" android:name="com.openfeint.internal.ui.Settings" android:theme="@style/OFNestedWindow"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="NativeBrowser" android:name="com.openfeint.internal.ui.NativeBrowser" android:theme="@style/OFNestedWindow"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.papaya.social.SocialRegistrationActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.papaya.base.EntryActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.papaya.web.WebActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.papaya.web.ExternalWebActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.papaya.chat.FriendsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.papaya.chat.ChatActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.papaya.utils.CountryCodeActivity"><nothingHere/></activity>
+        <activity android:name="com.adknowledge.superrewards.ui.activities.SRPaymentMethodsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.adknowledge.superrewards.ui.activities.SRDirectPaymentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.adknowledge.superrewards.ui.activities.SROfferPaymentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.adknowledge.superrewards.ui.activities.SRWebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.zong.android.engine.web.ZongWebView" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.artfactory.loveconflictlite.PAYMENT"><nothingHere/></action>
+                <action android:name="com.adknowledge.superrewards.ui.activities.SRZongPaymentActivity"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.artfactory.loveconflictlite.files" android:name="com.ansca.corona.FileContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.artfactory.loveconflictlite.ppy_cache" android:name="com.papaya.social.PPYSocialContentProvider"><nothingHere/></provider>
+        <receiver android:name="com.ansca.corona.purchasing.GoogleStoreBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.zong.android.engine.process.ZongServiceProcess"><nothingHere/></service>
+    </application>
+<uses-feature android:glEsVersion="0x10001"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

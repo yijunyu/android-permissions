@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="hello.pack.namespace">
+    <application android:icon="@drawable/brain" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".MainScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".HelpScreen"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

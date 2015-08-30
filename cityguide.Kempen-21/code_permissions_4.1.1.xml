@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/cityguide/Kempen/CityGuideActivity.java</file>
+    <line>230</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/cityguide/Kempen/CityGuideActivity.java</file>
+    <line>57</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/cityguide/Kempen/CityGuideActivity.java</file>
+    <line>66</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/cityguide/Kempen/CityGuideActivity.java</file>
+    <line>84</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

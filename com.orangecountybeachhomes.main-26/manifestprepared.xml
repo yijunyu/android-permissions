@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.orangecountybeachhomes.main">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.lizbroenrealestate.main.ExuroMarketApp">
+        <activity android:name="com.exuroapps.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.lizbroenrealestate.main.LandingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.SignUpActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.TermsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.PrivacyActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.TutorialActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.MainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.FilterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.FilterSelectActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.AboutMeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.HelpActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.ContactRealtorActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.HomeNewsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.PhotoShowActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.MortgageProMy" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.MortgageProCalcActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.MortgageCalcActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.MortgagePro" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.ProfileActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.ContactActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.lizbroenrealestate.main.ViaFacebookActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.dickcrawfordrealtor.twitter.PostOnTwitterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="callback" android:scheme="x-oauthflow-twitter"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.android.twitter.PrepareRequestTokenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBTSEE2SkBE_LG9Mw7oBl1rJX_0F1tU8N4"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    </application>
+    <permission android:name="com.exuroapps.main.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.exuroapps.main.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    </manifest>

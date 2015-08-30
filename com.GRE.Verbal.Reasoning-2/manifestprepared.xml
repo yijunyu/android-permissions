@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.GRE.Verbal.Reasoning">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="Verbal Reasoning Tester" android:name=".GRE_Verbal_ReasoningActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="select a unit" android:name=".test">
+            <intent-filter>
+                <action android:name="android.intent.action.test"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name=".questioncontent">
+            <intent-filter>
+                <action android:name="android.intent.action.questioncontent"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

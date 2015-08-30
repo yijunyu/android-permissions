@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="net.softcad.android.searchabledict">
+    <application android:icon="@drawable/ic_dictionary" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.example.android.searchabledict.SearchableDictionary">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:finishOnTaskLaunch="true" android:name="com.example.android.searchabledict.WordActivity"><nothingHere/></activity>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/title_activity_words_with_origin" android:name="com.example.android.searchabledict.WordsWithOrigin"><nothingHere/></activity>
+        <activity android:finishOnTaskLaunch="true" android:label="@string/title_activity_start_app" android:name="com.example.android.searchabledict.StartAppActivity"><nothingHere/></activity>
+    <meta-data android:name="android.app.default_searchable" android:value=".SearchableDictionary"><nothingHere/></meta-data>
+        <provider android:authorities="com.example.android.searchabledict.DictionaryProvider" android:name="com.example.android.searchabledict.DictionaryProvider"><nothingHere/></provider>
+        </application>
+</manifest>

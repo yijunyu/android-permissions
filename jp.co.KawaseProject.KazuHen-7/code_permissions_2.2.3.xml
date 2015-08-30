@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/jp/co/KawaseProject/common/network/CSThread.java</file>
+    <line>68</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

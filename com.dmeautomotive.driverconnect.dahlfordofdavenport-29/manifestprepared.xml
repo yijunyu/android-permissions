@@ -1,0 +1,104 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dmeautomotive.driverconnect.dahlfordofdavenport">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.dmeautomotive.driverconnect.MainApp" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.dmeautomotive.driverconnect.ui.activity.SplashScreenActivity" android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AddCarActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AddCarByUserInfoActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AddCarByVinActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AddCarManuallyActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AdditionalUserInfoActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AppointmentAddCarActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AppointmentContactInfoActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AppointmentDatesActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AppointmentLocationActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AppointmentMaintenanceActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AppointmentSelectCarActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AppointmentServiceActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.AppointmentSummaryActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.CarPrepopResultsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.CarRegistrationSearchActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ImageGalleryActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ForgotPasswordActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.LoginActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.LoyaltyDetailsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.MainActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.MessagesActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.MyCarsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.MyAccountActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.PartsServiceActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.PrepaidMaintenanceActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.RecallsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.RecallDetailsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.RequestQuoteActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.SelectPreferredStoreActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ServiceHistoryActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ServiceHistoryDetailsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ShowroomActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ShowroomCarInventoryActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ShowroomDetailsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ShowroomSearchResultsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.SpecialOffersActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.SavedSearchesActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ImageGalleryActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ViewImageGalleryActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.StoreContactActivity" android:theme="@style/ContactScreen"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.StoreDetailsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.StoreLocationsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.TermsActivity"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.ToolsActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.dmeautomotive.driverconnect.ui.activity.TutorialActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.dmeautomotive.driverconnect.ui.activity.VinHelpActivity"><nothingHere/></activity>
+        <activity android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/maps_api_key"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"><nothingHere/></meta-data>
+    <provider android:authorities="com.dmeautomotive.driverconnect.dahlfordofdavenport.urbanairship.provider" android:exported="false" android:multiprocess="true" android:name="com.urbanairship.UrbanAirshipProvider"><nothingHere/></provider>
+        <receiver android:name="com.urbanairship.CoreReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.dmeautomotive.driverconnect.receivers.PushNotificationReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.urbanairship.push.GCMPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.dmeautomotive.driverconnect.dahlfordofdavenport"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.dmeautomotive.driverconnect.services.DmeWebService"><nothingHere/></service>
+        <service android:name="com.dmeautomotive.driverconnect.services.LocationService"><nothingHere/></service>
+        <service android:name="com.dmeautomotive.driverconnect.services.TimerService"><nothingHere/></service>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService"><nothingHere/></service>
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService"><nothingHere/></service>
+        </application>
+<permission android:name="com.dmeautomotive.driverconnect.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.dmeautomotive.driverconnect.dahlfordofdavenport.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.dmeautomotive.driverconnect.dahlfordofdavenport.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.dmeautomotive.driverconnect.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

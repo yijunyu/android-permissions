@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="app.besttv">
+    <application android:icon="@drawable/icon" android:theme="@style/app_theme">
+        <activity android:label="Best TV" android:name="app.besttv.TabSample" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="app.besttv.ArrowsActivity"><nothingHere/></activity>
+        <activity android:name="app.besttv.OptionsActivity"><nothingHere/></activity>
+        <activity android:name="app.besttv.tanitim"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Yay&#305;n" android:name="app.besttv.HelloInterruptVideoStream" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

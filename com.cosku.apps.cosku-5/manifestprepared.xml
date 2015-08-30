@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cosku.apps.cosku">
+    <application android:allowBackup="true" android:hardwareAccelerated="false" android:icon="@drawable/cosku" android:label="@string/app_name" android:largeHeap="true" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:label="@string/app_name" android:name="com.cosku.apps.cosku.Acilis">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="RaftanKitapGetir" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.cosku.apps.cosku.PDFReaderAct" android:theme="@android:style/Animation.Activity"><nothingHere/></activity>
+        <activity android:name="com.cosku.apps.cosku.FileList" android:theme="@style/myDialog"><nothingHere/></activity>
+        <activity android:name="com.cosku.apps.cosku.KitapAktivasyon" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+    </application>
+<supports-screens android:largeScreens="true" android:normalScreens="true" android:requiresSmallestWidthDp="400" android:smallScreens="false" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

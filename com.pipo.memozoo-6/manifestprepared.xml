@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pipo.memozoo">
+    <application android:icon="@drawable/memo_zoo_ico" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <activity android:label="@string/title_activity_main" android:name="com.pipo.memozoo3.Logo_inicio_activity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_main" android:name="com.pipo.memozoo3.Menu_animales_activity_dib" android:screenOrientation="landscape">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.pipo.memozoo3.Logo_inicio_activity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_main" android:name="com.pipo.memozoo3.Ayuda_zoo_activity" android:screenOrientation="landscape">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.pipo.memozoo3.Logo_inicio_activity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/titulo_parejas" android:name="com.pipo.memozoo3.Parejas_activity" android:screenOrientation="landscape">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.pipo.memozoo3.Logo_inicio_activity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/titulo_parejas" android:name="com.pipo.memozoo3.Opina_activity" android:screenOrientation="landscape">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.pipo.memozoo3.Logo_inicio_activity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/titulo_parejas" android:name="com.pipo.memozoo3.Creditos_activity" android:screenOrientation="landscape">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.pipo.memozoo3.Logo_inicio_activity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/titulo_parejas" android:name="com.pipo.memozoo3.Zoo_micro_activity" android:screenOrientation="landscape">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.pipo.memozoo3.Logo_inicio_activity"><nothingHere/></meta-data>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

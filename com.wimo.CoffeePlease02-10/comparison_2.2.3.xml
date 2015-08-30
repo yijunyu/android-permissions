@@ -1,0 +1,11 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.SEND_SMS</permission>
+    <permission>android.permission.READ_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.INSTALL_PACKAGES</permission>
+    <permission>android.permission.CALL_PHONE</permission>
+    <permission>android.permission.RECORD_AUDIO</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

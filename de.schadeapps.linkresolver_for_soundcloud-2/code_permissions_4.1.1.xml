@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/soundcloud/api/ApiWrapper$3.java</file>
+    <line>394</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/de/schadeapps/linkresolver_for_soundcloud/HelpActivity.java</file>
+    <line>19</line>
+    <permissions/>
+  </call>
+</calls>

@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.thes.teppitgame">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.thes.teppitgame.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_game" android:name="com.thes.teppitgame.GameActivity" android:screenOrientation="behind">
+&gt;
+<nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_game_over" android:name="com.thes.teppitgame.GameOverActivity" android:screenOrientation="behind">
+&gt;
+<nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_customize" android:name="com.thes.teppitgame.CustomizeActivity" android:screenOrientation="behind">
+&gt;
+<nothingHere/></activity>
+        <activity android:label="@string/title_activity_credits" android:name="com.thes.teppitgame.CreditsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_buy_lives" android:name="com.thes.teppitgame.BuyLivesActivity"><nothingHere/></activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/FB_ID"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/GOOGLE_ID_REL"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        </application>
+<meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"><nothingHere/></meta-data>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

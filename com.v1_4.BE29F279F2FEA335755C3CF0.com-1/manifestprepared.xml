@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.v1_4.BE29F279F2FEA335755C3CF0.com">
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="AppDelegate" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name=".Act_Home" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".Screen_About" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".Screen_CustomHTML" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".Screen_CustomText" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".Screen_CustomURL" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Screen_QuizMultipleChoice" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Screen_QuizScores" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Screen_RSSReader" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Screen_ShareFacebook" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Screen_ShareTwitter" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Screen_SubMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Screen_Video" android:screenOrientation="sensor"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Screen_SingleImage" android:screenOrientation="sensor"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

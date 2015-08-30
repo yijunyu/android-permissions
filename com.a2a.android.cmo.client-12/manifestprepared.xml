@@ -1,0 +1,37 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.a2a.android.cmo.client">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".util.ControlApplication">
+        <activity android:label="@string/app_name" android:name=".activitys.Dispatcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.P2APaymentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.P2PPaymentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.SplashScreenActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.HelpExternalActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.ChangePasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.HelpActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.MerchantListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:launchMode="standard" android:name=".activitys.RegistrationDeviceEnterCodeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.RegistrationEnterMobileActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.RegistrationWelcomeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.LoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.HomeMenuActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.OnlineNewsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.GeneralSettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.Report" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name=".activitys.SettingOfListTrans"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.TermsDialog" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:keepScreenOn="true" android:label="@string/app_name" android:name=".activitys.atm_locator" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+    </application>
+<supports-screens android:anyDensity="true"><nothingHere/></supports-screens>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>f
+<uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    </manifest>

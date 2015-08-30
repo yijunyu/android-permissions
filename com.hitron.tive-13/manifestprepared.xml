@@ -1,0 +1,107 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hitron.tive">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.StartActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.IntroActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenIntroLoginActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.p2p.P2PLoginActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.LiveViewerActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.LocalReplayListActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.LocalReplayViewerActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.P2PLiveViewerActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.RemoteReplayActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.remotesetup.RemoteSetupActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.remotesetup.RemoteSetupStreamActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.remotesetup.RemoteSetupStreamTapActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.remotesetup.RemoteSetupImageActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.device.remotesetup.RemoteSetupAudioActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.devicelist.MainActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.devicelist.MainLocalActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.devicelist.MainP2PActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.group.LayoutViewerActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenAddDeviceActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenEditDeviceActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenGroupLiveViewerActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenGroupSelectDeviceActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenGroupSetupActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenMainListActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenRegistIDActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenRemoteSetupDeviceActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenRemoteSetupDevicePWActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenSetUserPasswordActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenSingleLiveViewerActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.incen.IncenUpdateDevicePasswordActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.SetupActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.AboutActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.ExportActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.ImportActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="text/xml"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.P2PSetupLoginActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.P2PServerSetupActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.SelectFileActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.SelectExportDataActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.ManageExportActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.SelectExportCameraActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.P2PSignUpActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.intro.setup.P2PAccountActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.ManageActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.ManageDeviceActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.ManageLayoutActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.ManageRecorderActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.DiscoveryActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.MultipleSelectDeviceActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.ModifyDeviceActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.ModifyLayoutActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.ModifyRecorderActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.management.P2PManageDeviceActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.notification.NotificationActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.hitron.tive.activity.notification.NotificationAlertDialogActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.recorder.RecorderViewLiveActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.recorder.RecorderViewRemoteReplayActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.recorder.RecorderOneChViewLiveActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.activity.recorder.remotesetup.RecorderRemoteSetupActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.remotesearch.RemoteSearchActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.remotesearch.RemoteEventSearchActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.remotesearch.RemoteCalendarSearchActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.remotesearch.RemoteDateTimeSearchActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.remotesearch.RemoteEventSearchFilterActivity" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.remotesearch.RecorderRemoteSearchActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.remotesearch.RecorderRemoteCalendarSearchActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.TiveSnapshotViewerActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.p2p.P2PIntroActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.p2p.P2PMainActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.p2p.P2PLiveActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.SelectDeviceActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.hitron.tive.ViewerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hitron.tive.StorageActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.hitron.tive"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.hitron.tive.GCMIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.hitron.tive.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="com.hitron.tive.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    </manifest>

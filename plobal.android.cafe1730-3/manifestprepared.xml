@@ -1,0 +1,69 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="plobal.android.cafe1730">
+    <application android:allowBackup="true" android:icon="@drawable/app_logo" android:label="@string/app_name" android:name="plobal.android.cafe1730.Plobal" android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+        <activity android:label="@string/app_name" android:name="plobal.android.cafe1730.SplashScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="plobal.android.cafe1730.PlobalFragementActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.WhatsUpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.AboutClientActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.AboutPlobalActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.DiscussionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.TrendingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.AskQuestionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.LoyalityActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.ReservationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.ChatRoom" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.UserProfile_Plobal" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.GoogleMapViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.ClientProfile_Plobal" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.HelpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.TopUserDialog" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.AgreeDialog" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.MenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.ChangeCityActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.ZoomImageDisplayActivity" android:theme="@style/Theme.DimTransparentBackground"><nothingHere/></activity>
+        <activity android:name="plobal.android.cafe1730.NotificationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="ZoomImageViewActivity"><nothingHere/></activity>
+        <activity android:name="PostNowActivity"><nothingHere/></activity>
+        <activity android:name="SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="GalleryActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="PagerImagesShowActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="NotificationDailogActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyA20cWBp1y-mPpp_xNrfMuWZXGkMZm4t-g"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="plobal.android.cafe1730"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="plobal.android.cafe1730.GCMIntentService"><nothingHere/></service>
+        <service android:enabled="true" android:name="plobal.android.cafe1730.networkInfo.PlobalService"><nothingHere/></service>
+        </application>
+<permission android:name="plobal.android.cafe1730.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="plobal.android.cafe1730.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

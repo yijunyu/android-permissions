@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.maghills.findacab">
+    <application android:icon="@drawable/findacabbox_icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation" android:name="com.maghills.findacab.Splash" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.maghills.findacab.Terms" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_get_location" android:name="com.maghills.findacab.GetLocationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="ShowCabsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_show_details" android:name="com.maghills.findacab.ShowDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="SetCabRating" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

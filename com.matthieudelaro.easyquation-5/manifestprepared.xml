@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.matthieudelaro.easyquation">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher_gris3" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.matthieudelaro.easyquation.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_equation5" android:name="com.matthieudelaro.easyquation.Equation5" android:parentActivityName="com.matthieudelaro.easyquation.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.matthieudelaro.easyquation.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_equation4" android:name="com.matthieudelaro.easyquation.Equation4" android:parentActivityName="com.matthieudelaro.easyquation.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.matthieudelaro.easyquation.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_equation3" android:name="com.matthieudelaro.easyquation.Equation3" android:parentActivityName="com.matthieudelaro.easyquation.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.matthieudelaro.easyquation.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_equation2" android:name="com.matthieudelaro.easyquation.Equation2" android:parentActivityName="com.matthieudelaro.easyquation.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.matthieudelaro.easyquation.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_operations_complexes" android:name="com.matthieudelaro.easyquation.OperationsComplexes" android:parentActivityName="com.matthieudelaro.easyquation.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.matthieudelaro.easyquation.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_basic" android:name="com.matthieudelaro.easyquation.BasicActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_racines_niemes_complexes" android:name="com.matthieudelaro.easyquation.RacinesNiemesComplexes" android:parentActivityName="com.matthieudelaro.easyquation.OperationsComplexes">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.matthieudelaro.easyquation.OperationsComplexes"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_puissances_de_complexes" android:name="com.matthieudelaro.easyquation.PuissancesDeComplexes" android:parentActivityName="com.matthieudelaro.easyquation.OperationsComplexes">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.matthieudelaro.easyquation.OperationsComplexes"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_basic_computing" android:name="com.matthieudelaro.easyquation.BasicComputingActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_settings" android:name="com.matthieudelaro.easyquation.SettingsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_basic_back" android:name="com.matthieudelaro.easyquation.BasicBackActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_tutorial" android:name="com.matthieudelaro.easyquation.TutorialActivity" android:parentActivityName="com.matthieudelaro.easyquation.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.matthieudelaro.easyquation.MainActivity"><nothingHere/></meta-data>
+        </activity>
+    </application>
+<uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    </manifest>

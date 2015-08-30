@@ -1,0 +1,9 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="me.montecode.zakolikozvoni">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="me.montecode.zakolikozvoni.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name="me.montecode.zakolikozvoni.WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetap"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:name="me.montecode.zakolikozvoni.WidgetIntentReciever">
+            <intent-filter>
+                <action android:name="stevyhacker.zakolikozvoni.intent.action.UPDATE_WIDGET"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetap"><nothingHere/></meta-data>
+        </receiver>
+    </application>
+</manifest>

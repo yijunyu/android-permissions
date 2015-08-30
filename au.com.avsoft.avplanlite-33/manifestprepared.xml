@@ -1,0 +1,97 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="au.com.avsoft.avplanlite">
+    <application android:icon="@drawable/avplan_lite_rounded_corners_centred_icon_144px" android:label="AvPlan Lite" android:name="mono.android.app.Application" android:theme="@style/AppTheme">
+        <activity android:label="PDFView" android:name="com.artifex.mupdfdemo.MuPDFActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="application/vnd.ms-xpsdocument"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="application/pdf"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="application/x-cbz"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.xps"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.pdf"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="file"><nothingHere/></android-data>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.cbz"><nothingHere/></android-data>
+                <android-data android:host="*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="PDFView" android:name="com.artifex.mupdfdemo.OutlineActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="PDF Print" android:name="com.artifex.mupdfdemo.PrintDialogActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="avplanxamarinandroid.MainActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="avplanxamarinandroid.OpeningActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+&#160;	<activity android:label="@string/app_name" android:name="avplanxamarinandroid.DataDownloadMap"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="avplanxamarinandroid.WeatherActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="avplanxamarinandroid.TerminalsDialog" android:theme="@android:style/Theme.Holo.Dialog.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dropbox.sync.android.DbxAuthActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.dropbox.client2.android.AuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="db-poxpsy2scgwfxr7"><nothingHere/></android-data>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="WeatherDetailActivity" android:name="avplanxamarinandroid.WeatherDetailActivity"><nothingHere/></activity>
+        <activity android:label="SubscriptionsWebActivity" android:name="avplanxamarinandroid.SubscriptionsWebActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDT7GDq2jH_NMBQRjZR5Uj6Vg8PRD1eUXo"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <provider android:authorities="au.com.avsoft.avplanlite.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    <service android:enabled="true" android:exported="false" android:label="Dropbox Sync" android:name="com.dropbox.sync.android.DbxSyncService"><nothingHere/></service>
+        </application>
+<permission android:name="avplan_xamarin_android.avplan_xamarin_android.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="avplan_xamarin_android.avplan_xamarin_android.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    </manifest>

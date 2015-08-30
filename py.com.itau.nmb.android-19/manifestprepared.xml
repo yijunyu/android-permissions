@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="py.com.itau.nmb.android">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="py.com.itau.nmb.android.ItauNMBApplication" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="py.com.itau.nmb.android.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.MainItauActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.AdsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.AdsDetailActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.ATMsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.ATMsDetailActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.ATMsDetailMapActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.LoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.HomeActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.InfoActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.AccountsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.AccountDetailActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.LoansActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.CardsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.CardSelectRewardsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.CardRewardsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.CategoriesActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.TxActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.StringSelectorActivity" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.CCPAmountSelectorActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.OptionSelectorActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.TxConfActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.TxResultActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.CardMenuActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.GeneralMenuActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.CCPActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.CellCarrierPaymentActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.ExchangeActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.AccountSelectorActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_credit_account_selector" android:name="py.com.itau.nmb.android.CreditAccountSelectorActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.NewAccountActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="py.com.itau.nmb.android.activity.ExchangeTigoActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_maracanazo" android:name="py.com.itau.nmb.android.Maracanazo"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps" android:required="true"><nothingHere/></uses-library>
+        </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="anime.photo.funs">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="jp.maru.mrd.astawall.MrdAstaWallActivity" android:screenOrientation="unspecified"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Anime" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="jp.live_aid.aid.DEFAULT_CREATIVE_STYLE" android:value="POPUP_IMAGE"><nothingHere/></meta-data>
+        </activity>
+    <receiver android:enabled="true" android:exported="true" android:name="jp.maru.mrd.CvReceiver">
+            <intent-filter>
+                <action android:name="jp.maru.mrd.ACTION_CV"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="jp.maru.mrd.CvReporter"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/en/test/competence/istqb/fundation/developer/android/Exam$MyCount.java</file>
+    <line>502</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/en/test/competence/istqb/fundation/developer/zoom/LongPressZoomListener$1.java</file>
+    <line>48</line>
+    <permissions>
+      <permission>
+        <name>android.permission.VIBRATE</name>
+      </permission>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

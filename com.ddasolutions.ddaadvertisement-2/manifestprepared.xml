@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ddasolutions.ddaadvertisement">
+    <application android:allowBackup="true" android:icon="@drawable/ic_app_launcher_icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.HomePageActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.MediaActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.MediaBaseActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.MediaVideoActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.HelpActivityStartUp" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.AudioListActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.GridActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.BrandsSelectionActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.WallpaperActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:isScrollContainer="false" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.TabsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.ConfirmationPageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.RefundActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.UserUpdateActivity" android:screenOrientation="portrait" android:theme="@style/ActionBar.Theme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.ddasolutions.ddaadvertisement.SearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:name="com.dda.socialcomponent.twitter.VerifyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="journalist-eg" android:scheme="oauth"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.ddasolutions.ddaadvertisement.pushNotificationClient.CustomGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.ddasolutions.ddaadvertisement"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ddasolutions.ddaadvertisement.pushNotificationClient.PushNotificationBroadCastReceiver">
+            <intent-filter>
+                <action android:name="com.ddasolutions.ddaadvertisement.pushnotifications.DISPLAY_MESSAGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.ddasolutions.ddaadvertisement.pushNotificationClient.GCMIntentService"><nothingHere/></service>
+    </application>
+<permission android:name="com.ddasolutions.ddaadvertisement.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.ddasolutions.ddaadvertisement.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

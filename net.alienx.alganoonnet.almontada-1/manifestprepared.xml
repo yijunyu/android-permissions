@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="net.alienx.alganoonnet.almontada">
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:hardwareAccelerated="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="net.alienx.alganoonnet.forumhome.ForumHome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="net.alienx.alganoonnet.almontada.NewBrodCast" android:theme="@style/Theme.bordcastwindow"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="net.alienx.alganoonnet.almontada.Register_Forum"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="net.alienx.alganoonnet.cp.Profile_privacy"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="net.alienx.alganoonnet.pm.Pm"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="net.alienx.alganoonnet.album.Album"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="net.alienx.alganoonnet.album.Album_Picture"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:name="net.alienx.alganoonnet.member.Member"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.alienx.alganoonnet.poll.New_Poll" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.alienx.alganoonnet.thread.New_Thread" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.alienx.alganoonnet.forumdisplay.ForumDisplay"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.alienx.alganoonnet.post.Post_ViewEdit"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.alienx.alganoonnet.post.New_Post" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.alienx.alganoonnet.post.Edit_Post" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="net.alienx.alganoonnet.showthread.ShowThread"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.alienx.alganoonnet.cp.Profile_edit"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.alienx.alganoonnet.cp.Profile_options"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="net.alienx.alganoonnet.cp.Profile_edit_login"><nothingHere/></activity>
+        <receiver android:enabled="true" android:exported="false" android:name="net.alienx.alganoonnet.almontada.Service_Never_Killed" android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:description="@string/app_service_notification_name" android:enabled="true" android:icon="@drawable/ic_launcher" android:name="net.alienx.alganoonnet.almontada.Service_Notification"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_PROCESS_LIMIT"><nothingHere/></uses-permission>
+    </manifest>

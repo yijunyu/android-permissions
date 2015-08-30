@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.fi7140.godough">
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.jackhenry.godough.core.GoDoughApp" android:theme="@style/AppTheme">
+        <activity android:name="com.jackhenry.godough.core.login.SplashActivity" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jackhenry.godough.core.login.LoginActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_enrollment_terms" android:name="com.jackhenry.godough.core.login.EnrollmentFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_t_and_c" android:name="com.jackhenry.godough.core.login.TermsAndConditionsFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/security_title" android:name="com.jackhenry.godough.core.login.MFAActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.jackhenry.godough.core.home.HomeFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_accounts" android:name="com.jackhenry.godough.core.activities.TransactionListActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_ach" android:name="com.jackhenry.godough.core.ach.ACHFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:name="com.jackhenry.godough.core.ach.ACHDetailFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_alerts" android:name="com.jackhenry.godough.core.alerts.AlertsFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_alert_detail" android:name="com.jackhenry.godough.core.alerts.AlertDetailActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_bill_payments" android:name="com.jackhenry.godough.core.billpay.BillPayFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_cards" android:launchMode="singleTop" android:name="com.jackhenry.godough.core.cards.CardActionsFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_cards_status" android:name="com.jackhenry.godough.core.cards.CardStatusFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:name="com.jackhenry.godough.core.cards.CardsListFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:name="com.jackhenry.godough.core.cards.CardActionSubmitFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.jackhenry.godough.core.cards.ManageCardsFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:name="com.jackhenry.godough.core.p2p.P2PFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/title_add_person" android:name="com.jackhenry.godough.core.p2p.P2PAddPersonFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_locations" android:name="com.jackhenry.godough.core.locations.LocationsFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/title_location_search" android:name="com.jackhenry.godough.core.locations.LocationZipFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/title_location_search" android:name="com.jackhenry.godough.core.locations.LocationCityFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_locations" android:name="com.jackhenry.godough.core.locations.LocationResultsFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/title_location_detail" android:name="com.jackhenry.godough.core.locations.LocationDetailFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_make_deposit" android:name="com.jackhenry.godough.core.rda.DepositFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_make_deposit" android:name="com.jackhenry.godough.core.rda.DepositCheckFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_make_deposit" android:name="com.jackhenry.godough.core.rda.DepositStatusFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_make_deposit" android:launchMode="singleTop" android:name="com.jackhenry.godough.core.rda.DepositReviewFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_view_check" android:name="com.jackhenry.godough.core.rda.DepositCheckViewFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:screenOrientation="sensorLandscape"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_transfers" android:name="com.jackhenry.godough.core.transfers.TransfersFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_wires" android:name="com.jackhenry.godough.core.wires.WiresFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_wires" android:name="com.jackhenry.godough.core.wires.WiresTabbedFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:name="com.jackhenry.godough.core.wires.WireDetailFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_accounts" android:name="com.jackhenry.godough.core.accounts.AccountsFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="@string/activity_title_account_transactions" android:name="com.jackhenry.godough.core.accounts.AccountTransactionsFragmentActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:label="Check Image" android:name="com.jackhenry.godough.core.rda.ImageViewActivity" android:permission="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.jackhenry.godough.core.session.SessionTimeoutWarningActivity" android:noHistory="true" android:permission="com.jackhenry.godough.core.permission.ACTIVITY" android:theme="@style/ActivityDialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.jackhenry.godough.core.rda.CheckCaptureCameraActivity" android:screenOrientation="landscape" android:theme="@style/Theme.Sherlock.NoActionBar"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDdn2cR16TJofc3vHttS2zyw7G0oLI1IUw"><nothingHere/></meta-data>
+        </application>
+    <permission android:name="com.jackhenry.godough.core.permission.ACTIVITY" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.jackhenry.godough.core.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.jackhenry.godough.core.permission.ACTIVITY"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" android:protectionLevel="normal"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.jackhenry.godough.core.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

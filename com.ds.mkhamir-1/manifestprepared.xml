@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ds.mkhamir">
+    <application android:icon="@drawable/icon_pro" android:label="&#1605;&#1602;&#1607;&#1609; &#1575;&#1604;&#1575;&#1605;&#1610;&#1585;" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:label="&#1605;&#1602;&#1607;&#1609; &#1575;&#1604;&#1575;&#1605;&#1610;&#1585;" android:name="com.ds.mkhamir.sp" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="&#1605;&#1602;&#1607;&#1609; &#1575;&#1604;&#1575;&#1605;&#1610;&#1585;" android:name="com.ds.mkhamir.co1" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:name="com.ds.mkhamir.sm" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="&#1605;&#1602;&#1607;&#1609; &#1575;&#1604;&#1575;&#1605;&#1610;&#1585;" android:name="com.ds.mkhamir.co" android:screenOrientation="landscape" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:name="com.ds.mkhamir.videoplayer" android:screenOrientation="landscape"><nothingHere/></activity>
+    <provider android:authorities="com.drama.whateverbcrmkhamair" android:name="com.ds.mkhamir.crmkhamair"><nothingHere/></provider>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

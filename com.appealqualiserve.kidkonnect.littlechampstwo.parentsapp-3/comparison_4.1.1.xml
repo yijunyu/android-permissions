@@ -1,0 +1,23 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CHANGE_NETWORK_STATE</permission>
+    <permission>android.permission.WRITE_OWNER_DATA</permission>
+    <permission>android.permission.READ_CALENDAR</permission>
+    <permission>android.permission.CAMERA</permission>
+    <permission>android.permission.WRITE_CALENDAR</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.C2D_MESSAGE</permission>
+    <permission>android.permission.NFC</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.WRITE_CONTACTS</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.READ_USER_DICTIONARY</permission>
+    <permission>android.permission.READ_SOCIAL_STREAM</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+  </under-specification>
+</comparison>

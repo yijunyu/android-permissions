@@ -1,0 +1,83 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="uk.co.southwestheatingsolutions.heatapp">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="uk.co.southwestheatingsolutions.heatapp.NexhoApplication" android:theme="@style/MyTheme">
+        <activity android:label="@string/app_name" android:name="uk.co.southwestheatingsolutions.heatapp.SplashScreen" android:noHistory="true" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="uk.co.southwestheatingsolutions.heatapp.NexhoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.TabBar" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SecondaryTabBar" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.MenuSelectZone" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.FavoritesMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="config" android:name="uk.co.southwestheatingsolutions.heatapp.Configuration" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="config" android:name="uk.co.southwestheatingsolutions.heatapp.ProgramsMain" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.TemperatureMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.PercentageMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.LoadMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.ConfigZone" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.ConfigEditZone" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.ConfigDeleteZone" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.ConfigAssocActList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.ConfigTemperatureAlert" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.ConfigPercentageAlert" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.ConfigLoadAlert" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.HeatingPowerControl" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.programs.ProgOptionsMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.programs.ProgDaySelection" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.programs.ProgAdvancedMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.programs.ProgAdvancedMenuTemp" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.programs.ProgAdvancedMenuPercentage" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.programs.ProgAdvancedMenuLoad" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.programs.ProgAssocTimetableAdvancedMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.MenuSelectSensor" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.MenuSelectScene" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SceneSelectionList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SceneEditSelectionList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SceneItemsConfigurationMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SceneItemsZoneSelectionList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SceneActivation" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SceneAssociation" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SecTabBarConfigureMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SensorSelectionList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SensorZoneSelection" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SensorAddNewZone" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SensorDeleteSelectionList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SensorEditSelectionList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SensorActivation" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.Settings" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SettingsCommunications" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SettingsPasswords" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.SettingsNotifications" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.HelpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:launchMode="singleInstance" android:name="org.acra.CrashReportDialog" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.consumption.ConsumptionMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.consumption.ChartView" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="uk.co.southwestheatingsolutions.heatapp.consumption.CurrencyMenu" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+    <receiver android:name="com.google.android.c2dm.C2DMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="uk.co.southwestheatingsolutions.heatapp"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="uk.co.southwestheatingsolutions.heatapp"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="uk.co.southwestheatingsolutions.heatapp.C2DMReceiver"><nothingHere/></service>
+        </application>
+<permission android:name="uk.co.southwestheatingsolutions.heatapp.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="uk.co.southwestheatingsolutions.heatapp.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    </manifest>

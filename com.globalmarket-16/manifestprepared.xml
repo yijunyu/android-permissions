@@ -1,0 +1,111 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.globalmarket">
+    <application android:icon="@drawable/gmc_like_logo" android:label="@string/app_name" android:name="com.globalmarket.utils.MyApplication">
+        <activity android:label="@string/app_name" android:name="com.globalmarket.activity.Welcome_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Notification Details" android:name="com.globalmarket.androidpn.client.NotificationDetailsActivity"><nothingHere/></activity>
+        <activity android:label="Notification Settings" android:name="com.globalmarket.androidpn.client.NotificationSettingsActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".activity.Login_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="standard" android:name="com.globalmarket.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name="com.android.browser.BrowserActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".activity.Register_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name=".activity.AreaChoose_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name=".activity.NewFollowers_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name=".activity.CategoryChoose_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.Edit_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".activity.SelectAtActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".activity.Recommend_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:name=".activity.Forget_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".activity.Set_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".activity.Like_Activity" android:parentActivityName="com.globalmarket.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name=".activity.Search_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTransparentTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Search_Product_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Search_Products_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Manufacture_Result_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Buyer_Result_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Product_Info" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Status_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Comment_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Comments_Activity" android:parentActivityName="com.globalmarket.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.globalmarket.activity.Personal_Home_Page" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.globalmarket.activity.Manufacturer_Basic_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="com.globalmarket.activity.ManufaturerProfile_Activity" android:parentActivityName="com.globalmarket.activity.Manufacturer_Basic_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Gms_Abstract" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.About_Us_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Copyright_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Agreement_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.Send_Inquire_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.Inquiry_Activity" android:parentActivityName="com.globalmarket.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Inquir_Info_Activity" android:parentActivityName="com.globalmarket.activity.Inquiry_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.globalmarket.activity.Chat_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.ProductsActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.HotTopic_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.AtMeActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.TopicDetail_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.ActivityListActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.ActivityDetailActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.Topic_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.ViewPicActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="standard" android:name="com.globalmarket.activity.NewViewPicActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.ProfileSetting_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.VisiableToChoose_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.FollowingDetail_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.ViewUploadPicActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.Whatsnew" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.Contacts_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.ContactsFollower_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.FollowingGroup_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.LanguageSet_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.AddFriendsActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.InviteFriendsActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.ScanQRCodeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.MyScanCodeActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.globalmarket.activity.WebView_Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.globalmarket.activity.HotTopicList_Activity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.umeng.update.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.globalmarket.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.globalmarket.activity.ShareViaLikeActivity" android:screenOrientation="portrait" android:theme="@style/LikeTheme" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="cn.sharesdk.framework.ShareSDKUIShell" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="Adapter" android:value="com.globalmarket.adapter.MyAuthorizeAdapter"><nothingHere/></meta-data>
+        </activity>
+        <meta-data android:name="UMENG_APPKEY" android:value="5195f89d56240b15af046759"><nothingHere/></meta-data>
+        <meta-data android:name="UMENG_CHANNEL" android:value="googleplay"><nothingHere/></meta-data>
+    <service android:enabled="true" android:label="GMCLikeService" android:name="com.globalmarket.androidpn.client.NotificationGmcLikeService">
+            <intent-filter>
+                <action android:name="com.globalmarket.androidpn.client.NotificationGmcLikeService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.common.net.DownloadingService" android:process=":DownloadingService"><nothingHere/></service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    </manifest>

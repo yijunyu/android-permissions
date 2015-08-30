@@ -1,0 +1,103 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.concapps.theahoogervorst">
+    <application android:icon="@drawable/app_icon" android:label="Sportcentrum" android:name="mono.android.app.Application" android:theme="@style/CustomTheme">
+        <activity android:label="BranchChooseActivity" android:name="cmsapp.BranchChooseActivity"><nothingHere/></activity>
+        <activity android:label="ContentDetailActivity" android:name="cmsapp.ContentDetailActivity"><nothingHere/></activity>
+        <activity android:label="ContentListActivity" android:name="cmsapp.ContentListActivity"><nothingHere/></activity>
+        <activity android:label="GenericCarousselActivity" android:name="cmsapp.GenericCarousselActivity"><nothingHere/></activity>
+        <activity android:label="GenericChooseActivity" android:name="cmsapp.GenericChooseActivity"><nothingHere/></activity>
+        <activity android:label="GymExerciseDetailActivity" android:name="cmsapp.GymExerciseDetailActivity"><nothingHere/></activity>
+        <activity android:label="GymExerciseGroupActivity" android:name="cmsapp.GymExerciseGroupActivity"><nothingHere/></activity>
+        <activity android:label="GymExerciseHomeActivity" android:name="cmsapp.GymExerciseHomeActivity"><nothingHere/></activity>
+        <activity android:label="GymExerciseFunxtionHomeActivity" android:name="cmsapp.GymExerciseFunxtionHomeActivity"><nothingHere/></activity>
+        <activity android:label="GymExerciseListActivity" android:name="cmsapp.GymExerciseListActivity"><nothingHere/></activity>
+        <activity android:label="GymExerciseWorkoutDetailListActivity" android:name="cmsapp.GymExerciseWorkoutDetailListActivity"><nothingHere/></activity>
+        <activity android:label="GymExerciseWorkoutListActivity" android:name="cmsapp.GymExerciseWorkoutListActivity"><nothingHere/></activity>
+        <activity android:label="GymLessonHomeActivity" android:name="cmsapp.GymLessonHomeActivity"><nothingHere/></activity>
+        <activity android:label="GymStopwatchActivity" android:name="cmsapp.GymStopwatchActivity"><nothingHere/></activity>
+        <activity android:label="GymTestsAnaerobeActivity" android:name="cmsapp.GymTestsAnaerobeActivity"><nothingHere/></activity>
+        <activity android:label="GymTestsAnaerobeAdviceActivity" android:name="cmsapp.GymTestsAnaerobeAdviceActivity"><nothingHere/></activity>
+        <activity android:label="GymTestsBmiActivity" android:name="cmsapp.GymTestsBmiActivity"><nothingHere/></activity>
+        <activity android:label="GymTestsHeartActivity" android:name="cmsapp.GymTestsHeartActivity"><nothingHere/></activity>
+        <activity android:label="GymTestsHeartAdviceActivity" android:name="cmsapp.GymTestsHeartAdviceActivity"><nothingHere/></activity>
+        <activity android:label="GymTestsHomeActivity" android:name="cmsapp.GymTestsHomeActivity"><nothingHere/></activity>
+        <activity android:label="GymTipsFitnessActivity" android:name="cmsapp.GymTipsFitnessActivity"><nothingHere/></activity>
+        <activity android:label="GymTipsGuidelinesActivity" android:name="cmsapp.GymTipsGuidelinesActivity"><nothingHere/></activity>
+        <activity android:label="GymTipsGuidelinesDetailActivity" android:name="cmsapp.GymTipsGuidelinesDetailActivity"><nothingHere/></activity>
+        <activity android:label="GymTipsHomeActivity" android:name="cmsapp.GymTipsHomeActivity"><nothingHere/></activity>
+        <activity android:label="GymTipsNutritionActivity" android:name="cmsapp.GymTipsNutritionActivity"><nothingHere/></activity>
+        <activity android:label="GymPersonalInfoActivity" android:name="cmsapp.GymPersonalInfoActivity"><nothingHere/></activity>
+        <activity android:label="GymLoginActivity" android:name="cmsapp.GymLoginActivity"><nothingHere/></activity>
+        <activity android:label="MoreActivity" android:name="cmsapp.MoreActivity"><nothingHere/></activity>
+        <activity android:label="SocialMediaActivity" android:name="cmsapp.SocialMediaActivity"><nothingHere/></activity>
+        <activity android:name="cmsapp.SplashActivity" android:noHistory="true" android:theme="@style/Theme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="cmsapp.MainActivity"><nothingHere/></activity>
+        <activity android:label="GymLeefstijlClubActivity" android:name="cmsapp.GymLeefstijlClubActivity"><nothingHere/></activity>
+        <activity android:label="OnlineAfsprakenActivity" android:name="cmsapp.OnlineAfsprakenActivity"><nothingHere/></activity>
+        <activity android:label="MenuViewActivity" android:name="cmsapp.MenuViewActivity"><nothingHere/></activity>
+        <activity android:label="FilterHomeActivity" android:name="cmsapp.FilterHomeActivity"><nothingHere/></activity>
+        <activity android:label="WebViewPageActivity" android:name="cmsapp.WebViewPageActivity"><nothingHere/></activity>
+        <activity android:label="MapViewActivity" android:name="cmsapp.MapViewActivity"><nothingHere/></activity>
+        <activity android:label="InfoFormActivity" android:name="cmsapp.InfoFormActivity"><nothingHere/></activity>
+        <activity android:label="ShareActivity" android:name="cmsapp.ShareActivity"><nothingHere/></activity>
+        <activity android:label="SocialLoginActivity" android:name="cmsapp.SocialLoginActivity"><nothingHere/></activity>
+        <activity android:label="UserSettingsActivity" android:name="cmsapp.UserSettingsActivity"><nothingHere/></activity>
+        <activity android:label="ChatActivity" android:name="cmsapp.ChatActivity"><nothingHere/></activity>
+        <activity android:label="ChatBoxActivity" android:name="cmsapp.ChatBoxActivity"><nothingHere/></activity>
+        <activity android:label="interestzones" android:name="cmsapp.InterestZonesActivity"><nothingHere/></activity>
+        <activity android:label="" android:name="cmsapp.GymLessonSignupActivity"><nothingHere/></activity>
+        <activity android:label="" android:name="cmsapp.GymLessonSignupOverviewActivity"><nothingHere/></activity>
+        <activity android:label="FormActivity" android:name="cmsapp.CustomFormActivity"><nothingHere/></activity>
+        <activity android:label="BuienradarActivity" android:name="cmsapp.BuienradarActivity"><nothingHere/></activity>
+        <activity android:label="" android:name="cmsapp.AppStarterActivity"><nothingHere/></activity>
+        <activity android:label="" android:name="cmsapp.AppViewerActivity"><nothingHere/></activity>
+        <activity android:label="" android:name="cmsapp.DesignViewerActivity"><nothingHere/></activity>
+        <activity android:label="" android:name="cmsapp.GamePuzzleActivity"><nothingHere/></activity>
+        <activity android:label="GymFitnessVoordeelpasActivity" android:name="cmsapp.GymFitnessVoordeelpasActivity"><nothingHere/></activity>
+        <activity android:label="GameMemoryActivity" android:name="cmsapp.GameMemoryActivity"><nothingHere/></activity>
+        <activity android:label="TechnoGymContentActivity" android:name="cmsapp.TechnoGymContentActivity"><nothingHere/></activity>
+        <activity android:label="TechnoGymActivity" android:name="cmsapp.TechnoGymActivity"><nothingHere/></activity>
+        <activity android:label="FlyoutMenuActivity" android:name="cmsapp.FlyoutMenuActivity"><nothingHere/></activity>
+        <activity android:label="GymZwemscoreActivity" android:name="cmsapp.GymZwemscoreActivity"><nothingHere/></activity>
+        <activity android:label="GymSynergy360Activity" android:name="cmsapp.GymSynrgy360Activity"><nothingHere/></activity>
+        <activity android:label="CustomForm_ApplyJobsActivity" android:name="cmsapp.CustomForm_ApplyJobsActivity"><nothingHere/></activity>
+        <activity android:label="ContactActivity" android:name="cmsapp.ContactActivity"><nothingHere/></activity>
+        <activity android:label="GymWebLoginActivity" android:name="cmsapp.GymWebLoginActivity"><nothingHere/></activity>
+        <activity android:label="FavoritesActitivy" android:name="cmsapp.FavoritesActitivy"><nothingHere/></activity>
+        <activity android:label="GymKlikschemaActivity" android:name="cmsapp.GymKlikschemaLoginActivity"><nothingHere/></activity>
+        <activity android:label="GymKlikschemaActivity" android:name="cmsapp.GymKlikschemaWebActivity"><nothingHere/></activity>
+        <activity android:label="CustomForm_ApplyCarerixActivity" android:name="cmsapp.CustomForm_ApplyCarerixActivity"><nothingHere/></activity>
+        <activity android:label="Web Authenticator" android:name="xamarin.auth.FormAuthenticatorActivity"><nothingHere/></activity>
+        <activity android:label="Web Authenticator" android:name="xamarin.auth.WebAuthenticatorActivity"><nothingHere/></activity>
+        <activity android:label="Share" android:name="xamarin.social.ShareActivity"><nothingHere/></activity>
+        <provider android:authorities="com.concapps.theahoogervorst.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    <receiver android:name="pushsharp.clientsample.monoforandroid.SampleBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.concapps.theahoogervorst"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.concapps.theahoogervorst"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gcm.intent.RETRY"><nothingHere/></action>
+                <category android:name="com.concapps.theahoogervorst"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="pushsharp.clientsample.monoforandroid.GCMIntentService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.concapps.theahoogervorst.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+<uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.concapps.theahoogervorst.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

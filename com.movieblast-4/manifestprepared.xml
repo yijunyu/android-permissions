@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.movieblast">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.movieblast.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_movies" android:name="com.movieblast.MoviesListActivity" android:parentActivityName="android.app.ListActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="android.app.ListActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_movie_detail" android:name="com.movieblast.MovieDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.movieblast.Movies" android:parentActivityName="android.support.v4.app.FragmentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="android.support.v4.app.FragmentActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.movieblast.Main" android:parentActivityName="com.actionbarsherlock.app.SherlockFragmentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.actionbarsherlock.app.SherlockFragmentActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.movieblast.SearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_settings_activitysa" android:name="com.movieblast.SettingsActivitysa" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_exception" android:name="com.movieblast.DetailException" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_search_exception" android:name="com.movieblast.SearchException" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_genre" android:name="com.movieblast.GenreActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_genre_exception" android:name="com.movieblast.GenreException" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.Light.DarkActionBar"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_main" android:name="com.movieblast.MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_trailer" android:name="com.movieblast.TrailerActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

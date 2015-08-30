@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="kr.co.graminter.kidsfestival">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="kr.co.graminter.kidsfestival.KidsFestivalApp" android:theme="@style/AppBaseTheme">
+        <activity android:label="@string/app_name" android:name="kr.co.graminter.kidsfestival.ui.IntroActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Sherlock.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="kr.co.graminter.kidsfestival.ui.PassActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="kr.co.graminter.kidsfestival.ui.MainActivity_back" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="kr.co.graminter.kidsfestival.ui.MainActivity" android:screenOrientation="portrait" android:theme="@style/StyledIndicators" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <receiver android:enabled="true" android:name="kr.co.graminter.kidsfestival.service.StartReciver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:name="kr.co.graminter.kidsfestival.service.NotifiyService">
+            <intent-filter>
+                <action android:name="kr.co.graminter.kidsfestival.NotifiyService"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </service>
+        <service android:name="kr.co.graminter.kidsfestival.service.StartService">
+            <intent-filter>
+                <action android:name="kr.co.graminter.kidsfestival.StartService"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </service>
+        </application>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    </manifest>

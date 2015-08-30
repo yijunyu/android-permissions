@@ -1,0 +1,9 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+  </under-specification>
+</comparison>

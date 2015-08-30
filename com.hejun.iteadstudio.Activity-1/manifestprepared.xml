@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hejun.iteadstudio.Activity">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".LampActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="DeviceListActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="MyMainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="AddDeviceActivity" android:theme="@style/Theme.FloatActivity"><nothingHere/></activity>
+        <activity android:name="LampActivity" android:theme="@style/Theme.FloatActivity"><nothingHere/></activity>
+        <activity android:name="ExplainActivity" android:theme="@style/Theme.FloatActivity"><nothingHere/></activity>
+        <activity android:name="AboutActivity"><nothingHere/></activity>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"><nothingHere/></uses-permission>
+    </manifest>

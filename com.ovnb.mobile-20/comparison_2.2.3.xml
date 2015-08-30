@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/a/a/b/e.java</file>
+    <line>0</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/a/a/b/e.java</file>
+    <line>0</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/a/a/b/b.java</file>
+    <line>0</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

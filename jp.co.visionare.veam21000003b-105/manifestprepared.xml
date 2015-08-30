@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="jp.co.visionare.veam21000003b">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".veam21000003Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".WebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".PostCommentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name=".ContentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".AMPlayer" android:screenOrientation="landscape"><nothingHere/></activity>
+        <receiver android:name=".BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="UpdateService"><nothingHere/></service>
+        <service android:name="UploadService"><nothingHere/></service>
+        <service android:name="DownloadService"><nothingHere/></service>
+        <service android:name="SendLikeService"><nothingHere/></service>
+        <service android:name="PostCommentService"><nothingHere/></service>
+        <service android:name=".BillingService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    </manifest>

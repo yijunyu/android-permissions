@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.appsubstance.droidxray">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".DroidXRay" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Summary" android:name=".DeviceSummary"><nothingHere/></activity>
+        <activity android:label="Performance" android:name=".DevicePerformance"><nothingHere/></activity>
+        <activity android:label="Hardware" android:name=".DeviceHardware"><nothingHere/></activity>
+        <activity android:label="AppControl" android:name=".AppControlLauncherActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <receiver android:enabled="true" android:name="com.appsubstance.droidxray.BatteryPowerStateBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"><nothingHere/></action>
+                <action android:name="android.intent.action.BATTERY_LOW"><nothingHere/></action>
+                <action android:name="android.intent.action.BATTERY_OKAY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BATTERY_STATS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"><nothingHere/></uses-permission>
+    </manifest>

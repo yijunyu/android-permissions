@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.gau.go.launcherex.theme.flamingothemegolauncherex">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".ViewPageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name=".NotificationActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name=".classic" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="com.gau.go.launcherex.theme"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <receiver android:name=".ComponentControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gau.go.launcherex.action.hide_theme_icon"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".ThemeControlReceiver">
+            <intent-filter>
+                <action android:name="com.jiubang.intent.action.LAUNCHER_START"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.gau.go.launcherex.action.inactive_apply_theme_flag"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name=".GoDownloadService" android:process="com.jiubang.golauncher.themefactory.GoDownloadService"><nothingHere/></service>
+    </application>
+    <uses-permission android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+</manifest>

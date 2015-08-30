@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.datesoft.SD_Checkers">
+    <application android:debuggable="false" android:icon="@drawable/ic_launcher" android:installLocation="preferExternal" android:label="SD Checkers" android:largeHeap="false" android:persistent="false" android:restoreAnyVersion="false">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="SD Checkers" android:name="com.embarcadero.firemonkey.FMXNativeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.app.lib_name" android:value="SD_Checkers"><nothingHere/></meta-data>
+            </activity>
+        <receiver android:name="com.embarcadero.firemonkey.notifications.FMXNotificationAlarm"><nothingHere/></receiver>
+    </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

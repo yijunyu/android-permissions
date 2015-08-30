@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sts.buddylocatorlite">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.sts.buddylocatorlite.BBTN_LoginActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_login" android:name="com.sts.buddylocatorlite.LoginActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_mains_screen" android:name="com.sts.buddylocatorlite.MainsScreenActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_register_user" android:name="com.sts.buddylocatorlite.RegisterUserActivity" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_update_screen" android:name="com.sts.buddylocatorlite.UpdateScreenActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_map" android:name="com.sts.buddylocatorlite.MapActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_friend_request" android:name="com.sts.buddylocatorlite.FriendRequestActivity" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_friend_notificvation" android:name="com.sts.buddylocatorlite.FriendNotificvationActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_buddy_locate_settings" android:name="com.sts.buddylocatorlite.BuddyLocateSettingsActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_forgot_password" android:name="com.sts.buddylocatorlite.ForgotPasswordActivity" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyC5cdpjYp5ouTNpVUzVdILKcq_JyqDdI2Q"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <receiver android:name="com.sts.buddylocatorlite.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <category android:name="com.sts.buddylocator"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.sts.buddylocatorlite.GCMNotificationIntentService"><nothingHere/></service>
+        <service android:name="com.sts.buddylocatorlite.GCMSendDataService"><nothingHere/></service>
+        </application>
+<permission android:name="com.sts.buddylocator.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.sts.buddylocator.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.partypong.club">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.partypong.club.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_home" android:name="com.partypong.club.HomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_login" android:name="com.partypong.club.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_forgot_p" android:name="com.partypong.club.ForgotPActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_zip" android:name="com.partypong.club.ZipActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_sign_in_f" android:name="com.partypong.club.SignInFActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_bmember" android:name="com.partypong.club.BMemberActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_host_bar" android:name="com.partypong.club.HostBarActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_cust_home" android:name="com.partypong.club.CustomerHomeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:allowTaskReparenting="true" android:label="@string/title_activity_invite_friends" android:launchMode="singleTask" android:name="com.partypong.club.InviteFriendsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="t4jsample" android:scheme="oauth"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_customer_select_host_bar" android:name="com.partypong.club.CustomerSelectHostBarActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_share_friend" android:name="com.partypong.club.ShareFriendActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_check_in" android:name="com.partypong.club.CheckInActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_bonus_points" android:launchMode="singleTask" android:name="com.partypong.club.BonusPointsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_prize_catalog" android:name="com.partypong.club.PrizeCatalogActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_my_account" android:name="com.partypong.club.MyAccountActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_customer_tab" android:name="com.partypong.club.CustomerTabActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_teammate" android:name="com.partypong.club.SelectTeammateActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_select_team" android:name="com.partypong.club.SearchTeamActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_member_not_found" android:name="com.partypong.club.MemberNotFoundActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_search_team_result" android:name="com.partypong.club.SearchTeamResultActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_make_team" android:name="com.partypong.club.MakeTeamActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_customer_check_in" android:name="com.partypong.club.CustomerCheckInActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_check_in_tournament" android:name="com.partypong.club.CheckInTournamentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_play_more_earn_more" android:name="com.partypong.club.PlayMoreEarnMoreActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_team_created" android:name="com.partypong.club.TeamCreatedActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_add_back_prize" android:name="com.partypong.club.AddBackPrizeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_shipping_address" android:name="com.partypong.club.ShippingAddressActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_add_prize" android:name="com.partypong.club.AddPrizeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_confirm_prize" android:name="com.partypong.club.ConfirmPrizeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_prize_not_confirm" android:name="com.partypong.club.PrizeNotConfirmActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+<uses-feature android:name="android.hardware.telephone" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    </manifest>

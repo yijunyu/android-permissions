@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.route.bus">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".GalwayBusRouteActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".main2"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".merlin"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Castlepark"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".newcastle"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ballybane"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".bothar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".parkmore"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".oranmore"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".direct411"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".direct412"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".direct413"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".direct414"><nothingHere/></activity>
+        <activity android:name=".ballybane" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".bothar" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".Castlepark" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".merlin" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".newcastle" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".oranmore" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".parkmore" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".main2" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".maplarge" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".cdmaplarge" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".overview" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".direct411" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".direct412" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".direct413" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".direct414" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".cdmaplarge" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+    </application>
+</manifest>

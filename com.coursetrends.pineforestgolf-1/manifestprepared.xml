@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.coursetrends.pineforestgolf">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.coursetrends.pineforestgolf.SKPsuedoBrowserScreen" android:parentActivityName="com.coursetrends.pineforestgolf.SKPsuedoBrowserScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.coursetrends.pineforestgolf.SKPsuedoBrowserScreen"><nothingHere/></meta-data>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

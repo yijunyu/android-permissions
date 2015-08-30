@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="hu.testman.planetapp.eskuvo">
+    <application android:allowBackup="true" android:icon="@drawable/ic_main_app" android:label="@string/app_name" android:name="hu.testman.planetapp.eskuvo.App" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="hu.testman.planetapp.eskuvo.activity.SplashActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="hu.testman.planetapp.eskuvo.activity.MainActivity" android:theme="@style/Theme.AppCompat" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="hu.testman.planetapp.eskuvo.activity.DetailsActivity" android:theme="@style/Theme.AppCompat"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="hu.testman.planetapp.eskuvo.activity.DetailsActivityPortrait" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="hu.testman.planetapp.eskuvo.activity.SettingsActivity" android:theme="@style/Theme.AppCompat"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="hu.testman.planetapp.eskuvo.activity.SettingsActivityPortrait" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="hu.testman.planetapp.eskuvo.activity.AboutActivity" android:theme="@style/Theme.AppCompat"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="hu.testman.reader.activity.ReaderActivity" android:process=":reader" android:theme="@style/AppFullTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="hu.testman.reader.activity.BookmarkActivity" android:theme="@style/Theme.AppCompat"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="hu.testman.reader.activity.OverViewActivity" android:process=":reader" android:theme="@style/Theme.AppCompat"><nothingHere/></activity>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="e58289d418e9e0424cc06a7599e9d2230b63b675"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    <receiver android:name="hu.testman.planetapp.eskuvo.gcm.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="hu.testman.planetapp.eskuvo"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="hu.testman.planetapp.eskuvo.OpenDescriptionReceiver">
+            <intent-filter>
+                <action android:name="OPEN_DETAILS_BROADCAST"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="hu.testman.planetapp.eskuvo.gcm.GcmIntentService"><nothingHere/></service>
+        <service android:exported="false" android:name="hu.testman.planetapp.eskuvo.service.MainService"><nothingHere/></service>
+        </application>
+<permission android:name="hu.testman.planetapp.eskuvo.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="hu.testman.planetapp.eskuvo.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

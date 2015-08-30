@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

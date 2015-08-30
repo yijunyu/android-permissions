@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.rochdev.rtaskfree">
+    <application android:debuggable="false" android:icon="@drawable/rtask" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.rochdev.rtask.TaskFilterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.rochdev.rtask.AboutActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.rochdev.rtask.CategoryManagerActivity"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.rochdev.rtask.InputDialog" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name="com.rochdev.rtask.PreferencesActivity"><nothingHere/></activity>
+        <activity android:name="com.rochdev.rtask.TaskAddActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter><nothingHere/></intent-filter>
+        </activity>
+        <activity android:name="com.rochdev.rtask.TaskDetailsActivity"><nothingHere/></activity>
+        <activity android:name="com.rochdev.rtask.TaskEditActivity"><nothingHere/></activity>
+        <activity android:name="com.rochdev.rtask.TaskListActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <receiver android:name="com.rochdev.rtask.UpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.rochdev.rtask.alarm.AlarmReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.rochdev.rtask.alarm.AlarmSetter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:label="rochTask shortcut" android:name="com.rochdev.rtask.widget.AddShortcutWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/add_widget"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="rochTask 4x1" android:name="com.rochdev.rtask.widget.AgendaSmallWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.rochdev.rtask.widget.AgendaSmallWidget.ACTION_NEXT_TASK"><nothingHere/></action>
+                <action android:name="com.rochdev.rtask.widget.AgendaSmallWidget.ACTION_UPDATE"><nothingHere/></action>
+                <action android:name="com.rochdev.rtask.widget.AgendaSmallWidget.ACTION_DISPLAY_TASK"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/add_view__4x1_widget"><nothingHere/></meta-data>
+        </receiver>
+        <receiver android:label="rochTask 3x3" android:name="com.rochdev.rtask.widget.AgendaWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+                <action android:name="com.rochdev.rtask.widget.AgendaWidget.ACTION_UPDATE"><nothingHere/></action>
+                <action android:name="com.rochdev.rtask.widget.AgendaWidget.ACTION_DISPLAY_TASK"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/add_agenda__3x3_widget"><nothingHere/></meta-data>
+        </receiver>
+        <service android:name="com.rochdev.rtask.widget.AgendaSmallWidget$UpdateService"><nothingHere/></service>
+        <service android:name="com.rochdev.rtask.widget.AgendaWidget$UpdateService"><nothingHere/></service>
+        <service android:name="com.rochdev.rtask.widget.UpdateReceiver$UpdateService"><nothingHere/></service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+</manifest>

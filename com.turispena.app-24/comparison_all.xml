@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CALL_PHONE</permission>
+    <permission>android.permission.INTERNET</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

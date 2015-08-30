@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="mobi.inthepocket.vooruit">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/launcher" android:label="@string/app_name" android:logo="@drawable/actionbar_logo" android:name=".application.VooruitApplication" android:theme="@style/VooruitTheme">
+        <activity android:label="@string/app_name" android:name=".activities.TabsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/actionbar_logo" android:label="@string/app_name" android:name=".activities.SpotsActivity" android:screenOrientation="portrait" android:theme="@style/VooruitTheme.NoActionBar"><nothingHere/></activity>
+        <activity android:icon="@drawable/actionbar_logo" android:label="@string/app_name" android:name=".activities.SpotDetailActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/mobi.inthepocket.vooruit.spots"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/actionbar_logo" android:label="@string/app_name" android:name=".activities.RatingDetailActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/mobi.inthepocket.vooruit.ratings"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/actionbar_logo" android:label="@string/app_name" android:name=".activities.AddRatingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:icon="@drawable/actionbar_logo" android:label="@string/app_name" android:name=".activities.FavoritesActivity" android:screenOrientation="portrait" android:theme="@style/VooruitTheme.NoActionBar"><nothingHere/></activity>
+        <activity android:icon="@drawable/actionbar_logo" android:label="@string/app_name" android:name=".activities.RoutesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:icon="@drawable/actionbar_logo" android:label="@string/app_name" android:name=".activities.RouteActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="vnd.android.cursor.item/mobi.inthepocket.vooruit.routes"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/actionbar_logo" android:label="@string/app_name" android:name=".activities.InfoActivity" android:screenOrientation="portrait" android:theme="@style/VooruitTheme.NoActionBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".activities.GalleryActivity" android:screenOrientation="sensor"><nothingHere/></activity>
+        <provider android:authorities="mobi.inthepocket.vooruit.spots" android:exported="false" android:grantUriPermissions="false" android:name=".providers.SpotContentProvider" android:syncable="false"><nothingHere/></provider>
+        <provider android:authorities="mobi.inthepocket.vooruit.media" android:exported="false" android:grantUriPermissions="false" android:name=".providers.MediaContentProvider" android:syncable="false"><nothingHere/></provider>
+        <provider android:authorities="mobi.inthepocket.vooruit.routes" android:exported="false" android:grantUriPermissions="false" android:name=".providers.RouteContentProvider" android:syncable="false"><nothingHere/></provider>
+        <provider android:authorities="mobi.inthepocket.vooruit.ratings" android:exported="false" android:grantUriPermissions="false" android:name=".providers.RatingContentProvider" android:syncable="false"><nothingHere/></provider>
+        <provider android:authorities="mobi.inthepocket.vooruit.categories" android:exported="false" android:grantUriPermissions="false" android:name=".providers.CategoryContentProvider" android:syncable="false"><nothingHere/></provider>
+        <service android:exported="false" android:name="mobi.inthepocket.api.services.ApiService" android:process=":api"><nothingHere/></service>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

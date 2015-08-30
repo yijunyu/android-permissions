@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.READ_CONTACTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.BROADCAST_STICKY</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.SEND_SMS</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="appinventor.ai_bateriacompulsiva.BATCOMP">
+    <application android:debuggable="false" android:icon="@drawable/ya" android:label="BATCOMP">
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Screen1" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.appinventor.components.runtime.ListPickerActivity" android:screenOrientation="behind"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.google.appinventor.components.runtime.WebViewActivity" android:screenOrientation="behind">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

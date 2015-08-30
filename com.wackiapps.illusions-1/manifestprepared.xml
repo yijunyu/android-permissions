@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.wackiapps.illusions">
+    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.revmob.ads.fullscreen.FullscreenActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:finishOnCloseSystemDialogs="true" android:immersive="true" android:label="@string/title_activity_main" android:name="com.wackiapps.illusions.About" android:theme="@android:style/Theme.Holo.Dialog" android:windowIsFloating="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/title_activity_settings" android:name="com.wackiapps.illusions.Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_ads" android:name="com.wackiapps.illusions.Ads"><nothingHere/></activity>
+    <meta-data android:name="com.revmob.app.id" android:value="539851f4810663d10662eb50"><nothingHere/></meta-data>
+        <service android:enabled="true" android:label="3D Illusions Live Wallpaper" android:name="com.wackiapps.illusions.Wall" android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/wall"><nothingHere/></meta-data>
+        </service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

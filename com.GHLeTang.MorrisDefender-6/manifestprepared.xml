@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" android:theme="@android:style/Theme.NoTitleBar" package="com.GHLeTang.MorrisDefender">
+    <application android:debuggable="false" android:icon="@drawable/app_icon" android:label="@string/app_name">
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.GHLeTang.MorrisDefender.UnityPlayerNativeActivity" android:screenOrientation="portrait">
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true"><nothingHere/></meta-data>
+        </activity>
+        <activity android:name="com.purplebrain.adbuddiz.sdk.AdBuddizActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="com.ltad.interstitial.InterstitialAdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:name="com.purplebrain.giftiz.sdk.GiftizWebViewActivity"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:name="com.chartboost.sdk.CBImpressionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:label="@string/app_name" android:name="com.letang.shellad.ui.MoreGameActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="locale|fontScale|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:name="com.full.fullad.ui.FullAdActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.full.fullad.MainActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="4323000"><nothingHere/></meta-data>
+        <meta-data android:name="ADBUDDIZ_PUBLISHER_KEY" android:value="7325aa68-28a5-4ea5-a3ee-044aeb9d1077"><nothingHere/></meta-data>
+        <meta-data android:name="GIFTIZ_PARTNER_KEY" android:value="d42bf3dc-c776-4679-8755-5dd6031925a4"><nothingHere/></meta-data>
+        <receiver android:name="com.full.fullad.ui.GameReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="131072"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

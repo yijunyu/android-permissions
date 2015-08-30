@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.junsheng.erhuo">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:icon="@drawable/ic_launcher" android:launchMode="standard" android:name="com.junsheng.erhuo.SplashView" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.junsheng.erhuo.home.HomeActivity" android:process="com.junsheng.erhuo.home" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.junsheng.erhuo.post.PostDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.junsheng.erhuo.profile.ProfileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.junsheng.erhuo.post.imagepreview.ImagePreviewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.junsheng.erhuo.cate.CateActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.junsheng.erhuo.setting.Setting" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.junsheng.erhuo.post.MakePost" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.junsheng.erhuo.school.ChooseSchool" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.umeng.fb.ConversationActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.umeng.fb.ContactActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.junsheng.erhuo.Welcome" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.tencent.connect.avatar.ImageActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tencent.connect.common.AssistActivity" android:process="com.junsheng.erhuo.home" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.tencent.plus.ImageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:exported="true" android:label="@string/app_name" android:name=".wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tencent1101746135"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.junsheng.erhuo.weibo.WeiboRepActivity" android:screenOrientation="portrait" android:theme="@style/Transparent">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <meta-data android:name="UMENG_APPKEY" android:value="53d6977a56240b0f4b045bae"><nothingHere/></meta-data>
+        <meta-data android:name="UMENG_CHANNEL" android:value="@string/channel"><nothingHere/></meta-data>
+        <provider android:authorities="@string/multiprocess_preferences_authority" android:exported="false" android:name="com.gdubina.multiprocesspreferences.MultiprocessPreferences"><nothingHere/></provider>
+        </application>
+<uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.screen.portrait"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.touchscreen"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+    </manifest>

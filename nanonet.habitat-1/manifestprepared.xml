@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="nanonet.habitat">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" debuggable="false">
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ListaAnnunci"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".ListaAnnunciRaggruppataPerCategoria"><nothingHere/></activity>
+        <activity android:name=".DettaglioAnnuncio"><nothingHere/></activity>
+        <activity android:name=".GalleryView"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name="nanonet.habitat.SelezioneDaA"><nothingHere/></activity>
+        <activity android:name=".RicercaComuni"><nothingHere/></activity>
+        <activity android:name=".RicercaZone"><nothingHere/></activity>
+        <activity android:name=".Info"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="nanonet.habitat.SplashScreen"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

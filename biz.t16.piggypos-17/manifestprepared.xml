@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="biz.t16.piggypos">
+    <application android:allowBackup="false" android:icon="@drawable/launcher_icon" android:label="@string/app_name" android:name="biz.t16.piggypos.MyApplication" android:theme="@android:style/Theme.Holo.Light">
+        <activity android:launchMode="singleInstance" android:name="biz.t16.piggypos.activity.Splash" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="biz.t16.piggypos.activity.AccountChooser"><nothingHere/></activity>
+        <activity android:launchMode="singleInstance" android:name="biz.t16.piggypos.activity.MerchantChooser"><nothingHere/></activity>
+        <activity android:name="biz.t16.piggypos.activity.Main"><nothingHere/></activity>
+        <activity android:name="biz.t16.piggypos.activity.CustomerEditor"><nothingHere/></activity>
+        <activity android:name="biz.t16.piggypos.activity.OutOfOrderActivity"><nothingHere/></activity>
+        <activity android:name="biz.t16.piggypos.activity.NotProvisionedActivity"><nothingHere/></activity>
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="biz.t16.piggypos"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="biz.t16.piggypos.gcm.GCMIntentService"><nothingHere/></service>
+        <service android:exported="true" android:name="biz.t16.piggypos.hce.PiggyCardService" android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.nfc.cardemulation.host_apdu_service" android:resource="@xml/apduservice"><nothingHere/></meta-data>
+        </service>
+    </application>
+<permission android:name="biz.t16.piggypos.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.usb.host" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="biz.t16.piggypos.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.NFC"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    </manifest>

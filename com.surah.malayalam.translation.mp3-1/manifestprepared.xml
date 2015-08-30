@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.surah.malayalam.translation.mp3">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher_icon" android:label="@string/app_name" android:name="AndromoAcraApplication">
+        <activity android:label="@string/app_name" android:name=".Audio36663" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".AndromoDashboardActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name=".AudioIntentReceiver">
+            <intent-filter>
+                <action android:name="android.media.AUDIO_BECOMING_NOISY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name=".AudioService">
+            <intent-filter>
+                <action android:name="com.surah.malayalam.translation.mp3.audio.action.START"><nothingHere/></action>
+                <action android:name="com.surah.malayalam.translation.mp3.audio.action.PLAY"><nothingHere/></action>
+                <action android:name="com.surah.malayalam.translation.mp3.audio.action.PAUSE"><nothingHere/></action>
+                <action android:name="com.surah.malayalam.translation.mp3.audio.action.SKIP"><nothingHere/></action>
+                <action android:name="com.surah.malayalam.translation.mp3.audio.action.REWIND"><nothingHere/></action>
+                <action android:name="com.surah.malayalam.translation.mp3.audio.action.STOP"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.surah.malayalam.translation.mp3.audio.action.URL"><nothingHere/></action>
+                <android-data android:scheme="http"><nothingHere/></android-data>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name=".Audio36663_PlaylistManager"><nothingHere/></service>
+        <service android:exported="false" android:name=".SetRingtoneService"><nothingHere/></service>
+        </application>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

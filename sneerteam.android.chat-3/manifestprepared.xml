@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="sneerteam.android.chat">
+    <application android:allowBackup="true" android:icon="@drawable/chat_icon" android:label="@string/app_name" android:name=".ChatApp" android:theme="@style/AppTheme">
+        <activity android:label="@string/title_chat_list" android:name=".ui.ChatListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_chat_detail" android:name=".ui.ChatDetailActivity" android:parentActivityName=".ui.ChatListActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".ChatListActivity"><nothingHere/></meta-data>
+        </activity>
+    </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="sneerteam.snapi.CLOUD"><nothingHere/></uses-permission>
+    </manifest>

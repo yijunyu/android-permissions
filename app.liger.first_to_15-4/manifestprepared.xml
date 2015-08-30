@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="app.liger.first_to_15">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".liger">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".mainscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".MainActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".MainActivity2"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".rules"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".credits"><nothingHere/></activity>
+    </application>
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.WAKE_LOCK</name>
+  </permission>
+</permissions>

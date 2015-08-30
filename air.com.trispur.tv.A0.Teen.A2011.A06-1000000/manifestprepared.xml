@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="air.com.adobe.appentry">
+    <application android:icon="@drawable/icon" android:label="Trispur Teen">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Trispur Teen" android:launchMode="singleTask" android:name=".AppEntry" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="aspectRatio" android:value="portrait"><nothingHere/></meta-data>
+            <meta-data android:name="autoOrients" android:value="false"><nothingHere/></meta-data>
+            <meta-data android:name="fullScreen" android:value="true"><nothingHere/></meta-data>
+            <meta-data android:name="uniqueappversionid" android:value="535de135-fc6e-4576-bd74-03564559b0e3"><nothingHere/></meta-data>
+            <meta-data android:name="initialcontent" android:value="trispur-android.swf"><nothingHere/></meta-data>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.newbreed.mobile.nreach">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="NbApplication" android:theme="@style/Theme.Basn">
+        <activity android:label="@string/app_name" android:name=".ui.LoginActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ZoneListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.Dashboard" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.AupActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.SupplierListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.EditUserProfileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.UserProfileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.PasswordResetActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.ScanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name=".ui.ShipmentAcknowledgmentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.BinManagementDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.CustomerSupportActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ui.BinItemEditActivity"><nothingHere/></activity>
+        <activity android:name=".ui.ReceiveInitializationActivity"><nothingHere/></activity>
+        <activity android:name=".ui.ReportActivity"><nothingHere/></activity>
+        <activity android:name=".ui.AreaListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.CabinetListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.BinItemListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.ReportPartListActivity"><nothingHere/></activity>
+        <activity android:name=".ui.ReportPartDetailActivity"><nothingHere/></activity>
+    <provider android:authorities="com.newbreed.mobile.nreach.provider.NbProvider" android:exported="false" android:name=".provider.NbProvider"><nothingHere/></provider>
+        <service android:name=".service.NBService"><nothingHere/></service>
+        <service android:name=".service.MockService"><nothingHere/></service>
+        </application>
+<permission android:name="com.newbreed.enbrace.nbmobility.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.newbreed.enbrace.nbmobility.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

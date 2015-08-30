@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tsts.ipv6">
+    <application android:allowBackup="true" android:icon="@drawable/icon_launcher" android:label="@string/app_name" android:name="com.tsts.ipv6lib.ipv6App">
+        <activity android:configChanges="keyboardHidden" android:label="@string/app_name" android:name="com.tsts.ipv6.ipv6UtilityFree" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/gentab" android:name="com.tsts.ipv6lib.addressgenerator" android:theme="@android:style/Theme.NoTitleBar"> --&gt; <nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/toolstab" android:name="com.tsts.ipv6lib.tools" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/connecttab" android:name="com.tsts.ipv6lib.connect" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/myv6tab" android:name="com.tsts.ipv6lib.myv6interfaces" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/app_name" android:name="com.tsts.ipv6lib.typesOfv6" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/app_name" android:name="com.tsts.ipv6lib.v6news" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/app_name" android:name="com.tsts.ipv6.HealthGridPopulatorFree" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/app_name" android:name="com.tsts.ipv6lib.EditTarget"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:label="@string/app_name" android:name="com.tsts.ipv6lib.Upseller"><nothingHere/></activity>
+    <service android:enabled="true" android:icon="@drawable/icon_launcher" android:label="@string/host_monitoring_svc_name" android:name="com.tsts.ipv6.TargetProbingSvcFree"><nothingHere/></service>
+        </application>
+<supports-screens android:largeScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

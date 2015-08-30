@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="mxlock.user" package="com.neomtel.mxlock.theme.skyWindy">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="MxTheme" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.neomtel.mxlock.THEME"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.preference" android:resource="@xml/theme_preference"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="MxThemeSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.neomtel.mxlock.webview.MxWebView" android:screenOrientation="portrait"><nothingHere/></activity>
+    <meta-data android:name="requestVersion" android:value="1.2.1"><nothingHere/></meta-data>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="false" android:normalScreens="true" android:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

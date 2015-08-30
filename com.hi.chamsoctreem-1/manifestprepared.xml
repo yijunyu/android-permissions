@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hi.chamsoctreem">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.hi.chamsoctreem.SplashActivity" android:theme="@style/fullTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.hi.chamsoctreem.activity.HomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.hi.chamsoctreem.activity.content.ContentActivity"><nothingHere/></activity>
+        <provider android:authorities="com.hi.chamsoctreem.contentprovider.menus.MenuContentProvider" android:name="com.hi.chamsoctreem.contentprovider.menus.MenuContentProvider"><nothingHere/></provider>
+        <provider android:authorities="com.hi.chamsoctreem.contentprovider.content.ContentContentProvider" android:name="com.hi.chamsoctreem.contentprovider.content.ContentContentProvider"><nothingHere/></provider>
+    </application>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

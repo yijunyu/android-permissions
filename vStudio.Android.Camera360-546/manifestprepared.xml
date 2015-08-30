@@ -1,0 +1,256 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="vStudio.Android.Camera360">
+    <application android:allowBackup="true" android:debuggable="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.pinguo.camera360.PgCameraApplication">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="qr.recognize.huawei_tv.HuaweiTVAuthorize" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTop" android:name=".activity.CameraActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="pinguo.android.team.cameraView"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.MONKEY"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.pinguo.camera360.nearbytransfer.NbtfActiviy" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.nearbytransfer.NbtfSendGuideActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.nearbytransfer.NbtfReceiveGuideActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.nearbytransfer.receiver.NbtfReceiverActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.nearbytransfer.sender.NbtfSendActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pinguo.camera360.camera.activity.IntentCameraActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.pinguo.camera360.camera.activity.MiKeyCameraActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.pinguo.camera360.IMAGE_CAPTURE"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.pinguo.camera360.IMAGE_EDIT"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.pinguo.camera360.adjustOrientation.AdjustOrientationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.AdvanceSettingActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.OptionsPicture" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.OptionsAlbum" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.OptionsSavePath" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.OptionsCamera" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.OptionsAbout" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.SensorCheckActivity" android:screenOrientation="portrait" android:theme="@style/PinGuoApiDialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.OptionsThanks" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.OptionsCloudService" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="FeedbackActivity" android:name="com.pinguo.camera360.FeedbackActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.test.PhotoEditTestActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.LocationTestActivity"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.lib.devmode.activity.DevModeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.shop.activity.StoreActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.shop.activity.EffectDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.shop.activity.CameraModeDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.AdsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.cloud.settings.CloudSettingsForUploadSetting" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.cloud.login.PersonalInformation" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name="com.pinguo.camera360.cloud.cropImage.CropImage" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.cloud.login.ModifyNickName" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.cloud.login.ModifySignature" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.cloud.login.AssociateMailBox" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:exported="true" android:name="com.pinguo.camera360.push.business.activity.PushActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:exported="true" android:name="com.pinguo.camera360.push.business.web.PushWebActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:exported="true" android:name="com.pinguo.camera360.push.utils.PushDialogActivity" android:screenOrientation="portrait" android:theme="@style/PinGuoApiDialog"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.igexin.sdk.PushActivity" android:process=":pushservice" android:taskAffinity="com.igexin.sdk.PushActivityTask" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.gallery.GalleryActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <category android:name="android.intent.category.MONKEY"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pinguo.camera360.puzzle.PuzzleActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <category android:name="android.intent.category.MONKEY"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pinguo.camera360.puzzle.splice.PuzzleSpliceActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <category android:name="android.intent.category.MONKEY"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pinguo.camera360.CrashReportActivity" android:screenOrientation="portrait" android:theme="@style/PinGuoApiDialog"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.lib.ui.WebViewActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pinguo.camera360.feedback.Camera360FeedbackActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.pinguo.camera360.feedback.Camera360CommonProblemActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.camera.activity.AppScreenSaver" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="us.pinguo.androidsdk.pgedit.PGEditActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.camera360.order.OrderActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.order.OrderDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.order.OrderPayResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.order.OrderDetailPayResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.order.OrderListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.order.ShareForCouponActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.order.ChoicePrivilegeActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.order.OrderAddressActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.IDPhoto.IDPhotoSelectListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.IDPhoto.IDPhotoMakeListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.IDPhoto.IDPhotoEditActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="vStudio.Android.Camera360.wxapi.WXPayEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="vStudio.Android.Camera360.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoDisplay"><nothingHere/></activity>
+        <activity android:name="com.alipay.android.app.sdk.WapPayActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.order.PayResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.mycenter.MyCenterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.mycenter.MsgCenterActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.camera.activity.IdCameraPictureActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.login.PGLoginActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.login.PGLoginAuthorize" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.login.PGFindPasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.login.PGModifyPasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.login.ui.PGLoginWebActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.pinguo.camera360.login.ui.PGSsoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:name="com.pinguo.share.bind.BindActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="pinguo.android.team.snsView"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pinguo.share.bind.web.WebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.pinguo.share.theme.ShareThemeMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.pinguo.share.at.AtActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.pinguo.share.theme.ShareThemeDetailsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.pinguo.share.website.WebSiteShareMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.pinguo.album.activities.PGAlbumGuideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.pinguo.album.activities.PGAlbumActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.pinguo.album.activities.PGFullImageActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="tencent100303003"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.pinguo.camera360.sony.SonyGuideActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"><nothingHere/></activity>
+    <activity-alias android:clearTaskOnLaunch="false" android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name=".activity.FirstInitActivity" android:screenOrientation="portrait" android:targetActivity=".activity.CameraActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="pinguo.android.team.cameraView"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.MONKEY"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity-alias>
+        <meta-data android:name="UMENG_APPKEY" android:value="4c528da01d41c85ecf000211"><nothingHere/></meta-data>
+        <meta-data android:name="UMENG_CHANNEL" android:value="@string/channel"><nothingHere/></meta-data>
+        <meta-data android:name="PUSH_APPID" android:value="GTk04HTseT9bW31WA4ulW3"><nothingHere/></meta-data>
+        <meta-data android:name="PUSH_APPKEY" android:value="4BiDtQlX0O8adtJWT4huW8"><nothingHere/></meta-data>
+        <meta-data android:name="PUSH_APPSECRET" android:value="DaE5WGNRFw9Iknh0ZvCPKA"><nothingHere/></meta-data>
+        <meta-data android:name="PUSH_GROUPID" android:value=""><nothingHere/></meta-data>
+        <provider android:authorities="com.pinguo.camera360.gallery.privider" android:multiprocess="true" android:name="com.pinguo.camera360.gallery.data.model.C360PhotoProvider" android:permission="com.camera360.permission.Photo"><nothingHere/></provider>
+        <provider android:authorities="com.pinguo.camera360.crab.feedback" android:exported="true" android:multiprocess="false" android:name="com.pinguo.camera360.feedback.Camera360FeedbackProvider"><nothingHere/></provider>
+        <provider android:authorities="com.pinguo.camera360.user.info" android:exported="false" android:multiprocess="true" android:name="com.pinguo.camera360.login.model.UserContentProvider"><nothingHere/></provider>
+        <provider android:authorities="pg_album" android:exported="true" android:multiprocess="false" android:name="com.pinguo.album.provider.PGAlbumProvider" android:permission="com.pinguo.album.database.rw"><nothingHere/></provider>
+        <receiver android:enabled="true" android:name="com.pinguo.camera360.cloud.service.CloudShareServiceReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"><nothingHere/></action>
+                <action android:name="vStudio.Android.Camera360.UPLOAD_TIME"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pinguo.camera360.push.PushNewReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pinguo.camera360.push.PushGeTuiReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.GTk04HTseT9bW31WA4ulW3"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="android.intent.action.USER_PRESENT"><nothingHere/></action>
+                <action android:name="com.igexin.sdk.action.refreshls"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.igexin.sdk.PushManagerReceiver">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.pushmanager"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pinguo.camera360.mycenter.LoginSuccessReceiver">
+            <intent-filter>
+                <action android:name="com.pinguo.intent.login.success"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.pinguo.camera360.guide.PartnerAppDownLoadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.umeng.common.net.DownloadingService" android:process=":DownloadingService"><nothingHere/></service>
+        <service android:name="com.pinguo.camera360.nearbytransfer.NbtfService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote"><nothingHere/></service>
+        <service android:name="com.pinguo.camera360.lib.feedback.FeedbackUploadService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.pinguo.camera360.cloud.service.CloudShareService" android:process=":cloud"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.pinguo.camera360.save.processer.PhotoProcessService">
+            <intent-filter>
+                <action android:name="com.camera360.PhotoProcessService"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </service>
+        <service android:name="com.pinguo.camera360.push.PushService" android:process=":push"><nothingHere/></service>
+        <service android:name="com.pinguo.camera360.push.business.update.UpdateService" android:process=":update"><nothingHere/></service>
+        <service android:exported="true" android:label="NotificationCenter" android:name="com.igexin.sdk.PushService" android:process=":pushservice"><nothingHere/></service>
+        <service android:name="com.pinguo.camera360.adv.Welcome.WelcomeAdDownloadService"><nothingHere/></service>
+        <service android:name="com.pinguo.share.bind.FetchCloudBindInfoService">
+            <intent-filter>
+                <action android:name="com.pinguo.camera360.share.bind.FetchCloudBindInfoService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.pinguo.share.bind.AttentionProcessService">
+            <intent-filter>
+                <action android:name="com.pinguo.camera360.share.bind.AttentionProcessService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<permission android:name="getui.permission.GetuiService" android:protectionLevel="normal"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_VIDEO"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,70 @@
+<manifest xmlns:amazon="http://schemas.amazon.com/apk/res/android" xmlns:android="http://schemas.android.com/apk/res/android" package="com.nq.guess.the.dog.trivia">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.nq.ninequiz.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="www.9quiz.com" android:scheme="http"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.android.gms.ads.AdActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <meta-data android:name="AmazonAPIKey" android:value="@string/api_key"><nothingHere/></meta-data>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/app_tracker"><nothingHere/></meta-data>
+        <receiver android:name="com.nq.ninequiz.ADMMessageHandler$MessageAlertReceiver" android:permission="com.amazon.device.messaging.permission.SEND">
+            <intent-filter>
+                <action android:name="com.amazon.device.messaging.intent.REGISTRATION"><nothingHere/></action>
+                <action android:name="com.amazon.device.messaging.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.nq.guess.the.car.logo"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.nq.ninequiz.ExternalReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTER"><nothingHere/></action>
+                <category android:name="com.nq.ninequiz"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:exported="false" android:name="com.nq.ninequiz.ADMMessageHandler"><nothingHere/></service>
+        <service android:label="com.nq.ninequiz.MessageReceivingService" android:name="com.nq.ninequiz.MessageReceivingService">
+            <intent-filter>
+                <action android:name="com.nq.ninequiz.AndroidMobilePushApp"><nothingHere/></action>
+                <action android:name="com.nq.ninequiz.ExternalReceiver"><nothingHere/></action>
+                <category android:name="com.nq.ninequiz"><nothingHere/></category>
+            </intent-filter>
+        </service>
+;
+<service android:name="com.google.android.gms.analytics.CampaignTrackingService"><nothingHere/></service>
+        <amazon:enable-feature android:name="com.amazon.device.messaging" android:required="false"><nothingHere/></amazon:enable-feature>
+        </application>
+<permission android:name="com.nq.ninequiz.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.REGISTER"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.REGISTRATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.nq.ninequiz.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    </manifest>

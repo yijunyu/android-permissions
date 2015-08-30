@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.READ_CALENDAR</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_CALENDAR</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_FINE_LOCATION</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+  </under-specification>
+</comparison>

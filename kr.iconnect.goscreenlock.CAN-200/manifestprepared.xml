@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="kr.iconnect.goscreenlock.CAN">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".GOScreenLockInstallDialog" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name=".ForSearch" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.jiubang.goscreenlock.theme"><nothingHere/></action>
+                <category android:name="android.intent.category.INFO"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <service android:name="com.jiubang.goscreenlock.theme.touch.GoDownloadService" android:process="com.jiubang.goscreenlock.theme.touch.GoDownloadService"><nothingHere/></service>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

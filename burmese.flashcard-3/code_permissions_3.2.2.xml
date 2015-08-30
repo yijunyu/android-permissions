@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/burmese/flashcard/FlashCards$3.java</file>
+    <line>118</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/burmese/flashcard/FlashCards$4.java</file>
+    <line>142</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

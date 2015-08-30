@@ -1,0 +1,91 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.etoolkit.naturephoto">
+    <application android:allowBackup="true" android:configChanges="orientation" android:debuggable="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.etoolkit.kernel.MainContext" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:launchMode="standard" android:name="com.etoolkit.naturephoto.MainActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.jpg"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"><nothingHere/></action>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.jpg"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO"><nothingHere/></action>
+                <android-data android:mimeType="*/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.jpg"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:mimeType="Image/*"><nothingHere/></android-data>
+                <android-data android:pathPattern=".*\\.jpg"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.etoolkit.kernel.content.SettingsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/app_name" android:name="com.etoolkit.kernel.content.VoteActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.facebook.LoginActivity" android:theme="@style/Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.etoolkit.photoeditor.PhotoEditorActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etoolkit.naturephoto.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="orientation" android:launchMode="singleTop" android:name="com.etoolkit.kernel.content.ImageUploadActivity" android:theme="@style/Transparent">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etoolkit.naturephoto.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.etoolkit.sharlibs.FriendPickerSampleActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etoolkit.naturephoto.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.etoolkit.sharlibs.PickFriendsActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.etoolkit.naturephoto.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.etoolkit.sharlibs.OurAdActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <receiver android:name="com.etoolkit.kernel.service.GCMReciever" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.UNREGISTER"><nothingHere/></action>
+                <category android:name="com.etoolkit.naturephoto"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.etoolkit.kernel.ReferralReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.etoolkit.kernel.MainService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.etoolkit.kernel.service.GCMIntentService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.etoolkit.naturephoto.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.etoolkit.naturephoto.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

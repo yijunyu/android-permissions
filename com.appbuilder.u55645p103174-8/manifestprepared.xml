@@ -1,0 +1,93 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.appbuilder.u55645p103174">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".AppBuilder" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".SplashScreen"><nothingHere/></activity>
+        <activity android:name=".PushNotification.AppPushNotification"><nothingHere/></activity>
+        <activity android:name=".embedded.CallPlugin.CallPlugin"><nothingHere/></activity>
+        <activity android:name=".embedded.WebPlugin.WebPlugin"><nothingHere/></activity>
+        <activity android:name=".embedded.MapPlugin.MapDetails"><nothingHere/></activity>
+        <activity android:name=".embedded.MapPlugin.MapPlugin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+            </activity>
+        <activity android:name=".embedded.MapPlugin.MapBottomPanel"><nothingHere/></activity>
+        <activity android:name=".embedded.MapPlugin.WebViewer"><nothingHere/></activity>
+        <activity android:name=".embedded.TwitterPlugin.TwitterPlugin" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        </activity>
+        <activity android:name=".embedded.TwitterPlugin.Description" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".embedded.EmailPlugin.EmailPlugin"><nothingHere/></activity>
+        <activity android:name=".embedded.EmailPlugin.addfile" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".embedded.EmailPlugin.dellfile" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".embedded.EmailPlugin.filelist" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".embedded.ContactPlugin.ContactPlugin" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".embedded.TablePlugin.TablePlugin" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".embedded.TablePlugin.TableDetails"><nothingHere/></activity>
+        <activity android:name=".embedded.ImagesPlugin.ImagesPlugin" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".embedded.ImagesPlugin.ImagesDetails"><nothingHere/></activity>
+        <activity android:name=".embedded.ImagesPlugin.ImagesBottomPanel" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".embedded.NewsPlugin.NewsPlugin" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".embedded.NewsPlugin.FeedDetails"><nothingHere/></activity>
+        <activity android:name=".embedded.MediaPlugin.MediaPlugin" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".embedded.MediaPlugin.MusicPlayer"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".embedded.MediaPlugin.VideoPlayer"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".embedded.CameraPlugin.CameraPlugin"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".embedded.CustomFormPlugin.CustomFormPlugin"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:name=".embedded.CouponPlugin.CouponPlugin" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".embedded.CouponPlugin.CouponDetails"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".embedded.NewsPlugin.VideoPlayer"><nothingHere/></activity>
+        <activity android:name=".PushNotification.AppPushNotification" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".GPSNotification.GPSLocationMap" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+            </intent-filter>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+            </activity>
+        <activity android:name=".GPSNotification.GPSLocationText" android:screenOrientation="portrait"><nothingHere/></activity>
+    <receiver android:name="com.google.android.c2dm.C2DMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.appbuilder.u55645p103174"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.appbuilder.u55645p103174"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name=".PushNotification.AppPushNotificationReceiver"><nothingHere/></service>
+        <service android:name=".GPSNotification.GPSService">
+            <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+        </service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+    <permission android:name="com.appbuilder.u55645p103174.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="com.appbuilder.u55645p103174.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permissions.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permissions.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+</manifest>

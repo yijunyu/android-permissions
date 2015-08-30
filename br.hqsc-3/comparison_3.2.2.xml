@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+    <permission>android.permission.INTERNET</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

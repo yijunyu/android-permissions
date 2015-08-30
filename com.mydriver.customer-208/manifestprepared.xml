@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mydriver.customer">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/NoGroup_AppName" android:logo="@drawable/ic_logo" android:name="com.mydriver.customer.CustomerApplication" android:theme="@style/Theme.MyDriver.Customer">
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.autologin.AutoLoginActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.autologin.AutoReLoginActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.main.MainActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.login.LoginActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.trip.TripsActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.trip.overview.TripOverviewActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.trip.driverLocation.DriverLocationActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.voucher.VoucherActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.car.CarActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.car.ChangeSelectedCarActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.registration.RegistrationActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.address.AddressActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.address.AddFavoriteAddressActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.additionalBookingDetails.AdditionalBookingDetailsActivity" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.booking_confirmation.BookingConfirmationActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.booking_successful.BookingSuccessfulActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.retrieve_password.RetrievePasswordActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.credit_card.list.CreditCardListActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.credit_card.add.CreditCardAddActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.help.HelpActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.user_info.change_password.ChangePasswordActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.mydriver.customer.ui.user_info.edit_details.EditUserDataActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="fecc4dd5372a25b0716cd67dded391dcaa1e75f6"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB0KtPyhGiZVOMp6JdLObJfH0zx5RuopXg"><nothingHere/></meta-data>
+        <service android:name="com.mydriver.customer.rest.RestDelegateService"><nothingHere/></service>
+        <service android:name="com.mydriver.customer.service.edriverws.service.MdRetrofitSpiceService"><nothingHere/></service>
+        <service android:exported="false" android:name="com.sixt.drivenow2.service.SxDnBackgroundService"><nothingHere/></service>
+    </application>
+    <permission android:name="com.mydriver.customer.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.mydriver.customer.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+</manifest>

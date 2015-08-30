@@ -1,0 +1,8 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+  </under-specification>
+</comparison>

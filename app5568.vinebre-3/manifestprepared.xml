@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="app5568.vinebre">
+    <application android:icon="@drawable/ic_launcher" android:label="kind vermist" android:name=".config" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="kind vermist" android:name=".preinicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="kind vermist" android:name=".t_url"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".t_html"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".t_oficinas"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".contactar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="kind vermist" android:name=".t_buscador_form"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".cats"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".t_buscador"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".t_detalle"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".t_menu"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".t_mapa"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".t_mapa_web"><nothingHere/></activity>
+        <activity android:label="kind vermist" android:name=".t_and"><nothingHere/></activity>
+        <provider android:authorities="app5568.vinebre.bd_provider" android:multiprocess="true" android:name=".bd_provider"><nothingHere/></provider>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="app5568.vinebre"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name=".s_guardado"><nothingHere/></service>
+        <service android:name=".GCMIntentService"><nothingHere/></service>
+    <uses-library android:name="com.google.android.maps" android:required="false"><nothingHere/></uses-library>
+        </application>
+<permission android:name="app5568.vinebre.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="app5568.vinebre.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

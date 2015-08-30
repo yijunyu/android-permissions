@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="puneet.com.android">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:killAfterRestore="false" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".TicTacToe">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

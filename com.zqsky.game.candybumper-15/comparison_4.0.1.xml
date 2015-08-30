@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+    <permission>android.permission.SYSTEM_ALERT_WINDOW</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.GET_TASKS</permission>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+    <permission>android.permission.INTERNET</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

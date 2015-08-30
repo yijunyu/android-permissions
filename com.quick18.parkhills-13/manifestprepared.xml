@@ -1,0 +1,58 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.quick18.parkhills">
+    <application android:icon="@drawable/icon" android:label="Park Hills Tee Times" android:name="mono.android.app.Application" android:theme="@android:style/Theme.Light">
+        <activity android:icon="@drawable/icon" android:label="Park Hills" android:name="com.quick18.parkhills.SplashActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/icon" android:label="@string/ApplicationName" android:name="golfcourseapp.Main" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Check Out" android:name="golfcoursecommonandroid.CheckOut" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Confirm" android:name="golfcoursecommonandroid.Confirmation" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Check Out Error" android:name="golfcoursecommonandroid.CheckoutError" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Birthday" android:name="golfcoursecommonandroid.Birthday" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Obsolete" android:name="golfcoursecommonandroid.Obsolete" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Reset Password" android:name="golfcoursecommonandroid.ResetPassword" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Course Info" android:name="golfcoursecommonandroid.CourseInfoWeb"><nothingHere/></activity>
+        <activity android:label="Sign In" android:name="golfcoursecommonandroid.LocalSignIn" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="My Activity" android:name="golfcoursecommonandroid.SelectRewardPromoCode" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="My Activity" android:name="golfcoursecommonandroid.SelectPromoCode" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="My Activity" android:name="golfcoursecommonandroid.PromoCode" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="My Activity" android:name="golfcoursecommonandroid.RewardDetail" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Credit Card Billing" android:name="golfcoursecommonandroid.CreditCardBilling" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Credit Card" android:name="golfcoursecommonandroid.CreditCard" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Deals" android:name="golfcoursecommonandroid.Deals"><nothingHere/></activity>
+        <activity android:label="Create Account" android:name="golfcoursecommonandroid.CreateAccount" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="My Activity" android:name="golfcoursecommonandroid.NoTimes"><nothingHere/></activity>
+        <activity android:label="My Activity" android:name="golfcoursecommonandroid.RollTime"><nothingHere/></activity>
+        <activity android:label="SearchCriteria" android:name="golfcoursecommonandroid.SearchCriteria"><nothingHere/></activity>
+        <activity android:label="Sign In" android:name="golfcoursecommonandroid.SignIn" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"><nothingHere/></activity>
+        <activity android:label="Switch" android:name="golfcoursecommonandroid.SwitchFacility" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="Details" android:name="golfcoursecommonandroid.TeeTimeDetail"><nothingHere/></activity>
+        <activity android:label="Tee Times" android:name="golfcoursecommonandroid.TeeTimes"><nothingHere/></activity>
+        <activity android:label="Course Info" android:name="golfcoursecommonandroid.CourseInfo"><nothingHere/></activity>
+        <activity android:label="Me" android:name="golfcoursecommonandroid.Me"><nothingHere/></activity>
+        <activity android:label="Home" android:name="golfcoursecommonandroid.Home"><nothingHere/></activity>
+        <activity android:label="TeeTimeTab" android:name="golfcoursecommonandroid.TeeTimeTab"><nothingHere/></activity>
+        <provider android:authorities="com.quick18.parkhills.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    <receiver android:name="golfcoursecommonandroid.C2DMReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.quick18.parkhills"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.quick18.parkhills"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        </application>
+    <permission android:name="com.quick18.parkhills.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.quick18.parkhills.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+</manifest>

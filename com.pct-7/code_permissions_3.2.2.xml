@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/pct/LVcameraActivity.java</file>
+    <line>217</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/pct/LVcameraActivity.java</file>
+    <line>221</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/pct/CameraView.java</file>
+    <line>124</line>
+    <permissions>
+      <permission>
+        <name>android.permission.CAMERA</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

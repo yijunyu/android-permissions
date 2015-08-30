@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="tsk_wt.game.Memory_Color">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="tsk_wt.game.Memory_Color.Memory_Color" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".Memory_Play" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".RecordList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".PRtskwt" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="jp.co.cayto.appc.sdk.android.AppCTest"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="jp.co.cayto.appc.sdk.android.AgreementStarter" android:noHistory="true"><nothingHere/></activity>
+        <activity android:label="appc" android:name="jp.co.cayto.appc.sdk.android.WebViewActivity"><nothingHere/></activity>
+        <meta-data android:name="appc_media_key" android:value="8a9c82f384e698911ffe599a3a480ac08e3c79d0"><nothingHere/></meta-data>
+        <receiver android:name="jp.co.cayto.appc.sdk.android.background.BgAppReceiver">
+            <intent-filter>
+                <action android:name="jp.co.cayto.appc.sdk.android.remote.command.gid.search"><nothingHere/></action>
+                <action android:name="jp.co.cayto.appc.sdk.android.remote.command.gid.set"><nothingHere/></action>
+                <action android:name="jp.co.cayto.appc.sdk.android.remote.command.gid.remove"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:label="BootStrap" android:name="jp.co.cayto.appc.sdk.android.background.BootStrap">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"><nothingHere/></action>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"><nothingHere/></action>
+                <android-data android:scheme="package"><nothingHere/></android-data>
+            </intent-filter>
+        </receiver>
+    <service android:name="jp.co.cayto.appc.sdk.android.background.IDService" android:process=":outerProcessX"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

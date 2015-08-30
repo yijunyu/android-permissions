@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.funkybear.matatron">
+    <application android:allowBackup="true" android:icon="@drawable/ic_matatron" android:label="@string/app_name" android:theme="@style/MatatronFullscreen">
+        <activity android:name="com.tapfortap.TapForTapActivity"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="MatatronMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="MatatronLevels" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="MatatronPrepare" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="MatatronPause" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="MatatronPlay" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="MatatronFinish" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="MatatronShare" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="MatatronMarathon" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="MatatronChallenge" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="MatatronHelp" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="MatatronError" android:screenOrientation="portrait" android:theme="@style/MatatronPopup"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+    <service android:name="MatatronNotifier"><nothingHere/></service>
+        </application>
+<supports-screens android:anyDensity="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+&gt;
+</manifest>

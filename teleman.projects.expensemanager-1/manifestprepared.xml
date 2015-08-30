@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="teleman.projects.expensemanager">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="teleman.projects.expensemanager.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/header_category" android:name="teleman.projects.expensemanager.SelectCatagory"><nothingHere/></activity>
+        <activity android:label="@string/header_about" android:name="teleman.projects.expensemanager.AboutApplication"><nothingHere/></activity>
+        <activity android:label="@string/header_view" android:name="teleman.projects.expensemanager.ViewExpenses"><nothingHere/></activity>
+        <activity android:label="@string/header_setting" android:name="teleman.projects.expensemanager.SettingApplication"><nothingHere/></activity>
+        <activity android:label="@string/header_addNewExepnse" android:name="AddNewExpense"><nothingHere/></activity>
+    </application>
+</manifest>

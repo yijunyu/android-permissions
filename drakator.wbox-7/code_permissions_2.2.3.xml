@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/org/xmlrpc/android/XMLRPCClient.java</file>
+    <line>92</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/org/xmlrpc/Test$1.java</file>
+    <line>162</line>
+    <permissions>
+      <permission>
+        <name>android.permission.READ_PHONE_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/drakator/wbox/WBoxActivity.java</file>
+    <line>249</line>
+    <permissions>
+      <permission>
+        <name>android.permission.WAKE_LOCK</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

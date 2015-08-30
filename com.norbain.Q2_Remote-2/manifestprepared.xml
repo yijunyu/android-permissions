@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.norbain.Q2_Remote">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name=".global.GlobalApplication">
+        <activity android:name=".login.LoadingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name=".realplay.RealPlayActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".channelmanager.ChannelActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".devicemanager.DeviceListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".devicemanager.DeviceViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".devicemanager.DeviceEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:name=".devicemanager.DeviceRegOptionActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name=".playback.PlayBackActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".playback.PlayBackChannelActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".playback.WheelPickerActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name=".sysconfig.SysConfigActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".sysconfig.SysConfigActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".sysconfig.PasswordSetActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".sysconfig.PasswordModifyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".sysconfig.PasswordCleanActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".sysconfig.AboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".sysconfig.HelpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".guide.GuideActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <service android:name=".service.EmptyService"><nothingHere/></service>
+    </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DEVICE_POWER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_ORIENTATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

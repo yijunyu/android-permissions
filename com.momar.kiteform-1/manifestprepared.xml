@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.momar.kiteform">
+    <application android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity android:label="@string/app_name" android:name="com.momar.kiteform.Splashscreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UserProfile" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="org.brickred.socialauth.Profile" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Registration" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Letterpage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".History" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".HistoryAdapter" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".ViewDetails" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".Option" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"><nothingHere/></activity>
+        <activity android:name="com.paypal.android.sdk.payments.PaymentCompletedActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="io.card.payment.CardIOActivity"><nothingHere/></activity>
+        <activity android:name="io.card.payment.DataEntryActivity"><nothingHere/></activity>
+    <service android:exported="false" android:name="com.paypal.android.sdk.payments.PayPalService"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.SiteWrapper">
+    <application android:icon="@drawable/icon" android:label="&#1050;&#1086;&#1088;&#1077;&#1081;&#1089;&#1082;&#1072;&#1103; &#1082;&#1091;&#1093;&#1085;&#1103;. &#1041;&#1083;&#1102;&#1076;&#1072; &#1056;&#1077;&#1094;&#1077;&#1087;&#1090;&#1099;" android:name="mono.android.app.Application">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="false" android:name="sitewrapper.MainActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.lt.kotkuhnya.mono.MonoRuntimeProvider.__mono_init__" android:exported="false" android:initOrder="2147483647" android:name="mono.MonoRuntimeProvider"><nothingHere/></provider>
+    <receiver android:name="sitewrapper.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="sitewrapper.NotifyServ"><nothingHere/></service>
+        </application>
+    <service android:name="SiteWrapper.NotifyServ"><nothingHere/></service>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

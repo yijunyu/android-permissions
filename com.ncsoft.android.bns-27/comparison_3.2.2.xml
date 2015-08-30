@@ -1,0 +1,12 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.WRITE_SETTINGS</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+    <permission>android.permission.CAMERA</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.RESTART_PACKAGES</permission>
+    <permission>android.permission.KILL_BACKGROUND_PROCESSES</permission>
+  </under-specification>
+</comparison>

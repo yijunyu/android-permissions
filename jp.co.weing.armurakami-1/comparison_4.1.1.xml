@@ -1,0 +1,8 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+  </under-specification>
+</comparison>

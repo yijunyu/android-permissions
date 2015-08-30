@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.appiator.fakingnewsforandroid">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name=".FakingNewsForAndroidTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".CategoryHomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".ArticleActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".CommentsActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".MoreActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Remove Ads" android:name=".payment.PaymentActivity"><nothingHere/></activity>
+        <activity android:label="Purchase Instructions" android:name=".payment.PurchaseInstructionsActivity"><nothingHere/></activity>
+        <activity android:label="Register User" android:name=".payment.RegisterUserActivity"><nothingHere/></activity>
+        <activity android:label="Verify User" android:name=".payment.VerifyUserActivity"><nothingHere/></activity>
+        <activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.zooz.android.lib.CheckoutActivity" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.paypal.android.MEP.PayPalActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+    <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="58717AE2-E477-4767-B424-CD8D4650C036"><nothingHere/></meta-data>
+        <service android:name=".update.UpdateService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

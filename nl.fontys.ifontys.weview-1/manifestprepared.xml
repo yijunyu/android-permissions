@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="nl.fontys.ifontys.weview">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="AppData" android:theme="@style/Theme.window">
+        <activity android:label="@string/app_name" android:name=".activities.actMainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".activities.actWelcome" android:windowSoftInputMode="stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.actBrowser"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.actLinks"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.actNieuweLink"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.actNotitie" android:windowSoftInputMode="stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.actPresentatie"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.actPresentatieOverzicht"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.actVraag" android:windowSoftInputMode="stateAlwaysVisible"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.actWebPreview"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.actPreferences"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

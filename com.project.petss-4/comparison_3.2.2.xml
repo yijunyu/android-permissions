@@ -1,0 +1,9 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CHANGE_NETWORK_STATE</permission>
+    <permission>android.permission.READ_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+  </under-specification>
+</comparison>

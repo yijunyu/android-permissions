@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.eclipse.ics.battery">
+    <application android:debuggable="false" android:icon="@drawable/dbatt75" android:label="@string/app_name">
+        <provider android:authorities="com.gsamlabs.bbm.iconpacks.com.eclipse.ics.battery" android:name=".IconContentProvider"><nothingHere/></provider>
+        <receiver android:name=".IconBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.eclipse.ics.battery.SHOW_NOTIFICATION"><nothingHere/></action>
+                <action android:name="com.eclipse.ics.battery.CANCEL_NOTIFICATION"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

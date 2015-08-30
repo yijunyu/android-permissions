@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.idivinecreation.dailyconstructionrecords">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboard" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.idivinecreation.dailyconstructionrecords.Login_Screen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Registration_form" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Home_Page" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Settings" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Project_Details" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Report_Details" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Daily_Comment" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Materials" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Field_Workers" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Material_Details" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Site_Photos" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Today_Progress" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Equipment" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Problem_Delay" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Requirement" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Feedback" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Field_Workers_Details" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard" android:launchMode="singleTask" android:name=".Field_Worker" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:name="com.blundell.tutorial.simpleinappbillingv3.ui.PurchasePassportActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.blundell.tutorial.simpleinappbillingv3.ui.StartUpActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.idivinecreation.dailyconstructionrecords"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name=".UploadService"><nothingHere/></service>
+        <service android:name=".DownloadService"><nothingHere/></service>
+        <service android:name="com.idivinecreation.dailyconstructionrecords.GCMIntentService"><nothingHere/></service>
+    </application>
+<permission android:name="com.idivinecreation.dailyconstructionrecords.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.idivinecreation.dailyconstructionrecords.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,8 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.ACCESS_LOCATION</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.WRITE_EXTERNAL_STORAGE</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

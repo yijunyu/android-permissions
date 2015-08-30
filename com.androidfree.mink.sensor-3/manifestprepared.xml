@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.androidfree.mink.sensor">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.example.android.sensor.HelloSensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="OK-ON &#21147;&#22580;" android:name="com.example.android.sensor.OrientationDemo"><nothingHere/></activity>
+        <activity android:label="&#38263;&#38272;&#25351;&#21335;" android:name="com.example.android.sensor.CompassDemo"><nothingHere/></activity>
+    </application>
+</manifest>

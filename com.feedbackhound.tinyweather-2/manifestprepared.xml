@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.feedbackhound.tinyweather">
+    <application android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.feedbackhound.tinyweather.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_add" android:name="com.feedbackhound.tinyweather.AddActivity" android:parentActivityName="com.feedbackhound.tinyweather.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.feedbackhound.tinyweather.MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_settings" android:name="com.feedbackhound.tinyweather.SettingsActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

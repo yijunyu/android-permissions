@@ -1,0 +1,81 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="san.easyroam">
+    <application android:icon="@drawable/new_launcher_icon" android:label="@string/app_name" android:name="san.easyroam.MainApplication">
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name=".MainActivityNew" android:screenOrientation="portrait" android:theme="@style/Theme.PageIndicatorDefaults">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Login" android:name="san.easyroam.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="org.acra.CrashReportDialog"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:name="easyroam.org.sipdroid.sipua.ui.Activity2" android:taskAffinity=""><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="easyroam.org.sipdroid.sipua.ui.InCallScreen" android:taskAffinity=""><nothingHere/></activity>
+    <receiver android:enabled="false" android:name="san.easyroam.BootReceiver">
+            <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+        </receiver>
+        <receiver android:name="san.easyroam.Receiver">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_AP_STATE_CHANGED"><nothingHere/></action>
+                <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE"><nothingHere/></action>
+                <action android:name="android.net.wifi.STATE_CHANGE"><nothingHere/></action>
+                <action android:name="android.net.wifi.supplicant.STATE_CHANGE"><nothingHere/></action>
+                <action android:name="android.net.wifi.CONFIGURED_NETWORKS_CHANGE"><nothingHere/></action>
+                <action android:name="android.net.wifi.LINK_CONFIGURATION_CHANGED"><nothingHere/></action>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.PROXY_CHANGE"><nothingHere/></action>
+                <action android:name="android.intent.action.PHONE_STATE"><nothingHere/></action>
+                <action android:name="android.net.conn.BACKGROUND_DATA_SETTING_CHANGED"><nothingHere/></action>
+                <action android:name="android.intent.action.CLEAR_DNS_CACHE"><nothingHere/></action>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="android.net.conn.INET_CONDITION_ACTION"><nothingHere/></action>
+                <action android:name="san.easyroam.USSDReply.CALL_FORWARD"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="easyroam.org.sipdroid.sipua.ui.Caller">
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.NEW_OUTGOING_CALL"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="san.easyroam.MainService">
+            <intent-filter>
+                <action android:name="san.easyroam.USSDReply.CALL_FORWARD"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name=".USSDExtendedNetworkService">
+            <intent-filter>
+                <action android:name="com.android.ussd.IExtendedNetworkService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<protected-broadcast android:name="android.provider.Telephony.SPN_STRINGS_UPDATED"><nothingHere/></protected-broadcast>
+    <uses-feature android:name="android.hardware.wifi" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"><nothingHere/></uses-permission>
+    </manifest>

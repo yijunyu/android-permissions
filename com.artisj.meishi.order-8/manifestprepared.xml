@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.artisj.meishi.order">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/global__application_name" android:theme="@style/Theme.Light.NoTitleBar">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.DesignCategoryListActivity"><nothingHere/></activity>
+        <activity android:name=".activity.DesignListActivity"><nothingHere/></activity>
+        <activity android:name=".activity.CardDetailActivity"><nothingHere/></activity>
+        <activity android:name=".activity.ChargeTableActivity"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

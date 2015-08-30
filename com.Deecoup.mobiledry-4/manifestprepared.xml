@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.Deecoup.mobiledry">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.Deecoup.mobiledry.MobileQDC_Dry_Pin" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_mobile_qdc__login" android:name="com.Deecoup.mobiledry.MobileQDC_Login" android:noHistory="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_mobile_qdc__menu" android:name="com.Deecoup.mobiledry.MobileQDC_Menu" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_mobile_qdc__my__store__info" android:name="com.Deecoup.mobiledry.MobileQDC_My_Store_Info" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_mobile_qdc__search__customer" android:name="com.Deecoup.mobiledry.MobileQDC_Search_Customer" android:noHistory="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_mobile_qdc__add__new__customer" android:name="com.Deecoup.mobiledry.MobileQDC_Add_New_Customer" android:noHistory="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_mobile_qdc__booking__screen" android:name="com.Deecoup.mobiledry.MobileQDC_Booking_Screen" android:noHistory="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateVisible"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

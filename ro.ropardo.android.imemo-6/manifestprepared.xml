@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="ro.ropardo.android.imemo">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:logo="@drawable/imemo_actionbar_logo" android:name="org.holoeverywhere.app.Application" android:theme="@style/Theme.imemo">
+        <activity android:label="@string/app_name" android:name="ro.ropardo.android.imemo.activities.IMemoActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="ro.ropardo.android.imemo.activities.EditNoteActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.IMemoActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_backup_and_restore_cards" android:name="ro.ropardo.android.imemo.activities.BackupAndRestoreActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".activities.IMemoActivity"><nothingHere/></meta-data>
+        </activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="false" android:xlargeScreens="false"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

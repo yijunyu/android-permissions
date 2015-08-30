@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.pcp.pubcrawlpages">
+    <application android:allowBackup="true" android:icon="@drawable/logo" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name_title" android:name="com.example.pubcrawlpages.SplashScreen" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="Pub Crawl Pages" android:name="com.example.pubcrawlpages.PCP_MainActivity" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="PubList" android:name="com.example.pubcrawlpages.PubList" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="PubList" android:name="com.example.pubcrawlpages.PubListDayFilter" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Pub Details" android:name="com.example.pubcrawlpages.SelectedPub" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Review Details" android:name="com.example.pubcrawlpages.PubReviewList" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Day Schedule" android:name="com.example.pubcrawlpages.DaySchedule" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Meeting Point" android:name="com.example.pubcrawlpages.PubMeetingMapDetail" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Day Schedule" android:name="com.example.pubcrawlpages.ReferFriend" android:theme="@style/CustomTheme"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyD20_qkFyDEpjFVmj4mGxBiAPwh7Zj9ubQ"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+    </application>
+<permission android:name="com.pcp.pubcrawlpages.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.pcp.pubcrawlpages.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

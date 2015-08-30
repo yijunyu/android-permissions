@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="it.reigi.gdtlite">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".activities.MenuActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name=".activities.ComicsActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.ExtraActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.LallinActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".activities.CreditsActivity" android:screenOrientation="landscape"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    </manifest>

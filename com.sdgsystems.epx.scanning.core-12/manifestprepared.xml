@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.sdgsystems.epx.scanning.core">
+    <application android:allowBackup="false" android:icon="@drawable/core_ic_launcher" android:label="@string/core_app_name">
+        <activity android:excludeFromRecents="true" android:label="@string/scanner_activity" android:name="me.dm7.barcodescanner.zxing.sample.ScannerActivity" android:noHistory="true" android:theme="@style/AppOverlayTheme" android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data android:name="android.support.UI_OPTIONS" android:value="splitActionBarWhenNarrow"><nothingHere/></meta-data>
+        </activity>
+        <activity android:icon="@drawable/now_ic_launcher" android:label="@string/now_app_name" android:launchMode="singleTop" android:name="com.sdgsystems.epx.scanning.now.ScanNow" android:taskAffinity="com.sdgsystems.epx.scanning.now">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:icon="@drawable/now_ic_launcher" android:label="@string/now_app_name" android:launchMode="singleTop" android:name="com.sdgsystems.epx.scanning.now.NotificationActivity" android:theme="@style/InvisibleAppTheme"><nothingHere/></activity>
+        <activity android:icon="@drawable/now_ic_launcher" android:label="@string/title_activity_about" android:name="com.sdgsystems.epx.scanning.now.About" android:parentActivityName="com.sdgsystems.epx.scanning.now.ScanNow" android:taskAffinity="com.sdgsystems.epx.scanning.now">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.sdgsystems.epx.scanning.now.ScanNow"><nothingHere/></meta-data>
+        </activity>
+        <activity android:icon="@drawable/now_ic_launcher" android:label="GenericWebView" android:name="com.sdgsystems.epx.scanning.now.GenericWebView" android:taskAffinity="com.sdgsystems.epx.scanning.now"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/settings_ic_launcher" android:label="@string/settings_app_name" android:launchMode="standard" android:name="com.sdgsystems.epx.scanning.settings.ScannerSettings" android:screenOrientation="unspecified" android:taskAffinity="com.sdgsystems.epx.scanning.settings" android:theme="@android:style/Theme.Holo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <service android:exported="true" android:icon="@drawable/scanservice_ic_launcher" android:label="@string/scanservice_app_name" android:name="com.sdgsystems.epx.scanning.scanservice.ScanService"><nothingHere/></service>
+        <service android:icon="@drawable/zxing_ic_launcher" android:label="@string/zxing_app_name" android:name="com.sdgsystems.epx.scanning.zxing_driver2.ZxingDriver">
+            <intent-filter>
+                <action android:name="com.sdgsystems.epx.scanning.intent.action.BIND_DRIVER_SERVICE"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:name="com.sdgsystems.epx.scanning.now.Common$CommonService"><nothingHere/></service>
+        </application>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CALL_PRIVILEGED</permission>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

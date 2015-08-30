@@ -1,0 +1,14 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.BLUETOOTH</permission>
+    <permission>android.permission.BLUETOOTH_ADMIN</permission>
+    <permission>android.permission.READ_PHONE_STATE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.USE_CREDENTIALS</permission>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+  </under-specification>
+</comparison>

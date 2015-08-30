@@ -1,0 +1,101 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="tsou.activity.hand.shopping">
+    <application android:icon="@drawable/logo_image" android:label="@string/app_name" android:name="tsou.activity.TsouApplication" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:name="tsou.activity.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="tsou.activity.MainMoreActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.MainHomeHandActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.MapSearch" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.BaiduMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.MapGetLocationActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.WeatherActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.ColumnClassifyListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.UpdatePasswordActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.MyCommentsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.MyInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.CompanyInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.BBSMessageListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.WeiBoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.HelpWebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.BBSMessageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.BlogListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.BBSReportActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.WebMessageCommentListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.MainPersonalCenterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.CompanyListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.ShopListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.FamousPersonListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.ShopProductListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.ShopCartListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.ShopOrderListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.ProductCartListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.ProductOrderListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.ShowListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.MenuActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.WebMessage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.ShopProductDetailsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.NewsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.ImageListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.NeedsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.NeedsPublishActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.PublishProductActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.LoginOrRegister" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.CollectionListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.MainSearchActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.MainSettingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.MainShareActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.NewsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.AddressInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.AddressListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.UpdateShangqiuApk" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.TsouActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.list.TsouListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="tsou.activity.TsouWebActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.umeng.socialize.view.CommentActivity" android:theme="@style/Theme.UMDefault"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="singleTask" android:name="com.umeng.socialize.view.ShareActivity" android:noHistory="true" android:theme="@style/Theme.UMDialog" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.umeng.socialize.view.CommentDetail" android:noHistory="true" android:theme="@style/Theme.UMDefault"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.umeng.socialize.view.CommentDetailNoMap" android:noHistory="true" android:theme="@style/Theme.UMDefault"><nothingHere/></activity>
+        <meta-data android:name="UMENG_CHANNEL" android:value="Umeng"><nothingHere/></meta-data>
+    <receiver android:name="shaoxing.android.tsou.activity.AppRegister" android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.6"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-feature android:sharedUserId="android.uid.system"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.HARDWARE_TEST"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.DELETE_PACKAGES"><nothingHere/></uses-permission>
+    </manifest>

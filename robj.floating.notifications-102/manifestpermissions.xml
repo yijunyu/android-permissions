@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<permissions>
+  <permission>
+    <name>android.permission.SYSTEM_ALERT_WINDOW</name>
+  </permission>
+  <permission>
+    <name>android.permission.INTERNET</name>
+  </permission>
+  <permission>
+    <name>android.permission.GET_TASKS</name>
+  </permission>
+  <permission>
+    <name>android.permission.WAKE_LOCK</name>
+  </permission>
+  <permission>
+    <name>android.permission.WRITE_EXTERNAL_STORAGE</name>
+  </permission>
+  <permission>
+    <name>robj.floating.notifications.READ_DATA</name>
+  </permission>
+</permissions>

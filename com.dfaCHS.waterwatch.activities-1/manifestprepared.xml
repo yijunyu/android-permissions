@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.dfaCHS.waterwatch.activities">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.dfaCHS.waterwatch.activities.Home" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.dfaCHS.waterwatch.activities.Credits" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.dfaCHS.waterwatch.activities.History" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.dfaCHS.waterwatch.activities.Settings" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.dfaCHS.waterwatch.activities.ShowerHead" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.dfaCHS.waterwatch.activities.Timer" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.dfaCHS.waterwatch.activities.HistoryTab" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.dfaCHS.waterwatch.activities.Splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.dfaCHS.waterwatch.activities.Splash2" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+</manifest>

@@ -1,0 +1,64 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.contentomedia.apps.davivienda">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.contentomedia.apps.davivienda.ui.DaviviendaMainActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.contentomedia.apps.davivienda.ui.Davivienda600MainActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.ui.Davivienda600BrowserActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.contentomedia.apps.davivienda.ui.DaviviendaBrowserActivity" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.ui.Davivienda600SettingsActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.contentomedia.apps.davivienda.ui.DaviviendaSettingsActivity" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.ui.Davivienda600ListMapActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.contentomedia.apps.davivienda.ui.DaviviendaListMapActivity" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.ui.Davivienda600MapActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.contentomedia.apps.davivienda.ui.DaviviendaMapActivity" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaPhoneActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.contentomedia.apps.davivienda.phone.DaviviendaBrowserActivity" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaMenuActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaSubmenuActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaSectionTextActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaSectionTabActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaNovedadesPhoneActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaNoticiasPhoneActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaSettingsPhoneActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaDetalleNovedad" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaDetalleNoticia" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaRSSPhoneActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:name="com.contentomedia.apps.davivienda.phone.DaviviendaPhoneSearchActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.contentomedia.apps.davivienda.phone.DaviviendaPhoneMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.contentomedia.apps.davivienda.phone.DaviviendaPhoneListMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.contentomedia.apps.davivienda.phone.DaviviendaPhoneDetailMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.contentomedia.apps.davivienda.phone.DaviviendaPhoneCalificarOficinaActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.contentomedia.apps.davivienda.phone.DaviviendaPhoneCalificarCajeroActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBwXYaSWP_dMrSMF4HUuE9tywzgT9sBZxc"><nothingHere/></meta-data>
+        <receiver android:name="com.contentomedia.apps.davivienda.notification.DaviviendaGCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.contentomedia.apps.davivienda"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.contentomedia.apps.davivienda.notification.DaviviendaGCMNotificationService"><nothingHere/></service>
+        </application>
+<permission android:name="com.contentomedia.apps.davivienda.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="com.contentomedia.apps.davivienda.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:resizeable="false" android:smallScreens="false"><nothingHere/></supports-screens>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.contentomedia.apps.davivienda.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.contentomedia.apps.davivienda.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

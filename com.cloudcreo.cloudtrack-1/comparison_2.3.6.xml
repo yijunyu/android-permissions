@@ -1,0 +1,12 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.NETWORK_PROVIDER</permission>
+    <permission>android.permission.GPS_PROVIDER</permission>
+    <permission>android.permission.RECEIVE_BOOT_COMPLETED</permission>
+    <permission>android.permission.ACCESS_NETWORK_STATE</permission>
+    <permission>android.permission.ACCESS_WIFI_STATE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.ACCESS_COARSE_LOCATION</permission>
+  </under-specification>
+</comparison>

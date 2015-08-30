@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.RECEIVE_SMS</permission>
+    <permission>android.permission.NFC</permission>
+  </over-specification>
+  <under-specification/>
+</comparison>

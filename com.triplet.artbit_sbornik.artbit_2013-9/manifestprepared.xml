@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.triplet.artbit_sbornik.artbit_2013">
+    <application android:allowBackup="true" android:hardwareAccelerated="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name=".Triplet" android:theme="@style/TripletAppTheme">
+        <activity android:configChanges="keyboardHidden" android:name="com.triplet.app.ActivitySplash" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.triplet.app.ActivityLogo" android:noHistory="true" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.triplet.app.ActivitySlider" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.triplet.app.ActivityComments" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.triplet.app.ActivityCommentPost" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.triplet.app.ActivitySpecial" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.triplet.app.ActivityDiscography" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.triplet.app.ActivityGetMP3" android:screenOrientation="portrait"><nothingHere/></activity>
+        <receiver android:name="com.example.expansion.downloader.SampleAlarmReceiver"><nothingHere/></receiver>
+    <service android:name="com.triplet.app.ServicePlayer"><nothingHere/></service>
+        <service android:name="com.example.expansion.downloader.SampleDownloaderService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    </manifest>

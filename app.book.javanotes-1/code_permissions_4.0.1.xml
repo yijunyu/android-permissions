@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/app/book/javanotes/JavanotesActivity$HelpWebViewClient.java</file>
+    <line>43</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/app/book/javanotes/JavanotesActivity.java</file>
+    <line>20</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/app/book/javanotes/JavanotesActivity.java</file>
+    <line>21</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/app/book/javanotes/JavanotesActivity.java</file>
+    <line>28</line>
+    <permissions/>
+  </call>
+</calls>

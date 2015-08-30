@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/android/ptplib/FileSendData.java</file>
+    <line>53</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

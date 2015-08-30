@@ -1,0 +1,210 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.tripomatic.cabosanlucas">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.tripomatic.Tripomatic" android:theme="@style/Theme.Tripomatic.ActionBar">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.tripomatic.ui.SplashScreen" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name="com.tripomatic.ui.welcome.WelcomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/showcase" android:name="com.tripomatic.ui.showcase.ShowcaseActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/sign_in" android:name="com.tripomatic.ui.connect.ConnectActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/sign_in" android:name="com.tripomatic.ui.connect.SignInActivity" android:parentActivityName="com.tripomatic.ui.connect.ConnectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.connect.ConnectActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/create_account_title" android:name="com.tripomatic.ui.connect.SignUpActivity" android:parentActivityName="com.tripomatic.ui.connect.ConnectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.connect.ConnectActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/my_trips" android:launchMode="singleTask" android:name="com.tripomatic.ui.myTrips.MyTripsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="New Trip" android:name="com.tripomatic.ui.newTrip.destinations.ListsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/new_trip" android:name="com.tripomatic.ui.newTrip.dates.DatesActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/trip_home" android:name="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/edit_trip" android:name="com.tripomatic.ui.editTrip.EditTripActivity" android:parentActivityName="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.tripHome.TripHomeActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/itinerary" android:name="com.tripomatic.ui.itinerary.ItineraryActivity" android:parentActivityName="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.tripHome.TripHomeActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/day_detail" android:name="com.tripomatic.ui.dayDetail.DayDetailActivity" android:parentActivityName="com.tripomatic.ui.itinerary.ItineraryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.itinerary.ItineraryActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/detail" android:name="com.tripomatic.ui.detail.DetailActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/map" android:name="com.tripomatic.ui.maps.MapActivity" android:parentActivityName="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.tripHome.TripHomeActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/custom_place" android:name="com.tripomatic.ui.customPlace.CustomPlaceActivity" android:parentActivityName="com.tripomatic.ui.maps.MapActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.maps.MapActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/attractions" android:name="com.tripomatic.ui.thingsToDo.ThingsToDoActivity" android:parentActivityName="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.tripHome.TripHomeActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/hotels" android:name="com.tripomatic.ui.thingsToDo.hotels.HotelsActivity" android:parentActivityName="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.tripHome.TripHomeActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/tours_and_activities" android:name="com.tripomatic.ui.thingsToDo.bookableActivity.BookableActivitiesActivity" android:parentActivityName="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.tripHome.TripHomeActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/car_hire" android:name="com.tripomatic.ui.carHire.CarHireActivity" android:parentActivityName="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.tripHome.TripHomeActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/offline" android:name="com.tripomatic.ui.offlineData.guidesList.GuidesListActivity" android:parentActivityName="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.tripHome.TripHomeActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="Offline data" android:name="com.tripomatic.ui.offlineData.OfflineDataActivity" android:parentActivityName="com.tripomatic.ui.offlineData.guidesList.GuidesListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.offlineData.guidesList.GuidesListActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="About Tripomatic" android:name="com.tripomatic.ui.WebViewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Facebook login" android:name="com.facebook.LoginActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.tripomatic.ui.dynamicContent.DynamicContentActivity" android:parentActivityName="com.tripomatic.ui.tripHome.TripHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.tripHome.TripHomeActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="Consume debug in apps" android:name="com.tripomatic.ui.ConsumeDebugInApp" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:label="@string/edit_day" android:name="com.tripomatic.ui.dayDetail.editDay.EditDayActivity" android:parentActivityName="com.tripomatic.ui.dayDetail.DayDetailActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.dayDetail.DayDetailActivity"><nothingHere/></meta-data>
+            </activity>
+        <activity android:configChanges="orientation" android:label="@string/weather_forecast" android:name="com.tripomatic.ui.weather.WeatherActivity" android:parentActivityName="com.tripomatic.ui.dayDetail.DayDetailActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tripomatic.ui.dayDetail.DayDetailActivity"><nothingHere/></meta-data>
+            </activity>
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_mini_app_id"><nothingHere/></meta-data>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="64a961f920a6a194baa3944ab84dfdb245bbff1c"><nothingHere/></meta-data>
+        <receiver android:name="com.tripomatic.NetworkStateChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.analytics.tracking.android.CampaignTrackingService"><nothingHere/></service>
+        </application>
+<uses-feature android:name="android.hardware.sensor.compass" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    </manifest>

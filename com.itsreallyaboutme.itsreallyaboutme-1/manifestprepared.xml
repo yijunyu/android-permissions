@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.itsreallyaboutme.itsreallyaboutme"> android:installLocation="auto" &gt;
+<application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:launchMode="singleInstance">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.itsreallyaboutme.itsreallyaboutme.MyWebView" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Details of notification" android:name="com.itsreallyaboutme.itsreallyaboutme.NotificationView" android:parentActivityName="com.itsreallyaboutme.itsreallyaboutme.MyWebView">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity"><nothingHere/></meta-data>
+        </activity>
+        <intent-filter>
+            <action android:name="com.itsreallyaboutme.itsreallyaboutme.GpsBackgroundService.LONGRUNSERVICE"><nothingHere/></action>
+        </intent-filter>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.wearable.beta.app" android:resource="@xml/android_wear_micro_apk"><nothingHere/></meta-data>
+    <receiver android:name="com.itsreallyaboutme.itsreallyaboutme.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <action android:name="com.google.android.gcm.intent.RETRY"><nothingHere/></action>
+                <category android:name="com.itsreallyaboutme.itsreallyaboutme"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.itsreallyaboutme.itsreallyaboutme.GcmIntentService"><nothingHere/></service>
+        <service android:description="@string/gps_service_desc" android:enabled="true" android:exported="true" android:label="@string/gps_service_desc" android:name="com.itsreallyaboutme.itsreallyaboutme.GpsBackgroundService"><nothingHere/></service>
+        </application>
+<permission android:name="com.itsreallyaboutme.itsreallyaboutme.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.REGISTRATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.itsreallyaboutme.itsreallyaboutme.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

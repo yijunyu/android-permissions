@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/mortgagemapp/appgenwebview/WebviewActivity.java</file>
+    <line>94</line>
+    <permissions>
+      <permission>
+        <name>android.permission.READ_PHONE_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/mortgagemapp/appgenwebview/WebviewActivity.java</file>
+    <line>63</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/com/mortgagemapp/appgenwebview/WebviewActivity.java</file>
+    <line>67</line>
+    <permissions>
+      <permission>
+        <name>android.permission.ACCESS_NETWORK_STATE</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

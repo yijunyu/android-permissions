@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/net/androbook/material110919213940_5e1e97e6/task/DownloadTask.java</file>
+    <line>65</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/net/androbook/material110919213940_5e1e97e6/task/GetFileSizeTask.java</file>
+    <line>31</line>
+    <permissions>
+      <permission>
+        <name>android.permission.INTERNET</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mobilking.fatfighter">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@android:style/Theme.Light.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="com.mobilking.fatfighter.MainActivity"><nothingHere/></activity>
+        <activity android:name=".SetGoal"><nothingHere/></activity>
+        <activity android:name=".Stats"><nothingHere/></activity>
+        <activity android:name=".EnterWeight"><nothingHere/></activity>
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

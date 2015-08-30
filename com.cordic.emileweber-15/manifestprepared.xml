@@ -1,0 +1,32 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cordic.emileweber">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.cordic.cordicShared.CordicSharedApplication">
+        <activity android:label="@string/app_name" android:name=".CabbageCarsActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.cordic.cordicShared.CordicSharedActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cordic.cordicShared.CordicSharedPayTypeActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:name="com.cordic.cordicShared.CordicSharedUserInfoActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedVehTypeActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedBookJobActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedBookConfirmActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedAdvSettingsActivity" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan|stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedPickupTimeActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedAccRefActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustNothing"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedPickupDropffActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedAddLookupActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedGpsSearchActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="com.cordic.cordicShared.CordicSharedBookedViewActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedJobTrackActivity" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedPaymentCard" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustNothing"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.cordic.cordicShared.CordicSharedPaymentAccount" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    </manifest>

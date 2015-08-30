@@ -1,0 +1,77 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="preferExternal" package="com.cudl.autosmart.northeastcu">
+    <application android:debuggable="false" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/CustomTheme">
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.Dashboard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.DealerSearch" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.DealerSearchResults"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.InventorySearch" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.InventorySearchResults"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.MakeSelection"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.GenericCheckList" android:noHistory="true"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.InventoryDetail"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.DealerDetail"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.GenericWebView"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.DealerMapView"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.GenericGallery"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.RequestAQuote"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.PaymentCalculator"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.Financing"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ConsignmentHome"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.Favorites"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.Articles"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.TradeInValues"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.About"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.Settings"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.GPSTesting"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.Credits"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.AffordabilityCalculator"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.Calculators"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingApplyLoan"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingSearchLoan"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingSearchLoanNoResult"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingSearchLoanResult"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingSearchLoanResultDetails"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingApplyLoanHome"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingApplyLoanAddress"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingApplyLoanDisclosures"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingApplyLoanEmployment"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingApplyLoanLoan"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingApplyLoanPersonal"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.FinancingApplyLoanReview"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ConsignmentInstruction"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ConsignmentInputSummary"><nothingHere/></activity>
+        <activity android:launchMode="singleTop" android:name=".screens.GenericComment" android:noHistory="true" android:windowSoftInputMode="stateVisible"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.TakeAPicture"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ConsignmentPhoto"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.CameraPreview"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ConsignmentList"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ConsignmentInputMore"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ConsignmentReview"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ConsignmentChangeStatus"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.SettingsDataConnections"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ResetPassword"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.GenericCheckListSearch"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.SettingsUserFeedback"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:launchMode="singleTop" android:name=".screens.ConsignmentDefault"><nothingHere/></activity>
+    <service android:enabled="true" android:name=".services.StartUpService"><nothingHere/></service>
+        <service android:enabled="true" android:name=".services.ConsignmentStartUpService"><nothingHere/></service>
+        <service android:enabled="true" android:name=".services.ConsignmentService"><nothingHere/></service>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    </manifest>

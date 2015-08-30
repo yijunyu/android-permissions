@@ -1,0 +1,68 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.markmedia.menutab.lite">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.markmedia.menutab.lite.ui.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="menutab"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.group.Group1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.group.Group2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.group.Group3" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.group.Group4" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.group.Group5" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.GameActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.BookingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.LoadingActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.MainHelpActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.CallPopupActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.TableSettingPopupActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.AdminPasswordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.SelectTableActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.FindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.AdminActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.IntroActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.MeetListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.RandomMenuDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.RandomGameDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.RandomCouponDetailActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.MeetMsg1Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.MeetMsg2Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.MeetMsg3Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.MeetMsg4Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.MeetMsg5Activity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.AlertActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.MenuPanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.BillPageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|orientation" android:name="com.markmedia.menutab.lite.ui.PostSettingPopupActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_finished_cooking" android:name="com.markmedia.menutab.lite.ui.FinishedCookingActivity"><nothingHere/></activity>
+        <activity android:label="@string/title_activity_staff_call" android:name="com.markmedia.menutab.lite.ui.StaffCallActivity"><nothingHere/></activity>
+    <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.markmedia.menutab"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.markmedia.menutab.lite.GCMIntentService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.markmedia.menutab.lite.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="com.markmedia.menutab.lite.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+</manifest>

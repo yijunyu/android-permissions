@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.fitbeauty.psychology_facts">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/app_icon" android:label="@string/APP_NAME">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.pack.application.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.am.ammobsdk.activities.AdActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.am.ammobsdk.activities.AMIActivity"><nothingHere/></activity>
+        <meta-data android:name="com.am.adlib.appId" android:value="android.45222.googleplay"><nothingHere/></meta-data>
+        <meta-data android:name="com.am.ammob.netId" android:value="1"><nothingHere/></meta-data>
+        <meta-data android:name="com.am.amazon.appId" android:value=""><nothingHere/></meta-data>
+        <meta-data android:name="" android:value=""><nothingHere/></meta-data>
+        <meta-data android:name="" android:value=""><nothingHere/></meta-data>
+        <meta-data android:name="null" android:value=""><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="5077000"><nothingHere/></meta-data>
+    <service android:name="com.am.ammobsdk.services.SA" android:process="com.fitbeauty.psychology_facts.a"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SB" android:process="com.fitbeauty.psychology_facts.b"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SC" android:process="com.fitbeauty.psychology_facts.c"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SD" android:process="com.fitbeauty.psychology_facts.d"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SE" android:process="com.fitbeauty.psychology_facts.e"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SF" android:process="com.fitbeauty.psychology_facts.f"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SG" android:process="com.fitbeauty.psychology_facts.g"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SH" android:process="com.fitbeauty.psychology_facts.h"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SI" android:process="com.fitbeauty.psychology_facts.i"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SJ" android:process="com.fitbeauty.psychology_facts.j"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SK" android:process="com.fitbeauty.psychology_facts.k"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SL" android:process="com.fitbeauty.psychology_facts.l"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SM" android:process="com.fitbeauty.psychology_facts.m"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SN" android:process="com.fitbeauty.psychology_facts.n"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SO" android:process="com.fitbeauty.psychology_facts.o"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SP" android:process="com.fitbeauty.psychology_facts.p"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SQ" android:process="com.fitbeauty.psychology_facts.q"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SR" android:process="com.fitbeauty.psychology_facts.r"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SS" android:process="com.fitbeauty.psychology_facts.s"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.ST" android:process="com.fitbeauty.psychology_facts.t"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SV" android:process="com.fitbeauty.psychology_facts.v"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SW" android:process="com.fitbeauty.psychology_facts.w"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SX" android:process="com.fitbeauty.psychology_facts.x"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SY" android:process="com.fitbeauty.psychology_facts.y"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.SA" android:process="com.fitbeauty.psychology_facts.z"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.FocusService" android:process="com.fitbeauty.psychology_facts.u"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.BService"><nothingHere/></service>
+        <service android:name="com.am.ammobsdk.services.EDService"><nothingHere/></service>
+        </application>
+    <uses-feature android:name="android.hardware.camera"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+</manifest>

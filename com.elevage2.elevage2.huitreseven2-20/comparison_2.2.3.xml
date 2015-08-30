@@ -1,0 +1,10 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.CLEAR_APP_CACHE</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.CHANGE_WIFI_STATE</permission>
+    <permission>android.permission.RECORD_AUDIO</permission>
+    <permission>android.permission.CAMERA</permission>
+  </under-specification>
+</comparison>

@@ -1,0 +1,108 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="cn.tianzhidaowgc">
+    <application android:debuggable="true" android:icon="@drawable/icon" android:label="@string/app_name" android:name="cn.info.AppInfoApplication">
+        <activity android:label="@string/app_name" android:name="cn.info.StartActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="wx0540e5b8db7e18f9"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="cn.info.GuidePageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:exported="true" android:name="cn.tianzhidaowgc.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="cn.appstormcustom.ui.ExitActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="cn.info.ui.AppMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.product.ProductIndexActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.product.PrettyPicActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.product.PrettyPicSolidActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.product.ProductCatActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.product.ProductListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.product.ProductDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.order.ShoppingCartListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.product.VideoListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.product.WallpaperActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.product.PrettyPicLevel2Activity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.product.PrettyPicLevel2NoBottomActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.product.PrettyPicDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.product.PrettyPicDetailInfoActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.product.PrettyPicBigImgActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.product.FullViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.product.FullViewDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.product.VideoActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.service.ServiceIndexActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.service.EditContacterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.service.EditLocationMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.service.AppBaiduMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.service.MapSearchResultActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.community.CommunityIndexActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.community.EditCommunityActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.hot.HotIndexActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.hot.HotIndexCustomActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.more.MoreIndexActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.more.AboutUsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.browser.BrowserActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.share.ShareListActivity" android:screenOrientation="portrait" android:theme="@style/Transparent"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.share.ShareList2Activity" android:screenOrientation="portrait" android:theme="@style/Transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.share.ShareToWeiboActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.share.CQRcodeShareActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.more.WeiboBindActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.more.WeiboOauthActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.more.tencentbind.OauthResultActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.comment.FansWallIndexActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.comment.CommentDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.comment.PublishCommentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.comment.CommentListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="cn.info.ui.comment.ReplyCommentActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustResize|stateVisible"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.hot.InfoIndexActivitytrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.member.MemberLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.member.MemberRegisterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.order.OrderListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.order.OrderDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.order.AddOrderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.order.SubmitOrderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.order.EasyOrderListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.coupons.CouponsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.coupons.CouponsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.coupons.CouponsRuleActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.coupons.GetCouponsResultActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:launchMode="singleTask" android:name="cn.info.ui.privilege.ShowPrivilegeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <activity android:name="cn.info.ui.privilege.ShareSuccActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"><nothingHere/></activity>
+        <receiver android:name="cn.info.ServiceBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:enabled="true" android:name="com.baidu.location.f" android:permission="android.permission.BAIDU_LOCATION_SERVICE" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v3.1"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="cn.info.TianzhidaowgcPushService">
+            <intent-filter>
+                <action android:name="cn.info.XchtwPushService"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+</manifest>

@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="edu.wit.comp566.pididdle">
+    <application android:icon="@drawable/widgeticon" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name=".PididdleMain" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".RunAnimation"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Game" android:name=".PididdleGame" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="GameOver" android:name=".PididdleGameOver" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="Options" android:name=".PididdleOptions" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Help" android:name=".PididdleHelp" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="Credits" android:name=".PididdleCredit" android:screenOrientation="portrait"><nothingHere/></activity>
+    </application>
+</manifest>

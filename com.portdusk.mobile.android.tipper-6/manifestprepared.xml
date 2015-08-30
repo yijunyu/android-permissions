@@ -1,0 +1,12 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.portdusk.mobile.android.tipper">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/DefaultTheme">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Help" android:name="HelpActivity"><nothingHere/></activity>
+        <activity android:label="Preferences" android:name="Preferences"><nothingHere/></activity>
+    </application>
+</manifest>

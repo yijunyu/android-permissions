@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/jnj/bluswitch/main.java</file>
+    <line>26</line>
+    <permissions>
+      <permission>
+        <name>android.permission.BLUETOOTH</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/jnj/bluswitch/main.java</file>
+    <line>28</line>
+    <permissions>
+      <permission>
+        <name>android.permission.BLUETOOTH_ADMIN</name>
+      </permission>
+    </permissions>
+  </call>
+  <call>
+    <file>./smali/jnj/bluswitch/main.java</file>
+    <line>32</line>
+    <permissions>
+      <permission>
+        <name>android.permission.BLUETOOTH_ADMIN</name>
+      </permission>
+    </permissions>
+  </call>
+</calls>

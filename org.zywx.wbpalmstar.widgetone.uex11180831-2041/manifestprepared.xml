@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="org.zywx.wbpalmstar.widgetone.uex11180831">
+    <application android:allowBackup="false" android:allowClearUserData="false" android:hardwareAccelerated="false" android:icon="@drawable/icon" android:label="@string/app_name" android:name="org.zywx.wbpalmstar.widgetone.WidgetOneApplication" android:vmSafeMode="true">
+        <activity android:alwaysRetainTaskState="true" android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="org.zywx.wbpalmstar.engine.EBrowserActivity" android:screenOrientation="portrait" android:theme="@style/browser_main_theme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.zywx.wbpalmstar.platform.mam.MAMFormActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexzxing.client.android.CaptureActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden"><nothingHere/></activity>
+        <activity android:name="org.zywx.wbpalmstar.plugin.uexcontacts.ContactActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexfilemgr.FilexplorerActivity" android:theme="@style/Style_platform_no_title_and_background"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.uexvideo.VideoPlayerActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.ueximagebrowser.ImageWatcherActivity" android:screenOrientation="sensor" android:theme="@style/Style_platform_no_title_and_background"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.ueximagebrowser.ImagePreviewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.ueximagebrowser.ImageReviewActivity" android:theme="@style/Style_platform_activity_transparent"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="org.zywx.wbpalmstar.plugin.ueximagebrowser.PictureActivity" android:theme="@style/Style_platform_full_screen_no_title_background"><nothingHere/></activity>
+        <receiver android:name="org.zywx.wbpalmstar.plugin.uexpushconfig.WBootBroadCastReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:enabled="true" android:name="org.zywx.wbpalmstar.plugin.uexpushconfig.WBootService" android:process=":push"><nothingHere/></service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FIND_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"><nothingHere/></uses-permission>
+    </manifest>

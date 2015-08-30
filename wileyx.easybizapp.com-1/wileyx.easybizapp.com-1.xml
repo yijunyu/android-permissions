@@ -1,0 +1,16 @@
+<apicalls>
+<call>
+<permissions>
+<permission>
+<name>android.permission.ACCESS_NETWORK_STATE</name>
+<apiversion>2.2.3</apiversion>
+<apiversion>2.3.6</apiversion>
+<apiversion>3.2.2</apiversion>
+</permission>
+</permissions>
+<file>./smali/wileyx/easybizapp/com/applauncher.java</file>
+<line>44</line>
+<protected>android/webkit/WebView;-$gt;loadUrl</protected>
+<deleted>false</deleted>
+</call>
+</apicalls>

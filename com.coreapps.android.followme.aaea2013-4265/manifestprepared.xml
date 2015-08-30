@@ -1,0 +1,210 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:largeHeap="true" package="com.coreapps.android.followme.aaea2013">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.coreapps.android.followme.FMApplication" android:theme="@style/fmtheme">
+        <activity android:label="@string/app_name" android:name="com.coreapps.android.followme.LaunchScreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="com.coreapps.android.followme.FMUriLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:scheme="@string/fm_shortcode"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.coreapps.android.followme.Main" android:screenOrientation="sensor" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/exhibitors" android:name="com.coreapps.android.followme.Exhibitors"><nothingHere/></activity>
+        <activity android:name="com.coreapps.android.followme.ExhibitorActivation"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.coreapps.android.followme.ExhibitorAvailability"><nothingHere/></activity>
+        <activity android:label="@string/exhibitors" android:name="com.coreapps.android.followme.ExhibitorLauncher"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/exhibitors" android:name="com.coreapps.android.followme.ExhibitorCategories"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/exhibitors" android:name="com.coreapps.android.followme.ExhibitorLocations"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/friends" android:name="com.coreapps.android.followme.Friends"><nothingHere/></activity>
+        <activity android:name="com.coreapps.android.followme.QRHistory"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/premium_documents" android:name="com.coreapps.android.followme.PremiumDocuments"><nothingHere/></activity>
+        <activity android:label="@string/premium_document" android:name="com.coreapps.android.followme.PremiumDocumentDetail"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/messages" android:name="com.coreapps.android.followme.Messages"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/press_center" android:name="com.coreapps.android.followme.PressCenterList"><nothingHere/></activity>
+        <activity android:label="@string/notes" android:name="com.coreapps.android.followme.Notes"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/employeelist" android:name="com.coreapps.android.followme.MeetingEmployeeList"><nothingHere/></activity>
+        <activity android:label="@string/employeelist" android:name="com.coreapps.android.followme.MeetingAttendeeDetail"><nothingHere/></activity>
+        <activity android:label="@string/meetingrequestdetail" android:name="com.coreapps.android.followme.MeetingResponseDetail"><nothingHere/></activity>
+        <activity android:label="@string/schedulemeeting" android:name="com.coreapps.android.followme.MeetingSchedule"><nothingHere/></activity>
+        <activity android:label="@string/meetingselecttime" android:name="com.coreapps.android.followme.MeetingRequestDetail"><nothingHere/></activity>
+        <activity android:name="com.coreapps.android.followme.MeetingComments"><nothingHere/></activity>
+        <activity android:label="Meeting Notes" android:name="com.coreapps.android.followme.MeetingNewComment"><nothingHere/></activity>
+        <activity android:name="com.coreapps.android.followme.MeetingProposeChanges"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/library" android:name="com.coreapps.android.followme.Library"><nothingHere/></activity>
+        <activity android:label="@string/bookdetail" android:name="com.coreapps.android.followme.BookDetail"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/alerts" android:name="com.coreapps.android.followme.Alerts"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/people" android:name="com.coreapps.android.followme.People"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="" android:name="com.coreapps.android.followme.PeopleGroups"><nothingHere/></activity>
+        <activity android:label="@string/friendschedule" android:name="com.coreapps.android.followme.FriendSchedule"><nothingHere/></activity>
+        <activity android:label="@string/people" android:name="com.coreapps.android.followme.PersonDetail"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/product" android:name="com.coreapps.android.followme.Products"><nothingHere/></activity>
+        <activity android:label="@string/assets" android:name="com.coreapps.android.followme.Assets"><nothingHere/></activity>
+        <activity android:label="@string/product" android:name="com.coreapps.android.followme.ProductDetail"><nothingHere/></activity>
+        <activity android:label="" android:name="com.coreapps.android.followme.VideoPlayer" android:screenOrientation="landscape"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/maps" android:name="com.coreapps.android.followme.Places"><nothingHere/></activity>
+        <activity android:label="@string/alerts" android:name="com.coreapps.android.followme.AlertDetail"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/speakers" android:name="com.coreapps.android.followme.Speakers"><nothingHere/></activity>
+        <activity android:label="@string/speakers" android:name="com.coreapps.android.followme.SpeakerCategories"><nothingHere/></activity>
+        <activity android:label="@string/speakers" android:name="com.coreapps.android.followme.SpeakerDetailHTML"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/specialoffers" android:name="com.coreapps.android.followme.SpecialOffers"><nothingHere/></activity>
+        <activity android:label="@string/specialofferdetail" android:name="com.coreapps.android.followme.SpecialOfferDetail"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/maps" android:name="com.coreapps.android.followme.GraphicMap"><nothingHere/></activity>
+        <activity android:label="@string/filter_categories" android:name="com.coreapps.android.followme.FilterSelection"><nothingHere/></activity>
+        <activity android:label="@string/exhibitors" android:name="com.coreapps.android.followme.ExhibitorDetail"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/exhibitors" android:name="com.coreapps.android.followme.ExhibitorSearchList"><nothingHere/></activity>
+        <activity android:label="@string/friends" android:name="com.coreapps.android.followme.FriendDetail"><nothingHere/></activity>
+        <activity android:label="@string/messages" android:name="com.coreapps.android.followme.MessageDetail"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/events" android:name="com.coreapps.android.followme.Events"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/events" android:name="com.coreapps.android.followme.RoomSessionsList"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/localbusinesses" android:name="com.coreapps.android.followme.LocalBusinesses"><nothingHere/></activity>
+        <activity android:label="@string/localPlaceCategories" android:name="com.coreapps.android.followme.LocalPlaceCategories"><nothingHere/></activity>
+        <activity android:label="@string/localbusiness" android:name="com.coreapps.android.followme.LocalPlaceDetail"><nothingHere/></activity>
+        <activity android:label="@string/events" android:name="com.coreapps.android.followme.EventDetail"><nothingHere/></activity>
+        <activity android:label="@string/schedule" android:name="com.coreapps.android.followme.MySchedule"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/profile" android:name="com.coreapps.android.followme.MyProfile"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/videos" android:name="com.coreapps.android.followme.Videos"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/twitter" android:name="com.coreapps.android.followme.Twitter"><nothingHere/></activity>
+        <activity android:label="@string/twitter" android:name="com.coreapps.android.followme.TwitterPost"><nothingHere/></activity>
+        <activity android:label="@string/twitter" android:name="com.coreapps.android.followme.TwitterAuthorization"><nothingHere/></activity>
+        <activity android:label="@string/photos" android:name="com.coreapps.android.followme.Photos"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/photo" android:name="com.coreapps.android.followme.Photo"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="true" android:label="@string/maps" android:name="com.coreapps.android.followme.TileMap" android:theme="@style/Theme.NoBackground"><nothingHere/></activity>
+        <activity android:label="@string/new_event" android:name="com.coreapps.android.followme.EditEvent"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/show_documents" android:name="com.coreapps.android.followme.ShowDocuments"><nothingHere/></activity>
+        <activity android:label="@string/abstract_categories" android:name="com.coreapps.android.followme.AbstractCategories"><nothingHere/></activity>
+        <activity android:label="@string/abstract_types" android:name="com.coreapps.android.followme.AbstractTypes"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/abstracts" android:name="com.coreapps.android.followme.AbstractsList"><nothingHere/></activity>
+        <activity android:label="@string/abstract_detail" android:name="com.coreapps.android.followme.AbstractDetail"><nothingHere/></activity>
+        <activity android:label="@string/survey" android:name="com.coreapps.android.followme.SurveyEntity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/survey" android:name="com.coreapps.android.followme.SurveyActivity"><nothingHere/></activity>
+        <activity android:label="" android:name="com.coreapps.android.followme.FullScreenAdView"><nothingHere/></activity>
+        <activity android:label="" android:name="com.coreapps.android.followme.EventRating"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="" android:name="com.coreapps.android.followme.TracksFilterActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="" android:name="com.coreapps.android.followme.TracksListActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="" android:name="com.coreapps.android.followme.NewsList"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="" android:name="com.coreapps.android.followme.Downloads"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="" android:name="com.coreapps.android.followme.PremiumDownloads"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.coreapps.android.followme.ScreenRenderer"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/leads" android:name="com.coreapps.android.followme.Leads"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="@string/capture_leads" android:name="com.coreapps.android.followme.CaptureLeads"><nothingHere/></activity>
+        <activity android:label="@string/lead_detail" android:name="com.coreapps.android.followme.LeadDetail"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="" android:name="com.coreapps.android.followme.Settings"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="" android:name="com.coreapps.android.followme.MultiDeviceSync"><nothingHere/></activity>
+        <activity android:label="" android:name="com.coreapps.android.followme.ExhibitorLogin"><nothingHere/></activity>
+        <activity android:label="@string/treasure_hunt" android:name="com.coreapps.android.followme.TreasureHunt"><nothingHere/></activity>
+        <activity android:label="" android:name="com.coreapps.android.followme.SendMessage"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:label="" android:name="com.coreapps.android.followme.FMSearchableActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="" android:name="com.coreapps.android.followme.ProductCategories"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.coreapps.android.followme.HitListPlaces"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name="com.coreapps.android.followme.HitListToVisit"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.bumptech.bumpapi.BumpAPI" android:theme="@style/BumpDialog"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.bumptech.bumpapi.EditTextActivity" android:theme="@style/BumpDialog"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.coreapps.android.followme.UploadPicture">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"><nothingHere/></action>
+                <android-data android:mimeType="image/*"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <activity android:name="com.coreapps.android.followme.qrcode.CaptureActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.coreapps.android.followme.aaea2013.qrcode.SCAN"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.coreapps.android.followme.qrcode.HelpActivity" android:screenOrientation="user">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="com.coreapps.android.followme.PrivacyPolicy"><nothingHere/></activity>
+        <activity android:name="com.coreapps.android.followme.HTMLView"><nothingHere/></activity>
+        <activity android:name="com.coreapps.android.followme.AbstractsLauncher"><nothingHere/></activity>
+        <activity android:name="com.coreapps.android.followme.ProductPicture"><nothingHere/></activity>
+        <meta-data android:name="android.app.default_searchable" android:value="com.coreapps.android.followme.FMSearchableActivity"><nothingHere/></meta-data>
+        <provider android:authorities="com.coreapps.android.followme.aaea2013" android:name="com.coreapps.android.followme.DownloadsContentProvider"><nothingHere/></provider>
+        <receiver android:name="com.coreapps.android.followme.AlertBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coreapps.android.followme.BillingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.billing.IN_APP_NOTIFY"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.RESPONSE_CODE"><nothingHere/></action>
+                <action android:name="com.android.vending.billing.PURCHASE_STATE_CHANGED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coreapps.android.followme.AlertAlarmReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.coreapps.android.followme.C2DMHandler" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.coreapps.android.followme.aaea2013"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.coreapps.android.followme.aaea2013"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.coreapps.android.followme.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.coreapps.android.followme.aaea2013"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.coreapps.android.followme.BillingService"><nothingHere/></service>
+        <service android:exported="true" android:name="com.coreapps.android.followme.AlertService"><nothingHere/></service>
+        <service android:exported="true" android:name="com.coreapps.android.followme.DownloadsManager"><nothingHere/></service>
+        <service android:exported="true" android:name="com.coreapps.android.followme.PremiumDownloadManager"><nothingHere/></service>
+        <service android:name="com.coreapps.android.followme.GCMIntentService"><nothingHere/></service>
+        </application>
+    <permission android:name="com.coreapps.android.followme.aaea2013.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+<uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.location" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.coreapps.android.followme.aaea2013.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

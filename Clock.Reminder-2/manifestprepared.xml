@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="Clock.Reminder">
+    <application android:icon="@drawable/fuzzylife" android:label="@string/app_name">
+        <receiver android:name=".HourlyReminder" android:process=":remote"><nothingHere/></receiver>
+        <receiver android:enabled="true" android:exported="false" android:name=".TickerBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:name="Check">
+            <intent-filter>
+                <action android:name=".Check"><nothingHere/></action>
+            </intent-filter>
+        </service>
+    </application>
+<uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    </manifest>

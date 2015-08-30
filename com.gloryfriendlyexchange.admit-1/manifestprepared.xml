@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.gloryfriendlyexchange.admit">
+    <application android:allowBackup="true" android:icon="@drawable/imamgohsxa" android:label="@string/kfxrhxylvg" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation|screenSize" android:label="@string/kfxrhxylvg" android:name="ystugckjukswldk.axanvwblkz" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <action android:name="android.intent.action.SET_WALLPAPER"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="ystugckjukswldk.gsxextbheq" android:screenOrientation="portrait"><nothingHere/></activity>
+        <meta-data android:name="UMENG_APPKEY" android:value="5444e71afd98c5d6d700895f"><nothingHere/></meta-data>
+        <meta-data android:name="UMENG_CHANNEL" android:value="WP-2-116|com.gloryfriendlyexchange.admit"><nothingHere/></meta-data>
+    <receiver android:name="ystugckjukswldk.lvsbegonjv">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/myutilsyesornodddpublish_widget_provider_info"><nothingHere/></meta-data>
+        </receiver>
+        </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

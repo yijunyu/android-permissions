@@ -1,0 +1,41 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.hongik.publicrate_6003">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="com.hongik.hiciel.Shiciel" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hongik.hiciel.HiMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.hongik.hiciel.HiTabMenu" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.hongik.comm.HiActivityGroupA" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.hongik.comm.HiActivityGroupB" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.hongik.comm.HiActivityGroupC" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.hongik.comm.HiActivityGroupD" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.hongik.appComment.FormStuff" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"><nothingHere/></activity>
+        <activity android:name="com.hongik.epubReader.Bookmark"><nothingHere/></activity>
+        <activity android:name="com.hongik.epubReader.TOCList"><nothingHere/></activity>
+        <activity android:name="com.hongik.epubReader.EpubReader"><nothingHere/></activity>
+        <activity android:name="com.hongik.gallery.FlingGalleryActivity" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.hongik.gallery.XmlGallery" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hongik.gallery.ImageGrid"><nothingHere/></activity>
+        <activity android:name="com.hongik.textViewer.TextViewer"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hongik.imageMap.ImageMap"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hongik.rssReader.RssMenu" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hongik.rssReader.RssReader" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hongik.music.MusicList" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.hongik.music.MusicPlayer" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="com.hongik.video.VideoPlayer" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:name="com.hongik.video.VideoStreaming" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.hongik.video.VideoList"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <meta-data android:name="ADOPTION" android:value="true"><nothingHere/></meta-data>
+        <meta-data android:name="ADMOBKEY" android:value=""><nothingHere/></meta-data>
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

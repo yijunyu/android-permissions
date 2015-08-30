@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="internalOnly" package="webbusterz.mmscfd_converter_ad">
+    <application android:icon="@drawable/icon" android:label="MMScfd Converter ad">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:label="MMScfd Converter ad" android:launchMode="singleTop" android:name=".main" android:screenOrientation="unspecified" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="MMScfd Converter ad" android:launchMode="singleTop" android:name=".selectunit" android:screenOrientation="unspecified" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="MMScfd Converter ad" android:launchMode="singleTop" android:name=".extrainput" android:screenOrientation="unspecified" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="MMScfd Converter ad" android:launchMode="singleTop" android:name=".mwt" android:screenOrientation="unspecified" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+    </application>
+<supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

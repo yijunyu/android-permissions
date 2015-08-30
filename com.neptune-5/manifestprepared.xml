@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.neptune">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:name=".activity.MainTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AboutActivity"><nothingHere/></activity>
+        <activity android:name=".activity.DevicesTabActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activity.MapTabActivity"><nothingHere/></activity>
+        <activity android:name=".activity.MapViewActivity"><nothingHere/></activity>
+        <activity android:configChanges="orientation" android:name=".activity.MediaTabActivity"><nothingHere/></activity>
+        <activity android:name=".activity.SensorsActivity"><nothingHere/></activity>
+        <activity android:name=".activity.LocationActivity"><nothingHere/></activity>
+        <activity android:name=".activity.VideoActivity"><nothingHere/></activity>
+        <activity android:name=".activity.GraphActivity"><nothingHere/></activity>
+        <activity android:name=".activity.TimePickerActivity"><nothingHere/></activity>
+    </application>
+    <supports-screens android:anyDensity="true"><nothingHere/></supports-screens>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+</manifest>

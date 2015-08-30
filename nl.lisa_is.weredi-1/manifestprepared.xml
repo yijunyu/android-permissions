@@ -1,0 +1,144 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="nl.lisa_is.weredi">
+    <application android:icon="@drawable/app_icon" android:label="@string/app_name" android:theme="@style/Title_Theme">
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.SplashActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.news.NewsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.news.NewsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.agenda.AgendaActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.agenda.AgendaDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.agenda.AgendaDetailAddTakenActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.agenda.AgendaNewsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.news.CustomNewsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.LoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.ProfileActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.LisaTeamMatchListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.PersonDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubAgendaActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubMatchDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubAgendaDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubsMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ActiesListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ActiesDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.SponsorsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.SponsorsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubsMainActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubsListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubResultListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubResultDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubRecentResultsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubPoolResultActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.more.MoreListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.more.SearchMoreListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.more.MoreAboutActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.more.StaticContentActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.teams.TeamListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.teams.TeamDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.teams.FavouriteTeamListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.teams.TeamPlayersListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.LisaTeamListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.PlayersListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.LisaStandActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.UserDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.profile.PushNotificationSettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.LisaMatchDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.DWFActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.LisaTakenActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.MatchesListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.MatchOfDayListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.MatchDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:hardwareAccelerated="true" android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.RSSDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.RSSListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.BirthDaysActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.FinanceActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.profile.FinanceChangeActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.MessagesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.profile.PhotosActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.profile.PhotosDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.profile.PhotosSlideActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.profile.AlbumManageActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.PresentiesActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.PresenceDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.FinanceDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.LisaAnalyseActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.NotationPlayersListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.LisaMatchDetailTakenActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.profile.LisaPhotosActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.EmailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.news.AddNewsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.rabohockey.LisaTwitterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.rabohockey.LisaTwitterFilterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.rabohockey.LisaTwitterDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.rabohockey.LisaTwitterImageDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.rabohockey.LisaTweetReplyActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessLoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessOrderActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessSettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessChangePasswordActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessTransactionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessTransactionDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessIdealIssuersActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessChargeIdealActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessRegistrationActivity1" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessRegistrationActivity2" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessRegistrationActivity3" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.cashless.CashlessRegistrationActivity4" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="nl.lisa_is.weredi.activities.clubs.ClubgidListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="nl.lisa_is.weredi.activities.rabohockey.PrepareRequestTokenActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <android-data android:host="lisa_twitter" android:scheme="oauth"><nothingHere/></android-data>
+            <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+                </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/apiKey"><nothingHere/></meta-data>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="nl.lisa_is.weredi"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="nl.lisa_is.weredi.GCMIntentService"><nothingHere/></service>
+    </application>
+<compatible-screens>
+        <screen android:screenDensity="ldpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="small"><nothingHere/></screen>
+        <screen android:screenDensity="ldpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="mdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="hdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="xhdpi" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="normal"><nothingHere/></screen>
+        <screen android:screenDensity="480" android:screenSize="large"><nothingHere/></screen>
+    </compatible-screens>
+    <permission android:name="nl.lisa_is.weredi.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <permission android:name="nl.lisa_is.weredi.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="nl.lisa_is.weredi.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.youtube"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="nl.lisa_is.weredi.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    </manifest>

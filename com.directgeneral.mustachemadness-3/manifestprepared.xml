@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.directgeneral.mustachemadness">
+    <application android:allowBackup="true" android:icon="@drawable/icon_launcher" android:label="@string/app_name_long" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.directgeneral.mustachemadness.activities.StartupActivity" android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.directgeneral.mustachemadness.activities.PictureViewActivity"><nothingHere/></activity>
+        <activity android:name="com.directgeneral.mustachemadness.activities.MustacheCurtainActivity"><nothingHere/></activity>
+        <activity android:name="com.directgeneral.mustachemadness.activities.InfoActivity"><nothingHere/></activity>
+        <activity android:name="com.directgeneral.mustachemadness.activities.ShoppingCartActivity"><nothingHere/></activity>
+        <activity android:name="com.directgeneral.mustachemadness.activities.VoilaActivity"><nothingHere/></activity>
+        <activity android:name="com.directgeneral.mustachemadness.activities.ShareFacebookActivity" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <activity android:label="Pick Friends" android:name="com.directgeneral.mustachemadness.activities.PickFriendsActivity"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="com.playhaven.src.publishersdk.content.PHContentView" android:theme="@android:style/Theme.Dialog" android:windowSoftInputMode="adjustResize"><nothingHere/></activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"><nothingHere/></meta-data>
+        <receiver android:name="com.directgeneral.mustachemadness.receivers.AlarmReceiver"><nothingHere/></receiver>
+    <service android:enabled="true" android:name="com.directgeneral.mustachemadness.services.NotificationService"><nothingHere/></service>
+        </application>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,105 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.ramsamsam.guidoguideapp.stenhuis">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.ramsamsam.guidoguideapp.GuidoPagerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.FilterPagerActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.FilterPagerActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.ProfileActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.ProfileActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.LogInActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.LogInActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.LoggedInActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.LoggedInActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.RegisterActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.RegisterActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.FavoritesActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.FavoritesActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.RecommendedActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.RecommendedActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.ReviewListActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.ReviewListActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.RecordRouteActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.RecordRouteActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.ReviewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.ReviewActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.SpecificReviewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.SpecificReviewActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.MessageActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.MessageActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.DetailViewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.DetailViewActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.CustomMapActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.WinkeloordMapActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.NewsActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.NewsActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.SettingsActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.SettingsActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.DownloadActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.DownloadActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.CustomRouteActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.CustomRouteActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.WebViewActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.WebViewActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.CustomRoutesListActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.CustomRoutesListActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.ramsamsam.guidoguideapp.AboutActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.ramsamsam.guidoguideapp.AboutActivity"><nothingHere/></meta-data>
+        </activity>
+        <receiver android:name="com.ramsamsam.util.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <category android:name="com.ramsamsam.guidoguideapp"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ramsamsam.guidoguideapp.LocationReceiver">
+            <intent-filter>
+                <action android:name="com.ramsamsam.guidoguideapp.ACTION_LOCATION"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+    <service android:name="com.ramsamsam.util.GcmIntentService"><nothingHere/></service>
+        </application>
+<permission android:name="com.ramsamsam.guidoguideapp.stenhuis.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:name="android.hardware.location.gps" android:required="true"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.camera" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="com.ramsamsam.guidoguideapp.stenhuis.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    </manifest>

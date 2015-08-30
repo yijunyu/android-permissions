@@ -1,0 +1,7 @@
+<comparison>
+  <over-specification/>
+  <under-specification>
+    <permission>android.permission.VIBRATE</permission>
+    <permission>android.permission.RECORD_AUDIO</permission>
+  </under-specification>
+</comparison>

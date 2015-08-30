@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="metit.english.android">
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="Metit English 2.0" android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mana.framework.SwipeyActivity" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:name="android.com.medo.mananews.DoubleActivity" android:theme="@android:style/Theme.Black.NoTitleBar"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+    <receiver android:name="com.msl.location.receiver.LocationChangedReceiver"><nothingHere/></receiver>
+        <receiver android:name="com.msl.location.receiver.PassiveLocationChangedReceiver"><nothingHere/></receiver>
+        <receiver android:enabled="false" android:name="com.msl.location.receiver.ConnectivityChangedReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"><nothingHere/></action>
+                <action android:name="com.radioactiveyak.places.retry_queued_checkins"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.msl.location.receiver.PowerStateChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_BATTERY_LOW"><nothingHere/></action>
+                <action android:name="android.intent.action.ACTION_BATTERY_OKAY"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.msl.location.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.mana.framework.service.RTSTService">
+            <intent-filter>
+                <action android:name="metit.english.android.com.mana.framework.service.action.ACTION_START_LOCAL_SERVER"><nothingHere/></action>
+                <action android:name="metit.english.android.com.mana.framework.service.action.ACTION_LOAD_CACHE"><nothingHere/></action>
+                <action android:name="metit.english.android.com.mana.framework.service.action.ACTION_ADD_REGEX"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:enabled="@bool/pre_froyo" android:name="com.msl.location.service.PlacesUpdateService">
+            <intent-filter>
+                <action android:name="com.radioactiveyak.places.placesupdateservice"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        <service android:enabled="@bool/froyo_or_later" android:name="com.msl.location.service.EclairPlacesUpdateService">
+            <intent-filter>
+                <action android:name="com.radioactiveyak.places.placesupdateservice"><nothingHere/></action>
+            </intent-filter>
+        </service>
+        </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    </manifest>

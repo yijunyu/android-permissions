@@ -1,0 +1,15 @@
+<comparison>
+  <over-specification>
+    <permission>android.permission.SEND_SMS</permission>
+    <permission>android.permission.READ_EXTERNAL_STORAGE</permission>
+    <permission>android.permission.CALL_PHONE</permission>
+    <permission>android.permission.GET_ACCOUNTS</permission>
+  </over-specification>
+  <under-specification>
+    <permission>android.permission.WAKE_LOCK</permission>
+    <permission>android.permission.MODIFY_AUDIO_SETTINGS</permission>
+    <permission>android.permission.BLUETOOTH</permission>
+    <permission>android.permission.BLUETOOTH_ADMIN</permission>
+    <permission>android.permission.MANAGE_ACCOUNTS</permission>
+  </under-specification>
+</comparison>

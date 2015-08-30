@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.fund.drugfreeland">
+    <application android:allowBackup="true" android:icon="@drawable/ic_luncher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="Mainactivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="Mainpage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="PageRS" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="Drugwebpage"><nothingHere/></activity>
+    </application>
+<uses-feature android:name="android.hardware.telephony" android:required="false"><nothingHere/></uses-feature>
+    </manifest>

@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myapp="http://schemas.android.com/apk/res/com.s4bb.worlddict.french.free" android:installLocation="preferExternal" package="com.s4bb.worlddict.french.free">
+    <application android:icon="@drawable/icon" android:label="@string/APPLICATION_TITLE">
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:icon="@drawable/icon" android:label="@string/APPLICATION_TITLE" android:name="SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:name=".WorldDictActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"><nothingHere/></action>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"><nothingHere/></meta-data>
+        </activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:name="MeaningScreenActivity"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:name="AboutActivity" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:configChanges="locale|keyboardHidden|orientation" android:name=".WorldDictPreferenceActivity"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <meta-data android:name="android.app.default_searchable" android:value=".MySearchableActivity"><nothingHere/></meta-data>
+        <meta-data android:name="ADMOB_PUBLISHER_ID" android:value="a14cbe9d3306601"><nothingHere/></meta-data>
+    <provider android:authorities="com.s4bb.worlddict.french.free.database.SearchInfoProvider" android:name=".database.SearchInfoProvider"><nothingHere/></provider>
+        </application>
+<uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    </manifest>

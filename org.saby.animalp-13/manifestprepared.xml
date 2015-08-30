@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="org.saby.animalp">
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:label="@string/app_name" android:name="org.saby.animalp.Ac_Splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <activity android:name="org.saby.animalp.Ac_MainMenu"><nothingHere/></activity>
+        <activity android:name="org.saby.animalp.AboutApp"><nothingHere/></activity>
+        <activity android:name="org.saby.animalp.Ac_Favo"><nothingHere/></activity>
+        <activity android:name="org.saby.animalp.Ac_DownloadManager"><nothingHere/></activity>
+        <activity android:name="org.saby.animalp.Ac_Vv"><nothingHere/></activity>
+    </application>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"><nothingHere/></uses-permission>
+    </manifest>

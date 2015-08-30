@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/com/m7lola/mjenan/WebHandler.java</file>
+    <line>0</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/com/m7lola/mjenan/WebHandler.java</file>
+    <line>0</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/com/m7lola/mjenan/WebHandler.java</file>
+    <line>0</line>
+    <permissions/>
+  </call>
+</calls>

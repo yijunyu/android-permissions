@@ -1,0 +1,34 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.launch.bubblev1p0">
+    <application android:allowBackup="true" android:icon="@drawable/logo_v4" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.launch.bubblev1p0.IntroPage" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="Bubblemain" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="RegistrationPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="LandingPage" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="GuestLoc" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="ForgotPassword" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="SuccessfulChange" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="ChangePassword" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="SwipeTutorial" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name="LandingPageDisplay" android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="ThreadPage">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="Regcomp"><nothingHere/></activity>
+        <activity android:name="ProfilePage"><nothingHere/></activity>
+        <activity android:name="ProfilePageEdit"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+</manifest>

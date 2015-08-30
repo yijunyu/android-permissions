@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.andromo.dev51547.app53301">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher_icon" android:label="@string/app_name" android:name="AndromoAcraApplication">
+        <activity android:name=".RSSClassicContentActivity" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Rss31132" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Custompage134292" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Custompage80315" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Custompage80317" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Facebook23844" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website112631" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website181463" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website30502" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".Website70646" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:label="@string/app_name" android:name=".Map5384" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".About820" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo"><nothingHere/></activity>
+        <activity android:label="@string/app_name" android:name=".AndromoDashboardActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Andromo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+    <provider android:authorities="com.andromo.dev51547.app53301.provider.RSSFeed" android:exported="false" android:name=".RSSFeedProvider"><nothingHere/></provider>
+        <service android:name=".RssService"><nothingHere/></service>
+        </application>
+    <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"><nothingHere/></supports-screens>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+</manifest>

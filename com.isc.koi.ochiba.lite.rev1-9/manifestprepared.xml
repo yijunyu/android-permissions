@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.isc.koi.ochiba.lite.rev1">
+    <application android:icon="@drawable/koi_icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name=".Ochiba">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListView_AlarmList"><nothingHere/></activity>
+        <activity android:name=".ListView_AlarmBuilder"><nothingHere/></activity>
+        <activity android:name=".ListView_VocabListJPN"><nothingHere/></activity>
+        <activity android:name=".ListView_Options"><nothingHere/></activity>
+        <activity android:name=".ListView_KanjiList"><nothingHere/></activity>
+        <activity android:name=".ListView_DrillList"><nothingHere/></activity>
+        <activity android:name=".ListView_DrillBuilder"><nothingHere/></activity>
+        <activity android:name=".ListView_Drill"><nothingHere/></activity>
+        <activity android:name=".ListView_SelectVocab"><nothingHere/></activity>
+        <activity android:name=".ListView_KanjiSelect"><nothingHere/></activity>
+        <activity android:name=".ListView_VocabSelectJPN"><nothingHere/></activity>
+        <receiver android:name="receiver.AlarmReceiver"><nothingHere/></receiver>
+    <service android:name="service.CoreService"><nothingHere/></service>
+        </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="false" android:normalScreens="true" android:smallScreens="false"><nothingHere/></supports-screens>
+</manifest>

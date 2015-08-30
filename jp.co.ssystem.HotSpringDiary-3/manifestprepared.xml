@@ -1,0 +1,40 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.co.ssystem.HotSpringDiary">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity android:name=".Activity001" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name_002" android:name=".Activity002" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:label="@string/app_name_004" android:name=".Activity004" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:label="@string/app_name_005" android:name=".Activity005" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:label="@string/app_name_006" android:name=".Activity006" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:label="@string/app_name_007" android:name=".Activity007" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:label="@string/app_name_008" android:name=".Activity008" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:label="@string/app_name_009" android:name=".Activity009" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:label="@string/app_name_010" android:name=".Activity010" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:label="@string/app_name_015" android:name=".Activity015" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:name=".Activity201" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".Activity202" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".Activity203" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".Activity204" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".Activity205" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:name=".Activity210" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+        <activity android:label="@string/app_name_099" android:name=".Activity099" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socdm.d.adgeneration.ADGClickWebView"><nothingHere/></activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.socdm.d.adgeneration.ADGVideoView"><nothingHere/></activity>
+    <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCWYE0XjUOW7O1c_NYoEtycQKJOk_DXjNc"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="jp.co.ssystem.HotSpringDiary.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="jp.co.ssystem.HotSpringDiary.permission.MAPS_RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    </manifest>

@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.shimaotech.spamtrap">
+    <application android:allowBackup="true" android:icon="@drawable/texttrap" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <activity android:name="com.shimaotech.spamtrap.activities.ShimaotechActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.SpamTrapActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.WelcomeActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.SpamViewActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.HomeActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.SpamNumbersActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.SpamWordsActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.HelpActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.AboutActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.SpamBoxActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.SpamNumberSuggestionActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.SpamWordSuggestionActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.OptionsActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.NotificationActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.InformationActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.HelpViewActivity"><nothingHere/></activity>
+        <activity android:name="com.shimaotech.spamtrap.activities.SuspiciousTextViewActivity"><nothingHere/></activity>
+        <receiver android:name="com.shimaotech.spamtrap.TextSentinel">
+            <intent-filter android:priority="100">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"><nothingHere/></action>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.shimaotech.spamtrap.services.ReporterService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.shimaotech.spamtrap.services.SuggestionService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.shimaotech.spamtrap.services.SacredListService"><nothingHere/></service>
+        <service android:enabled="true" android:name="com.shimaotech.spamtrap.services.DailyService"><nothingHere/></service>
+    </application>
+<uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_SMS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"><nothingHere/></uses-permission>
+    </manifest>

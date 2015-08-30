@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.free.simplecontacts.kosoft">
+    <application android:icon="@drawable/icon" android:label="@string/name_free_app">
+        <activity android:name="info.simplecontackforandroid.main.SimpleContactsMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="info.simplecontackforandroid.main.Pref"><nothingHere/></activity>
+        <activity android:name="info.simplecontackforandroid.main.SendMailList"><nothingHere/></activity>
+        <activity android:name="info.simplecontackforandroid.main.GroupManage"><nothingHere/></activity>
+        <activity android:name="info.simplecontackforandroid.main.AboutMe" android:theme="@android:style/Theme.Dialog"><nothingHere/></activity>
+    </application>
+    <uses-permission android:name="android.permission.CALL_PHONE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+</manifest>

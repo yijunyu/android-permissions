@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.jforce.chapelhillnextbus" platformBuildVersionCode="21" platformBuildVersionName="5.0-1521886">
+    <application android:allowBackup="true" android:icon="@drawable/ic_logo_white_nobezel" android:label="@string/activity_main_title" android:theme="@style/Theme.Chapelhillnavy">
+        <activity android:label="@string/activity_main_title" android:name="com.jforce.chapelhillnextbus.HomeActivity"><nothingHere/></activity>
+        <activity android:label="@string/activity_main_title" android:name="com.jforce.chapelhillnextbus.ExpandingCellsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.jforce.chapelhillnextbus.DevHomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/activity_main_title" android:name="com.jforce.chapelhillnextbus.DevHomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/settings" android:name="com.jforce.chapelhillnextbus.SettingsActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.jforce.chapelhillnextbus.DevHomeActivity"><nothingHere/></meta-data>
+        </activity>
+        <activity android:label="@string/title_activity_map_stop" android:name="com.jforce.chapelhillnextbus.MapStopActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.jforce.chapelhillnextbus.DevHomeActivity"><nothingHere/></meta-data>
+        </activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDiGRLCtc8_FAbelTOySRQcvexRWe2zgyU"><nothingHere/></meta-data>
+        </application>
+<uses-feature android:glEsVersion="0x20000" android:required="true"><nothingHere/></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.example.permission.MAPS_RECEIVE" android:protectionLevel="signature"><nothingHere/></uses-permission>
+    </manifest>

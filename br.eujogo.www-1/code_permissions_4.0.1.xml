@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<calls>
+  <call>
+    <file>./smali/br/eujogo/www/WebViewActivity.java</file>
+    <line>22</line>
+    <permissions/>
+  </call>
+  <call>
+    <file>./smali/br/eujogo/www/WebViewActivity.java</file>
+    <line>23</line>
+    <permissions/>
+  </call>
+</calls>

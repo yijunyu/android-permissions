@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.unlvalumni">
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="com.unlvalumni.UAAApplication" android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:launchMode="singleTop" android:name=".UAAMainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:label="Settings" android:name=".UAALoginActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAAWebViewActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAAMemberCardActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:label="Map" android:name=".UAAMapActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAABuildingDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAAEventDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAACalendarActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAANotificationsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAARebelNetworkActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAATwitterActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAATweetActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"><nothingHere/></action>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UAABenefitsListActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:name=".UAABenefitsDetailActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"><nothingHere/></meta-data>
+        <receiver android:name="com.unlvalumni.viaPlace.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"><nothingHere/></action>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"><nothingHere/></action>
+                <category android:name="com.unlvalumni"><nothingHere/></category>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.unlvalumni.viaPlace.GcmIntentService"><nothingHere/></service>
+    <uses-library android:name="com.google.android.maps"><nothingHere/></uses-library>
+        </application>
+<permission android:name="com.unlvalumni.permission.C2D_MESSAGE" android:protectionLevel="signature"><nothingHere/></permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.READ_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.unlvalumni.permission.C2D_MESSAGE"><nothingHere/></uses-permission>
+    </manifest>

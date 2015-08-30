@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="mobi.dozo.EnglishVocab">
+    <application android:debuggable="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppThemeLight">
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/english_vocab" android:launchMode="singleTask" android:name=".Main" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"><nothingHere/></action>
+                <category android:name="android.intent.category.LAUNCHER"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/feature_word_reminder" android:launchMode="singleTask" android:name="mobi.dozo.EnglishVocab.game.WordReminder.Game" android:permission="mobi.dozo.EnglishVocab.REMINDER" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:excludeFromRecents="true" android:icon="@drawable/ic_launcher" android:label="@string/feature_word_reminder" android:name="mobi.dozo.EnglishVocab.game.WordReminder.NotifyResult" android:permission="mobi.dozo.EnglishVocab.REMINDER" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="mobi.dozo.EnglishVocab.game.WordReminder.Game"><nothingHere/></meta-data>
+        </activity>
+        <activity android:icon="@drawable/ic_launcher" android:label="@string/english_vocab_settings" android:name="mobi.dozo.EnglishVocab.ui.SettingsActivity" android:screenOrientation="portrait"><nothingHere/></activity>
+        <activity android:icon="@drawable/ic_launcher" android:name="mobi.dozo.EnglishVocab.ParseDeepLink" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.google.android.apps.plus.VIEW_DEEP_LINK"><nothingHere/></action>
+                <android-data android:scheme="vnd.google.deeplink"><nothingHere/></android-data>
+                <category android:name="android.intent.category.DEFAULT"><nothingHere/></category>
+                <category android:name="android.intent.category.BROWSABLE"><nothingHere/></category>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"><nothingHere/></activity>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIQayLLIPs3IPwkKkWhuprw4u4Y-UUka748M44Rw"><nothingHere/></meta-data>
+    <service android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="mobi.dozo.EnglishVocab.MessageBus" android:permission="mobi.dozo.EnglishVocab.MESSAGE"><nothingHere/></service>
+        <service android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="mobi.dozo.EnglishVocab.EnglishVocab" android:permission="mobi.dozo.EnglishVocab.RUN" android:process="mobi.dozo.EnglishVocab.core"><nothingHere/></service>
+        <service android:icon="@drawable/ic_launcher" android:label="@string/feature_word_reminder" android:name="mobi.dozo.EnglishVocab.game.WordReminder.GameDaemon" android:permission="mobi.dozo.EnglishVocab.REMINDER" android:process="mobi.dozo.EnglishVocab.reminder"><nothingHere/></service>
+        </application>
+    <permission android:description="@string/permision_description_run" android:label="@string/permision_label_run" android:name="mobi.dozo.EnglishVocab.RUN" android:permissionGroup="mobi.dozo.EnglishVocab" android:protectionLevel="normal"><nothingHere/></permission>
+    <permission android:description="@string/permision_description_reminder" android:label="@string/permision_label_reminder" android:name="mobi.dozo.EnglishVocab.REMINDER" android:permissionGroup="mobi.dozo.EnglishVocab" android:protectionLevel="normal"><nothingHere/></permission>
+    <permission android:description="@string/permision_description_message" android:label="@string/permision_label_message" android:name="mobi.dozo.EnglishVocab.MESSAGE" android:permissionGroup="mobi.dozo.EnglishVocab" android:protectionLevel="normal"><nothingHere/></permission>
+    <permission-group android:description="@string/permision_description_group" android:icon="@drawable/ic_action_home" android:label="@string/permision_label_group" android:name="mobi.dozo.EnglishVocab"><nothingHere/></permission-group>
+    <uses-permission android:name="mobi.dozo.EnglishVocab.RUN"><nothingHere/></uses-permission>
+    <uses-permission android:name="mobi.dozo.EnglishVocab.REMINDER"><nothingHere/></uses-permission>
+    <uses-permission android:name="mobi.dozo.EnglishVocab.MESSAGE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"><nothingHere/></uses-permission>
+    <uses-permission android:name="com.android.vending.BILLING"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"><nothingHere/></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"><nothingHere/></uses-permission>
+</manifest>
