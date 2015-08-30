@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<apicalls>
+    <call>
+        <permissions>
+            <permission>
+                <name>WIFI</name>
+                <apiversion>4.4.1</apiversion>
+            </permission>
+        </permissions>
+        <file>myfile.java</file>
+        <line>333</line>
+        <protected>
+            com.android.server.WifiService void enforceChangePermission()
+        </protected>
+    </call>
+    <call>
+        <permissions>
+            <permission>
+                <name>WIFI</name>
+                <apiversion>4.4.1</apiversion>
+            </permission>
+        </permissions>
+        <file>myOtherFile.java</file>
+        <line>392</line>
+        <protected>
+            android.net.wifi.IWifiManager android.os.Messenger getWifiStateMachineMessenger()
+        </protected>
+    </call>
+    <call>
+        <permissions>
+            <permission>
+                <name>WIFI</name>
+                <apiversion>4.4.1</apiversion>
+                <apiversion>5.0</apiversion>
+                <apiversion>5.1</apiversion>
+            </permission>
+        </permissions>
+        <file>AFile.java</file>
+        <line>2</line>
+        <protected>
+            android.net.wifi.IWifiManager void addToBlackList(java.lang.String)
+        </protected>
+    </call>
+    <call>
+        <permissions>
+            <permission>
+                <name>STORAGE</name>
+                <apiversion>4.4.1</apiversion>
+                <apiversion>5.0</apiversion>
+            </permission>
+        </permissions>
+        <file>MoreFile.java</file>
+        <line>555</line>
+        <protected>
+            android.net.wifi.IWifiManager$stub boolean onTransact(int, android.os.Parcel, android.os.Parcel, int)
+        </protected>
+    </call>
+</apicalls>

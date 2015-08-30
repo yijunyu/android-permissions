@@ -1,0 +1,11 @@
+<!DOCTYPE calls
+          [
+          <!ELEMENT calls (call*)>
+          <!ELEMENT call (file, line, permissions)>
+          <!ELEMENT file (#PCDATA)>
+          <!ELEMENT line (#PCDATA)>
+          <!ELEMENT permissions (permission*)>
+          <!ELEMENT permission (name)>
+          <!ELEMENT name (#PCDATA)>
+          ]
+>

@@ -1,0 +1,14 @@
+<!DOCTYPE apicalls
+          [
+          <!ELEMENT apicalls (call*)>
+          <!ELEMENT call (permissions, file, line, protected, delete)>
+          <!ELEMENT file (#PCDATA)>
+          <!ELEMENT line (#PCDATA)>
+          <!ELEMENT delete (#PCDATA)>
+          <!ELEMENT name (#PCDATA)>
+          <!ELEMENT permissions (permission*)>
+          <!ELEMENT permission (name, apiversion*)>
+          <!ELEMENT protected (#PCDATA)>
+          <!ELEMENT apiversion (#PCDATA)>
+          ]
+          >

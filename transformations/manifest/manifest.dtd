@@ -1,0 +1,236 @@
+<!DOCTYPE manifest
+	  [
+          <!ELEMENT manifest (application, compatible-screens?, fdroid?, instrumentation*, permission*, permission-group*, permission-tree*, supports-gl-texture*, supports-screens*, uses-configuration*, uses-feature*, uses-permission*, uses-sdk*)>
+          <!ATTLIST manifest
+                    xmlns:android CDATA #IMPLIED
+                    package CDATA #IMPLIED
+                    android:sharedUserId CDATA #IMPLIED
+                    android:sharedUserLabel CDATA #IMPLIED
+                    android:versionCode CDATA #IMPLIED
+                    android:versionName CDATA #IMPLIED
+                    android:installLocation CDATA #IMPLIED>
+          <!ELEMENT action (nothingHere)>
+          <!ATTLIST action android:name CDATA #IMPLIED>
+          <!ELEMENT activity (intent-filter*, item*, meta-data*, nothingHere*)>
+          <!ATTLIST activity
+                    android:allowEmbedded CDATA #IMPLIED
+                    android:allowTaskReparenting CDATA #IMPLIED
+                    android:alwaysRetainTaskState CDATA #IMPLIED
+                    android:autoRemoveFromRecents CDATA #IMPLIED
+                    android:banner CDATA #IMPLIED
+                    android:clearTaskOnLaunch CDATA #IMPLIED
+                    android:configChanges CDATA #IMPLIED
+                    android:documentLaunchMode CDATA #IMPLIED
+                    android:enabled CDATA #IMPLIED
+                    android:excludeFromRecents CDATA #IMPLIED
+                    android:exported CDATA #IMPLIED
+                    android:finishOnTaskLaunch CDATA #IMPLIED
+                    android:hardwareAccelerated CDATA #IMPLIED
+                    android:icon CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:launchMode CDATA #IMPLIED
+                    android:maxRecents CDATA #IMPLIED
+                    android:multiprocess CDATA #IMPLIED
+                    android:name CDATA #IMPLIED
+                    android:noHistory CDATA #IMPLIED
+                    android:parentActivityName CDATA #IMPLIED
+                    android:permission CDATA #IMPLIED
+                    android:process CDATA #IMPLIED
+                    android:relinquishTaskIdentity CDATA #IMPLIED
+                    android:screenOrientation CDATA #IMPLIED
+                    android:stateNotNeeded CDATA #IMPLIED
+                    android:taskAffinity CDATA #IMPLIED
+                    android:theme CDATA #IMPLIED
+                    android:uiOptions CDATA #IMPLIED
+                    android:windowSoftInputMode CDATA #IMPLIED>
+          <!ELEMENT activity-alias (intent-filter*, meta-data*, nothingHere?)>
+          <!ATTLIST activity-alias
+                    android:enabled CDATA #IMPLIED
+                    android:exported CDATA #IMPLIED
+                    android:icon CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:name CDATA #IMPLIED
+                    android:permission CDATA #IMPLIED
+                    android:targetActivity CDATA #IMPLIED>
+          <!ELEMENT application (activity*, activity-alias*, meta-data*, provider*, receiver*, service*, supports-screens*, uses-library*, nothingHere?)>
+          <!ATTLIST application
+                    android:allowTaskReparenting CDATA #IMPLIED
+                    android:allowBackup CDATA #IMPLIED
+                    android:allowClearUserData CDATA #IMPLIED
+                    android:backupAgent CDATA #IMPLIED
+                    android:banner CDATA #IMPLIED
+		    android:configChanges CDATA #IMPLIED
+                    android:debuggable CDATA #IMPLIED
+                    android:description CDATA #IMPLIED
+                    android:enabled CDATA #IMPLIED
+                    android:hasCode CDATA #IMPLIED
+                    android:hardwareAccelerated CDATA #IMPLIED
+                    android:icon CDATA #IMPLIED
+                    android:isGame CDATA #IMPLIED
+                    android:killAfterRestore CDATA #IMPLIED
+                    android:largeHeap CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:logo CDATA #IMPLIED
+                    android:manageSpaceActivity CDATA #IMPLIED
+                    android:name CDATA #IMPLIED
+                    android:permission CDATA #IMPLIED
+                    android:persistent CDATA #IMPLIED
+                    android:process CDATA #IMPLIED
+                    android:restoreAnyVersion CDATA #IMPLIED
+                    android:requiredAccountType CDATA #IMPLIED
+                    android:restrictedAccountType CDATA #IMPLIED
+                    android:supportsRtl CDATA #IMPLIED
+                    android:taskAffinity CDATA #IMPLIED
+                    android:testOnly CDATA #IMPLIED
+                    android:theme CDATA #IMPLIED
+                    android:uiOptions CDATA #IMPLIED
+                    android:vmSafeMode CDATA #IMPLIED>
+          <!ELEMENT category (nothingHere)>
+          <!ATTLIST category android:name CDATA #IMPLIED>
+          <!ELEMENT compatible-screens (screen+)>
+          <!ELEMENT screen (nothingHere)>
+          <!ATTLIST screen
+                    android:screenSize CDATA #IMPLIED
+                    android:screenDensity CDATA #IMPLIED>
+          <!ELEMENT android-data (nothingHere)>
+          <!ATTLIST android-data
+                    android:scheme CDATA #IMPLIED
+                    android:host CDATA #IMPLIED
+                    android:port CDATA #IMPLIED
+                    android:path CDATA #IMPLIED
+                    android:pathPattern CDATA #IMPLIED
+                    android:pathPrefix CDATA #IMPLIED
+                    android:mimeType CDATA #IMPLIED>
+          <!ELEMENT grant-uri-permission (nothingHere)>
+          <!ATTLIST grant-uri-permission
+                    android:path CDATA #IMPLIED
+                    android:pathPattern CDATA #IMPLIED
+                    android:pathPrefix CDATA #IMPLIED>
+          <!ELEMENT instrumentation (nothingHere)>
+          <!ATTLIST instrumentation
+                    android:functionalTest CDATA #IMPLIED
+                    android:handleProfiling CDATA #IMPLIED
+                    android:icon CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:name CDATA #IMPLIED
+                    android:targetPackage CDATA #IMPLIED>
+          <!ELEMENT intent-filter (action*, android-data*, category*)>
+          <!ATTLIST intent-filter
+                    android:icon CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:priority CDATA #IMPLIED>
+          <!ELEMENT item (nothingHere)>
+          <!ATTLIST item
+                    android:name CDATA #IMPLIED>
+          <!ELEMENT meta-data (nothingHere)>
+          <!ATTLIST meta-data
+                    android:name CDATA #IMPLIED
+                    android:resource CDATA #IMPLIED
+                    android:value CDATA #IMPLIED>
+          <!ELEMENT path-permission (nothingHere)>
+          <!ATTLIST path-permission
+                    android:path CDATA #IMPLIED
+                    android:pathPrefix CDATA #IMPLIED
+                    android:pathPattern CDATA #IMPLIED
+                    android:permission CDATA #IMPLIED
+                    android:readPermission CDATA #IMPLIED
+                    android:writePermission CDATA #IMPLIED>
+          <!ELEMENT permission (nothingHere)>
+          <!ATTLIST permission
+                    android:description CDATA #IMPLIED
+                    android:icon CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:name CDATA #IMPLIED
+                    android:permissionGroup CDATA #IMPLIED
+                    android:protectionLevel CDATA #IMPLIED>
+          <!ELEMENT permission-group (nothingHere)>
+          <!ATTLIST permission-group
+                    android:description CDATA #IMPLIED
+                    android:icon CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:name CDATA #IMPLIED>
+          <!ELEMENT permission-tree (nothingHere)>
+          <!ATTLIST permission-tree
+                    android:icon CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:name CDATA #IMPLIED>
+          <!ELEMENT provider (grant-uri-permission*, meta-data*, path-permission*, nothingHere?)>
+          <!ATTLIST provider
+                    android:authorities CDATA #IMPLIED
+                    android:enabled CDATA #IMPLIED
+                    android:exported CDATA #IMPLIED
+                    android:grantUriPermissions CDATA #IMPLIED
+                    android:icon CDATA #IMPLIED
+                    android:initOrder CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:multiprocess CDATA #IMPLIED
+                    android:name CDATA #IMPLIED
+                    android:permission CDATA #IMPLIED
+                    android:process CDATA #IMPLIED
+                    android:readPermission CDATA #IMPLIED
+                    android:syncable CDATA #IMPLIED
+                    android:writePermission CDATA #IMPLIED>
+          <!ELEMENT receiver (intent-filter*, meta-data*, nothingHere?)>
+          <!ATTLIST receiver
+                    android:enabled CDATA #IMPLIED
+                    android:exported CDATA #IMPLIED
+                    android:icon CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:name CDATA #IMPLIED
+                    android:permission CDATA #IMPLIED
+                    android:process CDATA #IMPLIED>
+          <!ELEMENT service (intent-filter*, meta-data*, nothingHere?)>
+          <!ATTLIST service
+                    android:enabled CDATA #IMPLIED
+                    android:exported CDATA #IMPLIED
+                    android:icon CDATA #IMPLIED
+                    android:isolatedProcess CDATA #IMPLIED
+                    android:label CDATA #IMPLIED
+                    android:name CDATA #IMPLIED
+                    android:permission CDATA #IMPLIED
+                    android:process CDATA #IMPLIED>
+          <!ELEMENT supports-gl-texture (nothingHere)>
+          <!ATTLIST supports-gl-texture
+                    android:name CDATA #IMPLIED>
+          <!ELEMENT supports-screens (nothingHere)>
+          <!ATTLIST supports-screens
+                    android:resizeable CDATA #IMPLIED
+                    android:smallScreens CDATA #IMPLIED
+                    android:normalScreens CDATA #IMPLIED
+                    android:largeScreens CDATA #IMPLIED
+                    android:xlargeScreens CDATA #IMPLIED
+                    android:anyDensity CDATA #IMPLIED
+                    android:requiresSmallestWidthDp CDATA #IMPLIED
+                    android:compatibleWidthLimitDp CDATA #IMPLIED
+                    android:largestWidthLimitDp CDATA #IMPLIED>
+          <!ELEMENT uses-configuration (nothingHere)>
+          <!ATTLIST uses-configuration
+                    android:reqFiveWayNav CDATA #IMPLIED
+                    android:reqHardKeyboard CDATA #IMPLIED
+                    android:reqKeyboardType CDATA #IMPLIED
+                    android:reqNavigation CDATA #IMPLIED
+                    android:reqTouchScreen CDATA #IMPLIED>
+          <!ELEMENT uses-feature (nothingHere)>
+          <!ATTLIST uses-feature
+                    android:name CDATA #IMPLIED
+                    android:required CDATA #IMPLIED
+                    android:glEsVersion CDATA #IMPLIED>
+          <!ELEMENT uses-library (nothingHere)>
+          <!ATTLIST uses-library
+                    android:name CDATA #IMPLIED
+                    android:required CDATA #IMPLIED>
+          <!ELEMENT uses-permission (nothingHere)>
+          <!ATTLIST uses-permission
+                    android:name CDATA #REQUIRED
+                    android:maxSdkVersion CDATA #IMPLIED>
+          <!ELEMENT uses-sdk (nothingHere)>
+          <!ATTLIST uses-sdk
+                    android:minSdkVersion CDATA #IMPLIED
+                    android:targetSdkVersion CDATA #IMPLIED
+                    android:maxSdkVersion CDATA #IMPLIED>
+          <!ELEMENT fdroid (nothingHere)>
+          <!ATTLIST fdroid
+                    buildserverid CDATA #IMPLIED
+                    fdroidserverid CDATA #IMPLIED>
+          <!ELEMENT nothingHere EMPTY>
+          ]>

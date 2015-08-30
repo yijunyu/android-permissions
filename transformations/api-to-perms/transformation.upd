@@ -1,0 +1,30 @@
+IMPORT "source.dtd" AS s
+IMPORT "view.dtd" AS v
+
+$source = doc("source.xml") AS s:apicalls
+$view = doc("view.xml") AS v:permissions
+
+START = updateApiCalls($source/apicalls, $view/permissions)
+
+PROCEDURE updateApiCalls(source $apicalls AS s:apicalls, view $vapicalls AS v:calls) =
+
+UPDATE $scall IN $apicalls/call BY
+  MATCH -> {
+      UPDATE $spermission IN $scall/permissions/*
+        MATCH -> REPLACE $spermission/name WITH $vpermission/name
+        | UNMATCHV -> CREATE VALUE <permission>
+                                        <name/>
+                                        <apiversion>4.1.1</apiversion>
+                                   </permission>
+      FOR VIEW $vpermission IN $vcall/permissions/*
+      WHERE $spermission/[apiversion = '4.1.1'] != []
+  }
+  | UNMATCHV -> CREATE VALUE <call>
+                                <permissions/>
+                                <file/>
+                                <line/>
+                                <delete>false</delete>
+                             </call>
+  | UNMATCHS -> REPLACE $scall/delete/text() WITH 'true'
+  FOR VIEW $vcall IN $vapicalls/call
+  WHERE $scall/delete/text() = 'false'

@@ -1,0 +1,17 @@
+IMPORT "manifest.dtd" AS s
+IMPORT "permissions.dtd" AS v
+
+$source = doc("manifest.xml") AS s:manifest
+$view = doc("permissions.xml") AS v:permissions
+
+START = updatePermissions ($source/manifest, $view/permissions)
+
+PROCEDURE updatePermissions(source $manifest AS s:manifest, view $perms AS v:permissions) =
+  UPDATE $perm IN $manifest/uses-permission BY
+    MATCH -> {}
+    | UNMATCHV -> CREATE VALUE <uses-permission>
+                                   <nothingHere/>
+                               </uses-permission>
+    | UNMATCHS -> DELETE .
+  FOR VIEW permission[$name AS v:name] IN $perms/permission
+  MATCHING SOURCE BY $perm/@android:name VIEW BY $name/text()
