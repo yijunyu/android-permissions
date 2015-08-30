@@ -1,0 +1,7 @@
+<!DOCTYPE permissions
+          [
+          <!ELEMENT permissions (permission*)>
+          <!ELEMENT permission (name)>
+          <!ELEMENT name (#PCDATA)>
+          ]
+>
